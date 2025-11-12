@@ -1,36 +1,31 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# FounderCal
 
-## Getting Started
+[FounderCal](https://foundercal.org) is a focused calendar for founders who need to stay on top of accelerator deadlines, capital-raising programs, and resource drops across fast-moving tracks like AI, crypto, frontier tech, and more. It cuts through scattered spreadsheets and inbox reminders so you can see what matters, when it matters, and act before an opportunity closes.
 
-First, run the development server:
+## Why FounderCal
+- **One source of truth** – Centralizes application windows, demo days, office-hour sign-ups, and funding programs from major ecosystems.
+- **Founder-first filters** – Slice the calendar by stage, sector (AI, crypto, climate, etc.), geography, or participation requirements.
+- **Actionable reminders** – Highlights what you can apply for today, what opens next, and what requires prep work.
+- **Signals, not noise** – Surfaces only vetted programs and clearly labels perks (capital offered, mentor access, platform reach).
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+## How It Works
+1. **Curate** – Data sources pull from accelerator announcements, operator newsletters, DAOs, investor programs, and founder communities.
+2. **Normalize** – Every entry is standardized with eligibility, perks, decision timelines, and contact info so comparisons stay apples-to-apples.
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## Use Cases
+- Plan a quarterly fundraising sprint without missing top accelerator cohorts.
+- Track AI/crypto conference deadlines alongside investor matching programs.
+- Share a filtered calendar with your team so product, ops, and finance know what’s coming.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## Roadmap Highlights
+- Collaborative collections you can publish or embed in community portals.
+- Smart prep checklists that attach to each calendar item.
+- API access for teams that want to sync FounderCal data into their internal tools.
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## Contributing & Feedback
+We’re building this with founders, not just for them. Open an issue or start a discussion with:
+- Programs or events we should list.
+- Integrations you need (CRMs, Notion, custom workflows).
+- UX ideas that make scouting and applying faster.
 
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+Stay tuned—FounderCal will keep you a step ahead of every accelerator and capital opportunity worth your time.

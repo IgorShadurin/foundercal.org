@@ -1,0 +1,4731 @@
+{
+  "taxonomies": {
+    "regions": [
+      "global",
+      "na",
+      "eu",
+      "apac",
+      "latam",
+      "mena",
+      "africa"
+    ],
+    "types": [
+      "accelerator",
+      "incubator",
+      "competition",
+      "demo_day",
+      "grant",
+      "fellowship",
+      "conference",
+      "hackathon",
+      "program"
+    ],
+    "supports": [
+      "funding",
+      "compute",
+      "mentorship",
+      "credits",
+      "resources"
+    ],
+    "sectors": [
+      "general",
+      "ai",
+      "bio",
+      "health",
+      "fintech",
+      "climatetech",
+      "energy",
+      "deeptech",
+      "web3",
+      "saas",
+      "hardware",
+      "edtech",
+      "govtech",
+      "security",
+      "devtools",
+      "consumer",
+      "mobility"
+    ]
+  },
+  "events": [
+    {
+      "id": "yc-f25",
+      "name": "Y Combinator Fall 2025 Batch",
+      "description": "Flagship accelerator offering seed investment, mentorship, and Demo Day",
+      "organizer": null,
+      "website": null,
+      "location": {
+        "is_virtual": false,
+        "is_hybrid": true,
+        "venue": null,
+        "city": "San Francisco",
+        "city_slug": "san-francisco",
+        "country": null,
+        "country_code": "US",
+        "region_code": "na"
+      },
+      "dates": {
+        "application_open": null,
+        "application_close": "2025-08-04",
+        "program_start": "2025-10-01",
+        "program_end": "2025-11-30",
+        "demo_day": null,
+        "timezone": null,
+        "date_range_text": "Oct–Nov 2025"
+      },
+      "categories": {
+        "types": [
+          "accelerator"
+        ],
+        "supports": [
+          "funding",
+          "mentorship"
+        ],
+        "sectors": [
+          "general"
+        ]
+      },
+      "hashtags": [
+        "#usa",
+        "#sanfrancisco",
+        "#general",
+        "#funding"
+      ],
+      "index": {
+        "years": [
+          "2025"
+        ],
+        "region_code": "na",
+        "country_code": "US",
+        "city_slug": "san-francisco",
+        "type_keys": [
+          "accelerator"
+        ],
+        "support_keys": [
+          "funding",
+          "mentorship"
+        ],
+        "sector_keys": [
+          "general"
+        ],
+        "date_sort_key": "2025-10-01"
+      },
+      "verification": "reported",
+      "last_verified_utc": "2025-11-12T08:11:20Z"
+    },
+    {
+      "id": "yc-w26",
+      "name": "Y Combinator Winter 2026 Batch",
+      "description": "3‑month accelerator with standard YC deal and investor network",
+      "organizer": null,
+      "website": null,
+      "location": {
+        "is_virtual": false,
+        "is_hybrid": false,
+        "venue": null,
+        "city": "San Francisco",
+        "city_slug": "san-francisco",
+        "country": null,
+        "country_code": "US",
+        "region_code": "na"
+      },
+      "dates": {
+        "application_open": null,
+        "application_close": "2025-11-10",
+        "program_start": "2026-01-05",
+        "program_end": "2026-03-31",
+        "demo_day": "2026-03-27",
+        "timezone": null,
+        "date_range_text": "Jan–Mar 2026"
+      },
+      "categories": {
+        "types": [
+          "accelerator"
+        ],
+        "supports": [
+          "funding",
+          "mentorship"
+        ],
+        "sectors": [
+          "general"
+        ]
+      },
+      "hashtags": [
+        "#usa",
+        "#sanfrancisco",
+        "#general",
+        "#funding"
+      ],
+      "index": {
+        "years": [
+          "2025",
+          "2026"
+        ],
+        "region_code": "na",
+        "country_code": "US",
+        "city_slug": "san-francisco",
+        "type_keys": [
+          "accelerator"
+        ],
+        "support_keys": [
+          "funding",
+          "mentorship"
+        ],
+        "sector_keys": [
+          "general"
+        ],
+        "date_sort_key": "2026-01-05"
+      },
+      "verification": "reported",
+      "last_verified_utc": "2025-11-12T08:11:20Z"
+    },
+    {
+      "id": "techstars-boston-f25",
+      "name": "Techstars Boston Accelerator (Fall 2025)",
+      "description": "13‑week hybrid accelerator across AI/ML, healthtech, climate, SaaS",
+      "organizer": null,
+      "website": null,
+      "location": {
+        "is_virtual": false,
+        "is_hybrid": false,
+        "venue": null,
+        "city": "Boston",
+        "city_slug": "boston",
+        "country": null,
+        "country_code": "US",
+        "region_code": "na"
+      },
+      "dates": {
+        "application_open": "2025-04-08",
+        "application_close": "2025-06-11",
+        "program_start": "2025-09-08",
+        "program_end": "2025-12-09",
+        "demo_day": null,
+        "timezone": null,
+        "date_range_text": "Sep 8 – Dec 9, 2025"
+      },
+      "categories": {
+        "types": [
+          "accelerator"
+        ],
+        "supports": [
+          "funding",
+          "mentorship"
+        ],
+        "sectors": [
+          "general"
+        ]
+      },
+      "hashtags": [
+        "#usa",
+        "#boston",
+        "#general",
+        "#funding"
+      ],
+      "index": {
+        "years": [
+          "2025"
+        ],
+        "region_code": "na",
+        "country_code": "US",
+        "city_slug": "boston",
+        "type_keys": [
+          "accelerator"
+        ],
+        "support_keys": [
+          "funding",
+          "mentorship"
+        ],
+        "sector_keys": [
+          "general"
+        ],
+        "date_sort_key": "2025-09-08"
+      },
+      "verification": "reported",
+      "last_verified_utc": "2025-11-12T08:11:20Z"
+    },
+    {
+      "id": "techstars-london-s26",
+      "name": "Techstars London Accelerator (Spring 2026)",
+      "description": "London-based accelerator open to all verticals",
+      "organizer": null,
+      "website": null,
+      "location": {
+        "is_virtual": false,
+        "is_hybrid": false,
+        "venue": null,
+        "city": "London",
+        "city_slug": "london",
+        "country": null,
+        "country_code": "GB",
+        "region_code": "eu"
+      },
+      "dates": {
+        "application_open": "2025-08-25",
+        "application_close": "2025-11-19",
+        "program_start": "2026-03-09",
+        "program_end": "2026-06-04",
+        "demo_day": null,
+        "timezone": null,
+        "date_range_text": "Mar 9 – Jun 4, 2026"
+      },
+      "categories": {
+        "types": [
+          "accelerator"
+        ],
+        "supports": [
+          "funding",
+          "mentorship"
+        ],
+        "sectors": [
+          "general"
+        ]
+      },
+      "hashtags": [
+        "#uk",
+        "#london",
+        "#general",
+        "#funding"
+      ],
+      "index": {
+        "years": [
+          "2025",
+          "2026"
+        ],
+        "region_code": "eu",
+        "country_code": "GB",
+        "city_slug": "london",
+        "type_keys": [
+          "accelerator"
+        ],
+        "support_keys": [
+          "funding",
+          "mentorship"
+        ],
+        "sector_keys": [
+          "general"
+        ],
+        "date_sort_key": "2026-03-09"
+      },
+      "verification": "reported",
+      "last_verified_utc": "2025-11-12T08:11:20Z"
+    },
+    {
+      "id": "techstars-nyc-s26",
+      "name": "Techstars NYC Accelerator (Spring 2026)",
+      "description": "3‑month accelerator with mentors and investor network",
+      "organizer": null,
+      "website": null,
+      "location": {
+        "is_virtual": false,
+        "is_hybrid": false,
+        "venue": null,
+        "city": "New York",
+        "city_slug": "new-york",
+        "country": null,
+        "country_code": "US",
+        "region_code": "na"
+      },
+      "dates": {
+        "application_open": null,
+        "application_close": "2025-11-19",
+        "program_start": "2026-03-01",
+        "program_end": "2026-06-01",
+        "demo_day": null,
+        "timezone": null,
+        "date_range_text": "Mar–Jun 2026"
+      },
+      "categories": {
+        "types": [
+          "accelerator"
+        ],
+        "supports": [
+          "funding",
+          "mentorship"
+        ],
+        "sectors": [
+          "general"
+        ]
+      },
+      "hashtags": [
+        "#usa",
+        "#nyc",
+        "#general",
+        "#funding"
+      ],
+      "index": {
+        "years": [
+          "2025",
+          "2026"
+        ],
+        "region_code": "na",
+        "country_code": "US",
+        "city_slug": "new-york",
+        "type_keys": [
+          "accelerator"
+        ],
+        "support_keys": [
+          "funding",
+          "mentorship"
+        ],
+        "sector_keys": [
+          "general"
+        ],
+        "date_sort_key": "2026-03-01"
+      },
+      "verification": "reported",
+      "last_verified_utc": "2025-11-12T08:11:20Z"
+    },
+    {
+      "id": "techstars-chicago-s26",
+      "name": "Techstars Chicago Accelerator (Spring 2026)",
+      "description": "Techstars program in Chicago offering capital and mentorship",
+      "organizer": null,
+      "website": null,
+      "location": {
+        "is_virtual": false,
+        "is_hybrid": false,
+        "venue": null,
+        "city": "Chicago",
+        "city_slug": "chicago",
+        "country": null,
+        "country_code": "US",
+        "region_code": "na"
+      },
+      "dates": {
+        "application_open": null,
+        "application_close": "2025-11-19",
+        "program_start": "2026-03-01",
+        "program_end": "2026-06-01",
+        "demo_day": null,
+        "timezone": null,
+        "date_range_text": "Mar–Jun 2026"
+      },
+      "categories": {
+        "types": [
+          "accelerator"
+        ],
+        "supports": [
+          "funding",
+          "mentorship"
+        ],
+        "sectors": [
+          "general"
+        ]
+      },
+      "hashtags": [
+        "#usa",
+        "#chicago",
+        "#general",
+        "#funding"
+      ],
+      "index": {
+        "years": [
+          "2025",
+          "2026"
+        ],
+        "region_code": "na",
+        "country_code": "US",
+        "city_slug": "chicago",
+        "type_keys": [
+          "accelerator"
+        ],
+        "support_keys": [
+          "funding",
+          "mentorship"
+        ],
+        "sector_keys": [
+          "general"
+        ],
+        "date_sort_key": "2026-03-01"
+      },
+      "verification": "reported",
+      "last_verified_utc": "2025-11-12T08:11:20Z"
+    },
+    {
+      "id": "techstars-anywhere-s26",
+      "name": "Techstars Anywhere Accelerator (Spring 2026)",
+      "description": "Remote-first accelerator with some in‑person gatherings",
+      "organizer": null,
+      "website": null,
+      "location": {
+        "is_virtual": true,
+        "is_hybrid": false,
+        "venue": null,
+        "city": null,
+        "city_slug": null,
+        "country": null,
+        "country_code": null,
+        "region_code": "global"
+      },
+      "dates": {
+        "application_open": "2025-08-25",
+        "application_close": "2025-11-19",
+        "program_start": "2026-03-09",
+        "program_end": "2026-06-04",
+        "demo_day": "2026-06-04",
+        "timezone": null,
+        "date_range_text": "Mar 9 – Jun 4, 2026"
+      },
+      "categories": {
+        "types": [
+          "accelerator"
+        ],
+        "supports": [
+          "funding",
+          "mentorship"
+        ],
+        "sectors": [
+          "general"
+        ]
+      },
+      "hashtags": [
+        "#global",
+        "#remote",
+        "#general",
+        "#funding"
+      ],
+      "index": {
+        "years": [
+          "2025",
+          "2026"
+        ],
+        "region_code": "global",
+        "country_code": null,
+        "city_slug": null,
+        "type_keys": [
+          "accelerator"
+        ],
+        "support_keys": [
+          "funding",
+          "mentorship"
+        ],
+        "sector_keys": [
+          "general"
+        ],
+        "date_sort_key": "2026-03-09"
+      },
+      "verification": "reported",
+      "last_verified_utc": "2025-11-12T08:11:20Z"
+    },
+    {
+      "id": "techstars-ai-health-baltimore-26",
+      "name": "Techstars AI Health Accelerator (Baltimore 2026)",
+      "description": "Healthcare AI accelerator with clinical partnerships",
+      "organizer": null,
+      "website": null,
+      "location": {
+        "is_virtual": false,
+        "is_hybrid": false,
+        "venue": null,
+        "city": "Baltimore",
+        "city_slug": "baltimore",
+        "country": null,
+        "country_code": "US",
+        "region_code": "na"
+      },
+      "dates": {
+        "application_open": null,
+        "application_close": "2025-11-19",
+        "program_start": "2026-02-01",
+        "program_end": "2026-05-31",
+        "demo_day": null,
+        "timezone": null,
+        "date_range_text": "Feb–May 2026"
+      },
+      "categories": {
+        "types": [
+          "accelerator"
+        ],
+        "supports": [
+          "funding",
+          "mentorship"
+        ],
+        "sectors": [
+          "ai",
+          "health"
+        ]
+      },
+      "hashtags": [
+        "#usa",
+        "#baltimore",
+        "#ai",
+        "#health",
+        "#funding"
+      ],
+      "index": {
+        "years": [
+          "2025",
+          "2026"
+        ],
+        "region_code": "na",
+        "country_code": "US",
+        "city_slug": "baltimore",
+        "type_keys": [
+          "accelerator"
+        ],
+        "support_keys": [
+          "funding",
+          "mentorship"
+        ],
+        "sector_keys": [
+          "ai",
+          "health"
+        ],
+        "date_sort_key": "2026-02-01"
+      },
+      "verification": "reported",
+      "last_verified_utc": "2025-11-12T08:11:20Z"
+    },
+    {
+      "id": "techstars-workforce-26",
+      "name": "Techstars Workforce Development Accelerator 2026",
+      "description": "Startups in education, jobs and future of work",
+      "organizer": null,
+      "website": null,
+      "location": {
+        "is_virtual": false,
+        "is_hybrid": false,
+        "venue": null,
+        "city": null,
+        "city_slug": null,
+        "country": null,
+        "country_code": null,
+        "region_code": "na"
+      },
+      "dates": {
+        "application_open": null,
+        "application_close": "2025-11-19",
+        "program_start": "2026-03-01",
+        "program_end": "2026-06-01",
+        "demo_day": null,
+        "timezone": null,
+        "date_range_text": "Mar–Jun 2026"
+      },
+      "categories": {
+        "types": [
+          "accelerator"
+        ],
+        "supports": [
+          "funding",
+          "mentorship"
+        ],
+        "sectors": [
+          "edtech",
+          "general"
+        ]
+      },
+      "hashtags": [
+        "#usa",
+        "#workforce",
+        "#edtech",
+        "#funding"
+      ],
+      "index": {
+        "years": [
+          "2025",
+          "2026"
+        ],
+        "region_code": "na",
+        "country_code": null,
+        "city_slug": null,
+        "type_keys": [
+          "accelerator"
+        ],
+        "support_keys": [
+          "funding",
+          "mentorship"
+        ],
+        "sector_keys": [
+          "edtech",
+          "general"
+        ],
+        "date_sort_key": "2026-03-01"
+      },
+      "verification": "reported",
+      "last_verified_utc": "2025-11-12T08:11:20Z"
+    },
+    {
+      "id": "techstars-usc-digital-economy-26",
+      "name": "USC x Techstars Digital Economy 2026",
+      "description": "Accelerator in Los Angeles for digital economy startups",
+      "organizer": null,
+      "website": null,
+      "location": {
+        "is_virtual": false,
+        "is_hybrid": false,
+        "venue": null,
+        "city": "Los Angeles",
+        "city_slug": "los-angeles",
+        "country": null,
+        "country_code": "US",
+        "region_code": "na"
+      },
+      "dates": {
+        "application_open": null,
+        "application_close": "2025-11-19",
+        "program_start": "2026-01-15",
+        "program_end": "2026-04-15",
+        "demo_day": null,
+        "timezone": null,
+        "date_range_text": "Jan–Apr 2026"
+      },
+      "categories": {
+        "types": [
+          "accelerator"
+        ],
+        "supports": [
+          "funding",
+          "mentorship"
+        ],
+        "sectors": [
+          "general"
+        ]
+      },
+      "hashtags": [
+        "#usa",
+        "#losangeles",
+        "#general",
+        "#funding"
+      ],
+      "index": {
+        "years": [
+          "2025",
+          "2026"
+        ],
+        "region_code": "na",
+        "country_code": "US",
+        "city_slug": "los-angeles",
+        "type_keys": [
+          "accelerator"
+        ],
+        "support_keys": [
+          "funding",
+          "mentorship"
+        ],
+        "sector_keys": [
+          "general"
+        ],
+        "date_sort_key": "2026-01-15"
+      },
+      "verification": "reported",
+      "last_verified_utc": "2025-11-12T08:11:20Z"
+    },
+    {
+      "id": "techstars-northwestern-health-26",
+      "name": "Northwestern & Techstars Healthcare Accelerator 2026",
+      "description": "Healthcare-focused program in Chicago",
+      "organizer": null,
+      "website": null,
+      "location": {
+        "is_virtual": false,
+        "is_hybrid": false,
+        "venue": null,
+        "city": "Chicago",
+        "city_slug": "chicago",
+        "country": null,
+        "country_code": "US",
+        "region_code": "na"
+      },
+      "dates": {
+        "application_open": null,
+        "application_close": "2025-11-19",
+        "program_start": "2026-02-01",
+        "program_end": "2026-05-15",
+        "demo_day": null,
+        "timezone": null,
+        "date_range_text": "Feb–May 2026"
+      },
+      "categories": {
+        "types": [
+          "accelerator"
+        ],
+        "supports": [
+          "funding",
+          "mentorship"
+        ],
+        "sectors": [
+          "health"
+        ]
+      },
+      "hashtags": [
+        "#usa",
+        "#chicago",
+        "#health",
+        "#funding"
+      ],
+      "index": {
+        "years": [
+          "2025",
+          "2026"
+        ],
+        "region_code": "na",
+        "country_code": "US",
+        "city_slug": "chicago",
+        "type_keys": [
+          "accelerator"
+        ],
+        "support_keys": [
+          "funding",
+          "mentorship"
+        ],
+        "sector_keys": [
+          "health"
+        ],
+        "date_sort_key": "2026-02-01"
+      },
+      "verification": "reported",
+      "last_verified_utc": "2025-11-12T08:11:20Z"
+    },
+    {
+      "id": "spc-founder-fellowship-25",
+      "name": "South Park Commons Founder Fellowship 2025",
+      "description": "Pre-idea founder fellowship offering capital and deep mentorship",
+      "organizer": null,
+      "website": null,
+      "location": {
+        "is_virtual": false,
+        "is_hybrid": false,
+        "venue": null,
+        "city": "San Francisco",
+        "city_slug": "san-francisco",
+        "country": null,
+        "country_code": "US",
+        "region_code": "na"
+      },
+      "dates": {
+        "application_open": null,
+        "application_close": "2025-08-03",
+        "program_start": "2025-10-01",
+        "program_end": "2026-03-01",
+        "demo_day": null,
+        "timezone": null,
+        "date_range_text": "Oct 2025 – Mar 2026"
+      },
+      "categories": {
+        "types": [
+          "fellowship"
+        ],
+        "supports": [
+          "funding",
+          "mentorship"
+        ],
+        "sectors": [
+          "general"
+        ]
+      },
+      "hashtags": [
+        "#usa",
+        "#sanfrancisco",
+        "#general",
+        "#funding"
+      ],
+      "index": {
+        "years": [
+          "2025",
+          "2026"
+        ],
+        "region_code": "na",
+        "country_code": "US",
+        "city_slug": "san-francisco",
+        "type_keys": [
+          "fellowship"
+        ],
+        "support_keys": [
+          "funding",
+          "mentorship"
+        ],
+        "sector_keys": [
+          "general"
+        ],
+        "date_sort_key": "2025-10-01"
+      },
+      "verification": "reported",
+      "last_verified_utc": "2025-11-12T08:11:20Z"
+    },
+    {
+      "id": "conviction-embed-25",
+      "name": "Conviction 'Embed' Accelerator 2025",
+      "description": "AI-native accelerator run by Conviction, seed capital and mentorship",
+      "organizer": null,
+      "website": null,
+      "location": {
+        "is_virtual": false,
+        "is_hybrid": false,
+        "venue": null,
+        "city": "San Francisco",
+        "city_slug": "san-francisco",
+        "country": null,
+        "country_code": "US",
+        "region_code": "na"
+      },
+      "dates": {
+        "application_open": null,
+        "application_close": "2025-08-08",
+        "program_start": "2025-09-19",
+        "program_end": "2025-11-30",
+        "demo_day": null,
+        "timezone": null,
+        "date_range_text": "Sep–Nov 2025"
+      },
+      "categories": {
+        "types": [
+          "accelerator"
+        ],
+        "supports": [
+          "funding",
+          "mentorship"
+        ],
+        "sectors": [
+          "ai"
+        ]
+      },
+      "hashtags": [
+        "#usa",
+        "#sanfrancisco",
+        "#ai",
+        "#funding"
+      ],
+      "index": {
+        "years": [
+          "2025"
+        ],
+        "region_code": "na",
+        "country_code": "US",
+        "city_slug": "san-francisco",
+        "type_keys": [
+          "accelerator"
+        ],
+        "support_keys": [
+          "funding",
+          "mentorship"
+        ],
+        "sector_keys": [
+          "ai"
+        ],
+        "date_sort_key": "2025-09-19"
+      },
+      "verification": "reported",
+      "last_verified_utc": "2025-11-12T08:11:20Z"
+    },
+    {
+      "id": "alliance-dao-f25",
+      "name": "Alliance DAO Accelerator Fall 2025",
+      "description": "Web3/crypto accelerator investing with token rights",
+      "organizer": null,
+      "website": null,
+      "location": {
+        "is_virtual": false,
+        "is_hybrid": false,
+        "venue": null,
+        "city": "New York",
+        "city_slug": "new-york",
+        "country": null,
+        "country_code": "US",
+        "region_code": "na"
+      },
+      "dates": {
+        "application_open": null,
+        "application_close": "2025-08-22",
+        "program_start": "2026-01-12",
+        "program_end": "2026-03-31",
+        "demo_day": null,
+        "timezone": null,
+        "date_range_text": "Jan–Mar 2026"
+      },
+      "categories": {
+        "types": [
+          "accelerator"
+        ],
+        "supports": [
+          "funding",
+          "mentorship"
+        ],
+        "sectors": [
+          "web3"
+        ]
+      },
+      "hashtags": [
+        "#usa",
+        "#newyork",
+        "#web3",
+        "#funding"
+      ],
+      "index": {
+        "years": [
+          "2025",
+          "2026"
+        ],
+        "region_code": "na",
+        "country_code": "US",
+        "city_slug": "new-york",
+        "type_keys": [
+          "accelerator"
+        ],
+        "support_keys": [
+          "funding",
+          "mentorship"
+        ],
+        "sector_keys": [
+          "web3"
+        ],
+        "date_sort_key": "2026-01-12"
+      },
+      "verification": "reported",
+      "last_verified_utc": "2025-11-12T08:11:20Z"
+    },
+    {
+      "id": "berkeley-skydeck-b21-f25",
+      "name": "Berkeley SkyDeck Batch 21 (Fall 2025)",
+      "description": "UC Berkeley accelerator with investment via SAFE",
+      "organizer": null,
+      "website": null,
+      "location": {
+        "is_virtual": false,
+        "is_hybrid": false,
+        "venue": null,
+        "city": "Berkeley",
+        "city_slug": "berkeley",
+        "country": null,
+        "country_code": "US",
+        "region_code": "na"
+      },
+      "dates": {
+        "application_open": null,
+        "application_close": "2025-08-22",
+        "program_start": "2025-11-03",
+        "program_end": "2026-03-01",
+        "demo_day": null,
+        "timezone": null,
+        "date_range_text": "Nov 2025 – Mar 2026"
+      },
+      "categories": {
+        "types": [
+          "accelerator"
+        ],
+        "supports": [
+          "funding",
+          "mentorship"
+        ],
+        "sectors": [
+          "general"
+        ]
+      },
+      "hashtags": [
+        "#usa",
+        "#berkeley",
+        "#general",
+        "#funding"
+      ],
+      "index": {
+        "years": [
+          "2025",
+          "2026"
+        ],
+        "region_code": "na",
+        "country_code": "US",
+        "city_slug": "berkeley",
+        "type_keys": [
+          "accelerator"
+        ],
+        "support_keys": [
+          "funding",
+          "mentorship"
+        ],
+        "sector_keys": [
+          "general"
+        ],
+        "date_sort_key": "2025-11-03"
+      },
+      "verification": "reported",
+      "last_verified_utc": "2025-11-12T08:11:20Z"
+    },
+    {
+      "id": "alchemist-b32",
+      "name": "Alchemist Accelerator Batch 32 (Enterprise)",
+      "description": "Top B2B/enterprise accelerator emphasizing customer traction",
+      "organizer": null,
+      "website": null,
+      "location": {
+        "is_virtual": false,
+        "is_hybrid": false,
+        "venue": null,
+        "city": "San Francisco",
+        "city_slug": "san-francisco",
+        "country": null,
+        "country_code": "US",
+        "region_code": "na"
+      },
+      "dates": {
+        "application_open": null,
+        "application_close": "2025-09-12",
+        "program_start": "2026-01-12",
+        "program_end": "2026-04-12",
+        "demo_day": null,
+        "timezone": null,
+        "date_range_text": "Jan–Apr 2026"
+      },
+      "categories": {
+        "types": [
+          "accelerator"
+        ],
+        "supports": [
+          "funding",
+          "mentorship"
+        ],
+        "sectors": [
+          "enterprise",
+          "devtools"
+        ]
+      },
+      "hashtags": [
+        "#usa",
+        "#sanfrancisco",
+        "#enterprise",
+        "#funding"
+      ],
+      "index": {
+        "years": [
+          "2025",
+          "2026"
+        ],
+        "region_code": "na",
+        "country_code": "US",
+        "city_slug": "san-francisco",
+        "type_keys": [
+          "accelerator"
+        ],
+        "support_keys": [
+          "funding",
+          "mentorship"
+        ],
+        "sector_keys": [
+          "enterprise",
+          "devtools"
+        ],
+        "date_sort_key": "2026-01-12"
+      },
+      "verification": "reported",
+      "last_verified_utc": "2025-11-12T08:11:20Z"
+    },
+    {
+      "id": "pearx-2025",
+      "name": "PearX by Pear VC (2025)",
+      "description": "Hybrid accelerator/seed program investing in early-stage teams",
+      "organizer": null,
+      "website": null,
+      "location": {
+        "is_virtual": false,
+        "is_hybrid": false,
+        "venue": null,
+        "city": "San Francisco",
+        "city_slug": "san-francisco",
+        "country": null,
+        "country_code": "US",
+        "region_code": "na"
+      },
+      "dates": {
+        "application_open": null,
+        "application_close": "2025-07-09",
+        "program_start": "2025-09-01",
+        "program_end": "2025-12-15",
+        "demo_day": null,
+        "timezone": null,
+        "date_range_text": "Sep–Dec 2025"
+      },
+      "categories": {
+        "types": [
+          "accelerator"
+        ],
+        "supports": [
+          "funding",
+          "mentorship"
+        ],
+        "sectors": [
+          "general"
+        ]
+      },
+      "hashtags": [
+        "#usa",
+        "#sanfrancisco",
+        "#general",
+        "#funding"
+      ],
+      "index": {
+        "years": [
+          "2025"
+        ],
+        "region_code": "na",
+        "country_code": "US",
+        "city_slug": "san-francisco",
+        "type_keys": [
+          "accelerator"
+        ],
+        "support_keys": [
+          "funding",
+          "mentorship"
+        ],
+        "sector_keys": [
+          "general"
+        ],
+        "date_sort_key": "2025-09-01"
+      },
+      "verification": "reported",
+      "last_verified_utc": "2025-11-12T08:11:20Z"
+    },
+    {
+      "id": "antler-us-f25",
+      "name": "Antler Global Residency (US Fall 2025)",
+      "description": "Pre-seed builder program to form teams; Antler invests at pre-seed",
+      "organizer": null,
+      "website": null,
+      "location": {
+        "is_virtual": false,
+        "is_hybrid": false,
+        "venue": null,
+        "city": null,
+        "city_slug": null,
+        "country": null,
+        "country_code": null,
+        "region_code": "na"
+      },
+      "dates": {
+        "application_open": null,
+        "application_close": null,
+        "program_start": "2025-09-30",
+        "program_end": "2025-12-20",
+        "demo_day": null,
+        "timezone": null,
+        "date_range_text": "Sep 30 – Dec 20, 2025"
+      },
+      "categories": {
+        "types": [
+          "accelerator"
+        ],
+        "supports": [
+          "funding",
+          "mentorship"
+        ],
+        "sectors": [
+          "general"
+        ]
+      },
+      "hashtags": [
+        "#usa",
+        "#general",
+        "#funding"
+      ],
+      "index": {
+        "years": [
+          "2025"
+        ],
+        "region_code": "na",
+        "country_code": null,
+        "city_slug": null,
+        "type_keys": [
+          "accelerator"
+        ],
+        "support_keys": [
+          "funding",
+          "mentorship"
+        ],
+        "sector_keys": [
+          "general"
+        ],
+        "date_sort_key": "2025-09-30"
+      },
+      "verification": "reported",
+      "last_verified_utc": "2025-11-12T08:11:20Z"
+    },
+    {
+      "id": "a16z-speedrun-25",
+      "name": "a16z Speedrun Accelerator 2025",
+      "description": "Andreessen Horowitz program at the intersection of tech & culture",
+      "organizer": null,
+      "website": null,
+      "location": {
+        "is_virtual": false,
+        "is_hybrid": false,
+        "venue": null,
+        "city": "San Francisco",
+        "city_slug": "san-francisco",
+        "country": null,
+        "country_code": "US",
+        "region_code": "na"
+      },
+      "dates": {
+        "application_open": null,
+        "application_close": "2025-07-28",
+        "program_start": "2025-09-01",
+        "program_end": "2025-11-15",
+        "demo_day": null,
+        "timezone": null,
+        "date_range_text": "Sep–Nov 2025"
+      },
+      "categories": {
+        "types": [
+          "accelerator"
+        ],
+        "supports": [
+          "funding",
+          "mentorship"
+        ],
+        "sectors": [
+          "consumer",
+          "ai"
+        ]
+      },
+      "hashtags": [
+        "#usa",
+        "#sanfrancisco",
+        "#consumer",
+        "#ai",
+        "#funding"
+      ],
+      "index": {
+        "years": [
+          "2025"
+        ],
+        "region_code": "na",
+        "country_code": "US",
+        "city_slug": "san-francisco",
+        "type_keys": [
+          "accelerator"
+        ],
+        "support_keys": [
+          "funding",
+          "mentorship"
+        ],
+        "sector_keys": [
+          "consumer",
+          "ai"
+        ],
+        "date_sort_key": "2025-09-01"
+      },
+      "verification": "reported",
+      "last_verified_utc": "2025-11-12T08:11:20Z"
+    },
+    {
+      "id": "launch-accelerator",
+      "name": "LAUNCH Accelerator",
+      "description": "Post-seed accelerator by Jason Calacanis with investor access",
+      "organizer": null,
+      "website": null,
+      "location": {
+        "is_virtual": false,
+        "is_hybrid": false,
+        "venue": null,
+        "city": "San Francisco",
+        "city_slug": "san-francisco",
+        "country": null,
+        "country_code": "US",
+        "region_code": "na"
+      },
+      "dates": {
+        "application_open": null,
+        "application_close": null,
+        "program_start": "2025-08-01",
+        "program_end": "2025-10-31",
+        "demo_day": null,
+        "timezone": null,
+        "date_range_text": "Aug–Oct 2025 (rolling)"
+      },
+      "categories": {
+        "types": [
+          "accelerator"
+        ],
+        "supports": [
+          "funding",
+          "mentorship"
+        ],
+        "sectors": [
+          "general"
+        ]
+      },
+      "hashtags": [
+        "#usa",
+        "#sanfrancisco",
+        "#general",
+        "#funding"
+      ],
+      "index": {
+        "years": [
+          "2025"
+        ],
+        "region_code": "na",
+        "country_code": "US",
+        "city_slug": "san-francisco",
+        "type_keys": [
+          "accelerator"
+        ],
+        "support_keys": [
+          "funding",
+          "mentorship"
+        ],
+        "sector_keys": [
+          "general"
+        ],
+        "date_sort_key": "2025-08-01"
+      },
+      "verification": "reported",
+      "last_verified_utc": "2025-11-12T08:11:20Z"
+    },
+    {
+      "id": "sequoia-arc-25",
+      "name": "Sequoia Arc 2025",
+      "description": "Elite founder program by Sequoia for pre-seed/seed companies",
+      "organizer": null,
+      "website": null,
+      "location": {
+        "is_virtual": false,
+        "is_hybrid": false,
+        "venue": null,
+        "city": null,
+        "city_slug": null,
+        "country": null,
+        "country_code": null,
+        "region_code": "na"
+      },
+      "dates": {
+        "application_open": null,
+        "application_close": null,
+        "program_start": "2025-10-01",
+        "program_end": "2025-12-15",
+        "demo_day": null,
+        "timezone": null,
+        "date_range_text": "Oct–Dec 2025"
+      },
+      "categories": {
+        "types": [
+          "program"
+        ],
+        "supports": [
+          "funding",
+          "mentorship"
+        ],
+        "sectors": [
+          "general"
+        ]
+      },
+      "hashtags": [
+        "#usa",
+        "#global",
+        "#general",
+        "#funding"
+      ],
+      "index": {
+        "years": [
+          "2025"
+        ],
+        "region_code": "na",
+        "country_code": null,
+        "city_slug": null,
+        "type_keys": [
+          "program"
+        ],
+        "support_keys": [
+          "funding",
+          "mentorship"
+        ],
+        "sector_keys": [
+          "general"
+        ],
+        "date_sort_key": "2025-10-01"
+      },
+      "verification": "reported",
+      "last_verified_utc": "2025-11-12T08:11:20Z"
+    },
+    {
+      "id": "blueridgelabs-catalyst-26",
+      "name": "Blue Ridge Labs 'Catalyst' 2026",
+      "description": "Social-impact accelerator by Robin Hood Foundation with $100k support",
+      "organizer": null,
+      "website": null,
+      "location": {
+        "is_virtual": false,
+        "is_hybrid": false,
+        "venue": null,
+        "city": "New York",
+        "city_slug": "new-york",
+        "country": null,
+        "country_code": "US",
+        "region_code": "na"
+      },
+      "dates": {
+        "application_open": null,
+        "application_close": "2025-11-21",
+        "program_start": "2026-02-01",
+        "program_end": "2026-06-30",
+        "demo_day": null,
+        "timezone": null,
+        "date_range_text": "Feb–Jun 2026"
+      },
+      "categories": {
+        "types": [
+          "accelerator"
+        ],
+        "supports": [
+          "funding",
+          "mentorship"
+        ],
+        "sectors": [
+          "general"
+        ]
+      },
+      "hashtags": [
+        "#usa",
+        "#nyc",
+        "#impact",
+        "#funding"
+      ],
+      "index": {
+        "years": [
+          "2025",
+          "2026"
+        ],
+        "region_code": "na",
+        "country_code": "US",
+        "city_slug": "new-york",
+        "type_keys": [
+          "accelerator"
+        ],
+        "support_keys": [
+          "funding",
+          "mentorship"
+        ],
+        "sector_keys": [
+          "general"
+        ],
+        "date_sort_key": "2026-02-01"
+      },
+      "verification": "reported",
+      "last_verified_utc": "2025-11-12T08:11:20Z"
+    },
+    {
+      "id": "biotools-innovator-26",
+      "name": "BioTools Innovator Accelerator 2026",
+      "description": "Nonprofit accelerator & competition for life-science tools",
+      "organizer": null,
+      "website": null,
+      "location": {
+        "is_virtual": false,
+        "is_hybrid": false,
+        "venue": null,
+        "city": null,
+        "city_slug": null,
+        "country": null,
+        "country_code": null,
+        "region_code": "global"
+      },
+      "dates": {
+        "application_open": null,
+        "application_close": "2025-12-01",
+        "program_start": "2026-06-01",
+        "program_end": "2026-10-15",
+        "demo_day": null,
+        "timezone": null,
+        "date_range_text": "Jun – mid‑Oct 2026"
+      },
+      "categories": {
+        "types": [
+          "accelerator",
+          "competition"
+        ],
+        "supports": [
+          "funding",
+          "mentorship"
+        ],
+        "sectors": [
+          "bio",
+          "health"
+        ]
+      },
+      "hashtags": [
+        "#global",
+        "#bio",
+        "#health",
+        "#funding"
+      ],
+      "index": {
+        "years": [
+          "2025",
+          "2026"
+        ],
+        "region_code": "global",
+        "country_code": null,
+        "city_slug": null,
+        "type_keys": [
+          "accelerator",
+          "competition"
+        ],
+        "support_keys": [
+          "funding",
+          "mentorship"
+        ],
+        "sector_keys": [
+          "bio",
+          "health"
+        ],
+        "date_sort_key": "2026-06-01"
+      },
+      "verification": "reported",
+      "last_verified_utc": "2025-11-12T08:11:20Z"
+    },
+    {
+      "id": "era-winter-26",
+      "name": "Entrepreneurs Roundtable Accelerator (ERA) Winter 2026",
+      "description": "NYC-based accelerator investing in early-stage startups",
+      "organizer": null,
+      "website": null,
+      "location": {
+        "is_virtual": false,
+        "is_hybrid": false,
+        "venue": null,
+        "city": "New York",
+        "city_slug": "new-york",
+        "country": null,
+        "country_code": "US",
+        "region_code": "na"
+      },
+      "dates": {
+        "application_open": null,
+        "application_close": "2025-11-03",
+        "program_start": "2026-01-05",
+        "program_end": "2026-04-30",
+        "demo_day": null,
+        "timezone": null,
+        "date_range_text": "Jan–Apr 2026"
+      },
+      "categories": {
+        "types": [
+          "accelerator"
+        ],
+        "supports": [
+          "funding",
+          "mentorship"
+        ],
+        "sectors": [
+          "general"
+        ]
+      },
+      "hashtags": [
+        "#usa",
+        "#nyc",
+        "#general",
+        "#funding"
+      ],
+      "index": {
+        "years": [
+          "2025",
+          "2026"
+        ],
+        "region_code": "na",
+        "country_code": "US",
+        "city_slug": "new-york",
+        "type_keys": [
+          "accelerator"
+        ],
+        "support_keys": [
+          "funding",
+          "mentorship"
+        ],
+        "sector_keys": [
+          "general"
+        ],
+        "date_sort_key": "2026-01-05"
+      },
+      "verification": "reported",
+      "last_verified_utc": "2025-11-12T08:11:20Z"
+    },
+    {
+      "id": "techstars-telaviv-cyber-25",
+      "name": "Techstars Tel Aviv Cyber Accelerator 2025",
+      "description": "Cybersecurity-focused accelerator in Tel Aviv",
+      "organizer": null,
+      "website": null,
+      "location": {
+        "is_virtual": false,
+        "is_hybrid": false,
+        "venue": null,
+        "city": "Tel Aviv",
+        "city_slug": "tel-aviv",
+        "country": null,
+        "country_code": "IL",
+        "region_code": "mena"
+      },
+      "dates": {
+        "application_open": null,
+        "application_close": null,
+        "program_start": "2025-10-01",
+        "program_end": "2026-01-15",
+        "demo_day": null,
+        "timezone": null,
+        "date_range_text": "Oct 2025 – Jan 2026"
+      },
+      "categories": {
+        "types": [
+          "accelerator"
+        ],
+        "supports": [
+          "funding",
+          "mentorship"
+        ],
+        "sectors": [
+          "security"
+        ]
+      },
+      "hashtags": [
+        "#israel",
+        "#telaviv",
+        "#security",
+        "#funding"
+      ],
+      "index": {
+        "years": [
+          "2025",
+          "2026"
+        ],
+        "region_code": "mena",
+        "country_code": "IL",
+        "city_slug": "tel-aviv",
+        "type_keys": [
+          "accelerator"
+        ],
+        "support_keys": [
+          "funding",
+          "mentorship"
+        ],
+        "sector_keys": [
+          "security"
+        ],
+        "date_sort_key": "2025-10-01"
+      },
+      "verification": "hypothetical",
+      "last_verified_utc": "2025-11-12T08:11:20Z"
+    },
+    {
+      "id": "500-global-flagship-25",
+      "name": "500 Global Flagship Accelerator (2025)",
+      "description": "Silicon Valley accelerator investing in early-stage companies",
+      "organizer": null,
+      "website": null,
+      "location": {
+        "is_virtual": false,
+        "is_hybrid": false,
+        "venue": null,
+        "city": "San Francisco",
+        "city_slug": "san-francisco",
+        "country": null,
+        "country_code": "US",
+        "region_code": "na"
+      },
+      "dates": {
+        "application_open": "2025-01-01",
+        "application_close": null,
+        "program_start": "2025-03-01",
+        "program_end": "2025-05-31",
+        "demo_day": null,
+        "timezone": null,
+        "date_range_text": "Multiple cohorts in 2025"
+      },
+      "categories": {
+        "types": [
+          "accelerator"
+        ],
+        "supports": [
+          "funding",
+          "mentorship"
+        ],
+        "sectors": [
+          "general"
+        ]
+      },
+      "hashtags": [
+        "#usa",
+        "#sanfrancisco",
+        "#general",
+        "#funding"
+      ],
+      "index": {
+        "years": [
+          "2025"
+        ],
+        "region_code": "na",
+        "country_code": "US",
+        "city_slug": "san-francisco",
+        "type_keys": [
+          "accelerator"
+        ],
+        "support_keys": [
+          "funding",
+          "mentorship"
+        ],
+        "sector_keys": [
+          "general"
+        ],
+        "date_sort_key": "2025-03-01"
+      },
+      "verification": "reported",
+      "last_verified_utc": "2025-11-12T08:11:20Z"
+    },
+    {
+      "id": "gfs-ai-energy-na-25",
+      "name": "Google for Startups Accelerator: AI for Energy (North America) 2025",
+      "description": "Hybrid, equity‑free program; mentorship and up to cloud credits",
+      "organizer": null,
+      "website": null,
+      "location": {
+        "is_virtual": false,
+        "is_hybrid": true,
+        "venue": null,
+        "city": "Remote",
+        "city_slug": "remote",
+        "country": null,
+        "country_code": "US",
+        "region_code": "na"
+      },
+      "dates": {
+        "application_open": "2025-03-06",
+        "application_close": "2025-06-30",
+        "program_start": "2025-09-01",
+        "program_end": "2025-11-15",
+        "demo_day": null,
+        "timezone": null,
+        "date_range_text": "Fall 2025"
+      },
+      "categories": {
+        "types": [
+          "accelerator"
+        ],
+        "supports": [
+          "compute",
+          "credits",
+          "resources",
+          "mentorship"
+        ],
+        "sectors": [
+          "ai",
+          "energy",
+          "climatetech"
+        ]
+      },
+      "hashtags": [
+        "#usa",
+        "#remote",
+        "#ai",
+        "#energy",
+        "#compute"
+      ],
+      "index": {
+        "years": [
+          "2025"
+        ],
+        "region_code": "na",
+        "country_code": "US",
+        "city_slug": "remote",
+        "type_keys": [
+          "accelerator"
+        ],
+        "support_keys": [
+          "compute",
+          "credits",
+          "resources",
+          "mentorship"
+        ],
+        "sector_keys": [
+          "ai",
+          "energy",
+          "climatetech"
+        ],
+        "date_sort_key": "2025-09-01"
+      },
+      "verification": "reported",
+      "last_verified_utc": "2025-11-12T08:11:20Z"
+    },
+    {
+      "id": "gfs-climate-25",
+      "name": "Google for Startups Accelerator: Climate Change 2025",
+      "description": "Equity‑free support from Google engineers and product teams",
+      "organizer": null,
+      "website": null,
+      "location": {
+        "is_virtual": false,
+        "is_hybrid": false,
+        "venue": null,
+        "city": null,
+        "city_slug": null,
+        "country": null,
+        "country_code": null,
+        "region_code": "global"
+      },
+      "dates": {
+        "application_open": null,
+        "application_close": null,
+        "program_start": "2025-09-01",
+        "program_end": "2025-11-30",
+        "demo_day": null,
+        "timezone": null,
+        "date_range_text": "H2 2025"
+      },
+      "categories": {
+        "types": [
+          "accelerator"
+        ],
+        "supports": [
+          "resources",
+          "mentorship",
+          "credits"
+        ],
+        "sectors": [
+          "climatetech",
+          "ai"
+        ]
+      },
+      "hashtags": [
+        "#global",
+        "#climate",
+        "#ai",
+        "#resources"
+      ],
+      "index": {
+        "years": [
+          "2025"
+        ],
+        "region_code": "global",
+        "country_code": null,
+        "city_slug": null,
+        "type_keys": [
+          "accelerator"
+        ],
+        "support_keys": [
+          "resources",
+          "mentorship",
+          "credits"
+        ],
+        "sector_keys": [
+          "climatetech",
+          "ai"
+        ],
+        "date_sort_key": "2025-09-01"
+      },
+      "verification": "reported",
+      "last_verified_utc": "2025-11-12T08:11:20Z"
+    },
+    {
+      "id": "startup-chile-seed-25",
+      "name": "Startup Chile Seed Accelerator (2025)",
+      "description": "Government-backed accelerator with equity‑free grant and visa",
+      "organizer": null,
+      "website": null,
+      "location": {
+        "is_virtual": false,
+        "is_hybrid": false,
+        "venue": null,
+        "city": "Santiago",
+        "city_slug": "santiago",
+        "country": null,
+        "country_code": "CL",
+        "region_code": "latam"
+      },
+      "dates": {
+        "application_open": "2025-01-15",
+        "application_close": "2025-03-15",
+        "program_start": "2025-06-01",
+        "program_end": "2025-11-30",
+        "demo_day": null,
+        "timezone": null,
+        "date_range_text": "Jun–Nov 2025"
+      },
+      "categories": {
+        "types": [
+          "accelerator"
+        ],
+        "supports": [
+          "funding",
+          "resources"
+        ],
+        "sectors": [
+          "general"
+        ]
+      },
+      "hashtags": [
+        "#chile",
+        "#santiago",
+        "#general",
+        "#funding"
+      ],
+      "index": {
+        "years": [
+          "2025"
+        ],
+        "region_code": "latam",
+        "country_code": "CL",
+        "city_slug": "santiago",
+        "type_keys": [
+          "accelerator"
+        ],
+        "support_keys": [
+          "funding",
+          "resources"
+        ],
+        "sector_keys": [
+          "general"
+        ],
+        "date_sort_key": "2025-06-01"
+      },
+      "verification": "reported",
+      "last_verified_utc": "2025-11-12T08:11:20Z"
+    },
+    {
+      "id": "cdl-2025-26",
+      "name": "Creative Destruction Lab (CDL) 2025–26",
+      "description": "Milestone-based deeptech program with mentoring (no direct funding)",
+      "organizer": null,
+      "website": null,
+      "location": {
+        "is_virtual": false,
+        "is_hybrid": false,
+        "venue": null,
+        "city": null,
+        "city_slug": null,
+        "country": null,
+        "country_code": null,
+        "region_code": "global"
+      },
+      "dates": {
+        "application_open": null,
+        "application_close": "2025-07-15",
+        "program_start": "2025-10-01",
+        "program_end": "2026-06-30",
+        "demo_day": null,
+        "timezone": null,
+        "date_range_text": "Oct 2025 – Jun 2026"
+      },
+      "categories": {
+        "types": [
+          "program"
+        ],
+        "supports": [
+          "mentorship",
+          "resources"
+        ],
+        "sectors": [
+          "deeptech",
+          "ai",
+          "bio",
+          "climatetech"
+        ]
+      },
+      "hashtags": [
+        "#global",
+        "#deeptech",
+        "#ai",
+        "#resources"
+      ],
+      "index": {
+        "years": [
+          "2025",
+          "2026"
+        ],
+        "region_code": "global",
+        "country_code": null,
+        "city_slug": null,
+        "type_keys": [
+          "program"
+        ],
+        "support_keys": [
+          "mentorship",
+          "resources"
+        ],
+        "sector_keys": [
+          "deeptech",
+          "ai",
+          "bio",
+          "climatetech"
+        ],
+        "date_sort_key": "2025-10-01"
+      },
+      "verification": "reported",
+      "last_verified_utc": "2025-11-12T08:11:20Z"
+    },
+    {
+      "id": "plugandplay-fintech-f25",
+      "name": "Plug and Play Fintech Batch (Fall 2025)",
+      "description": "Equity‑free corporate innovation program enabling pilots",
+      "organizer": null,
+      "website": null,
+      "location": {
+        "is_virtual": false,
+        "is_hybrid": false,
+        "venue": null,
+        "city": "Sunnyvale",
+        "city_slug": "sunnyvale",
+        "country": null,
+        "country_code": "US",
+        "region_code": "na"
+      },
+      "dates": {
+        "application_open": null,
+        "application_close": "2025-07-15",
+        "program_start": "2025-09-01",
+        "program_end": "2025-11-30",
+        "demo_day": null,
+        "timezone": null,
+        "date_range_text": "Sep–Nov 2025"
+      },
+      "categories": {
+        "types": [
+          "accelerator"
+        ],
+        "supports": [
+          "resources",
+          "mentorship"
+        ],
+        "sectors": [
+          "fintech"
+        ]
+      },
+      "hashtags": [
+        "#usa",
+        "#siliconvalley",
+        "#fintech",
+        "#resources"
+      ],
+      "index": {
+        "years": [
+          "2025"
+        ],
+        "region_code": "na",
+        "country_code": "US",
+        "city_slug": "sunnyvale",
+        "type_keys": [
+          "accelerator"
+        ],
+        "support_keys": [
+          "resources",
+          "mentorship"
+        ],
+        "sector_keys": [
+          "fintech"
+        ],
+        "date_sort_key": "2025-09-01"
+      },
+      "verification": "reported",
+      "last_verified_utc": "2025-11-12T08:11:20Z"
+    },
+    {
+      "id": "sbc-afritech-25",
+      "name": "Startupbootcamp AfriTech 2025",
+      "description": "Pan‑African accelerator providing stipends and investor access",
+      "organizer": null,
+      "website": null,
+      "location": {
+        "is_virtual": false,
+        "is_hybrid": false,
+        "venue": null,
+        "city": "Cape Town",
+        "city_slug": "cape-town",
+        "country": null,
+        "country_code": "ZA",
+        "region_code": "africa"
+      },
+      "dates": {
+        "application_open": "2025-03-01",
+        "application_close": "2025-05-15",
+        "program_start": "2025-08-01",
+        "program_end": "2025-11-01",
+        "demo_day": null,
+        "timezone": null,
+        "date_range_text": "Aug–Nov 2025"
+      },
+      "categories": {
+        "types": [
+          "accelerator"
+        ],
+        "supports": [
+          "funding",
+          "resources",
+          "mentorship"
+        ],
+        "sectors": [
+          "general"
+        ]
+      },
+      "hashtags": [
+        "#africa",
+        "#capetown",
+        "#general",
+        "#funding"
+      ],
+      "index": {
+        "years": [
+          "2025"
+        ],
+        "region_code": "africa",
+        "country_code": "ZA",
+        "city_slug": "cape-town",
+        "type_keys": [
+          "accelerator"
+        ],
+        "support_keys": [
+          "funding",
+          "resources",
+          "mentorship"
+        ],
+        "sector_keys": [
+          "general"
+        ],
+        "date_sort_key": "2025-08-01"
+      },
+      "verification": "reported",
+      "last_verified_utc": "2025-11-12T08:11:20Z"
+    },
+    {
+      "id": "tc-battlefield-200-25",
+      "name": "TechCrunch Disrupt – Startup Battlefield 200 (2025)",
+      "description": "Top 200 startups showcase; winner gets $100k equity‑free prize",
+      "organizer": null,
+      "website": null,
+      "location": {
+        "is_virtual": false,
+        "is_hybrid": false,
+        "venue": null,
+        "city": "San Francisco",
+        "city_slug": "san-francisco",
+        "country": null,
+        "country_code": "US",
+        "region_code": "na"
+      },
+      "dates": {
+        "application_open": null,
+        "application_close": "2025-06-16",
+        "program_start": "2025-10-27",
+        "program_end": "2025-10-29",
+        "demo_day": null,
+        "timezone": null,
+        "date_range_text": "Oct 27–29, 2025"
+      },
+      "categories": {
+        "types": [
+          "competition",
+          "demo_day"
+        ],
+        "supports": [
+          "funding",
+          "resources"
+        ],
+        "sectors": [
+          "general"
+        ]
+      },
+      "hashtags": [
+        "#usa",
+        "#sanfrancisco",
+        "#general",
+        "#funding"
+      ],
+      "index": {
+        "years": [
+          "2025"
+        ],
+        "region_code": "na",
+        "country_code": "US",
+        "city_slug": "san-francisco",
+        "type_keys": [
+          "competition",
+          "demo_day"
+        ],
+        "support_keys": [
+          "funding",
+          "resources"
+        ],
+        "sector_keys": [
+          "general"
+        ],
+        "date_sort_key": "2025-10-27"
+      },
+      "verification": "reported",
+      "last_verified_utc": "2025-11-12T08:11:20Z"
+    },
+    {
+      "id": "startup-world-cup-25",
+      "name": "Startup World Cup 2025 – Grand Finale",
+      "description": "Global pitch competition culminating in $1M investment prize",
+      "organizer": null,
+      "website": null,
+      "location": {
+        "is_virtual": false,
+        "is_hybrid": false,
+        "venue": null,
+        "city": "San Francisco",
+        "city_slug": "san-francisco",
+        "country": null,
+        "country_code": "US",
+        "region_code": "na"
+      },
+      "dates": {
+        "application_open": null,
+        "application_close": null,
+        "program_start": "2025-10-17",
+        "program_end": "2025-10-17",
+        "demo_day": null,
+        "timezone": null,
+        "date_range_text": "Oct 17, 2025"
+      },
+      "categories": {
+        "types": [
+          "competition"
+        ],
+        "supports": [
+          "funding",
+          "resources"
+        ],
+        "sectors": [
+          "general"
+        ]
+      },
+      "hashtags": [
+        "#usa",
+        "#sanfrancisco",
+        "#general",
+        "#funding"
+      ],
+      "index": {
+        "years": [
+          "2025"
+        ],
+        "region_code": "na",
+        "country_code": "US",
+        "city_slug": "san-francisco",
+        "type_keys": [
+          "competition"
+        ],
+        "support_keys": [
+          "funding",
+          "resources"
+        ],
+        "sector_keys": [
+          "general"
+        ],
+        "date_sort_key": "2025-10-17"
+      },
+      "verification": "reported",
+      "last_verified_utc": "2025-11-12T08:11:20Z"
+    },
+    {
+      "id": "slush-100-25",
+      "name": "Slush 100 Pitch Competition 2025",
+      "description": "International competition with €1M investment prize at Slush",
+      "organizer": null,
+      "website": null,
+      "location": {
+        "is_virtual": false,
+        "is_hybrid": false,
+        "venue": null,
+        "city": "Helsinki",
+        "city_slug": "helsinki",
+        "country": null,
+        "country_code": "FI",
+        "region_code": "eu"
+      },
+      "dates": {
+        "application_open": null,
+        "application_close": null,
+        "program_start": "2025-11-19",
+        "program_end": "2025-11-20",
+        "demo_day": null,
+        "timezone": null,
+        "date_range_text": "Nov 19–20, 2025"
+      },
+      "categories": {
+        "types": [
+          "competition"
+        ],
+        "supports": [
+          "funding",
+          "resources"
+        ],
+        "sectors": [
+          "general"
+        ]
+      },
+      "hashtags": [
+        "#finland",
+        "#helsinki",
+        "#general",
+        "#funding"
+      ],
+      "index": {
+        "years": [
+          "2025"
+        ],
+        "region_code": "eu",
+        "country_code": "FI",
+        "city_slug": "helsinki",
+        "type_keys": [
+          "competition"
+        ],
+        "support_keys": [
+          "funding",
+          "resources"
+        ],
+        "sector_keys": [
+          "general"
+        ],
+        "date_sort_key": "2025-11-19"
+      },
+      "verification": "reported",
+      "last_verified_utc": "2025-11-12T08:11:20Z"
+    },
+    {
+      "id": "websummit-pitch-lisbon-25",
+      "name": "Web Summit PITCH 2025 (Lisbon)",
+      "description": "Early-stage pitch contest at Web Summit Lisbon",
+      "organizer": null,
+      "website": null,
+      "location": {
+        "is_virtual": false,
+        "is_hybrid": false,
+        "venue": null,
+        "city": "Lisbon",
+        "city_slug": "lisbon",
+        "country": null,
+        "country_code": "PT",
+        "region_code": "eu"
+      },
+      "dates": {
+        "application_open": null,
+        "application_close": null,
+        "program_start": "2025-11-05",
+        "program_end": "2025-11-07",
+        "demo_day": null,
+        "timezone": null,
+        "date_range_text": "Early Nov 2025"
+      },
+      "categories": {
+        "types": [
+          "competition"
+        ],
+        "supports": [
+          "funding",
+          "resources"
+        ],
+        "sectors": [
+          "general"
+        ]
+      },
+      "hashtags": [
+        "#portugal",
+        "#lisbon",
+        "#general",
+        "#funding"
+      ],
+      "index": {
+        "years": [
+          "2025"
+        ],
+        "region_code": "eu",
+        "country_code": "PT",
+        "city_slug": "lisbon",
+        "type_keys": [
+          "competition"
+        ],
+        "support_keys": [
+          "funding",
+          "resources"
+        ],
+        "sector_keys": [
+          "general"
+        ],
+        "date_sort_key": "2025-11-05"
+      },
+      "verification": "reported",
+      "last_verified_utc": "2025-11-12T08:11:20Z"
+    },
+    {
+      "id": "south-summit-competition-25",
+      "name": "South Summit Startup Competition 2025",
+      "description": "Global competition in Madrid and Brazil editions",
+      "organizer": null,
+      "website": null,
+      "location": {
+        "is_virtual": false,
+        "is_hybrid": false,
+        "venue": null,
+        "city": "Madrid",
+        "city_slug": "madrid",
+        "country": null,
+        "country_code": "ES",
+        "region_code": "eu"
+      },
+      "dates": {
+        "application_open": null,
+        "application_close": null,
+        "program_start": "2025-06-01",
+        "program_end": "2025-06-30",
+        "demo_day": null,
+        "timezone": null,
+        "date_range_text": "June 2025 (Madrid)"
+      },
+      "categories": {
+        "types": [
+          "competition"
+        ],
+        "supports": [
+          "funding",
+          "resources"
+        ],
+        "sectors": [
+          "general"
+        ]
+      },
+      "hashtags": [
+        "#spain",
+        "#madrid",
+        "#general",
+        "#funding"
+      ],
+      "index": {
+        "years": [
+          "2025"
+        ],
+        "region_code": "eu",
+        "country_code": "ES",
+        "city_slug": "madrid",
+        "type_keys": [
+          "competition"
+        ],
+        "support_keys": [
+          "funding",
+          "resources"
+        ],
+        "sector_keys": [
+          "general"
+        ],
+        "date_sort_key": "2025-06-01"
+      },
+      "verification": "reported",
+      "last_verified_utc": "2025-11-12T08:11:20Z"
+    },
+    {
+      "id": "websummit-pitch-vancouver-25",
+      "name": "Web Summit PITCH 2025 (Vancouver)",
+      "description": "Pitch competition at Web Summit Vancouver",
+      "organizer": null,
+      "website": null,
+      "location": {
+        "is_virtual": false,
+        "is_hybrid": false,
+        "venue": null,
+        "city": "Vancouver",
+        "city_slug": "vancouver",
+        "country": null,
+        "country_code": "CA",
+        "region_code": "na"
+      },
+      "dates": {
+        "application_open": null,
+        "application_close": null,
+        "program_start": "2025-10-15",
+        "program_end": "2025-10-17",
+        "demo_day": null,
+        "timezone": null,
+        "date_range_text": "Q4 2025 (TBD)"
+      },
+      "categories": {
+        "types": [
+          "competition"
+        ],
+        "supports": [
+          "funding",
+          "resources"
+        ],
+        "sectors": [
+          "general"
+        ]
+      },
+      "hashtags": [
+        "#canada",
+        "#vancouver",
+        "#general",
+        "#funding"
+      ],
+      "index": {
+        "years": [
+          "2025"
+        ],
+        "region_code": "na",
+        "country_code": "CA",
+        "city_slug": "vancouver",
+        "type_keys": [
+          "competition"
+        ],
+        "support_keys": [
+          "funding",
+          "resources"
+        ],
+        "sector_keys": [
+          "general"
+        ],
+        "date_sort_key": "2025-10-15"
+      },
+      "verification": "reported",
+      "last_verified_utc": "2025-11-12T08:11:20Z"
+    },
+    {
+      "id": "utah-entrepreneur-challenge-25",
+      "name": "Utah Entrepreneur Challenge 2025",
+      "description": "Statewide student startup competition with $100k+ in prizes",
+      "organizer": null,
+      "website": null,
+      "location": {
+        "is_virtual": false,
+        "is_hybrid": false,
+        "venue": null,
+        "city": "Salt Lake City",
+        "city_slug": "salt-lake-city",
+        "country": null,
+        "country_code": "US",
+        "region_code": "na"
+      },
+      "dates": {
+        "application_open": null,
+        "application_close": "2025-01-15",
+        "program_start": "2025-04-15",
+        "program_end": "2025-04-15",
+        "demo_day": null,
+        "timezone": null,
+        "date_range_text": "April 2025"
+      },
+      "categories": {
+        "types": [
+          "competition"
+        ],
+        "supports": [
+          "funding",
+          "resources"
+        ],
+        "sectors": [
+          "general"
+        ]
+      },
+      "hashtags": [
+        "#usa",
+        "#utah",
+        "#student",
+        "#funding"
+      ],
+      "index": {
+        "years": [
+          "2025"
+        ],
+        "region_code": "na",
+        "country_code": "US",
+        "city_slug": "salt-lake-city",
+        "type_keys": [
+          "competition"
+        ],
+        "support_keys": [
+          "funding",
+          "resources"
+        ],
+        "sector_keys": [
+          "general"
+        ],
+        "date_sort_key": "2025-04-15"
+      },
+      "verification": "reported",
+      "last_verified_utc": "2025-11-12T08:11:20Z"
+    },
+    {
+      "id": "next-founders-pitch-25",
+      "name": "Next Founders Pitch Competition 2025 (Toronto)",
+      "description": "Pitch event under Next Canada’s programs",
+      "organizer": null,
+      "website": null,
+      "location": {
+        "is_virtual": false,
+        "is_hybrid": false,
+        "venue": null,
+        "city": "Toronto",
+        "city_slug": "toronto",
+        "country": null,
+        "country_code": "CA",
+        "region_code": "na"
+      },
+      "dates": {
+        "application_open": null,
+        "application_close": null,
+        "program_start": "2025-07-01",
+        "program_end": "2025-07-01",
+        "demo_day": null,
+        "timezone": null,
+        "date_range_text": "Mid‑2025"
+      },
+      "categories": {
+        "types": [
+          "competition"
+        ],
+        "supports": [
+          "funding",
+          "resources"
+        ],
+        "sectors": [
+          "general"
+        ]
+      },
+      "hashtags": [
+        "#canada",
+        "#toronto",
+        "#general",
+        "#funding"
+      ],
+      "index": {
+        "years": [
+          "2025"
+        ],
+        "region_code": "na",
+        "country_code": "CA",
+        "city_slug": "toronto",
+        "type_keys": [
+          "competition"
+        ],
+        "support_keys": [
+          "funding",
+          "resources"
+        ],
+        "sector_keys": [
+          "general"
+        ],
+        "date_sort_key": "2025-07-01"
+      },
+      "verification": "reported",
+      "last_verified_utc": "2025-11-12T08:11:20Z"
+    },
+    {
+      "id": "young-entrepreneur-summit-25",
+      "name": "Young Entrepreneur Summit 2025",
+      "description": "Summit and pitch for under‑25 founders",
+      "organizer": null,
+      "website": null,
+      "location": {
+        "is_virtual": false,
+        "is_hybrid": false,
+        "venue": null,
+        "city": null,
+        "city_slug": null,
+        "country": null,
+        "country_code": null,
+        "region_code": "global"
+      },
+      "dates": {
+        "application_open": null,
+        "application_close": null,
+        "program_start": "2025-09-01",
+        "program_end": "2025-09-03",
+        "demo_day": null,
+        "timezone": null,
+        "date_range_text": "2025 (TBA)"
+      },
+      "categories": {
+        "types": [
+          "competition",
+          "conference"
+        ],
+        "supports": [
+          "funding",
+          "resources"
+        ],
+        "sectors": [
+          "general"
+        ]
+      },
+      "hashtags": [
+        "#global",
+        "#youth",
+        "#general",
+        "#funding"
+      ],
+      "index": {
+        "years": [
+          "2025"
+        ],
+        "region_code": "global",
+        "country_code": null,
+        "city_slug": null,
+        "type_keys": [
+          "competition",
+          "conference"
+        ],
+        "support_keys": [
+          "funding",
+          "resources"
+        ],
+        "sector_keys": [
+          "general"
+        ],
+        "date_sort_key": "2025-09-01"
+      },
+      "verification": "reported",
+      "last_verified_utc": "2025-11-12T08:11:20Z"
+    },
+    {
+      "id": "mit-100k-2025",
+      "name": "MIT $100K Launch 2025",
+      "description": "Flagship MIT student startup competition (non‑dilutive)",
+      "organizer": null,
+      "website": null,
+      "location": {
+        "is_virtual": false,
+        "is_hybrid": false,
+        "venue": null,
+        "city": "Cambridge",
+        "city_slug": "cambridge",
+        "country": null,
+        "country_code": "US",
+        "region_code": "na"
+      },
+      "dates": {
+        "application_open": null,
+        "application_close": "2025-01-17",
+        "program_start": "2025-05-12",
+        "program_end": "2025-05-12",
+        "demo_day": null,
+        "timezone": null,
+        "date_range_text": "May 12, 2025"
+      },
+      "categories": {
+        "types": [
+          "competition"
+        ],
+        "supports": [
+          "funding",
+          "resources"
+        ],
+        "sectors": [
+          "general"
+        ]
+      },
+      "hashtags": [
+        "#usa",
+        "#boston",
+        "#student",
+        "#funding"
+      ],
+      "index": {
+        "years": [
+          "2025"
+        ],
+        "region_code": "na",
+        "country_code": "US",
+        "city_slug": "cambridge",
+        "type_keys": [
+          "competition"
+        ],
+        "support_keys": [
+          "funding",
+          "resources"
+        ],
+        "sector_keys": [
+          "general"
+        ],
+        "date_sort_key": "2025-05-12"
+      },
+      "verification": "reported",
+      "last_verified_utc": "2025-11-12T08:11:20Z"
+    },
+    {
+      "id": "mit-climate-energy-prize-26",
+      "name": "MIT Climate & Energy Prize 2026",
+      "description": "Student competition for climate and energy ventures",
+      "organizer": null,
+      "website": null,
+      "location": {
+        "is_virtual": false,
+        "is_hybrid": false,
+        "venue": null,
+        "city": "Cambridge",
+        "city_slug": "cambridge",
+        "country": null,
+        "country_code": "US",
+        "region_code": "na"
+      },
+      "dates": {
+        "application_open": "2025-11-03",
+        "application_close": "2026-01-11",
+        "program_start": "2026-04-15",
+        "program_end": "2026-04-15",
+        "demo_day": null,
+        "timezone": null,
+        "date_range_text": "Spring 2026"
+      },
+      "categories": {
+        "types": [
+          "competition"
+        ],
+        "supports": [
+          "funding",
+          "resources"
+        ],
+        "sectors": [
+          "climatetech",
+          "energy"
+        ]
+      },
+      "hashtags": [
+        "#usa",
+        "#boston",
+        "#climate",
+        "#energy",
+        "#funding"
+      ],
+      "index": {
+        "years": [
+          "2026"
+        ],
+        "region_code": "na",
+        "country_code": "US",
+        "city_slug": "cambridge",
+        "type_keys": [
+          "competition"
+        ],
+        "support_keys": [
+          "funding",
+          "resources"
+        ],
+        "sector_keys": [
+          "climatetech",
+          "energy"
+        ],
+        "date_sort_key": "2026-04-15"
+      },
+      "verification": "reported",
+      "last_verified_utc": "2025-11-12T08:11:20Z"
+    },
+    {
+      "id": "hult-prize-2025",
+      "name": "Hult Prize 2025 – Global Finals",
+      "description": "World’s largest student social enterprise competition ($1M)",
+      "organizer": null,
+      "website": null,
+      "location": {
+        "is_virtual": false,
+        "is_hybrid": false,
+        "venue": null,
+        "city": null,
+        "city_slug": null,
+        "country": null,
+        "country_code": null,
+        "region_code": "global"
+      },
+      "dates": {
+        "application_open": null,
+        "application_close": null,
+        "program_start": "2025-09-15",
+        "program_end": "2025-09-15",
+        "demo_day": null,
+        "timezone": null,
+        "date_range_text": "Sep 2025"
+      },
+      "categories": {
+        "types": [
+          "competition"
+        ],
+        "supports": [
+          "funding",
+          "resources"
+        ],
+        "sectors": [
+          "general"
+        ]
+      },
+      "hashtags": [
+        "#global",
+        "#student",
+        "#impact",
+        "#funding"
+      ],
+      "index": {
+        "years": [
+          "2025"
+        ],
+        "region_code": "global",
+        "country_code": null,
+        "city_slug": null,
+        "type_keys": [
+          "competition"
+        ],
+        "support_keys": [
+          "funding",
+          "resources"
+        ],
+        "sector_keys": [
+          "general"
+        ],
+        "date_sort_key": "2025-09-15"
+      },
+      "verification": "reported",
+      "last_verified_utc": "2025-11-12T08:11:20Z"
+    },
+    {
+      "id": "googleorg-genai-2025",
+      "name": "Google.org Accelerator: Generative AI (Open Call 2025)",
+      "description": "Grants for nonprofits and social enterprises using genAI; 20 winners share $30M",
+      "organizer": null,
+      "website": null,
+      "location": {
+        "is_virtual": false,
+        "is_hybrid": false,
+        "venue": null,
+        "city": null,
+        "city_slug": null,
+        "country": null,
+        "country_code": null,
+        "region_code": "global"
+      },
+      "dates": {
+        "application_open": "2025-01-01",
+        "application_close": "2025-05-15",
+        "program_start": "2025-06-09",
+        "program_end": "2025-12-31",
+        "demo_day": null,
+        "timezone": null,
+        "date_range_text": "2025 (6‑month support)"
+      },
+      "categories": {
+        "types": [
+          "grant",
+          "program"
+        ],
+        "supports": [
+          "funding",
+          "resources"
+        ],
+        "sectors": [
+          "ai",
+          "general"
+        ]
+      },
+      "hashtags": [
+        "#global",
+        "#ai",
+        "#impact",
+        "#funding",
+        "#resources"
+      ],
+      "index": {
+        "years": [
+          "2025"
+        ],
+        "region_code": "global",
+        "country_code": null,
+        "city_slug": null,
+        "type_keys": [
+          "grant",
+          "program"
+        ],
+        "support_keys": [
+          "funding",
+          "resources"
+        ],
+        "sector_keys": [
+          "ai",
+          "general"
+        ],
+        "date_sort_key": "2025-06-09"
+      },
+      "verification": "reported",
+      "last_verified_utc": "2025-11-12T08:11:20Z"
+    },
+    {
+      "id": "microsoft-imagine-cup-2025",
+      "name": "Microsoft Imagine Cup 2025",
+      "description": "Global student tech competition (cash prizes + Azure credits)",
+      "organizer": null,
+      "website": null,
+      "location": {
+        "is_virtual": false,
+        "is_hybrid": false,
+        "venue": null,
+        "city": null,
+        "city_slug": null,
+        "country": null,
+        "country_code": null,
+        "region_code": "global"
+      },
+      "dates": {
+        "application_open": null,
+        "application_close": null,
+        "program_start": "2025-05-01",
+        "program_end": "2025-05-31",
+        "demo_day": null,
+        "timezone": null,
+        "date_range_text": "2025 season (World Championship at Build)"
+      },
+      "categories": {
+        "types": [
+          "competition"
+        ],
+        "supports": [
+          "funding",
+          "compute",
+          "credits",
+          "resources"
+        ],
+        "sectors": [
+          "general",
+          "ai"
+        ]
+      },
+      "hashtags": [
+        "#global",
+        "#student",
+        "#ai",
+        "#funding",
+        "#compute"
+      ],
+      "index": {
+        "years": [
+          "2025"
+        ],
+        "region_code": "global",
+        "country_code": null,
+        "city_slug": null,
+        "type_keys": [
+          "competition"
+        ],
+        "support_keys": [
+          "funding",
+          "compute",
+          "credits",
+          "resources"
+        ],
+        "sector_keys": [
+          "general",
+          "ai"
+        ],
+        "date_sort_key": "2025-05-01"
+      },
+      "verification": "reported",
+      "last_verified_utc": "2025-11-12T08:11:20Z"
+    },
+    {
+      "id": "sxsw-pitch-2026",
+      "name": "SXSW Pitch 2026",
+      "description": "Premier startup pitch competition at SXSW (multiple categories)",
+      "organizer": null,
+      "website": null,
+      "location": {
+        "is_virtual": false,
+        "is_hybrid": false,
+        "venue": null,
+        "city": "Austin",
+        "city_slug": "austin",
+        "country": null,
+        "country_code": "US",
+        "region_code": "na"
+      },
+      "dates": {
+        "application_open": "2025-06-01",
+        "application_close": "2025-11-07",
+        "program_start": "2026-03-14",
+        "program_end": "2026-03-16",
+        "demo_day": null,
+        "timezone": null,
+        "date_range_text": "Mar 2026"
+      },
+      "categories": {
+        "types": [
+          "competition"
+        ],
+        "supports": [
+          "funding",
+          "resources"
+        ],
+        "sectors": [
+          "general"
+        ]
+      },
+      "hashtags": [
+        "#usa",
+        "#austin",
+        "#general",
+        "#funding"
+      ],
+      "index": {
+        "years": [
+          "2025",
+          "2026"
+        ],
+        "region_code": "na",
+        "country_code": "US",
+        "city_slug": "austin",
+        "type_keys": [
+          "competition"
+        ],
+        "support_keys": [
+          "funding",
+          "resources"
+        ],
+        "sector_keys": [
+          "general"
+        ],
+        "date_sort_key": "2026-03-14"
+      },
+      "verification": "reported",
+      "last_verified_utc": "2025-11-12T08:11:20Z"
+    },
+    {
+      "id": "sxsw-edu-launch-2026",
+      "name": "SXSW EDU Launch 2026",
+      "description": "Pitch competition for education startups at SXSW EDU",
+      "organizer": null,
+      "website": null,
+      "location": {
+        "is_virtual": false,
+        "is_hybrid": false,
+        "venue": null,
+        "city": "Austin",
+        "city_slug": "austin",
+        "country": null,
+        "country_code": "US",
+        "region_code": "na"
+      },
+      "dates": {
+        "application_open": null,
+        "application_close": "2025-11-02",
+        "program_start": "2026-03-10",
+        "program_end": "2026-03-12",
+        "demo_day": null,
+        "timezone": null,
+        "date_range_text": "Mar 2026"
+      },
+      "categories": {
+        "types": [
+          "competition"
+        ],
+        "supports": [
+          "funding",
+          "resources"
+        ],
+        "sectors": [
+          "edtech"
+        ]
+      },
+      "hashtags": [
+        "#usa",
+        "#austin",
+        "#edtech",
+        "#funding"
+      ],
+      "index": {
+        "years": [
+          "2025",
+          "2026"
+        ],
+        "region_code": "na",
+        "country_code": "US",
+        "city_slug": "austin",
+        "type_keys": [
+          "competition"
+        ],
+        "support_keys": [
+          "funding",
+          "resources"
+        ],
+        "sector_keys": [
+          "edtech"
+        ],
+        "date_sort_key": "2026-03-10"
+      },
+      "verification": "reported",
+      "last_verified_utc": "2025-11-12T08:11:20Z"
+    },
+    {
+      "id": "codelaunch-2025",
+      "name": "CodeLaunch 2025 (USA)",
+      "description": "Seed accelerator competition + professional dev sprint for winners",
+      "organizer": null,
+      "website": null,
+      "location": {
+        "is_virtual": false,
+        "is_hybrid": false,
+        "venue": null,
+        "city": "Dallas",
+        "city_slug": "dallas",
+        "country": null,
+        "country_code": "US",
+        "region_code": "na"
+      },
+      "dates": {
+        "application_open": "2025-02-16",
+        "application_close": "2025-07-06",
+        "program_start": "2025-11-15",
+        "program_end": "2025-11-15",
+        "demo_day": null,
+        "timezone": null,
+        "date_range_text": "Finals Nov 2025"
+      },
+      "categories": {
+        "types": [
+          "competition"
+        ],
+        "supports": [
+          "resources",
+          "mentorship"
+        ],
+        "sectors": [
+          "general"
+        ]
+      },
+      "hashtags": [
+        "#usa",
+        "#dallas",
+        "#general",
+        "#resources"
+      ],
+      "index": {
+        "years": [
+          "2025"
+        ],
+        "region_code": "na",
+        "country_code": "US",
+        "city_slug": "dallas",
+        "type_keys": [
+          "competition"
+        ],
+        "support_keys": [
+          "resources",
+          "mentorship"
+        ],
+        "sector_keys": [
+          "general"
+        ],
+        "date_sort_key": "2025-11-15"
+      },
+      "verification": "reported",
+      "last_verified_utc": "2025-11-12T08:11:20Z"
+    },
+    {
+      "id": "mit-solve-2025",
+      "name": "MIT Solve Global Challenges 2025",
+      "description": "Open innovation challenge with $1.25M+ in grants for Solvers",
+      "organizer": null,
+      "website": null,
+      "location": {
+        "is_virtual": false,
+        "is_hybrid": false,
+        "venue": null,
+        "city": null,
+        "city_slug": null,
+        "country": null,
+        "country_code": null,
+        "region_code": "global"
+      },
+      "dates": {
+        "application_open": null,
+        "application_close": "2025-05-01",
+        "program_start": "2025-09-20",
+        "program_end": "2025-09-22",
+        "demo_day": null,
+        "timezone": null,
+        "date_range_text": "Winners announced at UN Week Sep 2025"
+      },
+      "categories": {
+        "types": [
+          "competition",
+          "grant"
+        ],
+        "supports": [
+          "funding",
+          "resources"
+        ],
+        "sectors": [
+          "general",
+          "impact"
+        ]
+      },
+      "hashtags": [
+        "#global",
+        "#impact",
+        "#general",
+        "#funding"
+      ],
+      "index": {
+        "years": [
+          "2025"
+        ],
+        "region_code": "global",
+        "country_code": null,
+        "city_slug": null,
+        "type_keys": [
+          "competition",
+          "grant"
+        ],
+        "support_keys": [
+          "funding",
+          "resources"
+        ],
+        "sector_keys": [
+          "general",
+          "impact"
+        ],
+        "date_sort_key": "2025-09-20"
+      },
+      "verification": "reported",
+      "last_verified_utc": "2025-11-12T08:11:20Z"
+    },
+    {
+      "id": "hello-tomorrow-25-26",
+      "name": "Hello Tomorrow Global Challenge 2025–26",
+      "description": "Deep-tech competition with €100k Grand Prize and track awards",
+      "organizer": null,
+      "website": null,
+      "location": {
+        "is_virtual": false,
+        "is_hybrid": false,
+        "venue": null,
+        "city": "Amsterdam",
+        "city_slug": "amsterdam",
+        "country": null,
+        "country_code": "NL",
+        "region_code": "eu"
+      },
+      "dates": {
+        "application_open": "2025-09-15",
+        "application_close": "2025-11-30",
+        "program_start": "2026-06-11",
+        "program_end": "2026-06-12",
+        "demo_day": null,
+        "timezone": null,
+        "date_range_text": "Finals Jun 11–12, 2026"
+      },
+      "categories": {
+        "types": [
+          "competition"
+        ],
+        "supports": [
+          "funding",
+          "resources"
+        ],
+        "sectors": [
+          "deeptech",
+          "ai",
+          "bio",
+          "energy"
+        ]
+      },
+      "hashtags": [
+        "#netherlands",
+        "#amsterdam",
+        "#deeptech",
+        "#funding"
+      ],
+      "index": {
+        "years": [
+          "2025",
+          "2026"
+        ],
+        "region_code": "eu",
+        "country_code": "NL",
+        "city_slug": "amsterdam",
+        "type_keys": [
+          "competition"
+        ],
+        "support_keys": [
+          "funding",
+          "resources"
+        ],
+        "sector_keys": [
+          "deeptech",
+          "ai",
+          "bio",
+          "energy"
+        ],
+        "date_sort_key": "2026-06-11"
+      },
+      "verification": "reported",
+      "last_verified_utc": "2025-11-12T08:11:20Z"
+    },
+    {
+      "id": "xprize-feed-next-billion-2025",
+      "name": "XPRIZE Feed the Next Billion (Finale 2025)",
+      "description": "Multi‑year prize for alternative proteins (large prize pool)",
+      "organizer": null,
+      "website": null,
+      "location": {
+        "is_virtual": false,
+        "is_hybrid": false,
+        "venue": null,
+        "city": null,
+        "city_slug": null,
+        "country": null,
+        "country_code": null,
+        "region_code": "global"
+      },
+      "dates": {
+        "application_open": null,
+        "application_close": null,
+        "program_start": "2025-10-01",
+        "program_end": "2025-10-01",
+        "demo_day": null,
+        "timezone": null,
+        "date_range_text": "Finale 2025"
+      },
+      "categories": {
+        "types": [
+          "competition"
+        ],
+        "supports": [
+          "funding",
+          "resources"
+        ],
+        "sectors": [
+          "foodtech",
+          "climatetech"
+        ]
+      },
+      "hashtags": [
+        "#global",
+        "#foodtech",
+        "#funding"
+      ],
+      "index": {
+        "years": [
+          "2025"
+        ],
+        "region_code": "global",
+        "country_code": null,
+        "city_slug": null,
+        "type_keys": [
+          "competition"
+        ],
+        "support_keys": [
+          "funding",
+          "resources"
+        ],
+        "sector_keys": [
+          "foodtech",
+          "climatetech"
+        ],
+        "date_sort_key": "2025-10-01"
+      },
+      "verification": "reported",
+      "last_verified_utc": "2025-11-12T08:11:20Z"
+    },
+    {
+      "id": "nasa-itech-2025",
+      "name": "NASA iTech 2025",
+      "description": "Pitch forum for aerospace innovations with NASA mentorship",
+      "organizer": null,
+      "website": null,
+      "location": {
+        "is_virtual": false,
+        "is_hybrid": false,
+        "venue": null,
+        "city": "Washington",
+        "city_slug": "washington",
+        "country": null,
+        "country_code": "US",
+        "region_code": "na"
+      },
+      "dates": {
+        "application_open": null,
+        "application_close": null,
+        "program_start": "2025-04-01",
+        "program_end": "2025-12-15",
+        "demo_day": null,
+        "timezone": null,
+        "date_range_text": "Multiple pitch events in 2025"
+      },
+      "categories": {
+        "types": [
+          "competition",
+          "program"
+        ],
+        "supports": [
+          "resources",
+          "mentorship"
+        ],
+        "sectors": [
+          "deeptech"
+        ]
+      },
+      "hashtags": [
+        "#usa",
+        "#aerospace",
+        "#deeptech",
+        "#resources"
+      ],
+      "index": {
+        "years": [
+          "2025"
+        ],
+        "region_code": "na",
+        "country_code": "US",
+        "city_slug": "washington",
+        "type_keys": [
+          "competition",
+          "program"
+        ],
+        "support_keys": [
+          "resources",
+          "mentorship"
+        ],
+        "sector_keys": [
+          "deeptech"
+        ],
+        "date_sort_key": "2025-04-01"
+      },
+      "verification": "reported",
+      "last_verified_utc": "2025-11-12T08:11:20Z"
+    },
+    {
+      "id": "oracle-startup-idol-2025",
+      "name": "Oracle Global Startup Idol 2025",
+      "description": "Enterprise pitch event offering Oracle Cloud credits and pilots",
+      "organizer": null,
+      "website": null,
+      "location": {
+        "is_virtual": false,
+        "is_hybrid": false,
+        "venue": null,
+        "city": null,
+        "city_slug": null,
+        "country": null,
+        "country_code": null,
+        "region_code": "global"
+      },
+      "dates": {
+        "application_open": null,
+        "application_close": null,
+        "program_start": "2025-11-20",
+        "program_end": "2025-11-20",
+        "demo_day": null,
+        "timezone": null,
+        "date_range_text": "Late 2025"
+      },
+      "categories": {
+        "types": [
+          "competition"
+        ],
+        "supports": [
+          "compute",
+          "credits",
+          "resources"
+        ],
+        "sectors": [
+          "enterprise",
+          "saas"
+        ]
+      },
+      "hashtags": [
+        "#global",
+        "#enterprise",
+        "#compute"
+      ],
+      "index": {
+        "years": [
+          "2025"
+        ],
+        "region_code": "global",
+        "country_code": null,
+        "city_slug": null,
+        "type_keys": [
+          "competition"
+        ],
+        "support_keys": [
+          "compute",
+          "credits",
+          "resources"
+        ],
+        "sector_keys": [
+          "enterprise",
+          "saas"
+        ],
+        "date_sort_key": "2025-11-20"
+      },
+      "verification": "hypothetical",
+      "last_verified_utc": "2025-11-12T08:11:20Z"
+    },
+    {
+      "id": "nc-idea-spring-2025",
+      "name": "NC IDEA MICRO/SEED Grants – Spring 2025",
+      "description": "State grants for NC startups: $10k MICRO / $50k SEED",
+      "organizer": null,
+      "website": null,
+      "location": {
+        "is_virtual": false,
+        "is_hybrid": false,
+        "venue": null,
+        "city": "North Carolina",
+        "city_slug": "north-carolina",
+        "country": null,
+        "country_code": "US",
+        "region_code": "na"
+      },
+      "dates": {
+        "application_open": null,
+        "application_close": "2025-02-24",
+        "program_start": "2025-04-01",
+        "program_end": "2025-06-30",
+        "demo_day": null,
+        "timezone": null,
+        "date_range_text": "Spring 2025"
+      },
+      "categories": {
+        "types": [
+          "grant"
+        ],
+        "supports": [
+          "funding"
+        ],
+        "sectors": [
+          "general"
+        ]
+      },
+      "hashtags": [
+        "#usa",
+        "#northcarolina",
+        "#general",
+        "#funding"
+      ],
+      "index": {
+        "years": [
+          "2025"
+        ],
+        "region_code": "na",
+        "country_code": "US",
+        "city_slug": "north-carolina",
+        "type_keys": [
+          "grant"
+        ],
+        "support_keys": [
+          "funding"
+        ],
+        "sector_keys": [
+          "general"
+        ],
+        "date_sort_key": "2025-04-01"
+      },
+      "verification": "reported",
+      "last_verified_utc": "2025-11-12T08:11:20Z"
+    },
+    {
+      "id": "aws-impact-bootcamps-2025",
+      "name": "AWS Impact Bootcamps 2025 (Diverse Founders)",
+      "description": "Two‑day bootcamps with resources; retreat grants up to $50k",
+      "organizer": null,
+      "website": null,
+      "location": {
+        "is_virtual": false,
+        "is_hybrid": false,
+        "venue": null,
+        "city": null,
+        "city_slug": null,
+        "country": null,
+        "country_code": null,
+        "region_code": "global"
+      },
+      "dates": {
+        "application_open": "2025-07-01",
+        "application_close": "2025-09-15",
+        "program_start": "2025-09-01",
+        "program_end": "2025-12-15",
+        "demo_day": null,
+        "timezone": null,
+        "date_range_text": "Fall 2025 (multi‑city)"
+      },
+      "categories": {
+        "types": [
+          "program"
+        ],
+        "supports": [
+          "resources",
+          "funding",
+          "mentorship"
+        ],
+        "sectors": [
+          "general",
+          "ai"
+        ]
+      },
+      "hashtags": [
+        "#global",
+        "#diversity",
+        "#ai",
+        "#resources",
+        "#funding"
+      ],
+      "index": {
+        "years": [
+          "2025"
+        ],
+        "region_code": "global",
+        "country_code": null,
+        "city_slug": null,
+        "type_keys": [
+          "program"
+        ],
+        "support_keys": [
+          "resources",
+          "funding",
+          "mentorship"
+        ],
+        "sector_keys": [
+          "general",
+          "ai"
+        ],
+        "date_sort_key": "2025-09-01"
+      },
+      "verification": "reported",
+      "last_verified_utc": "2025-11-12T08:11:20Z"
+    },
+    {
+      "id": "gfs-cloud-program-2025",
+      "name": "Google for Startups Cloud Program 2025",
+      "description": "Cloud credits and technical enablement for startups (equity‑free)",
+      "organizer": null,
+      "website": null,
+      "location": {
+        "is_virtual": false,
+        "is_hybrid": false,
+        "venue": null,
+        "city": null,
+        "city_slug": null,
+        "country": null,
+        "country_code": null,
+        "region_code": "global"
+      },
+      "dates": {
+        "application_open": null,
+        "application_close": null,
+        "program_start": "2025-01-01",
+        "program_end": "2025-12-31",
+        "demo_day": null,
+        "timezone": null,
+        "date_range_text": "Rolling in 2025"
+      },
+      "categories": {
+        "types": [
+          "program"
+        ],
+        "supports": [
+          "compute",
+          "credits",
+          "resources",
+          "mentorship"
+        ],
+        "sectors": [
+          "general",
+          "ai"
+        ]
+      },
+      "hashtags": [
+        "#global",
+        "#cloud",
+        "#compute",
+        "#resources"
+      ],
+      "index": {
+        "years": [
+          "2025"
+        ],
+        "region_code": "global",
+        "country_code": null,
+        "city_slug": null,
+        "type_keys": [
+          "program"
+        ],
+        "support_keys": [
+          "compute",
+          "credits",
+          "resources",
+          "mentorship"
+        ],
+        "sector_keys": [
+          "general",
+          "ai"
+        ],
+        "date_sort_key": "2025-01-01"
+      },
+      "verification": "reported",
+      "last_verified_utc": "2025-11-12T08:11:20Z"
+    },
+    {
+      "id": "ibm-hyper-protect-2025",
+      "name": "IBM Hyper Protect Accelerator 2025",
+      "description": "Security‑focused support for fintech/healthtech; IBM Cloud credits",
+      "organizer": null,
+      "website": null,
+      "location": {
+        "is_virtual": false,
+        "is_hybrid": false,
+        "venue": null,
+        "city": null,
+        "city_slug": null,
+        "country": null,
+        "country_code": null,
+        "region_code": "global"
+      },
+      "dates": {
+        "application_open": "2025-02-01",
+        "application_close": "2025-04-15",
+        "program_start": "2025-06-01",
+        "program_end": "2025-12-15",
+        "demo_day": null,
+        "timezone": null,
+        "date_range_text": "2025 cohort"
+      },
+      "categories": {
+        "types": [
+          "accelerator"
+        ],
+        "supports": [
+          "resources",
+          "compute",
+          "credits",
+          "mentorship"
+        ],
+        "sectors": [
+          "security",
+          "fintech",
+          "health"
+        ]
+      },
+      "hashtags": [
+        "#global",
+        "#security",
+        "#fintech",
+        "#compute"
+      ],
+      "index": {
+        "years": [
+          "2025"
+        ],
+        "region_code": "global",
+        "country_code": null,
+        "city_slug": null,
+        "type_keys": [
+          "accelerator"
+        ],
+        "support_keys": [
+          "resources",
+          "compute",
+          "credits",
+          "mentorship"
+        ],
+        "sector_keys": [
+          "security",
+          "fintech",
+          "health"
+        ],
+        "date_sort_key": "2025-06-01"
+      },
+      "verification": "reported",
+      "last_verified_utc": "2025-11-12T08:11:20Z"
+    },
+    {
+      "id": "nsf-sbir-2025",
+      "name": "NSF SBIR/STTR 2025",
+      "description": "U.S. non‑dilutive deep‑tech grants (Phase I ~ $256k)",
+      "organizer": null,
+      "website": null,
+      "location": {
+        "is_virtual": false,
+        "is_hybrid": false,
+        "venue": null,
+        "city": "Washington",
+        "city_slug": "washington",
+        "country": null,
+        "country_code": "US",
+        "region_code": "na"
+      },
+      "dates": {
+        "application_open": "2025-01-01",
+        "application_close": "2025-06-30",
+        "program_start": "2025-10-01",
+        "program_end": "2026-09-30",
+        "demo_day": null,
+        "timezone": null,
+        "date_range_text": "Cycles in Mar & Jun 2025"
+      },
+      "categories": {
+        "types": [
+          "grant"
+        ],
+        "supports": [
+          "funding"
+        ],
+        "sectors": [
+          "deeptech"
+        ]
+      },
+      "hashtags": [
+        "#usa",
+        "#deeptech",
+        "#funding"
+      ],
+      "index": {
+        "years": [
+          "2025",
+          "2026"
+        ],
+        "region_code": "na",
+        "country_code": "US",
+        "city_slug": "washington",
+        "type_keys": [
+          "grant"
+        ],
+        "support_keys": [
+          "funding"
+        ],
+        "sector_keys": [
+          "deeptech"
+        ],
+        "date_sort_key": "2025-10-01"
+      },
+      "verification": "reported",
+      "last_verified_utc": "2025-11-12T08:11:20Z"
+    },
+    {
+      "id": "eic-accelerator-2025",
+      "name": "EU EIC Accelerator 2025",
+      "description": "Horizon Europe blended finance: grants + equity up to €15M",
+      "organizer": null,
+      "website": null,
+      "location": {
+        "is_virtual": false,
+        "is_hybrid": false,
+        "venue": null,
+        "city": "Brussels",
+        "city_slug": "brussels",
+        "country": null,
+        "country_code": "EU",
+        "region_code": "eu"
+      },
+      "dates": {
+        "application_open": "2025-01-01",
+        "application_close": "2025-10-15",
+        "program_start": "2025-11-01",
+        "program_end": "2026-12-31",
+        "demo_day": null,
+        "timezone": null,
+        "date_range_text": "Cut‑offs in Mar, Jun, Oct 2025"
+      },
+      "categories": {
+        "types": [
+          "grant",
+          "program"
+        ],
+        "supports": [
+          "funding"
+        ],
+        "sectors": [
+          "deeptech",
+          "general"
+        ]
+      },
+      "hashtags": [
+        "#eu",
+        "#deeptech",
+        "#funding"
+      ],
+      "index": {
+        "years": [
+          "2025",
+          "2026"
+        ],
+        "region_code": "eu",
+        "country_code": "EU",
+        "city_slug": "brussels",
+        "type_keys": [
+          "grant",
+          "program"
+        ],
+        "support_keys": [
+          "funding"
+        ],
+        "sector_keys": [
+          "deeptech",
+          "general"
+        ],
+        "date_sort_key": "2025-11-01"
+      },
+      "verification": "reported",
+      "last_verified_utc": "2025-11-12T08:11:20Z"
+    },
+    {
+      "id": "masschallenge-security-2025",
+      "name": "MassChallenge Early Stage 2025 – Security & Resiliency",
+      "description": "Zero‑equity accelerator with equity‑free awards",
+      "organizer": null,
+      "website": null,
+      "location": {
+        "is_virtual": false,
+        "is_hybrid": false,
+        "venue": null,
+        "city": "Boston",
+        "city_slug": "boston",
+        "country": null,
+        "country_code": "US",
+        "region_code": "na"
+      },
+      "dates": {
+        "application_open": null,
+        "application_close": "2025-07-15",
+        "program_start": "2025-09-01",
+        "program_end": "2025-11-30",
+        "demo_day": null,
+        "timezone": null,
+        "date_range_text": "Sep–Nov 2025"
+      },
+      "categories": {
+        "types": [
+          "accelerator"
+        ],
+        "supports": [
+          "resources",
+          "funding",
+          "mentorship"
+        ],
+        "sectors": [
+          "security"
+        ]
+      },
+      "hashtags": [
+        "#usa",
+        "#boston",
+        "#security",
+        "#resources",
+        "#funding"
+      ],
+      "index": {
+        "years": [
+          "2025"
+        ],
+        "region_code": "na",
+        "country_code": "US",
+        "city_slug": "boston",
+        "type_keys": [
+          "accelerator"
+        ],
+        "support_keys": [
+          "resources",
+          "funding",
+          "mentorship"
+        ],
+        "sector_keys": [
+          "security"
+        ],
+        "date_sort_key": "2025-09-01"
+      },
+      "verification": "reported",
+      "last_verified_utc": "2025-11-12T08:11:20Z"
+    },
+    {
+      "id": "googleorg-impact-challenge-2025",
+      "name": "Google.org Impact Challenge (regional calls, 2025)",
+      "description": "Grant competitions by Google.org for nonprofits and social enterprises",
+      "organizer": null,
+      "website": null,
+      "location": {
+        "is_virtual": false,
+        "is_hybrid": false,
+        "venue": null,
+        "city": null,
+        "city_slug": null,
+        "country": null,
+        "country_code": null,
+        "region_code": "global"
+      },
+      "dates": {
+        "application_open": null,
+        "application_close": null,
+        "program_start": "2025-03-01",
+        "program_end": "2025-12-31",
+        "demo_day": null,
+        "timezone": null,
+        "date_range_text": "Varies by region in 2025"
+      },
+      "categories": {
+        "types": [
+          "grant",
+          "program"
+        ],
+        "supports": [
+          "funding",
+          "resources"
+        ],
+        "sectors": [
+          "general",
+          "impact"
+        ]
+      },
+      "hashtags": [
+        "#global",
+        "#impact",
+        "#funding"
+      ],
+      "index": {
+        "years": [
+          "2025"
+        ],
+        "region_code": "global",
+        "country_code": null,
+        "city_slug": null,
+        "type_keys": [
+          "grant",
+          "program"
+        ],
+        "support_keys": [
+          "funding",
+          "resources"
+        ],
+        "sector_keys": [
+          "general",
+          "impact"
+        ],
+        "date_sort_key": "2025-03-01"
+      },
+      "verification": "reported",
+      "last_verified_utc": "2025-11-12T08:11:20Z"
+    },
+    {
+      "id": "apple-entrepreneur-camp-2025",
+      "name": "Apple Entrepreneur Camp 2025",
+      "description": "Code‑level labs and mentorship for underrepresented founders (no equity)",
+      "organizer": null,
+      "website": null,
+      "location": {
+        "is_virtual": false,
+        "is_hybrid": false,
+        "venue": null,
+        "city": null,
+        "city_slug": null,
+        "country": null,
+        "country_code": null,
+        "region_code": "global"
+      },
+      "dates": {
+        "application_open": null,
+        "application_close": null,
+        "program_start": "2025-02-01",
+        "program_end": "2025-11-30",
+        "demo_day": null,
+        "timezone": null,
+        "date_range_text": "Sessions in early & late 2025"
+      },
+      "categories": {
+        "types": [
+          "program"
+        ],
+        "supports": [
+          "resources",
+          "mentorship"
+        ],
+        "sectors": [
+          "consumer",
+          "devtools"
+        ]
+      },
+      "hashtags": [
+        "#global",
+        "#apps",
+        "#resources"
+      ],
+      "index": {
+        "years": [
+          "2025"
+        ],
+        "region_code": "global",
+        "country_code": null,
+        "city_slug": null,
+        "type_keys": [
+          "program"
+        ],
+        "support_keys": [
+          "resources",
+          "mentorship"
+        ],
+        "sector_keys": [
+          "consumer",
+          "devtools"
+        ],
+        "date_sort_key": "2025-02-01"
+      },
+      "verification": "reported",
+      "last_verified_utc": "2025-11-12T08:11:20Z"
+    },
+    {
+      "id": "mozilla-builders-2025",
+      "name": "Mozilla Builders Award 2025",
+      "description": "Grants for open‑source and Internet Health projects",
+      "organizer": null,
+      "website": null,
+      "location": {
+        "is_virtual": false,
+        "is_hybrid": false,
+        "venue": null,
+        "city": null,
+        "city_slug": null,
+        "country": null,
+        "country_code": null,
+        "region_code": "global"
+      },
+      "dates": {
+        "application_open": null,
+        "application_close": null,
+        "program_start": "2025-06-01",
+        "program_end": "2025-10-15",
+        "demo_day": null,
+        "timezone": null,
+        "date_range_text": "2025 awards cycle"
+      },
+      "categories": {
+        "types": [
+          "grant"
+        ],
+        "supports": [
+          "funding",
+          "resources"
+        ],
+        "sectors": [
+          "open_source",
+          "security"
+        ]
+      },
+      "hashtags": [
+        "#global",
+        "#opensource",
+        "#funding"
+      ],
+      "index": {
+        "years": [
+          "2025"
+        ],
+        "region_code": "global",
+        "country_code": null,
+        "city_slug": null,
+        "type_keys": [
+          "grant"
+        ],
+        "support_keys": [
+          "funding",
+          "resources"
+        ],
+        "sector_keys": [
+          "open_source",
+          "security"
+        ],
+        "date_sort_key": "2025-06-01"
+      },
+      "verification": "reported",
+      "last_verified_utc": "2025-11-12T08:11:20Z"
+    },
+    {
+      "id": "samsung-for-tomorrow-2025",
+      "name": "Samsung For Tomorrow Grant 2025",
+      "description": "Corporate grants and tech support for global challenges",
+      "organizer": null,
+      "website": null,
+      "location": {
+        "is_virtual": false,
+        "is_hybrid": false,
+        "venue": null,
+        "city": null,
+        "city_slug": null,
+        "country": null,
+        "country_code": null,
+        "region_code": "global"
+      },
+      "dates": {
+        "application_open": null,
+        "application_close": null,
+        "program_start": "2025-07-01",
+        "program_end": "2025-10-01",
+        "demo_day": null,
+        "timezone": null,
+        "date_range_text": "2025 call"
+      },
+      "categories": {
+        "types": [
+          "grant"
+        ],
+        "supports": [
+          "funding",
+          "resources"
+        ],
+        "sectors": [
+          "general",
+          "climatetech"
+        ]
+      },
+      "hashtags": [
+        "#global",
+        "#impact",
+        "#funding"
+      ],
+      "index": {
+        "years": [
+          "2025"
+        ],
+        "region_code": "global",
+        "country_code": null,
+        "city_slug": null,
+        "type_keys": [
+          "grant"
+        ],
+        "support_keys": [
+          "funding",
+          "resources"
+        ],
+        "sector_keys": [
+          "general",
+          "climatetech"
+        ],
+        "date_sort_key": "2025-07-01"
+      },
+      "verification": "reported",
+      "last_verified_utc": "2025-11-12T08:11:20Z"
+    },
+    {
+      "id": "alibaba-cloud-accelerator-2025",
+      "name": "Alibaba Cloud Global Startup Accelerator 2025",
+      "description": "Cloud credits, support and cash prizes via regional Demo Days",
+      "organizer": null,
+      "website": null,
+      "location": {
+        "is_virtual": false,
+        "is_hybrid": false,
+        "venue": null,
+        "city": "Singapore",
+        "city_slug": "singapore",
+        "country": null,
+        "country_code": "SG",
+        "region_code": "apac"
+      },
+      "dates": {
+        "application_open": null,
+        "application_close": null,
+        "program_start": "2025-04-01",
+        "program_end": "2025-12-15",
+        "demo_day": null,
+        "timezone": null,
+        "date_range_text": "Multiple cohorts 2025"
+      },
+      "categories": {
+        "types": [
+          "accelerator",
+          "program"
+        ],
+        "supports": [
+          "compute",
+          "credits",
+          "resources",
+          "funding"
+        ],
+        "sectors": [
+          "general",
+          "ai"
+        ]
+      },
+      "hashtags": [
+        "#apac",
+        "#singapore",
+        "#cloud",
+        "#compute",
+        "#funding"
+      ],
+      "index": {
+        "years": [
+          "2025"
+        ],
+        "region_code": "apac",
+        "country_code": "SG",
+        "city_slug": "singapore",
+        "type_keys": [
+          "accelerator",
+          "program"
+        ],
+        "support_keys": [
+          "compute",
+          "credits",
+          "resources",
+          "funding"
+        ],
+        "sector_keys": [
+          "general",
+          "ai"
+        ],
+        "date_sort_key": "2025-04-01"
+      },
+      "verification": "reported",
+      "last_verified_utc": "2025-11-12T08:11:20Z"
+    },
+    {
+      "id": "ibm-ignite-africa-2025",
+      "name": "IBM Ignite Africa 2025",
+      "description": "African startup support with IBM Cloud credits and mentorship",
+      "organizer": null,
+      "website": null,
+      "location": {
+        "is_virtual": false,
+        "is_hybrid": false,
+        "venue": null,
+        "city": null,
+        "city_slug": null,
+        "country": null,
+        "country_code": null,
+        "region_code": "africa"
+      },
+      "dates": {
+        "application_open": null,
+        "application_close": null,
+        "program_start": "2025-05-01",
+        "program_end": "2025-12-31",
+        "demo_day": null,
+        "timezone": null,
+        "date_range_text": "2025 cohort"
+      },
+      "categories": {
+        "types": [
+          "program"
+        ],
+        "supports": [
+          "compute",
+          "credits",
+          "resources",
+          "mentorship"
+        ],
+        "sectors": [
+          "general"
+        ]
+      },
+      "hashtags": [
+        "#africa",
+        "#cloud",
+        "#compute",
+        "#resources"
+      ],
+      "index": {
+        "years": [
+          "2025"
+        ],
+        "region_code": "africa",
+        "country_code": null,
+        "city_slug": null,
+        "type_keys": [
+          "program"
+        ],
+        "support_keys": [
+          "compute",
+          "credits",
+          "resources",
+          "mentorship"
+        ],
+        "sector_keys": [
+          "general"
+        ],
+        "date_sort_key": "2025-05-01"
+      },
+      "verification": "reported",
+      "last_verified_utc": "2025-11-12T08:11:20Z"
+    },
+    {
+      "id": "entrepreneur-first-2025",
+      "name": "Entrepreneur First (EF) 2025 Cohorts",
+      "description": "Talent‑investor program forming teams then investing at pre‑seed",
+      "organizer": null,
+      "website": null,
+      "location": {
+        "is_virtual": false,
+        "is_hybrid": false,
+        "venue": null,
+        "city": null,
+        "city_slug": null,
+        "country": null,
+        "country_code": null,
+        "region_code": "global"
+      },
+      "dates": {
+        "application_open": null,
+        "application_close": null,
+        "program_start": "2025-02-01",
+        "program_end": "2025-12-15",
+        "demo_day": null,
+        "timezone": null,
+        "date_range_text": "Multiple cohorts in 2025"
+      },
+      "categories": {
+        "types": [
+          "program"
+        ],
+        "supports": [
+          "funding",
+          "mentorship"
+        ],
+        "sectors": [
+          "general"
+        ]
+      },
+      "hashtags": [
+        "#global",
+        "#general",
+        "#funding"
+      ],
+      "index": {
+        "years": [
+          "2025"
+        ],
+        "region_code": "global",
+        "country_code": null,
+        "city_slug": null,
+        "type_keys": [
+          "program"
+        ],
+        "support_keys": [
+          "funding",
+          "mentorship"
+        ],
+        "sector_keys": [
+          "general"
+        ],
+        "date_sort_key": "2025-02-01"
+      },
+      "verification": "reported",
+      "last_verified_utc": "2025-11-12T08:11:20Z"
+    },
+    {
+      "id": "zeroth-ai-2025",
+      "name": "Zeroth AI Accelerator 2025",
+      "description": "AI‑focused accelerator in Asia with early financing",
+      "organizer": null,
+      "website": null,
+      "location": {
+        "is_virtual": false,
+        "is_hybrid": false,
+        "venue": null,
+        "city": "Hong Kong",
+        "city_slug": "hong-kong",
+        "country": null,
+        "country_code": "HK",
+        "region_code": "apac"
+      },
+      "dates": {
+        "application_open": "2025-01-15",
+        "application_close": "2025-03-31",
+        "program_start": "2025-05-15",
+        "program_end": "2025-08-31",
+        "demo_day": null,
+        "timezone": null,
+        "date_range_text": "May–Aug 2025"
+      },
+      "categories": {
+        "types": [
+          "accelerator"
+        ],
+        "supports": [
+          "funding",
+          "mentorship"
+        ],
+        "sectors": [
+          "ai"
+        ]
+      },
+      "hashtags": [
+        "#apac",
+        "#hongkong",
+        "#ai",
+        "#funding"
+      ],
+      "index": {
+        "years": [
+          "2025"
+        ],
+        "region_code": "apac",
+        "country_code": "HK",
+        "city_slug": "hong-kong",
+        "type_keys": [
+          "accelerator"
+        ],
+        "support_keys": [
+          "funding",
+          "mentorship"
+        ],
+        "sector_keys": [
+          "ai"
+        ],
+        "date_sort_key": "2025-05-15"
+      },
+      "verification": "reported",
+      "last_verified_utc": "2025-11-12T08:11:20Z"
+    },
+    {
+      "id": "500-global-esg-fellowship-2025",
+      "name": "500 Global ESG Fellowship 2025",
+      "description": "Resources‑only program focused on ESG and impact",
+      "organizer": null,
+      "website": null,
+      "location": {
+        "is_virtual": false,
+        "is_hybrid": false,
+        "venue": null,
+        "city": null,
+        "city_slug": null,
+        "country": null,
+        "country_code": null,
+        "region_code": "global"
+      },
+      "dates": {
+        "application_open": null,
+        "application_close": null,
+        "program_start": "2025-06-01",
+        "program_end": "2025-09-30",
+        "demo_day": null,
+        "timezone": null,
+        "date_range_text": "Summer 2025"
+      },
+      "categories": {
+        "types": [
+          "program"
+        ],
+        "supports": [
+          "resources",
+          "mentorship"
+        ],
+        "sectors": [
+          "impact",
+          "general"
+        ]
+      },
+      "hashtags": [
+        "#global",
+        "#impact",
+        "#resources"
+      ],
+      "index": {
+        "years": [
+          "2025"
+        ],
+        "region_code": "global",
+        "country_code": null,
+        "city_slug": null,
+        "type_keys": [
+          "program"
+        ],
+        "support_keys": [
+          "resources",
+          "mentorship"
+        ],
+        "sector_keys": [
+          "impact",
+          "general"
+        ],
+        "date_sort_key": "2025-06-01"
+      },
+      "verification": "reported",
+      "last_verified_utc": "2025-11-12T08:11:20Z"
+    }
+  ]
+}
