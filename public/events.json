@@ -249,7 +249,7 @@
       "name": "Techstars London Accelerator (Spring 2026)",
       "description": "London-based accelerator open to all verticals",
       "organizer": null,
-      "website": null,
+      "website": "https://www.techstars.com/accelerators/london",
       "location": {
         "is_virtual": false,
         "is_hybrid": false,

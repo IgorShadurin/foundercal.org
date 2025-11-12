@@ -411,13 +411,27 @@ function EventCard({
 }) {
   const { record, locationLabel, timeline } = entry;
   const primaryType = record.categories.types[0];
+  const websiteUrl = withUtmSource(record.website);
 
   return (
     <Card className="border-muted bg-background/80 shadow-sm">
       <CardHeader>
         <div className="flex flex-col gap-3 md:flex-row md:items-start md:justify-between">
           <div className="space-y-1">
-            <CardTitle className="text-lg">{record.name}</CardTitle>
+            <CardTitle className="text-lg">
+              {websiteUrl ? (
+                <a
+                  href={websiteUrl}
+                  target="_blank"
+                  rel="noreferrer"
+                  className="text-foreground underline-offset-4 hover:text-primary hover:underline"
+                >
+                  {record.name}
+                </a>
+              ) : (
+                record.name
+              )}
+            </CardTitle>
             <CardDescription>{record.description}</CardDescription>
           </div>
           {primaryType ? (
@@ -463,9 +477,9 @@ function EventCard({
           ))}
         </div>
         <div className="flex flex-wrap gap-2">
-          {record.website ? (
+          {websiteUrl ? (
             <Button size="sm" asChild>
-              <a href={record.website} target="_blank" rel="noreferrer">
+              <a href={websiteUrl} target="_blank" rel="noreferrer">
                 Visit site <ExternalLink className="ml-1 size-3.5" />
               </a>
             </Button>
@@ -573,4 +587,10 @@ function safeParseDate(value?: string | null) {
   } catch {
     return null;
   }
+}
+
+function withUtmSource(url?: string | null) {
+  if (!url) return null;
+  const separator = url.includes("?") ? "&" : "?";
+  return `${url}${separator}utm_source=foundercal.org`;
 }
