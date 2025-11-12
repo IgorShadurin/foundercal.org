@@ -112,6 +112,7 @@ export function EventCalendar({ events, taxonomies }: EventCalendarProps) {
   const [search, setSearch] = useState("");
   const [windowStart, setWindowStart] = useState(() => startOfDay(new Date()));
   const [restrictToWindow, setRestrictToWindow] = useState(true);
+  const today = startOfDay(new Date());
 
   const normalized = useMemo(() => normalizeEvents(events), [events]);
 
@@ -239,6 +240,16 @@ export function EventCalendar({ events, taxonomies }: EventCalendarProps) {
               modifiers={{ hasEvent: calendarDates }}
               className="rounded-xl border"
             />
+            <div className="flex justify-end">
+              <Button
+                variant="ghost"
+                size="sm"
+                onClick={() => setWindowStart(today)}
+                disabled={windowStart.getTime() === today.getTime()}
+              >
+                Jump to today
+              </Button>
+            </div>
             <Separator />
             <div className="space-y-3 text-sm">
               <div className="flex items-center justify-between">
