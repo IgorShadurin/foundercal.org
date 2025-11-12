@@ -16,6 +16,7 @@ import {
   Clock3,
   ExternalLink,
   Filter,
+  Github,
   MapPin,
 } from "lucide-react";
 
@@ -373,6 +374,44 @@ export function EventCalendar({ events, taxonomies }: EventCalendarProps) {
           </CardContent>
         </Card>
       </div>
+      <footer className="mt-10 flex flex-col gap-3 border-t border-dashed border-muted-foreground/40 pt-6 text-sm text-muted-foreground">
+        <div className="flex flex-col gap-2 sm:flex-row sm:items-center sm:justify-between">
+          <a
+            href="https://github.com/IgorShadurin/foundercal.org"
+            target="_blank"
+            rel="noreferrer"
+            className="inline-flex items-center gap-2 font-medium text-foreground transition hover:text-primary"
+          >
+            <Github className="size-4" />
+            Source code on GitHub
+          </a>
+          <p>
+            Ship a feature or add an event via <a
+              href="https://github.com/IgorShadurin/foundercal.org/issues/new"
+              target="_blank"
+              rel="noreferrer"
+              className="font-medium text-foreground underline-offset-4 hover:text-primary hover:underline"
+            >GitHub</a>
+            —collabs keep FounderCal sharp.
+          </p>
+        </div>
+        <div className="text-xs text-muted-foreground/80">
+          <p>
+            Built by <a
+              href="https://x.com/Web3Igor"
+              target="_blank"
+              rel="noreferrer"
+              className="font-medium text-foreground underline-offset-4 hover:text-primary hover:underline"
+            >@Web3Igor</a> -
+             Inspired by <a
+              href="https://x.com/nestymee/status/1988231483153321985"
+              target="_blank"
+              rel="noreferrer"
+              className="font-medium text-foreground underline-offset-4 hover:text-primary hover:underline"
+            >@nestymee</a>
+          </p>
+        </div>
+      </footer>
     </div>
   );
 }

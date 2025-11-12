@@ -28,4 +28,6 @@ We’re building this with founders, not just for them. Open an issue or start a
 - Integrations you need (CRMs, Notion, custom workflows).
 - UX ideas that make scouting and applying faster.
 
+Want to add an event or request something specific? Use the issue template here: [foundercal.org/issues](https://github.com/IgorShadurin/foundercal.org/issues/new).
+
 Stay tuned—FounderCal will keep you a step ahead of every accelerator and capital opportunity worth your time.
