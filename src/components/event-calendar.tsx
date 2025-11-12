@@ -199,16 +199,21 @@ export function EventCalendar({ events, taxonomies }: EventCalendarProps) {
               </p>
             </div>
           </div>
-          <div className="space-y-2 rounded-2xl border bg-white/70 px-6 py-4 shadow-sm dark:bg-zinc-900/80">
-            <p className="text-xs uppercase tracking-wide text-muted-foreground">This month</p>
-            <p className="text-3xl font-semibold">
-              {eventsInMonth.length.toString().padStart(2, "0")}
-              <span className="ml-2 text-base font-normal text-muted-foreground">
-                live opportunities
+          <div className="space-y-3 rounded-2xl border bg-white/70 px-8 py-6 text-center shadow-sm dark:bg-zinc-900/80">
+            <div className="flex items-center justify-center gap-3">
+              <span className="relative flex h-8 w-8 items-center justify-center">
+                <span
+                  className="absolute inline-flex h-full w-full animate-ping rounded-full bg-[#2da6df]/40"
+                  style={{ animationDuration: "3s" }}
+                />
+                <span className="inline-flex h-3 w-3 rounded-full bg-[#2da6df]" />
               </span>
-            </p>
-            <p className="text-sm text-muted-foreground">
-              {format(monthRange.start, "MMMM yyyy")}
+              <p className="text-6xl font-black text-foreground">
+                {eventsInMonth.length.toString().padStart(2, "0")}
+              </p>
+            </div>
+            <p className="text-sm font-medium text-muted-foreground">
+              Live opportunities this month
             </p>
           </div>
         </div>
