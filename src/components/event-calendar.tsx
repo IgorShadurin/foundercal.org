@@ -16,6 +16,7 @@ import {
   Clock3,
   ExternalLink,
   Filter,
+  Link as LinkIcon,
   Github,
   MapPin,
 } from "lucide-react";
@@ -424,8 +425,11 @@ function EventCard({
                   href={websiteUrl}
                   target="_blank"
                   rel="noreferrer"
-                  className="text-foreground underline-offset-4 hover:text-primary hover:underline"
+                  className="flex items-center gap-2 text-foreground underline-offset-4 hover:text-primary hover:underline"
                 >
+                  <span className="inline-flex items-center justify-center rounded-full bg-primary/10 p-1 text-primary">
+                    <LinkIcon className="size-3.5" />
+                  </span>
                   {record.name}
                 </a>
               ) : (

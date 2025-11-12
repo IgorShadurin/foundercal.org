@@ -53,7 +53,7 @@
       "name": "Y Combinator Fall 2025 Batch",
       "description": "Flagship accelerator offering seed investment, mentorship, and Demo Day",
       "organizer": null,
-      "website": null,
+      "website": "https://www.ycombinator.com/apply",
       "location": {
         "is_virtual": false,
         "is_hybrid": true,
@@ -118,7 +118,7 @@
       "name": "Y Combinator Winter 2026 Batch",
       "description": "3‑month accelerator with standard YC deal and investor network",
       "organizer": null,
-      "website": null,
+      "website": "https://www.ycombinator.com/apply",
       "location": {
         "is_virtual": false,
         "is_hybrid": false,
@@ -184,7 +184,7 @@
       "name": "Techstars Boston Accelerator (Fall 2025)",
       "description": "13‑week hybrid accelerator across AI/ML, healthtech, climate, SaaS",
       "organizer": null,
-      "website": null,
+      "website": "https://www.techstars.com/accelerators/boston",
       "location": {
         "is_virtual": false,
         "is_hybrid": false,
@@ -315,7 +315,7 @@
       "name": "Techstars NYC Accelerator (Spring 2026)",
       "description": "3‑month accelerator with mentors and investor network",
       "organizer": null,
-      "website": null,
+      "website": "https://www.techstars.com/accelerators/nyc",
       "location": {
         "is_virtual": false,
         "is_hybrid": false,
@@ -381,7 +381,7 @@
       "name": "Techstars Chicago Accelerator (Spring 2026)",
       "description": "Techstars program in Chicago offering capital and mentorship",
       "organizer": null,
-      "website": null,
+      "website": "https://www.techstars.com/accelerators/chicago",
       "location": {
         "is_virtual": false,
         "is_hybrid": false,
@@ -447,7 +447,7 @@
       "name": "Techstars Anywhere Accelerator (Spring 2026)",
       "description": "Remote-first accelerator with some in‑person gatherings",
       "organizer": null,
-      "website": null,
+      "website": "https://www.techstars.com/accelerators/anywhere",
       "location": {
         "is_virtual": true,
         "is_hybrid": false,
@@ -513,7 +513,7 @@
       "name": "Techstars AI Health Accelerator (Baltimore 2026)",
       "description": "Healthcare AI accelerator with clinical partnerships",
       "organizer": null,
-      "website": null,
+      "website": "https://www.techstars.com/accelerators/baltimore-ai-health",
       "location": {
         "is_virtual": false,
         "is_hybrid": false,
@@ -582,7 +582,7 @@
       "name": "Techstars Workforce Development Accelerator 2026",
       "description": "Startups in education, jobs and future of work",
       "organizer": null,
-      "website": null,
+      "website": "https://www.techstars.com/accelerators/workforce-development",
       "location": {
         "is_virtual": false,
         "is_hybrid": false,
@@ -650,7 +650,7 @@
       "name": "USC x Techstars Digital Economy 2026",
       "description": "Accelerator in Los Angeles for digital economy startups",
       "organizer": null,
-      "website": null,
+      "website": "https://www.techstars.com/accelerators/usc-and-techstars",
       "location": {
         "is_virtual": false,
         "is_hybrid": false,
@@ -716,7 +716,7 @@
       "name": "Northwestern & Techstars Healthcare Accelerator 2026",
       "description": "Healthcare-focused program in Chicago",
       "organizer": null,
-      "website": null,
+      "website": "https://www.techstars.com/accelerators/northwestern-medicine-healthcare",
       "location": {
         "is_virtual": false,
         "is_hybrid": false,
@@ -782,7 +782,7 @@
       "name": "South Park Commons Founder Fellowship 2025",
       "description": "Pre-idea founder fellowship offering capital and deep mentorship",
       "organizer": null,
-      "website": null,
+      "website": "https://www.southparkcommons.com/apply",
       "location": {
         "is_virtual": false,
         "is_hybrid": false,
@@ -848,7 +848,7 @@
       "name": "Conviction 'Embed' Accelerator 2025",
       "description": "AI-native accelerator run by Conviction, seed capital and mentorship",
       "organizer": null,
-      "website": null,
+      "website": "https://www.conviction.com/embed",
       "location": {
         "is_virtual": false,
         "is_hybrid": false,
@@ -913,7 +913,7 @@
       "name": "Alliance DAO Accelerator Fall 2025",
       "description": "Web3/crypto accelerator investing with token rights",
       "organizer": null,
-      "website": null,
+      "website": "https://www.alliance.xyz/",
       "location": {
         "is_virtual": false,
         "is_hybrid": false,
@@ -979,7 +979,7 @@
       "name": "Berkeley SkyDeck Batch 21 (Fall 2025)",
       "description": "UC Berkeley accelerator with investment via SAFE",
       "organizer": null,
-      "website": null,
+      "website": "https://skydeck.berkeley.edu/programs/accelerator",
       "location": {
         "is_virtual": false,
         "is_hybrid": false,
@@ -1045,7 +1045,7 @@
       "name": "Alchemist Accelerator Batch 32 (Enterprise)",
       "description": "Top B2B/enterprise accelerator emphasizing customer traction",
       "organizer": null,
-      "website": null,
+      "website": "https://www.alchemistaccelerator.com/",
       "location": {
         "is_virtual": false,
         "is_hybrid": false,
@@ -1113,7 +1113,7 @@
       "name": "PearX by Pear VC (2025)",
       "description": "Hybrid accelerator/seed program investing in early-stage teams",
       "organizer": null,
-      "website": null,
+      "website": "https://pear.vc/pearx/",
       "location": {
         "is_virtual": false,
         "is_hybrid": false,
@@ -1178,7 +1178,7 @@
       "name": "Antler Global Residency (US Fall 2025)",
       "description": "Pre-seed builder program to form teams; Antler invests at pre-seed",
       "organizer": null,
-      "website": null,
+      "website": "https://www.antler.co/programs/us-residency",
       "location": {
         "is_virtual": false,
         "is_hybrid": false,
@@ -1242,7 +1242,7 @@
       "name": "a16z Speedrun Accelerator 2025",
       "description": "Andreessen Horowitz program at the intersection of tech & culture",
       "organizer": null,
-      "website": null,
+      "website": "https://a16z.com/accelerator/speedrun/",
       "location": {
         "is_virtual": false,
         "is_hybrid": false,
@@ -1310,7 +1310,7 @@
       "name": "LAUNCH Accelerator",
       "description": "Post-seed accelerator by Jason Calacanis with investor access",
       "organizer": null,
-      "website": null,
+      "website": "https://founders.launch.co/accelerator",
       "location": {
         "is_virtual": false,
         "is_hybrid": false,
@@ -1375,7 +1375,7 @@
       "name": "Sequoia Arc 2025",
       "description": "Elite founder program by Sequoia for pre-seed/seed companies",
       "organizer": null,
-      "website": null,
+      "website": "https://www.sequoiacap.com/arc/",
       "location": {
         "is_virtual": false,
         "is_hybrid": false,
@@ -1440,7 +1440,7 @@
       "name": "Blue Ridge Labs 'Catalyst' 2026",
       "description": "Social-impact accelerator by Robin Hood Foundation with $100k support",
       "organizer": null,
-      "website": null,
+      "website": "https://labs.robinhood.org/catalyst/",
       "location": {
         "is_virtual": false,
         "is_hybrid": false,
@@ -1506,7 +1506,7 @@
       "name": "BioTools Innovator Accelerator 2026",
       "description": "Nonprofit accelerator & competition for life-science tools",
       "organizer": null,
-      "website": null,
+      "website": "https://biotoolsinnovator.org/",
       "location": {
         "is_virtual": false,
         "is_hybrid": false,
@@ -1576,7 +1576,7 @@
       "name": "Entrepreneurs Roundtable Accelerator (ERA) Winter 2026",
       "description": "NYC-based accelerator investing in early-stage startups",
       "organizer": null,
-      "website": null,
+      "website": "https://www.eranyc.com/accelerator/",
       "location": {
         "is_virtual": false,
         "is_hybrid": false,
@@ -1642,7 +1642,7 @@
       "name": "Techstars Tel Aviv Cyber Accelerator 2025",
       "description": "Cybersecurity-focused accelerator in Tel Aviv",
       "organizer": null,
-      "website": null,
+      "website": "https://www.techstars.com/accelerators/tel-aviv",
       "location": {
         "is_virtual": false,
         "is_hybrid": false,
@@ -1708,7 +1708,7 @@
       "name": "500 Global Flagship Accelerator (2025)",
       "description": "Silicon Valley accelerator investing in early-stage companies",
       "organizer": null,
-      "website": null,
+      "website": "https://500.co/accelerators/flagship",
       "location": {
         "is_virtual": false,
         "is_hybrid": false,
@@ -1773,7 +1773,7 @@
       "name": "Google for Startups Accelerator: AI for Energy (North America) 2025",
       "description": "Hybrid, equity‑free program; mentorship and up to cloud credits",
       "organizer": null,
-      "website": null,
+      "website": "https://startup.google.com/programs/accelerator/ai-for-energy/north-america/",
       "location": {
         "is_virtual": false,
         "is_hybrid": true,
@@ -1847,7 +1847,7 @@
       "name": "Google for Startups Accelerator: Climate Change 2025",
       "description": "Equity‑free support from Google engineers and product teams",
       "organizer": null,
-      "website": null,
+      "website": "https://startup.google.com/programs/accelerator/climate-change/north-america/",
       "location": {
         "is_virtual": false,
         "is_hybrid": false,
@@ -1916,7 +1916,7 @@
       "name": "Startup Chile Seed Accelerator (2025)",
       "description": "Government-backed accelerator with equity‑free grant and visa",
       "organizer": null,
-      "website": null,
+      "website": "https://www.startupchile.org/programs/seed",
       "location": {
         "is_virtual": false,
         "is_hybrid": false,
@@ -1981,7 +1981,7 @@
       "name": "Creative Destruction Lab (CDL) 2025–26",
       "description": "Milestone-based deeptech program with mentoring (no direct funding)",
       "organizer": null,
-      "website": null,
+      "website": "https://creativedestructionlab.com/",
       "location": {
         "is_virtual": false,
         "is_hybrid": false,
@@ -2053,7 +2053,7 @@
       "name": "Plug and Play Fintech Batch (Fall 2025)",
       "description": "Equity‑free corporate innovation program enabling pilots",
       "organizer": null,
-      "website": null,
+      "website": "https://www.plugandplaytechcenter.com/fintech/",
       "location": {
         "is_virtual": false,
         "is_hybrid": false,
@@ -2118,7 +2118,7 @@
       "name": "Startupbootcamp AfriTech 2025",
       "description": "Pan‑African accelerator providing stipends and investor access",
       "organizer": null,
-      "website": null,
+      "website": "https://www.startupbootcamp.org/accelerator/afritech/",
       "location": {
         "is_virtual": false,
         "is_hybrid": false,
@@ -2185,7 +2185,7 @@
       "name": "TechCrunch Disrupt – Startup Battlefield 200 (2025)",
       "description": "Top 200 startups showcase; winner gets $100k equity‑free prize",
       "organizer": null,
-      "website": null,
+      "website": "https://techcrunch.com/event-info/tc-disrupt-2025/startup-battlefield-200/",
       "location": {
         "is_virtual": false,
         "is_hybrid": false,
@@ -2252,7 +2252,7 @@
       "name": "Startup World Cup 2025 – Grand Finale",
       "description": "Global pitch competition culminating in $1M investment prize",
       "organizer": null,
-      "website": null,
+      "website": "https://www.startupworldcup.io/",
       "location": {
         "is_virtual": false,
         "is_hybrid": false,
@@ -2317,7 +2317,7 @@
       "name": "Slush 100 Pitch Competition 2025",
       "description": "International competition with €1M investment prize at Slush",
       "organizer": null,
-      "website": null,
+      "website": "https://www.slush.org/events/slush/startup-programs/100/",
       "location": {
         "is_virtual": false,
         "is_hybrid": false,
@@ -2382,7 +2382,7 @@
       "name": "Web Summit PITCH 2025 (Lisbon)",
       "description": "Early-stage pitch contest at Web Summit Lisbon",
       "organizer": null,
-      "website": null,
+      "website": "https://websummit.com/pitch",
       "location": {
         "is_virtual": false,
         "is_hybrid": false,
@@ -2447,7 +2447,7 @@
       "name": "South Summit Startup Competition 2025",
       "description": "Global competition in Madrid and Brazil editions",
       "organizer": null,
-      "website": null,
+      "website": "https://www.southsummit.io/startup-competition/",
       "location": {
         "is_virtual": false,
         "is_hybrid": false,
@@ -2512,7 +2512,7 @@
       "name": "Web Summit PITCH 2025 (Vancouver)",
       "description": "Pitch competition at Web Summit Vancouver",
       "organizer": null,
-      "website": null,
+      "website": "https://vancouver.websummit.com/pitch",
       "location": {
         "is_virtual": false,
         "is_hybrid": false,
@@ -2577,7 +2577,7 @@
       "name": "Utah Entrepreneur Challenge 2025",
       "description": "Statewide student startup competition with $100k+ in prizes",
       "organizer": null,
-      "website": null,
+      "website": "https://lassonde.utah.edu/uec/",
       "location": {
         "is_virtual": false,
         "is_hybrid": false,
@@ -2642,7 +2642,7 @@
       "name": "Next Founders Pitch Competition 2025 (Toronto)",
       "description": "Pitch event under Next Canada’s programs",
       "organizer": null,
-      "website": null,
+      "website": "https://www.nextcanada.com/next-founders/",
       "location": {
         "is_virtual": false,
         "is_hybrid": false,
@@ -2707,7 +2707,7 @@
       "name": "Young Entrepreneur Summit 2025",
       "description": "Summit and pitch for under‑25 founders",
       "organizer": null,
-      "website": null,
+      "website": "https://youngentrepreneursummit.com/",
       "location": {
         "is_virtual": false,
         "is_hybrid": false,
@@ -2774,7 +2774,7 @@
       "name": "MIT $100K Launch 2025",
       "description": "Flagship MIT student startup competition (non‑dilutive)",
       "organizer": null,
-      "website": null,
+      "website": "https://www.mit100k.org/competitions/launch/",
       "location": {
         "is_virtual": false,
         "is_hybrid": false,
@@ -2839,7 +2839,7 @@
       "name": "MIT Climate & Energy Prize 2026",
       "description": "Student competition for climate and energy ventures",
       "organizer": null,
-      "website": null,
+      "website": "https://cep.mit.edu/",
       "location": {
         "is_virtual": false,
         "is_hybrid": false,
@@ -2907,7 +2907,7 @@
       "name": "Hult Prize 2025 – Global Finals",
       "description": "World’s largest student social enterprise competition ($1M)",
       "organizer": null,
-      "website": null,
+      "website": "https://www.hultprize.org/",
       "location": {
         "is_virtual": false,
         "is_hybrid": false,
@@ -2972,7 +2972,7 @@
       "name": "Google.org Accelerator: Generative AI (Open Call 2025)",
       "description": "Grants for nonprofits and social enterprises using genAI; 20 winners share $30M",
       "organizer": null,
-      "website": null,
+      "website": "https://www.google.org/accelerator/genai/",
       "location": {
         "is_virtual": false,
         "is_hybrid": false,
@@ -3042,7 +3042,7 @@
       "name": "Microsoft Imagine Cup 2025",
       "description": "Global student tech competition (cash prizes + Azure credits)",
       "organizer": null,
-      "website": null,
+      "website": "https://imaginecup.microsoft.com/",
       "location": {
         "is_virtual": false,
         "is_hybrid": false,
@@ -3114,7 +3114,7 @@
       "name": "SXSW Pitch 2026",
       "description": "Premier startup pitch competition at SXSW (multiple categories)",
       "organizer": null,
-      "website": null,
+      "website": "https://www.sxsw.com/pitch/",
       "location": {
         "is_virtual": false,
         "is_hybrid": false,
@@ -3180,7 +3180,7 @@
       "name": "SXSW EDU Launch 2026",
       "description": "Pitch competition for education startups at SXSW EDU",
       "organizer": null,
-      "website": null,
+      "website": "https://www.sxswedu.com/program/launch/",
       "location": {
         "is_virtual": false,
         "is_hybrid": false,
@@ -3246,7 +3246,7 @@
       "name": "CodeLaunch 2025 (USA)",
       "description": "Seed accelerator competition + professional dev sprint for winners",
       "organizer": null,
-      "website": null,
+      "website": "https://codelaunch.com/",
       "location": {
         "is_virtual": false,
         "is_hybrid": false,
@@ -3311,7 +3311,7 @@
       "name": "MIT Solve Global Challenges 2025",
       "description": "Open innovation challenge with $1.25M+ in grants for Solvers",
       "organizer": null,
-      "website": null,
+      "website": "https://solve.mit.edu/challenges",
       "location": {
         "is_virtual": false,
         "is_hybrid": false,
@@ -3380,7 +3380,7 @@
       "name": "Hello Tomorrow Global Challenge 2025–26",
       "description": "Deep-tech competition with €100k Grand Prize and track awards",
       "organizer": null,
-      "website": null,
+      "website": "https://challenge.hello-tomorrow.org/",
       "location": {
         "is_virtual": false,
         "is_hybrid": false,
@@ -3452,7 +3452,7 @@
       "name": "XPRIZE Feed the Next Billion (Finale 2025)",
       "description": "Multi‑year prize for alternative proteins (large prize pool)",
       "organizer": null,
-      "website": null,
+      "website": "https://www.xprize.org/prizes/feed",
       "location": {
         "is_virtual": false,
         "is_hybrid": false,
@@ -3518,7 +3518,7 @@
       "name": "NASA iTech 2025",
       "description": "Pitch forum for aerospace innovations with NASA mentorship",
       "organizer": null,
-      "website": null,
+      "website": "https://www.nasaitech.org/",
       "location": {
         "is_virtual": false,
         "is_hybrid": false,
@@ -3585,7 +3585,7 @@
       "name": "Oracle Global Startup Idol 2025",
       "description": "Enterprise pitch event offering Oracle Cloud credits and pilots",
       "organizer": null,
-      "website": null,
+      "website": "https://www.oracle.com/startup/",
       "location": {
         "is_virtual": false,
         "is_hybrid": false,
@@ -3653,7 +3653,7 @@
       "name": "NC IDEA MICRO/SEED Grants – Spring 2025",
       "description": "State grants for NC startups: $10k MICRO / $50k SEED",
       "organizer": null,
-      "website": null,
+      "website": "https://ncidea.org/grants/micro-seed/",
       "location": {
         "is_virtual": false,
         "is_hybrid": false,
@@ -3716,7 +3716,7 @@
       "name": "AWS Impact Bootcamps 2025 (Diverse Founders)",
       "description": "Two‑day bootcamps with resources; retreat grants up to $50k",
       "organizer": null,
-      "website": null,
+      "website": "https://aws.amazon.com/startups/impact-accelerator/",
       "location": {
         "is_virtual": false,
         "is_hybrid": false,
@@ -3786,7 +3786,7 @@
       "name": "Google for Startups Cloud Program 2025",
       "description": "Cloud credits and technical enablement for startups (equity‑free)",
       "organizer": null,
-      "website": null,
+      "website": "https://startup.google.com/programs/cloud/",
       "location": {
         "is_virtual": false,
         "is_hybrid": false,
@@ -3857,7 +3857,7 @@
       "name": "IBM Hyper Protect Accelerator 2025",
       "description": "Security‑focused support for fintech/healthtech; IBM Cloud credits",
       "organizer": null,
-      "website": null,
+      "website": "https://www.ibm.com/partnerworld/program/hyper-protect-accelerator",
       "location": {
         "is_virtual": false,
         "is_hybrid": false,
@@ -3930,7 +3930,7 @@
       "name": "NSF SBIR/STTR 2025",
       "description": "U.S. non‑dilutive deep‑tech grants (Phase I ~ $256k)",
       "organizer": null,
-      "website": null,
+      "website": "https://seedfund.nsf.gov/apply/",
       "location": {
         "is_virtual": false,
         "is_hybrid": false,
@@ -3993,7 +3993,7 @@
       "name": "EU EIC Accelerator 2025",
       "description": "Horizon Europe blended finance: grants + equity up to €15M",
       "organizer": null,
-      "website": null,
+      "website": "https://eic.ec.europa.eu/eic-funding-opportunities/eic-accelerator_en",
       "location": {
         "is_virtual": false,
         "is_hybrid": false,
@@ -4060,7 +4060,7 @@
       "name": "MassChallenge Early Stage 2025 – Security & Resiliency",
       "description": "Zero‑equity accelerator with equity‑free awards",
       "organizer": null,
-      "website": null,
+      "website": "https://masschallenge.org/programs/early-stage/",
       "location": {
         "is_virtual": false,
         "is_hybrid": false,
@@ -4128,7 +4128,7 @@
       "name": "Google.org Impact Challenge (regional calls, 2025)",
       "description": "Grant competitions by Google.org for nonprofits and social enterprises",
       "organizer": null,
-      "website": null,
+      "website": "https://impactchallenge.withgoogle.com/",
       "location": {
         "is_virtual": false,
         "is_hybrid": false,
@@ -4196,7 +4196,7 @@
       "name": "Apple Entrepreneur Camp 2025",
       "description": "Code‑level labs and mentorship for underrepresented founders (no equity)",
       "organizer": null,
-      "website": null,
+      "website": "https://developer.apple.com/entrepreneur-camp/",
       "location": {
         "is_virtual": false,
         "is_hybrid": false,
@@ -4262,7 +4262,7 @@
       "name": "Mozilla Builders Award 2025",
       "description": "Grants for open‑source and Internet Health projects",
       "organizer": null,
-      "website": null,
+      "website": "https://www.mozilla.org/en-US/builders/awards/",
       "location": {
         "is_virtual": false,
         "is_hybrid": false,
@@ -4328,7 +4328,7 @@
       "name": "Samsung For Tomorrow Grant 2025",
       "description": "Corporate grants and tech support for global challenges",
       "organizer": null,
-      "website": null,
+      "website": "https://www.samsung.com/global/for-tomorrow/",
       "location": {
         "is_virtual": false,
         "is_hybrid": false,
@@ -4394,7 +4394,7 @@
       "name": "Alibaba Cloud Global Startup Accelerator 2025",
       "description": "Cloud credits, support and cash prizes via regional Demo Days",
       "organizer": null,
-      "website": null,
+      "website": "https://www.alibabacloud.com/campaign/startup-accelerator",
       "location": {
         "is_virtual": false,
         "is_hybrid": false,
@@ -4468,7 +4468,7 @@
       "name": "IBM Ignite Africa 2025",
       "description": "African startup support with IBM Cloud credits and mentorship",
       "organizer": null,
-      "website": null,
+      "website": "https://www.ibm.com/ibm/ignite-africa",
       "location": {
         "is_virtual": false,
         "is_hybrid": false,
@@ -4537,7 +4537,7 @@
       "name": "Entrepreneur First (EF) 2025 Cohorts",
       "description": "Talent‑investor program forming teams then investing at pre‑seed",
       "organizer": null,
-      "website": null,
+      "website": "https://www.joinef.com/apply/",
       "location": {
         "is_virtual": false,
         "is_hybrid": false,
@@ -4601,7 +4601,7 @@
       "name": "Zeroth AI Accelerator 2025",
       "description": "AI‑focused accelerator in Asia with early financing",
       "organizer": null,
-      "website": null,
+      "website": "https://www.zeroth.ai/",
       "location": {
         "is_virtual": false,
         "is_hybrid": false,
@@ -4666,7 +4666,7 @@
       "name": "500 Global ESG Fellowship 2025",
       "description": "Resources‑only program focused on ESG and impact",
       "organizer": null,
-      "website": null,
+      "website": "https://500.co/programs/impact/esg-fellowship",
       "location": {
         "is_virtual": false,
         "is_hybrid": false,
