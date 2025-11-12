@@ -6,7 +6,6 @@ import {
   addDays,
   compareAsc,
   format,
-  isAfter,
   isWithinInterval,
   parseISO,
   startOfDay,
@@ -16,6 +15,7 @@ import {
   Clock3,
   ExternalLink,
   Filter,
+  FilterX,
   Link as LinkIcon,
   Github,
   MapPin,
@@ -168,13 +168,13 @@ export function EventCalendar({ events, taxonomies }: EventCalendarProps) {
       .filter(Boolean) as Date[];
   }, [prioritized]);
 
-  const upcomingHighlights = useMemo(() => {
-    return prioritized
-      .filter((entry) => entry.timeline && isAfter(entry.timeline.date, new Date()))
-      .slice(0, 3);
-  }, [prioritized]);
-
   const noResults = visibleEvents.length === 0;
+  const filtersActive =
+    regionFilter !== "all" ||
+    sectorFilter !== "all" ||
+    typeFilter !== "all" ||
+    search.trim().length > 0 ||
+    !restrictToWindow;
 
   return (
     <div className="space-y-8">
@@ -200,7 +200,7 @@ export function EventCalendar({ events, taxonomies }: EventCalendarProps) {
             </div>
           </div>
           <div className="space-y-3 rounded-2xl border bg-white/70 px-8 py-6 text-center shadow-sm dark:bg-zinc-900/80">
-            <div className="flex items-center justify-center gap-3">
+            <div className="flex items-center justify-center gap-4">
               <span className="relative flex h-8 w-8 items-center justify-center">
                 <span
                   className="absolute inline-flex h-full w-full animate-ping rounded-full bg-[#2da6df]/40"
@@ -237,10 +237,6 @@ export function EventCalendar({ events, taxonomies }: EventCalendarProps) {
               onSelect={(date) => date && setWindowStart(startOfDay(date))}
               onMonthChange={(date) => setWindowStart(startOfDay(date))}
               modifiers={{ hasEvent: calendarDates }}
-              modifiersClassNames={{
-                hasEvent:
-                  "bg-primary/15 text-primary font-semibold data-[selected=true]:text-primary-foreground",
-              }}
               className="rounded-xl border"
             />
             <Separator />
@@ -253,22 +249,6 @@ export function EventCalendar({ events, taxonomies }: EventCalendarProps) {
                 <span className="text-muted-foreground">Total</span>
                 <span className="font-medium">{prioritized.length}</span>
               </div>
-              {upcomingHighlights[0] ? (
-                <div className="rounded-xl border bg-muted/40 p-3">
-                  <p className="text-xs text-muted-foreground">Next highlight</p>
-                  <p className="text-sm font-medium">
-                    {upcomingHighlights[0].record.name}
-                  </p>
-                  <p className="text-xs text-muted-foreground">
-                    {upcomingHighlights[0].timeline
-                      ? `${DATE_LABELS[upcomingHighlights[0].timeline.key]} · ${format(
-                          upcomingHighlights[0].timeline.date,
-                          "MMM d"
-                        )}`
-                      : "Timeline TBA"}
-                  </p>
-                </div>
-              ) : null}
             </div>
           </CardContent>
         </Card>
@@ -288,8 +268,27 @@ export function EventCalendar({ events, taxonomies }: EventCalendarProps) {
                   <TabsTrigger value="programs">Program starts</TabsTrigger>
                 </TabsList>
               </Tabs>
-              <div className="flex items-center gap-2 text-sm text-muted-foreground">
-                <Filter className="size-4" /> {visibleEvents.length} matches
+              <div className="flex flex-wrap items-center gap-3 text-sm text-muted-foreground">
+                <span className="inline-flex items-center gap-2">
+                  <Filter className="size-4" /> {visibleEvents.length} matches
+                </span>
+                {filtersActive ? (
+                  <Button
+                    variant="ghost"
+                    size="sm"
+                    className="inline-flex items-center gap-1 text-muted-foreground hover:text-foreground"
+                    onClick={() => {
+                      setRegionFilter("all");
+                      setSectorFilter("all");
+                      setTypeFilter("all");
+                      setSearch("");
+                      setRestrictToWindow(true);
+                    }}
+                  >
+                    <FilterX className="size-4" />
+                    Clear filters
+                  </Button>
+                ) : null}
               </div>
             </div>
             <div className="grid gap-3 md:grid-cols-2 xl:grid-cols-4">
@@ -396,6 +395,14 @@ export function EventCalendar({ events, taxonomies }: EventCalendarProps) {
               rel="noreferrer"
               className="font-medium text-foreground underline-offset-4 hover:text-primary hover:underline"
             >@nestymee</a>
+          </p>
+          <p className="mt-1">
+            Want to create a viral video with AI? Visit <a
+              href="https://yumcut.com"
+              target="_blank"
+              rel="noreferrer"
+              className="font-medium text-foreground underline-offset-4 hover:text-primary hover:underline"
+            >YumCut</a>
           </p>
         </div>
       </footer>
