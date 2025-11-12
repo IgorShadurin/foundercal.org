@@ -6,6 +6,7 @@ import {
   addDays,
   compareAsc,
   format,
+  isAfter,
   isWithinInterval,
   parseISO,
   startOfDay,
@@ -47,8 +48,10 @@ import {
 import { Separator } from "@/components/ui/separator";
 import { Tabs, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import type { EventRecord, Taxonomies } from "@/lib/event-data";
+import { cn } from "@/lib/utils";
 
 const TIMELINE_KEYS = [
+  "application_open",
   "application_close",
   "program_start",
   "program_end",
@@ -56,10 +59,32 @@ const TIMELINE_KEYS = [
 ] as const;
 
 const DATE_LABELS: Record<TimelineKey, string> = {
+  application_open: "Applications open",
   application_close: "Applications close",
   program_start: "Program kicks off",
   program_end: "Program wraps",
   demo_day: "Demo Day",
+};
+
+const REGION_LABELS: Record<string, string> = {
+  na: "NA",
+  eu: "EU",
+  apac: "APAC",
+  latam: "LATAM",
+  mena: "MENA",
+  africa: "Africa",
+  global: "Global",
+};
+
+const DATE_STYLES: Partial<Record<TimelineKey, string>> = {
+  application_open:
+    "text-emerald-700 bg-emerald-100 dark:text-emerald-200 dark:bg-emerald-900/40",
+  application_close:
+    "text-rose-700 bg-rose-100 dark:text-rose-200 dark:bg-rose-900/40",
+  program_start:
+    "text-sky-700 bg-sky-100 dark:text-sky-200 dark:bg-sky-900/40",
+  program_end:
+    "text-amber-700 bg-amber-100 dark:text-amber-200 dark:bg-amber-900/40",
 };
 
 const VIEW_MODES = {
@@ -112,7 +137,9 @@ export function EventCalendar({ events, taxonomies }: EventCalendarProps) {
   const [search, setSearch] = useState("");
   const [windowStart, setWindowStart] = useState(() => startOfDay(new Date()));
   const [restrictToWindow, setRestrictToWindow] = useState(true);
+  const [windowLength, setWindowLength] = useState(30);
   const today = startOfDay(new Date());
+  const aggregateCounts = useMemo(() => buildCounts(events), [events]);
 
   const normalized = useMemo(() => normalizeEvents(events), [events]);
 
@@ -151,8 +178,8 @@ export function EventCalendar({ events, taxonomies }: EventCalendarProps) {
   }, [filtered, viewMode]);
 
   const windowRange = useMemo(() => {
-    return { start: windowStart, end: addDays(windowStart, 30) };
-  }, [windowStart]);
+    return { start: windowStart, end: addDays(windowStart, windowLength - 1) };
+  }, [windowStart, windowLength]);
 
   const eventsInWindow = useMemo(() => {
     return prioritized.filter((entry) => {
@@ -175,7 +202,8 @@ export function EventCalendar({ events, taxonomies }: EventCalendarProps) {
     sectorFilter !== "all" ||
     typeFilter !== "all" ||
     search.trim().length > 0 ||
-    !restrictToWindow;
+    !restrictToWindow ||
+    windowLength !== 30;
 
   return (
     <div className="space-y-8">
@@ -240,7 +268,21 @@ export function EventCalendar({ events, taxonomies }: EventCalendarProps) {
               modifiers={{ hasEvent: calendarDates }}
               className="rounded-xl border"
             />
-            <div className="flex justify-end">
+            <div className="flex flex-col gap-2 sm:flex-row sm:items-center sm:justify-between">
+              <Select
+                value={String(windowLength)}
+                onValueChange={(value) => setWindowLength(Number(value))}
+              >
+                <SelectTrigger className="w-[160px]">
+                  <SelectValue />
+                </SelectTrigger>
+                <SelectContent>
+                  <SelectItem value="30">Next 30 days</SelectItem>
+                  <SelectItem value="90">Next 90 days</SelectItem>
+                  <SelectItem value="182">Next 6 months</SelectItem>
+                  <SelectItem value="365">Next 365 days</SelectItem>
+                </SelectContent>
+              </Select>
               <Button
                 variant="ghost"
                 size="sm"
@@ -294,6 +336,7 @@ export function EventCalendar({ events, taxonomies }: EventCalendarProps) {
                       setTypeFilter("all");
                       setSearch("");
                       setRestrictToWindow(true);
+                      setWindowLength(30);
                     }}
                   >
                     <FilterX className="size-4" />
@@ -314,10 +357,22 @@ export function EventCalendar({ events, taxonomies }: EventCalendarProps) {
                   <SelectValue placeholder="Region" />
                 </SelectTrigger>
                 <SelectContent>
-                  <SelectItem value="all">All regions</SelectItem>
+                  <SelectItem value="all">
+                    <span className="flex w-full items-center justify-between gap-2">
+                      <span>All regions</span>
+                      <span className="text-xs text-muted-foreground">
+                        {aggregateCounts.total}
+                      </span>
+                    </span>
+                  </SelectItem>
                   {taxonomies.regions.map((region) => (
                     <SelectItem key={region} value={region}>
-                      {formatLabel(region)}
+                      <span className="flex w-full items-center justify-between gap-2">
+                        <span>{formatRegion(region)}</span>
+                        <span className="text-xs text-muted-foreground">
+                          {aggregateCounts.regions[region.toLowerCase()]?.toString() ?? "0"}
+                        </span>
+                      </span>
                     </SelectItem>
                   ))}
                 </SelectContent>
@@ -327,10 +382,22 @@ export function EventCalendar({ events, taxonomies }: EventCalendarProps) {
                   <SelectValue placeholder="Sector" />
                 </SelectTrigger>
                 <SelectContent>
-                  <SelectItem value="all">All sectors</SelectItem>
+                  <SelectItem value="all">
+                    <span className="flex w-full items-center justify-between gap-2">
+                      <span>All sectors</span>
+                      <span className="text-xs text-muted-foreground">
+                        {aggregateCounts.total}
+                      </span>
+                    </span>
+                  </SelectItem>
                   {taxonomies.sectors.map((sector) => (
                     <SelectItem key={sector} value={sector}>
-                      {formatLabel(sector)}
+                      <span className="flex w-full items-center justify-between gap-2">
+                        <span>{formatLabel(sector)}</span>
+                        <span className="text-xs text-muted-foreground">
+                          {aggregateCounts.sectors[sector.toLowerCase()]?.toString() ?? "0"}
+                        </span>
+                      </span>
                     </SelectItem>
                   ))}
                 </SelectContent>
@@ -430,6 +497,9 @@ function EventCard({
 }) {
   const { record, locationLabel, timeline } = entry;
   const primaryType = record.categories.types[0];
+  const today = startOfDay(new Date());
+  const nextMilestone = getNextMilestone(entry, today);
+  const milestoneToShow = nextMilestone ?? timeline;
   const websiteUrl = withUtmSource(record.website);
 
   return (
@@ -465,11 +535,18 @@ function EventCard({
       </CardHeader>
       <CardContent className="space-y-4 text-sm">
         <div className="flex flex-wrap gap-3 text-muted-foreground">
-          <span className="inline-flex items-center gap-1 text-primary">
+          <span
+            className={cn(
+              "inline-flex items-center gap-1 rounded-md px-2 py-0.5 text-sm font-medium",
+              milestoneToShow
+                ? DATE_STYLES[milestoneToShow.key]
+                : "text-foreground bg-muted"
+            )}
+          >
             <Clock3 className="size-4" />
-            {timeline
-              ? `${DATE_LABELS[timeline.key]} · ${format(
-                  timeline.date,
+            {milestoneToShow
+              ? `${DATE_LABELS[milestoneToShow.key]} · ${format(
+                  milestoneToShow.date,
                   "MMM d, yyyy"
                 )}`
               : "Timeline TBA"}
@@ -550,7 +627,7 @@ function normalizeEvents(events: EventRecord[]): NormalizedEvent[] {
     const country = record.location?.country_code;
     const locationLabel = city
       ? [city, country].filter(Boolean).join(", ")
-      : formatLabel(record.location?.region_code ?? "global");
+      : formatRegion(record.location?.region_code ?? "global");
 
     const regionCode = (record.location?.region_code ?? record.index?.region_code ?? "global").toLowerCase();
 
@@ -589,8 +666,29 @@ function pickTimeline(
   return null;
 }
 
+function getNextMilestone(entry: NormalizedEvent, referenceDate: Date) {
+  const upcoming = TIMELINE_KEYS.map((key) => {
+    const date = entry.parsedDates[key];
+    return date && isAfter(date, referenceDate) ? { key, date } : null;
+  })
+    .filter(Boolean)
+    .sort((a, b) => compareAsc(a!.date, b!.date)) as Array<{ key: TimelineKey; date: Date }>;
+  return upcoming[0] ?? null;
+}
+
 function formatLabel(value: string | null | undefined) {
   if (!value) return "TBA";
+  if (value.toLowerCase() === "ai") return "AI";
+  return titleCase(value);
+}
+
+function formatRegion(value: string | null | undefined) {
+  if (!value) return "TBA";
+  const key = value.toLowerCase();
+  return REGION_LABELS[key] ?? titleCase(value);
+}
+
+function titleCase(value: string) {
   return value
     .replace(/_/g, " ")
     .split(" ")
@@ -609,6 +707,34 @@ function safeParseDate(value?: string | null) {
   } catch {
     return null;
   }
+}
+
+function buildCounts(events: EventRecord[]) {
+  const totals = {
+    total: events.length,
+    regions: {} as Record<string, number>,
+    sectors: {} as Record<string, number>,
+    types: {} as Record<string, number>,
+  };
+
+  for (const event of events) {
+    const region = event.location?.region_code?.toLowerCase();
+    if (region) {
+      totals.regions[region] = (totals.regions[region] ?? 0) + 1;
+    }
+
+    for (const sector of event.categories.sectors) {
+      const key = sector.toLowerCase();
+      totals.sectors[key] = (totals.sectors[key] ?? 0) + 1;
+    }
+
+    for (const type of event.categories.types) {
+      const key = type.toLowerCase();
+      totals.types[key] = (totals.types[key] ?? 0) + 1;
+    }
+  }
+
+  return totals;
 }
 
 function withUtmSource(url?: string | null) {
