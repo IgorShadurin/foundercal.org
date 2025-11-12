@@ -4662,6 +4662,76 @@
       "last_verified_utc": "2025-11-12T08:11:20Z"
     },
     {
+      "id": "a16z-speedrun-sr006",
+      "name": "a16z Speedrun SR006 (San Francisco 2026)",
+      "description": "Andreessen Horowitz's 12-week Speedrun program pairing selected teams with operating partners to ship product and raise capital.",
+      "organizer": "Andreessen Horowitz",
+      "website": "https://a16z.com/accelerator/speedrun/",
+      "location": {
+        "is_virtual": false,
+        "is_hybrid": false,
+        "venue": null,
+        "city": "San Francisco",
+        "city_slug": "san-francisco",
+        "country": null,
+        "country_code": "US",
+        "region_code": "na"
+      },
+      "dates": {
+        "application_open": null,
+        "application_close": "2025-09-28",
+        "program_start": "2026-01-26",
+        "program_end": "2026-04-12",
+        "demo_day": "2026-04-12",
+        "timezone": null,
+        "date_range_text": "Jan 26 – Apr 12, 2026"
+      },
+      "categories": {
+        "types": [
+          "accelerator"
+        ],
+        "supports": [
+          "funding",
+          "mentorship",
+          "resources"
+        ],
+        "sectors": [
+          "ai",
+          "general"
+        ]
+      },
+      "hashtags": [
+        "#sanfrancisco",
+        "#na",
+        "#ai",
+        "#funding"
+      ],
+      "index": {
+        "years": [
+          "2025",
+          "2026"
+        ],
+        "region_code": "na",
+        "country_code": "US",
+        "city_slug": "san-francisco",
+        "type_keys": [
+          "accelerator"
+        ],
+        "support_keys": [
+          "funding",
+          "mentorship",
+          "resources"
+        ],
+        "sector_keys": [
+          "ai",
+          "general"
+        ],
+        "date_sort_key": "2026-01-26"
+      },
+      "verification": "manual",
+      "last_verified_utc": "2025-11-12T14:55:00Z"
+    },
+    {
       "id": "500-global-esg-fellowship-2025",
       "name": "500 Global ESG Fellowship 2025",
       "description": "Resources‑only program focused on ESG and impact",
@@ -4726,6 +4796,337 @@
       },
       "verification": "reported",
       "last_verified_utc": "2025-11-12T08:11:20Z"
+    },
+    {
+      "id": "hf0-w26",
+      "name": "HF0 Residency Winter 2026",
+      "description": "HF0's 12-week San Francisco residency for repeat technical founders, offering $1M uncapped SAFE funding for 5% equity and an in-person build sprint.",
+      "organizer": "HF0",
+      "website": "https://www.hf0.com/",
+      "location": {
+        "is_virtual": false,
+        "is_hybrid": false,
+        "venue": null,
+        "city": "San Francisco",
+        "city_slug": "san-francisco",
+        "country": null,
+        "country_code": "US",
+        "region_code": "na"
+      },
+      "dates": {
+        "application_open": null,
+        "application_close": null,
+        "program_start": "2026-01-04",
+        "program_end": null,
+        "demo_day": null,
+        "timezone": "America/Los_Angeles",
+        "date_range_text": "Begins Jan 4, 2026 (12-week residency)"
+      },
+      "categories": {
+        "types": [
+          "accelerator"
+        ],
+        "supports": [
+          "funding",
+          "mentorship",
+          "resources"
+        ],
+        "sectors": [
+          "general"
+        ]
+      },
+      "hashtags": [
+        "#na",
+        "#sanfrancisco",
+        "#founders",
+        "#funding"
+      ],
+      "index": {
+        "years": [
+          "2026"
+        ],
+        "region_code": "na",
+        "country_code": "US",
+        "city_slug": "san-francisco",
+        "type_keys": [
+          "accelerator"
+        ],
+        "support_keys": [
+          "funding",
+          "mentorship",
+          "resources"
+        ],
+        "sector_keys": [
+          "general"
+        ],
+        "date_sort_key": "2026-01-04"
+      },
+      "verification": "manual",
+      "last_verified_utc": "2025-11-12T15:00:00Z"
+    },
+    {
+      "id": "founder-institute-sv-s26",
+      "name": "Founder Institute Silicon Valley Spring 2026",
+      "description": "Fully virtual Founder Institute cohort supporting early-stage founders with structured curriculum, mentor feedback, and fundraising prep.",
+      "organizer": "Founder Institute",
+      "website": "https://fi.co/apply",
+      "location": {
+        "is_virtual": true,
+        "is_hybrid": false,
+        "venue": null,
+        "city": null,
+        "city_slug": null,
+        "country": null,
+        "country_code": null,
+        "region_code": "global"
+      },
+      "dates": {
+        "application_open": null,
+        "application_close": null,
+        "program_start": "2026-03-10",
+        "program_end": "2026-06-03",
+        "demo_day": null,
+        "timezone": null,
+        "date_range_text": "Mar 10 – Jun 3, 2026"
+      },
+      "categories": {
+        "types": [
+          "accelerator"
+        ],
+        "supports": [
+          "mentorship",
+          "resources"
+        ],
+        "sectors": [
+          "general"
+        ]
+      },
+      "hashtags": [
+        "#global",
+        "#virtual",
+        "#mentorship"
+      ],
+      "index": {
+        "years": [
+          "2026"
+        ],
+        "region_code": "global",
+        "country_code": null,
+        "city_slug": null,
+        "type_keys": [
+          "accelerator"
+        ],
+        "support_keys": [
+          "mentorship",
+          "resources"
+        ],
+        "sector_keys": [
+          "general"
+        ],
+        "date_sort_key": "2026-03-10"
+      },
+      "verification": "manual",
+      "last_verified_utc": "2025-11-12T15:08:00Z"
+    },
+    {
+      "id": "startupchile-build-11-2025",
+      "name": "Start-Up Chile Build 11 (BIG 2025)",
+      "description": "Four-month equity-free pre-acceleration program from Start-Up Chile for early-stage startups moving from validated idea to MVP.",
+      "organizer": "Start-Up Chile / CORFO",
+      "website": "https://startupchile.org/postula/build/",
+      "location": {
+        "is_virtual": false,
+        "is_hybrid": true,
+        "venue": null,
+        "city": "Santiago",
+        "city_slug": "santiago",
+        "country": "Chile",
+        "country_code": "CL",
+        "region_code": "latam"
+      },
+      "dates": {
+        "application_open": "2025-04-16",
+        "application_close": "2025-05-09",
+        "program_start": null,
+        "program_end": null,
+        "demo_day": null,
+        "timezone": "America/Santiago",
+        "date_range_text": "Applications Apr 16–May 9, 2025"
+      },
+      "categories": {
+        "types": [
+          "accelerator"
+        ],
+        "supports": [
+          "funding",
+          "mentorship",
+          "resources"
+        ],
+        "sectors": [
+          "general"
+        ]
+      },
+      "hashtags": [
+        "#build",
+        "#chile",
+        "#equityfree"
+      ],
+      "index": {
+        "years": [
+          "2025"
+        ],
+        "region_code": "latam",
+        "country_code": "CL",
+        "city_slug": "santiago",
+        "type_keys": [
+          "accelerator"
+        ],
+        "support_keys": [
+          "funding",
+          "mentorship",
+          "resources"
+        ],
+        "sector_keys": [
+          "general"
+        ],
+        "date_sort_key": "2025-04-16"
+      },
+      "verification": "manual",
+      "last_verified_utc": "2025-11-12T15:18:00Z"
+    },
+    {
+      "id": "cleantech-open-us-2025",
+      "name": "Cleantech Open US Accelerator 2025",
+      "description": "Six-month equity-free business accelerator for early-stage cleantech startups with regional programming across the United States.",
+      "organizer": "Cleantech Open",
+      "website": "https://www.cleantechopen.org/us-accelerator",
+      "location": {
+        "is_virtual": false,
+        "is_hybrid": true,
+        "venue": null,
+        "city": null,
+        "city_slug": null,
+        "country": null,
+        "country_code": "US",
+        "region_code": "na"
+      },
+      "dates": {
+        "application_open": null,
+        "application_close": null,
+        "program_start": null,
+        "program_end": null,
+        "demo_day": null,
+        "timezone": null,
+        "date_range_text": "2025 cohort"
+      },
+      "categories": {
+        "types": [
+          "accelerator"
+        ],
+        "supports": [
+          "mentorship",
+          "resources"
+        ],
+        "sectors": [
+          "climatetech",
+          "energy"
+        ]
+      },
+      "hashtags": [
+        "#cleantech",
+        "#na",
+        "#equityfree"
+      ],
+      "index": {
+        "years": [
+          "2025"
+        ],
+        "region_code": "na",
+        "country_code": "US",
+        "city_slug": null,
+        "type_keys": [
+          "accelerator"
+        ],
+        "support_keys": [
+          "mentorship",
+          "resources"
+        ],
+        "sector_keys": [
+          "climatetech",
+          "energy"
+        ],
+        "date_sort_key": null
+      },
+      "verification": "manual",
+      "last_verified_utc": "2025-11-12T15:15:00Z"
+    },
+    {
+      "id": "betaworks-camp-fall-2025",
+      "name": "Betaworks Camp Fall 2025",
+      "description": "Betaworks' 13-week thematic investment and in-residence program focused on new human-machine interfaces.",
+      "organizer": "Betaworks",
+      "website": "https://betaworks.com/camp",
+      "location": {
+        "is_virtual": false,
+        "is_hybrid": false,
+        "venue": null,
+        "city": "New York",
+        "city_slug": "new-york",
+        "country": null,
+        "country_code": "US",
+        "region_code": "na"
+      },
+      "dates": {
+        "application_open": "2025-06-01",
+        "application_close": "2025-07-11",
+        "program_start": null,
+        "program_end": null,
+        "demo_day": null,
+        "timezone": "America/New_York",
+        "date_range_text": "Aug–Nov 2025 (13-week residency)"
+      },
+      "categories": {
+        "types": [
+          "accelerator"
+        ],
+        "supports": [
+          "funding",
+          "mentorship",
+          "resources"
+        ],
+        "sectors": [
+          "ai",
+          "general"
+        ]
+      },
+      "hashtags": [
+        "#betaworks",
+        "#na",
+        "#interfaces"
+      ],
+      "index": {
+        "years": [
+          "2025"
+        ],
+        "region_code": "na",
+        "country_code": "US",
+        "city_slug": "new-york",
+        "type_keys": [
+          "accelerator"
+        ],
+        "support_keys": [
+          "funding",
+          "mentorship",
+          "resources"
+        ],
+        "sector_keys": [
+          "ai",
+          "general"
+        ],
+        "date_sort_key": "2025-06-01"
+      },
+      "verification": "manual",
+      "last_verified_utc": "2025-11-12T15:25:00Z"
     }
   ]
 }
