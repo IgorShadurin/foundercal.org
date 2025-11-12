@@ -3,13 +3,13 @@
 import Image from "next/image";
 import { useMemo, useState } from "react";
 import {
+  addDays,
   compareAsc,
-  endOfMonth,
   format,
   isAfter,
   isWithinInterval,
   parseISO,
-  startOfMonth,
+  startOfDay,
 } from "date-fns";
 import {
   CalendarRange,
@@ -36,7 +36,6 @@ import {
   PopoverContent,
   PopoverTrigger,
 } from "@/components/ui/popover";
-import { ScrollArea } from "@/components/ui/scroll-area";
 import {
   Select,
   SelectContent,
@@ -110,8 +109,8 @@ export function EventCalendar({ events, taxonomies }: EventCalendarProps) {
   const [sectorFilter, setSectorFilter] = useState("all");
   const [typeFilter, setTypeFilter] = useState("all");
   const [search, setSearch] = useState("");
-  const [monthAnchor, setMonthAnchor] = useState(() => startOfMonth(new Date()));
-  const [restrictToMonth, setRestrictToMonth] = useState(true);
+  const [windowStart, setWindowStart] = useState(() => startOfDay(new Date()));
+  const [restrictToWindow, setRestrictToWindow] = useState(true);
 
   const normalized = useMemo(() => normalizeEvents(events), [events]);
 
@@ -149,18 +148,18 @@ export function EventCalendar({ events, taxonomies }: EventCalendarProps) {
       });
   }, [filtered, viewMode]);
 
-  const monthRange = useMemo(() => {
-    return { start: startOfMonth(monthAnchor), end: endOfMonth(monthAnchor) };
-  }, [monthAnchor]);
+  const windowRange = useMemo(() => {
+    return { start: windowStart, end: addDays(windowStart, 30) };
+  }, [windowStart]);
 
-  const eventsInMonth = useMemo(() => {
+  const eventsInWindow = useMemo(() => {
     return prioritized.filter((entry) => {
       if (!entry.timeline) return false;
-      return isWithinInterval(entry.timeline.date, monthRange);
+      return isWithinInterval(entry.timeline.date, windowRange);
     });
-  }, [prioritized, monthRange]);
+  }, [prioritized, windowRange]);
 
-  const visibleEvents = restrictToMonth ? eventsInMonth : prioritized;
+  const visibleEvents = restrictToWindow ? eventsInWindow : prioritized;
 
   const calendarDates = useMemo(() => {
     return prioritized
@@ -209,7 +208,7 @@ export function EventCalendar({ events, taxonomies }: EventCalendarProps) {
                 <span className="inline-flex h-3 w-3 rounded-full bg-[#2da6df]" />
               </span>
               <p className="text-6xl font-black text-foreground">
-                {eventsInMonth.length.toString().padStart(2, "0")}
+                {eventsInWindow.length.toString().padStart(2, "0")}
               </p>
             </div>
             <p className="text-sm font-medium text-muted-foreground">
@@ -232,10 +231,10 @@ export function EventCalendar({ events, taxonomies }: EventCalendarProps) {
           <CardContent className="space-y-4">
             <Calendar
               mode="single"
-              month={monthRange.start}
-              selected={monthRange.start}
-              onSelect={(date) => date && setMonthAnchor(startOfMonth(date))}
-              onMonthChange={(date) => setMonthAnchor(startOfMonth(date))}
+              month={windowStart}
+              selected={windowStart}
+              onSelect={(date) => date && setWindowStart(startOfDay(date))}
+              onMonthChange={(date) => setWindowStart(startOfDay(date))}
               modifiers={{ hasEvent: calendarDates }}
               modifiersClassNames={{
                 hasEvent:
@@ -243,22 +242,6 @@ export function EventCalendar({ events, taxonomies }: EventCalendarProps) {
               }}
               className="rounded-xl border"
             />
-            <div className="flex flex-wrap gap-2">
-              <Button
-                size="sm"
-                variant={restrictToMonth ? "default" : "outline"}
-                onClick={() => setRestrictToMonth(true)}
-              >
-                Focus on {format(monthRange.start, "MMM")}
-              </Button>
-              <Button
-                size="sm"
-                variant={restrictToMonth ? "outline" : "default"}
-                onClick={() => setRestrictToMonth(false)}
-              >
-                Show all upcoming
-              </Button>
-            </div>
             <Separator />
             <div className="space-y-3 text-sm">
               <div className="flex items-center justify-between">
@@ -266,7 +249,7 @@ export function EventCalendar({ events, taxonomies }: EventCalendarProps) {
                 <span className="font-medium">{visibleEvents.length}</span>
               </div>
               <div className="flex items-center justify-between">
-                <span className="text-muted-foreground">Overall upcoming</span>
+                <span className="text-muted-foreground">Total</span>
                 <span className="font-medium">{prioritized.length}</span>
               </div>
               {upcomingHighlights[0] ? (
@@ -363,18 +346,16 @@ export function EventCalendar({ events, taxonomies }: EventCalendarProps) {
                 <p className="text-sm text-muted-foreground">
                   Try loosening a filter or switch to the full upcoming list.
                 </p>
-                <Button variant="secondary" onClick={() => setRestrictToMonth(false)}>
+                <Button variant="secondary" onClick={() => setRestrictToWindow(false)}>
                   Show all upcoming
                 </Button>
               </div>
             ) : (
-              <ScrollArea className="h-[640px] pr-4">
-                <div className="space-y-4">
-                  {visibleEvents.map((entry) => (
-                    <EventCard key={entry.record.id} entry={entry} />
-                  ))}
-                </div>
-              </ScrollArea>
+              <div className="space-y-4">
+                {visibleEvents.map((entry) => (
+                  <EventCard key={entry.record.id} entry={entry} />
+                ))}
+              </div>
             )}
           </CardContent>
         </Card>
