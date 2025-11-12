@@ -14,11 +14,11 @@ import {
 import {
   CalendarRange,
   Clock3,
-  ExternalLink,
   Filter,
   FilterX,
   Link as LinkIcon,
   Github,
+  Info,
   MapPin,
 } from "lucide-react";
 
@@ -345,15 +345,15 @@ export function EventCalendar({ events, taxonomies }: EventCalendarProps) {
                 ) : null}
               </div>
             </div>
-            <div className="grid gap-3 md:grid-cols-2 xl:grid-cols-4">
+            <div className="grid gap-3 grid-cols-1 md:grid-cols-[minmax(0,_2fr)_minmax(0,_1fr)_minmax(0,_1fr)_minmax(0,_1fr)]">
               <Input
                 value={search}
                 onChange={(event) => setSearch(event.target.value)}
                 placeholder="Search by name, city, hashtag..."
-                className="md:col-span-2 xl:col-span-2"
+                className="w-full"
               />
               <Select value={regionFilter} onValueChange={setRegionFilter}>
-                <SelectTrigger>
+                <SelectTrigger className="w-full">
                   <SelectValue placeholder="Region" />
                 </SelectTrigger>
                 <SelectContent>
@@ -378,7 +378,7 @@ export function EventCalendar({ events, taxonomies }: EventCalendarProps) {
                 </SelectContent>
               </Select>
               <Select value={sectorFilter} onValueChange={setSectorFilter}>
-                <SelectTrigger>
+                <SelectTrigger className="w-full">
                   <SelectValue placeholder="Sector" />
                 </SelectTrigger>
                 <SelectContent>
@@ -403,7 +403,7 @@ export function EventCalendar({ events, taxonomies }: EventCalendarProps) {
                 </SelectContent>
               </Select>
               <Select value={typeFilter} onValueChange={setTypeFilter}>
-                <SelectTrigger>
+                <SelectTrigger className="w-full">
                   <SelectValue placeholder="Program type" />
                 </SelectTrigger>
                 <SelectContent>
@@ -507,23 +507,53 @@ function EventCard({
       <CardHeader>
         <div className="flex flex-col gap-3 md:flex-row md:items-start md:justify-between">
           <div className="space-y-1">
-            <CardTitle className="text-lg">
-              {websiteUrl ? (
-                <a
-                  href={websiteUrl}
-                  target="_blank"
-                  rel="noreferrer"
-                  className="flex items-center gap-2 text-foreground underline-offset-4 hover:text-primary hover:underline"
-                >
-                  <span className="inline-flex items-center justify-center rounded-full bg-primary/10 p-1 text-primary">
-                    <LinkIcon className="size-3.5" />
-                  </span>
-                  {record.name}
-                </a>
-              ) : (
-                record.name
-              )}
-            </CardTitle>
+            <div className="flex items-start gap-2">
+              <CardTitle className="flex-1 text-lg">
+                {websiteUrl ? (
+                  <a
+                    href={websiteUrl}
+                    target="_blank"
+                    rel="noreferrer"
+                    className="flex items-center gap-2 text-foreground underline-offset-4 hover:text-primary hover:underline"
+                  >
+                    <span className="inline-flex items-center justify-center rounded-full bg-primary/10 p-1 text-primary">
+                      <LinkIcon className="size-3.5" />
+                    </span>
+                    {record.name}
+                  </a>
+                ) : (
+                  record.name
+                )}
+              </CardTitle>
+              <Popover>
+                <PopoverTrigger asChild>
+                  <Button
+                    size="icon"
+                    variant="ghost"
+                    className="h-8 w-8 text-muted-foreground hover:text-foreground"
+                    aria-label="View key dates"
+                  >
+                    <Info className="size-4" />
+                  </Button>
+                </PopoverTrigger>
+                <PopoverContent className="w-64 text-sm" align="end">
+                  <div className="space-y-2">
+                    {TIMELINE_KEYS.map((key) => (
+                      <div key={key} className="flex items-center justify-between">
+                        <span className="text-muted-foreground">
+                          {DATE_LABELS[key]}
+                        </span>
+                        <span className="font-medium">
+                          {entry.parsedDates[key]
+                            ? format(entry.parsedDates[key]!, "MMM d, yyyy")
+                            : "TBA"}
+                        </span>
+                      </div>
+                    ))}
+                  </div>
+                </PopoverContent>
+              </Popover>
+            </div>
             <CardDescription>{record.description}</CardDescription>
           </div>
           {primaryType ? (
@@ -574,38 +604,6 @@ function EventCard({
               {tag}
             </Badge>
           ))}
-        </div>
-        <div className="flex flex-wrap gap-2">
-          {websiteUrl ? (
-            <Button size="sm" asChild>
-              <a href={websiteUrl} target="_blank" rel="noreferrer">
-                Visit site <ExternalLink className="ml-1 size-3.5" />
-              </a>
-            </Button>
-          ) : null}
-          <Popover>
-            <PopoverTrigger asChild>
-              <Button size="sm" variant="outline">
-                Key dates
-              </Button>
-            </PopoverTrigger>
-            <PopoverContent className="w-64 text-sm" align="start">
-              <div className="space-y-2">
-                {TIMELINE_KEYS.map((key) => (
-                  <div key={key} className="flex items-center justify-between">
-                    <span className="text-muted-foreground">
-                      {DATE_LABELS[key]}
-                    </span>
-                    <span className="font-medium">
-                      {entry.parsedDates[key]
-                        ? format(entry.parsedDates[key]!, "MMM d, yyyy")
-                        : "TBA"}
-                    </span>
-                  </div>
-                ))}
-              </div>
-            </PopoverContent>
-          </Popover>
         </div>
       </CardContent>
     </Card>
