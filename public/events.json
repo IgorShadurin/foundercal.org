@@ -6128,6 +6128,74 @@
         ]
       },
       "last_verified_utc": "2025-11-12T20:51:10Z"
+    },
+    {
+      "id": "alliance-dao-accelerator-2025",
+      "name": "Alliance DAO Crypto Accelerator",
+      "organizer": "Alliance",
+      "website": "https://alliance.xyz/",
+      "verification": "manual",
+      "description": "Leading crypto and AI accelerator offering $500K funding, dual-week in-person onboarding in NYC, eight weeks of remote mentorship, and a NYC demo day connecting founders to top Web3 investors.",
+      "categories": {
+        "types": [
+          "accelerator"
+        ],
+        "supports": [
+          "funding",
+          "mentorship",
+          "resources"
+        ],
+        "sectors": [
+          "web3",
+          "ai"
+        ]
+      },
+      "dates": {
+        "application_open": null,
+        "application_close": null,
+        "program_start": null,
+        "program_end": null,
+        "demo_day": null,
+        "date_range_text": "10-week cadence: 2-week NYC onboarding + 8-week remote program with week-10 Demo Day in New York (rolling 2025 cohorts)",
+        "timezone": "America/New_York"
+      },
+      "hashtags": [
+        "#crypto",
+        "#web3",
+        "#nyc"
+      ],
+      "location": {
+        "city": "New York",
+        "city_slug": "new-york",
+        "country": "United States",
+        "country_code": "US",
+        "region_code": "na",
+        "is_hybrid": true,
+        "is_virtual": true,
+        "venue": "Alliance NYC campus"
+      },
+      "index": {
+        "city_slug": "new-york",
+        "country_code": "US",
+        "region_code": "na",
+        "date_sort_key": null,
+        "type_keys": [
+          "accelerator"
+        ],
+        "support_keys": [
+          "funding",
+          "mentorship",
+          "resources"
+        ],
+        "sector_keys": [
+          "web3",
+          "ai"
+        ],
+        "years": [
+          "2025"
+        ]
+      },
+      "last_verified_utc": "2025-11-13T06:32:01Z"
     }
   ]
 }
