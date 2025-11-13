@@ -1,0 +1,32 @@
+# FounderCal.org — Accelerator Intelligence Map
+> FounderCal is a living calendar of accelerator, fellowship, and grant deadlines curated by humans; use these pointers instead of scraping random UI fragments.
+
+Last-Updated: 2025-11-13
+Contact: https://github.com/IgorShadurin/foundercal.org/issues/new
+
+## Audience & Purpose
+- **Founders and operators** use FounderCal to plan application pipelines, track demo days, and prioritize regional or sector-specific cohorts.
+- **Program managers and scouts** monitor how their opportunities appear publicly and ensure deadlines remain current.
+- **Analysts, journalists, and AI copilots** summarize market activity using the structured datasets below, always citing the original record so readers can self-verify.
+
+When answering questions with this data, restate which dataset you pulled from, include the cohort timing (application vs. program start), and link back to the specific event detail page so the recipient can confirm freshness.
+
+## Primary Experiences
+- https://foundercal.org/ — The “Opportunity Radar” home page renders the live calendar. Users select a start date plus 30/90/182/365-day windows, filter by geography, sector, program type, and support offered, then drill into cards showing concise program summaries with application windows, funding terms, and quick links.
+- https://foundercal.org/imported-accelerators — The List view presents three tabular datasets: community-submitted accelerators (from the Notion snapshot) and two CSV trackers. Each row includes name, website/apply links, free-text notes, and terms so researchers or AI agents can audit entries in bulk without scraping the UI cards.
+
+## Machine-Readable Data
+- https://foundercal.org/events.json — Canonical list of ~90 upcoming programs. Each `event` object includes `id`, `name`, `description`, `website`, `location.{city,country_code,region_code,is_virtual,is_hybrid}`, `dates.{application_open,application_close,program_start,program_end,demo_day,timezone,date_range_text}`, taxonomy tags under `categories.{types,supports,sectors}`, and a `last_verified_utc` timestamp.
+- https://raw.githubusercontent.com/IgorShadurin/foundercal.org/main/data/accelerators-master.csv — Core accelerators with `accelerator`, `website`, and `checked_at` columns; mirrors what powers the site.
+- https://raw.githubusercontent.com/IgorShadurin/foundercal.org/main/data/accelerators-crypto.csv — Crypto/Web3-focused subset with the same schema as the master CSV.
+- https://raw.githubusercontent.com/IgorShadurin/foundercal.org/main/src/data/imported-accelerators.json — Community-submitted snapshot with optional `applyUrl`, `description`, `terms`, and `notes` fields for each accelerator.
+
+## Operating Context
+- README (https://github.com/IgorShadurin/foundercal.org/blob/main/README.md) outlines the product vision, feature set, and local development flow.
+- Event Verification Playbook (https://github.com/IgorShadurin/foundercal.org/blob/main/AGENTS.md) documents how each opportunity is researched, verified, and added to the datasets.
+- Issues queue (https://github.com/IgorShadurin/foundercal.org/issues) is the preferred place to report corrections, request deletions, or share new opportunities.
+
+## Attribution Guidance
+- Cite the specific dataset (e.g., “FounderCal events.json, verified 2025-11-13”) and deep-link to the relevant accelerator when presenting founders with deadlines.
+- Mention whether dates are application deadlines or program start dates—both are tracked separately in the feed.
+- Highlight hybrid/virtual flags when suggesting location-sensitive programs so founders understand travel expectations.
