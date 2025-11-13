@@ -71,7 +71,7 @@
         "program_end": "2025-11-30",
         "demo_day": null,
         "timezone": null,
-        "date_range_text": "Oct–Nov 2025"
+        "date_range_text": "Oct\u2013Nov 2025"
       },
       "categories": {
         "types": [
@@ -116,7 +116,7 @@
     {
       "id": "yc-w26",
       "name": "Y Combinator Winter 2026 Batch",
-      "description": "3‑month accelerator with standard YC deal and investor network",
+      "description": "3\u2011month accelerator with standard YC deal and investor network",
       "organizer": null,
       "website": "https://www.ycombinator.com/apply",
       "location": {
@@ -136,7 +136,7 @@
         "program_end": "2026-03-31",
         "demo_day": "2026-03-27",
         "timezone": null,
-        "date_range_text": "Jan–Mar 2026"
+        "date_range_text": "Jan\u2013Mar 2026"
       },
       "categories": {
         "types": [
@@ -182,7 +182,7 @@
     {
       "id": "techstars-boston-f25",
       "name": "Techstars Boston Accelerator (Fall 2025)",
-      "description": "13‑week hybrid accelerator across AI/ML, healthtech, climate, SaaS",
+      "description": "13\u2011week hybrid accelerator across AI/ML, healthtech, climate, SaaS",
       "organizer": null,
       "website": "https://www.techstars.com/accelerators/boston",
       "location": {
@@ -202,7 +202,7 @@
         "program_end": "2025-12-09",
         "demo_day": null,
         "timezone": null,
-        "date_range_text": "Sep 8 – Dec 9, 2025"
+        "date_range_text": "Sep 8 \u2013 Dec 9, 2025"
       },
       "categories": {
         "types": [
@@ -267,7 +267,7 @@
         "program_end": "2026-06-04",
         "demo_day": null,
         "timezone": null,
-        "date_range_text": "Mar 9 – Jun 4, 2026"
+        "date_range_text": "Mar 9 \u2013 Jun 4, 2026"
       },
       "categories": {
         "types": [
@@ -313,7 +313,7 @@
     {
       "id": "techstars-nyc-s26",
       "name": "Techstars NYC Accelerator (Spring 2026)",
-      "description": "3‑month accelerator with mentors and investor network",
+      "description": "3\u2011month accelerator with mentors and investor network",
       "organizer": null,
       "website": "https://www.techstars.com/accelerators/nyc",
       "location": {
@@ -333,7 +333,7 @@
         "program_end": "2026-06-01",
         "demo_day": null,
         "timezone": null,
-        "date_range_text": "Mar–Jun 2026"
+        "date_range_text": "Mar\u2013Jun 2026"
       },
       "categories": {
         "types": [
@@ -399,7 +399,7 @@
         "program_end": "2026-06-01",
         "demo_day": null,
         "timezone": null,
-        "date_range_text": "Mar–Jun 2026"
+        "date_range_text": "Mar\u2013Jun 2026"
       },
       "categories": {
         "types": [
@@ -445,7 +445,7 @@
     {
       "id": "techstars-anywhere-s26",
       "name": "Techstars Anywhere Accelerator (Spring 2026)",
-      "description": "Remote-first accelerator with some in‑person gatherings",
+      "description": "Remote-first accelerator with some in\u2011person gatherings",
       "organizer": null,
       "website": "https://www.techstars.com/accelerators/anywhere",
       "location": {
@@ -465,7 +465,7 @@
         "program_end": "2026-06-04",
         "demo_day": "2026-06-04",
         "timezone": null,
-        "date_range_text": "Mar 9 – Jun 4, 2026"
+        "date_range_text": "Mar 9 \u2013 Jun 4, 2026"
       },
       "categories": {
         "types": [
@@ -531,7 +531,7 @@
         "program_end": "2026-05-31",
         "demo_day": null,
         "timezone": null,
-        "date_range_text": "Feb–May 2026"
+        "date_range_text": "Feb\u2013May 2026"
       },
       "categories": {
         "types": [
@@ -600,7 +600,7 @@
         "program_end": "2026-06-01",
         "demo_day": null,
         "timezone": null,
-        "date_range_text": "Mar–Jun 2026"
+        "date_range_text": "Mar\u2013Jun 2026"
       },
       "categories": {
         "types": [
@@ -668,7 +668,7 @@
         "program_end": "2026-04-15",
         "demo_day": null,
         "timezone": null,
-        "date_range_text": "Jan–Apr 2026"
+        "date_range_text": "Jan\u2013Apr 2026"
       },
       "categories": {
         "types": [
@@ -734,7 +734,7 @@
         "program_end": "2026-05-15",
         "demo_day": null,
         "timezone": null,
-        "date_range_text": "Feb–May 2026"
+        "date_range_text": "Feb\u2013May 2026"
       },
       "categories": {
         "types": [
@@ -800,7 +800,7 @@
         "program_end": "2026-03-01",
         "demo_day": null,
         "timezone": null,
-        "date_range_text": "Oct 2025 – Mar 2026"
+        "date_range_text": "Oct 2025 \u2013 Mar 2026"
       },
       "categories": {
         "types": [
@@ -866,7 +866,7 @@
         "program_end": "2025-11-30",
         "demo_day": null,
         "timezone": null,
-        "date_range_text": "Sep–Nov 2025"
+        "date_range_text": "Sep\u2013Nov 2025"
       },
       "categories": {
         "types": [
@@ -931,7 +931,7 @@
         "program_end": "2026-03-31",
         "demo_day": null,
         "timezone": null,
-        "date_range_text": "Jan–Mar 2026"
+        "date_range_text": "Jan\u2013Mar 2026"
       },
       "categories": {
         "types": [
@@ -997,7 +997,7 @@
         "program_end": "2026-03-01",
         "demo_day": null,
         "timezone": null,
-        "date_range_text": "Nov 2025 – Mar 2026"
+        "date_range_text": "Nov 2025 \u2013 Mar 2026"
       },
       "categories": {
         "types": [
@@ -1063,7 +1063,7 @@
         "program_end": "2026-04-12",
         "demo_day": null,
         "timezone": null,
-        "date_range_text": "Jan–Apr 2026"
+        "date_range_text": "Jan\u2013Apr 2026"
       },
       "categories": {
         "types": [
@@ -1131,7 +1131,7 @@
         "program_end": "2025-12-15",
         "demo_day": null,
         "timezone": null,
-        "date_range_text": "Sep–Dec 2025"
+        "date_range_text": "Sep\u2013Dec 2025"
       },
       "categories": {
         "types": [
@@ -1196,7 +1196,7 @@
         "program_end": "2025-12-20",
         "demo_day": null,
         "timezone": null,
-        "date_range_text": "Sep 30 – Dec 20, 2025"
+        "date_range_text": "Sep 30 \u2013 Dec 20, 2025"
       },
       "categories": {
         "types": [
@@ -1260,7 +1260,7 @@
         "program_end": "2025-11-15",
         "demo_day": null,
         "timezone": null,
-        "date_range_text": "Sep–Nov 2025"
+        "date_range_text": "Sep\u2013Nov 2025"
       },
       "categories": {
         "types": [
@@ -1328,7 +1328,7 @@
         "program_end": "2025-10-31",
         "demo_day": null,
         "timezone": null,
-        "date_range_text": "Aug–Oct 2025 (rolling)"
+        "date_range_text": "Aug\u2013Oct 2025 (rolling)"
       },
       "categories": {
         "types": [
@@ -1393,7 +1393,7 @@
         "program_end": "2025-12-15",
         "demo_day": null,
         "timezone": null,
-        "date_range_text": "Oct–Dec 2025"
+        "date_range_text": "Oct\u2013Dec 2025"
       },
       "categories": {
         "types": [
@@ -1458,7 +1458,7 @@
         "program_end": "2026-06-30",
         "demo_day": null,
         "timezone": null,
-        "date_range_text": "Feb–Jun 2026"
+        "date_range_text": "Feb\u2013Jun 2026"
       },
       "categories": {
         "types": [
@@ -1524,7 +1524,7 @@
         "program_end": "2026-10-15",
         "demo_day": null,
         "timezone": null,
-        "date_range_text": "Jun – mid‑Oct 2026"
+        "date_range_text": "Jun \u2013 mid\u2011Oct 2026"
       },
       "categories": {
         "types": [
@@ -1594,7 +1594,7 @@
         "program_end": "2026-04-30",
         "demo_day": null,
         "timezone": null,
-        "date_range_text": "Jan–Apr 2026"
+        "date_range_text": "Jan\u2013Apr 2026"
       },
       "categories": {
         "types": [
@@ -1660,7 +1660,7 @@
         "program_end": "2026-01-15",
         "demo_day": null,
         "timezone": null,
-        "date_range_text": "Oct 2025 – Jan 2026"
+        "date_range_text": "Oct 2025 \u2013 Jan 2026"
       },
       "categories": {
         "types": [
@@ -1771,7 +1771,7 @@
     {
       "id": "gfs-ai-energy-na-25",
       "name": "Google for Startups Accelerator: AI for Energy (North America) 2025",
-      "description": "Hybrid, equity‑free program; mentorship and up to cloud credits",
+      "description": "Hybrid, equity\u2011free program; mentorship and up to cloud credits",
       "organizer": null,
       "website": "https://startup.google.com/programs/accelerator/ai-for-energy/north-america/",
       "location": {
@@ -1845,7 +1845,7 @@
     {
       "id": "gfs-climate-25",
       "name": "Google for Startups Accelerator: Climate Change 2025",
-      "description": "Equity‑free support from Google engineers and product teams",
+      "description": "Equity\u2011free support from Google engineers and product teams",
       "organizer": null,
       "website": "https://startup.google.com/programs/accelerator/climate-change/north-america/",
       "location": {
@@ -1914,7 +1914,7 @@
     {
       "id": "startup-chile-seed-25",
       "name": "Startup Chile Seed Accelerator (2025)",
-      "description": "Government-backed accelerator with equity‑free grant and visa",
+      "description": "Government-backed accelerator with equity\u2011free grant and visa",
       "organizer": null,
       "website": "https://www.startupchile.org/programs/seed",
       "location": {
@@ -1934,7 +1934,7 @@
         "program_end": "2025-11-30",
         "demo_day": null,
         "timezone": null,
-        "date_range_text": "Jun–Nov 2025"
+        "date_range_text": "Jun\u2013Nov 2025"
       },
       "categories": {
         "types": [
@@ -1978,7 +1978,7 @@
     },
     {
       "id": "cdl-2025-26",
-      "name": "Creative Destruction Lab (CDL) 2025–26",
+      "name": "Creative Destruction Lab (CDL) 2025\u201326",
       "description": "Milestone-based deeptech program with mentoring (no direct funding)",
       "organizer": null,
       "website": "https://creativedestructionlab.com/",
@@ -1999,7 +1999,7 @@
         "program_end": "2026-06-30",
         "demo_day": null,
         "timezone": null,
-        "date_range_text": "Oct 2025 – Jun 2026"
+        "date_range_text": "Oct 2025 \u2013 Jun 2026"
       },
       "categories": {
         "types": [
@@ -2051,7 +2051,7 @@
     {
       "id": "plugandplay-fintech-f25",
       "name": "Plug and Play Fintech Batch (Fall 2025)",
-      "description": "Equity‑free corporate innovation program enabling pilots",
+      "description": "Equity\u2011free corporate innovation program enabling pilots",
       "organizer": null,
       "website": "https://www.plugandplaytechcenter.com/fintech/",
       "location": {
@@ -2071,7 +2071,7 @@
         "program_end": "2025-11-30",
         "demo_day": null,
         "timezone": null,
-        "date_range_text": "Sep–Nov 2025"
+        "date_range_text": "Sep\u2013Nov 2025"
       },
       "categories": {
         "types": [
@@ -2116,7 +2116,7 @@
     {
       "id": "sbc-afritech-25",
       "name": "Startupbootcamp AfriTech 2025",
-      "description": "Pan‑African accelerator providing stipends and investor access",
+      "description": "Pan\u2011African accelerator providing stipends and investor access",
       "organizer": null,
       "website": "https://www.startupbootcamp.org/accelerator/afritech/",
       "location": {
@@ -2136,7 +2136,7 @@
         "program_end": "2025-11-01",
         "demo_day": null,
         "timezone": null,
-        "date_range_text": "Aug–Nov 2025"
+        "date_range_text": "Aug\u2013Nov 2025"
       },
       "categories": {
         "types": [
@@ -2182,8 +2182,8 @@
     },
     {
       "id": "tc-battlefield-200-25",
-      "name": "TechCrunch Disrupt – Startup Battlefield 200 (2025)",
-      "description": "Top 200 startups showcase; winner gets $100k equity‑free prize",
+      "name": "TechCrunch Disrupt \u2013 Startup Battlefield 200 (2025)",
+      "description": "Top 200 startups showcase; winner gets $100k equity\u2011free prize",
       "organizer": null,
       "website": "https://techcrunch.com/event-info/tc-disrupt-2025/startup-battlefield-200/",
       "location": {
@@ -2203,7 +2203,7 @@
         "program_end": "2025-10-29",
         "demo_day": null,
         "timezone": null,
-        "date_range_text": "Oct 27–29, 2025"
+        "date_range_text": "Oct 27\u201329, 2025"
       },
       "categories": {
         "types": [
@@ -2249,7 +2249,7 @@
     },
     {
       "id": "startup-world-cup-25",
-      "name": "Startup World Cup 2025 – Grand Finale",
+      "name": "Startup World Cup 2025 \u2013 Grand Finale",
       "description": "Global pitch competition culminating in $1M investment prize",
       "organizer": null,
       "website": "https://www.startupworldcup.io/",
@@ -2315,7 +2315,7 @@
     {
       "id": "slush-100-25",
       "name": "Slush 100 Pitch Competition 2025",
-      "description": "International competition with €1M investment prize at Slush",
+      "description": "International competition with \u20ac1M investment prize at Slush",
       "organizer": null,
       "website": "https://slush.org/audience/startups/slush100",
       "location": {
@@ -2335,7 +2335,7 @@
         "program_end": "2025-11-20",
         "demo_day": null,
         "timezone": null,
-        "date_range_text": "Nov 19–20, 2025"
+        "date_range_text": "Nov 19\u201320, 2025"
       },
       "categories": {
         "types": [
@@ -2640,7 +2640,7 @@
     {
       "id": "next-founders-pitch-25",
       "name": "Next Founders Pitch Competition 2025 (Toronto)",
-      "description": "Pitch event under Next Canada’s programs",
+      "description": "Pitch event under Next Canada\u2019s programs",
       "organizer": null,
       "website": "https://www.nextcanada.com/next-founders/",
       "location": {
@@ -2660,7 +2660,7 @@
         "program_end": "2025-07-01",
         "demo_day": null,
         "timezone": null,
-        "date_range_text": "Mid‑2025"
+        "date_range_text": "Mid\u20112025"
       },
       "categories": {
         "types": [
@@ -2705,7 +2705,7 @@
     {
       "id": "young-entrepreneur-summit-25",
       "name": "Young Entrepreneur Summit 2025",
-      "description": "Summit and pitch for under‑25 founders",
+      "description": "Summit and pitch for under\u201125 founders",
       "organizer": null,
       "website": "https://youngentrepreneursummit.com/",
       "location": {
@@ -2772,7 +2772,7 @@
     {
       "id": "mit-100k-2025",
       "name": "MIT $100K Launch 2025",
-      "description": "Flagship MIT student startup competition (non‑dilutive)",
+      "description": "Flagship MIT student startup competition (non\u2011dilutive)",
       "organizer": null,
       "website": "https://www.mit100k.org/competitions/launch/",
       "location": {
@@ -2904,8 +2904,8 @@
     },
     {
       "id": "hult-prize-2025",
-      "name": "Hult Prize 2025 – Global Finals",
-      "description": "World’s largest student social enterprise competition ($1M)",
+      "name": "Hult Prize 2025 \u2013 Global Finals",
+      "description": "World\u2019s largest student social enterprise competition ($1M)",
       "organizer": null,
       "website": "https://www.hultprize.org/",
       "location": {
@@ -2990,7 +2990,7 @@
         "program_end": "2025-12-31",
         "demo_day": null,
         "timezone": null,
-        "date_range_text": "2025 (6‑month support)"
+        "date_range_text": "2025 (6\u2011month support)"
       },
       "categories": {
         "types": [
@@ -3377,8 +3377,8 @@
     },
     {
       "id": "hello-tomorrow-25-26",
-      "name": "Hello Tomorrow Global Challenge 2025–26",
-      "description": "Deep-tech competition with €100k Grand Prize and track awards",
+      "name": "Hello Tomorrow Global Challenge 2025\u201326",
+      "description": "Deep-tech competition with \u20ac100k Grand Prize and track awards",
       "organizer": null,
       "website": "https://challenge.hello-tomorrow.org/",
       "location": {
@@ -3398,7 +3398,7 @@
         "program_end": "2026-06-12",
         "demo_day": null,
         "timezone": null,
-        "date_range_text": "Finals Jun 11–12, 2026"
+        "date_range_text": "Finals Jun 11\u201312, 2026"
       },
       "categories": {
         "types": [
@@ -3450,7 +3450,7 @@
     {
       "id": "xprize-feed-next-billion-2025",
       "name": "XPRIZE Feed the Next Billion (Finale 2025)",
-      "description": "Multi‑year prize for alternative proteins (large prize pool)",
+      "description": "Multi\u2011year prize for alternative proteins (large prize pool)",
       "organizer": null,
       "website": "https://www.xprize.org/prizes/feed",
       "location": {
@@ -3650,7 +3650,7 @@
     },
     {
       "id": "nc-idea-spring-2025",
-      "name": "NC IDEA MICRO/SEED Grants – Spring 2025",
+      "name": "NC IDEA MICRO/SEED Grants \u2013 Spring 2025",
       "description": "State grants for NC startups: $10k MICRO / $50k SEED",
       "organizer": null,
       "website": "https://ncidea.org/grants/micro-seed/",
@@ -3714,7 +3714,7 @@
     {
       "id": "aws-impact-bootcamps-2025",
       "name": "AWS Impact Bootcamps 2025 (Diverse Founders)",
-      "description": "Two‑day bootcamps with resources; retreat grants up to $50k",
+      "description": "Two\u2011day bootcamps with resources; retreat grants up to $50k",
       "organizer": null,
       "website": "https://aws.amazon.com/startups/impact-accelerator/",
       "location": {
@@ -3734,7 +3734,7 @@
         "program_end": "2025-12-15",
         "demo_day": null,
         "timezone": null,
-        "date_range_text": "Fall 2025 (multi‑city)"
+        "date_range_text": "Fall 2025 (multi\u2011city)"
       },
       "categories": {
         "types": [
@@ -3784,7 +3784,7 @@
     {
       "id": "gfs-cloud-program-2025",
       "name": "Google for Startups Cloud Program 2025",
-      "description": "Cloud credits and technical enablement for startups (equity‑free)",
+      "description": "Cloud credits and technical enablement for startups (equity\u2011free)",
       "organizer": null,
       "website": "https://startup.google.com/programs/cloud/",
       "location": {
@@ -3855,7 +3855,7 @@
     {
       "id": "ibm-hyper-protect-2025",
       "name": "IBM Hyper Protect Accelerator 2025",
-      "description": "Security‑focused support for fintech/healthtech; IBM Cloud credits",
+      "description": "Security\u2011focused support for fintech/healthtech; IBM Cloud credits",
       "organizer": null,
       "website": "https://www.ibm.com/partnerworld/program/hyper-protect-accelerator",
       "location": {
@@ -3928,7 +3928,7 @@
     {
       "id": "nsf-sbir-2025",
       "name": "NSF SBIR/STTR 2025",
-      "description": "U.S. non‑dilutive deep‑tech grants (Phase I ~ $256k)",
+      "description": "U.S. non\u2011dilutive deep\u2011tech grants (Phase I ~ $256k)",
       "organizer": null,
       "website": "https://seedfund.nsf.gov/apply/",
       "location": {
@@ -3991,7 +3991,7 @@
     {
       "id": "eic-accelerator-2025",
       "name": "EU EIC Accelerator 2025",
-      "description": "Horizon Europe blended finance: grants + equity up to €15M",
+      "description": "Horizon Europe blended finance: grants + equity up to \u20ac15M",
       "organizer": null,
       "website": "https://eic.ec.europa.eu/eic-funding-opportunities/eic-accelerator_en",
       "location": {
@@ -4011,7 +4011,7 @@
         "program_end": "2026-12-31",
         "demo_day": null,
         "timezone": null,
-        "date_range_text": "Cut‑offs in Mar, Jun, Oct 2025"
+        "date_range_text": "Cut\u2011offs in Mar, Jun, Oct 2025"
       },
       "categories": {
         "types": [
@@ -4057,8 +4057,8 @@
     },
     {
       "id": "masschallenge-security-2025",
-      "name": "MassChallenge Early Stage 2025 – Security & Resiliency",
-      "description": "Zero‑equity accelerator with equity‑free awards",
+      "name": "MassChallenge Early Stage 2025 \u2013 Security & Resiliency",
+      "description": "Zero\u2011equity accelerator with equity\u2011free awards",
       "organizer": null,
       "website": "https://masschallenge.org/programs/early-stage/",
       "location": {
@@ -4078,7 +4078,7 @@
         "program_end": "2025-11-30",
         "demo_day": null,
         "timezone": null,
-        "date_range_text": "Sep–Nov 2025"
+        "date_range_text": "Sep\u2013Nov 2025"
       },
       "categories": {
         "types": [
@@ -4194,7 +4194,7 @@
     {
       "id": "apple-entrepreneur-camp-2025",
       "name": "Apple Entrepreneur Camp 2025",
-      "description": "Code‑level labs and mentorship for underrepresented founders (no equity)",
+      "description": "Code\u2011level labs and mentorship for underrepresented founders (no equity)",
       "organizer": null,
       "website": "https://developer.apple.com/entrepreneur-camp/",
       "location": {
@@ -4260,7 +4260,7 @@
     {
       "id": "mozilla-builders-2025",
       "name": "Mozilla Builders Award 2025",
-      "description": "Grants for open‑source and Internet Health projects",
+      "description": "Grants for open\u2011source and Internet Health projects",
       "organizer": null,
       "website": "https://www.mozilla.org/en-US/builders/awards/",
       "location": {
@@ -4535,7 +4535,7 @@
     {
       "id": "entrepreneur-first-2025",
       "name": "Entrepreneur First (EF) 2025 Cohorts",
-      "description": "Talent‑investor program forming teams then investing at pre‑seed",
+      "description": "Talent\u2011investor program forming teams then investing at pre\u2011seed",
       "organizer": null,
       "website": "https://www.joinef.com/apply/",
       "location": {
@@ -4599,7 +4599,7 @@
     {
       "id": "zeroth-ai-2025",
       "name": "Zeroth AI Accelerator 2025",
-      "description": "AI‑focused accelerator in Asia with early financing",
+      "description": "AI\u2011focused accelerator in Asia with early financing",
       "organizer": null,
       "website": "https://www.zeroth.ai/",
       "location": {
@@ -4619,7 +4619,7 @@
         "program_end": "2025-08-31",
         "demo_day": null,
         "timezone": null,
-        "date_range_text": "May–Aug 2025"
+        "date_range_text": "May\u2013Aug 2025"
       },
       "categories": {
         "types": [
@@ -4684,7 +4684,7 @@
         "program_end": "2026-04-12",
         "demo_day": "2026-04-12",
         "timezone": null,
-        "date_range_text": "Jan 26 – Apr 12, 2026"
+        "date_range_text": "Jan 26 \u2013 Apr 12, 2026"
       },
       "categories": {
         "types": [
@@ -4734,7 +4734,7 @@
     {
       "id": "500-global-esg-fellowship-2025",
       "name": "500 Global ESG Fellowship 2025",
-      "description": "Resources‑only program focused on ESG and impact",
+      "description": "Resources\u2011only program focused on ESG and impact",
       "organizer": null,
       "website": "https://500.co/programs/impact/esg-fellowship",
       "location": {
@@ -4887,7 +4887,7 @@
         "program_end": "2026-06-03",
         "demo_day": null,
         "timezone": null,
-        "date_range_text": "Mar 10 – Jun 3, 2026"
+        "date_range_text": "Mar 10 \u2013 Jun 3, 2026"
       },
       "categories": {
         "types": [
@@ -4951,7 +4951,7 @@
         "program_end": null,
         "demo_day": null,
         "timezone": "America/Santiago",
-        "date_range_text": "Applications Apr 16–May 9, 2025"
+        "date_range_text": "Applications Apr 16\u2013May 9, 2025"
       },
       "categories": {
         "types": [
@@ -5083,7 +5083,7 @@
         "program_end": null,
         "demo_day": null,
         "timezone": "America/New_York",
-        "date_range_text": "Aug–Nov 2025 (13-week residency)"
+        "date_range_text": "Aug\u2013Nov 2025 (13-week residency)"
       },
       "categories": {
         "types": [
@@ -5127,6 +5127,1007 @@
       },
       "verification": "manual",
       "last_verified_utc": "2025-11-12T15:25:00Z"
+    },
+    {
+      "id": "startup-wise-guys-fintech-2026",
+      "name": "Startup Wise Guys Fintech Accelerator 2026",
+      "organizer": "Startup Wise Guys",
+      "website": "https://startupwiseguys.com/all-programs/fintech-accelerator-program/",
+      "verification": "manual",
+      "description": "5-month hybrid accelerator for early Fintech teams with four on-site modules, EET-friendly live sessions, and up to \u20ac150K convertible funding (120K cash + 30K program) plus optional follow-on.",
+      "categories": {
+        "types": [
+          "accelerator"
+        ],
+        "supports": [
+          "funding",
+          "mentorship",
+          "resources"
+        ],
+        "sectors": [
+          "fintech"
+        ]
+      },
+      "dates": {
+        "application_open": null,
+        "application_close": "2026-02-01",
+        "program_start": null,
+        "program_end": null,
+        "demo_day": null,
+        "date_range_text": "Applications close Feb 1, 2026; 5-month hybrid cohort",
+        "timezone": "Europe/Tallinn"
+      },
+      "hashtags": [
+        "#fintech",
+        "#eu",
+        "#funding"
+      ],
+      "location": {
+        "city": null,
+        "city_slug": null,
+        "country": null,
+        "country_code": null,
+        "region_code": "eu",
+        "is_hybrid": true,
+        "is_virtual": false,
+        "venue": null
+      },
+      "index": {
+        "city_slug": null,
+        "country_code": null,
+        "region_code": "eu",
+        "date_sort_key": "2026-02-01",
+        "type_keys": [
+          "accelerator"
+        ],
+        "support_keys": [
+          "funding",
+          "mentorship",
+          "resources"
+        ],
+        "sector_keys": [
+          "fintech"
+        ],
+        "years": [
+          "2026"
+        ]
+      },
+      "last_verified_utc": "2025-11-12T16:30:08Z"
+    },
+    {
+      "id": "startup-wise-guys-future-built-assets-2025",
+      "name": "Startup Wise Guys Future Built Assets Accelerator",
+      "organizer": "Startup Wise Guys",
+      "website": "https://startupwiseguys.com/all-programs/proptech-accelerator-program/",
+      "verification": "manual",
+      "description": "Six-month hybrid proptech and construction-tech program in Riyadh offering up to $100K convertible investment plus \u20ac150K in services through the ROSHN partnership, with at least four weeks on-site.",
+      "categories": {
+        "types": [
+          "accelerator"
+        ],
+        "supports": [
+          "funding",
+          "mentorship",
+          "resources"
+        ],
+        "sectors": [
+          "general"
+        ]
+      },
+      "dates": {
+        "application_open": null,
+        "application_close": null,
+        "program_start": null,
+        "program_end": null,
+        "demo_day": null,
+        "date_range_text": "Rolling applications; 6-month hybrid on-site program in Riyadh",
+        "timezone": "Asia/Riyadh"
+      },
+      "hashtags": [
+        "#mena",
+        "#riyadh",
+        "#proptech"
+      ],
+      "location": {
+        "city": "Riyadh",
+        "city_slug": "riyadh",
+        "country": "Saudi Arabia",
+        "country_code": "SA",
+        "region_code": "mena",
+        "is_hybrid": true,
+        "is_virtual": false,
+        "venue": null
+      },
+      "index": {
+        "city_slug": "riyadh",
+        "country_code": "SA",
+        "region_code": "mena",
+        "date_sort_key": null,
+        "type_keys": [
+          "accelerator"
+        ],
+        "support_keys": [
+          "funding",
+          "mentorship",
+          "resources"
+        ],
+        "sector_keys": [
+          "general"
+        ],
+        "years": [
+          "2025"
+        ]
+      },
+      "last_verified_utc": "2025-11-12T16:30:08Z"
+    },
+    {
+      "id": "boost-vc-deep-tech-2026",
+      "name": "Boost VC Deep Tech Accelerator (2026 cohorts)",
+      "organizer": "Boost VC",
+      "website": "https://www.boost.vc/apply",
+      "verification": "manual",
+      "description": "Boost VC leads $500K pre-seed checks for sci-fi and deep tech founders, runs a rolling 10-week go-to-market program in San Mateo, and culminates each cohort with Deep Tech Demo Day.",
+      "categories": {
+        "types": [
+          "accelerator"
+        ],
+        "supports": [
+          "funding",
+          "mentorship",
+          "resources"
+        ],
+        "sectors": [
+          "deeptech",
+          "general"
+        ]
+      },
+      "dates": {
+        "application_open": null,
+        "application_close": null,
+        "program_start": null,
+        "program_end": null,
+        "demo_day": "2026-04-01",
+        "date_range_text": "Rolling applications; next Deep Tech Demo Day opens Apr 1, 2026",
+        "timezone": "America/Los_Angeles"
+      },
+      "hashtags": [
+        "#deeptech",
+        "#sanmateo",
+        "#funding"
+      ],
+      "location": {
+        "city": "San Mateo",
+        "city_slug": "san-mateo",
+        "country": "United States",
+        "country_code": "US",
+        "region_code": "na",
+        "is_hybrid": false,
+        "is_virtual": false,
+        "venue": null
+      },
+      "index": {
+        "city_slug": "san-mateo",
+        "country_code": "US",
+        "region_code": "na",
+        "date_sort_key": "2026-04-01",
+        "type_keys": [
+          "accelerator"
+        ],
+        "support_keys": [
+          "funding",
+          "mentorship",
+          "resources"
+        ],
+        "sector_keys": [
+          "deeptech",
+          "general"
+        ],
+        "years": [
+          "2026"
+        ]
+      },
+      "last_verified_utc": "2025-11-12T17:00:51Z"
+    },
+    {
+      "id": "pioneer-accelerator-legacy",
+      "name": "Pioneer Remote Accelerator (applications closed)",
+      "organizer": "Pioneer",
+      "website": "https://pioneer.app/",
+      "verification": "manual",
+      "description": "Pioneer ran a 3-month remote accelerator with a month-long San Francisco summit and optional $20K investment, but announced in 2025 that it is no longer making new investments.",
+      "categories": {
+        "types": [
+          "accelerator"
+        ],
+        "supports": [
+          "funding",
+          "mentorship",
+          "resources"
+        ],
+        "sectors": [
+          "general"
+        ]
+      },
+      "dates": {
+        "application_open": null,
+        "application_close": null,
+        "program_start": null,
+        "program_end": null,
+        "demo_day": null,
+        "date_range_text": "Applications closed in 2025; Pioneer is no longer making new investments",
+        "timezone": "America/Los_Angeles"
+      },
+      "hashtags": [
+        "#global",
+        "#remote",
+        "#founders"
+      ],
+      "location": {
+        "city": "San Francisco",
+        "city_slug": "san-francisco",
+        "country": "United States",
+        "country_code": "US",
+        "region_code": "na",
+        "is_hybrid": true,
+        "is_virtual": true,
+        "venue": null
+      },
+      "index": {
+        "city_slug": "san-francisco",
+        "country_code": "US",
+        "region_code": "na",
+        "date_sort_key": null,
+        "type_keys": [
+          "accelerator"
+        ],
+        "support_keys": [
+          "funding",
+          "mentorship",
+          "resources"
+        ],
+        "sector_keys": [
+          "general"
+        ],
+        "years": [
+          "2025"
+        ]
+      },
+      "last_verified_utc": "2025-11-12T17:03:28Z"
+    },
+    {
+      "id": "seedcamp-rolling-2025",
+      "name": "Seedcamp Rolling Applications 2025",
+      "organizer": "Seedcamp",
+      "website": "https://seedcamp.com/apply/",
+      "verification": "manual",
+      "description": "Seedcamp runs a rolling pan-European accelerator and first-round fund that invests \u20ac100K\u2013\u20ac200K for roughly 7% equity, pairs founders with its Fund VI mentor network, and invites shortlisted teams to hands-on Seedcamp Week workshops.",
+      "categories": {
+        "types": [
+          "accelerator"
+        ],
+        "supports": [
+          "funding",
+          "mentorship",
+          "resources"
+        ],
+        "sectors": [
+          "general"
+        ]
+      },
+      "dates": {
+        "application_open": null,
+        "application_close": null,
+        "program_start": null,
+        "program_end": null,
+        "demo_day": null,
+        "date_range_text": "Rolling applications with periodic Seedcamp Week selections in Europe",
+        "timezone": "Europe/London"
+      },
+      "hashtags": [
+        "#eu",
+        "#london",
+        "#rolling"
+      ],
+      "location": {
+        "city": "London",
+        "city_slug": "london",
+        "country": "United Kingdom",
+        "country_code": "GB",
+        "region_code": "eu",
+        "is_hybrid": true,
+        "is_virtual": false,
+        "venue": null
+      },
+      "index": {
+        "city_slug": "london",
+        "country_code": "GB",
+        "region_code": "eu",
+        "date_sort_key": null,
+        "type_keys": [
+          "accelerator"
+        ],
+        "support_keys": [
+          "funding",
+          "mentorship",
+          "resources"
+        ],
+        "sector_keys": [
+          "general"
+        ],
+        "years": [
+          "2025"
+        ]
+      },
+      "last_verified_utc": "2025-11-12T17:10:40Z"
+    },
+    {
+      "id": "angelpad-rolling-2025",
+      "name": "AngelPad Seed Accelerator (Rolling)",
+      "organizer": "AngelPad",
+      "website": "https://www.angelpad.com/",
+      "verification": "manual",
+      "description": "Selective 12-week seed accelerator in San Francisco and New York that invests $120K for roughly 7% equity, provides $300K+ in cloud credits, and finishes with an investor demo day; applications are currently closed but the next cohort updates go out via their mailing list.",
+      "categories": {
+        "types": [
+          "accelerator"
+        ],
+        "supports": [
+          "funding",
+          "mentorship",
+          "resources"
+        ],
+        "sectors": [
+          "general"
+        ]
+      },
+      "dates": {
+        "application_open": null,
+        "application_close": null,
+        "program_start": null,
+        "program_end": null,
+        "demo_day": null,
+        "date_range_text": "Applications closed as of Nov 12, 2025; next 12-week in-person cohort TBD",
+        "timezone": "America/Los_Angeles"
+      },
+      "hashtags": [
+        "#na",
+        "#sanfrancisco",
+        "#seed"
+      ],
+      "location": {
+        "city": "San Francisco",
+        "city_slug": "san-francisco",
+        "country": "United States",
+        "country_code": "US",
+        "region_code": "na",
+        "is_hybrid": false,
+        "is_virtual": false,
+        "venue": null
+      },
+      "index": {
+        "city_slug": "san-francisco",
+        "country_code": "US",
+        "region_code": "na",
+        "date_sort_key": null,
+        "type_keys": [
+          "accelerator"
+        ],
+        "support_keys": [
+          "funding",
+          "mentorship",
+          "resources"
+        ],
+        "sector_keys": [
+          "general"
+        ],
+        "years": [
+          "2025"
+        ]
+      },
+      "last_verified_utc": "2025-11-12T17:13:57Z"
+    },
+    {
+      "id": "indiebio-sf-demo-week-2025",
+      "name": "IndieBio SF VC-Founder Week & Demo Day (Mar 2025)",
+      "organizer": "SOSV / IndieBio",
+      "website": "https://indiebio.co/event/indiebio-sfs-vc-founder-meetings-demo-day-2025/",
+      "verification": "manual",
+      "description": "IndieBio San Francisco is hosting investor meetings March 17\u0013 20 and Demo Day on March 21, 2025, showcasing eight new biotech startups plus alumni with hybrid in-person and virtual access.",
+      "categories": {
+        "types": [
+          "accelerator"
+        ],
+        "supports": [
+          "funding",
+          "mentorship",
+          "resources"
+        ],
+        "sectors": [
+          "bio"
+        ]
+      },
+      "dates": {
+        "application_open": null,
+        "application_close": null,
+        "program_start": null,
+        "program_end": null,
+        "demo_day": "2025-03-21",
+        "date_range_text": "Investor meetings Mar 17\u001320 2025; Demo Day Mar 21 2025",
+        "timezone": "America/Los_Angeles"
+      },
+      "hashtags": [
+        "#indiebio",
+        "#sanfrancisco",
+        "#biotech"
+      ],
+      "location": {
+        "city": "San Francisco",
+        "city_slug": "san-francisco",
+        "country": "United States",
+        "country_code": "US",
+        "region_code": "na",
+        "is_hybrid": true,
+        "is_virtual": true,
+        "venue": null
+      },
+      "index": {
+        "city_slug": "san-francisco",
+        "country_code": "US",
+        "region_code": "na",
+        "date_sort_key": "2025-03-17",
+        "type_keys": [
+          "accelerator"
+        ],
+        "support_keys": [
+          "funding",
+          "mentorship",
+          "resources"
+        ],
+        "sector_keys": [
+          "bio"
+        ],
+        "years": [
+          "2025"
+        ]
+      },
+      "last_verified_utc": "2025-11-12T17:51:25Z"
+    },
+    {
+      "id": "nmotion-accelerator-s25",
+      "name": "NMotion Accelerator Spring 2025",
+      "organizer": "NMotion powered by gener8tor",
+      "website": "https://www.nmotion.co/nmotion-accelerator",
+      "verification": "manual",
+      "description": "12-week hybrid accelerator across Nebraska investing $100K for 7.5% equity with weekly in-person programming and access to gener8tor's mentor and investor network.",
+      "categories": {
+        "types": [
+          "accelerator"
+        ],
+        "supports": [
+          "funding",
+          "mentorship",
+          "resources"
+        ],
+        "sectors": [
+          "general"
+        ]
+      },
+      "dates": {
+        "application_open": null,
+        "application_close": "2024-12-08",
+        "program_start": "2025-02-19",
+        "program_end": "2025-05-16",
+        "demo_day": null,
+        "date_range_text": "Program runs Feb 19 \u2013 May 16, 2025; early bird apps due Dec 1 and final deadline Dec 8, 2024",
+        "timezone": "America/Chicago"
+      },
+      "hashtags": [
+        "#nebraska",
+        "#lincoln",
+        "#funding"
+      ],
+      "location": {
+        "city": "Lincoln",
+        "city_slug": "lincoln",
+        "country": "United States",
+        "country_code": "US",
+        "region_code": "na",
+        "is_hybrid": true,
+        "is_virtual": false,
+        "venue": null
+      },
+      "index": {
+        "city_slug": "lincoln",
+        "country_code": "US",
+        "region_code": "na",
+        "date_sort_key": "2025-02-19",
+        "type_keys": [
+          "accelerator"
+        ],
+        "support_keys": [
+          "funding",
+          "mentorship",
+          "resources"
+        ],
+        "sector_keys": [
+          "general"
+        ],
+        "years": [
+          "2025"
+        ]
+      },
+      "last_verified_utc": "2025-11-12T17:54:40Z"
+    },
+    {
+      "id": "endless-frontier-labs-2025",
+      "name": "Endless Frontier Labs 2025-2026 Cohort",
+      "organizer": "NYU Stern Endless Frontier Labs",
+      "website": "https://www.stern.nyu.edu/endless-frontier-labs",
+      "verification": "manual",
+      "description": "Nine-month mentorship-driven program at NYU Stern matching Life Sciences, Deep Tech, Digital Tech, FinTech, and Climate startups with seasoned mentors; accepts 80+ companies and charges no fees or equity.",
+      "categories": {
+        "types": [
+          "accelerator"
+        ],
+        "supports": [
+          "mentorship",
+          "resources"
+        ],
+        "sectors": [
+          "general",
+          "bio",
+          "deeptech"
+        ]
+      },
+      "dates": {
+        "application_open": "2025-02-01",
+        "application_close": "2025-05-12",
+        "program_start": "2025-10-07",
+        "program_end": "2026-05-15",
+        "demo_day": "2026-05-15",
+        "date_range_text": "Applications Feb 1\u2013May 12, 2025; on-campus sessions Oct 2025 \u2013 May 2026",
+        "timezone": "America/New_York"
+      },
+      "hashtags": [
+        "#nyc",
+        "#deeptech",
+        "#lifesciences"
+      ],
+      "location": {
+        "city": "New York",
+        "city_slug": "new-york",
+        "country": "United States",
+        "country_code": "US",
+        "region_code": "na",
+        "is_hybrid": true,
+        "is_virtual": true,
+        "venue": "NYU Stern"
+      },
+      "index": {
+        "city_slug": "new-york",
+        "country_code": "US",
+        "region_code": "na",
+        "date_sort_key": "2025-05-12",
+        "type_keys": [
+          "accelerator"
+        ],
+        "support_keys": [
+          "mentorship",
+          "resources"
+        ],
+        "sector_keys": [
+          "general",
+          "bio",
+          "deeptech"
+        ],
+        "years": [
+          "2025",
+          "2026"
+        ]
+      },
+      "last_verified_utc": "2025-11-12T19:22:32Z"
+    },
+    {
+      "id": "deep-science-ventures-2025",
+      "name": "Deep Science Ventures Venture Builder (rolling intake)",
+      "organizer": "Deep Science Ventures",
+      "website": "https://deepscienceventures.com/founders",
+      "verification": "manual",
+      "description": "Founder-type scientists receive funding for up to 18 months to co-create high-impact companies with DSV sector specialists across climate, pharma, computation, education, and agriculture.",
+      "categories": {
+        "types": [
+          "accelerator"
+        ],
+        "supports": [
+          "funding",
+          "mentorship",
+          "resources"
+        ],
+        "sectors": [
+          "general",
+          "climatetech",
+          "bio",
+          "deeptech"
+        ]
+      },
+      "dates": {
+        "application_open": null,
+        "application_close": null,
+        "program_start": null,
+        "program_end": null,
+        "demo_day": null,
+        "date_range_text": "Rolling applications; founders are funded for up to 18 months to form a company",
+        "timezone": "Europe/London"
+      },
+      "hashtags": [
+        "#deeptech",
+        "#venturebuilder",
+        "#rolling"
+      ],
+      "location": {
+        "city": null,
+        "city_slug": null,
+        "country": "United Kingdom",
+        "country_code": "GB",
+        "region_code": "eu",
+        "is_hybrid": true,
+        "is_virtual": true,
+        "venue": null
+      },
+      "index": {
+        "city_slug": null,
+        "country_code": "GB",
+        "region_code": "eu",
+        "date_sort_key": null,
+        "type_keys": [
+          "accelerator"
+        ],
+        "support_keys": [
+          "funding",
+          "mentorship",
+          "resources"
+        ],
+        "sector_keys": [
+          "general",
+          "climatetech",
+          "bio",
+          "deeptech"
+        ],
+        "years": [
+          "2025"
+        ]
+      },
+      "last_verified_utc": "2025-11-12T19:29:36Z"
+    },
+    {
+      "id": "financial-solutions-lab-accelerator-legacy",
+      "name": "Financial Solutions Lab Accelerator (Legacy)",
+      "organizer": "Financial Health Network",
+      "website": "https://finhealthnetwork.org/programs/financial-solutions-lab/accelerator/",
+      "verification": "manual",
+      "description": "Mission-driven fintech accelerator that ran from 2014 to 2022 supporting 50+ startups serving LMI consumers; Financial Health Network now collaborates with fintechs via bespoke engagements instead of cohorts.",
+      "categories": {
+        "types": [
+          "accelerator"
+        ],
+        "supports": [
+          "funding",
+          "mentorship",
+          "resources"
+        ],
+        "sectors": [
+          "fintech",
+          "general"
+        ]
+      },
+      "dates": {
+        "application_open": null,
+        "application_close": null,
+        "program_start": null,
+        "program_end": "2022-12-31",
+        "demo_day": null,
+        "date_range_text": "Program concluded in 2022; reach out to Financial Health Network for tailored innovation support",
+        "timezone": "America/Chicago"
+      },
+      "hashtags": [
+        "#finhealth",
+        "#fintech",
+        "#missiondriven"
+      ],
+      "location": {
+        "city": "Chicago",
+        "city_slug": "chicago",
+        "country": "United States",
+        "country_code": "US",
+        "region_code": "na",
+        "is_hybrid": true,
+        "is_virtual": true,
+        "venue": null
+      },
+      "index": {
+        "city_slug": "chicago",
+        "country_code": "US",
+        "region_code": "na",
+        "date_sort_key": "2022-12-31",
+        "type_keys": [
+          "accelerator"
+        ],
+        "support_keys": [
+          "funding",
+          "mentorship",
+          "resources"
+        ],
+        "sector_keys": [
+          "fintech",
+          "general"
+        ],
+        "years": [
+          "2022"
+        ]
+      },
+      "last_verified_utc": "2025-11-12T19:36:36Z"
+    },
+    {
+      "id": "growthx-revenue-accelerator-s26",
+      "name": "GrowthX Revenue Accelerator Spring 2026",
+      "organizer": "GrowthX",
+      "website": "https://growthx.com/revenue-accelerator/",
+      "verification": "manual",
+      "description": "16-week virtual accelerator pairing B2B founders with dedicated sales coaches to build repeatable revenue systems, with the next cohort launching February 16, 2026 after applications close February 6 (rolling review).",
+      "categories": {
+        "types": [
+          "accelerator"
+        ],
+        "supports": [
+          "mentorship",
+          "resources"
+        ],
+        "sectors": [
+          "general"
+        ]
+      },
+      "dates": {
+        "application_open": null,
+        "application_close": "2026-02-06",
+        "program_start": "2026-02-16",
+        "program_end": null,
+        "demo_day": null,
+        "date_range_text": "Applications due Feb 6, 2026; 16-week virtual cohort kicks off Feb 16, 2026",
+        "timezone": null
+      },
+      "hashtags": [
+        "#b2b",
+        "#sales",
+        "#virtual"
+      ],
+      "location": {
+        "city": null,
+        "city_slug": null,
+        "country": "United States",
+        "country_code": "US",
+        "region_code": "na",
+        "is_hybrid": false,
+        "is_virtual": true,
+        "venue": null
+      },
+      "index": {
+        "city_slug": null,
+        "country_code": "US",
+        "region_code": "na",
+        "date_sort_key": "2026-02-16",
+        "type_keys": [
+          "accelerator"
+        ],
+        "support_keys": [
+          "mentorship",
+          "resources"
+        ],
+        "sector_keys": [
+          "general"
+        ],
+        "years": [
+          "2026"
+        ]
+      },
+      "last_verified_utc": "2025-11-12T19:42:21Z"
+    },
+    {
+      "id": "newchip-accelerator-legacy",
+      "name": "Newchip Accelerator (inactive)",
+      "organizer": "Newchip Accelerator",
+      "website": "https://launch.newchip.com/",
+      "verification": "manual",
+      "description": "Former online accelerator; official application site no longer resolves as of Nov 12, 2025, and no active cohorts are listed.",
+      "categories": {
+        "types": [
+          "accelerator"
+        ],
+        "supports": [
+          "funding",
+          "mentorship",
+          "resources"
+        ],
+        "sectors": [
+          "general"
+        ]
+      },
+      "dates": {
+        "application_open": null,
+        "application_close": null,
+        "program_start": null,
+        "program_end": null,
+        "demo_day": null,
+        "date_range_text": "Program inactive; website offline as of Nov 12, 2025",
+        "timezone": null
+      },
+      "hashtags": [
+        "#legacy",
+        "#online",
+        "#inactive"
+      ],
+      "location": {
+        "city": null,
+        "city_slug": null,
+        "country": "United States",
+        "country_code": "US",
+        "region_code": "na",
+        "is_hybrid": true,
+        "is_virtual": true,
+        "venue": null
+      },
+      "index": {
+        "city_slug": null,
+        "country_code": "US",
+        "region_code": "na",
+        "date_sort_key": null,
+        "type_keys": [
+          "accelerator"
+        ],
+        "support_keys": [
+          "funding",
+          "mentorship",
+          "resources"
+        ],
+        "sector_keys": [
+          "general"
+        ],
+        "years": [
+          "2025"
+        ]
+      },
+      "last_verified_utc": "2025-11-12T20:29:06Z"
+    },
+    {
+      "id": "fastercapital-global-venture-builder-2025",
+      "name": "FasterCapital Global Venture Builder Programs",
+      "organizer": "FasterCapital",
+      "website": "https://fastercapital.com/",
+      "verification": "manual",
+      "description": "Global online venture builder offering Tech Cofounder development, fundraising via 155k+ angels and 50k+ VCs, and growth programs that co-fund up to 50% of product costs while pairing founders with mentors, investors, and partners.",
+      "categories": {
+        "types": [
+          "accelerator"
+        ],
+        "supports": [
+          "funding",
+          "mentorship",
+          "resources"
+        ],
+        "sectors": [
+          "general"
+        ]
+      },
+      "dates": {
+        "application_open": null,
+        "application_close": null,
+        "program_start": null,
+        "program_end": null,
+        "demo_day": null,
+        "date_range_text": "Rolling online intake throughout 2025 for Tech Cofounder, Raise Capital, and Grow programs (50% co-funding available)",
+        "timezone": "Asia/Dubai"
+      },
+      "hashtags": [
+        "#global",
+        "#online",
+        "#funding"
+      ],
+      "location": {
+        "city": "Dubai",
+        "city_slug": "dubai",
+        "country": "United Arab Emirates",
+        "country_code": "AE",
+        "region_code": "mena",
+        "is_hybrid": true,
+        "is_virtual": true,
+        "venue": "Meydan Freezone / Business Bay offices"
+      },
+      "index": {
+        "city_slug": "dubai",
+        "country_code": "AE",
+        "region_code": "mena",
+        "date_sort_key": null,
+        "type_keys": [
+          "accelerator"
+        ],
+        "support_keys": [
+          "funding",
+          "mentorship",
+          "resources"
+        ],
+        "sector_keys": [
+          "general"
+        ],
+        "years": [
+          "2025"
+        ]
+      },
+      "last_verified_utc": "2025-11-12T20:40:56Z"
+    },
+    {
+      "id": "ventureout-nyc-market-access-2025",
+      "name": "VentureOut NYC Market Access Programs",
+      "organizer": "VentureOut",
+      "website": "https://ventureoutny.com/programs/",
+      "verification": "manual",
+      "description": "One-week Explore bootcamps and 3-month Execute accelerators that bring international founders to New York City for investor meetings, mentor sessions, and US go-to-market support, helping 300+ companies access capital and scale in the US.",
+      "categories": {
+        "types": [
+          "accelerator"
+        ],
+        "supports": [
+          "funding",
+          "mentorship",
+          "resources"
+        ],
+        "sectors": [
+          "general"
+        ]
+      },
+      "dates": {
+        "application_open": null,
+        "application_close": null,
+        "program_start": null,
+        "program_end": null,
+        "demo_day": null,
+        "date_range_text": "Rolling 2025: one-week Explore intensives and 3-month Execute programs in NYC",
+        "timezone": "America/New_York"
+      },
+      "hashtags": [
+        "#nyc",
+        "#marketaccess",
+        "#global"
+      ],
+      "location": {
+        "city": "New York",
+        "city_slug": "new-york",
+        "country": "United States",
+        "country_code": "US",
+        "region_code": "na",
+        "is_hybrid": true,
+        "is_virtual": true,
+        "venue": "Midtown Manhattan"
+      },
+      "index": {
+        "city_slug": "new-york",
+        "country_code": "US",
+        "region_code": "na",
+        "date_sort_key": null,
+        "type_keys": [
+          "accelerator"
+        ],
+        "support_keys": [
+          "funding",
+          "mentorship",
+          "resources"
+        ],
+        "sector_keys": [
+          "general"
+        ],
+        "years": [
+          "2025"
+        ]
+      },
+      "last_verified_utc": "2025-11-12T20:51:10Z"
     }
   ]
 }
