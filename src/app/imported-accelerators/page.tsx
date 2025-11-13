@@ -5,7 +5,7 @@ import Link from "next/link";
 import fs from "node:fs";
 import path from "node:path";
 
-import { Github, Link as LinkGlyph, List } from "lucide-react";
+import { Github, Link as LinkGlyph, List, MessageSquarePlus } from "lucide-react";
 
 import data from "@/data/imported-accelerators.json";
 import { Card } from "@/components/ui/card";
@@ -129,42 +129,42 @@ export default function ImportedAcceleratorsPage() {
 function Hero({ totalTracked }: { totalTracked: number }) {
   const formatNumber = (value: number) => value.toLocaleString();
   return (
-    <header className="rounded-3xl border border-dashed bg-gradient-to-br from-zinc-50 via-white to-zinc-100 p-8 text-foreground shadow-sm dark:from-zinc-900 dark:via-zinc-950 dark:to-black">
+    <header className="rounded-3xl border border-dashed bg-gradient-to-br from-zinc-50 via-white to-zinc-100 p-6 text-foreground shadow-sm dark:from-zinc-900 dark:via-zinc-950 dark:to-black sm:p-8">
       <div className="flex flex-col gap-8 lg:flex-row lg:items-end lg:justify-between">
-        <div className="flex flex-col gap-4 sm:flex-row sm:items-center sm:gap-6">
-          <Image
-            src={HERO_ICON.src}
-            alt={HERO_ICON.alt}
-            width={112}
-            height={112}
-            className="h-24 w-24 flex-shrink-0 object-contain"
-            priority
-          />
-          <div className="space-y-4">
-            <div>
-              <p className="text-sm font-medium text-primary">FounderCal — Static lists</p>
-              <h1 className="text-3xl font-semibold sm:text-4xl">Manual opportunity trackers</h1>
+        <div className="flex flex-col gap-3 text-left">
+          <div className="flex items-center gap-3">
+            <Image
+              src={HERO_ICON.src}
+              alt={HERO_ICON.alt}
+              width={96}
+              height={96}
+              className="h-14 w-14 flex-shrink-0 object-contain sm:h-20 sm:w-20"
+              priority
+            />
+            <div className="space-y-1">
+              <p className="text-sm font-black uppercase tracking-wide text-primary">FounderCal.org</p>
+              <h1 className="text-2xl font-semibold sm:text-4xl">Manual opportunity trackers</h1>
             </div>
-            <p className="text-base text-muted-foreground sm:text-lg">
-              The same data that powers the calendar, formatted for deep dives, CSV audits, and quick exports.
-            </p>
-            <div className="flex flex-wrap gap-3 text-sm font-medium text-muted-foreground">
-              <Link className="inline-flex items-center gap-2 underline-offset-4 hover:text-foreground hover:underline" href="/">
-                <List className="size-4" /> Back to calendar
-              </Link>
-              <Link
-                className="inline-flex items-center gap-2 underline-offset-4 hover:text-foreground hover:underline"
-                href="https://github.com/IgorShadurin/foundercal.org/issues/new"
-                target="_blank"
-                rel="noreferrer"
-              >
-                Raise an issue
-              </Link>
-            </div>
+          </div>
+          <p className="text-sm text-muted-foreground sm:text-lg">
+            The same data that powers the calendar, formatted for deep dives and ready reference.
+          </p>
+          <div className="flex flex-wrap justify-center gap-3 text-sm font-medium text-muted-foreground sm:justify-start">
+            <Link className="inline-flex items-center gap-2 underline-offset-4 hover:text-foreground hover:underline" href="/">
+              <List className="size-4 text-[#f97316]" /> Back to calendar
+            </Link>
+            <Link
+              className="inline-flex items-center gap-2 underline-offset-4 hover:text-foreground hover:underline"
+              href="https://github.com/IgorShadurin/foundercal.org/issues/new"
+              target="_blank"
+              rel="noreferrer"
+            >
+              <MessageSquarePlus className="size-4 text-[#22c55e]" /> Send a suggestion
+            </Link>
           </div>
         </div>
         <div className="flex flex-col gap-4 lg:min-w-[260px]">
-          <div className="space-y-3 rounded-2xl border bg-white/70 px-8 py-6 text-center shadow-sm dark:bg-zinc-900/80">
+          <div className="space-y-3 rounded-2xl border bg-white/70 px-6 py-5 text-center shadow-sm dark:bg-zinc-900/80 sm:px-8 sm:py-6">
             <div className="flex items-center justify-center gap-4">
               <span className="relative flex h-8 w-8 items-center justify-center">
                 <span className="absolute inline-flex h-full w-full animate-ping rounded-full bg-[#2da6df]/40" style={{ animationDuration: "3s" }} />
@@ -253,7 +253,7 @@ function Footer() {
             rel="noreferrer"
             className="font-medium text-foreground underline-offset-4 hover:text-primary hover:underline"
           >
-            GitHub
+            Send a suggestion
           </Link>
           —collabs keep FounderCal sharp.
         </p>

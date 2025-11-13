@@ -267,25 +267,26 @@ export function EventCalendar({ events, taxonomies }: EventCalendarProps) {
 
   return (
     <div className="space-y-8">
-      <header className="rounded-3xl border border-dashed bg-gradient-to-br from-zinc-50 via-white to-zinc-100 p-8 dark:from-zinc-900 dark:via-zinc-950 dark:to-black">
+      <header className="rounded-3xl border border-dashed bg-gradient-to-br from-zinc-50 via-white to-zinc-100 p-6 dark:from-zinc-900 dark:via-zinc-950 dark:to-black sm:p-8">
         <div className="flex flex-col gap-6 lg:flex-row lg:items-end lg:justify-between">
-          <div className="flex flex-col gap-4 sm:flex-row sm:items-center sm:gap-6">
-            <Image
-              src={HERO_ICON.src}
-              alt={HERO_ICON.alt}
-              width={112}
-              height={112}
-              className="h-24 w-24 object-contain"
-              priority
-            />
-            <div className="space-y-3">
-              <h1 className="text-3xl font-semibold sm:text-4xl">
-                FounderCal — A single calendar for founders.
-              </h1>
-              <p className="text-base text-muted-foreground sm:text-lg">
-                Tracks the accelerators, fellowships, and resource drops that quietly unlock funding so you never miss a door before it closes.
-              </p>
+          <div className="flex flex-col gap-3 text-center sm:text-left">
+            <div className="flex items-center justify-center gap-3 sm:justify-start">
+              <Image
+                src={HERO_ICON.src}
+                alt={HERO_ICON.alt}
+                width={96}
+                height={96}
+                className="h-14 w-14 object-contain sm:h-20 sm:w-20"
+                priority
+              />
+              <div className="space-y-1 text-left">
+                <p className="text-sm font-black uppercase tracking-wide text-primary">FounderCal.org</p>
+                <h1 className="text-2xl font-semibold sm:text-4xl">A single calendar for founders.</h1>
+              </div>
             </div>
+            <p className="text-sm text-muted-foreground sm:text-lg">
+              Tracks the accelerators, fellowships, and resource drops that quietly unlock funding so you never miss a door before it closes.
+            </p>
           </div>
           <div className="space-y-3 rounded-2xl border bg-white/70 px-8 py-6 text-center shadow-sm dark:bg-zinc-900/80">
             <div className="flex items-center justify-center gap-4">
@@ -325,7 +326,7 @@ export function EventCalendar({ events, taxonomies }: EventCalendarProps) {
               onSelect={(date) => date && setWindowStart(startOfDay(date))}
               onMonthChange={(date) => setWindowStart(startOfDay(date))}
               modifiers={{ hasEvent: calendarDates }}
-              className="rounded-xl border"
+              className="mx-auto w-full max-w-[360px] rounded-xl border"
             />
             <div className="flex flex-col gap-2 sm:flex-row sm:items-center sm:justify-between">
               <Select
