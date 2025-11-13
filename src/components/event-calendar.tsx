@@ -1,7 +1,7 @@
 "use client";
 
 import Image from "next/image";
-import { useMemo, useState } from "react";
+import { useEffect, useMemo, useState, type ReactNode } from "react";
 import {
   addDays,
   compareAsc,
@@ -20,6 +20,8 @@ import {
   Github,
   Info,
   MapPin,
+  Plus,
+  Building2,
 } from "lucide-react";
 
 import { Badge } from "@/components/ui/badge";
@@ -129,6 +131,16 @@ type EventCalendarProps = {
   taxonomies: Taxonomies;
 };
 
+type UserPreferences = {
+  filtersExpanded: boolean;
+  [key: string]: unknown;
+};
+
+const PREFS_STORAGE_KEY = "foundercal:event-calendar-prefs";
+const DEFAULT_PREFS: UserPreferences = {
+  filtersExpanded: false,
+};
+
 export function EventCalendar({ events, taxonomies }: EventCalendarProps) {
   const [viewMode, setViewMode] = useState<ViewMode>("deadlines");
   const [regionFilter, setRegionFilter] = useState("all");
@@ -138,8 +150,38 @@ export function EventCalendar({ events, taxonomies }: EventCalendarProps) {
   const [windowStart, setWindowStart] = useState(() => startOfDay(new Date()));
   const [restrictToWindow, setRestrictToWindow] = useState(true);
   const [windowLength, setWindowLength] = useState(30);
+  const [preferences, setPreferences] = useState<UserPreferences>(DEFAULT_PREFS);
   const today = startOfDay(new Date());
   const aggregateCounts = useMemo(() => buildCounts(events), [events]);
+
+  useEffect(() => {
+    if (typeof window === "undefined") {
+      return;
+    }
+    try {
+      const stored = window.localStorage.getItem(PREFS_STORAGE_KEY);
+      if (stored) {
+        const parsed = JSON.parse(stored) as Partial<UserPreferences>;
+        queueMicrotask(() => {
+          setPreferences((prev) => ({ ...prev, ...parsed }));
+        });
+      }
+    } catch (error) {
+      console.warn("Failed to parse preferences", error);
+    }
+  }, []);
+
+  const updatePreferences = (updates: Partial<UserPreferences>) => {
+    setPreferences((prev) => {
+      const next = { ...prev, ...updates };
+      if (typeof window !== "undefined") {
+        window.localStorage.setItem(PREFS_STORAGE_KEY, JSON.stringify(next));
+      }
+      return next;
+    });
+  };
+
+  const filtersExpanded = Boolean(preferences.filtersExpanded);
 
   const normalized = useMemo(() => normalizeEvents(events), [events]);
 
@@ -205,6 +247,24 @@ export function EventCalendar({ events, taxonomies }: EventCalendarProps) {
     !restrictToWindow ||
     windowLength !== 30;
 
+  const resultsSection: ReactNode = noResults ? (
+    <div className="flex h-64 flex-col items-center justify-center gap-3 rounded-2xl border border-dashed">
+      <p className="text-base font-medium">No matches yet</p>
+      <p className="text-sm text-muted-foreground">
+        Try loosening a filter or switch to the full upcoming list.
+      </p>
+      <Button variant="secondary" onClick={() => setRestrictToWindow(false)}>
+        Show all upcoming
+      </Button>
+    </div>
+  ) : (
+    <div className="space-y-4">
+      {visibleEvents.map((entry) => (
+        <EventCard key={entry.record.id} entry={entry} />
+      ))}
+    </div>
+  );
+
   return (
     <div className="space-y-8">
       <header className="rounded-3xl border border-dashed bg-gradient-to-br from-zinc-50 via-white to-zinc-100 p-8 dark:from-zinc-900 dark:via-zinc-950 dark:to-black">
@@ -219,9 +279,8 @@ export function EventCalendar({ events, taxonomies }: EventCalendarProps) {
               priority
             />
             <div className="space-y-3">
-              <p className="text-sm font-medium text-primary">FounderCal</p>
               <h1 className="text-3xl font-semibold sm:text-4xl">
-                A single calendar for founders.
+                FounderCal — A single calendar for founders.
               </h1>
               <p className="text-base text-muted-foreground sm:text-lg">
                 Tracks the accelerators, fellowships, and resource drops that quietly unlock funding so you never miss a door before it closes.
@@ -255,7 +314,7 @@ export function EventCalendar({ events, taxonomies }: EventCalendarProps) {
               <CalendarRange className="size-4" /> Opportunity radar
             </CardTitle>
             <CardDescription>
-              Pick a month to spotlight deadlines or broaden to the full pipeline.
+              Pick a start date to focus the list or scan every deadline at once.
             </CardDescription>
           </CardHeader>
           <CardContent className="space-y-4">
@@ -309,7 +368,38 @@ export function EventCalendar({ events, taxonomies }: EventCalendarProps) {
         <Card className="min-h-[720px]">
           <CardHeader className="space-y-4">
             <div className="flex flex-col gap-2">
-              <CardTitle className="text-xl">Upcoming opportunities</CardTitle>
+              <div className="flex flex-col gap-2 sm:flex-row sm:items-center sm:justify-between">
+                <div className="flex items-center gap-2">
+                  <CalendarRange className="size-5 text-primary" />
+                  <CardTitle className="text-xl">Upcoming opportunities</CardTitle>
+                </div>
+                <div className="flex flex-wrap gap-2">
+                  <Button
+                    asChild
+                    variant="ghost"
+                    size="sm"
+                    className="inline-flex items-center gap-2 self-start text-muted-foreground hover:text-foreground"
+                  >
+                    <a
+                      href="https://github.com/IgorShadurin/foundercal.org/issues/new"
+                      target="_blank"
+                      rel="noreferrer"
+                    >
+                      <Plus className="size-4" /> Add an event
+                    </a>
+                  </Button>
+                  <Button
+                    asChild
+                    variant="ghost"
+                    size="sm"
+                    className="inline-flex items-center gap-2 self-start text-muted-foreground hover:text-foreground"
+                  >
+                    <a href="/imported-accelerators">
+                      <Building2 className="size-4 text-[#6366F1]" /> All Accelerators
+                    </a>
+                  </Button>
+                </div>
+              </div>
               <CardDescription>
                 Filters stack so you can zero in on the right geography, sector, and stage.
               </CardDescription>
@@ -322,6 +412,15 @@ export function EventCalendar({ events, taxonomies }: EventCalendarProps) {
                 </TabsList>
               </Tabs>
               <div className="flex flex-wrap items-center gap-3 text-sm text-muted-foreground">
+                <Button
+                  variant="ghost"
+                  size="sm"
+                  className="inline-flex items-center gap-2 text-muted-foreground hover:text-foreground"
+                  onClick={() => updatePreferences({ filtersExpanded: !filtersExpanded })}
+                >
+                  <Filter className="size-4" />
+                  {filtersExpanded ? "Hide filters" : "Show filters"}
+                </Button>
                 <span className="inline-flex items-center gap-2">
                   <Filter className="size-4" /> {visibleEvents.length} matches
                 </span>
@@ -345,97 +444,81 @@ export function EventCalendar({ events, taxonomies }: EventCalendarProps) {
                 ) : null}
               </div>
             </div>
-            <div className="grid gap-3 grid-cols-1 md:grid-cols-[minmax(0,_2fr)_minmax(0,_1fr)_minmax(0,_1fr)_minmax(0,_1fr)]">
-              <Input
-                value={search}
-                onChange={(event) => setSearch(event.target.value)}
-                placeholder="Search by name, city, hashtag..."
-                className="w-full"
-              />
-              <Select value={regionFilter} onValueChange={setRegionFilter}>
-                <SelectTrigger className="w-full">
-                  <SelectValue placeholder="Region" />
-                </SelectTrigger>
-                <SelectContent>
-                  <SelectItem value="all">
-                    <span className="flex w-full items-center justify-between gap-2">
-                      <span>All regions</span>
-                      <span className="text-xs text-muted-foreground">
-                        {aggregateCounts.total}
-                      </span>
-                    </span>
-                  </SelectItem>
-                  {taxonomies.regions.map((region) => (
-                    <SelectItem key={region} value={region}>
+            {filtersExpanded ? (
+              <div className="grid gap-3 grid-cols-1 md:grid-cols-[minmax(0,_2fr)_minmax(0,_1fr)_minmax(0,_1fr)_minmax(0,_1fr)]">
+                <Input
+                  value={search}
+                  onChange={(event) => setSearch(event.target.value)}
+                  placeholder="Search by name, city, hashtag..."
+                  className="w-full"
+                />
+                <Select value={regionFilter} onValueChange={setRegionFilter}>
+                  <SelectTrigger className="w-full">
+                    <SelectValue placeholder="Region" />
+                  </SelectTrigger>
+                  <SelectContent>
+                    <SelectItem value="all">
                       <span className="flex w-full items-center justify-between gap-2">
-                        <span>{formatRegion(region)}</span>
+                        <span>All regions</span>
                         <span className="text-xs text-muted-foreground">
-                          {aggregateCounts.regions[region.toLowerCase()]?.toString() ?? "0"}
+                          {aggregateCounts.total}
                         </span>
                       </span>
                     </SelectItem>
-                  ))}
-                </SelectContent>
-              </Select>
-              <Select value={sectorFilter} onValueChange={setSectorFilter}>
-                <SelectTrigger className="w-full">
-                  <SelectValue placeholder="Sector" />
-                </SelectTrigger>
-                <SelectContent>
-                  <SelectItem value="all">
-                    <span className="flex w-full items-center justify-between gap-2">
-                      <span>All sectors</span>
-                      <span className="text-xs text-muted-foreground">
-                        {aggregateCounts.total}
-                      </span>
-                    </span>
-                  </SelectItem>
-                  {taxonomies.sectors.map((sector) => (
-                    <SelectItem key={sector} value={sector}>
+                    {taxonomies.regions.map((region) => (
+                      <SelectItem key={region} value={region}>
+                        <span className="flex w-full items-center justify-between gap-2">
+                          <span>{formatRegion(region)}</span>
+                          <span className="text-xs text-muted-foreground">
+                            {aggregateCounts.regions[region.toLowerCase()]?.toString() ?? "0"}
+                          </span>
+                        </span>
+                      </SelectItem>
+                    ))}
+                  </SelectContent>
+                </Select>
+                <Select value={sectorFilter} onValueChange={setSectorFilter}>
+                  <SelectTrigger className="w-full">
+                    <SelectValue placeholder="Sector" />
+                  </SelectTrigger>
+                  <SelectContent>
+                    <SelectItem value="all">
                       <span className="flex w-full items-center justify-between gap-2">
-                        <span>{formatLabel(sector)}</span>
+                        <span>All sectors</span>
                         <span className="text-xs text-muted-foreground">
-                          {aggregateCounts.sectors[sector.toLowerCase()]?.toString() ?? "0"}
+                          {aggregateCounts.total}
                         </span>
                       </span>
                     </SelectItem>
-                  ))}
-                </SelectContent>
-              </Select>
-              <Select value={typeFilter} onValueChange={setTypeFilter}>
-                <SelectTrigger className="w-full">
-                  <SelectValue placeholder="Program type" />
-                </SelectTrigger>
-                <SelectContent>
-                  <SelectItem value="all">All types</SelectItem>
-                  {taxonomies.types.map((type) => (
-                    <SelectItem key={type} value={type}>
-                      {formatLabel(type)}
-                    </SelectItem>
-                  ))}
-                </SelectContent>
-              </Select>
-            </div>
+                    {taxonomies.sectors.map((sector) => (
+                      <SelectItem key={sector} value={sector}>
+                        <span className="flex w-full items-center justify-between gap-2">
+                          <span>{formatLabel(sector)}</span>
+                          <span className="text-xs text-muted-foreground">
+                            {aggregateCounts.sectors[sector.toLowerCase()]?.toString() ?? "0"}
+                          </span>
+                        </span>
+                      </SelectItem>
+                    ))}
+                  </SelectContent>
+                </Select>
+                <Select value={typeFilter} onValueChange={setTypeFilter}>
+                  <SelectTrigger className="w-full">
+                    <SelectValue placeholder="Program type" />
+                  </SelectTrigger>
+                  <SelectContent>
+                    <SelectItem value="all">All types</SelectItem>
+                    {taxonomies.types.map((type) => (
+                      <SelectItem key={type} value={type}>
+                        {formatLabel(type)}
+                      </SelectItem>
+                    ))}
+                  </SelectContent>
+                </Select>
+              </div>
+            ) : null}
           </CardHeader>
-          <CardContent>
-            {noResults ? (
-              <div className="flex h-64 flex-col items-center justify-center gap-3 rounded-2xl border border-dashed">
-                <p className="text-base font-medium">No matches yet</p>
-                <p className="text-sm text-muted-foreground">
-                  Try loosening a filter or switch to the full upcoming list.
-                </p>
-                <Button variant="secondary" onClick={() => setRestrictToWindow(false)}>
-                  Show all upcoming
-                </Button>
-              </div>
-            ) : (
-              <div className="space-y-4">
-                {visibleEvents.map((entry) => (
-                  <EventCard key={entry.record.id} entry={entry} />
-                ))}
-              </div>
-            )}
-          </CardContent>
+          <CardContent>{resultsSection}</CardContent>
         </Card>
       </div>
       <footer className="mt-10 flex flex-col gap-3 border-t border-dashed border-muted-foreground/40 pt-6 text-sm text-muted-foreground">
@@ -476,7 +559,7 @@ export function EventCalendar({ events, taxonomies }: EventCalendarProps) {
           </p>
           <p className="mt-1">
             Want to create a viral video with AI? Visit <a
-              href="https://yumcut.com"
+              href="https://yumcut.com/?utm_source=foundercal"
               target="_blank"
               rel="noreferrer"
               className="font-medium text-foreground underline-offset-4 hover:text-primary hover:underline"

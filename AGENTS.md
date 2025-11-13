@@ -86,4 +86,14 @@ This document is a reminder for “future us” on how to research accelerator p
 - Always set `last_verified_utc` using `datetime.utcnow()`.
 - Maintain alphabetical consistency when adding to JSON; the script above appends to the list, so ordering is not critical but stay consistent if manual edits are needed.
 
+## 6. Refresh Favicon Library
+1. Run `npm run favicons` to scrape each accelerator homepage (20-way concurrency) and regenerate `tmp/favicons-manifest.json`, then download every discovered icon into `public/favicons/`.
+2. If a host returns 404/JS-heavy HTML, add a manual override URL to `data/favicon-overrides.json` and rerun `npm run favicons`. Overrides accept any absolute image URL and are prioritized above the scraped candidates.
+3. Inspect the manifest for `download.status: "failed"` via `jq`:
+   ```bash
+   jq '[.entries[] | select(.download.status!="success" and .download.status!="exists")]' tmp/favicons-manifest.json
+   ```
+4. Keep `public/favicons/` tidy—files are named after sanitized hostnames so the UI can resolve them directly.
+5. After refreshing icons, verify `/imported-accelerators` in the browser so names render with the correct logo instead of the fallback initials badge.
+
 Following these steps keeps the event catalog accurate and ensures we don’t revisit the same accelerator twice.

@@ -7,7 +7,10 @@
     "build": "next build",
     "start": "next start",
     "lint": "eslint",
-    "fetch-page": "tsx scripts/fetch-page.ts"
+    "fetch-page": "tsx scripts/fetch-page.ts",
+    "favicons:scrape": "node scripts/favicons-scrape.mjs",
+    "favicons:download": "node scripts/favicons-download.mjs",
+    "favicons": "npm run favicons:scrape && npm run favicons:download"
   },
   "dependencies": {
     "@radix-ui/react-popover": "^1.1.15",
