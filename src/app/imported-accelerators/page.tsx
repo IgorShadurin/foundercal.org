@@ -1,3 +1,4 @@
+import type { Metadata } from "next";
 import type { ReactNode } from "react";
 
 import Image from "next/image";
@@ -9,6 +10,20 @@ import { Github, Link as LinkGlyph, List, MessageSquarePlus } from "lucide-react
 
 import data from "@/data/imported-accelerators.json";
 import { Card } from "@/components/ui/card";
+
+export const metadata: Metadata = {
+  title: "FounderCal.org — Static Accelerator Lists",
+  description:
+    "Browse every accelerator FounderCal tracks, including core programs, crypto cohorts, and community-submitted deadlines.",
+  keywords: [
+    "accelerator database",
+    "startup accelerator list",
+    "crypto accelerator directory",
+    "community accelerator tracker",
+    "founder program CSV",
+    "manual accelerator research",
+  ],
+};
 
 const HERO_ICON = {
   src: "/android-chrome-192x192.png",
