@@ -134,7 +134,7 @@
         "application_close": "2025-11-10",
         "program_start": "2026-01-05",
         "program_end": "2026-03-31",
-        "demo_day": "2026-03-27",
+        "demo_day": "2026-03-24",
         "timezone": null,
         "date_range_text": "Jan\u2013Mar 2026"
       },
@@ -177,7 +177,7 @@
         "date_sort_key": "2026-01-05"
       },
       "verification": "reported",
-      "last_verified_utc": "2025-11-12T08:11:20Z"
+      "last_verified_utc": "2026-01-21T10:43:47Z"
     },
     {
       "id": "techstars-boston-f25",
