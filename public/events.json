@@ -1308,12 +1308,12 @@
     {
       "id": "launch-accelerator",
       "name": "LAUNCH Accelerator",
-      "description": "Post-seed accelerator by Jason Calacanis with investor access",
-      "organizer": null,
-      "website": "https://founders.launch.co/accelerator",
+      "description": "14-week accelerator investing $125k for 7% with hybrid sessions and investor access",
+      "organizer": "LAUNCH",
+      "website": "https://www.launch.co/",
       "location": {
         "is_virtual": false,
-        "is_hybrid": false,
+        "is_hybrid": true,
         "venue": null,
         "city": "San Francisco",
         "city_slug": "san-francisco",
@@ -1324,11 +1324,11 @@
       "dates": {
         "application_open": null,
         "application_close": null,
-        "program_start": "2025-08-01",
-        "program_end": "2025-10-31",
+        "program_start": "2026-03-01",
+        "program_end": "2026-06-01",
         "demo_day": null,
         "timezone": null,
-        "date_range_text": "Aug\u2013Oct 2025 (rolling)"
+        "date_range_text": "Mar\u2013Jun 2026 (Cohort 36, 14-week accelerator)"
       },
       "categories": {
         "types": [
@@ -1350,7 +1350,7 @@
       ],
       "index": {
         "years": [
-          "2025"
+          "2026"
         ],
         "region_code": "na",
         "country_code": "US",
@@ -1365,10 +1365,10 @@
         "sector_keys": [
           "general"
         ],
-        "date_sort_key": "2025-08-01"
+        "date_sort_key": "2026-03-01"
       },
       "verification": "reported",
-      "last_verified_utc": "2025-11-12T08:11:20Z"
+      "last_verified_utc": "2026-01-21T10:30:51Z"
     },
     {
       "id": "sequoia-arc-25",
