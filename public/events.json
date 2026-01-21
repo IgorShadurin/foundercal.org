@@ -6196,6 +6196,72 @@
         ]
       },
       "last_verified_utc": "2025-11-13T06:32:01Z"
+    },
+    {
+      "id": "ignition-ai-accelerator",
+      "name": "The Ignition AI Accelerator",
+      "description": "Global AI accelerator based in Singapore (Tribe, NVIDIA, DISG) offering AI mentorship, workshops, cloud credits, investor access, and Startup SG funding support.",
+      "organizer": "Tribe",
+      "website": "https://theignition.ai/",
+      "location": {
+        "is_virtual": false,
+        "is_hybrid": true,
+        "venue": null,
+        "city": "Singapore",
+        "city_slug": "singapore",
+        "country": null,
+        "country_code": "SG",
+        "region_code": "apac"
+      },
+      "dates": {
+        "application_open": null,
+        "application_close": null,
+        "program_start": null,
+        "program_end": null,
+        "demo_day": null,
+        "timezone": null,
+        "date_range_text": "Rolling applications; 4-month program; multi-modal virtual + in-person; year-long support"
+      },
+      "categories": {
+        "types": [
+          "accelerator"
+        ],
+        "supports": [
+          "funding",
+          "mentorship",
+          "credits"
+        ],
+        "sectors": [
+          "ai"
+        ]
+      },
+      "hashtags": [
+        "#singapore",
+        "#ai",
+        "#funding"
+      ],
+      "index": {
+        "years": [
+          "2026"
+        ],
+        "region_code": "apac",
+        "country_code": "SG",
+        "city_slug": "singapore",
+        "type_keys": [
+          "accelerator"
+        ],
+        "support_keys": [
+          "funding",
+          "mentorship",
+          "credits"
+        ],
+        "sector_keys": [
+          "ai"
+        ],
+        "date_sort_key": null
+      },
+      "verification": "manual",
+      "last_verified_utc": "2026-01-21T10:37:57Z"
     }
   ]
 }
