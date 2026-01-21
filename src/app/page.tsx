@@ -8,7 +8,7 @@ const GITHUB_RAW_BASE = "https://raw.githubusercontent.com/IgorShadurin/founderc
 
 export default function Home() {
   const { events, taxonomies } = loadEventDataset();
-  const structuredData = buildDatasetSchema(events);
+  const structuredData = buildStructuredData(events);
 
   return (
     <main className="min-h-screen bg-background px-4 py-12 text-foreground sm:px-8">
@@ -22,16 +22,16 @@ export default function Home() {
   );
 }
 
-function buildDatasetSchema(events: EventRecord[]) {
+function buildStructuredData(events: EventRecord[]) {
   const eventSchemas = events.slice(0, 120).map(buildEventSchema).filter(Boolean);
 
-  return {
-    "@context": "https://schema.org",
+  const datasetSchema = {
     "@type": "Dataset",
     name: "FounderCal Accelerator & Fellowship Deadlines",
     description:
       "Structured calendar of accelerator, fellowship, and grant programs with verified application windows and program timelines.",
     url: BASE_URL,
+    license: `${BASE_URL}/license`,
     keywords: [
       "startup accelerators",
       "founder fellowships",
@@ -60,7 +60,11 @@ function buildDatasetSchema(events: EventRecord[]) {
         contentUrl: `${GITHUB_RAW_BASE}/data/accelerators-crypto.csv`,
       },
     ],
-    hasPart: eventSchemas,
+  };
+
+  return {
+    "@context": "https://schema.org",
+    "@graph": [datasetSchema, ...eventSchemas],
   };
 }
 
