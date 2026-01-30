@@ -6,10 +6,10 @@ import Link from "next/link";
 import fs from "node:fs";
 import path from "node:path";
 
-import { Github, Link as LinkGlyph, List, MessageSquarePlus } from "lucide-react";
+import { CalendarClock, Github, Link as LinkGlyph, List, MessageSquarePlus } from "lucide-react";
 
-import data from "@/data/imported-accelerators.json";
 import { Card } from "@/components/ui/card";
+import { importedAccelerators, type ImportedAcceleratorWithSlug } from "@/lib/accelerators";
 
 export const metadata: Metadata = {
   title: "FounderCal.org — Static Accelerator Lists",
@@ -30,16 +30,9 @@ const HERO_ICON = {
   alt: "FounderCal icon",
 };
 
-const accelerators = data as Array<{
-  name: string;
-  website?: string | null;
-  applyUrl?: string | null;
-  description?: string | null;
-  terms?: string | null;
-  notes?: string | null;
-}>;
+const accelerators: ImportedAcceleratorWithSlug[] = importedAccelerators;
 
- type CsvAccelerator = {
+type CsvAccelerator = {
   accelerator: string;
   website?: string;
   checked_at?: string;
@@ -91,9 +84,10 @@ const csvColumns: TableColumn[] = [
 const notionRows: TableRow[] = accelerators.map((accelerator) => {
   const websiteUrl = normalizeUrl(accelerator.website);
   const applyUrl = normalizeUrl(accelerator.applyUrl);
+  const deadlineHref = `/deadline/${accelerator.slug}`;
   return {
-    name: <NameCell label={accelerator.name} websiteUrl={websiteUrl} />, 
-    apply: applyUrl ? <InlineLink href={applyUrl}>{getDisplayHostname(applyUrl)}</InlineLink> : "—",
+    name: <NameCell label={accelerator.name} websiteUrl={websiteUrl} />,
+    apply: <ApplyCell applyUrl={applyUrl} deadlineHref={deadlineHref} />,
     description: renderRichText(accelerator.description),
     terms: renderRichText(accelerator.terms),
     notes: renderRichText(accelerator.notes),
@@ -317,6 +311,28 @@ function NameCell({ label, websiteUrl }: { label: string; websiteUrl?: string })
       <FaviconBadge hostname={hostname} label={label} />
       <span className="font-medium">{label}</span>
     </div>
+  );
+}
+
+function ApplyCell({ applyUrl, deadlineHref }: { applyUrl?: string; deadlineHref: string }) {
+  return (
+    <div className="flex flex-col gap-1">
+      {applyUrl ? (
+        <InlineLink href={applyUrl}>{getDisplayHostname(applyUrl)}</InlineLink>
+      ) : (
+        <span className="text-muted-foreground">—</span>
+      )}
+      <DeadlineLink href={deadlineHref} />
+    </div>
+  );
+}
+
+function DeadlineLink({ href }: { href: string }) {
+  return (
+    <Link className="inline-flex items-center gap-1 text-primary underline-offset-4 hover:underline" href={href}>
+      <CalendarClock className="size-3 text-muted-foreground" aria-hidden="true" />
+      Deadline
+    </Link>
   );
 }
 
