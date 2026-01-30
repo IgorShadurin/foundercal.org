@@ -18,7 +18,7 @@ import {
 } from "lucide-react";
 
 import { Card } from "@/components/ui/card";
-import { getAcceleratorBySlug, getDeadlineDetails, importedAccelerators } from "@/lib/accelerators";
+import { deadlineAccelerators, getAcceleratorBySlug, getDeadlineDetails } from "@/lib/accelerators";
 
 type PageProps = {
   params: Promise<{
@@ -29,7 +29,7 @@ type PageProps = {
 export const dynamicParams = false;
 
 export function generateStaticParams() {
-  return importedAccelerators.map((accelerator) => ({
+  return deadlineAccelerators.map((accelerator) => ({
     slug: accelerator.slug,
   }));
 }

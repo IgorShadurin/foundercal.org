@@ -9,7 +9,12 @@ import path from "node:path";
 import { CalendarClock, Github, Link as LinkGlyph, List, MessageSquarePlus } from "lucide-react";
 
 import { Card } from "@/components/ui/card";
-import { importedAccelerators, type ImportedAcceleratorWithSlug } from "@/lib/accelerators";
+import {
+  getAcceleratorSlug,
+  importedAccelerators,
+  loadCsvAccelerators,
+  type ImportedAcceleratorWithSlug,
+} from "@/lib/accelerators";
 
 export const metadata: Metadata = {
   title: "FounderCal.org — Static Accelerator Lists",
@@ -32,12 +37,6 @@ const HERO_ICON = {
 
 const accelerators: ImportedAcceleratorWithSlug[] = importedAccelerators;
 
-type CsvAccelerator = {
-  accelerator: string;
-  website?: string;
-  checked_at?: string;
-};
-
 const CSV_FILES = [
   {
     title: "Core Accelerators",
@@ -53,7 +52,7 @@ const CSV_FILES = [
 
 const csvSections = CSV_FILES.map((section) => ({
   ...section,
-  records: parseCsvFile(section.file),
+  records: loadCsvAccelerators(section.file),
 }));
 
 const FAVICON_DIR = path.join(process.cwd(), "public", "favicons");
@@ -79,6 +78,7 @@ const notionColumns: TableColumn[] = [
 const csvColumns: TableColumn[] = [
   { key: "name", label: "Accelerator" },
   { key: "website", label: "Website" },
+  { key: "deadline", label: "Deadline" },
 ];
 
 const notionRows: TableRow[] = accelerators.map((accelerator) => {
@@ -98,9 +98,11 @@ const csvSectionsRows = csvSections.map((section) => ({
   ...section,
   rows: section.records.map((record) => {
     const websiteUrl = normalizeUrl(record.website);
+    const deadlineHref = `/deadline/${getAcceleratorSlug(record.accelerator)}`;
     return {
       name: <NameCell label={record.accelerator} websiteUrl={websiteUrl} />,
       website: websiteUrl ? <InlineLink href={websiteUrl}>{getDisplayHostname(websiteUrl)}</InlineLink> : "—",
+      deadline: <DeadlineLink href={deadlineHref} />,
     } satisfies TableRow;
   }),
 }));
@@ -474,33 +476,4 @@ function renderRichText(value?: string | null): ReactNode {
   }
 
   return nodes;
-}
-
-function parseCsvFile(filePath: string): CsvAccelerator[] {
-  const absolutePath = path.join(process.cwd(), filePath);
-  const raw = fs.readFileSync(absolutePath, "utf-8").trim();
-  const lines = raw.split(/\r?\n/).filter(Boolean);
-  if (lines.length <= 1) return [];
-
-  const headers = splitCsvLine(lines[0]);
-  return lines.slice(1).map((line) => {
-    const values = splitCsvLine(line);
-    const record: Record<string, string> = {};
-    headers.forEach((header, index) => {
-      record[header.replace(/"/g, "")] = values[index] ?? "";
-    });
-    return {
-      accelerator: record["accelerator"] ?? "Untitled",
-      website: record["website"] || undefined,
-      checked_at: record["checked_at"] || undefined,
-    } satisfies CsvAccelerator;
-  });
-}
-
-function splitCsvLine(line: string) {
-  let normalized = line.trim();
-  if (normalized.startsWith("\"") && normalized.endsWith("\"")) {
-    normalized = normalized.slice(1, -1);
-  }
-  return normalized.split(/","/).map((value) => value.replace(/""/g, "\"").trim());
 }
