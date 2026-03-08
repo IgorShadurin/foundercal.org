@@ -5,10 +5,20 @@ import Link from "next/link";
 import fs from "node:fs";
 import path from "node:path";
 
-import { ExternalLink, SearchCheck, UserRound, Users } from "lucide-react";
+import {
+  AlertTriangle,
+  CheckCircle2,
+  CircleDashed,
+  ExternalLink,
+  List,
+  SearchCheck,
+  UserRound,
+  Users,
+} from "lucide-react";
 
 import rows from "@/data/yc-alternatives-solo-founders-100.json";
 import { Card } from "@/components/ui/card";
+import { SiteFooter } from "@/components/site-footer";
 
 type SoloAlternative = {
   rank: number;
@@ -22,10 +32,35 @@ type SoloAlternative = {
   source: string;
 };
 
-const alternatives = [...(rows as SoloAlternative[])].sort((a, b) => Number(a.rank) - Number(b.rank));
+const FIT_SORT_ORDER: Record<string, number> = {
+  High: 0,
+  Medium: 1,
+  Niche: 2,
+};
+
+const alternatives = [...(rows as SoloAlternative[])].sort((a, b) => {
+  const fitDiff = (FIT_SORT_ORDER[a.solo_founder_fit] ?? 99) - (FIT_SORT_ORDER[b.solo_founder_fit] ?? 99);
+  if (fitDiff !== 0) {
+    return fitDiff;
+  }
+  return Number(a.rank) - Number(b.rank);
+});
 
 const PAGE_PATH = "/alternatives-to-y-combinator-for-solo-founders";
 const BASE_URL = "https://foundercal.org";
+const SEO_TITLE = "Alternatives to Y Combinator for Solo Founders: 100 Picks";
+const SEO_DESCRIPTION =
+  "Compare 100 alternatives to Y Combinator for solo founders, ranked by fit, with why-it-works notes, watch-outs, use cases, and source links for every option.";
+const SEO_KEYWORDS = [
+  "alternatives to y combinator for solo founders",
+  "y combinator alternatives for solo founder",
+  "solo founder accelerator alternatives",
+  "startup programs for solo founders",
+  "yc alternatives for solo founders",
+  "best accelerator for solo founders",
+  "solo founder startup accelerator list",
+  "founder program comparison",
+];
 
 const FIT_LABELS: Record<string, string> = {
   High: "Best for solo founders",
@@ -41,17 +76,74 @@ const faviconLookup = createFaviconLookup();
 const stats = buildStats(alternatives);
 
 export const metadata: Metadata = {
-  title: "Alternatives to Y Combinator for Solo Founders | FounderCal",
-  description:
-    "Alternatives to Y Combinator for solo founders: 100 vetted options with category, solo-founder fit, YC substitute angle, and source links.",
-  keywords: [
-    "alternatives to y combinator for solo founders",
-    "y combinator alternatives for solo founder",
-    "solo founder accelerator alternatives",
-    "startup programs for solo founders",
-  ],
+  metadataBase: new URL(BASE_URL),
+  title: {
+    absolute: SEO_TITLE,
+  },
+  description: SEO_DESCRIPTION,
+  applicationName: "FounderCal.org",
+  referrer: "origin-when-cross-origin",
+  authors: [{ name: "FounderCal", url: BASE_URL }],
+  creator: "FounderCal",
+  publisher: "FounderCal",
+  generator: "Next.js",
+  keywords: SEO_KEYWORDS,
+  category: "Startup Accelerators",
+  classification: "Startup accelerator alternatives and solo founder program comparison",
   alternates: {
-    canonical: `${BASE_URL}${PAGE_PATH}`,
+    canonical: PAGE_PATH,
+  },
+  formatDetection: {
+    email: false,
+    address: false,
+    telephone: false,
+  },
+  robots: {
+    index: true,
+    follow: true,
+    noarchive: false,
+    nosnippet: false,
+    noimageindex: false,
+    nocache: false,
+    googleBot: {
+      index: true,
+      follow: true,
+      noimageindex: false,
+      "max-video-preview": -1,
+      "max-image-preview": "large",
+      "max-snippet": -1,
+    },
+  },
+  openGraph: {
+    type: "article",
+    url: PAGE_PATH,
+    title: SEO_TITLE,
+    description: SEO_DESCRIPTION,
+    siteName: "FounderCal.org",
+    locale: "en_US",
+    section: "Startup Accelerators",
+    tags: SEO_KEYWORDS,
+    images: [
+      {
+        url: "/og-image.png",
+        width: 1200,
+        height: 630,
+        alt: "Alternatives to Y Combinator for Solo Founders",
+      },
+    ],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: SEO_TITLE,
+    description: SEO_DESCRIPTION,
+    creator: "@Web3Igor",
+    site: "@Web3Igor",
+    images: [
+      {
+        url: "/og-image.png",
+        alt: "Alternatives to Y Combinator for Solo Founders",
+      },
+    ],
   },
 };
 
@@ -68,6 +160,21 @@ export default function SoloFoundersAlternativesPage() {
             Exact-match dataset based on your source CSV, converted to JSON and rendered as a searchable-style comparison
             table with source links and icon support where favicon assets exist.
           </p>
+          <div className="mt-5 flex flex-wrap gap-3 text-sm font-medium text-muted-foreground">
+            <Link
+              className="inline-flex items-center gap-2 underline-offset-4 hover:text-foreground hover:underline"
+              href="/"
+            >
+              <List className="size-4 text-[#f97316]" />
+              Back to calendar
+            </Link>
+            <Link
+              className="inline-flex items-center gap-2 underline-offset-4 hover:text-foreground hover:underline"
+              href="/y-combinator-alternatives"
+            >
+              Open YC alternatives page
+            </Link>
+          </div>
           <div className="mt-6 grid gap-3 sm:grid-cols-2 lg:grid-cols-4">
             <StatCard icon={<SearchCheck className="size-4" />} label="Total options" value={String(stats.total)} />
             <StatCard icon={<UserRound className="size-4" />} label="High solo fit" value={String(stats.highFit)} />
@@ -84,55 +191,48 @@ export default function SoloFoundersAlternativesPage() {
             </Link>
           </div>
           <Card className="overflow-hidden border">
-            <div className="max-h-[75vh] overflow-auto">
-              <table className="min-w-[1300px] divide-y divide-border text-sm">
-                <thead className="sticky top-0 z-10 bg-muted/95 text-left text-xs uppercase tracking-wide text-muted-foreground backdrop-blur">
-                  <tr>
-                    <th scope="col" className="w-14 px-3 py-3 font-medium">#</th>
-                    <th scope="col" className="min-w-[230px] px-3 py-3 font-medium">Option</th>
-                    <th scope="col" className="min-w-[160px] px-3 py-3 font-medium">Category</th>
-                    <th scope="col" className="min-w-[150px] px-3 py-3 font-medium">Solo founder fit</th>
-                    <th scope="col" className="min-w-[280px] px-3 py-3 font-medium">Best for</th>
-                    <th scope="col" className="min-w-[220px] px-3 py-3 font-medium">YC substitute</th>
-                    <th scope="col" className="min-w-[320px] px-3 py-3 font-medium">Why it works</th>
-                    <th scope="col" className="min-w-[320px] px-3 py-3 font-medium">Watch-out</th>
-                    <th scope="col" className="min-w-[150px] px-3 py-3 font-medium">Source</th>
+            <table className="w-full table-fixed divide-y divide-border text-sm">
+              <colgroup>
+                <col className="w-[5%]" />
+                <col className="w-[31%]" />
+                <col className="w-[27%]" />
+                <col className="w-[16%]" />
+                <col className="w-[11%]" />
+                <col className="w-[10%]" />
+              </colgroup>
+              <thead className="sticky top-0 z-10 bg-muted/95 text-left text-xs uppercase tracking-wide text-muted-foreground backdrop-blur">
+                <tr>
+                  <th scope="col" className="px-3 py-3 font-medium">#</th>
+                  <th scope="col" className="px-3 py-3 font-medium">Option</th>
+                  <th scope="col" className="px-3 py-3 font-medium">Why it works</th>
+                  <th scope="col" className="px-3 py-3 font-medium">Best for</th>
+                  <th scope="col" className="px-3 py-3 font-medium">YC substitute</th>
+                  <th scope="col" className="px-3 py-3 font-medium">Watch-out</th>
+                </tr>
+              </thead>
+              <tbody className="divide-y divide-border bg-card text-foreground">
+                {alternatives.map((entry) => (
+                  <tr key={`${entry.rank}-${entry.option}`} className="align-top odd:bg-background/70">
+                    <td className="px-3 py-3 font-medium text-muted-foreground">{entry.rank}</td>
+                    <td className="px-3 py-3 break-words">
+                      <OptionCell
+                        name={entry.option}
+                        source={entry.source}
+                        category={entry.category}
+                        fit={entry.solo_founder_fit}
+                      />
+                    </td>
+                    <td className="px-3 py-3 break-words text-muted-foreground">{entry.why_it_works}</td>
+                    <td className="px-3 py-3 break-words text-muted-foreground">{entry.best_for}</td>
+                    <td className="px-3 py-3 break-words text-muted-foreground">{entry.yc_substitute}</td>
+                    <td className="px-3 py-3 break-words text-muted-foreground">{entry.watch_out}</td>
                   </tr>
-                </thead>
-                <tbody className="divide-y divide-border bg-card text-foreground">
-                  {alternatives.map((entry) => (
-                    <tr key={`${entry.rank}-${entry.option}`} className="align-top odd:bg-background/70">
-                      <td className="px-3 py-3 font-medium text-muted-foreground">{entry.rank}</td>
-                      <td className="px-3 py-3">
-                        <OptionCell name={entry.option} source={entry.source} />
-                      </td>
-                      <td className="px-3 py-3">{entry.category}</td>
-                      <td className="px-3 py-3">
-                        <FitBadge fit={entry.solo_founder_fit} />
-                      </td>
-                      <td className="px-3 py-3 text-muted-foreground">{entry.best_for}</td>
-                      <td className="px-3 py-3 text-muted-foreground">{entry.yc_substitute}</td>
-                      <td className="px-3 py-3 text-muted-foreground">{entry.why_it_works}</td>
-                      <td className="px-3 py-3 text-muted-foreground">{entry.watch_out}</td>
-                      <td className="px-3 py-3">
-                        <Link
-                          href={entry.source}
-                          target="_blank"
-                          rel="noreferrer"
-                          className="inline-flex items-center gap-1 text-primary underline-offset-4 hover:underline"
-                        >
-                          Visit
-                          <ExternalLink className="size-3.5" aria-hidden="true" />
-                          <span className="sr-only">Visit source for {entry.option}</span>
-                        </Link>
-                      </td>
-                    </tr>
-                  ))}
-                </tbody>
-              </table>
-            </div>
+                ))}
+              </tbody>
+            </table>
           </Card>
         </section>
+        <SiteFooter />
       </div>
     </main>
   );
@@ -150,26 +250,52 @@ function StatCard({ icon, label, value }: { icon: ReactNode; label: string; valu
   );
 }
 
-function OptionCell({ name, source }: { name: string; source: string }) {
+function OptionCell({ name, source, category, fit }: { name: string; source: string; category: string; fit: string }) {
   const hostname = getHostnameFromUrl(source);
   const faviconPath = hostname ? resolveFaviconPath(hostname) : undefined;
   return (
-    <div className="flex items-center gap-2.5">
-      {faviconPath ? (
-        <Image
-          src={faviconPath}
-          alt={`${name} logo`}
-          width={28}
-          height={28}
-          unoptimized
-          className="h-7 w-7 rounded-md border object-cover"
-        />
-      ) : (
-        <span className="flex h-7 w-7 items-center justify-center rounded-full border border-dashed text-[10px] font-semibold uppercase text-muted-foreground">
-          {getInitials(name)}
-        </span>
-      )}
-      <span className="font-medium">{name}</span>
+    <div className="min-w-0">
+      <div className="flex min-w-0 items-start gap-2.5">
+        {faviconPath ? (
+          <Image
+            src={faviconPath}
+            alt={`${name} logo`}
+            width={28}
+            height={28}
+            unoptimized
+            className="h-7 w-7 rounded-md border object-cover"
+          />
+        ) : (
+          <span className="flex h-7 w-7 items-center justify-center rounded-full border border-dashed text-[10px] font-semibold uppercase text-muted-foreground">
+            {getInitials(name)}
+          </span>
+        )}
+        <div className="min-w-0">
+          <div className="flex min-w-0 items-center gap-1.5">
+            <Link
+              href={source}
+              target="_blank"
+              rel="noreferrer"
+              className="inline-flex items-center gap-1 break-words font-medium underline-offset-4 hover:text-primary hover:underline"
+            >
+              <span className="break-words">{name}</span>
+              <ExternalLink className="size-3.5 shrink-0" aria-hidden="true" />
+              <span className="sr-only">Visit source for {name}</span>
+            </Link>
+            <span
+              className="inline-flex h-5 w-5 shrink-0 items-center justify-center rounded-full border border-dashed text-muted-foreground"
+              title={`Type: ${category}`}
+              aria-label={`Type: ${category}`}
+            >
+              <List className="size-3" aria-hidden="true" />
+              <span className="sr-only">Type: {category}</span>
+            </span>
+          </div>
+        </div>
+      </div>
+      <div className="mt-1">
+        <FitBadge fit={fit} />
+      </div>
     </div>
   );
 }
@@ -181,11 +307,22 @@ function FitBadge({ fit }: { fit: string }) {
       : fit === "Medium"
         ? "bg-amber-100 text-amber-800 dark:bg-amber-950/40 dark:text-amber-300"
         : "bg-zinc-200 text-zinc-800 dark:bg-zinc-800 dark:text-zinc-200";
+  const explanation = FIT_LABELS[fit] ?? "Specialized fit";
+  const icon =
+    fit === "High"
+      ? <CheckCircle2 className="size-3.5" aria-hidden="true" />
+      : fit === "Medium"
+        ? <AlertTriangle className="size-3.5" aria-hidden="true" />
+        : <CircleDashed className="size-3.5" aria-hidden="true" />;
 
   return (
-    <span className={`inline-flex rounded-full px-2.5 py-1 text-xs font-semibold ${tone}`}>
-      {fit}
-      <span className="ml-1 text-[10px] font-medium opacity-80">{FIT_LABELS[fit] ?? "Specialized fit"}</span>
+    <span
+      className={`inline-flex items-center gap-1.5 rounded-full px-2.5 py-1 text-xs font-semibold ${tone}`}
+      title={explanation}
+      aria-label={`${fit}: ${explanation}`}
+    >
+      {icon}
+      {fit} fit
     </span>
   );
 }
