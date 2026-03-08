@@ -36,6 +36,12 @@ const entries: Array<{
     priority: 0.7,
     filePath: "src/app/y-combinator-alternatives/page.tsx",
   },
+  {
+    path: "/alternatives-to-y-combinator-for-solo-founders",
+    changeFrequency: "monthly",
+    priority: 0.7,
+    filePath: "src/app/alternatives-to-y-combinator-for-solo-founders/page.tsx",
+  },
 ];
 
 function resolveLastModified(filePath?: string) {
