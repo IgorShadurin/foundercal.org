@@ -194,11 +194,11 @@ export default function SoloFoundersAlternativesPage() {
             <table className="w-full table-fixed divide-y divide-border text-sm">
               <colgroup>
                 <col className="w-[5%]" />
-                <col className="w-[31%]" />
+                <col className="w-[22%]" />
                 <col className="w-[27%]" />
-                <col className="w-[16%]" />
-                <col className="w-[11%]" />
-                <col className="w-[10%]" />
+                <col className="w-[19%]" />
+                <col className="w-[14%]" />
+                <col className="w-[13%]" />
               </colgroup>
               <thead className="sticky top-0 z-10 bg-muted/95 text-left text-xs uppercase tracking-wide text-muted-foreground backdrop-blur">
                 <tr>
