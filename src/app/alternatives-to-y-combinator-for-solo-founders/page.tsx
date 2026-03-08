@@ -51,6 +51,8 @@ const BASE_URL = "https://foundercal.org";
 const SEO_TITLE = "Alternatives to Y Combinator for Solo Founders: 100 Picks";
 const SEO_DESCRIPTION =
   "Compare 100 alternatives to Y Combinator for solo founders, ranked by fit, with why-it-works notes, watch-outs, use cases, and source links for every option.";
+const PAGE_PUBLISHED_UTC = "2026-03-08T00:00:00.000Z";
+const PAGE_UPDATED_UTC = "2026-03-08T00:00:00.000Z";
 const SEO_KEYWORDS = [
   "alternatives to y combinator for solo founders",
   "y combinator alternatives for solo founder",
@@ -92,6 +94,9 @@ export const metadata: Metadata = {
   classification: "Startup accelerator alternatives and solo founder program comparison",
   alternates: {
     canonical: PAGE_PATH,
+    languages: {
+      "x-default": PAGE_PATH,
+    },
   },
   formatDetection: {
     email: false,
@@ -121,6 +126,9 @@ export const metadata: Metadata = {
     description: SEO_DESCRIPTION,
     siteName: "FounderCal.org",
     locale: "en_US",
+    publishedTime: PAGE_PUBLISHED_UTC,
+    modifiedTime: PAGE_UPDATED_UTC,
+    authors: [BASE_URL],
     section: "Startup Accelerators",
     tags: SEO_KEYWORDS,
     images: [
@@ -148,6 +156,8 @@ export const metadata: Metadata = {
 };
 
 export default function SoloFoundersAlternativesPage() {
+  const structuredData = buildStructuredData(alternatives);
+
   return (
     <main className="min-h-screen bg-background px-4 py-12 text-foreground sm:px-8">
       <div className="mx-auto flex w-full max-w-[1200px] flex-col gap-8">
@@ -233,6 +243,7 @@ export default function SoloFoundersAlternativesPage() {
           </Card>
         </section>
         <SiteFooter />
+        <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(structuredData) }} />
       </div>
     </main>
   );
@@ -397,4 +408,55 @@ function buildStats(records: SoloAlternative[]) {
     mediumFit: records.filter((record) => record.solo_founder_fit === "Medium").length,
     uniqueCategories: new Set(records.map((record) => record.category)).size,
   };
+}
+
+function buildStructuredData(records: SoloAlternative[]) {
+  const listItems = records.slice(0, 100).map((record, index) => ({
+    "@type": "ListItem",
+    position: index + 1,
+    name: record.option,
+    url: record.source,
+    description: `${record.solo_founder_fit} fit. ${truncate(record.why_it_works, 180)}`,
+  }));
+
+  return {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "WebPage",
+        name: SEO_TITLE,
+        description: SEO_DESCRIPTION,
+        url: `${BASE_URL}${PAGE_PATH}`,
+        inLanguage: "en-US",
+        datePublished: PAGE_PUBLISHED_UTC,
+        dateModified: PAGE_UPDATED_UTC,
+        isPartOf: {
+          "@type": "WebSite",
+          name: "FounderCal.org",
+          url: BASE_URL,
+        },
+        primaryImageOfPage: {
+          "@type": "ImageObject",
+          url: `${BASE_URL}/og-image.png`,
+          width: 1200,
+          height: 630,
+        },
+      },
+      {
+        "@type": "ItemList",
+        name: "Alternatives to Y Combinator for Solo Founders",
+        description: SEO_DESCRIPTION,
+        numberOfItems: records.length,
+        itemListOrder: "https://schema.org/ItemListOrderAscending",
+        itemListElement: listItems,
+      },
+    ],
+  };
+}
+
+function truncate(value: string, maxLength: number) {
+  if (value.length <= maxLength) {
+    return value;
+  }
+  return `${value.slice(0, maxLength - 1).trimEnd()}…`;
 }
