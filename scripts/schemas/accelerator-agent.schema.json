@@ -1,0 +1,219 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "FounderCal accelerator research result",
+  "type": "object",
+  "additionalProperties": false,
+  "properties": {
+    "accelerator": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "name": { "type": "string", "minLength": 1 },
+        "website": { "type": ["string", "null"] },
+        "csv_file": { "type": "string", "minLength": 1 },
+        "slug": { "type": "string", "minLength": 1 }
+      },
+      "required": ["name", "website", "csv_file", "slug"]
+    },
+    "status": {
+      "type": "string",
+      "enum": ["verified", "needs_review", "inactive", "not_found"]
+    },
+    "checked_at": {
+      "type": "string",
+      "pattern": "^\\d{4}-\\d{2}-\\d{2}$"
+    },
+    "confidence": {
+      "type": "string",
+      "enum": ["high", "medium", "low"]
+    },
+    "summary": { "type": "string" },
+    "proposed_event": {
+      "anyOf": [
+        { "$ref": "#/$defs/event" },
+        { "type": "null" }
+      ]
+    },
+    "sources": {
+      "type": "array",
+      "items": { "$ref": "#/$defs/source" },
+      "default": []
+    },
+    "notes": {
+      "type": "array",
+      "items": { "type": "string" },
+      "default": []
+    }
+  },
+  "required": [
+    "accelerator",
+    "status",
+    "checked_at",
+    "confidence",
+    "summary",
+    "proposed_event",
+    "sources",
+    "notes"
+  ],
+  "$defs": {
+    "source": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "title": { "type": "string" },
+        "url": { "type": "string" },
+        "publisher": { "type": ["string", "null"] },
+        "accessed_at": {
+          "type": "string",
+          "pattern": "^\\d{4}-\\d{2}-\\d{2}$"
+        },
+        "supports": { "type": "string" }
+      },
+      "required": ["title", "url", "publisher", "accessed_at", "supports"]
+    },
+    "event": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "id": { "type": "string", "minLength": 1 },
+        "name": { "type": "string", "minLength": 1 },
+        "description": { "type": "string" },
+        "organizer": { "type": ["string", "null"] },
+        "website": { "type": ["string", "null"] },
+        "location": { "$ref": "#/$defs/location" },
+        "dates": { "$ref": "#/$defs/dates" },
+        "categories": { "$ref": "#/$defs/categories" },
+        "hashtags": {
+          "type": "array",
+          "items": { "type": "string" },
+          "default": []
+        },
+        "index": { "$ref": "#/$defs/index" },
+        "verification": { "type": ["string", "null"] },
+        "last_verified_utc": { "type": ["string", "null"] }
+      },
+      "required": [
+        "id",
+        "name",
+        "description",
+        "organizer",
+        "website",
+        "location",
+        "dates",
+        "categories",
+        "hashtags",
+        "index",
+        "verification",
+        "last_verified_utc"
+      ]
+    },
+    "location": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "is_virtual": { "type": "boolean" },
+        "is_hybrid": { "type": "boolean" },
+        "venue": { "type": ["string", "null"] },
+        "city": { "type": ["string", "null"] },
+        "city_slug": { "type": ["string", "null"] },
+        "country": { "type": ["string", "null"] },
+        "country_code": { "type": ["string", "null"] },
+        "region_code": { "type": ["string", "null"] }
+      },
+      "required": [
+        "is_virtual",
+        "is_hybrid",
+        "venue",
+        "city",
+        "city_slug",
+        "country",
+        "country_code",
+        "region_code"
+      ]
+    },
+    "dates": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "application_open": { "type": ["string", "null"] },
+        "application_close": { "type": ["string", "null"] },
+        "program_start": { "type": ["string", "null"] },
+        "program_end": { "type": ["string", "null"] },
+        "demo_day": { "type": ["string", "null"] },
+        "timezone": { "type": ["string", "null"] },
+        "date_range_text": { "type": ["string", "null"] }
+      },
+      "required": [
+        "application_open",
+        "application_close",
+        "program_start",
+        "program_end",
+        "demo_day",
+        "timezone",
+        "date_range_text"
+      ]
+    },
+    "categories": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "types": {
+          "type": "array",
+          "items": { "type": "string" },
+          "minItems": 1
+        },
+        "supports": {
+          "type": "array",
+          "items": { "type": "string" },
+          "minItems": 1
+        },
+        "sectors": {
+          "type": "array",
+          "items": { "type": "string" },
+          "minItems": 1
+        }
+      },
+      "required": ["types", "supports", "sectors"]
+    },
+    "index": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "years": {
+          "type": "array",
+          "items": { "type": "string" },
+          "default": []
+        },
+        "region_code": { "type": ["string", "null"] },
+        "country_code": { "type": ["string", "null"] },
+        "city_slug": { "type": ["string", "null"] },
+        "type_keys": {
+          "type": "array",
+          "items": { "type": "string" },
+          "default": []
+        },
+        "support_keys": {
+          "type": "array",
+          "items": { "type": "string" },
+          "default": []
+        },
+        "sector_keys": {
+          "type": "array",
+          "items": { "type": "string" },
+          "default": []
+        },
+        "date_sort_key": { "type": ["string", "null"] }
+      },
+      "required": [
+        "years",
+        "region_code",
+        "country_code",
+        "city_slug",
+        "type_keys",
+        "support_keys",
+        "sector_keys",
+        "date_sort_key"
+      ]
+    }
+  }
+}

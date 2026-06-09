@@ -97,3 +97,21 @@ This document is a reminder for “future us” on how to research accelerator p
 5. After refreshing icons, verify `/imported-accelerators` in the browser so names render with the correct logo instead of the fallback initials badge.
 
 Following these steps keeps the event catalog accurate and ensures we don’t revisit the same accelerator twice.
+
+## 7. Multi-Agent Accelerator Refresh
+1. Use the orchestrated Codex worker flow when you need to refresh many accelerators instead of hand-checking one row at a time:
+   ```bash
+   npm run accelerator-agents -- list --all
+   npm run accelerator-agents -- research --csv data/accelerators-crypto.csv --parallel 2
+   npm run accelerator-agents -- merge
+   ```
+2. Worker outputs are saved as one JSON file per unique accelerator slug in `data/accelerator-research/`. The filename is the accelerator slug, and each JSON file includes the proposed event, status, sources, checked date, and review notes. `--all` covers both CSV trackers and `src/data/imported-accelerators.json`, deduping shared accelerator names by slug.
+3. The default worker command uses `codex-proxy exec` when available, falls back to `codex exec`, and passes `--model gpt-5.5` with `model_reasoning_effort="medium"`. Override either when needed:
+   ```bash
+   npm run accelerator-agents -- research --model gpt-5 --reasoning high --runner codex
+   ```
+4. The merge stage validates worker JSON, drops taxonomy values that are not in `public/events.json`, recomputes hashtags and index fields, upserts mergeable events into `public/events.json`, and marks every valid worker finding as checked in the matching CSV with today’s UTC date. A valid `needs_review` finding can intentionally have `proposed_event: null` when current dates are not public.
+5. Use a dry run before a large batch:
+   ```bash
+   npm run accelerator-agents -- run --include-checked --parallel 4 --dry-run
+   ```

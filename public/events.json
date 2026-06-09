@@ -6262,6 +6262,2697 @@
       },
       "verification": "manual",
       "last_verified_utc": "2026-01-21T10:37:57Z"
+    },
+    {
+      "id": "seed-club-sc07",
+      "name": "Seed Club SC07 Consumer Crypto Accelerator",
+      "description": "3-month consumer crypto accelerator with mentorship, demo day, and up to $200k in negotiated funding.",
+      "organizer": "Seed Club",
+      "website": "https://www.seedclub.xyz/getfunded/accelerator",
+      "location": {
+        "is_virtual": true,
+        "is_hybrid": false,
+        "venue": null,
+        "city": null,
+        "city_slug": null,
+        "country": null,
+        "country_code": null,
+        "region_code": "global"
+      },
+      "dates": {
+        "application_open": null,
+        "application_close": null,
+        "program_start": null,
+        "program_end": null,
+        "demo_day": null,
+        "timezone": null,
+        "date_range_text": "Official site links to an SC07 application and describes a 3-month accelerator; exact application deadline and cohort dates were not published in accessible official pages."
+      },
+      "categories": {
+        "types": [
+          "accelerator"
+        ],
+        "supports": [
+          "funding",
+          "mentorship",
+          "resources"
+        ],
+        "sectors": [
+          "web3",
+          "consumer"
+        ]
+      },
+      "hashtags": [
+        "#web3",
+        "#consumer",
+        "#funding",
+        "#mentorship"
+      ],
+      "index": {
+        "years": [],
+        "region_code": "global",
+        "country_code": null,
+        "city_slug": null,
+        "type_keys": [
+          "accelerator"
+        ],
+        "support_keys": [
+          "funding",
+          "mentorship",
+          "resources"
+        ],
+        "sector_keys": [
+          "web3",
+          "consumer"
+        ],
+        "date_sort_key": null
+      },
+      "verification": "reported",
+      "last_verified_utc": "2026-06-09T09:07:21Z"
+    },
+    {
+      "id": "seedcamp-rolling",
+      "name": "Seedcamp Rolling Applications",
+      "description": "European seed fund backing early founders with $350K-$1M checks, hands-on support and founder community access.",
+      "organizer": "Seedcamp",
+      "website": "https://seedcamp.com/out/f6-startup-details",
+      "location": {
+        "is_virtual": false,
+        "is_hybrid": false,
+        "venue": null,
+        "city": "London",
+        "city_slug": "london",
+        "country": "United Kingdom",
+        "country_code": "GB",
+        "region_code": "eu"
+      },
+      "dates": {
+        "application_open": null,
+        "application_close": null,
+        "program_start": null,
+        "program_end": null,
+        "demo_day": null,
+        "timezone": null,
+        "date_range_text": "Rolling pitch submissions; Seedcamp says it reviews every submission and aims to run its end-to-end investment process within two weeks of meeting founders."
+      },
+      "categories": {
+        "types": [
+          "accelerator"
+        ],
+        "supports": [
+          "funding",
+          "mentorship",
+          "resources"
+        ],
+        "sectors": [
+          "general",
+          "saas"
+        ]
+      },
+      "hashtags": [
+        "#unitedkingdom",
+        "#london",
+        "#general",
+        "#saas",
+        "#funding",
+        "#mentorship"
+      ],
+      "index": {
+        "years": [],
+        "region_code": "eu",
+        "country_code": "GB",
+        "city_slug": "london",
+        "type_keys": [
+          "accelerator"
+        ],
+        "support_keys": [
+          "funding",
+          "mentorship",
+          "resources"
+        ],
+        "sector_keys": [
+          "general",
+          "saas"
+        ],
+        "date_sort_key": null
+      },
+      "verification": "reported",
+      "last_verified_utc": "2026-06-09T09:07:21Z"
+    },
+    {
+      "id": "500-global-flagship-batch-37",
+      "name": "500 Global Flagship Accelerator Batch 37",
+      "description": "Palo Alto accelerator offering $150K, mentorship, curriculum, and founder network for early-stage tech startups.",
+      "organizer": "500 Global",
+      "website": "https://500.co/founders/flagship",
+      "location": {
+        "is_virtual": false,
+        "is_hybrid": false,
+        "venue": "500 Global headquarters",
+        "city": "Palo Alto",
+        "city_slug": "palo-alto",
+        "country": "United States",
+        "country_code": "US",
+        "region_code": "na"
+      },
+      "dates": {
+        "application_open": null,
+        "application_close": null,
+        "program_start": null,
+        "program_end": null,
+        "demo_day": null,
+        "timezone": null,
+        "date_range_text": "Accepting applications for Batch 37; batch starts Q2 2026. Exact deadline and program dates are not published."
+      },
+      "categories": {
+        "types": [
+          "accelerator"
+        ],
+        "supports": [
+          "funding",
+          "mentorship",
+          "credits",
+          "resources"
+        ],
+        "sectors": [
+          "general"
+        ]
+      },
+      "hashtags": [
+        "#usa",
+        "#paloalto",
+        "#general",
+        "#funding",
+        "#mentorship"
+      ],
+      "index": {
+        "years": [],
+        "region_code": "na",
+        "country_code": "US",
+        "city_slug": "palo-alto",
+        "type_keys": [
+          "accelerator"
+        ],
+        "support_keys": [
+          "funding",
+          "mentorship",
+          "credits",
+          "resources"
+        ],
+        "sector_keys": [
+          "general"
+        ],
+        "date_sort_key": null
+      },
+      "verification": "reported",
+      "last_verified_utc": "2026-06-09T09:07:21Z"
+    },
+    {
+      "id": "betaworks-camp",
+      "name": "Betaworks Camp",
+      "description": "Twice-yearly Betaworks AI residency with up to $500k investment, NYC workspace, mentors, and Demo Day.",
+      "organizer": "Betaworks",
+      "website": "https://www.betaworks.com/camp/application",
+      "location": {
+        "is_virtual": false,
+        "is_hybrid": true,
+        "venue": "Betaworks offices, Meatpacking District",
+        "city": "New York",
+        "city_slug": "new-york",
+        "country": "United States",
+        "country_code": "US",
+        "region_code": "na"
+      },
+      "dates": {
+        "application_open": null,
+        "application_close": null,
+        "program_start": null,
+        "program_end": null,
+        "demo_day": null,
+        "timezone": null,
+        "date_range_text": "Twice annually: first session begins in March with applications Dec-Jan; second starts in August with applications June-July. Next cohort theme and exact dates not yet published."
+      },
+      "categories": {
+        "types": [
+          "accelerator"
+        ],
+        "supports": [
+          "funding",
+          "mentorship",
+          "resources"
+        ],
+        "sectors": [
+          "ai",
+          "general"
+        ]
+      },
+      "hashtags": [
+        "#usa",
+        "#newyork",
+        "#ai",
+        "#general",
+        "#funding",
+        "#mentorship"
+      ],
+      "index": {
+        "years": [],
+        "region_code": "na",
+        "country_code": "US",
+        "city_slug": "new-york",
+        "type_keys": [
+          "accelerator"
+        ],
+        "support_keys": [
+          "funding",
+          "mentorship",
+          "resources"
+        ],
+        "sector_keys": [
+          "ai",
+          "general"
+        ],
+        "date_sort_key": null
+      },
+      "verification": "reported",
+      "last_verified_utc": "2026-06-09T09:07:21Z"
+    },
+    {
+      "id": "fastercapital-global-venture-builder",
+      "name": "FasterCapital Global Venture Builder Programs",
+      "description": "Global online incubator/venture builder offering fundraising, tech cofounder, growth, and idea-to-product support for startups.",
+      "organizer": "FasterCapital",
+      "website": "https://www.fastercapital.com/",
+      "location": {
+        "is_virtual": true,
+        "is_hybrid": false,
+        "venue": "FasterCapital Dubai offices",
+        "city": "Dubai",
+        "city_slug": "dubai",
+        "country": "United Arab Emirates",
+        "country_code": "AE",
+        "region_code": "mena"
+      },
+      "dates": {
+        "application_open": null,
+        "application_close": null,
+        "program_start": null,
+        "program_end": null,
+        "demo_day": null,
+        "timezone": null,
+        "date_range_text": "Rolling online applications; official site says founders can apply anywhere and anytime to FasterCapital programs."
+      },
+      "categories": {
+        "types": [
+          "accelerator",
+          "incubator"
+        ],
+        "supports": [
+          "funding",
+          "mentorship",
+          "resources"
+        ],
+        "sectors": [
+          "general"
+        ]
+      },
+      "hashtags": [
+        "#unitedarabemirates",
+        "#dubai",
+        "#general",
+        "#funding",
+        "#mentorship"
+      ],
+      "index": {
+        "years": [],
+        "region_code": "mena",
+        "country_code": "AE",
+        "city_slug": "dubai",
+        "type_keys": [
+          "accelerator",
+          "incubator"
+        ],
+        "support_keys": [
+          "funding",
+          "mentorship",
+          "resources"
+        ],
+        "sector_keys": [
+          "general"
+        ],
+        "date_sort_key": null
+      },
+      "verification": "reported",
+      "last_verified_utc": "2026-06-09T09:07:21Z"
+    },
+    {
+      "id": "plug-and-play-tech-center",
+      "name": "Plug and Play Tech Center",
+      "description": "Global accelerator ecosystem connecting startups with corporate partners, pilots, resources, and investment opportunities.",
+      "organizer": "Plug and Play Tech Center",
+      "website": "https://www.plugandplaytechcenter.com/programs/",
+      "location": {
+        "is_virtual": false,
+        "is_hybrid": false,
+        "venue": null,
+        "city": null,
+        "city_slug": null,
+        "country": null,
+        "country_code": null,
+        "region_code": "global"
+      },
+      "dates": {
+        "application_open": null,
+        "application_close": null,
+        "program_start": null,
+        "program_end": null,
+        "demo_day": null,
+        "timezone": null,
+        "date_range_text": "Rolling startup ecosystem intake; pilot-oriented accelerator program timing varies by vertical industry and location."
+      },
+      "categories": {
+        "types": [
+          "accelerator",
+          "program"
+        ],
+        "supports": [
+          "funding",
+          "resources"
+        ],
+        "sectors": [
+          "general",
+          "ai",
+          "fintech",
+          "health",
+          "energy",
+          "mobility",
+          "web3",
+          "climatetech"
+        ]
+      },
+      "hashtags": [
+        "#general",
+        "#ai",
+        "#funding",
+        "#resources"
+      ],
+      "index": {
+        "years": [],
+        "region_code": "global",
+        "country_code": null,
+        "city_slug": null,
+        "type_keys": [
+          "accelerator",
+          "program"
+        ],
+        "support_keys": [
+          "funding",
+          "resources"
+        ],
+        "sector_keys": [
+          "general",
+          "ai",
+          "fintech",
+          "health",
+          "energy",
+          "mobility",
+          "web3",
+          "climatetech"
+        ],
+        "date_sort_key": null
+      },
+      "verification": "reported",
+      "last_verified_utc": "2026-06-09T09:07:21Z"
+    },
+    {
+      "id": "boost-vc",
+      "name": "Boost VC Deep Tech Accelerator",
+      "description": "Boost VC invests $500K pre-seed checks and runs a 10-week deep tech go-to-market program in San Mateo.",
+      "organizer": "Boost VC",
+      "website": "https://www.boost.vc/apply",
+      "location": {
+        "is_virtual": false,
+        "is_hybrid": false,
+        "venue": null,
+        "city": "San Mateo",
+        "city_slug": "san-mateo",
+        "country": "United States",
+        "country_code": "US",
+        "region_code": "na"
+      },
+      "dates": {
+        "application_open": null,
+        "application_close": null,
+        "program_start": null,
+        "program_end": null,
+        "demo_day": null,
+        "timezone": null,
+        "date_range_text": "Applications appear to be rolling; Boost VC describes a 10-week go-to-market program but does not publish current cohort dates or deadlines."
+      },
+      "categories": {
+        "types": [
+          "accelerator"
+        ],
+        "supports": [
+          "funding",
+          "mentorship",
+          "resources"
+        ],
+        "sectors": [
+          "deeptech",
+          "general"
+        ]
+      },
+      "hashtags": [
+        "#usa",
+        "#sanmateo",
+        "#deeptech",
+        "#general",
+        "#funding",
+        "#mentorship"
+      ],
+      "index": {
+        "years": [],
+        "region_code": "na",
+        "country_code": "US",
+        "city_slug": "san-mateo",
+        "type_keys": [
+          "accelerator"
+        ],
+        "support_keys": [
+          "funding",
+          "mentorship",
+          "resources"
+        ],
+        "sector_keys": [
+          "deeptech",
+          "general"
+        ],
+        "date_sort_key": null
+      },
+      "verification": "reported",
+      "last_verified_utc": "2026-06-09T09:07:21Z"
+    },
+    {
+      "id": "cleantech-open-us-2026",
+      "name": "Cleantech Open US Accelerator 2026",
+      "description": "U.S. cleantech accelerator with mentoring, workshops, showcases and prize/investment opportunities.",
+      "organizer": "Cleantech Open",
+      "website": "https://www.cleantechopen.org/en/page/2026-cto-accelerator-en",
+      "location": {
+        "is_virtual": false,
+        "is_hybrid": true,
+        "venue": null,
+        "city": null,
+        "city_slug": null,
+        "country": "United States",
+        "country_code": "US",
+        "region_code": "na"
+      },
+      "dates": {
+        "application_open": null,
+        "application_close": "2026-04-06",
+        "program_start": "2026-05-28",
+        "program_end": "2026-10-22",
+        "demo_day": "2026-10-22",
+        "timezone": "America/Los_Angeles",
+        "date_range_text": "2026 cohort: final application deadline April 6; National Academy May 28-29 in New York City; Global Forum/National Finals October 20-22 in Boston, culminating October 22 at Greentown Labs in Somerville."
+      },
+      "categories": {
+        "types": [
+          "accelerator"
+        ],
+        "supports": [
+          "funding",
+          "mentorship",
+          "resources"
+        ],
+        "sectors": [
+          "climatetech",
+          "energy",
+          "mobility"
+        ]
+      },
+      "hashtags": [
+        "#usa",
+        "#climatetech",
+        "#energy",
+        "#funding",
+        "#mentorship"
+      ],
+      "index": {
+        "years": [
+          "2026"
+        ],
+        "region_code": "na",
+        "country_code": "US",
+        "city_slug": null,
+        "type_keys": [
+          "accelerator"
+        ],
+        "support_keys": [
+          "funding",
+          "mentorship",
+          "resources"
+        ],
+        "sector_keys": [
+          "climatetech",
+          "energy",
+          "mobility"
+        ],
+        "date_sort_key": "2026-04-06"
+      },
+      "verification": "reported",
+      "last_verified_utc": "2026-06-09T09:07:21Z"
+    },
+    {
+      "id": "endless-frontier-labs-2026",
+      "name": "Endless Frontier Labs 2026-2027 Cohort",
+      "description": "Nine-month NYU Stern accelerator for science and deep-tech startups, with mentorship, investor access, MBA support, no fees, and no equity.",
+      "organizer": "NYU Stern Endless Frontier Labs",
+      "website": "https://endlessfrontierlabs.com/info-sessions/",
+      "location": {
+        "is_virtual": false,
+        "is_hybrid": true,
+        "venue": "NYU Stern",
+        "city": "New York",
+        "city_slug": "new-york",
+        "country": "United States",
+        "country_code": "US",
+        "region_code": "na"
+      },
+      "dates": {
+        "application_open": null,
+        "application_close": "2026-07-31",
+        "program_start": null,
+        "program_end": null,
+        "demo_day": null,
+        "timezone": null,
+        "date_range_text": "Applications are open; deadline July 31, 2026. Orientation/onboarding in September; mentorship and business development October-May; graduation/showcase in May."
+      },
+      "categories": {
+        "types": [
+          "accelerator"
+        ],
+        "supports": [
+          "mentorship",
+          "resources"
+        ],
+        "sectors": [
+          "general",
+          "ai",
+          "bio",
+          "health",
+          "deeptech"
+        ]
+      },
+      "hashtags": [
+        "#usa",
+        "#newyork",
+        "#general",
+        "#ai",
+        "#mentorship",
+        "#resources"
+      ],
+      "index": {
+        "years": [
+          "2026"
+        ],
+        "region_code": "na",
+        "country_code": "US",
+        "city_slug": "new-york",
+        "type_keys": [
+          "accelerator"
+        ],
+        "support_keys": [
+          "mentorship",
+          "resources"
+        ],
+        "sector_keys": [
+          "general",
+          "ai",
+          "bio",
+          "health",
+          "deeptech"
+        ],
+        "date_sort_key": "2026-07-31"
+      },
+      "verification": "reported",
+      "last_verified_utc": "2026-06-09T09:07:21Z"
+    },
+    {
+      "id": "entrepreneur-first-2026",
+      "name": "Entrepreneur First 2026 Programs",
+      "description": "In-person talent-investor programs helping individuals find cofounders and build startups, with grants/investment and Demo Day access.",
+      "organizer": "Entrepreneur First",
+      "website": "https://apply.joinef.com/",
+      "location": {
+        "is_virtual": false,
+        "is_hybrid": false,
+        "venue": null,
+        "city": null,
+        "city_slug": null,
+        "country": null,
+        "country_code": null,
+        "region_code": "global"
+      },
+      "dates": {
+        "application_open": null,
+        "application_close": null,
+        "program_start": null,
+        "program_end": null,
+        "demo_day": null,
+        "timezone": null,
+        "date_range_text": "Fall 2026 programs listed for London (starts September; early deadline 2026-06-21), Bridge Residency in San Francisco (starts October; early deadline 2026-06-28), Bangalore (starts August; final deadline 2026-06-22), plus U.S. funding and fellowships accepting applications on a rolling basis in 2026."
+      },
+      "categories": {
+        "types": [
+          "accelerator",
+          "fellowship",
+          "program"
+        ],
+        "supports": [
+          "funding",
+          "mentorship",
+          "credits",
+          "resources"
+        ],
+        "sectors": [
+          "general"
+        ]
+      },
+      "hashtags": [
+        "#general",
+        "#funding",
+        "#mentorship"
+      ],
+      "index": {
+        "years": [],
+        "region_code": "global",
+        "country_code": null,
+        "city_slug": null,
+        "type_keys": [
+          "accelerator",
+          "fellowship",
+          "program"
+        ],
+        "support_keys": [
+          "funding",
+          "mentorship",
+          "credits",
+          "resources"
+        ],
+        "sector_keys": [
+          "general"
+        ],
+        "date_sort_key": null
+      },
+      "verification": "reported",
+      "last_verified_utc": "2026-06-09T09:07:21Z"
+    },
+    {
+      "id": "eic-accelerator-2026",
+      "name": "EIC Accelerator 2026",
+      "description": "EU deep-tech funding for startups and SMEs, with grants, equity investment, coaching, mentoring and networking.",
+      "organizer": "European Innovation Council",
+      "website": "https://eic.ec.europa.eu/eic-funding-opportunities/eic-accelerator_en",
+      "location": {
+        "is_virtual": true,
+        "is_hybrid": false,
+        "venue": null,
+        "city": null,
+        "city_slug": null,
+        "country": null,
+        "country_code": null,
+        "region_code": "eu"
+      },
+      "dates": {
+        "application_open": null,
+        "application_close": "2026-07-08",
+        "program_start": null,
+        "program_end": null,
+        "demo_day": null,
+        "timezone": "Europe/Brussels",
+        "date_range_text": "Short proposals accepted any time and evaluated monthly; 2026 full-proposal cutoffs include Jul 8, Sep 2, and Nov 4 at 5pm Brussels time."
+      },
+      "categories": {
+        "types": [
+          "accelerator",
+          "grant",
+          "program"
+        ],
+        "supports": [
+          "funding",
+          "mentorship",
+          "resources"
+        ],
+        "sectors": [
+          "deeptech",
+          "general"
+        ]
+      },
+      "hashtags": [
+        "#deeptech",
+        "#general",
+        "#funding",
+        "#mentorship"
+      ],
+      "index": {
+        "years": [
+          "2026"
+        ],
+        "region_code": "eu",
+        "country_code": null,
+        "city_slug": null,
+        "type_keys": [
+          "accelerator",
+          "grant",
+          "program"
+        ],
+        "support_keys": [
+          "funding",
+          "mentorship",
+          "resources"
+        ],
+        "sector_keys": [
+          "deeptech",
+          "general"
+        ],
+        "date_sort_key": "2026-07-08"
+      },
+      "verification": "reported",
+      "last_verified_utc": "2026-06-09T09:07:21Z"
+    },
+    {
+      "id": "masschallenge-uk-2026",
+      "name": "MassChallenge UK Early Stage Accelerator 2026",
+      "description": "Hybrid zero-equity accelerator for high-potential startups with mentoring, partner access, and non-dilutive prizes.",
+      "organizer": "MassChallenge UK",
+      "website": "https://masschallenge.org/programs-united-kingdom/",
+      "location": {
+        "is_virtual": false,
+        "is_hybrid": true,
+        "venue": "Royal Docks",
+        "city": "London",
+        "city_slug": "london",
+        "country": "United Kingdom",
+        "country_code": "GB",
+        "region_code": "eu"
+      },
+      "dates": {
+        "application_open": null,
+        "application_close": "2026-04-15",
+        "program_start": "2026-06-23",
+        "program_end": "2026-10-29",
+        "demo_day": null,
+        "timezone": null,
+        "date_range_text": "Applications closed April 15, 2026; programme runs June 23-October 29, 2026."
+      },
+      "categories": {
+        "types": [
+          "accelerator"
+        ],
+        "supports": [
+          "mentorship",
+          "funding",
+          "resources"
+        ],
+        "sectors": [
+          "ai",
+          "security",
+          "general"
+        ]
+      },
+      "hashtags": [
+        "#unitedkingdom",
+        "#london",
+        "#ai",
+        "#security",
+        "#mentorship",
+        "#funding"
+      ],
+      "index": {
+        "years": [
+          "2026"
+        ],
+        "region_code": "eu",
+        "country_code": "GB",
+        "city_slug": "london",
+        "type_keys": [
+          "accelerator"
+        ],
+        "support_keys": [
+          "mentorship",
+          "funding",
+          "resources"
+        ],
+        "sector_keys": [
+          "ai",
+          "security",
+          "general"
+        ],
+        "date_sort_key": "2026-04-15"
+      },
+      "verification": "reported",
+      "last_verified_utc": "2026-06-09T09:07:21Z"
+    },
+    {
+      "id": "pearx-s26",
+      "name": "PearX S26",
+      "description": "Pear VC's 12-week pre-seed accelerator with $250K-$2M funding, cloud credits, mentorship, GTM and fundraising support.",
+      "organizer": "Pear VC",
+      "website": "https://pear.vc/pearx-application/",
+      "location": {
+        "is_virtual": false,
+        "is_hybrid": false,
+        "venue": null,
+        "city": "San Francisco",
+        "city_slug": "san-francisco",
+        "country": "United States",
+        "country_code": "US",
+        "region_code": "na"
+      },
+      "dates": {
+        "application_open": "2026-02-10",
+        "application_close": null,
+        "program_start": null,
+        "program_end": null,
+        "demo_day": null,
+        "timezone": "PST",
+        "date_range_text": "S26 applications opened February 10, 2026. Regular deadline was April 12, 2026 at 11:59 PM PST; late applications are reviewed on a rolling basis. Cohort kicks off in July 2026 and runs 12 weeks."
+      },
+      "categories": {
+        "types": [
+          "accelerator"
+        ],
+        "supports": [
+          "funding",
+          "mentorship",
+          "credits",
+          "resources"
+        ],
+        "sectors": [
+          "general",
+          "ai"
+        ]
+      },
+      "hashtags": [
+        "#usa",
+        "#sanfrancisco",
+        "#general",
+        "#ai",
+        "#funding",
+        "#mentorship"
+      ],
+      "index": {
+        "years": [
+          "2026"
+        ],
+        "region_code": "na",
+        "country_code": "US",
+        "city_slug": "san-francisco",
+        "type_keys": [
+          "accelerator"
+        ],
+        "support_keys": [
+          "funding",
+          "mentorship",
+          "credits",
+          "resources"
+        ],
+        "sector_keys": [
+          "general",
+          "ai"
+        ],
+        "date_sort_key": "2026-02-10"
+      },
+      "verification": "reported",
+      "last_verified_utc": "2026-06-09T09:07:21Z"
+    },
+    {
+      "id": "spc-founder-fellowship-fall-2026",
+      "name": "South Park Commons Founder Fellowship Fall 2026",
+      "description": "Pre-idea founder fellowship with $1M funding, credits, partner mentorship, and SPC community access.",
+      "organizer": "South Park Commons",
+      "website": "https://www.southparkcommons.com/founder-fellowship",
+      "location": {
+        "is_virtual": false,
+        "is_hybrid": false,
+        "venue": null,
+        "city": null,
+        "city_slug": null,
+        "country": "United States",
+        "country_code": "US",
+        "region_code": "na"
+      },
+      "dates": {
+        "application_open": null,
+        "application_close": null,
+        "program_start": null,
+        "program_end": null,
+        "demo_day": null,
+        "timezone": null,
+        "date_range_text": "Applications for Fall 2026 open in summer 2026; cohort kicks off in late September 2026."
+      },
+      "categories": {
+        "types": [
+          "fellowship"
+        ],
+        "supports": [
+          "funding",
+          "credits",
+          "mentorship",
+          "resources"
+        ],
+        "sectors": [
+          "general"
+        ]
+      },
+      "hashtags": [
+        "#usa",
+        "#general",
+        "#funding",
+        "#credits"
+      ],
+      "index": {
+        "years": [],
+        "region_code": "na",
+        "country_code": "US",
+        "city_slug": null,
+        "type_keys": [
+          "fellowship"
+        ],
+        "support_keys": [
+          "funding",
+          "credits",
+          "mentorship",
+          "resources"
+        ],
+        "sector_keys": [
+          "general"
+        ],
+        "date_sort_key": null
+      },
+      "verification": "reported",
+      "last_verified_utc": "2026-06-09T09:07:21Z"
+    },
+    {
+      "id": "techstars-nyc-f26",
+      "name": "Techstars New York City Accelerator (Fall 2026)",
+      "description": "Hybrid 3-month NYC accelerator with $220k investment, mentorship, network access and partner perks.",
+      "organizer": "Techstars",
+      "website": "https://www.techstars.com/accelerators/nyc",
+      "location": {
+        "is_virtual": false,
+        "is_hybrid": true,
+        "venue": null,
+        "city": "New York",
+        "city_slug": "new-york",
+        "country": "United States",
+        "country_code": "US",
+        "region_code": "na"
+      },
+      "dates": {
+        "application_open": "2026-03-02",
+        "application_close": "2026-06-10",
+        "program_start": "2026-09-08",
+        "program_end": "2026-12-10",
+        "demo_day": "2026-12-10",
+        "timezone": null,
+        "date_range_text": "Applications Mar 2-Jun 10, 2026; program Sep 8-Dec 10, 2026"
+      },
+      "categories": {
+        "types": [
+          "accelerator"
+        ],
+        "supports": [
+          "funding",
+          "mentorship",
+          "credits",
+          "resources"
+        ],
+        "sectors": [
+          "general",
+          "ai",
+          "health",
+          "fintech",
+          "climatetech",
+          "saas"
+        ]
+      },
+      "hashtags": [
+        "#usa",
+        "#newyork",
+        "#general",
+        "#ai",
+        "#funding",
+        "#mentorship"
+      ],
+      "index": {
+        "years": [
+          "2026"
+        ],
+        "region_code": "na",
+        "country_code": "US",
+        "city_slug": "new-york",
+        "type_keys": [
+          "accelerator"
+        ],
+        "support_keys": [
+          "funding",
+          "mentorship",
+          "credits",
+          "resources"
+        ],
+        "sector_keys": [
+          "general",
+          "ai",
+          "health",
+          "fintech",
+          "climatetech",
+          "saas"
+        ],
+        "date_sort_key": "2026-06-10"
+      },
+      "verification": "reported",
+      "last_verified_utc": "2026-06-09T09:07:21Z"
+    },
+    {
+      "id": "ventureout",
+      "name": "VentureOut Explore and Execute Programs",
+      "description": "One-week Explore and 3-month Execute accelerators help international tech founders access NYC mentors, investors, sales, and US expansion support.",
+      "organizer": "VentureOut",
+      "website": "https://ventureoutny.com/programs/",
+      "location": {
+        "is_virtual": false,
+        "is_hybrid": false,
+        "venue": null,
+        "city": "New York",
+        "city_slug": "new-york",
+        "country": "United States",
+        "country_code": "US",
+        "region_code": "na"
+      },
+      "dates": {
+        "application_open": null,
+        "application_close": null,
+        "program_start": null,
+        "program_end": null,
+        "demo_day": null,
+        "timezone": null,
+        "date_range_text": "Ongoing cadence: one-week Explore market exploration programs and 3-month Execute accelerators; official site does not publish current cohort dates or application deadlines."
+      },
+      "categories": {
+        "types": [
+          "accelerator"
+        ],
+        "supports": [
+          "funding",
+          "mentorship",
+          "resources"
+        ],
+        "sectors": [
+          "general"
+        ]
+      },
+      "hashtags": [
+        "#usa",
+        "#newyork",
+        "#general",
+        "#funding",
+        "#mentorship"
+      ],
+      "index": {
+        "years": [],
+        "region_code": "na",
+        "country_code": "US",
+        "city_slug": "new-york",
+        "type_keys": [
+          "accelerator"
+        ],
+        "support_keys": [
+          "funding",
+          "mentorship",
+          "resources"
+        ],
+        "sector_keys": [
+          "general"
+        ],
+        "date_sort_key": null
+      },
+      "verification": "reported",
+      "last_verified_utc": "2026-06-09T09:07:21Z"
+    },
+    {
+      "id": "yc-f26",
+      "name": "Y Combinator Fall 2026 Batch",
+      "description": "3-month in-person accelerator with $500K standard investment, mentorship, and investor introductions.",
+      "organizer": "Y Combinator",
+      "website": "https://www.ycombinator.com/apply",
+      "location": {
+        "is_virtual": false,
+        "is_hybrid": false,
+        "venue": "YC campus",
+        "city": "San Francisco",
+        "city_slug": "san-francisco",
+        "country": "United States",
+        "country_code": "US",
+        "region_code": "na"
+      },
+      "dates": {
+        "application_open": null,
+        "application_close": "2026-07-27",
+        "program_start": null,
+        "program_end": null,
+        "demo_day": null,
+        "timezone": "PT",
+        "date_range_text": "Fall 2026 batch takes place October to December in San Francisco; on-time applications close July 27, 2026 at 8pm PT."
+      },
+      "categories": {
+        "types": [
+          "accelerator"
+        ],
+        "supports": [
+          "funding",
+          "mentorship",
+          "resources"
+        ],
+        "sectors": [
+          "general"
+        ]
+      },
+      "hashtags": [
+        "#usa",
+        "#sanfrancisco",
+        "#general",
+        "#funding",
+        "#mentorship"
+      ],
+      "index": {
+        "years": [
+          "2026"
+        ],
+        "region_code": "na",
+        "country_code": "US",
+        "city_slug": "san-francisco",
+        "type_keys": [
+          "accelerator"
+        ],
+        "support_keys": [
+          "funding",
+          "mentorship",
+          "resources"
+        ],
+        "sector_keys": [
+          "general"
+        ],
+        "date_sort_key": "2026-07-27"
+      },
+      "verification": "reported",
+      "last_verified_utc": "2026-06-09T09:07:21Z"
+    },
+    {
+      "id": "alliance-dao-all18",
+      "name": "Alliance DAO Accelerator ALL18",
+      "description": "Crypto & AI accelerator offering $500k funding, mentorship, NYC onboarding and a remote program.",
+      "organizer": "Alliance",
+      "website": "https://alliance.xyz/",
+      "location": {
+        "is_virtual": false,
+        "is_hybrid": true,
+        "venue": "Alliance HQ",
+        "city": "New York",
+        "city_slug": "new-york",
+        "country": "United States",
+        "country_code": "US",
+        "region_code": "na"
+      },
+      "dates": {
+        "application_open": null,
+        "application_close": "2026-07-22",
+        "program_start": "2026-09-07",
+        "program_end": null,
+        "demo_day": null,
+        "timezone": null,
+        "date_range_text": "ALL18 regular admission deadline July 22, 2026; program starts September 7, 2026. Format is 2 weeks in New York City, then 8 weeks remote, with Demo Day in week 10."
+      },
+      "categories": {
+        "types": [
+          "accelerator"
+        ],
+        "supports": [
+          "funding",
+          "mentorship",
+          "credits"
+        ],
+        "sectors": [
+          "web3",
+          "ai",
+          "fintech"
+        ]
+      },
+      "hashtags": [
+        "#usa",
+        "#newyork",
+        "#web3",
+        "#ai",
+        "#funding",
+        "#mentorship"
+      ],
+      "index": {
+        "years": [
+          "2026"
+        ],
+        "region_code": "na",
+        "country_code": "US",
+        "city_slug": "new-york",
+        "type_keys": [
+          "accelerator"
+        ],
+        "support_keys": [
+          "funding",
+          "mentorship",
+          "credits"
+        ],
+        "sector_keys": [
+          "web3",
+          "ai",
+          "fintech"
+        ],
+        "date_sort_key": "2026-07-22"
+      },
+      "verification": "reported",
+      "last_verified_utc": "2026-06-09T09:07:21Z"
+    },
+    {
+      "id": "angelpad",
+      "name": "AngelPad Seed Accelerator",
+      "description": "Selective seed accelerator investing $120K with hands-on mentorship and $300K+ in cloud credits.",
+      "organizer": "AngelPad",
+      "website": "https://angelpad.com/",
+      "location": {
+        "is_virtual": false,
+        "is_hybrid": false,
+        "venue": null,
+        "city": null,
+        "city_slug": null,
+        "country": "United States",
+        "country_code": "US",
+        "region_code": "na"
+      },
+      "dates": {
+        "application_open": null,
+        "application_close": null,
+        "program_start": null,
+        "program_end": null,
+        "demo_day": null,
+        "timezone": null,
+        "date_range_text": "Applications currently closed; AngelPad says it selects about 15 teams every 6 months for an intensive 3-month program."
+      },
+      "categories": {
+        "types": [
+          "accelerator"
+        ],
+        "supports": [
+          "funding",
+          "mentorship",
+          "credits",
+          "resources"
+        ],
+        "sectors": [
+          "general"
+        ]
+      },
+      "hashtags": [
+        "#usa",
+        "#general",
+        "#funding",
+        "#mentorship"
+      ],
+      "index": {
+        "years": [],
+        "region_code": "na",
+        "country_code": "US",
+        "city_slug": null,
+        "type_keys": [
+          "accelerator"
+        ],
+        "support_keys": [
+          "funding",
+          "mentorship",
+          "credits",
+          "resources"
+        ],
+        "sector_keys": [
+          "general"
+        ],
+        "date_sort_key": null
+      },
+      "verification": "reported",
+      "last_verified_utc": "2026-06-09T09:07:21Z"
+    },
+    {
+      "id": "berkeley-skydeck-b23",
+      "name": "Berkeley SkyDeck Batch 23",
+      "description": "UC Berkeley accelerator offering $210K investment, mentorship, workspace, resources, and Demo Day access.",
+      "organizer": "University of California, Berkeley",
+      "website": "https://skydeck.berkeley.edu/program/",
+      "location": {
+        "is_virtual": false,
+        "is_hybrid": false,
+        "venue": "Berkeley SkyDeck",
+        "city": "Berkeley",
+        "city_slug": "berkeley",
+        "country": "United States",
+        "country_code": "US",
+        "region_code": "na"
+      },
+      "dates": {
+        "application_open": null,
+        "application_close": "2026-08-21",
+        "program_start": "2026-11-02",
+        "program_end": "2027-04-15",
+        "demo_day": null,
+        "timezone": null,
+        "date_range_text": "Applications open July 2026 and close August 21, 2026; program runs November 2, 2026-April 15, 2027."
+      },
+      "categories": {
+        "types": [
+          "accelerator"
+        ],
+        "supports": [
+          "funding",
+          "mentorship",
+          "resources"
+        ],
+        "sectors": [
+          "general"
+        ]
+      },
+      "hashtags": [
+        "#usa",
+        "#berkeley",
+        "#general",
+        "#funding",
+        "#mentorship"
+      ],
+      "index": {
+        "years": [
+          "2026",
+          "2027"
+        ],
+        "region_code": "na",
+        "country_code": "US",
+        "city_slug": "berkeley",
+        "type_keys": [
+          "accelerator"
+        ],
+        "support_keys": [
+          "funding",
+          "mentorship",
+          "resources"
+        ],
+        "sector_keys": [
+          "general"
+        ],
+        "date_sort_key": "2026-08-21"
+      },
+      "verification": "reported",
+      "last_verified_utc": "2026-06-09T09:07:21Z"
+    },
+    {
+      "id": "gener8tor",
+      "name": "Gener8tor Accelerator",
+      "description": "12-week investment-for-equity accelerator investing $100K with concierge mentorship and network access for high-growth startups.",
+      "organizer": "gener8tor Management, LLC",
+      "website": "https://www.gener8tor.com/investment-accelerators",
+      "location": {
+        "is_virtual": false,
+        "is_hybrid": false,
+        "venue": null,
+        "city": null,
+        "city_slug": null,
+        "country": null,
+        "country_code": null,
+        "region_code": "global"
+      },
+      "dates": {
+        "application_open": null,
+        "application_close": null,
+        "program_start": null,
+        "program_end": null,
+        "demo_day": null,
+        "timezone": null,
+        "date_range_text": "Applications are available through gener8tor's program directory; public pages list upcoming program dates as TBD or rolling by individual city/vertical program."
+      },
+      "categories": {
+        "types": [
+          "accelerator"
+        ],
+        "supports": [
+          "funding",
+          "mentorship",
+          "credits",
+          "resources"
+        ],
+        "sectors": [
+          "general"
+        ]
+      },
+      "hashtags": [
+        "#general",
+        "#funding",
+        "#mentorship"
+      ],
+      "index": {
+        "years": [],
+        "region_code": "global",
+        "country_code": null,
+        "city_slug": null,
+        "type_keys": [
+          "accelerator"
+        ],
+        "support_keys": [
+          "funding",
+          "mentorship",
+          "credits",
+          "resources"
+        ],
+        "sector_keys": [
+          "general"
+        ],
+        "date_sort_key": null
+      },
+      "verification": "needs_review",
+      "last_verified_utc": "2026-06-09T09:07:21Z"
+    },
+    {
+      "id": "growthx-revenue-accelerator-2026",
+      "name": "GrowthX Revenue Accelerator",
+      "description": "16-week virtual B2B revenue program with 1:1 coaching, pods, masterclasses, and AI-powered sales enablement.",
+      "organizer": "GrowthX",
+      "website": "https://growthx.com/founders/revenue-accelerator/",
+      "location": {
+        "is_virtual": true,
+        "is_hybrid": false,
+        "venue": null,
+        "city": null,
+        "city_slug": null,
+        "country": null,
+        "country_code": null,
+        "region_code": "global"
+      },
+      "dates": {
+        "application_open": null,
+        "application_close": "2026-09-07",
+        "program_start": "2026-09-14",
+        "program_end": null,
+        "demo_day": null,
+        "timezone": null,
+        "date_range_text": "Rolling review; cohort selection closes Sept. 7, 2026. The next 16-week virtual cohort launches Sept. 14, 2026."
+      },
+      "categories": {
+        "types": [
+          "program"
+        ],
+        "supports": [
+          "mentorship",
+          "resources"
+        ],
+        "sectors": [
+          "general"
+        ]
+      },
+      "hashtags": [
+        "#general",
+        "#mentorship",
+        "#resources"
+      ],
+      "index": {
+        "years": [
+          "2026"
+        ],
+        "region_code": "global",
+        "country_code": null,
+        "city_slug": null,
+        "type_keys": [
+          "program"
+        ],
+        "support_keys": [
+          "mentorship",
+          "resources"
+        ],
+        "sector_keys": [
+          "general"
+        ],
+        "date_sort_key": "2026-09-07"
+      },
+      "verification": "reported",
+      "last_verified_utc": "2026-06-09T09:07:21Z"
+    },
+    {
+      "id": "startup-wise-guys-founders-club-20-2026",
+      "name": "Startup Wise Guys The Founders Club Cohort 20",
+      "description": "3-month online B2B startup program for founders and early teams, with mentorship, cofounder matching, and possible SWG investment.",
+      "organizer": "Startup Wise Guys",
+      "website": "https://startupwiseguys.com/all-programs/the-founders-club/",
+      "location": {
+        "is_virtual": true,
+        "is_hybrid": false,
+        "venue": null,
+        "city": null,
+        "city_slug": null,
+        "country": null,
+        "country_code": null,
+        "region_code": "global"
+      },
+      "dates": {
+        "application_open": null,
+        "application_close": "2026-07-12",
+        "program_start": null,
+        "program_end": null,
+        "demo_day": null,
+        "timezone": "CET",
+        "date_range_text": "Applications for the 20th Founders Club cohort close July 12, 2026; official agenda lists online sessions from July 22 through November 4, but the agenda year is not stated."
+      },
+      "categories": {
+        "types": [
+          "accelerator",
+          "program"
+        ],
+        "supports": [
+          "funding",
+          "mentorship",
+          "credits",
+          "resources"
+        ],
+        "sectors": [
+          "general",
+          "saas",
+          "fintech",
+          "security",
+          "web3"
+        ]
+      },
+      "hashtags": [
+        "#general",
+        "#saas",
+        "#funding",
+        "#mentorship"
+      ],
+      "index": {
+        "years": [
+          "2026"
+        ],
+        "region_code": "global",
+        "country_code": null,
+        "city_slug": null,
+        "type_keys": [
+          "accelerator",
+          "program"
+        ],
+        "support_keys": [
+          "funding",
+          "mentorship",
+          "credits",
+          "resources"
+        ],
+        "sector_keys": [
+          "general",
+          "saas",
+          "fintech",
+          "security",
+          "web3"
+        ],
+        "date_sort_key": "2026-07-12"
+      },
+      "verification": "reported",
+      "last_verified_utc": "2026-06-09T09:07:21Z"
+    },
+    {
+      "id": "ai2-incubator",
+      "name": "AI2 Incubator",
+      "description": "Rolling AI startup incubator with funding, cloud credits, technical support, and company-building help.",
+      "organizer": "AI2 Incubator",
+      "website": "https://www.ai2incubator.com/apply",
+      "location": {
+        "is_virtual": false,
+        "is_hybrid": true,
+        "venue": "AI House",
+        "city": "Seattle",
+        "city_slug": "seattle",
+        "country": "United States",
+        "country_code": "US",
+        "region_code": "na"
+      },
+      "dates": {
+        "application_open": null,
+        "application_close": null,
+        "program_start": null,
+        "program_end": null,
+        "demo_day": null,
+        "timezone": null,
+        "date_range_text": "Rolling admissions start anytime; 12 months of company-building support. No fixed cohort dates or deadline published."
+      },
+      "categories": {
+        "types": [
+          "incubator",
+          "accelerator",
+          "program"
+        ],
+        "supports": [
+          "funding",
+          "compute",
+          "mentorship",
+          "credits",
+          "resources"
+        ],
+        "sectors": [
+          "ai",
+          "deeptech"
+        ]
+      },
+      "hashtags": [
+        "#usa",
+        "#seattle",
+        "#ai",
+        "#deeptech",
+        "#funding",
+        "#compute"
+      ],
+      "index": {
+        "years": [],
+        "region_code": "na",
+        "country_code": "US",
+        "city_slug": "seattle",
+        "type_keys": [
+          "incubator",
+          "accelerator",
+          "program"
+        ],
+        "support_keys": [
+          "funding",
+          "compute",
+          "mentorship",
+          "credits",
+          "resources"
+        ],
+        "sector_keys": [
+          "ai",
+          "deeptech"
+        ],
+        "date_sort_key": null
+      },
+      "verification": "reported",
+      "last_verified_utc": "2026-06-09T09:07:21Z"
+    },
+    {
+      "id": "accel-atoms",
+      "name": "Accel Atoms",
+      "description": "Pre-seed program from Accel for Indian and Indian-origin founders, with capital, mentorship, credits, and global network access.",
+      "organizer": "Accel",
+      "website": "https://atoms.accel.com/",
+      "location": {
+        "is_virtual": false,
+        "is_hybrid": true,
+        "venue": null,
+        "city": null,
+        "city_slug": null,
+        "country": "India",
+        "country_code": "IN",
+        "region_code": "apac"
+      },
+      "dates": {
+        "application_open": null,
+        "application_close": null,
+        "program_start": null,
+        "program_end": null,
+        "demo_day": null,
+        "timezone": null,
+        "date_range_text": "Applications accepted on a rolling basis; cohorts typically run for about 3 months."
+      },
+      "categories": {
+        "types": [
+          "accelerator",
+          "program"
+        ],
+        "supports": [
+          "funding",
+          "mentorship",
+          "credits",
+          "resources"
+        ],
+        "sectors": [
+          "ai",
+          "deeptech",
+          "general"
+        ]
+      },
+      "hashtags": [
+        "#india",
+        "#ai",
+        "#deeptech",
+        "#funding",
+        "#mentorship"
+      ],
+      "index": {
+        "years": [],
+        "region_code": "apac",
+        "country_code": "IN",
+        "city_slug": null,
+        "type_keys": [
+          "accelerator",
+          "program"
+        ],
+        "support_keys": [
+          "funding",
+          "mentorship",
+          "credits",
+          "resources"
+        ],
+        "sector_keys": [
+          "ai",
+          "deeptech",
+          "general"
+        ],
+        "date_sort_key": null
+      },
+      "verification": "reported",
+      "last_verified_utc": "2026-06-09T09:07:21Z"
+    },
+    {
+      "id": "iterative-summer-2026",
+      "name": "Iterative Summer 2026 Batch",
+      "description": "SEA-focused accelerator investing US$150K-$500K plus mentorship, remote programming, orientation, and demo day.",
+      "organizer": "Iterative",
+      "website": "https://www.iterative.vc/apply",
+      "location": {
+        "is_virtual": false,
+        "is_hybrid": true,
+        "venue": null,
+        "city": null,
+        "city_slug": null,
+        "country": null,
+        "country_code": null,
+        "region_code": "apac"
+      },
+      "dates": {
+        "application_open": null,
+        "application_close": "2026-06-29",
+        "program_start": null,
+        "program_end": null,
+        "demo_day": null,
+        "timezone": null,
+        "date_range_text": "Applications are open for the Summer 2026 Batch and close on 2026-06-29. The batch runs July-October 2026; exact start, end, and demo day dates are not published."
+      },
+      "categories": {
+        "types": [
+          "accelerator"
+        ],
+        "supports": [
+          "funding",
+          "mentorship",
+          "credits",
+          "resources"
+        ],
+        "sectors": [
+          "general"
+        ]
+      },
+      "hashtags": [
+        "#general",
+        "#funding",
+        "#mentorship"
+      ],
+      "index": {
+        "years": [
+          "2026"
+        ],
+        "region_code": "apac",
+        "country_code": null,
+        "city_slug": null,
+        "type_keys": [
+          "accelerator"
+        ],
+        "support_keys": [
+          "funding",
+          "mentorship",
+          "credits",
+          "resources"
+        ],
+        "sector_keys": [
+          "general"
+        ],
+        "date_sort_key": "2026-06-29"
+      },
+      "verification": "reported",
+      "last_verified_utc": "2026-06-09T09:07:21Z"
+    },
+    {
+      "id": "village-global-velocity",
+      "name": "Village Global Velocity",
+      "description": "Rolling pre-seed program with capital, peer cohort, network access, and AI compute perks for founders worldwide.",
+      "organizer": "Village Global",
+      "website": "https://www.villageglobal.com/velocity",
+      "location": {
+        "is_virtual": true,
+        "is_hybrid": false,
+        "venue": null,
+        "city": null,
+        "city_slug": null,
+        "country": null,
+        "country_code": null,
+        "region_code": "global"
+      },
+      "dates": {
+        "application_open": null,
+        "application_close": null,
+        "program_start": null,
+        "program_end": null,
+        "demo_day": null,
+        "timezone": null,
+        "date_range_text": "Applications are accepted on a rolling basis; founders can join from anywhere in the world."
+      },
+      "categories": {
+        "types": [
+          "accelerator",
+          "program"
+        ],
+        "supports": [
+          "funding",
+          "compute",
+          "mentorship",
+          "credits",
+          "resources"
+        ],
+        "sectors": [
+          "general",
+          "ai"
+        ]
+      },
+      "hashtags": [
+        "#general",
+        "#ai",
+        "#funding",
+        "#compute"
+      ],
+      "index": {
+        "years": [],
+        "region_code": "global",
+        "country_code": null,
+        "city_slug": null,
+        "type_keys": [
+          "accelerator",
+          "program"
+        ],
+        "support_keys": [
+          "funding",
+          "compute",
+          "mentorship",
+          "credits",
+          "resources"
+        ],
+        "sector_keys": [
+          "general",
+          "ai"
+        ],
+        "date_sort_key": null
+      },
+      "verification": "reported",
+      "last_verified_utc": "2026-06-09T09:07:21Z"
+    },
+    {
+      "id": "alchemist-accelerator",
+      "name": "Alchemist Accelerator Flagship Program",
+      "description": "Six-month accelerator for AI-SaaS and deeptech startups monetizing from enterprises.",
+      "organizer": "Alchemist Accelerator",
+      "website": "https://www.alchemistaccelerator.com/apply",
+      "location": {
+        "is_virtual": false,
+        "is_hybrid": true,
+        "venue": null,
+        "city": "San Francisco",
+        "city_slug": "san-francisco",
+        "country": "United States",
+        "country_code": "US",
+        "region_code": "na"
+      },
+      "dates": {
+        "application_open": null,
+        "application_close": null,
+        "program_start": null,
+        "program_end": null,
+        "demo_day": null,
+        "timezone": null,
+        "date_range_text": "Rolling application deadlines; each class runs six months. Latest posted class began January 22, 2026, which is past as of 2026-06-09."
+      },
+      "categories": {
+        "types": [
+          "accelerator"
+        ],
+        "supports": [
+          "funding",
+          "compute",
+          "mentorship",
+          "credits",
+          "resources"
+        ],
+        "sectors": [
+          "ai",
+          "saas",
+          "deeptech"
+        ]
+      },
+      "hashtags": [
+        "#usa",
+        "#sanfrancisco",
+        "#ai",
+        "#saas",
+        "#funding",
+        "#compute"
+      ],
+      "index": {
+        "years": [],
+        "region_code": "na",
+        "country_code": "US",
+        "city_slug": "san-francisco",
+        "type_keys": [
+          "accelerator"
+        ],
+        "support_keys": [
+          "funding",
+          "compute",
+          "mentorship",
+          "credits",
+          "resources"
+        ],
+        "sector_keys": [
+          "ai",
+          "saas",
+          "deeptech"
+        ],
+        "date_sort_key": null
+      },
+      "verification": "needs_review",
+      "last_verified_utc": "2026-06-09T09:07:21Z"
+    },
+    {
+      "id": "antler-residency-2026",
+      "name": "Antler Residency 2026",
+      "description": "Global in-person founder residency with coaching, co-founder matching and potential pre-seed investment.",
+      "organizer": "Antler",
+      "website": "https://www.antler.co/apply",
+      "location": {
+        "is_virtual": false,
+        "is_hybrid": false,
+        "venue": null,
+        "city": null,
+        "city_slug": null,
+        "country": null,
+        "country_code": null,
+        "region_code": "global"
+      },
+      "dates": {
+        "application_open": null,
+        "application_close": null,
+        "program_start": "2026-07-01",
+        "program_end": null,
+        "demo_day": null,
+        "timezone": null,
+        "date_range_text": "Applications can be started anytime. Upcoming 2026 cohorts listed include US July 1, Singapore/Indonesia July 20, Australia July 27, Germany September 14, UK September 22, and Kenya October 5; the cohort-start page also describes US as rolling intake."
+      },
+      "categories": {
+        "types": [
+          "accelerator"
+        ],
+        "supports": [
+          "funding",
+          "mentorship",
+          "resources",
+          "credits"
+        ],
+        "sectors": [
+          "general"
+        ]
+      },
+      "hashtags": [
+        "#general",
+        "#funding",
+        "#mentorship"
+      ],
+      "index": {
+        "years": [
+          "2026"
+        ],
+        "region_code": "global",
+        "country_code": null,
+        "city_slug": null,
+        "type_keys": [
+          "accelerator"
+        ],
+        "support_keys": [
+          "funding",
+          "mentorship",
+          "resources",
+          "credits"
+        ],
+        "sector_keys": [
+          "general"
+        ],
+        "date_sort_key": "2026-07-01"
+      },
+      "verification": "reported",
+      "last_verified_utc": "2026-06-09T09:07:21Z"
+    },
+    {
+      "id": "hf0-residency",
+      "name": "HF0 Residency",
+      "description": "In-person San Francisco residency for ambitious technical founders, with $1M uncapped SAFE investment and founder support.",
+      "organizer": "HF0",
+      "website": "https://www.hf0.com/",
+      "location": {
+        "is_virtual": false,
+        "is_hybrid": false,
+        "venue": null,
+        "city": "San Francisco",
+        "city_slug": "san-francisco",
+        "country": null,
+        "country_code": "US",
+        "region_code": "na"
+      },
+      "dates": {
+        "application_open": null,
+        "application_close": null,
+        "program_start": null,
+        "program_end": null,
+        "demo_day": null,
+        "timezone": null,
+        "date_range_text": "Applications are public, but no current application deadline or next cohort dates were found on the official site as of 2026-06-09."
+      },
+      "categories": {
+        "types": [
+          "accelerator"
+        ],
+        "supports": [
+          "funding",
+          "mentorship",
+          "resources"
+        ],
+        "sectors": [
+          "general",
+          "ai"
+        ]
+      },
+      "hashtags": [
+        "#usa",
+        "#sanfrancisco",
+        "#general",
+        "#ai",
+        "#funding",
+        "#mentorship"
+      ],
+      "index": {
+        "years": [],
+        "region_code": "na",
+        "country_code": "US",
+        "city_slug": "san-francisco",
+        "type_keys": [
+          "accelerator"
+        ],
+        "support_keys": [
+          "funding",
+          "mentorship",
+          "resources"
+        ],
+        "sector_keys": [
+          "general",
+          "ai"
+        ],
+        "date_sort_key": null
+      },
+      "verification": "needs_review",
+      "last_verified_utc": "2026-06-09T09:07:21Z"
+    },
+    {
+      "id": "sosv-hax-indiebio",
+      "name": "SOSV HAX and IndieBio Accelerators",
+      "description": "SOSV accelerators for hard tech, human health, and planetary health startups, with investment and hands-on support.",
+      "organizer": "SOSV",
+      "website": "https://www.sosv.com/accelerators/",
+      "location": {
+        "is_virtual": false,
+        "is_hybrid": true,
+        "venue": null,
+        "city": null,
+        "city_slug": null,
+        "country": null,
+        "country_code": null,
+        "region_code": "global"
+      },
+      "dates": {
+        "application_open": null,
+        "application_close": null,
+        "program_start": null,
+        "program_end": null,
+        "demo_day": null,
+        "timezone": null,
+        "date_range_text": "Applications are described as open year-round; exact cohort dates and deadlines are not published on the checked official pages."
+      },
+      "categories": {
+        "types": [
+          "accelerator"
+        ],
+        "supports": [
+          "funding",
+          "mentorship",
+          "resources"
+        ],
+        "sectors": [
+          "bio",
+          "health",
+          "climatetech",
+          "energy",
+          "deeptech",
+          "hardware"
+        ]
+      },
+      "hashtags": [
+        "#bio",
+        "#health",
+        "#funding",
+        "#mentorship"
+      ],
+      "index": {
+        "years": [],
+        "region_code": "global",
+        "country_code": null,
+        "city_slug": null,
+        "type_keys": [
+          "accelerator"
+        ],
+        "support_keys": [
+          "funding",
+          "mentorship",
+          "resources"
+        ],
+        "sector_keys": [
+          "bio",
+          "health",
+          "climatetech",
+          "energy",
+          "deeptech",
+          "hardware"
+        ],
+        "date_sort_key": null
+      },
+      "verification": "needs_review",
+      "last_verified_utc": "2026-06-09T09:07:21Z"
+    },
+    {
+      "id": "a16z-games-speedrun",
+      "name": "Speedrun",
+      "description": "a16z Games accelerator for early-stage games and game-tech startups, with funding, coaching, and investor access.",
+      "organizer": "a16z Games",
+      "website": "https://a16z.com/accelerator/speedrun/",
+      "location": {
+        "is_virtual": false,
+        "is_hybrid": true,
+        "venue": null,
+        "city": null,
+        "city_slug": null,
+        "country": "United States",
+        "country_code": "US",
+        "region_code": "na"
+      },
+      "dates": {
+        "application_open": null,
+        "application_close": null,
+        "program_start": null,
+        "program_end": null,
+        "demo_day": null,
+        "timezone": null,
+        "date_range_text": "Official site invites founders to join the mailing list for updates; no current application window or next cohort dates are published."
+      },
+      "categories": {
+        "types": [
+          "accelerator"
+        ],
+        "supports": [
+          "funding",
+          "mentorship",
+          "resources"
+        ],
+        "sectors": [
+          "consumer"
+        ]
+      },
+      "hashtags": [
+        "#usa",
+        "#consumer",
+        "#funding",
+        "#mentorship"
+      ],
+      "index": {
+        "years": [],
+        "region_code": "na",
+        "country_code": "US",
+        "city_slug": null,
+        "type_keys": [
+          "accelerator"
+        ],
+        "support_keys": [
+          "funding",
+          "mentorship",
+          "resources"
+        ],
+        "sector_keys": [
+          "consumer"
+        ],
+        "date_sort_key": null
+      },
+      "verification": "needs_review",
+      "last_verified_utc": "2026-06-09T09:07:21Z"
+    },
+    {
+      "id": "startupbootcamp-georgia-i-market-entry-2026",
+      "name": "Startupbootcamp Georgia I Market Entry Program 2026",
+      "description": "Georgia accelerator with grants, mentorship, perks, and demo day access for startups ready to launch and scale.",
+      "organizer": "Startupbootcamp",
+      "website": "https://startupbootcamp.org/georgia",
+      "location": {
+        "is_virtual": false,
+        "is_hybrid": false,
+        "venue": null,
+        "city": null,
+        "city_slug": null,
+        "country": "Georgia",
+        "country_code": "GE",
+        "region_code": "eu"
+      },
+      "dates": {
+        "application_open": null,
+        "application_close": "2026-05-17",
+        "program_start": "2026-06-29",
+        "program_end": "2026-12-18",
+        "demo_day": "2026-12-18",
+        "timezone": null,
+        "date_range_text": "Applications closed May 17, 2026; program runs June 29-December 18, 2026."
+      },
+      "categories": {
+        "types": [
+          "accelerator"
+        ],
+        "supports": [
+          "funding",
+          "mentorship",
+          "credits",
+          "resources"
+        ],
+        "sectors": [
+          "general"
+        ]
+      },
+      "hashtags": [
+        "#georgia",
+        "#general",
+        "#funding",
+        "#mentorship"
+      ],
+      "index": {
+        "years": [
+          "2026"
+        ],
+        "region_code": "eu",
+        "country_code": "GE",
+        "city_slug": null,
+        "type_keys": [
+          "accelerator"
+        ],
+        "support_keys": [
+          "funding",
+          "mentorship",
+          "credits",
+          "resources"
+        ],
+        "sector_keys": [
+          "general"
+        ],
+        "date_sort_key": "2026-05-17"
+      },
+      "verification": "reported",
+      "last_verified_utc": "2026-06-09T09:07:21Z"
+    },
+    {
+      "id": "founders-inc-fellowship",
+      "name": "Founders, Inc. Fellowship",
+      "description": "Rolling Founders, Inc. campus/fund application for emerging-tech founders seeking capital, workspace, office hours, and community.",
+      "organizer": "Founders, Inc.",
+      "website": "https://f.inc/fellowship",
+      "location": {
+        "is_virtual": false,
+        "is_hybrid": false,
+        "venue": "Founders, Inc. campus at Fort Mason",
+        "city": "San Francisco",
+        "city_slug": "san-francisco",
+        "country": "United States",
+        "country_code": "US",
+        "region_code": "na"
+      },
+      "dates": {
+        "application_open": null,
+        "application_close": null,
+        "program_start": null,
+        "program_end": null,
+        "demo_day": null,
+        "timezone": null,
+        "date_range_text": "General applications are reviewed on a rolling basis between programs; Founders, Inc. says its programs usually run 4 to 6 weeks and the campus page says it runs four programs per year."
+      },
+      "categories": {
+        "types": [
+          "fellowship",
+          "accelerator",
+          "program"
+        ],
+        "supports": [
+          "funding",
+          "mentorship",
+          "resources"
+        ],
+        "sectors": [
+          "ai",
+          "hardware",
+          "web3",
+          "devtools",
+          "consumer",
+          "deeptech"
+        ]
+      },
+      "hashtags": [
+        "#usa",
+        "#sanfrancisco",
+        "#ai",
+        "#hardware",
+        "#funding",
+        "#mentorship"
+      ],
+      "index": {
+        "years": [],
+        "region_code": "na",
+        "country_code": "US",
+        "city_slug": "san-francisco",
+        "type_keys": [
+          "fellowship",
+          "accelerator",
+          "program"
+        ],
+        "support_keys": [
+          "funding",
+          "mentorship",
+          "resources"
+        ],
+        "sector_keys": [
+          "ai",
+          "hardware",
+          "web3",
+          "devtools",
+          "consumer",
+          "deeptech"
+        ],
+        "date_sort_key": null
+      },
+      "verification": "reported",
+      "last_verified_utc": "2026-06-09T09:07:21Z"
+    },
+    {
+      "id": "launch-accelerator-la36-2026",
+      "name": "LAUNCH Accelerator Cohort 36",
+      "description": "14-week hybrid accelerator investing $125K for 7%, with investor pitch sessions and Demo Day.",
+      "organizer": "LAUNCH",
+      "website": "https://launchaccelerator.co/",
+      "location": {
+        "is_virtual": false,
+        "is_hybrid": true,
+        "venue": null,
+        "city": "San Francisco",
+        "city_slug": "san-francisco",
+        "country": "United States",
+        "country_code": "US",
+        "region_code": "na"
+      },
+      "dates": {
+        "application_open": null,
+        "application_close": null,
+        "program_start": null,
+        "program_end": null,
+        "demo_day": "2026-06-09",
+        "timezone": "PT",
+        "date_range_text": "Cohort 36; applications listed as open; 14-week program shown as March 2026; Remote Public Demo Day on June 9, 2026, 12:30-1:30 PM PT"
+      },
+      "categories": {
+        "types": [
+          "accelerator",
+          "demo_day"
+        ],
+        "supports": [
+          "funding",
+          "mentorship"
+        ],
+        "sectors": [
+          "general"
+        ]
+      },
+      "hashtags": [
+        "#usa",
+        "#sanfrancisco",
+        "#general",
+        "#funding",
+        "#mentorship"
+      ],
+      "index": {
+        "years": [
+          "2026"
+        ],
+        "region_code": "na",
+        "country_code": "US",
+        "city_slug": "san-francisco",
+        "type_keys": [
+          "accelerator",
+          "demo_day"
+        ],
+        "support_keys": [
+          "funding",
+          "mentorship"
+        ],
+        "sector_keys": [
+          "general"
+        ],
+        "date_sort_key": "2026-06-09"
+      },
+      "verification": "reported",
+      "last_verified_utc": "2026-06-09T09:07:21Z"
+    },
+    {
+      "id": "ai-grant",
+      "name": "AI Grant",
+      "description": "Funding program for AI-native product startups, offering uncapped SAFE investment and founder support.",
+      "organizer": "AI Grant",
+      "website": "https://aigrant.com/",
+      "location": {
+        "is_virtual": true,
+        "is_hybrid": false,
+        "venue": null,
+        "city": null,
+        "city_slug": null,
+        "country": null,
+        "country_code": null,
+        "region_code": "global"
+      },
+      "dates": {
+        "application_open": null,
+        "application_close": null,
+        "program_start": null,
+        "program_end": null,
+        "demo_day": null,
+        "timezone": null,
+        "date_range_text": "Applications appear to be accepted through the official website, but no current deadlines, cohort dates, or cadence are published."
+      },
+      "categories": {
+        "types": [
+          "grant",
+          "program"
+        ],
+        "supports": [
+          "funding",
+          "mentorship",
+          "resources"
+        ],
+        "sectors": [
+          "ai"
+        ]
+      },
+      "hashtags": [
+        "#ai",
+        "#funding",
+        "#mentorship"
+      ],
+      "index": {
+        "years": [],
+        "region_code": "global",
+        "country_code": null,
+        "city_slug": null,
+        "type_keys": [
+          "grant",
+          "program"
+        ],
+        "support_keys": [
+          "funding",
+          "mentorship",
+          "resources"
+        ],
+        "sector_keys": [
+          "ai"
+        ],
+        "date_sort_key": null
+      },
+      "verification": "needs_review",
+      "last_verified_utc": "2026-06-09T09:07:21Z"
+    },
+    {
+      "id": "soma-capital-fellowship",
+      "name": "Soma Capital Fellowship",
+      "description": "Founder fellowship for pre-seed and seed startups backed by Soma Capital, with potential uncapped SAFE funding.",
+      "organizer": "Soma Capital",
+      "website": "https://somafellows.com/",
+      "location": {
+        "is_virtual": true,
+        "is_hybrid": false,
+        "venue": null,
+        "city": null,
+        "city_slug": null,
+        "country": null,
+        "country_code": null,
+        "region_code": "global"
+      },
+      "dates": {
+        "application_open": null,
+        "application_close": null,
+        "program_start": null,
+        "program_end": null,
+        "demo_day": null,
+        "timezone": null,
+        "date_range_text": "Applications appear to be accepted through the public Airtable form; no current deadline or cohort schedule is published."
+      },
+      "categories": {
+        "types": [
+          "fellowship",
+          "program"
+        ],
+        "supports": [
+          "funding",
+          "mentorship",
+          "resources"
+        ],
+        "sectors": [
+          "general",
+          "ai",
+          "saas",
+          "consumer"
+        ]
+      },
+      "hashtags": [
+        "#general",
+        "#ai",
+        "#funding",
+        "#mentorship"
+      ],
+      "index": {
+        "years": [],
+        "region_code": "global",
+        "country_code": null,
+        "city_slug": null,
+        "type_keys": [
+          "fellowship",
+          "program"
+        ],
+        "support_keys": [
+          "funding",
+          "mentorship",
+          "resources"
+        ],
+        "sector_keys": [
+          "general",
+          "ai",
+          "saas",
+          "consumer"
+        ],
+        "date_sort_key": null
+      },
+      "verification": "needs_review",
+      "last_verified_utc": "2026-06-09T09:07:21Z"
+    },
+    {
+      "id": "forum-accelerator",
+      "name": "Forum Accelerator",
+      "description": "B2B SaaS accelerator with funding, tactical support, mentorship, and founder community from Forum Ventures.",
+      "organizer": "Forum Ventures",
+      "website": "https://www.forumvc.com/accelerator",
+      "location": {
+        "is_virtual": false,
+        "is_hybrid": false,
+        "venue": null,
+        "city": null,
+        "city_slug": null,
+        "country": "United States",
+        "country_code": "US",
+        "region_code": "na"
+      },
+      "dates": {
+        "application_open": null,
+        "application_close": null,
+        "program_start": null,
+        "program_end": null,
+        "demo_day": null,
+        "timezone": null,
+        "date_range_text": "Current public pages do not publish application deadlines or cohort dates; founders are directed to Forum Ventures' Pitch Us form."
+      },
+      "categories": {
+        "types": [
+          "accelerator"
+        ],
+        "supports": [
+          "funding",
+          "mentorship",
+          "resources"
+        ],
+        "sectors": [
+          "saas"
+        ]
+      },
+      "hashtags": [
+        "#usa",
+        "#saas",
+        "#funding",
+        "#mentorship"
+      ],
+      "index": {
+        "years": [],
+        "region_code": "na",
+        "country_code": "US",
+        "city_slug": null,
+        "type_keys": [
+          "accelerator"
+        ],
+        "support_keys": [
+          "funding",
+          "mentorship",
+          "resources"
+        ],
+        "sector_keys": [
+          "saas"
+        ],
+        "date_sort_key": null
+      },
+      "verification": "needs_review",
+      "last_verified_utc": "2026-06-09T09:07:21Z"
     }
   ]
 }
