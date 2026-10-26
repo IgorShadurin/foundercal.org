@@ -2,8 +2,10 @@ import { EventCalendar } from "@/components/event-calendar";
 import { SiteFooter } from "@/components/site-footer";
 import { loadEventDataset, type EventRecord } from "@/lib/event-data";
 
+export const dynamic = "force-dynamic";
+
 const BASE_URL = "https://foundercal.org";
-const GITHUB_RAW_BASE = "https://raw.githubusercontent.com/IgorShadurin/foundercal.org/main";
+const GITHUB_RAW_BASE = "https://raw.githubusercontent.com/IgorShadurin/foundercal.org/master";
 
 export default function Home() {
   const { events, taxonomies } = loadEventDataset();
@@ -12,7 +14,7 @@ export default function Home() {
   return (
     <main className="min-h-screen bg-background px-4 py-12 text-foreground sm:px-8">
       <div className="mx-auto max-w-6xl">
-        <EventCalendar events={events} taxonomies={taxonomies} />
+        <EventCalendar events={events} taxonomies={taxonomies} initialDate={new Date().toISOString().slice(0, 10)} />
         <FAQSection eventCount={events.length} />
         <SiteFooter />
         <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(structuredData) }} />
@@ -22,13 +24,13 @@ export default function Home() {
 }
 
 function buildStructuredData(events: EventRecord[]) {
-  const eventSchemas = events.slice(0, 120).map(buildEventSchema).filter(Boolean);
+  const eventSchemas = events.filter((event) => event.verification === "reported" && event.dates.program_start).slice(0, 120).map(buildEventSchema).filter(Boolean);
 
   const datasetSchema = {
     "@type": "Dataset",
     name: "FounderCal Accelerator & Fellowship Deadlines",
     description:
-      "Structured calendar of accelerator, fellowship, and grant programs with verified application windows and program timelines.",
+      "Structured calendar of accelerator, fellowship, and grant programs with source links, review dates, and published application windows.",
     url: BASE_URL,
     license: `${BASE_URL}/license`,
     keywords: [
@@ -175,22 +177,22 @@ function FAQSection({ eventCount }: { eventCount: number }) {
     {
       question: "How do I plan accelerator applications with FounderCal?",
       answer:
-        "Pick a start date, choose a 30/90/182/365-day window, and filter by region, sector, and support type. The calendar highlights how many programs are open now so you can stack applications without date conflicts.",
+        "Pick a start date, choose a 30/90/182/365-day window, and filter by region, sector, and support type. The calendar counts dated entries in your selected window; a program start is not an open application window.",
     },
     {
       question: "What information is stored in each program card?",
       answer:
-        "Every card pulls from a verified record in events.json—application windows, program run dates, demo days, funding/support tags, and hybrid/virtual flags—so founders can quickly assess fit.",
+        "Cards show published dates, program details, source links and the last review date. Unknown dates stay blank, and entries needing confirmation are labeled.",
     },
     {
       question: "Can researchers or AI assistants access the raw data?",
       answer:
-        "Yes. Use the JSON feed for real-time cards, or download the core and crypto CSV trackers on /imported-accelerators to audit entries in bulk or power your own alerts.",
+        "Yes. Use the JSON feed for the calendar, or download the core and crypto CSV trackers on /imported-accelerators to audit entries in bulk or power your own alerts.",
     },
     {
       question: "How often is the calendar verified?",
       answer:
-        `Each of the ${eventCount} tracked programs carries a last_verified_utc or checked_at timestamp. The team re-checks rolling cohorts weekly and seasonal cohorts ahead of new application cycles.`,
+        `The ${eventCount} calendar records include review information and official sources. Research is updated manually; the review date is not a guarantee that applications are still open. Confirm current terms on the organizer’s site.`,
     },
   ];
 

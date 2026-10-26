@@ -1,0 +1,32 @@
+{
+  "accelerator": {
+    "name": "500 Global ESG Fellowship",
+    "website": "https://500.co/programs/impact/esg-fellowship",
+    "csv_file": "public/events-archive.json",
+    "slug": "500-global-esg-fellowship"
+  },
+  "status": "needs_review",
+  "checked_at": "2026-10-26",
+  "confidence": "low",
+  "summary": "No official current ESG Fellowship call was found under the archived name. 500 Global\u2019s current 500 Fellowship is a separate flagship offering and does not verify an ESG fellowship.",
+  "proposed_event": null,
+  "sources": [
+    {
+      "title": "Former ESG Fellowship URL \u2014 retrieval attempt",
+      "url": "https://500.co/programs/impact/esg-fellowship",
+      "publisher": "500 Global",
+      "accessed_at": "2026-10-26",
+      "supports": "The old URL could not be accessed; no ESG program content verified."
+    },
+    {
+      "title": "500 Fellowship",
+      "url": "https://500.co/founders/flagship",
+      "publisher": "500 Global",
+      "accessed_at": "2026-10-26",
+      "supports": "Current flagship program name and positioning; no ESG-fellowship identity established."
+    }
+  ],
+  "notes": [
+    "No current ESG-specific fellowship was confirmed. The 500 Fellowship flagship is a separate offering."
+  ]
+}

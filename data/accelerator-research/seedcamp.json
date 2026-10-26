@@ -1,1 +1,89 @@
-{"accelerator":{"name":"Seedcamp","website":"https://seedcamp.com/apply/","csv_file":"data/accelerators-master.csv","slug":"seedcamp"},"status":"verified","checked_at":"2026-06-09","confidence":"high","summary":"Seedcamp is active. The old /apply/ URL now returns 404, but Seedcamp’s official site links “Pitch Us” to an open Typeform saying it reviews every submission. No cohort dates or application deadlines are published.","proposed_event":{"id":"seedcamp-rolling","name":"Seedcamp Rolling Applications","description":"European seed fund backing early founders with $350K-$1M checks, hands-on support and founder community access.","organizer":"Seedcamp","website":"https://seedcamp.com/out/f6-startup-details","location":{"is_virtual":false,"is_hybrid":false,"venue":null,"city":"London","city_slug":"london","country":"United Kingdom","country_code":"GB","region_code":"eu"},"dates":{"application_open":null,"application_close":null,"program_start":null,"program_end":null,"demo_day":null,"timezone":null,"date_range_text":"Rolling pitch submissions; Seedcamp says it reviews every submission and aims to run its end-to-end investment process within two weeks of meeting founders."},"categories":{"types":["accelerator"],"supports":["funding","mentorship","resources"],"sectors":["general","saas"]},"hashtags":["#eu","#london","#rolling"],"index":{"years":["2026"],"region_code":"eu","country_code":"GB","city_slug":"london","type_keys":["accelerator"],"support_keys":["funding","mentorship","resources"],"sector_keys":["general","saas"],"date_sort_key":null},"verification":"reported","last_verified_utc":null},"sources":[{"title":"Seedcamp: Pitch Us","url":"https://seedcamp.typeform.com/to/ez4GLW0I","publisher":"Seedcamp / Typeform","accessed_at":"2026-06-09","supports":"Official pitch form title and copy; states Seedcamp has partnered with 500+ companies, wants to hear from ambitious founders, and reviews every submission."},{"title":"FAQs - Seedcamp","url":"https://seedcamp.com/faqs/","publisher":"Seedcamp","accessed_at":"2026-06-09","supports":"Official FAQ supports first cheque size of $350K-$1M, first-backer positioning, investment stage, sector-agnostic software-first focus, Europe/Israel focus, founder support, and two-week investment process target."},{"title":"Seedcamp Nation - Seedcamp","url":"https://seedcamp.com/seedcamp-nation/","publisher":"Seedcamp","accessed_at":"2026-06-09","supports":"Official Seedcamp Nation page supports founder community, in-house team support, network, events, candidate introductions, and early-stage partner positioning."},{"title":"Contact us - Seedcamp","url":"https://seedcamp.com/contact/","publisher":"Seedcamp","accessed_at":"2026-06-09","supports":"Official contact page supports Seedcamp's London address at 12 Little Portland Street, London W1W 8BJ, United Kingdom, and footer Pitch Us link."},{"title":"Apply page - Seedcamp","url":"https://seedcamp.com/apply/","publisher":"Seedcamp","accessed_at":"2026-06-09","supports":"The originally supplied official apply URL currently returns a 404 Page not found, so the current official Pitch Us path is used instead."}],"notes":["No exact 2026 application deadline, cohort dates, program start/end, demo day, or timezone were published on the official pages checked.","The current official site footer links Pitch Us via https://seedcamp.com/out/f6-startup-details, which redirects to https://seedcamp.typeform.com/to/ez4GLW0I.","The old existing FounderCal description mentioning €100K-€200K for roughly 7% equity appears stale versus Seedcamp’s current FAQ, which says the first cheque is usually $350K-$1M.","Classified as accelerator to fit the available taxonomy, though Seedcamp describes itself as Europe’s seed fund rather than a fixed-date accelerator cohort."]}
+{
+  "accelerator": {
+    "name": "Seedcamp",
+    "website": "https://seedcamp.com/",
+    "csv_file": "data/accelerators-master.csv",
+    "slug": "seedcamp"
+  },
+  "status": "verified",
+  "checked_at": "2026-10-26",
+  "confidence": "high",
+  "summary": "Seedcamp remains an active early-stage venture investor and its official site links to a Pitch Us form. No cohort-based accelerator schedule or application cutoff is published.",
+  "proposed_event": {
+    "id": "seedcamp-founder-pitches",
+    "name": "Seedcamp — Founder Pitches",
+    "description": "Early-stage venture investor offering capital and founder support; submit through the official Pitch Us form.",
+    "organizer": "Seedcamp",
+    "website": "https://seedcamp.com/",
+    "location": {
+      "is_virtual": false,
+      "is_hybrid": false,
+      "venue": null,
+      "city": "London",
+      "city_slug": "london",
+      "country": "United Kingdom",
+      "country_code": "GB",
+      "region_code": "eu"
+    },
+    "dates": {
+      "application_open": null,
+      "application_close": null,
+      "program_start": null,
+      "program_end": null,
+      "demo_day": null,
+      "timezone": null,
+      "date_range_text": "Founder pitches accepted through the official form. No fixed application deadline or cohort dates are published."
+    },
+    "categories": {
+      "types": [
+        "program"
+      ],
+      "supports": [
+        "funding",
+        "mentorship",
+        "resources"
+      ],
+      "sectors": [
+        "general"
+      ]
+    },
+    "hashtags": [],
+    "index": {
+      "years": [],
+      "region_code": "eu",
+      "country_code": "GB",
+      "city_slug": "london",
+      "type_keys": [
+        "program"
+      ],
+      "support_keys": [
+        "funding",
+        "mentorship",
+        "resources"
+      ],
+      "sector_keys": [
+        "general"
+      ],
+      "date_sort_key": null
+    },
+    "verification": "reported",
+    "last_verified_utc": "2026-10-26T19:50:16Z"
+  },
+  "sources": [
+    {
+      "url": "https://seedcamp.com/",
+      "title": "Seedcamp",
+      "supports": "Current investing activity and official Pitch Us link.",
+      "publisher": "Seedcamp",
+      "accessed_at": "2026-10-26"
+    },
+    {
+      "url": "https://seedcamp.typeform.com/to/yHGQxAVm",
+      "title": "Seedcamp Pitch Us",
+      "supports": "Official form linked by Seedcamp; form details are not publicly readable.",
+      "publisher": "Seedcamp",
+      "accessed_at": "2026-10-26"
+    }
+  ],
+  "notes": []
+}

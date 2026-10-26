@@ -1,10 +1,16 @@
 import fs from "node:fs";
 import path from "node:path";
 
+import { getResearch, getProgramTerms, researchFindings, type ResearchFinding } from "./research";
+
 import data from "@/data/imported-accelerators.json";
 
 export type ImportedAccelerator = {
   name: string;
+  slug?: string;
+  checked_at?: string;
+  status?: ResearchFinding["status"];
+  research?: ResearchFinding;
   website?: string | null;
   applyUrl?: string | null;
   description?: string | null;
@@ -31,7 +37,7 @@ const rawAccelerators = data as ImportedAccelerator[];
 
 export const importedAccelerators: ImportedAcceleratorWithSlug[] = rawAccelerators.map((accelerator) => ({
   ...accelerator,
-  slug: slugify(accelerator.name),
+  slug: accelerator.slug ?? slugify(accelerator.name),
 }));
 
 const CSV_FILES = ["data/accelerators-master.csv", "data/accelerators-crypto.csv"];
@@ -73,12 +79,21 @@ export function loadCsvAccelerators(filePath: string): CsvAccelerator[] {
       accelerator,
       website: record["website"] || undefined,
       checked_at: record["checked_at"] || undefined,
-      slug: slugify(accelerator),
+      slug: record["slug"] || slugify(accelerator),
     };
   });
 }
 
 export function getDeadlineDetails(accelerator: ImportedAccelerator) {
+  if (accelerator.research) {
+    const dates = accelerator.research.proposed_event?.dates;
+    if (!dates) return [accelerator.research.summary];
+    return [
+      dates.application_open ? `Published application opening date: ${dates.application_open}.` : null,
+      dates.application_close ? `Published application cutoff: ${dates.application_close}.` : null,
+      dates.date_range_text,
+    ].filter((value): value is string => Boolean(value));
+  }
   const candidates = [accelerator.notes, accelerator.terms, accelerator.description].filter(
     (value): value is string => Boolean(value && value.trim().length > 0)
   );
@@ -124,6 +139,25 @@ function mergeAccelerators(
     });
   });
 
+  for (const original of researchFindings) {
+    const slug = original.accelerator.slug;
+    const finding = getResearch(slug) ?? original;
+    const existing = merged.get(slug);
+    const unavailable = finding.status === "inactive" || finding.status === "not_found";
+    merged.set(slug, {
+      ...existing,
+      slug,
+      name: finding.accelerator.name,
+      website: unavailable ? null : finding.accelerator.website,
+      applyUrl: finding.status === "verified" ? (finding.proposed_event?.website ?? null) : null,
+      description: finding.proposed_event?.description ?? finding.summary,
+      terms: getProgramTerms(finding),
+      notes: [finding.summary, finding.proposed_event?.dates.date_range_text, ...finding.notes].filter(Boolean).join(" "),
+      checked_at: finding.checked_at,
+      status: finding.status,
+      research: getResearch(slug),
+    });
+  }
   return Array.from(merged.values());
 }
 

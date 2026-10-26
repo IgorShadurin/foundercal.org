@@ -1,0 +1,26 @@
+{
+  "accelerator": {
+    "name": "Zeroth AI",
+    "website": "https://www.zeroth.ai/",
+    "csv_file": "public/events-archive.json",
+    "slug": "zeroth-ai"
+  },
+  "status": "needs_review",
+  "checked_at": "2026-10-26",
+  "confidence": "medium",
+  "summary": "Animoca Brands confirms the historical Zeroth accelerator and its 2018 acquisition. No current Zeroth accelerator cohort or application was verified.",
+  "proposed_event": null,
+  "sources": [
+    {
+      "title": "Animoca Brands: investment into Zeroth",
+      "url": "https://www.animocabrands.com/announcement/silver-egg-to-invest-in-animoca-brands-subsidiary-zeroth-asx-release",
+      "publisher": "Animoca Brands",
+      "accessed_at": "2026-10-26",
+      "supports": "March 18, 2019 corporate announcement confirms historical accelerator identity and acquisition."
+    }
+  ],
+  "notes": [
+    "The former zeroth.ai URL is inaccessible. This does not establish permanent closure.",
+    "Do not substitute similarly named contemporary technology or robotics companies without evidence of continuity."
+  ]
+}

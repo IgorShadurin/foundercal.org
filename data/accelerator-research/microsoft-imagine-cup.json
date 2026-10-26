@@ -1,0 +1,23 @@
+{
+  "accelerator": {
+    "name": "Microsoft Imagine Cup 2027",
+    "website": "https://imaginecup.microsoft.com/en-us",
+    "csv_file": "public/events-archive.json",
+    "slug": "microsoft-imagine-cup"
+  },
+  "status": "needs_review",
+  "checked_at": "2026-10-26",
+  "confidence": "low",
+  "summary": "Official site says Imagine Cup 2027 is coming soon. It does not yet confirm application deadlines.",
+  "proposed_event": null,
+  "sources": [
+    {
+      "title": "Microsoft Imagine Cup 2027 \u2014 official program information",
+      "url": "https://imaginecup.microsoft.com/en-us",
+      "publisher": null,
+      "accessed_at": "2026-10-26",
+      "supports": "Official site says Imagine Cup 2027 is coming soon. It does not yet confirm application deadlines."
+    }
+  ],
+  "notes": []
+}

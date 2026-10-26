@@ -1,0 +1,25 @@
+{
+  "accelerator": {
+    "name": "The Batchery Pragmatic AI Studio",
+    "website": "https://batchery.com/programs.html",
+    "csv_file": "src/app/y-combinator-alternatives/page.tsx",
+    "slug": "the-batchery"
+  },
+  "status": "needs_review",
+  "checked_at": "2026-10-26",
+  "confidence": "medium",
+  "summary": "Pragmatic AI program offers AI integration support, workshops, mentoring and implementation roadmaps. No current cohort dates were confirmed; verify current participation economics directly.",
+  "proposed_event": null,
+  "sources": [
+    {
+      "title": "The Batchery Pragmatic AI Studio official program",
+      "url": "https://batchery.com/programs.html",
+      "publisher": "The Batchery Pragmatic AI Studio",
+      "accessed_at": "2026-10-26",
+      "supports": "Pragmatic AI program offers AI integration support, workshops, mentoring and implementation roadmaps. No current cohort dates were confirmed; verify current participation economics directly."
+    }
+  ],
+  "notes": [
+    "Program details confirmed; current dates need confirmation."
+  ]
+}

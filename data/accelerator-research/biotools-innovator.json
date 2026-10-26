@@ -1,0 +1,80 @@
+{
+  "accelerator": {
+    "name": "BioTools Innovator 2027",
+    "website": "https://biotoolsinnovator.org/",
+    "csv_file": "public/events-archive.json",
+    "slug": "biotools-innovator"
+  },
+  "status": "verified",
+  "checked_at": "2026-10-26",
+  "confidence": "high",
+  "summary": "Applications for 2027 are open, with a December 1, 2026 deadline. Accelerator for life science tools and diagnostics; no relocation required.",
+  "proposed_event": {
+    "id": "biotools-innovator",
+    "name": "BioTools Innovator 2027",
+    "description": "Applications for 2027 are open, with a December 1, 2026 deadline. Accelerator for life science tools and diagnostics; no relocation required.",
+    "organizer": "BioTools Innovator",
+    "website": "https://biotoolsinnovator.org/",
+    "location": {
+      "is_virtual": false,
+      "is_hybrid": false,
+      "venue": null,
+      "city": null,
+      "city_slug": null,
+      "country": null,
+      "country_code": null,
+      "region_code": null
+    },
+    "dates": {
+      "application_open": null,
+      "application_close": "2026-12-01",
+      "program_start": null,
+      "program_end": null,
+      "demo_day": null,
+      "timezone": null,
+      "date_range_text": "Applications for 2027 are open, with a December 1, 2026 deadline. Accelerator for life science tools and diagnostics; no relocation required."
+    },
+    "categories": {
+      "types": [
+        "accelerator",
+        "competition"
+      ],
+      "supports": [
+        "funding",
+        "mentorship"
+      ],
+      "sectors": [
+        "bio",
+        "health"
+      ]
+    },
+    "hashtags": [
+      "#global",
+      "#bio",
+      "#health",
+      "#funding"
+    ],
+    "index": {
+      "years": [],
+      "region_code": null,
+      "country_code": null,
+      "city_slug": null,
+      "type_keys": [],
+      "support_keys": [],
+      "sector_keys": [],
+      "date_sort_key": null
+    },
+    "verification": "reported",
+    "last_verified_utc": null
+  },
+  "sources": [
+    {
+      "title": "BioTools Innovator 2027 \u2014 official program information",
+      "url": "https://biotoolsinnovator.org/",
+      "publisher": null,
+      "accessed_at": "2026-10-26",
+      "supports": "Applications for 2027 are open, with a December 1, 2026 deadline. Accelerator for life science tools and diagnostics; no relocation required."
+    }
+  ],
+  "notes": []
+}

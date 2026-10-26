@@ -1,0 +1,23 @@
+{
+  "accelerator": {
+    "name": "XPRIZE Feed the Next Billion",
+    "website": "https://www.xprize.org/competitions/feedthenextbillion",
+    "csv_file": "public/events-archive.json",
+    "slug": "xprize-feed-next-billion"
+  },
+  "status": "inactive",
+  "checked_at": "2026-10-26",
+  "confidence": "high",
+  "summary": "XPRIZE states this competition ran from 2020 to 2024 and concluded without a Grand Prize award. The previous 2025 finale listing was incorrect.",
+  "proposed_event": null,
+  "sources": [
+    {
+      "title": "XPRIZE Feed the Next Billion \u2014 official program information",
+      "url": "https://www.xprize.org/competitions/feedthenextbillion",
+      "publisher": null,
+      "accessed_at": "2026-10-26",
+      "supports": "XPRIZE states this competition ran from 2020 to 2024 and concluded without a Grand Prize award. The previous 2025 finale listing was incorrect."
+    }
+  ],
+  "notes": []
+}

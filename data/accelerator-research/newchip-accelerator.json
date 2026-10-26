@@ -1,1 +1,25 @@
-{"accelerator":{"name":"Newchip Accelerator","website":"https://launch.newchip.com/","csv_file":"data/accelerators-master.csv","slug":"newchip-accelerator"},"status":"inactive","checked_at":"2026-06-09","confidence":"high","summary":"Newchip Accelerator appears inactive: the official launch/application subdomain does not resolve, the live Newchip homepage is an investor marketplace with no accelerator application or cohort information, and public bankruptcy records show Astralabs Inc. d/b/a Newchip Accelerator in Chapter 7 bankruptcy.","proposed_event":null,"sources":[{"title":"launch.newchip.com DNS/fetch check","url":"https://launch.newchip.com/","publisher":null,"accessed_at":"2026-06-09","supports":"Official accelerator launch/application URL could not be resolved by curl/r.jina.ai during verification."},{"title":"Newchip – Invest in Startups & Innovation Opportunities","url":"https://newchip.com/","publisher":"Newchip","accessed_at":"2026-06-09","supports":"Live Newchip-owned homepage presents startup investing marketplace content and does not publish current accelerator application, cohort, or cadence information."},{"title":"ASTRALABS INC Bankruptcy Filing","url":"https://www.bankruptcyobserver.com/bankruptcy-case/ASTRALABS","publisher":"BankruptcyObserver","accessed_at":"2026-06-09","supports":"Astralabs Inc. filed bankruptcy in the Western District of Texas on March 17, 2023; case is Chapter 7 and active."},{"title":"Case number: 1:23-bk-10164 - ASTRALABS Inc - Texas Western Bankruptcy Court","url":"https://www.bkalerts.com/recent-bankruptcy-cases/texas-western-bankruptcy-court/1%3A23-bk-10164/bankruptcy-case-astralabs-inc","publisher":"BK Alerts","accessed_at":"2026-06-09","supports":"Court docket identifies Astralabs Inc. as d/b/a Newchip and d/b/a Newchip Accelerator, Chapter 7, converted from Chapter 11 on May 12, 2023."},{"title":"This Austin accelerator made big claims; employees and customers say it didn’t deliver","url":"https://techcrunch.com/2023/05/19/this-austin-accelerator-made-big-claims-employees-and-customers-say-it-didnt-deliver/","publisher":"TechCrunch","accessed_at":"2026-06-09","supports":"Reports Newchip was an online accelerator, filed for Chapter 11 in March 2023, and was converted to Chapter 7 liquidation in May 2023."}],"notes":["No current official application deadline, cohort dates, demo day, or program cadence were found.","Because the program appears inactive and the official application site is offline, proposed_event is null rather than adding a current event record.","Existing legacy event record remains directionally correct; merge stage can keep or update the inactive verification timestamp."]}
+{
+  "accelerator": {
+    "name": "Newchip Accelerator",
+    "website": null,
+    "csv_file": "data/accelerators-master.csv",
+    "slug": "newchip-accelerator"
+  },
+  "status": "inactive",
+  "checked_at": "2026-10-26",
+  "confidence": "high",
+  "summary": "Newchip Accelerator is retained as a historical, inactive record. The former application subdomain is unavailable, and newchip.com now serves unrelated casino affiliate content; it is not a valid accelerator or application website.",
+  "proposed_event": null,
+  "sources": [
+    {
+      "url": "https://newchip.com/",
+      "title": "Former Newchip domain inspection",
+      "supports": "The former domain now displays unrelated casino content, not Newchip accelerator information.",
+      "publisher": null,
+      "accessed_at": "2026-10-26"
+    }
+  ],
+  "notes": [
+    "The former domain is unrelated to the accelerator and is no longer an application destination."
+  ]
+}

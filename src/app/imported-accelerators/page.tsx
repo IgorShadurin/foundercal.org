@@ -8,9 +8,10 @@ import path from "node:path";
 
 import { CalendarClock, Github, Link as LinkGlyph, List, MessageSquarePlus } from "lucide-react";
 
+import { researchFindings, getResearch, researchStatusLabel } from "@/lib/research";
+
 import { Card } from "@/components/ui/card";
 import {
-  getAcceleratorSlug,
   importedAccelerators,
   loadCsvAccelerators,
   type ImportedAcceleratorWithSlug,
@@ -69,16 +70,18 @@ type TableColumn = {
 
 const notionColumns: TableColumn[] = [
   { key: "name", label: "Name" },
-  { key: "apply", label: "Apply URL" },
+  { key: "apply", label: "Program / application info" },
   { key: "description", label: "Description", className: "min-w-[16rem]" },
   { key: "terms", label: "Terms", className: "min-w-[12rem]" },
   { key: "notes", label: "Notes", className: "min-w-[16rem]" },
+  { key: "review", label: "Review" },
 ];
 
 const csvColumns: TableColumn[] = [
   { key: "name", label: "Accelerator" },
   { key: "website", label: "Website" },
   { key: "deadline", label: "Deadline" },
+  { key: "review", label: "Last checked" },
 ];
 
 const notionRows: TableRow[] = accelerators.map((accelerator) => {
@@ -91,6 +94,7 @@ const notionRows: TableRow[] = accelerators.map((accelerator) => {
     description: renderRichText(accelerator.description),
     terms: renderRichText(accelerator.terms),
     notes: renderRichText(accelerator.notes),
+    review: <span>{accelerator.checked_at ?? "Not reviewed"}<br />{accelerator.status === "verified" ? "Official information reviewed" : "Needs confirmation"}</span>,
   } satisfies TableRow;
 });
 
@@ -98,18 +102,27 @@ const csvSectionsRows = csvSections.map((section) => ({
   ...section,
   rows: section.records.map((record) => {
     const websiteUrl = normalizeUrl(record.website);
-    const deadlineHref = `/deadline/${getAcceleratorSlug(record.accelerator)}`;
+    const deadlineHref = `/deadline/${record.slug}`;
     return {
       name: <NameCell label={record.accelerator} websiteUrl={websiteUrl} />,
       website: websiteUrl ? <InlineLink href={websiteUrl}>{getDisplayHostname(websiteUrl)}</InlineLink> : "—",
       deadline: <DeadlineLink href={deadlineHref} />,
+      review: <span>{record.checked_at || "Not reviewed"}<br />{getResearch(record.slug) ? researchStatusLabel(getResearch(record.slug)!.status) : "Needs confirmation"}</span>,
     } satisfies TableRow;
   }),
 }));
 
+const trackedSlugs = new Set([...accelerators.map((entry) => entry.slug), ...csvSections.flatMap((section) => section.records.map((entry) => entry.slug))]);
+const otherRows: TableRow[] = researchFindings.filter((finding) => !trackedSlugs.has(finding.accelerator.slug)).map((finding) => ({
+  name: finding.accelerator.name,
+  website: finding.accelerator.website ? <InlineLink href={finding.accelerator.website}>{getDisplayHostname(finding.accelerator.website)}</InlineLink> : "—",
+  deadline: <DeadlineLink href={`/deadline/${finding.accelerator.slug}`} />,
+  review: <span>{finding.checked_at}<br />{researchStatusLabel(finding.status)}</span>,
+}));
+
 export default function ImportedAcceleratorsPage() {
   const totalTracked =
-    accelerators.length + csvSectionsRows.reduce((total, section) => total + section.rows.length, 0);
+    accelerators.length + csvSectionsRows.reduce((total, section) => total + section.rows.length, 0) + otherRows.length;
 
   return (
     <main className="min-h-screen bg-background px-4 py-12 text-foreground sm:px-8">
@@ -118,8 +131,8 @@ export default function ImportedAcceleratorsPage() {
 
         <section className="space-y-10">
           <DatasetSection
-            title="Community snapshot"
-            description="Curated submissions from the FounderCal community."
+            title="Reviewed company profiles"
+            description="Profiles synchronized with official-source research. A check date does not mean applications are open."
           >
             <DataTable columns={notionColumns} rows={notionRows} emptyMessage="No accelerators found in the snapshot." />
           </DatasetSection>
@@ -129,6 +142,9 @@ export default function ImportedAcceleratorsPage() {
               <DataTable columns={csvColumns} rows={section.rows} emptyMessage="No entries yet." />
             </DatasetSection>
           ))}
+          <DatasetSection title="Additional programs, competitions and grants" description="Reviewed legacy listings and additional programs, including those with no confirmed current dates.">
+            <DataTable columns={csvColumns} rows={otherRows} emptyMessage="No additional records." />
+          </DatasetSection>
         </section>
 
         <Footer />
@@ -183,7 +199,7 @@ function Hero({ totalTracked }: { totalTracked: number }) {
               </span>
               <p className="text-5xl font-black text-foreground sm:text-6xl">{formatNumber(totalTracked)}</p>
             </div>
-            <p className="text-sm font-medium text-muted-foreground">Programs catalogued</p>
+            <p className="text-sm font-medium text-muted-foreground">Tracker entries (includes overlaps)</p>
           </div>
         </div>
       </div>

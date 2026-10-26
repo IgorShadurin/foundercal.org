@@ -1,0 +1,81 @@
+{
+  "accelerator": {
+    "name": "Hello Tomorrow Global Challenge 2026\u201327",
+    "website": "https://hello-tomorrow.org/global-challenge/",
+    "csv_file": "public/events-archive.json",
+    "slug": "hello-tomorrow"
+  },
+  "status": "verified",
+  "checked_at": "2026-10-26",
+  "confidence": "high",
+  "summary": "Applications close November 30, 2026. Finals take place June 2\u20133, 2027 in Amsterdam. The EUR200,000 DeepBright Ventures prize is equity investment, not an equity-free grant.",
+  "proposed_event": {
+    "id": "hello-tomorrow",
+    "name": "Hello Tomorrow Global Challenge 2026\u201327",
+    "description": "Applications close November 30, 2026. Finals take place June 2\u20133, 2027 in Amsterdam. The EUR200,000 DeepBright Ventures prize is equity investment, not an equity-free grant.",
+    "organizer": "Hello Tomorrow Global Challenge",
+    "website": "https://hello-tomorrow.org/global-challenge/",
+    "location": {
+      "is_virtual": false,
+      "is_hybrid": false,
+      "venue": null,
+      "city": "Amsterdam",
+      "city_slug": "amsterdam",
+      "country": "Netherlands",
+      "country_code": "NL",
+      "region_code": "eu"
+    },
+    "dates": {
+      "application_open": "2026-09-23",
+      "application_close": "2026-11-30",
+      "program_start": "2027-06-02",
+      "program_end": "2027-06-03",
+      "demo_day": null,
+      "timezone": null,
+      "date_range_text": "Applications close November 30, 2026. Finals take place June 2\u20133, 2027 in Amsterdam. The EUR200,000 DeepBright Ventures prize is equity investment, not an equity-free grant."
+    },
+    "categories": {
+      "types": [
+        "competition"
+      ],
+      "supports": [
+        "funding",
+        "resources"
+      ],
+      "sectors": [
+        "deeptech",
+        "ai",
+        "bio",
+        "energy"
+      ]
+    },
+    "hashtags": [
+      "#netherlands",
+      "#amsterdam",
+      "#deeptech",
+      "#funding"
+    ],
+    "index": {
+      "years": [],
+      "region_code": "eu",
+      "country_code": "NL",
+      "city_slug": "amsterdam",
+      "type_keys": [],
+      "support_keys": [],
+      "sector_keys": [],
+      "date_sort_key": null
+    },
+    "verification": "reported",
+    "last_verified_utc": null
+  },
+  "sources": [
+    {
+      "title": "Hello Tomorrow Global Challenge 2026\u201327 \u2014 official program information",
+      "url": "https://hello-tomorrow.org/global-challenge/",
+      "publisher": null,
+      "accessed_at": "2026-10-26",
+      "supports": "Applications close November 30, 2026. Finals take place June 2\u20133, 2027 in Amsterdam. The EUR200,000 DeepBright Ventures prize is equity investment, not an equity-free grant."
+    }
+  ],
+  "notes": []
+}

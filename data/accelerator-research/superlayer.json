@@ -1,1 +1,25 @@
-{"accelerator":{"name":"SuperLayer","website":"https://www.superlayer.io/","csv_file":"data/accelerators-crypto.csv","slug":"superlayer"},"status":"needs_review","checked_at":"2026-06-09","confidence":"medium","summary":"SuperLayer is currently presented as a venture studio, not a dated accelerator cohort. Its official site invites builders and says it co-founds projects with pre-seed funding and support, but publishes no current application deadline, cohort dates, cadence, or demo day.","proposed_event":null,"sources":[{"title":"The next wave of consumer experiences","url":"https://superlayer.io/","publisher":"SuperLayer","accessed_at":"2026-06-09","supports":"Official site describes SuperLayer as a venture studio, names Kevin Chou and Mahesh Vellanki as managing partners, says it develops ideas in-house and provides co-founders with pre-seed funding, domain expertise, and partnerships; no application dates or cohort cadence are published."},{"title":"Rally, Forte, and Kabam Founders Launch SuperLayer, a Crypto Venture Studio","url":"https://www.businesswire.com/news/home/20211028006035/en/Rally-Forte-and-Kabam-Founders-Launch-SuperLayer-a-Crypto-Venture-Studio-With-Backing-From-Marc-Andreessen-Chris-Dixon-Richard-Ma-Michael-Ovitz-and-More","publisher":"Business Wire","accessed_at":"2026-06-09","supports":"Launch announcement describes SuperLayer as a crypto venture studio that co-founds projects with entrepreneurial product leaders and provides seed funding, with an internal concept-development model."}],"notes":["No official current application page, application close date, cohort start/end dates, timezone, or demo day was found.","Because current public application/cadence information is missing, proposed_event is null per worker instructions.","If FounderCal tracks evergreen venture studios separately from accelerators, SuperLayer could be modeled as an undated web3/consumer/gaming venture studio, but that would require taxonomy support beyond the current accelerator event schema."]}
+{
+  "accelerator": {
+    "name": "SuperLayer",
+    "website": "https://superlayer.io/",
+    "csv_file": "data/accelerators-crypto.csv",
+    "slug": "superlayer"
+  },
+  "status": "needs_review",
+  "checked_at": "2026-10-26",
+  "confidence": "high",
+  "summary": "Superlayer operates a venture studio co-founding consumer and gaming businesses with pre-seed capital and operating support. No accelerator intake deadline, cohort timetable or standardized funding offer is published.",
+  "proposed_event": null,
+  "sources": [
+    {
+      "url": "https://superlayer.io/",
+      "title": "Superlayer",
+      "supports": "Current consumer/gaming venture-studio model and invitation for builders.",
+      "publisher": "Superlayer",
+      "accessed_at": "2026-10-26"
+    }
+  ],
+  "notes": [
+    "Use venture studio wording rather than a dated accelerator cohort."
+  ]
+}

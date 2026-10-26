@@ -1,0 +1,78 @@
+{
+  "accelerator": {
+    "name": "SXSW Pitch 2027",
+    "website": "https://sxsw.com/pitch/",
+    "csv_file": "public/events-archive.json",
+    "slug": "sxsw-pitch"
+  },
+  "status": "verified",
+  "checked_at": "2026-10-26",
+  "confidence": "high",
+  "summary": "Applications close November 13, 2026; Pitch takes place March 16\u201317, 2027 in Austin. Regular entry costs $225 and is non-refundable.",
+  "proposed_event": {
+    "id": "sxsw-pitch",
+    "name": "SXSW Pitch 2027",
+    "description": "Applications close November 13, 2026; Pitch takes place March 16\u201317, 2027 in Austin. Regular entry costs $225 and is non-refundable.",
+    "organizer": "SXSW Pitch",
+    "website": "https://sxsw.com/pitch/",
+    "location": {
+      "is_virtual": false,
+      "is_hybrid": false,
+      "venue": null,
+      "city": "Austin",
+      "city_slug": "austin",
+      "country": "United States",
+      "country_code": "US",
+      "region_code": "na"
+    },
+    "dates": {
+      "application_open": "2026-06-23",
+      "application_close": "2026-11-13",
+      "program_start": "2027-03-16",
+      "program_end": "2027-03-17",
+      "demo_day": null,
+      "timezone": null,
+      "date_range_text": "Applications close November 13, 2026; Pitch takes place March 16\u201317, 2027 in Austin. Regular entry costs $225 and is non-refundable."
+    },
+    "categories": {
+      "types": [
+        "competition"
+      ],
+      "supports": [
+        "funding",
+        "resources"
+      ],
+      "sectors": [
+        "general"
+      ]
+    },
+    "hashtags": [
+      "#usa",
+      "#austin",
+      "#general",
+      "#funding"
+    ],
+    "index": {
+      "years": [],
+      "region_code": "na",
+      "country_code": "US",
+      "city_slug": "austin",
+      "type_keys": [],
+      "support_keys": [],
+      "sector_keys": [],
+      "date_sort_key": null
+    },
+    "verification": "reported",
+    "last_verified_utc": null
+  },
+  "sources": [
+    {
+      "title": "SXSW Pitch 2027 \u2014 official program information",
+      "url": "https://sxsw.com/pitch/",
+      "publisher": null,
+      "accessed_at": "2026-10-26",
+      "supports": "Applications close November 13, 2026; Pitch takes place March 16\u201317, 2027 in Austin. Regular entry costs $225 and is non-refundable."
+    }
+  ],
+  "notes": []
+}

@@ -1,1 +1,82 @@
-{"accelerator":{"name":"Iterative","website":"https://www.iterative.vc/","csv_file":"src/data/imported-accelerators.json","slug":"iterative"},"status":"verified","checked_at":"2026-06-09","confidence":"high","summary":"Iterative is accepting applications for its Summer 2026 Batch, with an official application deadline of 2026-06-29 and a July-October 2026 program window. Exact program start/end and demo day dates are not published.","proposed_event":{"id":"iterative-summer-2026","name":"Iterative Summer 2026 Batch","description":"SEA-focused accelerator investing US$150K-$500K plus mentorship, remote programming, orientation, and demo day.","organizer":"Iterative","website":"https://www.iterative.vc/apply","location":{"is_virtual":false,"is_hybrid":true,"venue":null,"city":null,"city_slug":null,"country":null,"country_code":null,"region_code":"apac"},"dates":{"application_open":null,"application_close":"2026-06-29","program_start":null,"program_end":null,"demo_day":null,"timezone":null,"date_range_text":"Applications are open for the Summer 2026 Batch and close on 2026-06-29. The batch runs July-October 2026; exact start, end, and demo day dates are not published."},"categories":{"types":["accelerator"],"supports":["funding","mentorship","credits","resources"],"sectors":["general"]},"hashtags":["#Iterative","#Accelerator","#Funding","#Mentorship","#APAC"],"index":{"years":["2026"],"region_code":"apac","country_code":null,"city_slug":null,"type_keys":["accelerator"],"support_keys":["funding","mentorship","credits","resources"],"sector_keys":["general"],"date_sort_key":"2026-06-29"},"verification":"reported","last_verified_utc":null},"sources":[{"title":"Apply to Iterative","url":"https://www.iterative.vc/apply","publisher":"Iterative","accessed_at":"2026-06-09","supports":"Official application page states Iterative is accepting applications for the Summer 2026 Batch, running July-October 2026, with an application deadline of 29 June 2026; it also states investment of US$150K-US$500K for roughly 10-15%, in-person orientation, remote program, weekly speakers/office hours, fundraising bootcamp, and demo day."},{"title":"Getting into Iterative","url":"https://www.iterative.vc/getting-into-iterative","publisher":"Iterative","accessed_at":"2026-06-09","supports":"Official guide states applications are open year-round and reviewed on a rolling basis, accepted companies receive the full investment immediately, funding is US$150K-US$500K via post-money SAFE for about 10-15%, and Iterative hosts two 12-week programs per year."},{"title":"What Happens at Iterative","url":"https://www.iterative.vc/what-happens-at-iterative","publisher":"Iterative","accessed_at":"2026-06-09","supports":"Official program page confirms weekly 1:1 office hours, group office hours, fundraising bootcamp, virtual demo day, perks/discounts, founder concierge, and FAQ stating the program has in-person orientation with the rest fully remote."}],"notes":["Exact Summer 2026 program start date, end date, orientation location, and demo day date were not published on the official pages reviewed.","Location is marked hybrid because the official FAQ says there is an in-person orientation and the rest of the program is fully remote; current orientation venue/city was not stated.","Region is APAC because Iterative describes itself as focused on Southeast Asia."]}
+{
+  "accelerator": {
+    "name": "Iterative",
+    "website": "https://www.iterative.vc/apply",
+    "csv_file": "src/data/imported-accelerators.json",
+    "slug": "iterative"
+  },
+  "status": "verified",
+  "checked_at": "2026-10-26",
+  "confidence": "high",
+  "summary": "Iterative is accepting applications for Winter 2027 (February–May). Admissions are rolling; no exact deadline is published. Investment is US$150,000–$500,000 for roughly 10–15%, without program fees.",
+  "proposed_event": {
+    "id": "iterative-w27",
+    "name": "Iterative Winter 2027 Batch",
+    "description": "Southeast Asia-focused accelerator with US$150K–$500K investment for roughly 10–15%. Four-day in-person orientation followed by remote work.",
+    "organizer": "Iterative",
+    "website": "https://www.iterative.vc/apply",
+    "location": {
+      "is_virtual": false,
+      "is_hybrid": true,
+      "venue": null,
+      "city": null,
+      "city_slug": null,
+      "country": null,
+      "country_code": null,
+      "region_code": "apac"
+    },
+    "dates": {
+      "application_open": null,
+      "application_close": null,
+      "program_start": null,
+      "program_end": null,
+      "demo_day": null,
+      "timezone": null,
+      "date_range_text": "Winter 2027 runs February–May. Rolling admissions; exact application cutoff, start, end and Demo Day dates are not published."
+    },
+    "categories": {
+      "types": [
+        "accelerator"
+      ],
+      "supports": [
+        "funding",
+        "mentorship",
+        "resources"
+      ],
+      "sectors": [
+        "general"
+      ]
+    },
+    "hashtags": [],
+    "index": {
+      "years": [],
+      "region_code": "apac",
+      "country_code": null,
+      "city_slug": null,
+      "type_keys": [
+        "accelerator"
+      ],
+      "support_keys": [
+        "funding",
+        "mentorship",
+        "resources"
+      ],
+      "sector_keys": [
+        "general"
+      ],
+      "date_sort_key": null
+    },
+    "verification": "reported",
+    "last_verified_utc": "2026-10-26T19:50:16Z"
+  },
+  "sources": [
+    {
+      "url": "https://www.iterative.vc/apply",
+      "title": "Apply to Iterative",
+      "supports": "Winter 2027 February–May; rolling admissions; investment terms; in-person orientation then remote program.",
+      "publisher": "Iterative",
+      "accessed_at": "2026-10-26"
+    }
+  ],
+  "notes": []
+}

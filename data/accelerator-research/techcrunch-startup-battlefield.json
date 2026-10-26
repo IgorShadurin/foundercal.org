@@ -1,0 +1,23 @@
+{
+  "accelerator": {
+    "name": "TechCrunch Startup Battlefield",
+    "website": "https://techcrunch.com/startup-battlefield/",
+    "csv_file": "public/events-archive.json",
+    "slug": "techcrunch-startup-battlefield"
+  },
+  "status": "needs_review",
+  "checked_at": "2026-10-26",
+  "confidence": "low",
+  "summary": "The 2026 competition has concluded. Next application dates are not confirmed.",
+  "proposed_event": null,
+  "sources": [
+    {
+      "title": "TechCrunch Startup Battlefield \u2014 official program information",
+      "url": "https://techcrunch.com/startup-battlefield/",
+      "publisher": null,
+      "accessed_at": "2026-10-26",
+      "supports": "The 2026 competition has concluded. Next application dates are not confirmed."
+    }
+  ],
+  "notes": []
+}

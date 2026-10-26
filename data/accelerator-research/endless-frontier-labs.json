@@ -1,1 +1,95 @@
-{"accelerator":{"name":"Endless Frontier Labs","website":"https://www.stern.nyu.edu/endless-frontier-labs","csv_file":"data/accelerators-master.csv","slug":"endless-frontier-labs"},"status":"verified","checked_at":"2026-06-09","confidence":"high","summary":"Endless Frontier Labs is currently accepting applications for its 2026-27 cohort, with an official deadline of July 31, 2026. Exact cohort start/end dates are not published, but the official program cadence is September onboarding, October-May mentorship, and May graduation/showcase.","proposed_event":{"id":"endless-frontier-labs-2026","name":"Endless Frontier Labs 2026-2027 Cohort","description":"Nine-month NYU Stern accelerator for science and deep-tech startups, with mentorship, investor access, MBA support, no fees, and no equity.","organizer":"NYU Stern Endless Frontier Labs","website":"https://endlessfrontierlabs.com/info-sessions/","location":{"is_virtual":false,"is_hybrid":true,"venue":"NYU Stern","city":"New York","city_slug":"new-york","country":"United States","country_code":"US","region_code":"na"},"dates":{"application_open":null,"application_close":"2026-07-31","program_start":null,"program_end":null,"demo_day":null,"timezone":null,"date_range_text":"Applications are open; deadline July 31, 2026. Orientation/onboarding in September; mentorship and business development October-May; graduation/showcase in May."},"categories":{"types":["accelerator"],"supports":["mentorship","resources"],"sectors":["general","ai","bio","health","deeptech"]},"hashtags":["#nyc","#deeptech","#lifesciences","#digitalhealth"],"index":{"years":["2026","2027"],"region_code":"na","country_code":"US","city_slug":"new-york","type_keys":["accelerator"],"support_keys":["mentorship","resources"],"sector_keys":["general","ai","bio","health","deeptech"],"date_sort_key":"2026-07-31"},"verification":"reported","last_verified_utc":null},"sources":[{"title":"Endless Frontier Labs Info Sessions","url":"https://endlessfrontierlabs.com/info-sessions/","publisher":"Endless Frontier Labs","accessed_at":"2026-06-09","supports":"Official page states applications are open, the application deadline is Friday, July 31, 2026, participants receive access to business leaders, venture capitalists, scientific experts, and NYU Stern MBA business development support, EFL takes no equity or fees, and startups worldwide can apply without NYU affiliation or relocating to New York."},{"title":"Endless Frontier Labs Program","url":"https://endlessfrontierlabs.com/programs/","publisher":"Endless Frontier Labs","accessed_at":"2026-06-09","supports":"Official program page describes the nine-month mentorship program, September orientation/onboarding, October-May mentor and business development phase, May graduation/showcase at Frontiers, mentor support, investor relationships, Stern MBA and EFL staff support, and tracks for Digital Tech, Life Sciences, Deep Tech, and Digital Health."},{"title":"Endless Frontier Labs at NYU Stern Graduated its 2025-2026 Cohort","url":"https://www.stern.nyu.edu/experience-stern/stern-stories/invent-change-endless-frontier-labs-nyu-stern-graduated-its-2025-2026-cohort-and-elizabeth-elting","publisher":"NYU Stern","accessed_at":"2026-06-09","supports":"NYU Stern story identifies EFL as NYU Stern's hub for science and technology startups, says the program runs for nine months, has no fees or equity, is open worldwide, and notes it is accepting applications for the 2026-27 cohort."}],"notes":["Exact application opening date, exact program start/end dates, deadline time zone, and 2027 showcase date were not found on public official pages, so those fields are null or summarized by cadence.","The application portal confirms separate applications for startup founders, NYU graduate students, and Young Ambassadors, but does not expose detailed founder application dates without registration."]}
+{
+  "accelerator": {
+    "name": "Endless Frontier Labs",
+    "website": "https://endlessfrontierlabs.com/",
+    "csv_file": "data/accelerators-master.csv",
+    "slug": "endless-frontier-labs"
+  },
+  "status": "verified",
+  "checked_at": "2026-10-26",
+  "confidence": "high",
+  "summary": "The 2026–27 final deadline was extended from July 31 to August 12.",
+  "proposed_event": {
+    "id": "endless-frontier-labs-2026-27",
+    "name": "Endless Frontier Labs 2026–27",
+    "description": "Nine-month science and technology mentorship program with business-development and investor support.",
+    "organizer": "Endless Frontier Labs",
+    "website": "https://nyuefl.smapply.io/prog/endless_frontier_labs_application_2026-27/",
+    "location": {
+      "is_virtual": false,
+      "is_hybrid": true,
+      "venue": null,
+      "city": "New York",
+      "city_slug": "new-york",
+      "country": "United States",
+      "country_code": "US",
+      "region_code": "na"
+    },
+    "dates": {
+      "application_open": "2026-05-07",
+      "application_close": "2026-08-12",
+      "program_start": null,
+      "program_end": null,
+      "demo_day": null,
+      "timezone": "America/New_York",
+      "date_range_text": "Final deadline extended to August 12, 2026 at 11:59 PM ET; July 31 was the priority deadline. Intake is closed."
+    },
+    "categories": {
+      "types": [
+        "accelerator"
+      ],
+      "supports": [
+        "mentorship",
+        "resources"
+      ],
+      "sectors": [
+        "deeptech",
+        "health",
+        "bio"
+      ]
+    },
+    "hashtags": [],
+    "index": {
+      "years": [
+        "2026"
+      ],
+      "region_code": "na",
+      "country_code": "US",
+      "city_slug": "new-york",
+      "type_keys": [
+        "accelerator"
+      ],
+      "support_keys": [
+        "mentorship",
+        "resources"
+      ],
+      "sector_keys": [
+        "deeptech",
+        "health",
+        "bio"
+      ],
+      "date_sort_key": "2026-08-12"
+    },
+    "verification": "reported",
+    "last_verified_utc": "2026-10-26T19:49:07Z"
+  },
+  "sources": [
+    {
+      "title": "EFL 2026–27 application",
+      "url": "https://nyuefl.smapply.io/prog/endless_frontier_labs_application_2026-27/",
+      "publisher": "Endless Frontier Labs",
+      "accessed_at": "2026-10-26",
+      "supports": "Opening and final/priority deadlines."
+    },
+    {
+      "title": "Endless Frontier Labs",
+      "url": "https://endlessfrontierlabs.com/",
+      "publisher": "Endless Frontier Labs",
+      "accessed_at": "2026-10-26",
+      "supports": "Nine-month mentorship and business-development program."
+    }
+  ],
+  "notes": [
+    "No exact start/end date inferred from academic-year naming."
+  ]
+}

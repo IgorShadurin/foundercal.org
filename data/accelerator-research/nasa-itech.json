@@ -1,0 +1,27 @@
+{
+  "accelerator": {
+    "name": "NASA iTech",
+    "website": "https://www.nasaitech.org/",
+    "csv_file": "public/events-archive.json",
+    "slug": "nasa-itech"
+  },
+  "status": "needs_review",
+  "checked_at": "2026-10-26",
+  "confidence": "medium",
+  "summary": "NASA iTech is documented by its managing organization, the National Institute of Aerospace, as a NASA technology showcase. The located call is from 2021; no current intake was verified.",
+  "proposed_event": null,
+  "sources": [
+    {
+      "title": "2021 NASA iTech call — official manager search index",
+      "url": "https://www.nianet.org/features/2021-nasa-itech-announces-new-call-for-innovative-technologies/",
+      "publisher": "National Institute of Aerospace",
+      "accessed_at": "2026-10-26",
+      "supports": "Historical identity, NASA mission and 2021 Cycle II call; not evidence of a current application."
+    }
+  ],
+  "notes": [
+    "The source was available in the official search index but direct retrieval returned 404.",
+    "The former nasaitech.org URL is unavailable. Neither failure nor absence of a new announcement proves the program has closed.",
+    "Do not substitute NASA SBIR/STTR or NASA SBIR Ignite dates for iTech."
+  ]
+}

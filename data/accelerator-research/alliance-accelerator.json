@@ -1,1 +1,96 @@
-{"accelerator":{"name":"Alliance Accelerator","website":"https://alliance.xyz/","csv_file":"src/data/imported-accelerators.json","slug":"alliance-accelerator"},"status":"verified","checked_at":"2026-06-09","confidence":"high","summary":"Alliance is actively accepting applications for ALL18, with regular admission due July 22 and the cohort starting September 7, 2026.","proposed_event":{"id":"alliance-accelerator-all18-2026","name":"Alliance Accelerator ALL18","description":"Crypto and AI accelerator offering $500k funding, mentorship, credits, NYC onboarding, remote programming, and demo day.","organizer":"Alliance","website":"https://alliance.xyz/apply","location":{"is_virtual":false,"is_hybrid":true,"venue":"Alliance HQ","city":"New York City","city_slug":"new-york-city","country":"United States","country_code":"US","region_code":"na"},"dates":{"application_open":null,"application_close":"2026-07-22","program_start":"2026-09-07","program_end":null,"demo_day":null,"timezone":null,"date_range_text":"ALL18 regular admission deadline is July 22, 2026; program starts September 7, 2026. Structure: 2-week in-person NYC onboarding, 8-week remote program, and week 10 demo day at Alliance HQ in NYC and online."},"categories":{"types":["accelerator"],"supports":["funding","mentorship","credits","resources"],"sectors":["web3","ai"]},"hashtags":["#Alliance","#AllianceAccelerator","#Web3","#AI","#Crypto"],"index":{"years":["2026"],"region_code":"na","country_code":"US","city_slug":"new-york-city","type_keys":["accelerator"],"support_keys":["funding","mentorship","credits","resources"],"sector_keys":["web3","ai"],"date_sort_key":"2026-07-22"},"verification":"reported","last_verified_utc":null},"sources":[{"title":"Alliance | Crypto & AI Accelerator","url":"https://alliance.xyz/","publisher":"Alliance","accessed_at":"2026-06-09","supports":"Official homepage states Alliance is a crypto and AI accelerator, offers $500k funding, has ALL18 applications due July 22, runs 3 cohorts per year, starts ALL18 on September 7, 2026, and describes the 2-week NYC plus 8-week remote program structure with week 10 demo day."},{"title":"Accelerator Application | Alliance","url":"https://alliance.xyz/apply","publisher":"Alliance","accessed_at":"2026-06-09","supports":"Official application page identifies ALL18 Application, says early admission closed May 30, regular admission is July 22, and program start is September 7 with in-person onboarding in New York City, United States."}],"notes":["The July 22 deadline year is inferred as 2026 because the official FAQ names ALL18 as the next cohort and says it starts September 7, 2026.","No exact program end date or demo day date was published, so those fields are null.","Official sources now list $500k funding at a $5M post-money valuation via SAFE with a 1:1 token side letter; this differs from the imported context terms of $450k for 9%."]}
+{
+  "accelerator": {
+    "name": "Alliance Accelerator",
+    "website": "https://alliance.xyz/",
+    "csv_file": "src/data/imported-accelerators.json",
+    "slug": "alliance-accelerator"
+  },
+  "status": "verified",
+  "checked_at": "2026-10-26",
+  "confidence": "high",
+  "summary": "ALL19 is the next announced cohort.",
+  "proposed_event": {
+    "id": "alliance-all19",
+    "name": "Alliance ALL19",
+    "description": "Crypto and fintech acceleration: $400K on admission plus $400K follow-on at seed.",
+    "organizer": "Alliance",
+    "website": "https://alliance.xyz/",
+    "location": {
+      "is_virtual": false,
+      "is_hybrid": true,
+      "venue": null,
+      "city": "New York",
+      "city_slug": "new-york",
+      "country": "United States",
+      "country_code": "US",
+      "region_code": "na"
+    },
+    "dates": {
+      "application_open": null,
+      "application_close": "2026-11-18",
+      "program_start": "2027-01-11",
+      "program_end": null,
+      "demo_day": null,
+      "timezone": null,
+      "date_range_text": "Regular deadline November 18, 2026; ALL19 starts January 11, 2027. NYC onboarding, remote work, then Demo Day."
+    },
+    "categories": {
+      "types": [
+        "accelerator"
+      ],
+      "supports": [
+        "funding",
+        "mentorship",
+        "resources"
+      ],
+      "sectors": [
+        "web3",
+        "fintech",
+        "ai"
+      ]
+    },
+    "hashtags": [],
+    "index": {
+      "years": [
+        "2026",
+        "2027"
+      ],
+      "region_code": "na",
+      "country_code": "US",
+      "city_slug": "new-york",
+      "type_keys": [
+        "accelerator"
+      ],
+      "support_keys": [
+        "funding",
+        "mentorship",
+        "resources"
+      ],
+      "sector_keys": [
+        "web3",
+        "fintech",
+        "ai"
+      ],
+      "date_sort_key": "2026-11-18"
+    },
+    "verification": "reported",
+    "last_verified_utc": "2026-10-26T19:49:07Z"
+  },
+  "sources": [
+    {
+      "title": "Alliance accelerator",
+      "url": "https://alliance.xyz/",
+      "publisher": "Alliance",
+      "accessed_at": "2026-10-26",
+      "supports": "ALL19 starts January 11, 2027; $400K admission and $400K seed follow-on."
+    },
+    {
+      "title": "ALL19 application",
+      "url": "https://alliance.xyz/apply",
+      "publisher": "Alliance",
+      "accessed_at": "2026-10-26",
+      "supports": "Regular admission November 18; NYC onboarding."
+    }
+  ],
+  "notes": []
+}

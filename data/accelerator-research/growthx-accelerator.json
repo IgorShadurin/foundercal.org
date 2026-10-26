@@ -1,1 +1,82 @@
-{"accelerator":{"name":"GrowthX Accelerator","website":"https://growthx.com/","csv_file":"data/accelerators-master.csv","slug":"growthx-accelerator"},"status":"verified","checked_at":"2026-06-09","confidence":"high","summary":"GrowthX has a current 16-week virtual Revenue Accelerator cohort launching Sept. 14, 2026, with cohort selection closing Sept. 7, 2026.","proposed_event":{"id":"growthx-revenue-accelerator-2026","name":"GrowthX Revenue Accelerator","description":"16-week virtual B2B revenue program with 1:1 coaching, pods, masterclasses, and AI-powered sales enablement.","organizer":"GrowthX","website":"https://growthx.com/founders/revenue-accelerator/","location":{"is_virtual":true,"is_hybrid":false,"venue":null,"city":null,"city_slug":null,"country":null,"country_code":null,"region_code":"global"},"dates":{"application_open":null,"application_close":"2026-09-07","program_start":"2026-09-14","program_end":null,"demo_day":null,"timezone":null,"date_range_text":"Rolling review; cohort selection closes Sept. 7, 2026. The next 16-week virtual cohort launches Sept. 14, 2026."},"categories":{"types":["program"],"supports":["mentorship","resources"],"sectors":["general"]},"hashtags":["#GrowthX","#RevenueAccelerator","#B2B","#Sales"],"index":{"years":["2026"],"region_code":"global","country_code":null,"city_slug":null,"type_keys":["program"],"support_keys":["mentorship","resources"],"sector_keys":["general"],"date_sort_key":"2026-09-07"},"verification":"reported","last_verified_utc":null},"sources":[{"title":"The Revenue Accelerator - GrowthX","url":"https://growthx.com/founders/revenue-accelerator/","publisher":"GrowthX","accessed_at":"2026-06-09","supports":"Official page states the program includes dedicated 1:1 coaching, small-group coaching, cohort masterclasses, AI-powered sales enablement, is equity-free, costs $10,000 per company, runs 16 weeks virtually, and has a next cohort in Sept. 2026. It also lists Sept. 7, 2026 as cohort selection close and Sept. 14, 2026 as program launch."},{"title":"Program Guide - GrowthX","url":"https://growthx.com/program-guide-2/","publisher":"GrowthX","accessed_at":"2026-06-09","supports":"Official program guide describes dedicated coaching, small-group pods, cohort-wide masterclasses, AI-powered sales enablement, and a 16-week program roadmap."}],"notes":["GrowthX explicitly says it is structurally and operationally distinct from traditional startup accelerators, so the event is categorized as a program rather than accelerator.","No exact program end date or timezone is published; those fields are null.","GrowthX says it does not run performative demo days, so demo_day is null."]}
+{
+  "accelerator": {
+    "name": "GrowthX National Program",
+    "website": "https://growthx.com/national-program/",
+    "csv_file": "data/accelerators-master.csv",
+    "slug": "growthx-accelerator"
+  },
+  "status": "verified",
+  "checked_at": "2026-10-26",
+  "confidence": "high",
+  "summary": "GrowthX now presents its national offering as a 16-week remote B2B sales coaching program, costing $10,000 per company with no equity taken. Next cohort starts February 15, 2027; selection closes February 5 or earlier if full.",
+  "proposed_event": {
+    "id": "growthx-national-2027-02",
+    "name": "GrowthX National Program — February 2027",
+    "description": "Remote B2B sales coaching with GrowthX Go. $10,000 per company; equity-free. This is a paid coaching program, not a funding offer.",
+    "organizer": "GrowthX",
+    "website": "https://growthx.com/national-program/",
+    "location": {
+      "is_virtual": true,
+      "is_hybrid": false,
+      "venue": null,
+      "city": null,
+      "city_slug": null,
+      "country": null,
+      "country_code": null,
+      "region_code": "global"
+    },
+    "dates": {
+      "application_open": null,
+      "application_close": "2027-02-05",
+      "program_start": "2027-02-15",
+      "program_end": null,
+      "demo_day": null,
+      "timezone": null,
+      "date_range_text": "16 weeks; starts February 15, 2027. Rolling selection closes February 5 or earlier if the cohort fills."
+    },
+    "categories": {
+      "types": [
+        "program"
+      ],
+      "supports": [
+        "mentorship",
+        "resources"
+      ],
+      "sectors": [
+        "general"
+      ]
+    },
+    "hashtags": [],
+    "index": {
+      "years": [
+        "2027"
+      ],
+      "region_code": "global",
+      "country_code": null,
+      "city_slug": null,
+      "type_keys": [
+        "program"
+      ],
+      "support_keys": [
+        "mentorship",
+        "resources"
+      ],
+      "sector_keys": [
+        "general"
+      ],
+      "date_sort_key": "2027-02-05"
+    },
+    "verification": "reported",
+    "last_verified_utc": "2026-10-26T19:50:16Z"
+  },
+  "sources": [
+    {
+      "url": "https://growthx.com/national-program/",
+      "title": "GrowthX National Program",
+      "supports": "Confirms fee, equity-free model, virtual format, duration and next cohort dates.",
+      "publisher": "GrowthX",
+      "accessed_at": "2026-10-26"
+    }
+  ],
+  "notes": []
+}

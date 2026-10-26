@@ -1,0 +1,78 @@
+{
+  "accelerator": {
+    "name": "South Summit Madrid Startup Competition 2027",
+    "website": "https://www.southsummit.io/content/startup-competition",
+    "csv_file": "public/events-archive.json",
+    "slug": "south-summit-competition"
+  },
+  "status": "verified",
+  "checked_at": "2026-10-26",
+  "confidence": "high",
+  "summary": "The official competition page invites applications for South Summit Madrid, June 2\u20134, 2027. An exact application deadline is not published in the reviewed text.",
+  "proposed_event": {
+    "id": "south-summit-competition",
+    "name": "South Summit Madrid Startup Competition 2027",
+    "description": "The official competition page invites applications for South Summit Madrid, June 2\u20134, 2027. An exact application deadline is not published in the reviewed text.",
+    "organizer": "South Summit Madrid Startup Competition",
+    "website": "https://www.southsummit.io/content/startup-competition",
+    "location": {
+      "is_virtual": false,
+      "is_hybrid": false,
+      "venue": null,
+      "city": "Madrid",
+      "city_slug": "madrid",
+      "country": "Spain",
+      "country_code": "ES",
+      "region_code": "eu"
+    },
+    "dates": {
+      "application_open": null,
+      "application_close": null,
+      "program_start": "2027-06-02",
+      "program_end": "2027-06-04",
+      "demo_day": null,
+      "timezone": null,
+      "date_range_text": "The official competition page invites applications for South Summit Madrid, June 2\u20134, 2027. An exact application deadline is not published in the reviewed text."
+    },
+    "categories": {
+      "types": [
+        "competition"
+      ],
+      "supports": [
+        "funding",
+        "resources"
+      ],
+      "sectors": [
+        "general"
+      ]
+    },
+    "hashtags": [
+      "#spain",
+      "#madrid",
+      "#general",
+      "#funding"
+    ],
+    "index": {
+      "years": [],
+      "region_code": "eu",
+      "country_code": "ES",
+      "city_slug": "madrid",
+      "type_keys": [],
+      "support_keys": [],
+      "sector_keys": [],
+      "date_sort_key": null
+    },
+    "verification": "reported",
+    "last_verified_utc": null
+  },
+  "sources": [
+    {
+      "title": "South Summit Madrid Startup Competition 2027 \u2014 official program information",
+      "url": "https://www.southsummit.io/content/startup-competition",
+      "publisher": null,
+      "accessed_at": "2026-10-26",
+      "supports": "The official competition page invites applications for South Summit Madrid, June 2\u20134, 2027. An exact application deadline is not published in the reviewed text."
+    }
+  ],
+  "notes": []
+}

@@ -1,1 +1,32 @@
-{"accelerator":{"name":"Alliance DAO","website":"https://alliance.xyz/","csv_file":"data/accelerators-crypto.csv","slug":"alliance-dao"},"status":"verified","checked_at":"2026-06-09","confidence":"high","summary":"Alliance's official application page lists ALL18 as the current cohort with regular admission due July 22 and program start September 7, 2026. The official site describes a 10-week hybrid accelerator for crypto and AI startups with $500k funding, mentorship, credits/perks, NYC onboarding, remote programming, and NYC/online Demo Day.","proposed_event":{"id":"alliance-dao-all18","name":"Alliance DAO Accelerator ALL18","description":"Crypto & AI accelerator offering $500k funding, mentorship, NYC onboarding and a remote program.","organizer":"Alliance","website":"https://alliance.xyz/","location":{"is_virtual":false,"is_hybrid":true,"venue":"Alliance HQ","city":"New York","city_slug":"new-york","country":"United States","country_code":"US","region_code":"na"},"dates":{"application_open":null,"application_close":"2026-07-22","program_start":"2026-09-07","program_end":null,"demo_day":null,"timezone":null,"date_range_text":"ALL18 regular admission deadline July 22, 2026; program starts September 7, 2026. Format is 2 weeks in New York City, then 8 weeks remote, with Demo Day in week 10."},"categories":{"types":["accelerator"],"supports":["funding","mentorship","credits"],"sectors":["web3","ai","fintech"]},"hashtags":["#usa","#newyork","#web3","#ai","#funding"],"index":{"years":["2026"],"region_code":"na","country_code":"US","city_slug":"new-york","type_keys":["accelerator"],"support_keys":["funding","mentorship","credits"],"sector_keys":["web3","ai","fintech"],"date_sort_key":"2026-09-07"},"verification":"reported","last_verified_utc":null},"sources":[{"title":"Accelerator Application | Alliance","url":"https://alliance.xyz/apply","publisher":"Alliance","accessed_at":"2026-06-09","supports":"Official ALL18 application page lists Early Admission closed May 30, Regular Admission July 22, interview invites within 72 hours, program start September 7, and in-person onboarding in New York City, United States."},{"title":"Alliance | Crypto & AI Accelerator","url":"https://alliance.xyz/","publisher":"Alliance","accessed_at":"2026-06-09","supports":"Official site describes Alliance as an accelerator and founder community for crypto and AI startups, with a 2-week New York City onboarding, 8-week remote program, week-10 Demo Day in New York City/online, $500k funding, mentorship, and credits/perks."}],"notes":["The official pages do not state a timezone for the July 22 deadline or September 7 start date, so dates.timezone is null.","The program end date and exact Demo Day date are not published; program_end and demo_day are null.","Application close year is interpreted as 2026 because the official site states ALL18 is the next cohort starting September 7, 2026 and today is 2026-06-09."]}
+{
+  "accelerator": {
+    "name": "Alliance DAO",
+    "website": "https://alliance.xyz/",
+    "csv_file": "data/accelerators-crypto.csv",
+    "slug": "alliance-dao"
+  },
+  "status": "needs_review",
+  "checked_at": "2026-10-26",
+  "confidence": "high",
+  "summary": "Alliance DAO is an alias of the Alliance accelerator; use the ALL19 record.",
+  "proposed_event": null,
+  "sources": [
+    {
+      "title": "Alliance accelerator",
+      "url": "https://alliance.xyz/",
+      "publisher": "Alliance",
+      "accessed_at": "2026-10-26",
+      "supports": "ALL19 starts January 11, 2027; $400K admission and $400K seed follow-on."
+    },
+    {
+      "title": "ALL19 application",
+      "url": "https://alliance.xyz/apply",
+      "publisher": "Alliance",
+      "accessed_at": "2026-10-26",
+      "supports": "Regular admission November 18; NYC onboarding."
+    }
+  ],
+  "notes": [
+    "Alias of alliance-accelerator; avoid duplicate calendar entries."
+  ]
+}

@@ -1,1 +1,25 @@
-{"accelerator":{"name":"Forum Accelerator","website":"https://www.forumvc.com/accelerator","csv_file":"src/data/imported-accelerators.json","slug":"forum-accelerator"},"status":"needs_review","checked_at":"2026-06-09","confidence":"low","summary":"Forum Ventures still presents an accelerator offering funding, tactical support, mentorship, and peer community for B2B SaaS founders, but current public pages route founders to a general Pitch Us form and do not publish application deadlines, cohort dates, or cadence details.","proposed_event":{"id":"forum-accelerator","name":"Forum Accelerator","description":"B2B SaaS accelerator with funding, tactical support, mentorship, and founder community from Forum Ventures.","organizer":"Forum Ventures","website":"https://www.forumvc.com/accelerator","location":{"is_virtual":false,"is_hybrid":false,"venue":null,"city":null,"city_slug":null,"country":"United States","country_code":"US","region_code":"na"},"dates":{"application_open":null,"application_close":null,"program_start":null,"program_end":null,"demo_day":null,"timezone":null,"date_range_text":"Current public pages do not publish application deadlines or cohort dates; founders are directed to Forum Ventures' Pitch Us form."},"categories":{"types":["accelerator"],"supports":["funding","mentorship","resources"],"sectors":["saas"]},"hashtags":["#Accelerator","#Funding","#Mentorship","#SaaS","#NorthAmerica"],"index":{"years":[],"region_code":"na","country_code":"US","city_slug":null,"type_keys":["accelerator"],"support_keys":["funding","mentorship","resources"],"sector_keys":["saas"],"date_sort_key":null},"verification":"needs_review","last_verified_utc":null},"sources":[{"title":"Forum Ventures - Accelerator","url":"https://www.forumvc.com/accelerator","publisher":"Forum Ventures","accessed_at":"2026-06-09","supports":"Official accelerator page identifies Forum Accelerator as a B2B SaaS program and describes founder support including funding, tactical support, mentorship, and community; no current application deadline or cohort dates were found."},{"title":"Forum Ventures - Pitch Us","url":"https://www.forumvc.com/pitch-us","publisher":"Forum Ventures","accessed_at":"2026-06-09","supports":"Official application-intake page for founders to pitch Forum Ventures; supports that applications are handled through a general pitch form rather than a published dated cohort page."}],"notes":["No exact application window, program start/end, timezone, demo day, or cohort year was found on the official public pages checked.","Location is inferred from Forum Ventures' public company presence in the United States, not from a stated accelerator cohort venue; city is left null.","Terms from the imported source context were not repeated in the event description because the current official page evidence available here did not clearly expose a current dated offer."]}
+{
+  "accelerator": {
+    "name": "Forum Accelerator",
+    "website": "https://www.forumvc.com/accelerator",
+    "csv_file": "src/data/imported-accelerators.json",
+    "slug": "forum-accelerator"
+  },
+  "status": "needs_review",
+  "checked_at": "2026-10-26",
+  "confidence": "high",
+  "summary": "Forum Ventures offers a B2B tech accelerator with $100K pre-seed funding and hands-on founder support.",
+  "proposed_event": null,
+  "sources": [
+    {
+      "title": "Forum accelerator",
+      "url": "https://www.forumvc.com/accelerator",
+      "publisher": "Forum Ventures",
+      "accessed_at": "2026-10-26",
+      "supports": "B2B focus and $100K funding."
+    }
+  ],
+  "notes": [
+    "Current public page does not establish a dated application window. Do not infer rolling admission merely from a pitch link."
+  ]
+}

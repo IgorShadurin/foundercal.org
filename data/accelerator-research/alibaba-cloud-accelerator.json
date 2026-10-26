@@ -1,0 +1,87 @@
+{
+  "accelerator": {
+    "name": "Alibaba Cloud Startup Accelerator",
+    "website": "https://www.alibabacloud.com/en/startup/ai",
+    "csv_file": "public/events-archive.json",
+    "slug": "alibaba-cloud-accelerator"
+  },
+  "status": "verified",
+  "checked_at": "2026-10-26",
+  "confidence": "high",
+  "summary": "Alibaba Cloud currently offers AI Catalyst as a cloud and AI support program; this replaces the unverified generic accelerator description in the current catalog.",
+  "proposed_event": {
+    "id": "alibaba-cloud-ai-catalyst",
+    "name": "Alibaba Cloud AI Catalyst",
+    "description": "AI startup support with up to $120K cloud credits, up to two billion Model Studio tokens and technical office hours.",
+    "organizer": "Alibaba Cloud",
+    "website": "https://www.alibabacloud.com/en/startup/ai",
+    "location": {
+      "is_virtual": true,
+      "is_hybrid": false,
+      "venue": null,
+      "city": null,
+      "city_slug": null,
+      "country": null,
+      "country_code": null,
+      "region_code": "global"
+    },
+    "dates": {
+      "application_open": null,
+      "application_close": null,
+      "program_start": null,
+      "program_end": null,
+      "demo_day": null,
+      "timezone": null,
+      "date_range_text": "Current page invites online applications with review followed by email notification. No fixed cohort dates or application deadline are published."
+    },
+    "categories": {
+      "types": [
+        "program"
+      ],
+      "supports": [
+        "compute",
+        "credits",
+        "mentorship",
+        "resources"
+      ],
+      "sectors": [
+        "ai"
+      ]
+    },
+    "hashtags": [],
+    "index": {
+      "years": [],
+      "region_code": "global",
+      "country_code": null,
+      "city_slug": null,
+      "type_keys": [
+        "program"
+      ],
+      "support_keys": [
+        "compute",
+        "credits",
+        "mentorship",
+        "resources"
+      ],
+      "sector_keys": [
+        "ai"
+      ],
+      "date_sort_key": null
+    },
+    "verification": "reported",
+    "last_verified_utc": "2026-10-26T19:53:15Z"
+  },
+  "sources": [
+    {
+      "title": "Alibaba Cloud AI Catalyst",
+      "url": "https://www.alibabacloud.com/en/startup/ai",
+      "publisher": "Alibaba Cloud",
+      "accessed_at": "2026-10-26",
+      "supports": "Current application route, credit/token benefits and technical support."
+    }
+  ],
+  "notes": [
+    "Benefits are credits and services, not an unconditional cash investment.",
+    "No formal rebrand or succession from the old startup-accelerator URL is asserted; the proposed entry uses the verified current program name."
+  ]
+}

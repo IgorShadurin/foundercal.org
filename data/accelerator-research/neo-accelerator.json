@@ -1,1 +1,84 @@
-{"accelerator":{"name":"NEO Accelerator","website":"https://neo.com/accelerator","csv_file":"src/data/imported-accelerators.json","slug":"neo-accelerator"},"status":"needs_review","checked_at":"2026-06-09","confidence":"low","summary":"NEO appears to describe an investment program for startup founders, but the current public accelerator/application pages could not be verified from accessible sources in this session. No current application window, cohort dates, cadence, or location could be confirmed, so no event should be merged yet.","proposed_event":null,"sources":[{"title":"NEO Accelerator","url":"https://neo.com/accelerator","publisher":"NEO","accessed_at":"2026-06-09","supports":"Named official accelerator page supplied for verification, but current program dates and application cadence were not confirmed from accessible public content."},{"title":"NEO Accelerator Apply","url":"https://neo.com/accelerator-apply","publisher":"NEO","accessed_at":"2026-06-09","supports":"Named official application URL supplied for verification, but no current deadline, cohort dates, or application status could be confirmed from accessible public content."}],"notes":["Do not merge an event record until the official pages expose current application status or cohort cadence.","The imported source context mentions pre-seed/seed terms, but worker requirements prohibit using unverified source-context details as public evidence.","Recommended follow-up: manually inspect the official pages in a browser or authenticated/JavaScript-enabled context and rerun verification if current dates are visible."]}
+{
+  "accelerator": {
+    "name": "Neo Residency",
+    "website": "https://neo.com/residency",
+    "csv_file": "src/data/imported-accelerators.json",
+    "slug": "neo-accelerator"
+  },
+  "status": "verified",
+  "checked_at": "2026-10-26",
+  "confidence": "high",
+  "summary": "Neo’s program is now Neo Residency, advertising Winter 2027. Startups receive $750K uncapped funding with participation rights up to 5% in the next equity round; the three-month SF program includes a two-week Texas bootcamp. No exact deadline is published.",
+  "proposed_event": {
+    "id": "neo-residency-w27",
+    "name": "Neo Residency — Winter 2027",
+    "description": "Three-month San Francisco residency for startups and student teams. Startup terms: $750K uncapped funding plus next-round participation rights up to 5%.",
+    "organizer": "Neo",
+    "website": "https://neo.com/residency",
+    "location": {
+      "is_virtual": false,
+      "is_hybrid": false,
+      "venue": null,
+      "city": "San Francisco",
+      "city_slug": "san-francisco",
+      "country": "United States",
+      "country_code": "US",
+      "region_code": "na"
+    },
+    "dates": {
+      "application_open": null,
+      "application_close": null,
+      "program_start": null,
+      "program_end": null,
+      "demo_day": null,
+      "timezone": null,
+      "date_range_text": "Winter 2027; three months in San Francisco with a two-week Texas bootcamp. Exact application cutoff and program dates are not published."
+    },
+    "categories": {
+      "types": [
+        "program"
+      ],
+      "supports": [
+        "funding",
+        "mentorship",
+        "resources"
+      ],
+      "sectors": [
+        "general"
+      ]
+    },
+    "hashtags": [],
+    "index": {
+      "years": [],
+      "region_code": "na",
+      "country_code": "US",
+      "city_slug": "san-francisco",
+      "type_keys": [
+        "program"
+      ],
+      "support_keys": [
+        "funding",
+        "mentorship",
+        "resources"
+      ],
+      "sector_keys": [
+        "general"
+      ],
+      "date_sort_key": null
+    },
+    "verification": "reported",
+    "last_verified_utc": "2026-10-26T19:50:16Z"
+  },
+  "sources": [
+    {
+      "url": "https://neo.com/residency",
+      "title": "Neo Residency Winter 2027",
+      "supports": "Official indexed residency page confirms rebrand, Winter 2027, funding, SF program and Texas bootcamp.",
+      "publisher": "Neo",
+      "accessed_at": "2026-10-26"
+    }
+  ],
+  "notes": [
+    "Older portal page describes an Oregon bootcamp and yearless summer dates; prefer the current Winter 2027 residency page."
+  ]
+}

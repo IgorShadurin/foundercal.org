@@ -3,6 +3,7 @@ import { spawn, spawnSync } from "node:child_process";
 import fs from "node:fs";
 import path from "node:path";
 import process from "node:process";
+import { isCalendarDate, validateDates } from "./validate-data";
 
 type Command = "list" | "research" | "merge" | "run" | "validate";
 type ResearchStatus = "verified" | "needs_review" | "inactive" | "not_found";
@@ -72,6 +73,9 @@ type EventRecord = {
   };
   verification: string | null;
   last_verified_utc: string | null;
+  last_checked_utc?: string;
+  research_slug?: string;
+  sources?: AgentResult["sources"];
 };
 
 type AgentResult = {
@@ -530,30 +534,39 @@ function mergeFindings(options: Options) {
     throw new Error("Refusing to merge because validation failed.");
   }
 
-  const now = new Date().toISOString().replace(/\.\d{3}Z$/, "Z");
   const selected = findings
     .filter((finding) => options.mergeStatuses.includes(finding.result.status) && finding.result.proposed_event)
+    .filter(({ result }) => !dataset.events.some((event) =>
+      (event.research_slug === result.accelerator.slug || event.id === result.proposed_event?.id) &&
+      (event.last_checked_utc ?? event.last_verified_utc ?? "").slice(0, 10) > result.checked_at
+    ))
     .sort(compareFindingPriority);
 
-  const changedCsvRows = new Map<string, Set<string>>();
+  const changedCsvRows = new Map<string, Map<string, string>>();
   for (const finding of findings) {
     const csvFile = normalizeRepoPath(finding.result.accelerator.csv_file);
     if (!csvFile.endsWith(".csv")) {
       continue;
     }
     if (!changedCsvRows.has(csvFile)) {
-      changedCsvRows.set(csvFile, new Set());
+      changedCsvRows.set(csvFile, new Map());
     }
-    changedCsvRows.get(csvFile)?.add(finding.result.accelerator.name);
+    changedCsvRows.get(csvFile)?.set(finding.result.accelerator.slug, finding.result.checked_at);
   }
 
-  const nextEvents = [...dataset.events];
+  // A newer finding replaces all prior cohorts from that research record, including
+  // when no current event can be confirmed. Other programs are left untouched.
+  const findingDates = new Map(findings.map(({ result }) => [result.accelerator.slug, result.checked_at]));
+  const nextEvents = dataset.events.filter((event) => {
+    const checkedAt = event.research_slug ? findingDates.get(event.research_slug) : undefined;
+    return !checkedAt || checkedAt < (event.last_checked_utc ?? event.last_verified_utc ?? "").slice(0, 10);
+  });
   const eventIndexes = new Map<string, number>();
   nextEvents.forEach((event, index) => eventIndexes.set(event.id, index));
   const selectedEventKeys = new Set<string>();
   const upserted: string[] = [];
   for (const finding of selected) {
-    const event = normalizeEvent(finding.result.proposed_event as EventRecord, dataset, finding.result, now);
+    const event = normalizeEvent(finding.result.proposed_event as EventRecord, dataset, finding.result);
     const duplicateKey = eventDedupeKeys(event).find((key) => selectedEventKeys.has(key));
     if (duplicateKey) {
       console.warn(`warning: skipping duplicate proposed event ${event.id} from ${finding.filePath} (${duplicateKey})`);
@@ -579,19 +592,19 @@ function mergeFindings(options: Options) {
     return;
   }
 
-  if (upserted.length > 0) {
+  if (upserted.length > 0 || nextEvents.length !== dataset.events.length) {
     const nextDataset: EventDataset = {
       ...dataset,
       events: nextEvents,
     };
     fs.writeFileSync(EVENTS_PATH, `${stringifyJson(nextDataset)}\n`, "utf-8");
   }
-  updateCsvCheckedAt(changedCsvRows, now.slice(0, 10));
+  updateCsvCheckedAt(changedCsvRows);
   const checkedRows = Array.from(changedCsvRows.values()).reduce((sum, names) => sum + names.size, 0);
   console.log(`Upserted ${upserted.length} event(s) and marked ${checkedRows} CSV row(s) checked.`);
 }
 
-function normalizeEvent(event: EventRecord, dataset: EventDataset, finding: AgentResult, verifiedAt: string): EventRecord {
+function normalizeEvent(event: EventRecord, dataset: EventDataset, finding: AgentResult): EventRecord {
   const taxonomies = dataset.taxonomies;
   const types = filterTaxonomy(event.categories?.types, taxonomies.types, ["accelerator"]);
   const supports = filterTaxonomy(event.categories?.supports, taxonomies.supports, ["mentorship"]);
@@ -644,7 +657,10 @@ function normalizeEvent(event: EventRecord, dataset: EventDataset, finding: Agen
       date_sort_key: dateSortKey,
     },
     verification: finding.status === "verified" ? "reported" : finding.status,
-    last_verified_utc: verifiedAt,
+    last_verified_utc: finding.status === "verified" ? `${finding.checked_at}T00:00:00Z` : null,
+    last_checked_utc: `${finding.checked_at}T00:00:00Z`,
+    research_slug: finding.accelerator.slug,
+    sources: finding.sources,
   };
 }
 
@@ -655,7 +671,7 @@ function validateFindings(findings: Array<{ filePath: string; result: AgentResul
 
   for (const { filePath, result } of findings) {
     if (!result.accelerator?.name) errors.push(`${filePath}: missing accelerator.name`);
-    if (!DATE_RE.test(result.checked_at)) errors.push(`${filePath}: checked_at must be YYYY-MM-DD`);
+    if (!isCalendarDate(result.checked_at)) errors.push(`${filePath}: checked_at must be a real YYYY-MM-DD date`);
     if (!["verified", "needs_review", "inactive", "not_found"].includes(result.status)) {
       errors.push(`${filePath}: invalid status ${String(result.status)}`);
     }
@@ -670,6 +686,7 @@ function validateFindings(findings: Array<{ filePath: string; result: AgentResul
     }
 
     const event = result.proposed_event;
+    errors.push(...validateDates(event.dates, filePath));
     const id = slugify(event.id || result.accelerator.slug);
     if (seenIds.has(id)) {
       warnings.push(`${filePath}: duplicate proposed event id ${id}; merge will use the first finding only`);
@@ -826,7 +843,7 @@ function parseCsv(csvFile: string): CsvAccelerator[] {
       website: record.website || "",
       checked_at: record.checked_at || "",
       csvFile: normalizeRepoPath(csvFile),
-      slug: slugify(accelerator),
+      slug: record.slug || slugify(accelerator),
       sourceType: "csv",
     };
   });
@@ -837,6 +854,7 @@ function parseImportedAccelerators(filePath: string): CsvAccelerator[] {
   if (!fs.existsSync(fullPath)) return [];
   const records = JSON.parse(fs.readFileSync(fullPath, "utf-8")) as Array<{
     name?: string;
+    slug?: string;
     website?: string | null;
     applyUrl?: string | null;
     description?: string | null;
@@ -851,7 +869,7 @@ function parseImportedAccelerators(filePath: string): CsvAccelerator[] {
       applyUrl: record.applyUrl ?? undefined,
       checked_at: "",
       csvFile: normalizeRepoPath(filePath),
-      slug: slugify(record.name as string),
+      slug: record.slug || slugify(record.name as string),
       sourceType: "imported",
       sourceContext: {
         description: record.description,
@@ -879,7 +897,7 @@ function dedupeAccelerators(rows: CsvAccelerator[]) {
   return Array.from(bySlug.values());
 }
 
-function updateCsvCheckedAt(changedRows: Map<string, Set<string>>, checkedAt: string) {
+function updateCsvCheckedAt(changedRows: Map<string, Map<string, string>>) {
   changedRows.forEach((names, csvFile) => {
     const fullPath = path.resolve(PROJECT_ROOT, csvFile);
     const raw = fs.readFileSync(fullPath, "utf-8").trim();
@@ -888,13 +906,15 @@ function updateCsvCheckedAt(changedRows: Map<string, Set<string>>, checkedAt: st
     const headers = splitCsvLine(lines[0]).map((header) => header.replace(/"/g, ""));
     const checkedIndex = headers.indexOf("checked_at");
     const acceleratorIndex = headers.indexOf("accelerator");
+    const slugIndex = headers.indexOf("slug");
     if (checkedIndex === -1 || acceleratorIndex === -1) {
       throw new Error(`${csvFile} must include accelerator and checked_at columns`);
     }
 
     const nextRows = [headers, ...lines.slice(1).map(splitCsvLine)];
     for (const row of nextRows.slice(1)) {
-      if (names.has(row[acceleratorIndex])) {
+      const checkedAt = names.get((slugIndex >= 0 && row[slugIndex]) || slugify(row[acceleratorIndex]));
+      if (checkedAt && checkedAt >= row[checkedIndex]) {
         row[checkedIndex] = checkedAt;
       }
     }

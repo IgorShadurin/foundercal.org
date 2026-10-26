@@ -1,1 +1,25 @@
-{"accelerator":{"name":"Multicoin Scout Accelerator","website":"https://multicoin.capital/","csv_file":"data/accelerators-crypto.csv","slug":"multicoin-scout-accelerator"},"status":"not_found","checked_at":"2026-06-09","confidence":"medium","summary":"No current public evidence was found that Multicoin Capital operates a founder accelerator named Multicoin Scout Accelerator. Official Multicoin pages describe venture investing and founder pitches, while the similarly named Scout Program is a Chapter One product for angel investors, not a startup accelerator.","proposed_event":null,"sources":[{"title":"Multicoin Capital","url":"https://multicoin.capital/","publisher":"Multicoin Capital","accessed_at":"2026-06-09","supports":"Official homepage says Multicoin makes long-term crypto investments and its venture fund backs early-stage companies and founders with investments ranging from $1M-$50M; it does not list a Scout Accelerator or cohort dates."},{"title":"Contact - Multicoin Capital","url":"https://multicoin.capital/contact/","publisher":"Multicoin Capital","accessed_at":"2026-06-09","supports":"Official contact page invites crypto/blockchain project pitches and includes outreach type 'Pitch an idea for investment', but publishes no accelerator application, deadline, program dates, or cadence."},{"title":"About - Multicoin Capital","url":"https://multicoin.capital/about/","publisher":"Multicoin Capital","accessed_at":"2026-06-09","supports":"Official about page identifies Multicoin as a thesis-driven investment firm managing hedge and venture funds, not as an accelerator operator."},{"title":"Scout Program","url":"https://www.scoutprogram.com/","publisher":"Scout Program / Chapter One","accessed_at":"2026-06-09","supports":"Similarly named Scout Program says it is a Chapter One product where 10 angel investors deploy $100K each; Kyle Samani is listed as a mentor, but it is not a Multicoin founder accelerator."}],"notes":["Searches for 'Multicoin Scout Accelerator', 'Multicoin Scout', 'Multicoin Scout Program', and official Multicoin pages did not reveal a current founder accelerator page." ,"Because no public application window, cohort cadence, founder eligibility, or organizer page for the named accelerator was found, no event record should be merged."]}
+{
+  "accelerator": {
+    "name": "Multicoin Scout Accelerator",
+    "website": "https://multicoin.capital/",
+    "csv_file": "data/accelerators-crypto.csv",
+    "slug": "multicoin-scout-accelerator"
+  },
+  "status": "not_found",
+  "checked_at": "2026-10-26",
+  "confidence": "high",
+  "summary": "Multicoin Capital’s official site describes venture and public-market crypto investing. No program called Multicoin Scout Accelerator or public accelerator intake was found.",
+  "proposed_event": null,
+  "sources": [
+    {
+      "url": "https://multicoin.capital/",
+      "title": "Multicoin Capital",
+      "supports": "Describes investment funds and current portfolio activity, not a scout accelerator.",
+      "publisher": "Multicoin Capital",
+      "accessed_at": "2026-10-26"
+    }
+  ],
+  "notes": [
+    "Do not present this unconfirmed program name as an active accelerator."
+  ]
+}

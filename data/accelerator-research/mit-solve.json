@@ -1,0 +1,81 @@
+{
+  "accelerator": {
+    "name": "MIT Solve Global Climate Challenge 2027",
+    "website": "https://solve.mit.edu/challenges/2027-global-climate-challenge?tab=faq",
+    "csv_file": "public/events-archive.json",
+    "slug": "mit-solve"
+  },
+  "status": "verified",
+  "checked_at": "2026-10-26",
+  "confidence": "high",
+  "summary": "Climate challenge applications opened September 22, 2026 and close November 6, 2026 at 12:00pm EST.",
+  "proposed_event": {
+    "id": "mit-solve",
+    "name": "MIT Solve Global Climate Challenge 2027",
+    "description": "Climate challenge applications opened September 22, 2026 and close November 6, 2026 at 12:00pm EST.",
+    "organizer": "MIT Solve Global Climate Challenge",
+    "website": "https://solve.mit.edu/challenges/2027-global-climate-challenge?tab=faq",
+    "location": {
+      "is_virtual": false,
+      "is_hybrid": false,
+      "venue": null,
+      "city": null,
+      "city_slug": null,
+      "country": null,
+      "country_code": null,
+      "region_code": null
+    },
+    "dates": {
+      "application_open": "2026-09-22",
+      "application_close": "2026-11-06",
+      "program_start": null,
+      "program_end": null,
+      "demo_day": null,
+      "timezone": "America/New_York",
+      "date_range_text": "Climate challenge applications opened September 22, 2026 and close November 6, 2026 at 12:00pm EST."
+    },
+    "categories": {
+      "types": [
+        "competition",
+        "grant"
+      ],
+      "supports": [
+        "funding",
+        "resources"
+      ],
+      "sectors": [
+        "climatetech"
+      ]
+    },
+    "hashtags": [
+      "#global",
+      "#impact",
+      "#general",
+      "#funding"
+    ],
+    "index": {
+      "years": [],
+      "region_code": null,
+      "country_code": null,
+      "city_slug": null,
+      "type_keys": [],
+      "support_keys": [],
+      "sector_keys": [
+        "climatetech"
+      ],
+      "date_sort_key": null
+    },
+    "verification": "reported",
+    "last_verified_utc": null
+  },
+  "sources": [
+    {
+      "title": "MIT Solve Global Climate Challenge 2027 \u2014 official program information",
+      "url": "https://solve.mit.edu/challenges/2027-global-climate-challenge?tab=faq",
+      "publisher": null,
+      "accessed_at": "2026-10-26",
+      "supports": "Climate challenge applications opened September 22, 2026 and close November 6, 2026 at 12:00pm EST."
+    }
+  ],
+  "notes": []
+}

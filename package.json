@@ -7,13 +7,16 @@
     "build": "next build",
     "start": "next start",
     "lint": "eslint",
-    "accelerator-agents": "tsx scripts/accelerator-agents.ts",
-    "accelerator-agents:all": "tsx scripts/accelerator-agents.ts run --all --parallel 4",
-    "accelerator-agents:merge": "tsx scripts/accelerator-agents.ts merge",
+    "accelerator-agents": "node --import tsx scripts/accelerator-agents.ts",
+    "accelerator-agents:all": "node --import tsx scripts/accelerator-agents.ts run --all --parallel 4",
+    "accelerator-agents:merge": "node --import tsx scripts/accelerator-agents.ts merge",
     "fetch-page": "tsx scripts/fetch-page.ts",
     "favicons:scrape": "node scripts/favicons-scrape.mjs",
     "favicons:download": "node scripts/favicons-download.mjs",
-    "favicons": "npm run favicons:scrape && npm run favicons:download"
+    "favicons": "npm run favicons:scrape && npm run favicons:download",
+    "validate:data": "node --import tsx scripts/validate-data.ts",
+    "sync:profiles": "node --import tsx scripts/sync-profiles.ts",
+    "test:data": "node --import tsx --test scripts/data-refresh.test.ts"
   },
   "dependencies": {
     "@radix-ui/react-popover": "^1.1.15",

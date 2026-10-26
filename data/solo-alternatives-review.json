@@ -1,0 +1,1118 @@
+{
+  "reviewed_at": "2026-10-26",
+  "scope": "All 100 source links were checked using official pages or indexed official content; broken links were researched for replacements. Reviewed means the general offering was checked, not that applications are open or every term is independently verified. Fit, benefits and comparisons are editorial assessments.",
+  "status_definitions": {
+    "reviewed": "An official source supports the described offering; see row-specific conditions.",
+    "needs_review": "Current program details or intake could not be established from accessible official content."
+  },
+  "records": [
+    {
+      "rank": 1,
+      "option": "Techstars",
+      "status": "reviewed",
+      "checked_at": "2026-10-26",
+      "original_source": "https://www.techstars.com/accelerators",
+      "sources": [
+        "https://www.techstars.com/accelerators"
+      ],
+      "finding": "Official accelerator directory lists three-month mentorship programs. Terms and dates depend on the individual program."
+    },
+    {
+      "rank": 2,
+      "option": "500 Fellowship (500 Global)",
+      "status": "reviewed",
+      "checked_at": "2026-10-26",
+      "original_source": "https://500.co/accelerators/flagship-accelerator-program/",
+      "sources": [
+        "https://500.co/founders/flagship"
+      ],
+      "finding": "Flagship is now presented as the 500 Fellowship. Published Batch 36 deadline was October 11, 2026; program November 30, 2026–April 9, 2027. Applying does not guarantee investment."
+    },
+    {
+      "rank": 3,
+      "option": "Antler Residency",
+      "status": "reviewed",
+      "checked_at": "2026-10-26",
+      "original_source": "https://www.antler.co/residency",
+      "sources": [
+        "https://www.antler.co/"
+      ],
+      "finding": "The residency URL now redirects to Antler’s main site. Cohort dates, eligibility and investment terms vary by location."
+    },
+    {
+      "rank": 4,
+      "option": "Founder Institute FI Agentic",
+      "status": "reviewed",
+      "checked_at": "2026-10-26",
+      "original_source": "https://fi.co/core",
+      "sources": [
+        "https://fi.co/aifounder"
+      ],
+      "finding": "The former Core URL redirects to FI Agentic, which combines startup curriculum, AI tools and mentor support."
+    },
+    {
+      "rank": 5,
+      "option": "TinySeed",
+      "status": "reviewed",
+      "checked_at": "2026-10-26",
+      "original_source": "https://tinyseed.com/program",
+      "sources": [
+        "https://tinyseed.com/program"
+      ],
+      "finding": "Official program page describes a year-long remote accelerator for revenue-generating SaaS. Next application opening is February 2027; no exact opening day is published."
+    },
+    {
+      "rank": 6,
+      "option": "Alchemist Accelerator",
+      "status": "reviewed",
+      "checked_at": "2026-10-26",
+      "original_source": "https://www.alchemistaccelerator.com/",
+      "sources": [
+        "https://www.alchemistaccelerator.com/"
+      ],
+      "finding": "Official indexed FAQ supports a six-month enterprise program and accepts solo founders with a higher bar. The page’s January 2026 class date is historical."
+    },
+    {
+      "rank": 7,
+      "option": "MassChallenge",
+      "status": "reviewed",
+      "checked_at": "2026-10-26",
+      "original_source": "https://masschallenge.org/",
+      "sources": [
+        "https://masschallenge.org/"
+      ],
+      "finding": "Official site lists Traction, Challenge and Breakthrough Bio accelerators; check the relevant program’s eligibility and application dates."
+    },
+    {
+      "rank": 8,
+      "option": "Plug and Play",
+      "status": "needs_review",
+      "checked_at": "2026-10-26",
+      "original_source": "https://www.plugandplaytechcenter.com/startups/",
+      "sources": [
+        "https://www.plugandplaytechcenter.com/innovation-services/startups",
+        "https://welcome.plugandplaytechcenter.com/ultimate-innovation-platform"
+      ],
+      "finding": "Official startup page returned no readable body. An official corporate platform page confirms startup and corporate connections, but current accelerator terms require confirmation."
+    },
+    {
+      "rank": 9,
+      "option": "AngelPad",
+      "status": "reviewed",
+      "checked_at": "2026-10-26",
+      "original_source": "https://angelpad.com/",
+      "sources": [
+        "https://angelpad.com/"
+      ],
+      "finding": "Official site describes small seed-stage cohorts in San Francisco and New York. No current application cutoff was established from this page."
+    },
+    {
+      "rank": 10,
+      "option": "Entrepreneurs Roundtable Accelerator (ERA)",
+      "status": "reviewed",
+      "checked_at": "2026-10-26",
+      "original_source": "https://www.eranyc.com/apply",
+      "sources": [
+        "https://www.eranyc.com/apply"
+      ],
+      "finding": "Winter 2027 application deadline November 2, 2026; program starts January 11, 2027. Official offer is $150,000 for 6% via post-money SAFE."
+    },
+    {
+      "rank": 11,
+      "option": "StartX",
+      "status": "reviewed",
+      "checked_at": "2026-10-26",
+      "original_source": "https://www.startx.com/",
+      "sources": [
+        "https://web.startx.com/"
+      ],
+      "finding": "Official site describes a Stanford founder community, no equity or fees, and an accelerator as the entry point. The separate Fellows deadline is not an accelerator deadline."
+    },
+    {
+      "rank": 12,
+      "option": "Berkeley SkyDeck",
+      "status": "reviewed",
+      "checked_at": "2026-10-26",
+      "original_source": "https://skydeck.berkeley.edu/",
+      "sources": [
+        "https://skydeck.berkeley.edu/"
+      ],
+      "finding": "Official site announces Batch 24 applications opening in January. No exact date or year is inferred from that month-only banner."
+    },
+    {
+      "rank": 13,
+      "option": "Creative Destruction Lab",
+      "status": "reviewed",
+      "checked_at": "2026-10-26",
+      "original_source": "https://creativedestructionlab.com/program/",
+      "sources": [
+        "https://creativedestructionlab.com/program/"
+      ],
+      "finding": "Official program supports scalable science and technology ventures through objective-setting and specialist mentors. The page advertises the 2026/27 program year."
+    },
+    {
+      "rank": 14,
+      "option": "FounderFuel",
+      "status": "reviewed",
+      "checked_at": "2026-10-26",
+      "original_source": "https://founderfuel.com/",
+      "sources": [
+        "https://founderfuel.com/"
+      ],
+      "finding": "Official site describes a four-month accelerator and mentor network in Canada. Current cohort availability was not established."
+    },
+    {
+      "rank": 15,
+      "option": "MuckerLab",
+      "status": "needs_review",
+      "checked_at": "2026-10-26",
+      "original_source": "https://www.muckercapital.com/muckerlab",
+      "sources": [
+        "https://mucker.com/accelerator/"
+      ],
+      "finding": "The old URL timed out. The current MuckerLab accelerator URL was found, but its program body could not be reliably retrieved; current terms and intake need confirmation."
+    },
+    {
+      "rank": 16,
+      "option": "Startmate Accelerator",
+      "status": "reviewed",
+      "checked_at": "2026-10-26",
+      "original_source": "https://startmate.com/accelerator",
+      "sources": [
+        "https://www.startmate.com/accelerator"
+      ],
+      "finding": "Summer 2027 deadline November 1, 2026 at 11:59pm AEDT. Program February 1–May 7, 2027; AUD120,000 at AUD1.5 million post-money valuation."
+    },
+    {
+      "rank": 17,
+      "option": "Seedcamp",
+      "status": "reviewed",
+      "checked_at": "2026-10-26",
+      "original_source": "https://seedcamp.com/",
+      "sources": [
+        "https://seedcamp.com/"
+      ],
+      "finding": "Official site presents Seedcamp as an early-stage investor and founder network. It is not a fixed-cohort accelerator application."
+    },
+    {
+      "rank": 18,
+      "option": "Entrepreneurs First",
+      "status": "reviewed",
+      "checked_at": "2026-10-26",
+      "original_source": "https://www.joinef.com/",
+      "sources": [
+        "https://www.joinef.com/"
+      ],
+      "finding": "Official site describes investing in individuals and helping form cofounding teams. Joining as an individual does not imply building alone throughout the program."
+    },
+    {
+      "rank": 19,
+      "option": "Google for Startups Accelerator",
+      "status": "reviewed",
+      "checked_at": "2026-10-26",
+      "original_source": "https://startup.google.com/programs/accelerator/",
+      "sources": [
+        "https://startup.google.com/programs/accelerator/"
+      ],
+      "finding": "Official accelerator hub describes technical, product and leadership support for selected growth-stage startups. Eligibility varies by regional or thematic program."
+    },
+    {
+      "rank": 20,
+      "option": "Founders Factory Accelerator",
+      "status": "reviewed",
+      "checked_at": "2026-10-26",
+      "original_source": "https://foundersfactory.com/build/accelerator/",
+      "sources": [
+        "https://foundersfactory.com/accelerator/"
+      ],
+      "finding": "Official accelerator page describes capital plus a four-month cohort with operational support. Sector and corporate partner fit matter."
+    },
+    {
+      "rank": 21,
+      "option": "Founders Factory Venture Studio",
+      "status": "reviewed",
+      "checked_at": "2026-10-26",
+      "original_source": "https://foundersfactory.com/build/venture-studio/",
+      "sources": [
+        "https://foundersfactory.com/studio/"
+      ],
+      "finding": "Official studio page describes cofounding a company with pre-seed capital, operators and corporate partners; this is a studio partnership."
+    },
+    {
+      "rank": 22,
+      "option": "a16z speedrun",
+      "status": "reviewed",
+      "checked_at": "2026-10-26",
+      "original_source": "https://speedrun.a16z.com/",
+      "sources": [
+        "https://speedrun.a16z.com/"
+      ],
+      "finding": "Official site advertises up to $1 million funding and a twelve-week San Francisco residency. An application link alone does not establish a deadline."
+    },
+    {
+      "rank": 23,
+      "option": "South Park Commons Founder Fellowship",
+      "status": "reviewed",
+      "checked_at": "2026-10-26",
+      "original_source": "https://www.southparkcommons.com/fellowship",
+      "sources": [
+        "https://www.southparkcommons.com/apply",
+        "https://www.southparkcommons.com/founder-fellowship"
+      ],
+      "finding": "Official application page states Fall 2026 Fellowship applications are closed; Spring 2027 applications will open later in 2026, with no exact date published."
+    },
+    {
+      "rank": 24,
+      "option": "HF0 Residency",
+      "status": "reviewed",
+      "checked_at": "2026-10-26",
+      "original_source": "https://www.hf0.com/",
+      "sources": [
+        "https://www.hf0.com/"
+      ],
+      "finding": "Official HF0 homepage now describes a residency for repeat founders. Its December 1 Demo Day label has no year, so no calendar date is inferred."
+    },
+    {
+      "rank": 25,
+      "option": "ODF Founder Fellowship",
+      "status": "reviewed",
+      "checked_at": "2026-10-26",
+      "original_source": "https://www.joinodf.com/",
+      "sources": [
+        "https://joinodf.com/"
+      ],
+      "finding": "Official site describes a one-week in-person San Francisco experience and ongoing community. ODF28 is planned for Q1 2027; exact dates are not published."
+    },
+    {
+      "rank": 26,
+      "option": "AI House Incubator (formerly AI2 Incubator)",
+      "status": "reviewed",
+      "checked_at": "2026-10-26",
+      "original_source": "https://www.ai2incubator.com/",
+      "sources": [
+        "https://aihouse.vc/"
+      ],
+      "finding": "The AI2 Incubator domain redirects to AI House, which offers community, an applied-AI incubator and pre-seed capital."
+    },
+    {
+      "rank": 27,
+      "option": "Deep Science Ventures",
+      "status": "reviewed",
+      "checked_at": "2026-10-26",
+      "original_source": "https://www.deepscienceventures.com/",
+      "sources": [
+        "https://www.deepscienceventures.com/"
+      ],
+      "finding": "Official site describes venture creation in agriculture, computation, climate, pharma and education, with opportunities to build alongside scientists."
+    },
+    {
+      "rank": 28,
+      "option": "Carbon13 Venture Builder",
+      "status": "reviewed",
+      "checked_at": "2026-10-26",
+      "original_source": "https://carbonthirteen.com/venture-builder/",
+      "sources": [
+        "https://carbonthirteen.com/programmes/"
+      ],
+      "finding": "Official programs page distinguishes Cambridge and Berlin Venture Builders from a separate accelerator for established teams."
+    },
+    {
+      "rank": 29,
+      "option": "NEXT AI",
+      "status": "reviewed",
+      "checked_at": "2026-10-26",
+      "original_source": "https://nextcanada.com/programs/next-ai/",
+      "sources": [
+        "https://www.nextcanada.com/next-ai/"
+      ],
+      "finding": "2027 applications opened October 15, 2026 and close December 9, 2026. Official eligibility emphasizes Canadian companies and distinct business and technical founders; solo acceptance is much less likely."
+    },
+    {
+      "rank": 30,
+      "option": "HAX",
+      "status": "reviewed",
+      "checked_at": "2026-10-26",
+      "original_source": "https://hax.co/",
+      "sources": [
+        "https://hax.co/"
+      ],
+      "finding": "Official HAX site describes SOSV’s hard-tech program, engineering support and an initial $550,000 investment. Confirm the deal structure directly."
+    },
+    {
+      "rank": 31,
+      "option": "SOSV SF / SOSV NY (formerly IndieBio)",
+      "status": "reviewed",
+      "checked_at": "2026-10-26",
+      "original_source": "https://indiebio.co/",
+      "sources": [
+        "https://indiebio.co/"
+      ],
+      "finding": "IndieBio’s official homepage announces its 2026 renaming to SOSV SF and SOSV NY, with the remit expanded from biotech to deep tech."
+    },
+    {
+      "rank": 32,
+      "option": "Silicon Catalyst",
+      "status": "reviewed",
+      "checked_at": "2026-10-26",
+      "original_source": "https://siliconcatalyst.com/",
+      "sources": [
+        "https://siliconcatalyst.com/"
+      ],
+      "finding": "Official site describes semiconductor-focused acceleration and regional ChipStart offerings. Requirements vary by subsidiary and program."
+    },
+    {
+      "rank": 33,
+      "option": "Startupbootcamp",
+      "status": "reviewed",
+      "checked_at": "2026-10-26",
+      "original_source": "https://www.startupbootcamp.org/",
+      "sources": [
+        "https://www.startupbootcamp.org/"
+      ],
+      "finding": "Official site lists industry-specific accelerator cohorts. Check the selected cohort instead of assuming a single global deadline."
+    },
+    {
+      "rank": 34,
+      "option": "Startup Wise Guys",
+      "status": "reviewed",
+      "checked_at": "2026-10-26",
+      "original_source": "https://startupwiseguys.com/",
+      "sources": [
+        "https://startupwiseguys.com/"
+      ],
+      "finding": "Official site lists B2B programs by company stage and vertical, including SaaS, cybersecurity and sustainability."
+    },
+    {
+      "rank": 35,
+      "option": "Start-Up Chile",
+      "status": "reviewed",
+      "checked_at": "2026-10-26",
+      "original_source": "https://startupchile.org/",
+      "sources": [
+        "https://startupchile.org/"
+      ],
+      "finding": "Official homepage currently says applications are closed and links Build, Ignite and Growth. A generic apply button should not be interpreted as an open intake."
+    },
+    {
+      "rank": 36,
+      "option": "STATION F Founders Program",
+      "status": "reviewed",
+      "checked_at": "2026-10-26",
+      "original_source": "https://stationf.co/programs",
+      "sources": [
+        "https://stationf.co/programs"
+      ],
+      "finding": "Current official program directory lists the Founders program for early-stage companies."
+    },
+    {
+      "rank": 37,
+      "option": "STATION F Fighters",
+      "status": "reviewed",
+      "checked_at": "2026-10-26",
+      "original_source": "https://stationf.co/news/fighters-spring25",
+      "sources": [
+        "https://stationf.co/programs"
+      ],
+      "finding": "Replaced a 2025 cohort announcement with the current program directory, which still lists Fighters for founders from unconventional backgrounds."
+    },
+    {
+      "rank": 38,
+      "option": "STATION F F/ai",
+      "status": "reviewed",
+      "checked_at": "2026-10-26",
+      "original_source": "https://stationf.co/news/f-ai",
+      "sources": [
+        "https://stationf.co/programs",
+        "https://stationf.co/news/f-ai"
+      ],
+      "finding": "Current program directory lists F/ai. Its launch announcement describes recommendation-only selection for the initial cohort; do not assume universal open access."
+    },
+    {
+      "rank": 39,
+      "option": "UnternehmerTUM",
+      "status": "reviewed",
+      "checked_at": "2026-10-26",
+      "original_source": "https://www.unternehmertum.de/",
+      "sources": [
+        "https://www.unternehmertum.de/"
+      ],
+      "finding": "Official site describes an entrepreneurship and innovation ecosystem with separate incubation, acceleration and financing offerings."
+    },
+    {
+      "rank": 40,
+      "option": "Zinc",
+      "status": "needs_review",
+      "checked_at": "2026-10-26",
+      "original_source": "https://www.zinc.vc/",
+      "sources": [
+        "https://www.zinc.vc/",
+        "https://www.zinc.vc/pre-seed-investment/"
+      ],
+      "finding": "Current official site links pre-seed investment and a founder community. A current standalone Venture Builder cohort and its admissions terms could not be confirmed."
+    },
+    {
+      "rank": 41,
+      "option": "Elemental Impact",
+      "status": "reviewed",
+      "checked_at": "2026-10-26",
+      "original_source": "https://elementalimpact.com/",
+      "sources": [
+        "https://elementalimpact.com/"
+      ],
+      "finding": "Official site describes climate investment, project support and funding opportunities; this is not a general-purpose accelerator."
+    },
+    {
+      "rank": 42,
+      "option": "Greentown Labs",
+      "status": "reviewed",
+      "checked_at": "2026-10-26",
+      "original_source": "https://greentownlabs.com/",
+      "sources": [
+        "https://greentown.org/"
+      ],
+      "finding": "Greentown Labs redirects to greentown.org and describes climate and energy startup facilities, pilots and investor introductions."
+    },
+    {
+      "rank": 43,
+      "option": "Newlab",
+      "status": "reviewed",
+      "checked_at": "2026-10-26",
+      "original_source": "https://newlab.com/",
+      "sources": [
+        "https://newlab.com/"
+      ],
+      "finding": "Official Newlab site describes critical-technology commercialization through infrastructure, industrial projects and capital networks."
+    },
+    {
+      "rank": 44,
+      "option": "Bethnal Green Ventures",
+      "status": "reviewed",
+      "checked_at": "2026-10-26",
+      "original_source": "https://bethnalgreenventures.com/",
+      "sources": [
+        "https://bethnalgreenventures.com/"
+      ],
+      "finding": "Official site describes early-stage tech-for-good investment and asks founders to register for the next program; no new dates inferred."
+    },
+    {
+      "rank": 45,
+      "option": "ESA BIC",
+      "status": "reviewed",
+      "checked_at": "2026-10-26",
+      "original_source": "https://commercialisation.esa.int/bic",
+      "sources": [
+        "https://commercialisation.esa.int/esa-business-incubation-centres/"
+      ],
+      "finding": "Official ESA BIC network page confirms space-related incubation with local centers. Each center publishes its own eligibility, funding conditions and cutoff dates."
+    },
+    {
+      "rank": 46,
+      "option": "28DIGITAL Venture Incubation Program (formerly EIT Digital)",
+      "status": "reviewed",
+      "checked_at": "2026-10-26",
+      "original_source": "https://www.eitdigital.eu/venture-programme",
+      "sources": [
+        "https://28digital.eu/venture-incubation-program"
+      ],
+      "finding": "Current 28DIGITAL program replaces the old EIT Digital link. 2026 applications closed June 9. Teams need at least two members; selected ventures commit 5% equity via SAFE."
+    },
+    {
+      "rank": 47,
+      "option": "NDRC",
+      "status": "reviewed",
+      "checked_at": "2026-10-26",
+      "original_source": "https://ndrc.ie/",
+      "sources": [
+        "https://www.ndrc.ie/accelerator"
+      ],
+      "finding": "Official accelerator page explicitly says applications are now closed, despite general always-on language. Confirm reopening directly."
+    },
+    {
+      "rank": 48,
+      "option": "Techscaler",
+      "status": "reviewed",
+      "checked_at": "2026-10-26",
+      "original_source": "https://www.techscaler.co.uk/",
+      "sources": [
+        "https://www.techscaler.co.uk/"
+      ],
+      "finding": "Official site confirms Scottish Government support delivered by CodeBase, free membership and separate workspace tenancy fees."
+    },
+    {
+      "rank": 49,
+      "option": "Royal Academy of Engineering Enterprise Hub",
+      "status": "reviewed",
+      "checked_at": "2026-10-26",
+      "original_source": "https://enterprisehub.raeng.org.uk/",
+      "sources": [
+        "https://enterprisehub.raeng.org.uk/"
+      ],
+      "finding": "Official Enterprise Hub site lists engineering entrepreneurship programs, community and grants. Eligibility is program-specific."
+    },
+    {
+      "rank": 50,
+      "option": "Lloyd's Lab",
+      "status": "reviewed",
+      "checked_at": "2026-10-26",
+      "original_source": "https://www.lloydslab.com/",
+      "sources": [
+        "https://www.lloyds.com/insights/lloyds-lab/programmes-and-initiatives/lloyds-lab-accelerator"
+      ],
+      "finding": "Official Lloyd’s Lab page lists Cohort 18 applications December 9, 2026–January 17, 2027, Welcome Week April 19 and Demo Day June 23, 2027."
+    },
+    {
+      "rank": 51,
+      "option": "Scottish EDGE",
+      "status": "reviewed",
+      "checked_at": "2026-10-26",
+      "original_source": "https://www.scottishedge.com/",
+      "sources": [
+        "https://www.scottishedge.com/"
+      ],
+      "finding": "Official site lists Scottish business funding competitions with a mix of grants and loans. Award structure depends on the competition."
+    },
+    {
+      "rank": 52,
+      "option": "German Accelerator",
+      "status": "reviewed",
+      "checked_at": "2026-10-26",
+      "original_source": "https://www.germanaccelerator.com/",
+      "sources": [
+        "https://www.germanaccelerator.com/"
+      ],
+      "finding": "Official site describes international expansion support for German startups; market-entry programs have separate eligibility."
+    },
+    {
+      "rank": 53,
+      "option": "BayStartUP",
+      "status": "reviewed",
+      "checked_at": "2026-10-26",
+      "original_source": "https://www.baystartup.de/en/",
+      "sources": [
+        "https://www.baystartup.de/en/"
+      ],
+      "finding": "Official site lists business-plan competitions, workshops, startup financing support and access to an investor network."
+    },
+    {
+      "rank": 54,
+      "option": "Dogpatch Labs",
+      "status": "reviewed",
+      "checked_at": "2026-10-26",
+      "original_source": "https://dogpatchlabs.com/",
+      "sources": [
+        "https://dogpatchlabs.com/"
+      ],
+      "finding": "Official site describes a Dublin startup hub with membership, mentoring and programs. Coworking membership does not guarantee investment."
+    },
+    {
+      "rank": 55,
+      "option": "Startup SG Founder",
+      "status": "reviewed",
+      "checked_at": "2026-10-26",
+      "original_source": "https://www.enterprisesg.gov.sg/grow-your-business/partner-with-singapore/innovation-and-startups/join-startup-sg",
+      "sources": [
+        "https://www.enterprisesg.gov.sg/grow-your-business/partner-with-singapore/innovation-and-startups/join-startup-sg",
+        "https://www.meti.gov.sg/newsroom/written-reply-to-pq-on-reviewing-requirement-in-startup-sg-founder-programme-for-at-least-one-first-time-founder-that-has-no-prior-registered-private-limited-entity/"
+      ],
+      "finding": "Official August 2026 ministry reply requires two applicants, at least one first-time founder, and a Singapore company registered for less than six months at application."
+    },
+    {
+      "rank": 56,
+      "option": "SCORE",
+      "status": "reviewed",
+      "checked_at": "2026-10-26",
+      "original_source": "https://www.score.org/",
+      "sources": [
+        "https://www.score.org/"
+      ],
+      "finding": "Official SCORE site provides business mentoring, startup education and workshops; this is support rather than investment."
+    },
+    {
+      "rank": 57,
+      "option": "SBDC",
+      "status": "reviewed",
+      "checked_at": "2026-10-26",
+      "original_source": "https://www.sba.gov/local-assistance/resource-partners/small-business-development-centers-sbdc",
+      "sources": [
+        "https://www.sba.gov/counseling/local-assistance/resource-partners/"
+      ],
+      "finding": "The old SBDC page redirects to SBA’s resource-partner directory. SBDCs provide business assistance through local centers."
+    },
+    {
+      "rank": 58,
+      "option": "SBIR/STTR",
+      "status": "reviewed",
+      "checked_at": "2026-10-26",
+      "original_source": "https://www.sbir.gov/",
+      "sources": [
+        "https://www.sbir.gov/"
+      ],
+      "finding": "Official SBIR hub lists agency-specific funding topics and solicitations. Availability must be checked with the awarding agency; there is no single universal deadline."
+    },
+    {
+      "rank": 59,
+      "option": "NSF I-Corps",
+      "status": "reviewed",
+      "checked_at": "2026-10-26",
+      "original_source": "https://new.nsf.gov/funding/initiatives/i-corps",
+      "sources": [
+        "https://www.nsf.gov/funding/initiatives/i-corps/about-teams"
+      ],
+      "finding": "National I-Corps is seven-week commercialization training. Official Teams guidance requires three to five members including technical, entrepreneurial and industry-mentor roles."
+    },
+    {
+      "rank": 60,
+      "option": "EIC Accelerator",
+      "status": "reviewed",
+      "checked_at": "2026-10-26",
+      "original_source": "https://eic.ec.europa.eu/eic-funding-opportunities/eic-accelerator_en",
+      "sources": [
+        "https://eic.ec.europa.eu/eic-funding-opportunities/eic-accelerator_en"
+      ],
+      "finding": "Official EIC page describes grants below EUR2.5 million and investments of EUR1–10 million, with eligibility and call-specific requirements."
+    },
+    {
+      "rank": 61,
+      "option": "Kiva",
+      "status": "reviewed",
+      "checked_at": "2026-10-26",
+      "original_source": "https://www.kiva.org/borrow",
+      "sources": [
+        "https://www.kiva.org/borrow"
+      ],
+      "finding": "Official Kiva U.S. page describes community-funded 0% loans, borrower eligibility, fundraising steps and repayment obligations."
+    },
+    {
+      "rank": 62,
+      "option": "Founderpath",
+      "status": "reviewed",
+      "checked_at": "2026-10-26",
+      "original_source": "https://founderpath.com/",
+      "sources": [
+        "https://founderpath.com/"
+      ],
+      "finding": "Official site offers revenue financing, term loans and other capital products. Current software offerings target established revenue, not pre-revenue startups."
+    },
+    {
+      "rank": 63,
+      "option": "Capchase",
+      "status": "reviewed",
+      "checked_at": "2026-10-26",
+      "original_source": "https://www.capchase.com/",
+      "sources": [
+        "https://www.capchase.com/"
+      ],
+      "finding": "Current Capchase site emphasizes vendor financing for B2B software and hardware transactions, with sellers paid upfront while buyers pay over time."
+    },
+    {
+      "rank": 64,
+      "option": "Clearco",
+      "status": "reviewed",
+      "checked_at": "2026-10-26",
+      "original_source": "https://clear.co/",
+      "sources": [
+        "https://clear.co/"
+      ],
+      "finding": "Official site describes non-dilutive ecommerce funding for inventory and growth; eligibility and repayment terms apply."
+    },
+    {
+      "rank": 65,
+      "option": "Lighter Capital",
+      "status": "reviewed",
+      "checked_at": "2026-10-26",
+      "original_source": "https://www.lightercapital.com/",
+      "sources": [
+        "https://www.lightercapital.com/"
+      ],
+      "finding": "Official site describes financing for revenue-generating tech companies without taking equity; repayment and underwriting still apply."
+    },
+    {
+      "rank": 66,
+      "option": "Wayflyer",
+      "status": "reviewed",
+      "checked_at": "2026-10-26",
+      "original_source": "https://wayflyer.com/",
+      "sources": [
+        "https://wayflyer.com/"
+      ],
+      "finding": "Official site describes ecommerce and wholesale business financing based on revenue, business category and country."
+    },
+    {
+      "rank": 67,
+      "option": "Uncapped",
+      "status": "reviewed",
+      "checked_at": "2026-10-26",
+      "original_source": "https://www.weareuncapped.com/",
+      "sources": [
+        "https://www.weareuncapped.com/"
+      ],
+      "finding": "Current official offering focuses on working capital for brands and retailers, including inventory, marketing and purchase orders."
+    },
+    {
+      "rank": 68,
+      "option": "Pipe",
+      "status": "reviewed",
+      "checked_at": "2026-10-26",
+      "original_source": "https://pipe.com/",
+      "sources": [
+        "https://pipe.com/"
+      ],
+      "finding": "Current Pipe site focuses on embedded capital distributed through software platforms, with offers based on transaction data."
+    },
+    {
+      "rank": 69,
+      "option": "Wefunder",
+      "status": "reviewed",
+      "checked_at": "2026-10-26",
+      "original_source": "https://wefunder.com/",
+      "sources": [
+        "https://wefunder.com/raise"
+      ],
+      "finding": "Official raise page describes private rounds and community rounds. Eligibility, disclosures and fees depend on the chosen route."
+    },
+    {
+      "rank": 70,
+      "option": "Republic",
+      "status": "reviewed",
+      "checked_at": "2026-10-26",
+      "original_source": "https://republic.com/raise",
+      "sources": [
+        "https://republic.com/raise"
+      ],
+      "finding": "Official Republic page provides fundraising routes for businesses; an application and eligibility review are required."
+    },
+    {
+      "rank": 71,
+      "option": "StartEngine",
+      "status": "reviewed",
+      "checked_at": "2026-10-26",
+      "original_source": "https://www.startengine.com/",
+      "sources": [
+        "https://www.startengine.com/",
+        "https://isms.startengine.com/help/who-can-raise-capital-on-startengine"
+      ],
+      "finding": "Official StartEngine eligibility guidance confirms a screening process and US-based entity, operations and leadership requirements."
+    },
+    {
+      "rank": 72,
+      "option": "Kickstarter",
+      "status": "reviewed",
+      "checked_at": "2026-10-26",
+      "original_source": "https://www.kickstarter.com/",
+      "sources": [
+        "https://www.kickstarter.com/how-it-works"
+      ],
+      "finding": "Official creator guide confirms reward-based, all-or-nothing crowdfunding. Campaign fees and fulfillment obligations apply."
+    },
+    {
+      "rank": 73,
+      "option": "Indiegogo",
+      "status": "reviewed",
+      "checked_at": "2026-10-26",
+      "original_source": "https://www.indiegogo.com/",
+      "sources": [
+        "https://www.indiegogo.com/"
+      ],
+      "finding": "Official Indiegogo site lists active crowdfunding, late-pledge and pledge-manager campaigns. Product rules should be checked before launching."
+    },
+    {
+      "rank": 74,
+      "option": "Indie Hackers",
+      "status": "reviewed",
+      "checked_at": "2026-10-26",
+      "original_source": "https://www.indiehackers.com/",
+      "sources": [
+        "https://www.indiehackers.com/about"
+      ],
+      "finding": "Official about page describes founder stories and a peer community for independent businesses, including solo and bootstrapped founders."
+    },
+    {
+      "rank": 75,
+      "option": "MicroConf",
+      "status": "reviewed",
+      "checked_at": "2026-10-26",
+      "original_source": "https://microconf.com/",
+      "sources": [
+        "https://microconf.com/"
+      ],
+      "finding": "Official site lists SaaS founder community membership, masterminds and events, not a direct investment program."
+    },
+    {
+      "rank": 76,
+      "option": "Product Hunt",
+      "status": "reviewed",
+      "checked_at": "2026-10-26",
+      "original_source": "https://www.producthunt.com/",
+      "sources": [
+        "https://www.producthunt.com/"
+      ],
+      "finding": "Official site provides product launches, a launch guide and community forums. Visibility and customer acquisition are not guaranteed."
+    },
+    {
+      "rank": 77,
+      "option": "BetaList",
+      "status": "reviewed",
+      "checked_at": "2026-10-26",
+      "original_source": "https://betalist.com/",
+      "sources": [
+        "https://betalist.com/"
+      ],
+      "finding": "Official site provides early-stage startup discovery and a submission route. Listing does not guarantee funding or traction."
+    },
+    {
+      "rank": 78,
+      "option": "F6S",
+      "status": "reviewed",
+      "checked_at": "2026-10-26",
+      "original_source": "https://www.f6s.com/",
+      "sources": [
+        "https://www.f6s.com/"
+      ],
+      "finding": "Official indexed homepage lists accelerator and grant applications, software offers, recruiting and startup community services."
+    },
+    {
+      "rank": 79,
+      "option": "Startup Grind",
+      "status": "reviewed",
+      "checked_at": "2026-10-26",
+      "original_source": "https://www.startupgrind.com/",
+      "sources": [
+        "https://www.startupgrind.com/"
+      ],
+      "finding": "Official site lists founder events, membership and a 2027 conference. Participation is not an investment commitment."
+    },
+    {
+      "rank": 80,
+      "option": "SaaStr AI",
+      "status": "reviewed",
+      "checked_at": "2026-10-26",
+      "original_source": "https://www.saastr.com/",
+      "sources": [
+        "https://www.saastr.com/"
+      ],
+      "finding": "Official site now presents SaaStr AI as a community for B2B and AI software, with content, events and go-to-market resources."
+    },
+    {
+      "rank": 81,
+      "option": "Wellfound",
+      "status": "reviewed",
+      "checked_at": "2026-10-26",
+      "original_source": "https://wellfound.com/",
+      "sources": [
+        "https://wellfound.com/"
+      ],
+      "finding": "Official site presents a startup recruiting platform with job listings, AI sourcing and recruiter services."
+    },
+    {
+      "rank": 82,
+      "option": "Stripe Atlas",
+      "status": "reviewed",
+      "checked_at": "2026-10-26",
+      "original_source": "https://stripe.com/atlas",
+      "sources": [
+        "https://stripe.com/atlas"
+      ],
+      "finding": "Official Stripe Atlas page describes Delaware company formation and startup administration. Formation services are separate from investment."
+    },
+    {
+      "rank": 83,
+      "option": "HubSpot for Startups",
+      "status": "reviewed",
+      "checked_at": "2026-10-26",
+      "original_source": "https://www.hubspot.com/startups",
+      "sources": [
+        "https://www.hubspot.com/startups"
+      ],
+      "finding": "Official startup offer provides qualifying software discounts. The highest discount has funding or partner-affiliation criteria."
+    },
+    {
+      "rank": 84,
+      "option": "Notion for Startups",
+      "status": "reviewed",
+      "checked_at": "2026-10-26",
+      "original_source": "https://www.notion.com/startups",
+      "sources": [
+        "https://www.notion.com/startups"
+      ],
+      "finding": "Official offer advertises up to six months of the Business plan with Notion AI; eligibility and offer conditions apply."
+    },
+    {
+      "rank": 85,
+      "option": "GitHub for Startups",
+      "status": "reviewed",
+      "checked_at": "2026-10-26",
+      "original_source": "https://github.com/enterprise/startups",
+      "sources": [
+        "https://github.com/enterprise/startups"
+      ],
+      "finding": "Official GitHub for Startups page describes startup access to its developer platform; benefits depend on program eligibility."
+    },
+    {
+      "rank": 86,
+      "option": "Carta Launch",
+      "status": "reviewed",
+      "checked_at": "2026-10-26",
+      "original_source": "https://carta.com/launch/",
+      "sources": [
+        "https://carta.com/equity-management/launch/"
+      ],
+      "finding": "Carta Launch moved to /equity-management/launch/ and provides early-stage equity and cap-table tools; it is not a fundraising program."
+    },
+    {
+      "rank": 87,
+      "option": "Brex for Startups",
+      "status": "reviewed",
+      "checked_at": "2026-10-26",
+      "original_source": "https://www.brex.com/solutions/startups",
+      "sources": [
+        "https://www.brex.com/solutions/startups"
+      ],
+      "finding": "Official Brex page describes business accounts, cards and spend-management services, subject to eligibility and product terms."
+    },
+    {
+      "rank": 88,
+      "option": "Microsoft for Startups",
+      "status": "reviewed",
+      "checked_at": "2026-10-26",
+      "original_source": "https://www.microsoft.com/en/startups",
+      "sources": [
+        "https://www.microsoft.com/en/startups"
+      ],
+      "finding": "Current official branding is Microsoft for Startups. It advertises tools, customer-network support and up to USD150,000 in credits subject to eligibility."
+    },
+    {
+      "rank": 89,
+      "option": "AWS Activate",
+      "status": "reviewed",
+      "checked_at": "2026-10-26",
+      "original_source": "https://aws.amazon.com/startups/credits",
+      "sources": [
+        "https://aws.amazon.com/startups/credits"
+      ],
+      "finding": "Official AWS page distinguishes self-funded Founders credits from Portfolio credits up to USD200,000 requiring a provider Org ID. The maximum is not automatic."
+    },
+    {
+      "rank": 90,
+      "option": "Google for Startups Cloud Program",
+      "status": "reviewed",
+      "checked_at": "2026-10-26",
+      "original_source": "https://cloud.google.com/startup",
+      "sources": [
+        "https://cloud.google.com/startup"
+      ],
+      "finding": "Official Google for Startups Cloud Program advertises up to USD350,000 credits over two years with tier-specific conditions."
+    },
+    {
+      "rank": 91,
+      "option": "NVIDIA Inception",
+      "status": "reviewed",
+      "checked_at": "2026-10-26",
+      "original_source": "https://www.nvidia.com/en-us/startups/",
+      "sources": [
+        "https://www.nvidia.com/en-us/startups/"
+      ],
+      "finding": "Official NVIDIA page describes Inception as a free AI-startup support program, with technical and ecosystem benefits."
+    },
+    {
+      "rank": 92,
+      "option": "Mozilla Builders",
+      "status": "reviewed",
+      "checked_at": "2026-10-26",
+      "original_source": "https://builders.mozilla.org/",
+      "sources": [
+        "https://builders.mozilla.org/"
+      ],
+      "finding": "Official Mozilla Builders site describes open-source AI collaboration, programming and community. No new accelerator application window was confirmed."
+    },
+    {
+      "rank": 93,
+      "option": "AI Grant",
+      "status": "reviewed",
+      "checked_at": "2026-10-26",
+      "original_source": "https://aigrant.com/",
+      "sources": [
+        "https://aigrant.com/"
+      ],
+      "finding": "Official AI Grant accelerator page states Batch 4 applications are closed. Its USD250,000 offer is an uncapped SAFE; the open-source grants program is separate."
+    },
+    {
+      "rank": 94,
+      "option": "Hexa Start",
+      "status": "reviewed",
+      "checked_at": "2026-10-26",
+      "original_source": "https://www.hexa.com/start",
+      "sources": [
+        "https://www.hexa.com/start"
+      ],
+      "finding": "Official Hexa Start page describes company building, idea and cofounder matching, and a 25% ownership arrangement."
+    },
+    {
+      "rank": 95,
+      "option": "High Alpha Studio",
+      "status": "reviewed",
+      "checked_at": "2026-10-26",
+      "original_source": "https://www.highalpha.com/studio",
+      "sources": [
+        "https://www.highalpha.com/studio"
+      ],
+      "finding": "Official studio page describes joint company creation, product and brand work, recruiting and fundraising support."
+    },
+    {
+      "rank": 96,
+      "option": "Expa Studio",
+      "status": "reviewed",
+      "checked_at": "2026-10-26",
+      "original_source": "https://www.expa.com/studio/",
+      "sources": [
+        "https://www.expa.com/studio/"
+      ],
+      "finding": "Official Expa studio page describes company building with design, operational support and capital."
+    },
+    {
+      "rank": 97,
+      "option": "Atomic",
+      "status": "reviewed",
+      "checked_at": "2026-10-26",
+      "original_source": "https://www.atomic.vc/",
+      "sources": [
+        "https://www.atomic.vc/"
+      ],
+      "finding": "Official Atomic site describes partnering with cofounders using its ideas, operating team and capital."
+    },
+    {
+      "rank": 98,
+      "option": "Pioneer Square Labs",
+      "status": "reviewed",
+      "checked_at": "2026-10-26",
+      "original_source": "https://www.psl.com/studio",
+      "sources": [
+        "https://www.psl.com/studio"
+      ],
+      "finding": "Official PSL studio page describes building companies with Pacific Northwest entrepreneurs and providing product, recruiting and fundraising support."
+    },
+    {
+      "rank": 99,
+      "option": "Science Inc.",
+      "status": "needs_review",
+      "checked_at": "2026-10-26",
+      "original_source": "https://www.science-inc.com/studio.html",
+      "sources": [
+        "https://www.science-inc.com/",
+        "https://science-inc.com/home.html",
+        "https://science-inc.com/portfolio.html"
+      ],
+      "finding": "The previous studio URL returned an empty response and indexed 404. Official indexed portfolio/history confirms studio activity, but current founder intake and terms need review."
+    },
+    {
+      "rank": 100,
+      "option": "Oracle Cloud for Startups",
+      "status": "reviewed",
+      "checked_at": "2026-10-26",
+      "original_source": "https://www.oracle.com/uk/cloud/oracle-for-startups/",
+      "sources": [
+        "https://www.oracle.com/uk/cloud/oracle-for-startups/"
+      ],
+      "finding": "Current Oracle page promotes OCI Free Tier and developer resources. It does not substantiate the older dedicated startup-credit or investor-introduction promises."
+    }
+  ]
+}

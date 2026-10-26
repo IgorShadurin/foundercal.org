@@ -1,0 +1,27 @@
+{
+  "accelerator": {
+    "name": "NEXT Founders",
+    "website": "https://www.nextcanada.com/programs-overview/",
+    "csv_file": "public/events-archive.json",
+    "slug": "next-founders"
+  },
+  "status": "needs_review",
+  "checked_at": "2026-10-26",
+  "confidence": "high",
+  "summary": "NEXT Canada’s official overview identifies NEXT Founders as an education and network program for seed/growth-stage founders and says its 2026 applications are closed.",
+  "proposed_event": null,
+  "sources": [
+    {
+      "title": "NEXT Canada program overview",
+      "url": "https://www.nextcanada.com/programs-overview/",
+      "publisher": "NEXT Canada",
+      "accessed_at": "2026-10-26",
+      "supports": "NEXT Founders scope and explicit 2026 application closure."
+    }
+  ],
+  "notes": [
+    "No next NEXT Founders intake date is published in the checked overview.",
+    "NEXT 36 and NEXT AI are distinct programs; their dates must not be assigned to NEXT Founders.",
+    "The direct NEXT Founders page timed out, but the official overview supplied current status."
+  ]
+}

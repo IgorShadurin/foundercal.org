@@ -1,0 +1,81 @@
+{
+  "accelerator": {
+    "name": "Google for Startups Cloud Program",
+    "website": "https://cloud.google.com/startup",
+    "csv_file": "public/events-archive.json",
+    "slug": "google-startups-cloud"
+  },
+  "status": "verified",
+  "checked_at": "2026-10-26",
+  "confidence": "high",
+  "summary": "Google offers eligible startups cloud credits and technical support, including up to $350,000 for qualifying AI startups. Benefits depend on eligibility; no fixed application deadline is published.",
+  "proposed_event": {
+    "id": "google-startups-cloud",
+    "name": "Google for Startups Cloud Program",
+    "description": "Google offers eligible startups cloud credits and technical support, including up to $350,000 for qualifying AI startups. Benefits depend on eligibility; no fixed application deadline is published.",
+    "organizer": "Google for Startups Cloud Program",
+    "website": "https://cloud.google.com/startup",
+    "location": {
+      "is_virtual": false,
+      "is_hybrid": false,
+      "venue": null,
+      "city": null,
+      "city_slug": null,
+      "country": null,
+      "country_code": null,
+      "region_code": null
+    },
+    "dates": {
+      "application_open": null,
+      "application_close": null,
+      "program_start": null,
+      "program_end": null,
+      "demo_day": null,
+      "timezone": null,
+      "date_range_text": "Google offers eligible startups cloud credits and technical support, including up to $350,000 for qualifying AI startups. Benefits depend on eligibility; no fixed application deadline is published."
+    },
+    "categories": {
+      "types": [
+        "program"
+      ],
+      "supports": [
+        "compute",
+        "credits",
+        "resources",
+        "mentorship"
+      ],
+      "sectors": [
+        "general",
+        "ai"
+      ]
+    },
+    "hashtags": [
+      "#global",
+      "#cloud",
+      "#compute",
+      "#resources"
+    ],
+    "index": {
+      "years": [],
+      "region_code": null,
+      "country_code": null,
+      "city_slug": null,
+      "type_keys": [],
+      "support_keys": [],
+      "sector_keys": [],
+      "date_sort_key": null
+    },
+    "verification": "reported",
+    "last_verified_utc": null
+  },
+  "sources": [
+    {
+      "title": "Google for Startups Cloud Program \u2014 official program information",
+      "url": "https://cloud.google.com/startup",
+      "publisher": null,
+      "accessed_at": "2026-10-26",
+      "supports": "Google offers eligible startups cloud credits and technical support, including up to $350,000 for qualifying AI startups. Benefits depend on eligibility; no fixed application deadline is published."
+    }
+  ],
+  "notes": []
+}

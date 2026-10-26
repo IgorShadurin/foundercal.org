@@ -1,1 +1,82 @@
-{"accelerator":{"name":"Antler Residency","website":"https://www.antler.co/location/us","csv_file":"src/data/imported-accelerators.json","slug":"antler-residency"},"status":"needs_review","checked_at":"2026-06-09","confidence":"low","summary":"Could not verify a currently dated U.S. Antler Residency application window from public pages. Official Antler pages confirm the residency model and U.S. location page/application URL, but public cohort dates or deadlines were not available in the gathered evidence.","proposed_event":null,"sources":[{"title":"Antler United States","url":"https://www.antler.co/location/us","publisher":"Antler","accessed_at":"2026-06-09","supports":"Official Antler U.S. location page for the accelerator/residency entry point."},{"title":"Apply to Antler","url":"https://www.antler.co/apply-new","publisher":"Antler","accessed_at":"2026-06-09","supports":"Official Antler application URL; useful for confirming where founders apply, but no verified current deadline or cohort dates were available from the page evidence."}],"notes":["No current public application close date, program start date, program end date, demo day, or stated timezone was verified.","Because current public cadence/dates were not verified, proposed_event is null rather than fabricating a stale or undated listing.","If later official pages expose a named 2026 U.S. residency cohort, create a dated event id such as antler-us-residency-2026 and include verified application/program dates."]}
+{
+  "accelerator": {
+    "name": "Antler Residency",
+    "website": "https://www.antler.co/location/us",
+    "csv_file": "src/data/imported-accelerators.json",
+    "slug": "antler-residency"
+  },
+  "status": "verified",
+  "checked_at": "2026-10-26",
+  "confidence": "high",
+  "summary": "Antler US confirms year-round review; investment follows its committee process.",
+  "proposed_event": {
+    "id": "antler-us-residency",
+    "name": "Antler US Residency",
+    "description": "In-person founder residency with an opportunity for $500K–$1M initial investment.",
+    "organizer": "Antler",
+    "website": "https://www.antler.co/location/us",
+    "location": {
+      "is_virtual": false,
+      "is_hybrid": false,
+      "venue": null,
+      "city": null,
+      "city_slug": null,
+      "country": "United States",
+      "country_code": "US",
+      "region_code": "na"
+    },
+    "dates": {
+      "application_open": null,
+      "application_close": null,
+      "program_start": null,
+      "program_end": null,
+      "demo_day": null,
+      "timezone": null,
+      "date_range_text": "Year-round application review and monthly invitations; residency lasts up to three months. Locations: San Francisco, New York and Austin."
+    },
+    "categories": {
+      "types": [
+        "accelerator"
+      ],
+      "supports": [
+        "funding",
+        "mentorship",
+        "resources"
+      ],
+      "sectors": [
+        "general"
+      ]
+    },
+    "hashtags": [],
+    "index": {
+      "years": [],
+      "region_code": "na",
+      "country_code": "US",
+      "city_slug": null,
+      "type_keys": [
+        "accelerator"
+      ],
+      "support_keys": [
+        "funding",
+        "mentorship",
+        "resources"
+      ],
+      "sector_keys": [
+        "general"
+      ],
+      "date_sort_key": null
+    },
+    "verification": "reported",
+    "last_verified_utc": "2026-10-26T19:49:07Z"
+  },
+  "sources": [
+    {
+      "title": "Antler US",
+      "url": "https://www.antler.co/location/us",
+      "publisher": "Antler",
+      "accessed_at": "2026-10-26",
+      "supports": "Monthly intake, up-to-three-month residency and typical investment range."
+    }
+  ],
+  "notes": []
+}

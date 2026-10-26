@@ -1,0 +1,78 @@
+{
+  "accelerator": {
+    "name": "CodeLaunch 2027 Applications",
+    "website": "https://codelaunch.com/",
+    "csv_file": "public/events-archive.json",
+    "slug": "codelaunch"
+  },
+  "status": "verified",
+  "checked_at": "2026-10-26",
+  "confidence": "high",
+  "summary": "Applications for the 2027 Canada, LATAM and USA tour open January 5, 2027. Applying is free; no closing date is stated.",
+  "proposed_event": {
+    "id": "codelaunch",
+    "name": "CodeLaunch 2027 Applications",
+    "description": "Applications for the 2027 Canada, LATAM and USA tour open January 5, 2027. Applying is free; no closing date is stated.",
+    "organizer": "CodeLaunch",
+    "website": "https://codelaunch.com/",
+    "location": {
+      "is_virtual": false,
+      "is_hybrid": false,
+      "venue": null,
+      "city": null,
+      "city_slug": null,
+      "country": null,
+      "country_code": null,
+      "region_code": null
+    },
+    "dates": {
+      "application_open": "2027-01-05",
+      "application_close": null,
+      "program_start": null,
+      "program_end": null,
+      "demo_day": null,
+      "timezone": null,
+      "date_range_text": "Applications for the 2027 Canada, LATAM and USA tour open January 5, 2027. Applying is free; no closing date is stated."
+    },
+    "categories": {
+      "types": [
+        "competition"
+      ],
+      "supports": [
+        "resources",
+        "mentorship"
+      ],
+      "sectors": [
+        "general"
+      ]
+    },
+    "hashtags": [
+      "#usa",
+      "#dallas",
+      "#general",
+      "#resources"
+    ],
+    "index": {
+      "years": [],
+      "region_code": null,
+      "country_code": null,
+      "city_slug": null,
+      "type_keys": [],
+      "support_keys": [],
+      "sector_keys": [],
+      "date_sort_key": null
+    },
+    "verification": "reported",
+    "last_verified_utc": null
+  },
+  "sources": [
+    {
+      "title": "CodeLaunch 2027 Applications \u2014 official program information",
+      "url": "https://codelaunch.com/",
+      "publisher": null,
+      "accessed_at": "2026-10-26",
+      "supports": "Applications for the 2027 Canada, LATAM and USA tour open January 5, 2027. Applying is free; no closing date is stated."
+    }
+  ],
+  "notes": []
+}

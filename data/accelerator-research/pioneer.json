@@ -1,1 +1,23 @@
-{"accelerator":{"name":"Pioneer","website":"https://www.pioneer.app/","csv_file":"data/accelerators-master.csv","slug":"pioneer"},"status":"inactive","checked_at":"2026-06-09","confidence":"high","summary":"Pioneer’s official site says it is no longer accepting applications and no longer making new investments. Treat as inactive; keep any legacy record historical only.","proposed_event":null,"sources":[{"title":"Pioneer","url":"https://www.pioneer.app/","publisher":"Pioneer","accessed_at":"2026-06-09","supports":"Official homepage states Pioneer is no longer accepting applications, the community is open to alumni only, and it is no longer making new investments."}],"notes":["No current public application window, cohort cadence, or future program dates were found on the official site.","Because the official page says applications are no longer accepted, no current proposed_event is provided."]}
+{
+  "accelerator": {
+    "name": "Pioneer",
+    "website": "https://pioneer.app/",
+    "csv_file": "data/accelerators-master.csv",
+    "slug": "pioneer"
+  },
+  "status": "inactive",
+  "checked_at": "2026-10-26",
+  "confidence": "high",
+  "summary": "Pioneer’s official site explicitly says it stopped making new investments in 2024. Preserve it for historical reference, not as an open accelerator opportunity.",
+  "proposed_event": null,
+  "sources": [
+    {
+      "url": "https://pioneer.app/",
+      "title": "Pioneer",
+      "supports": "Explicit notice that new investments stopped in 2024.",
+      "publisher": "Pioneer",
+      "accessed_at": "2026-10-26"
+    }
+  ],
+  "notes": []
+}

@@ -1,1 +1,25 @@
-{"accelerator":{"name":"Seed Club","website":"https://www.seedclub.xyz/","csv_file":"data/accelerators-crypto.csv","slug":"seed-club"},"status":"verified","checked_at":"2026-06-09","confidence":"medium","summary":"Seed Club’s official accelerator page is live and links to an SC07 application, but exact current application and cohort dates are not publicly exposed in crawlable official sources.","proposed_event":{"id":"seed-club-sc07","name":"Seed Club SC07 Consumer Crypto Accelerator","description":"3-month consumer crypto accelerator with mentorship, demo day, and up to $200k in negotiated funding.","organizer":"Seed Club","website":"https://www.seedclub.xyz/getfunded/accelerator","location":{"is_virtual":true,"is_hybrid":false,"venue":null,"city":null,"city_slug":null,"country":null,"country_code":null,"region_code":"global"},"dates":{"application_open":null,"application_close":null,"program_start":null,"program_end":null,"demo_day":null,"timezone":null,"date_range_text":"Official site links to an SC07 application and describes a 3-month accelerator; exact application deadline and cohort dates were not published in accessible official pages."},"categories":{"types":["accelerator"],"supports":["funding","mentorship","resources"],"sectors":["web3","consumer"]},"hashtags":["#SeedClub","#SC07","#Web3","#ConsumerCrypto"],"index":{"years":[],"region_code":"global","country_code":null,"city_slug":null,"type_keys":["accelerator"],"support_keys":["funding","mentorship","resources"],"sector_keys":["web3","consumer"],"date_sort_key":null},"verification":"reported","last_verified_utc":null},"sources":[{"title":"The Consumer Crypto Accelerator","url":"https://www.seedclub.xyz/getfunded/accelerator","publisher":"Seed Club","accessed_at":"2026-06-09","supports":"Official page states the accelerator is a 3-month program for consumer crypto founders, has run 6 cohorts since 2020, offers weekly office hours, demo day, and up to $200k in funding at negotiated terms; it links to an SC07 application."},{"title":"Seed Club's SC07: Consumer Crypto","url":"https://paragraph.com/@seedclubhq/sc07-consumer-crypto","publisher":"Seed Club","accessed_at":"2026-06-09","supports":"Official Seed Club post announces SC07: Consumer Crypto, says 300 applications and 50+ interviews were reviewed, names eight selected companies, and says Seed Club will work with them over the next 3 months."},{"title":"SC07 Application","url":"https://bqn1wsn9b3z.typeform.com/SC07application","publisher":"Typeform / Seed Club","accessed_at":"2026-06-09","supports":"Application page exists for SC07, but the crawlable page content did not expose deadline or cohort schedule details."}],"notes":["No exact application deadline, program start, program end, timezone, or demo day date was available in accessible official content.","Location is set as virtual/global because the official page describes founder collaboration, weekly office hours, and network support but does not state a physical venue or city.","Funding is included because the official accelerator page says accepted teams receive up to $200k at negotiated terms."]}
+{
+  "accelerator": {
+    "name": "Seed Club",
+    "website": "https://www.seedclub.xyz/",
+    "csv_file": "data/accelerators-crypto.csv",
+    "slug": "seed-club"
+  },
+  "status": "needs_review",
+  "checked_at": "2026-10-26",
+  "confidence": "medium",
+  "summary": "Seed Club’s SC07 application material is historical: its own February 2024 newsletter states the February 16 application deadline. Current accelerator pages timed out, and no new cohort intake could be confirmed.",
+  "proposed_event": null,
+  "sources": [
+    {
+      "url": "https://paragraph.com/@seedclubhq/seedclub-network-news-feb-6-2024",
+      "title": "Seed Club network news — February 6, 2024",
+      "supports": "Dates SC07 applications to February 2024, not the current cycle.",
+      "publisher": "Seed Club",
+      "accessed_at": "2026-10-26"
+    }
+  ],
+  "notes": [
+    "The homepage and /getfunded/accelerator timed out on this review. Do not recycle SC07 as a currently open program."
+  ]
+}

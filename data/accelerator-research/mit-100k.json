@@ -1,0 +1,23 @@
+{
+  "accelerator": {
+    "name": "MIT $100K",
+    "website": "https://www.mit100k.org/",
+    "csv_file": "public/events-archive.json",
+    "slug": "mit-100k"
+  },
+  "status": "needs_review",
+  "checked_at": "2026-10-26",
+  "confidence": "low",
+  "summary": "The official site lists Pitch, Accelerate and Launch competitions. A current Launch deadline was not confirmed; the old dated record is archived.",
+  "proposed_event": null,
+  "sources": [
+    {
+      "title": "MIT $100K \u2014 official program information",
+      "url": "https://www.mit100k.org/",
+      "publisher": null,
+      "accessed_at": "2026-10-26",
+      "supports": "The official site lists Pitch, Accelerate and Launch competitions. A current Launch deadline was not confirmed; the old dated record is archived."
+    }
+  ],
+  "notes": []
+}

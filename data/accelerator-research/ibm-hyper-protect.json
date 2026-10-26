@@ -1,0 +1,26 @@
+{
+  "accelerator": {
+    "name": "IBM Hyper Protect Accelerator",
+    "website": "https://vilcap.com/current-programs/ibm-hyper-protect-accelerator",
+    "csv_file": "public/events-archive.json",
+    "slug": "ibm-hyper-protect"
+  },
+  "status": "needs_review",
+  "checked_at": "2026-10-26",
+  "confidence": "medium",
+  "summary": "Village Capital still hosts IBM Hyper Protect Accelerator information, but the page identifies its program as 2022 and mixes closed Cohort 5 with year-round Friends of Hyper Protect copy.",
+  "proposed_event": null,
+  "sources": [
+    {
+      "title": "IBM Hyper Protect Accelerator — delivery partner",
+      "url": "https://vilcap.com/current-programs/ibm-hyper-protect-accelerator",
+      "publisher": "Village Capital",
+      "accessed_at": "2026-10-26",
+      "supports": "Historical program scope, Cohort 5 closure and Friends of Hyper Protect wording on a page labeled 2022."
+    }
+  ],
+  "notes": [
+    "No 2026 cohort or current application period was confirmed. Do not renew old dates or assume the undated Friends offer is still accepting applications.",
+    "Historical benefits included investment readiness, technical mentorship and up to $120K IBM Cloud credits; these are not reverified as current offers."
+  ]
+}

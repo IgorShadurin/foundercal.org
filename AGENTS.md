@@ -83,7 +83,7 @@ This document is a reminder for “future us” on how to research accelerator p
 - Prefer authoritative sources (official site, recent blog posts, TechCrunch coverage if needed). Use `r.jina.ai` when JS-heavy pages block `curl`.
 - Note program cadence precisely (weeks on-site, remote phases, demo day) so cards render accurately.
 - When taxonomies lack a perfect sector tag, choose the closest existing one (e.g., `web3` for on-chain accelerators).
-- Always set `last_verified_utc` using `datetime.utcnow()`.
+- Only set `last_verified_utc` for verified findings. Preserve the evidence check date; never stamp old research with the merge date. Use `last_checked_utc` for uncertain review attempts.
 - Maintain alphabetical consistency when adding to JSON; the script above appends to the list, so ordering is not critical but stay consistent if manual edits are needed.
 
 ## 6. Refresh Favicon Library
@@ -110,8 +110,17 @@ Following these steps keeps the event catalog accurate and ensures we don’t re
    ```bash
    npm run accelerator-agents -- research --model gpt-5 --reasoning high --runner codex
    ```
-4. The merge stage validates worker JSON, drops taxonomy values that are not in `public/events.json`, recomputes hashtags and index fields, upserts mergeable events into `public/events.json`, and marks every valid worker finding as checked in the matching CSV with today’s UTC date. A valid `needs_review` finding can intentionally have `proposed_event: null` when current dates are not public.
+4. The merge stage validates worker JSON, drops taxonomy values that are not in `public/events.json`, recomputes hashtags and index fields, upserts mergeable events into `public/events.json`, and marks every valid worker finding as checked in the matching CSV with its actual `checked_at` date. Explicit stable slugs preserve rebranded rows. Older findings cannot overwrite newer evidence. A valid `needs_review` finding can intentionally have `proposed_event: null` when current dates are not public.
 5. Use a dry run before a large batch:
    ```bash
    npm run accelerator-agents -- run --include-checked --parallel 4 --dry-run
    ```
+
+## 8. Keep public surfaces consistent
+
+- After merging, run `npm run sync:profiles` to update company profiles and both CSVs from the same research.
+- Preserve explicit `slug` values across name changes. Add aliases to `data/research-aliases.json` when two tracker entries refer to the same program.
+- Run `npm run validate:data`, `npm run test:data`, `npm run lint`, and `npm run build` before pushing.
+- The 131 legacy events in `public/events-archive.json` are historical, not current evidence. Do not merge them back into the live calendar.
+- A working homepage or an application button is not evidence of an open cohort. Mark closed, unclear, blocked or repurposed sources explicitly. Never extrapolate precise dates from month-only schedules.
+- Edit the research first. Deadline and comparison pages consume research directly; do not add independent hardcoded funding claims or derived averages.

@@ -1,0 +1,78 @@
+{
+  "accelerator": {
+    "name": "Slush 100 2026",
+    "website": "https://slush.org/audience/startups/slush100",
+    "csv_file": "public/events-archive.json",
+    "slug": "slush-100"
+  },
+  "status": "verified",
+  "checked_at": "2026-10-26",
+  "confidence": "high",
+  "summary": "Slush 100 applications closed September 7, 2026. The 2026 winner receives a EUR500,000 equity-free prize; this is not an open application call.",
+  "proposed_event": {
+    "id": "slush-100",
+    "name": "Slush 100 2026",
+    "description": "Slush 100 applications closed September 7, 2026. The 2026 winner receives a EUR500,000 equity-free prize; this is not an open application call.",
+    "organizer": "Slush 100",
+    "website": "https://slush.org/audience/startups/slush100",
+    "location": {
+      "is_virtual": false,
+      "is_hybrid": false,
+      "venue": null,
+      "city": null,
+      "city_slug": null,
+      "country": null,
+      "country_code": null,
+      "region_code": null
+    },
+    "dates": {
+      "application_open": null,
+      "application_close": "2026-09-07",
+      "program_start": null,
+      "program_end": null,
+      "demo_day": null,
+      "timezone": null,
+      "date_range_text": "Slush 100 applications closed September 7, 2026. The 2026 winner receives a EUR500,000 equity-free prize; this is not an open application call."
+    },
+    "categories": {
+      "types": [
+        "competition"
+      ],
+      "supports": [
+        "funding",
+        "resources"
+      ],
+      "sectors": [
+        "general"
+      ]
+    },
+    "hashtags": [
+      "#finland",
+      "#helsinki",
+      "#general",
+      "#funding"
+    ],
+    "index": {
+      "years": [],
+      "region_code": null,
+      "country_code": null,
+      "city_slug": null,
+      "type_keys": [],
+      "support_keys": [],
+      "sector_keys": [],
+      "date_sort_key": null
+    },
+    "verification": "reported",
+    "last_verified_utc": null
+  },
+  "sources": [
+    {
+      "title": "Slush 100 2026 \u2014 official program information",
+      "url": "https://slush.org/audience/startups/slush100",
+      "publisher": null,
+      "accessed_at": "2026-10-26",
+      "supports": "Slush 100 applications closed September 7, 2026. The 2026 winner receives a EUR500,000 equity-free prize; this is not an open application call."
+    }
+  ],
+  "notes": []
+}

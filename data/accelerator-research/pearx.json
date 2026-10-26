@@ -1,1 +1,84 @@
-{"accelerator":{"name":"PearX","website":"https://pear.vc/pearx/","csv_file":"src/data/imported-accelerators.json","slug":"pearx"},"status":"verified","checked_at":"2026-06-09","confidence":"high","summary":"Official Pear VC pages show PearX S26 applications are active on a rolling basis after the April 12 regular deadline, with the cohort kicking off in July 2026. Exact start, end, and demo day dates are not published.","proposed_event":{"id":"pearx-s26","name":"PearX S26","description":"12-week in-person pre-seed accelerator from Pear VC with investment, mentorship, credits, and Demo Day.","organizer":"Pear VC","website":"https://pear.vc/pearx-application/","location":{"is_virtual":false,"is_hybrid":false,"venue":null,"city":null,"city_slug":null,"country":"United States","country_code":"US","region_code":"na"},"dates":{"application_open":null,"application_close":null,"program_start":null,"program_end":null,"demo_day":null,"timezone":null,"date_range_text":"S26 regular application deadline was April 12; applications submitted after are reviewed on a rolling basis. Cohort kicks off July 2026 and runs 12 weeks."},"categories":{"types":["accelerator"],"supports":["funding","mentorship","credits","resources"],"sectors":["general"]},"hashtags":["#usa","#general","#funding","#mentorship"],"index":{"years":["2026"],"region_code":"na","country_code":"US","city_slug":null,"type_keys":["accelerator"],"support_keys":["funding","mentorship","credits","resources"],"sector_keys":["general"],"date_sort_key":null},"verification":"reported","last_verified_utc":null},"sources":[{"title":"PearX Application - Pear VC","url":"https://pear.vc/pearx-application/","publisher":"Pear VC","accessed_at":"2026-06-09","supports":"Official application page states PearX S26 applications, regular deadline April 12, post-deadline rolling review; page metadata states applications are open and the program kicks off July 2026."},{"title":"PearX - Pear VC","url":"https://pear.vc/pearx/","publisher":"Pear VC","accessed_at":"2026-06-09","supports":"Official program page states PearX is a 12-week pre-seed accelerator, invests $250K-$2M, offers mentorship, cloud/provider credits, Demo Day, annual Summer/Winter cadence, and requires companies to relocate to the SF Bay Area for the program."}],"notes":["Exact S26 program start date, program end date, and Demo Day date were not published on the official pages reviewed.","The application page gives April 12 without an explicit year in visible body text; because the page is titled S26 and official metadata says the cohort kicks off July 2026, this record treats it as the S26 regular deadline but leaves application_close null because rolling review remains available."]}
+{
+  "accelerator": {
+    "name": "PearX",
+    "website": "https://pear.vc/pearx/",
+    "csv_file": "src/data/imported-accelerators.json",
+    "slug": "pearx"
+  },
+  "status": "verified",
+  "checked_at": "2026-10-26",
+  "confidence": "high",
+  "summary": "PearX accepts applications year-round for a 12-week in-person Bay Area program. Investments range from $500K to $2M, targeting 7% ownership. Winter cohorts run January–April and summer cohorts July–October; no exact next dates are published.",
+  "proposed_event": {
+    "id": "pearx-rolling",
+    "name": "PearX — Year-round Applications",
+    "description": "12-week pre-seed accelerator in the SF Bay Area; $500K–$2M investment, targeting 7% ownership. Solo founders welcome.",
+    "organizer": "Pear VC",
+    "website": "https://pear.vc/pearx/",
+    "location": {
+      "is_virtual": false,
+      "is_hybrid": false,
+      "venue": null,
+      "city": "San Francisco Bay Area",
+      "city_slug": "san-francisco-bay-area",
+      "country": "United States",
+      "country_code": "US",
+      "region_code": "na"
+    },
+    "dates": {
+      "application_open": null,
+      "application_close": null,
+      "program_start": null,
+      "program_end": null,
+      "demo_day": null,
+      "timezone": null,
+      "date_range_text": "Applications reviewed year-round. Two cohorts: January–April and July–October. Exact next cohort dates and deadlines are not published."
+    },
+    "categories": {
+      "types": [
+        "accelerator"
+      ],
+      "supports": [
+        "funding",
+        "mentorship",
+        "credits",
+        "resources"
+      ],
+      "sectors": [
+        "general"
+      ]
+    },
+    "hashtags": [],
+    "index": {
+      "years": [],
+      "region_code": "na",
+      "country_code": "US",
+      "city_slug": "san-francisco-bay-area",
+      "type_keys": [
+        "accelerator"
+      ],
+      "support_keys": [
+        "funding",
+        "mentorship",
+        "credits",
+        "resources"
+      ],
+      "sector_keys": [
+        "general"
+      ],
+      "date_sort_key": null
+    },
+    "verification": "reported",
+    "last_verified_utc": "2026-10-26T19:50:16Z"
+  },
+  "sources": [
+    {
+      "url": "https://pear.vc/pearx/",
+      "title": "PearX",
+      "supports": "Year-round applications, investment range/target ownership, solo founder eligibility, Bay Area relocation and cohort months.",
+      "publisher": "Pear VC",
+      "accessed_at": "2026-10-26"
+    }
+  ],
+  "notes": []
+}

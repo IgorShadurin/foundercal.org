@@ -1,1 +1,90 @@
-{"accelerator":{"name":"Village Global Velocity","website":"https://www.villageglobal.vc/velocity","csv_file":"src/data/imported-accelerators.json","slug":"village-global-velocity"},"status":"verified","checked_at":"2026-06-09","confidence":"high","summary":"Official Village Global pages describe Velocity as an active rolling program for pre-seed founders, with capital, network access, compute perks, and global participation. No fixed cohort dates or deadlines are published.","proposed_event":{"id":"village-global-velocity","name":"Village Global Velocity","description":"Rolling pre-seed program with capital, peer cohort, network access, and AI compute perks for founders worldwide.","organizer":"Village Global","website":"https://www.villageglobal.com/velocity","location":{"is_virtual":true,"is_hybrid":false,"venue":null,"city":null,"city_slug":null,"country":null,"country_code":null,"region_code":"global"},"dates":{"application_open":null,"application_close":null,"program_start":null,"program_end":null,"demo_day":null,"timezone":null,"date_range_text":"Applications are accepted on a rolling basis; founders can join from anywhere in the world."},"categories":{"types":["accelerator","program"],"supports":["funding","compute","mentorship","credits","resources"],"sectors":["general","ai"]},"hashtags":["#Accelerator","#Program","#Funding","#Compute","#Mentorship","#Credits","#Resources","#General","#AI","#Global"],"index":{"years":["rolling"],"region_code":"global","country_code":null,"city_slug":null,"type_keys":["accelerator","program"],"support_keys":["funding","compute","mentorship","credits","resources"],"sector_keys":["general","ai"],"date_sort_key":null},"verification":"reported","last_verified_utc":null},"sources":[{"title":"Village Global Velocity","url":"https://www.villageglobal.com/velocity","publisher":"Village Global","accessed_at":"2026-06-09","supports":"Official page states Velocity is a bespoke pre-seed founder program, applications are accepted on a rolling basis, Village invests up to $1M, founders can join from anywhere, and AI founders receive Microsoft, OpenAI, and Anthropic perks."},{"title":"Village Global Velocity Application","url":"https://www.villageglobal.com/velocity/apply","publisher":"Village Global","accessed_at":"2026-06-09","supports":"Official application page confirms founders can apply to be considered for Village Global's Velocity program for early-stage founders."}],"notes":["No current fixed application deadline, cohort start/end date, timezone, venue, or demo day was published on the official pages.","The source context said terms are variable; the official page currently states Village invests up to $1M on the Velocity page and $500k-$3M in pre-seed and seed rounds in the FAQ."]}
+{
+  "accelerator": {
+    "name": "Village Global Velocity",
+    "website": "https://www.villageglobal.com/velocity",
+    "csv_file": "src/data/imported-accelerators.json",
+    "slug": "village-global-velocity"
+  },
+  "status": "verified",
+  "checked_at": "2026-10-26",
+  "confidence": "high",
+  "summary": "Village Global Velocity accepts applications on a rolling basis worldwide and invests up to $1M. It provides investor and peer networks plus partner perks; no fixed application deadline or cohort dates are published.",
+  "proposed_event": {
+    "id": "village-global-velocity-rolling",
+    "name": "Village Global Velocity — Rolling Applications",
+    "description": "Pre-seed program with up to $1M investment, founder peer support, investor connections and partner perks; founders can participate worldwide.",
+    "organizer": "Village Global",
+    "website": "https://www.villageglobal.com/velocity",
+    "location": {
+      "is_virtual": true,
+      "is_hybrid": false,
+      "venue": null,
+      "city": null,
+      "city_slug": null,
+      "country": null,
+      "country_code": null,
+      "region_code": "global"
+    },
+    "dates": {
+      "application_open": null,
+      "application_close": null,
+      "program_start": null,
+      "program_end": null,
+      "demo_day": null,
+      "timezone": null,
+      "date_range_text": "Rolling applications; no fixed cohort deadline or dates published."
+    },
+    "categories": {
+      "types": [
+        "accelerator",
+        "program"
+      ],
+      "supports": [
+        "funding",
+        "compute",
+        "mentorship",
+        "credits",
+        "resources"
+      ],
+      "sectors": [
+        "general",
+        "ai"
+      ]
+    },
+    "hashtags": [],
+    "index": {
+      "years": [],
+      "region_code": "global",
+      "country_code": null,
+      "city_slug": null,
+      "type_keys": [
+        "accelerator",
+        "program"
+      ],
+      "support_keys": [
+        "funding",
+        "compute",
+        "mentorship",
+        "credits",
+        "resources"
+      ],
+      "sector_keys": [
+        "general",
+        "ai"
+      ],
+      "date_sort_key": null
+    },
+    "verification": "reported",
+    "last_verified_utc": "2026-10-26T19:50:16Z"
+  },
+  "sources": [
+    {
+      "url": "https://www.villageglobal.com/velocity",
+      "title": "Velocity",
+      "supports": "Rolling applications, up to $1M capital and worldwide participation.",
+      "publisher": "Village Global",
+      "accessed_at": "2026-10-26"
+    }
+  ],
+  "notes": []
+}

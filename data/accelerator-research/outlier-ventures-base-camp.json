@@ -1,1 +1,25 @@
-{"accelerator":{"name":"Outlier Ventures Base Camp","website":"https://outlierventures.io/base-camp/","csv_file":"data/accelerators-crypto.csv","slug":"outlier-ventures-base-camp"},"status":"needs_review","checked_at":"2026-06-09","confidence":"low","summary":"Outlier Ventures still operates Base Camp as its flagship Web3 accelerator, but its public Base Camp pages currently describe the program generally and do not publish a current application deadline or cohort dates. Proposed event is omitted to avoid creating a stale listing without current cadence dates.","proposed_event":null,"sources":[{"title":"Base Camp | Outlier Ventures","url":"https://outlierventures.io/base-camp/","publisher":"Outlier Ventures","accessed_at":"2026-06-09","supports":"Official Base Camp page for Outlier Ventures' accelerator; page identifies Base Camp as a Web3 accelerator but does not expose a current application close date, program start, program end, or demo day in accessible page content."},{"title":"Outlier Ventures Accelerator Programs","url":"https://outlierventures.io/accelerator-programs/","publisher":"Outlier Ventures","accessed_at":"2026-06-09","supports":"Official accelerator programs page showing Outlier Ventures runs accelerator programs for Web3 founders; accessible public information is program-level rather than a dated active cohort for Base Camp."}],"notes":["No current public application window or cohort schedule was found on the official Base Camp page as of 2026-06-09.","Because exact current dates are unavailable and the source page is evergreen, this should be reviewed manually before adding an event card.","Likely taxonomy if dates become available: types accelerator/program, supports mentorship/resources, sector web3, region global or location-dependent by cohort."]}
+{
+  "accelerator": {
+    "name": "Outlier Ventures Base Camp",
+    "website": "https://outlierventures.io/base-camp/",
+    "csv_file": "data/accelerators-crypto.csv",
+    "slug": "outlier-ventures-base-camp"
+  },
+  "status": "needs_review",
+  "checked_at": "2026-10-26",
+  "confidence": "high",
+  "summary": "Outlier Ventures lists Post Web Base Camp as accepting early applications for a 2026 cohort. Its 12-week remote accelerator supports DeAI, DeFi, RWA and DePIN teams, but exact dates and an application deadline are not published.",
+  "proposed_event": null,
+  "sources": [
+    {
+      "url": "https://outlierventures.io/base-camp/",
+      "title": "Outlier Ventures Base Camp",
+      "supports": "Current Post Web call, remote 12-week format and focus areas.",
+      "publisher": "Outlier Ventures",
+      "accessed_at": "2026-10-26"
+    }
+  ],
+  "notes": [
+    "Register-interest status is confirmed; do not manufacture a deadline or cohort start."
+  ]
+}

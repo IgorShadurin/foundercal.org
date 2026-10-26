@@ -1,0 +1,23 @@
+{
+  "accelerator": {
+    "name": "NMotion Accelerator",
+    "website": "https://www.nmotion.co/nmotion-accelerator",
+    "csv_file": "public/events-archive.json",
+    "slug": "nmotion-accelerator"
+  },
+  "status": "needs_review",
+  "checked_at": "2026-10-26",
+  "confidence": "low",
+  "summary": "The official accelerator page still gives a December 8, 2024 deadline for February\u2013May 2025. A new cycle was not confirmed; the old cohort is archived.",
+  "proposed_event": null,
+  "sources": [
+    {
+      "title": "NMotion Accelerator \u2014 official program information",
+      "url": "https://www.nmotion.co/nmotion-accelerator",
+      "publisher": "NMotion powered by gener8tor",
+      "accessed_at": "2026-10-26",
+      "supports": "The official accelerator page still gives a December 8, 2024 deadline for February\u2013May 2025. A new cycle was not confirmed; the old cohort is archived."
+    }
+  ],
+  "notes": []
+}

@@ -1,1 +1,86 @@
-{"accelerator":{"name":"Plug and Play Tech Center","website":"https://www.plugandplaytechcenter.com/programs/","csv_file":"data/accelerators-master.csv","slug":"plug-and-play-tech-center"},"status":"verified","checked_at":"2026-06-09","confidence":"high","summary":"Plug and Play is active and accepts startups into a global ecosystem; specific accelerator cohort dates vary by industry and location and are not published on the general programs page.","proposed_event":{"id":"plug-and-play-tech-center","name":"Plug and Play Tech Center","description":"Global accelerator ecosystem connecting startups with corporate partners, pilots, resources, and investment opportunities.","organizer":"Plug and Play Tech Center","website":"https://www.plugandplaytechcenter.com/programs/","location":{"is_virtual":false,"is_hybrid":false,"venue":null,"city":null,"city_slug":null,"country":null,"country_code":null,"region_code":"global"},"dates":{"application_open":null,"application_close":null,"program_start":null,"program_end":null,"demo_day":null,"timezone":null,"date_range_text":"Rolling startup ecosystem intake; pilot-oriented accelerator program timing varies by vertical industry and location."},"categories":{"types":["accelerator","program"],"supports":["funding","resources"],"sectors":["general","ai","fintech","health","energy","mobility","web3","climatetech"]},"hashtags":["#Accelerator","#Program","#Funding","#Resources","#Global","#AI","#Fintech","#Health","#Energy","#Mobility","#Web3","#Climatetech"],"index":{"years":["2026"],"region_code":"global","country_code":null,"city_slug":null,"type_keys":["accelerator","program"],"support_keys":["funding","resources"],"sector_keys":["general","ai","fintech","health","energy","mobility","web3","climatetech"],"date_sort_key":null},"verification":"reported","last_verified_utc":null},"sources":[{"title":"Frequently Asked Questions (FAQs)","url":"https://www.plugandplaytechcenter.com/about-us/faq","publisher":"Plug and Play Tech Center","accessed_at":"2026-06-09","supports":"States Plug and Play is an open innovation platform, organizes pilot-oriented acceleration programs, connects stage-agnostic startups with corporations, has no startup fees or equity requirement, may invest, and startups can apply by filling out a form."},{"title":"Venture Capital","url":"https://www.plugandplaytechcenter.com/venture-capital","publisher":"Plug and Play Tech Center","accessed_at":"2026-06-09","supports":"States Plug and Play has accelerated over 10,000 startups, runs global programs for Seed to Series C companies, has 60+ locations and 550+ partners, and invests in startups case by case."},{"title":"Plug and Play | We Drive Innovation","url":"https://www.plugandplaytechcenter.com/","publisher":"Plug and Play Tech Center","accessed_at":"2026-06-09","supports":"Lists Plug and Play's global office locations and vertical industries, including Enterprise & AI, Fintech, Health, Energy, Crypto & Digital Assets, Mobility, and Sustainability."},{"title":"Accelerator Programs","url":"https://www.plugandplaytechcenter.com/innovation-services/corporations/accelerator-programs","publisher":"Plug and Play Tech Center","accessed_at":"2026-06-09","supports":"Describes Plug and Play accelerator programs as identifying and supporting promising startups and enabling partners to access startups and events across many industries."}],"notes":["No current universal application deadline, cohort start date, end date, or demo day was published for the general Plug and Play Tech Center program page.","The record is shaped as a rolling/global accelerator ecosystem rather than a dated cohort because Plug and Play runs many vertical and location-specific programs."]}
+{
+  "accelerator": {
+    "name": "Plug and Play Tech Center",
+    "website": "https://www.plugandplaytechcenter.com/",
+    "csv_file": "data/accelerators-master.csv",
+    "slug": "plug-and-play-tech-center"
+  },
+  "status": "verified",
+  "checked_at": "2026-10-26",
+  "confidence": "high",
+  "summary": "Plug and Play remains active. GITA’s official 2027 accelerator call lists a December 11, 2026 application deadline for Plug and Play Georgia. Exact program dates could not be confirmed from the accessible official pages.",
+  "proposed_event": {
+    "id": "plug-and-play-georgia-2027",
+    "name": "Plug and Play Georgia Accelerator — 2027 Applications",
+    "description": "Georgia accelerator delivered by Plug and Play within GITA’s innovative startup acceleration program.",
+    "organizer": "Plug and Play Tech Center",
+    "website": "https://www.plugandplaytechcenter.com/innovation-services/our-programs/georgia-accelerator",
+    "location": {
+      "is_virtual": false,
+      "is_hybrid": false,
+      "venue": null,
+      "city": null,
+      "city_slug": null,
+      "country": "Georgia",
+      "country_code": "GE",
+      "region_code": "eu"
+    },
+    "dates": {
+      "application_open": null,
+      "application_close": "2026-12-11",
+      "program_start": null,
+      "program_end": null,
+      "demo_day": null,
+      "timezone": null,
+      "date_range_text": "Official GITA call: applications for the 2027 program close December 11, 2026. Exact program start and end dates not verified."
+    },
+    "categories": {
+      "types": [
+        "accelerator",
+        "program"
+      ],
+      "supports": [
+        "mentorship",
+        "resources"
+      ],
+      "sectors": [
+        "general"
+      ]
+    },
+    "hashtags": [],
+    "index": {
+      "years": [
+        "2026"
+      ],
+      "region_code": "eu",
+      "country_code": "GE",
+      "city_slug": null,
+      "type_keys": [
+        "accelerator",
+        "program"
+      ],
+      "support_keys": [
+        "mentorship",
+        "resources"
+      ],
+      "sector_keys": [
+        "general"
+      ],
+      "date_sort_key": "2026-12-11"
+    },
+    "verification": "reported",
+    "last_verified_utc": "2026-10-26T19:50:16Z"
+  },
+  "sources": [
+    {
+      "url": "https://grants.gov.ge/ka/გრანტები?call=271",
+      "title": "GITA Innovative Startup Acceleration Program 2027",
+      "supports": "Official government call names Plug and Play Georgia and December 11, 2026 deadline.",
+      "publisher": "Georgia Innovation and Technology Agency",
+      "accessed_at": "2026-10-26"
+    }
+  ],
+  "notes": [
+    "Program website was reachable but did not expose readable text; deadline comes from the funding agency. Delivery format needs confirmation with the organizer."
+  ]
+}

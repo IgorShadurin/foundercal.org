@@ -1,210 +1,571 @@
 [
   {
-    "name": "South Park Commons Founder Fellowship",
-    "website": "https://www.southparkcommons.com/founder-fellowship",
-    "applyUrl": "https://www.southparkcommons.com/apply",
-    "description": "Pre-seed \"pre-idea\" program",
-    "terms": "$400k for 7% plus $600k in the following round",
-    "notes": "Batch starts beginning of October"
+    "name": "South Park Commons",
+    "slug": "south-park-commons-founder-fellowship",
+    "website": "https://www.southparkcommons.com/news/f26-founder-fellowship",
+    "applyUrl": "https://www.southparkcommons.com/news/f26-founder-fellowship",
+    "description": "Founder fellowship: $400K for 7% upfront and $600K in the next external round. Eight-week bootcamp followed by an open-ended fellowship residency.",
+    "terms": "Founder fellowship: $400K for 7% upfront and $600K in the next external round. Eight-week bootcamp followed by an open-ended fellowship residency.",
+    "notes": "SPC Fall 2026 Fellowship applications closed August 2 at 11:59pm PT. Bootcamp runs late September–late November. Funding is $400K for 7% upfront plus $600K in the next external round; no future application deadline is announced. Applications closed August 2, 2026 at 11:59pm PT. Bootcamp: late September–late November 2026; offices in San Francisco, New York or Bangalore. This is an ongoing cohort with a closed application window, not an open call.",
+    "checked_at": "2026-10-26",
+    "status": "verified",
+    "sources": [
+      {
+        "url": "https://www.southparkcommons.com/news/f26-founder-fellowship",
+        "title": "SPC Founder Fellowship Fall 2026",
+        "supports": "Published July 8, 2026; confirms closed August 2 deadline, bootcamp months, locations and funding.",
+        "publisher": "South Park Commons",
+        "accessed_at": "2026-10-26"
+      }
+    ]
   },
   {
     "name": "Y Combinator",
+    "slug": "y-combinator",
     "website": "https://www.ycombinator.com/apply",
     "applyUrl": "https://www.ycombinator.com/apply",
-    "description": "Grandaddy pre-seed accelerator",
-    "terms": "$125k for 7% plus $375K uncapped MFN SAFE",
-    "notes": "Batch runs\u00a0October to December, application deadline 8pm PT August 4th, decision by September 5th"
+    "description": "Three-month in-person accelerator. Standard investment: $125,000 for 7% plus $375,000 on an uncapped MFN SAFE.",
+    "terms": "Three-month in-person accelerator. Standard investment: $125,000 for 7% plus $375,000 on an uncapped MFN SAFE.",
+    "notes": "YC is accepting Winter 2027 applications. The on-time deadline is November 2, 2026 at 8pm PT; the in-person San Francisco batch runs January–March 2027. Late applications may be considered. Winter 2027: January–March in San Francisco. Apply by November 2, 2026 at 8pm PT; on-time decisions by December 11. Exact batch dates are not published.",
+    "checked_at": "2026-10-26",
+    "status": "verified",
+    "sources": [
+      {
+        "url": "https://www.ycombinator.com/apply",
+        "title": "Apply to Y Combinator",
+        "supports": "Winter 2027, January–March in SF, November 2 deadline at 8pm PT and December 11 decisions.",
+        "publisher": "Y Combinator",
+        "accessed_at": "2026-10-26"
+      },
+      {
+        "url": "https://www.ycombinator.com/deal",
+        "title": "Standard deal",
+        "supports": "$500,000 total: $125,000 for 7% plus $375,000 uncapped MFN SAFE.",
+        "publisher": "Y Combinator",
+        "accessed_at": "2026-10-26"
+      }
+    ]
   },
   {
     "name": "Conviction Embed",
-    "website": "https://www.conviction.com/embed#application",
-    "applyUrl": "https://embed.conviction.com/apply",
-    "description": "Run by Sarah Guo, pre-seed and seed-stage for \u201cAI-native\u201d companies",
-    "terms": "$150k uncapped no discount MFN SAFE",
-    "notes": "In person retreat September 19-21, demo day in November"
+    "slug": "conviction-embed",
+    "website": "https://embed.conviction.com/",
+    "applyUrl": null,
+    "description": "Embed advertises early applications for cohort seven and $250K on an uncapped, no-discount MFN SAFE (or a recent round price).",
+    "terms": "Embed advertises early applications for cohort seven and $250K on an uncapped, no-discount MFN SAFE (or a recent round price).",
+    "notes": "Embed advertises early applications for cohort seven and $250K on an uncapped, no-discount MFN SAFE (or a recent round price). Retreat September 11–13 and Demo Day November 12 are published without a year and mixed with older cohort copy. Do not assign a calendar year.",
+    "checked_at": "2026-10-26",
+    "status": "needs_review",
+    "sources": [
+      {
+        "title": "Conviction Embed",
+        "url": "https://embed.conviction.com/",
+        "publisher": "Conviction",
+        "accessed_at": "2026-10-26",
+        "supports": "Cohort-seven early applications, terms and solo-founder eligibility."
+      }
+    ]
   },
   {
     "name": "Berkeley SkyDeck",
-    "website": "https://skydeck.berkeley.edu/",
-    "applyUrl": "https://www.f6s.com/skydeck-batch-21/apply",
-    "description": "Pre-seed accelerator run by UC Berkeley Haas Business School",
-    "terms": "$200k for 7.5% SAFE",
-    "notes": "Appear to have strong preference for UC Berkeley affiliated companies, but unclear if affiliation is a requirement. \u201cFund will also invest up to 10% of your first institutional funding round\u201d"
+    "slug": "berkeley-skydeck",
+    "website": "https://skydeck.berkeley.edu/program/",
+    "applyUrl": "https://skydeck.berkeley.edu/program/",
+    "description": "Six-month Berkeley accelerator; current program page lists $210K investment for cohort startups.",
+    "terms": "Six-month Berkeley accelerator; current program page lists $210K investment for cohort startups.",
+    "notes": "Batch 23 is closed and starts November 2. The homepage advertises Batch 24 applications opening in January without an exact day. Batch 23 applications closed August 21; program November 2, 2026–April 15, 2027. Demo Day is listed only as April 2027. Investment figures differ between official pages; confirm signed terms. Do not invent a Batch 24 date.",
+    "checked_at": "2026-10-26",
+    "status": "verified",
+    "sources": [
+      {
+        "title": "SkyDeck program",
+        "url": "https://skydeck.berkeley.edu/program/",
+        "publisher": "Berkeley SkyDeck",
+        "accessed_at": "2026-10-26",
+        "supports": "Batch 23 dates and $210K cohort investment."
+      },
+      {
+        "title": "SkyDeck homepage",
+        "url": "https://skydeck.berkeley.edu/",
+        "publisher": "Berkeley SkyDeck",
+        "accessed_at": "2026-10-26",
+        "supports": "Batch 24 opens in January; homepage still quotes $200K."
+      }
+    ]
   },
   {
     "name": "Alliance Accelerator",
+    "slug": "alliance-accelerator",
     "website": "https://alliance.xyz/",
-    "applyUrl": "https://alliance.xyz/apply",
-    "description": "Crypto accelerator",
-    "terms": "$450k for 9% SAFE with a 1:1.5 token side letter",
-    "notes": ""
+    "applyUrl": "https://alliance.xyz/",
+    "description": "Crypto and fintech acceleration: $400K on admission plus $400K follow-on at seed.",
+    "terms": "Crypto and fintech acceleration: $400K on admission plus $400K follow-on at seed.",
+    "notes": "ALL19 is the next announced cohort. Regular deadline November 18, 2026; ALL19 starts January 11, 2027. NYC onboarding, remote work, then Demo Day.",
+    "checked_at": "2026-10-26",
+    "status": "verified",
+    "sources": [
+      {
+        "title": "Alliance accelerator",
+        "url": "https://alliance.xyz/",
+        "publisher": "Alliance",
+        "accessed_at": "2026-10-26",
+        "supports": "ALL19 starts January 11, 2027; $400K admission and $400K seed follow-on."
+      },
+      {
+        "title": "ALL19 application",
+        "url": "https://alliance.xyz/apply",
+        "publisher": "Alliance",
+        "accessed_at": "2026-10-26",
+        "supports": "Regular admission November 18; NYC onboarding."
+      }
+    ]
   },
   {
     "name": "Alchemist Accelerator",
-    "website": "https://www.alchemistaccelerator.com/program",
-    "applyUrl": "https://www.alchemistaccelerator.com/apply",
-    "description": "\u201cfor startups that monetize from enterprises\u201d",
-    "terms": "Average of $25k net (minus tuition fees) for 5% equity grant",
-    "notes": "Has tuition fee, equity exchanged as a grant, unclear on exact terms. \u201cMost Alchemist companies grant 5.0% of equity, but Alchemist has flexible terms.\u201d"
+    "slug": "alchemist-accelerator",
+    "website": "https://www.alchemistaccelerator.com/apply",
+    "applyUrl": null,
+    "description": "Indexed official FAQ describes six-month enterprise acceleration and rolling application deadlines, but live pages failed to load.",
+    "terms": "Current funding, fee and equity terms were not confirmed. Check official program information.",
+    "notes": "Indexed official FAQ describes six-month enterprise acceleration and rolling application deadlines, but live pages failed to load. Legacy apply URL redirected to alchemist.vc/apply, also inaccessible. No current cohort deadline verified.",
+    "checked_at": "2026-10-26",
+    "status": "needs_review",
+    "sources": [
+      {
+        "title": "Alchemist official FAQ (search index)",
+        "url": "https://www.alchemistaccelerator.com/",
+        "publisher": "Alchemist",
+        "accessed_at": "2026-10-26",
+        "supports": "Rolling deadlines and typical 5% common equity with flexible terms; indexed official content."
+      }
+    ]
   },
   {
     "name": "Soma Capital Fellowship",
-    "website": "https://somafellows.com/",
-    "applyUrl": "https://airtable.com/appzO3diTm7xrL9nI/pagib3RDYjtsptl05/form",
-    "description": "Pre-seed and Seed-stage program",
-    "terms": "Up to $1M uncapped SAFE",
-    "notes": ""
+    "slug": "soma-capital-fellowship",
+    "website": "https://programs.somacap.com/fellows",
+    "applyUrl": null,
+    "description": "Soma Fellows now describes a builder talent program connecting participants with companies, mentors and the Soma network. It links to applications but does not publish a fixed deadline or a standardized startup investment offer.",
+    "terms": "Soma Fellows now describes a builder talent program connecting participants with companies, mentors and the Soma network. It links to applications but does not publish a fixed deadline or a standardized startup investment offer.",
+    "notes": "Soma Fellows now describes a builder talent program connecting participants with companies, mentors and the Soma network. It links to applications but does not publish a fixed deadline or a standardized startup investment offer. The former somafellows.com redirects here. Do not carry forward old startup accelerator funding promises.",
+    "checked_at": "2026-10-26",
+    "status": "needs_review",
+    "sources": [
+      {
+        "url": "https://programs.somacap.com/fellows",
+        "title": "Soma Fellows",
+        "supports": "Current company-placement/network focus, application link and current fellows.",
+        "publisher": "Soma Capital",
+        "accessed_at": "2026-10-26"
+      }
+    ]
   },
   {
-    "name": "AI2 Incubator",
-    "website": "https://www.ai2incubator.com/",
-    "applyUrl": "https://www.ai2incubator.com/apply",
-    "description": "Run by Allen Institute for AI",
-    "terms": "$50K-150K initial investment , unclear terms, additional investment right up to $500k",
-    "notes": "Teams also may get up to $1M in compute. Lots of \u201cmay\u201d and \u201cup to\u201d and \u201coptional\u201d here."
+    "name": "AI House (formerly AI2 Incubator)",
+    "slug": "ai2-incubator",
+    "website": "https://aihouse.vc/",
+    "applyUrl": "https://aihouse.vc/",
+    "description": "Applied-AI company building; up to $600K SAFE at a $10M cap, plus 7% common-stock incubation economics.",
+    "terms": "Applied-AI company building; up to $600K SAFE at a $10M cap, plus 7% common-stock incubation economics.",
+    "notes": "AI2 Incubator rebranded to AI House in June 2026. Rolling applications; at least one month working in Seattle required. No fixed cohort calendar. Funding is milestone-dependent; the SAFE investment and common-stock incubation economics are distinct.",
+    "checked_at": "2026-10-26",
+    "status": "verified",
+    "sources": [
+      {
+        "title": "AI House FAQs",
+        "url": "https://aihouse.vc/faqs",
+        "publisher": "AI House",
+        "accessed_at": "2026-10-26",
+        "supports": "Rebrand, rolling applications, Seattle requirement and investment economics."
+      }
+    ]
   },
   {
     "name": "Founders, Inc. Fellowship",
-    "website": "https://f.inc/fellowship",
-    "applyUrl": "https://f.inc/apply",
-    "description": "Pre-seed residency",
-    "terms": "$100k-$250k for 3-5%",
-    "notes": "Terms appear to vary on both funding and equity"
+    "slug": "founders-inc-fellowship",
+    "website": "https://f.inc/about",
+    "applyUrl": "https://f.inc/about",
+    "description": "San Francisco builder community offering $150K for 5% equity with campus resources.",
+    "terms": "San Francisco builder community offering $150K for 5% equity with campus resources.",
+    "notes": "The former fellowship URL redirects to the fund and campus offering. Apply when ready; investment follows a one-to-two-week build trial. Campus membership is not a fixed-length fellowship. Separate preparatory programs typically last four to six weeks; no next dates confirmed.",
+    "checked_at": "2026-10-26",
+    "status": "verified",
+    "sources": [
+      {
+        "title": "Founders, Inc. fund",
+        "url": "https://f.inc/about",
+        "publisher": "Founders, Inc.",
+        "accessed_at": "2026-10-26",
+        "supports": "Current $150K/5% terms, build trial and ongoing campus model."
+      }
+    ]
   },
   {
     "name": "LAUNCH Accelerator",
+    "slug": "launch-accelerator",
     "website": "https://launchaccelerator.co/#overview-section",
-    "applyUrl": "https://launchevents.typeform.com/to/br9Rw15A?typeform-source=launchaccelerator.co#source=Accelerator",
-    "description": "Run by Jason Calacanis for \"pre-Series A with some traction\"",
-    "terms": "$125k for 7%",
-    "notes": "Additional terms for follow on investment. Next batch in August."
+    "applyUrl": null,
+    "description": "LAUNCH currently advertises Cohort 37, September 2026, a 14-week program and $125K investment. Its application banner remains open, but that cohort has already started and no future cutoff or next batch dates are published.",
+    "terms": "LAUNCH currently advertises Cohort 37, September 2026, a 14-week program and $125K investment. Its application banner remains open, but that cohort has already started and no future cutoff or next batch dates are published.",
+    "notes": "LAUNCH currently advertises Cohort 37, September 2026, a 14-week program and $125K investment. Its application banner remains open, but that cohort has already started and no future cutoff or next batch dates are published. The live HTML did not expose text to the browser reader; the official indexed page supplied the details. Do not treat an undated Apply Now banner as evidence of a future cohort.",
+    "checked_at": "2026-10-26",
+    "status": "needs_review",
+    "sources": [
+      {
+        "url": "https://launchaccelerator.co/",
+        "title": "LAUNCH Accelerator",
+        "supports": "Official indexed page shows Cohort 37/September 2026, 14 weeks and $125K.",
+        "publisher": "LAUNCH",
+        "accessed_at": "2026-10-26"
+      }
+    ]
   },
   {
-    "name": "500 Startups",
-    "website": "https://500.co/accelerators/500-global-flagship-accelerator-program",
-    "applyUrl": "https://flagship.aplica.500.co/",
-    "description": "Both flagship & city-based programs",
-    "terms": "$112.5k for 6% ($150k minus $37.5k program fee)",
-    "notes": "Terms include \u201cright to make a follow-on investment of an additional $500,000 or 20% of your next priced round of $1,000,000 or more, whichever is lower\u201d. Terms listed are for Flagship program."
+    "name": "500 Global — 500 Fellowship",
+    "slug": "500-startups",
+    "website": "https://500.co/founders/flagship",
+    "applyUrl": "https://500.co/founders/flagship",
+    "description": "Four-month San Francisco program for early-stage founders.",
+    "terms": "The page contains placeholder fee text; current investment and fee terms require confirmation.",
+    "notes": "500 Global now presents its flagship as the 500 Fellowship. Applications closed October 11. Fellowship runs November 30, 2026–April 9, 2027. The page contains placeholder fee text; current investment and fee terms require confirmation.",
+    "checked_at": "2026-10-26",
+    "status": "verified",
+    "sources": [
+      {
+        "title": "500 Fellowship",
+        "url": "https://500.co/founders/flagship",
+        "publisher": "500 Global",
+        "accessed_at": "2026-10-26",
+        "supports": "Flagship branding, October 11 cutoff and November 30, 2026–April 9, 2027 program."
+      }
+    ]
   },
   {
     "name": "Accel Atoms",
+    "slug": "accel-atoms",
     "website": "https://atoms.accel.com/",
-    "applyUrl": "https://apply.accel-atoms.com/",
-    "description": "India focused",
-    "terms": "Up to $1M at variable terms",
-    "notes": ""
+    "applyUrl": null,
+    "description": "Accel Atoms supports Indian and Indian-origin founders. The site lists the 2026 AI cohort and Atoms X, with signup for future cohorts.",
+    "terms": "Current funding, fee and equity terms were not confirmed. Check official program information.",
+    "notes": "Accel Atoms supports Indian and Indian-origin founders. The site lists the 2026 AI cohort and Atoms X, with signup for future cohorts. No next application window confirmed; removed unsupported rolling-admissions claim.",
+    "checked_at": "2026-10-26",
+    "status": "needs_review",
+    "sources": [
+      {
+        "title": "Accel Atoms",
+        "url": "https://atoms.accel.com/",
+        "publisher": "Accel",
+        "accessed_at": "2026-10-26",
+        "supports": "Program scope and future-cohort newsletter."
+      },
+      {
+        "title": "AI Cohort 2026",
+        "url": "https://atoms.accel.com/news/meet-the-startups-in-ai-cohort-2026",
+        "publisher": "Accel",
+        "accessed_at": "2026-10-26",
+        "supports": "AI cohort began March 11, 2026 and was scheduled to conclude in June."
+      }
+    ]
   },
   {
     "name": "Forum Accelerator",
+    "slug": "forum-accelerator",
     "website": "https://www.forumvc.com/accelerator",
-    "applyUrl": "https://www.forumvc.com/pitch-us",
-    "description": "B2B SaaS accelerator from Forum Ventures",
-    "terms": "$100k for 7.5%",
-    "notes": ""
+    "applyUrl": null,
+    "description": "Forum Ventures offers a B2B tech accelerator with $100K pre-seed funding and hands-on founder support.",
+    "terms": "Forum Ventures offers a B2B tech accelerator with $100K pre-seed funding and hands-on founder support.",
+    "notes": "Forum Ventures offers a B2B tech accelerator with $100K pre-seed funding and hands-on founder support. Current public page does not establish a dated application window. Do not infer rolling admission merely from a pitch link.",
+    "checked_at": "2026-10-26",
+    "status": "needs_review",
+    "sources": [
+      {
+        "title": "Forum accelerator",
+        "url": "https://www.forumvc.com/accelerator",
+        "publisher": "Forum Ventures",
+        "accessed_at": "2026-10-26",
+        "supports": "B2B focus and $100K funding."
+      }
+    ]
   },
   {
     "name": "Village Global Velocity",
-    "website": "https://www.villageglobal.vc/velocity",
-    "applyUrl": "https://www.villageglobal.vc/velocity/apply",
-    "description": "",
-    "terms": "Up to $1M at variable terms",
-    "notes": "Unclear how hands on the program is"
+    "slug": "village-global-velocity",
+    "website": "https://www.villageglobal.com/velocity",
+    "applyUrl": "https://www.villageglobal.com/velocity",
+    "description": "Pre-seed program with up to $1M investment, founder peer support, investor connections and partner perks; founders can participate worldwide.",
+    "terms": "Pre-seed program with up to $1M investment, founder peer support, investor connections and partner perks; founders can participate worldwide.",
+    "notes": "Village Global Velocity accepts applications on a rolling basis worldwide and invests up to $1M. It provides investor and peer networks plus partner perks; no fixed application deadline or cohort dates are published. Rolling applications; no fixed cohort deadline or dates published.",
+    "checked_at": "2026-10-26",
+    "status": "verified",
+    "sources": [
+      {
+        "url": "https://www.villageglobal.com/velocity",
+        "title": "Velocity",
+        "supports": "Rolling applications, up to $1M capital and worldwide participation.",
+        "publisher": "Village Global",
+        "accessed_at": "2026-10-26"
+      }
+    ]
   },
   {
     "name": "Antler Residency",
+    "slug": "antler-residency",
     "website": "https://www.antler.co/location/us",
-    "applyUrl": "https://www.antler.co/apply-new",
-    "description": "Pre-seed program in cities around the world",
-    "terms": "$200k SAFE for 8%, possible additional $300k uncapped",
-    "notes": "Listed terms for US residency"
+    "applyUrl": "https://www.antler.co/location/us",
+    "description": "In-person founder residency with an opportunity for $500K–$1M initial investment.",
+    "terms": "In-person founder residency with an opportunity for $500K–$1M initial investment.",
+    "notes": "Antler US confirms year-round review; investment follows its committee process. Year-round application review and monthly invitations; residency lasts up to three months. Locations: San Francisco, New York and Austin.",
+    "checked_at": "2026-10-26",
+    "status": "verified",
+    "sources": [
+      {
+        "title": "Antler US",
+        "url": "https://www.antler.co/location/us",
+        "publisher": "Antler",
+        "accessed_at": "2026-10-26",
+        "supports": "Monthly intake, up-to-three-month residency and typical investment range."
+      }
+    ]
   },
   {
     "name": "Iterative",
-    "website": "https://www.iterative.vc/",
+    "slug": "iterative",
+    "website": "https://www.iterative.vc/apply",
     "applyUrl": "https://www.iterative.vc/apply",
-    "description": "Singapore based pre-seed incubator",
-    "terms": "$150k-$500k for between 10-15% SAFE",
-    "notes": "Batch runs February to May"
+    "description": "Southeast Asia-focused accelerator with US$150K–$500K investment for roughly 10–15%. Four-day in-person orientation followed by remote work.",
+    "terms": "Southeast Asia-focused accelerator with US$150K–$500K investment for roughly 10–15%. Four-day in-person orientation followed by remote work.",
+    "notes": "Iterative is accepting applications for Winter 2027 (February–May). Admissions are rolling; no exact deadline is published. Investment is US$150,000–$500,000 for roughly 10–15%, without program fees. Winter 2027 runs February–May. Rolling admissions; exact application cutoff, start, end and Demo Day dates are not published.",
+    "checked_at": "2026-10-26",
+    "status": "verified",
+    "sources": [
+      {
+        "url": "https://www.iterative.vc/apply",
+        "title": "Apply to Iterative",
+        "supports": "Winter 2027 February–May; rolling admissions; investment terms; in-person orientation then remote program.",
+        "publisher": "Iterative",
+        "accessed_at": "2026-10-26"
+      }
+    ]
   },
   {
     "name": "HF0 Residency",
+    "slug": "hf0-residency",
     "website": "https://www.hf0.com/",
-    "applyUrl": "https://www.hf0.com/apply",
-    "description": "12 week residency for 2nd time founders",
-    "terms": "$1M uncapped SAFE plus 5% equity fee",
-    "notes": "Terms take 5% equity and the SAFE converts at terms of next financing. Application is open but no dates listed. Now appears to be seed stage focused."
+    "applyUrl": null,
+    "description": "HF0 describes a residency for repeat founders and links to an application form. The homepage advertises Demo Day on December 1 without a year. Current investment terms and a dated next application window could not be confirmed.",
+    "terms": "HF0 describes a residency for repeat founders and links to an application form. The homepage advertises Demo Day on December 1 without a year. Current investment terms and a dated next application window could not be confirmed.",
+    "notes": "HF0 describes a residency for repeat founders and links to an application form. The homepage advertises Demo Day on December 1 without a year. Current investment terms and a dated next application window could not be confirmed. Do not convert December 1 into an exact ISO date without a confirmed year. The former /terms page could not be retrieved; previous $1M/5% terms were not reverified.",
+    "checked_at": "2026-10-26",
+    "status": "needs_review",
+    "sources": [
+      {
+        "url": "https://www.hf0.com/",
+        "title": "HF0 Residency",
+        "supports": "Repeat-founder positioning; application link and yearless December 1 Demo Day.",
+        "publisher": "HF0",
+        "accessed_at": "2026-10-26"
+      },
+      {
+        "url": "https://www.hf0.com/apply",
+        "title": "HF0 application",
+        "supports": "The application form is accessible; it does not state cohort dates.",
+        "publisher": "HF0",
+        "accessed_at": "2026-10-26"
+      }
+    ]
   },
   {
     "name": "a16z Speedrun",
+    "slug": "a16z-speedrun",
     "website": "https://speedrun.a16z.com/",
-    "applyUrl": "https://sr.a16z.com/",
-    "description": "a16z accelerator for technology x entertainment",
-    "terms": "Up to $1M at variable terms",
-    "notes": "Expanded from games focus"
+    "applyUrl": "https://speedrun.a16z.com/apply",
+    "description": "Up to $1M: $500K for 10% upfront, plus up to $500K in a qualifying round.",
+    "terms": "Up to $1M: $500K for 10% upfront, plus up to $500K in a qualifying round.",
+    "notes": "SR008 applications are open. Speedrun now covers many sectors. Apply by November 1 at 11:59 PM PT. Residency February 1–April 18, 2027; Demo Day April 13.",
+    "checked_at": "2026-10-26",
+    "status": "verified",
+    "sources": [
+      {
+        "title": "speedrun FAQ",
+        "url": "https://speedrun.a16z.com/faq",
+        "publisher": "a16z speedrun",
+        "accessed_at": "2026-10-26",
+        "supports": "SR008 window, residency and Demo Day; current investment structure."
+      }
+    ]
   },
   {
     "name": "The Mint",
-    "website": "https://www.btv.vc/the-mint",
-    "applyUrl": "",
-    "description": "Fintech pre-seed, run by Better Tomorrow Ventures",
-    "terms": "$500k for 10% on a SAFE",
-    "notes": "Unclear if this still runs"
+    "slug": "the-mint",
+    "website": "https://btv.vc/",
+    "applyUrl": null,
+    "description": "Better Tomorrow Ventures remains an active fintech investor and its portfolio identifies Mint Accelerator companies. The former /the-mint program URL now returns 404; no upcoming Mint application dates or current program terms were confirmed.",
+    "terms": "Current funding, fee and equity terms were not confirmed. Check official program information.",
+    "notes": "Better Tomorrow Ventures remains an active fintech investor and its portfolio identifies Mint Accelerator companies. The former /the-mint program URL now returns 404; no upcoming Mint application dates or current program terms were confirmed. A missing program page does not establish closure. Do not reuse old Mint application terms as current.",
+    "checked_at": "2026-10-26",
+    "status": "needs_review",
+    "sources": [
+      {
+        "url": "https://btv.vc/",
+        "title": "Better Tomorrow Ventures",
+        "supports": "Current firm and pre-seed/seed investing focus.",
+        "publisher": "Better Tomorrow Ventures",
+        "accessed_at": "2026-10-26"
+      },
+      {
+        "url": "https://btv.vc/partnerships",
+        "title": "BTV Partnerships",
+        "supports": "Portfolio still labels Mint Accelerator companies.",
+        "publisher": "Better Tomorrow Ventures",
+        "accessed_at": "2026-10-26"
+      }
+    ]
   },
   {
     "name": "Sequoia Arc",
-    "website": "https://www.sequoiacap.com/arc/",
-    "applyUrl": "https://www.sequoiacap.com/arc/",
-    "description": "Pre-seed & Seed-stage, from one of the biggest VCs",
-    "terms": "Variable terms",
-    "notes": "A rc Fall \u201825 will kick off in October. Word is no longer a full program"
+    "slug": "sequoia-arc",
+    "website": "https://sequoiacap.com/arc",
+    "applyUrl": null,
+    "description": "Sequoia describes Arc as its twice-yearly open call for pre-seed and seed founders, with a four-day Arc Intensive. The current page does not publish an application deadline or next cohort dates.",
+    "terms": "Current funding, fee and equity terms were not confirmed. Check official program information.",
+    "notes": "Sequoia describes Arc as its twice-yearly open call for pre-seed and seed founders, with a four-day Arc Intensive. The current page does not publish an application deadline or next cohort dates. Remove the old Fall 2025 deadline from current application guidance.",
+    "checked_at": "2026-10-26",
+    "status": "needs_review",
+    "sources": [
+      {
+        "url": "https://sequoiacap.com/arc",
+        "title": "Get started with Sequoia",
+        "supports": "Twice-yearly Arc open call and four-day intensive; no current deadline.",
+        "publisher": "Sequoia Capital",
+        "accessed_at": "2026-10-26"
+      }
+    ]
   },
   {
     "name": "AI Grant",
+    "slug": "ai-grant",
     "website": "https://aigrant.com/",
-    "applyUrl": "https://aigrant.com/",
-    "description": "Created by Nat Friedman & Daniel Gross",
-    "terms": "$250k uncapped SAFE",
-    "notes": "Unclear if this program will continue after Nat Friedman joined Meta"
+    "applyUrl": null,
+    "description": "AI Grant explicitly says Batch 4 applications are closed. It offers a $250K uncapped MFN SAFE investment, not a grant.",
+    "terms": "AI Grant explicitly says Batch 4 applications are closed. It offers a $250K uncapped MFN SAFE investment, not a grant.",
+    "notes": "AI Grant explicitly says Batch 4 applications are closed. It offers a $250K uncapped MFN SAFE investment, not a grant. No reopening date published; do not present as an open application.",
+    "checked_at": "2026-10-26",
+    "status": "needs_review",
+    "sources": [
+      {
+        "title": "AI Grant",
+        "url": "https://aigrant.com/",
+        "publisher": "AI Grant",
+        "accessed_at": "2026-10-26",
+        "supports": "Closed Batch 4; $250K investment; no next cohort dates."
+      }
+    ]
   },
   {
     "name": "PearX",
+    "slug": "pearx",
     "website": "https://pear.vc/pearx/",
-    "applyUrl": "https://pear.vc/pearx-application/",
-    "description": "Pre-seed to Seed-stage",
-    "terms": "$250k-$2M at variable terms",
-    "notes": ""
+    "applyUrl": "https://pear.vc/pearx/",
+    "description": "12-week pre-seed accelerator in the SF Bay Area; $500K–$2M investment, targeting 7% ownership. Solo founders welcome.",
+    "terms": "12-week pre-seed accelerator in the SF Bay Area; $500K–$2M investment, targeting 7% ownership. Solo founders welcome.",
+    "notes": "PearX accepts applications year-round for a 12-week in-person Bay Area program. Investments range from $500K to $2M, targeting 7% ownership. Winter cohorts run January–April and summer cohorts July–October; no exact next dates are published. Applications reviewed year-round. Two cohorts: January–April and July–October. Exact next cohort dates and deadlines are not published.",
+    "checked_at": "2026-10-26",
+    "status": "verified",
+    "sources": [
+      {
+        "url": "https://pear.vc/pearx/",
+        "title": "PearX",
+        "supports": "Year-round applications, investment range/target ownership, solo founder eligibility, Bay Area relocation and cohort months.",
+        "publisher": "Pear VC",
+        "accessed_at": "2026-10-26"
+      }
+    ]
   },
   {
     "name": "Techstars",
-    "website": "https://www.techstars.com/accelerators",
-    "applyUrl": "https://www.techstars.com/accelerators",
-    "description": "City & subject-based programs",
-    "terms": "$20k for 6%, plus an optional $100k convertible note",
-    "notes": "Many different city and subject accelerators with different dates"
+    "slug": "techstars",
+    "website": "https://www.techstars.com/",
+    "applyUrl": "https://www.techstars.com/accelerators/nyc",
+    "description": "Hybrid mentorship accelerator; $220K investment consists of $20K for 5% common equity plus a $200K uncapped MFN SAFE.",
+    "terms": "Hybrid mentorship accelerator; $220K investment consists of $20K for 5% common equity plus a $200K uncapped MFN SAFE.",
+    "notes": "Techstars NYC is accepting applications through November 18, 2026 for its March 8, 2027 cohort, with Demo Day June 3. The hybrid three-month program invests $220,000: $20,000 for 5% plus a $200,000 uncapped MFN SAFE. Applications: August 24–November 18, 2026. Starts March 8, 2027; Demo Day June 3, 2027. In-person sessions at beginning, midpoint and Demo Day.",
+    "checked_at": "2026-10-26",
+    "status": "verified",
+    "sources": [
+      {
+        "url": "https://www.techstars.com/accelerators/nyc",
+        "title": "Techstars New York City Accelerator",
+        "supports": "Lists application window, program start, Demo Day, hybrid format and current $220K terms.",
+        "publisher": "Techstars",
+        "accessed_at": "2026-10-26"
+      }
+    ]
   },
   {
-    "name": "NEO Accelerator",
-    "website": "https://neo.com/accelerator",
-    "applyUrl": "https://neo.com/accelerator-apply",
-    "description": "Pre-seed & Seed-stage",
-    "terms": "1.5% common stock grant plus $600k uncapped SAFE w/ time-limited $10M floor valuation",
-    "notes": "Complicated but good terms"
+    "name": "Neo Residency",
+    "slug": "neo-accelerator",
+    "website": "https://neo.com/residency",
+    "applyUrl": "https://neo.com/residency",
+    "description": "Three-month San Francisco residency for startups and student teams. Startup terms: $750K uncapped funding plus next-round participation rights up to 5%.",
+    "terms": "Three-month San Francisco residency for startups and student teams. Startup terms: $750K uncapped funding plus next-round participation rights up to 5%.",
+    "notes": "Neo’s program is now Neo Residency, advertising Winter 2027. Startups receive $750K uncapped funding with participation rights up to 5% in the next equity round; the three-month SF program includes a two-week Texas bootcamp. No exact deadline is published. Winter 2027; three months in San Francisco with a two-week Texas bootcamp. Exact application cutoff and program dates are not published. Older portal page describes an Oregon bootcamp and yearless summer dates; prefer the current Winter 2027 residency page.",
+    "checked_at": "2026-10-26",
+    "status": "verified",
+    "sources": [
+      {
+        "url": "https://neo.com/residency",
+        "title": "Neo Residency Winter 2027",
+        "supports": "Official indexed residency page confirms rebrand, Winter 2027, funding, SF program and Texas bootcamp.",
+        "publisher": "Neo",
+        "accessed_at": "2026-10-26"
+      }
+    ]
   },
   {
     "name": "Entrepreneur First",
+    "slug": "entrepreneur-first",
     "website": "https://www.joinef.com/",
     "applyUrl": "https://apply.joinef.com/",
-    "description": "Early stage talent program",
-    "terms": "$12k talent grant, non-guaranteed 8% equity grant plus up to $250k uncapped",
-    "notes": "Terms are complicated, see explanation here ."
+    "description": "Full-time founder formation in Bangalore followed by a San Francisco phase.",
+    "terms": "Current funding, fee and equity terms were not confirmed. Check official program information.",
+    "notes": "EF now lists Winter 2027 programs; Bangalore has a November 2 second-round deadline. Apply by November 2, 2026 for the second selection round. Starts February 2027; exact day unpublished. Bangalore phase lasts 14 weeks, followed by three months in San Francisco. November 2 is a selection-round cutoff, not a confirmed final deadline. Bridge and London dates must not inherit Bangalore dates.",
+    "checked_at": "2026-10-26",
+    "status": "verified",
+    "sources": [
+      {
+        "title": "Entrepreneurs First application hub",
+        "url": "https://apply.joinef.com/",
+        "publisher": "Entrepreneurs First",
+        "accessed_at": "2026-10-26",
+        "supports": "Bangalore second-round deadline and February start; London April 2027, Bridge February 2027 and US rolling options."
+      },
+      {
+        "title": "Entrepreneurs First",
+        "url": "https://www.joinef.com/",
+        "publisher": "Entrepreneurs First",
+        "accessed_at": "2026-10-26",
+        "supports": "Current brand and up-to-$250K company investment."
+      }
+    ]
   },
   {
     "name": "Betaworks Camp",
-    "website": "https://www.betaworks.com/camp/application",
-    "applyUrl": "https://www.betaworks.com/camp/application",
-    "description": "Thematic investment and residency program",
-    "terms": "$250k from BetaWorks on an uncapped SAFE w/ 25% discount, plus a 5% common stock take, plus up to $250k from syndicate at same terms and discount",
-    "notes": "Last batch focused on AI interfaces"
+    "slug": "betaworks-camp",
+    "website": "https://www.betaworks.com/camp",
+    "applyUrl": "https://www.betaworks.com/writing/camp-the-new-agentic-economy",
+    "description": "AI-focused NYC Camp offering up to $500K from Betaworks and syndicate partners.",
+    "terms": "AI-focused NYC Camp offering up to $500K from Betaworks and syndicate partners.",
+    "notes": "Fall 2026 Camp is in progress; the announcement explicitly closes applications. Application window closed. Program September 14–November 20, 2026; Demo Day during the week of November 16. Betaworks invests up to $250K on an uncapped SAFE with 25% discount plus 5% common stock; syndicate adds up to $250K. Exact Demo Day remains unpublished.",
+    "checked_at": "2026-10-26",
+    "status": "verified",
+    "sources": [
+      {
+        "title": "Betaworks Fall 2026 Camp",
+        "url": "https://www.betaworks.com/writing/camp-the-new-agentic-economy",
+        "publisher": "Betaworks",
+        "accessed_at": "2026-10-26",
+        "supports": "Closed application window, exact program dates and investment structure."
+      }
+    ]
   }
 ]

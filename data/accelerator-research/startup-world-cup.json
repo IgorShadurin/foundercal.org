@@ -1,0 +1,23 @@
+{
+  "accelerator": {
+    "name": "Startup World Cup",
+    "website": "https://www.startupworldcup.io/",
+    "csv_file": "public/events-archive.json",
+    "slug": "startup-world-cup"
+  },
+  "status": "needs_review",
+  "checked_at": "2026-10-26",
+  "confidence": "low",
+  "summary": "Official site lists regional competitions and a $1 million investment prize. Dates and application rules vary by regional event; no single next deadline was confirmed.",
+  "proposed_event": null,
+  "sources": [
+    {
+      "title": "Startup World Cup \u2014 official program information",
+      "url": "https://www.startupworldcup.io/",
+      "publisher": null,
+      "accessed_at": "2026-10-26",
+      "supports": "Official site lists regional competitions and a $1 million investment prize. Dates and application rules vary by regional event; no single next deadline was confirmed."
+    }
+  ],
+  "notes": []
+}

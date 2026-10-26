@@ -1,0 +1,78 @@
+{
+  "accelerator": {
+    "name": "The Ignition AI Accelerator 2026/27",
+    "website": "https://theignition.ai/",
+    "csv_file": "public/events-archive.json",
+    "slug": "ignition-ai-accelerator"
+  },
+  "status": "verified",
+  "checked_at": "2026-10-26",
+  "confidence": "high",
+  "summary": "Tribe and NVIDIA Inception, supported by Digital Industry Singapore, describe an 18-company 2026/27 program. Exact application and cohort dates are not published on the reviewed page.",
+  "proposed_event": {
+    "id": "ignition-ai-accelerator",
+    "name": "The Ignition AI Accelerator 2026/27",
+    "description": "Tribe and NVIDIA Inception, supported by Digital Industry Singapore, describe an 18-company 2026/27 program. Exact application and cohort dates are not published on the reviewed page.",
+    "organizer": "The Ignition AI Accelerator",
+    "website": "https://theignition.ai/",
+    "location": {
+      "is_virtual": false,
+      "is_hybrid": false,
+      "venue": null,
+      "city": null,
+      "city_slug": null,
+      "country": null,
+      "country_code": null,
+      "region_code": null
+    },
+    "dates": {
+      "application_open": null,
+      "application_close": null,
+      "program_start": null,
+      "program_end": null,
+      "demo_day": null,
+      "timezone": null,
+      "date_range_text": "Tribe and NVIDIA Inception, supported by Digital Industry Singapore, describe an 18-company 2026/27 program. Exact application and cohort dates are not published on the reviewed page."
+    },
+    "categories": {
+      "types": [
+        "accelerator"
+      ],
+      "supports": [
+        "funding",
+        "mentorship",
+        "credits"
+      ],
+      "sectors": [
+        "ai"
+      ]
+    },
+    "hashtags": [
+      "#singapore",
+      "#ai",
+      "#funding"
+    ],
+    "index": {
+      "years": [],
+      "region_code": null,
+      "country_code": null,
+      "city_slug": null,
+      "type_keys": [],
+      "support_keys": [],
+      "sector_keys": [],
+      "date_sort_key": null
+    },
+    "verification": "reported",
+    "last_verified_utc": null
+  },
+  "sources": [
+    {
+      "title": "The Ignition AI Accelerator 2026/27 \u2014 official program information",
+      "url": "https://theignition.ai/",
+      "publisher": "Tribe",
+      "accessed_at": "2026-10-26",
+      "supports": "Tribe and NVIDIA Inception, supported by Digital Industry Singapore, describe an 18-company 2026/27 program. Exact application and cohort dates are not published on the reviewed page."
+    }
+  ],
+  "notes": []
+}

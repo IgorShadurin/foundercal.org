@@ -1,0 +1,25 @@
+{
+  "accelerator": {
+    "name": "StartX",
+    "website": "https://web.startx.com/",
+    "csv_file": "src/app/y-combinator-alternatives/page.tsx",
+    "slug": "startx"
+  },
+  "status": "needs_review",
+  "checked_at": "2026-10-26",
+  "confidence": "medium",
+  "summary": "Stanford founder community with no equity or fees. The accelerator provides mentorship, resources and investor access. No accelerator deadline was confirmed; the homepage November 1 Fellows deadline is a different program.",
+  "proposed_event": null,
+  "sources": [
+    {
+      "title": "StartX official program",
+      "url": "https://web.startx.com/",
+      "publisher": "StartX",
+      "accessed_at": "2026-10-26",
+      "supports": "Stanford founder community with no equity or fees. The accelerator provides mentorship, resources and investor access. No accelerator deadline was confirmed; the homepage November 1 Fellows deadline is a different program."
+    }
+  ],
+  "notes": [
+    "Program details confirmed; current dates need confirmation."
+  ]
+}

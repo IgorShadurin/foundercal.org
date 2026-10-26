@@ -1,1 +1,97 @@
-{"accelerator":{"name":"Binance Labs Incubation Program","website":"https://labs.binance.com/incubation-program","csv_file":"data/accelerators-crypto.csv","slug":"binance-labs-incubation-program"},"status":"needs_review","checked_at":"2026-06-09","confidence":"medium","summary":"Binance Labs has rebranded to YZi Labs, and the old Binance Labs incubation page is not publicly available. YZi Labs now describes EASY Residency as its 10-week in-person incubation program, but no current application deadline or cohort dates were found on official pages.","proposed_event":null,"sources":[{"title":"YZi Labs - Official Site","url":"https://www.yzilabs.com/","publisher":"YZi Labs","accessed_at":"2026-06-09","supports":"Official site states Binance Labs rebranded to YZi Labs and describes YZi Labs as investing in Web3, AI, and biotech."},{"title":"EASY Residency - YZi Labs","url":"https://www.yzilabs.com/easy-residency","publisher":"YZi Labs","accessed_at":"2026-06-09","supports":"Official program page describes EASY Residency as a 10-week in-person incubation program with hands-on coaching, curriculum, and networking, but does not publish current application dates."},{"title":"YZi Labs FAQ","url":"https://www.yzilabs.com/faq","publisher":"YZi Labs","accessed_at":"2026-06-09","supports":"Official FAQ says EASY Residency supports founders at idea, MVP, and growth stages and accepts startups globally."}],"notes":["The submitted website https://labs.binance.com/incubation-program no longer exposes a current Binance Labs Incubation Program page in available public sources.","I did not create a proposed event because the named Binance Labs Incubation Program appears superseded by YZi Labs/EASY Residency, and current application or cohort dates are not publicly stated.","Closest taxonomy if later entered: types incubator/program, supports mentorship/resources, sectors web3/ai/bio, region global."]}
+{
+  "accelerator": {
+    "name": "YZi Labs EASY Residency (formerly Binance Labs)",
+    "website": "https://www.yzilabs.com/easy-residency",
+    "csv_file": "data/accelerators-crypto.csv",
+    "slug": "binance-labs-incubation-program"
+  },
+  "status": "verified",
+  "checked_at": "2026-10-26",
+  "confidence": "high",
+  "summary": "The legacy Binance Labs incubation listing now points to YZi Labs EASY Residency.",
+  "proposed_event": {
+    "id": "yzi-easy-residency-s5",
+    "name": "YZi Labs EASY Residency Season 5",
+    "description": "Web3, AI and biotech residency; up to $500K ($150K for 5% plus $350K uncapped SAFE).",
+    "organizer": "YZi Labs",
+    "website": "https://www.yzilabs.com/easy-residency",
+    "location": {
+      "is_virtual": false,
+      "is_hybrid": true,
+      "venue": null,
+      "city": "Bangkok",
+      "city_slug": "bangkok",
+      "country": "Thailand",
+      "country_code": "TH",
+      "region_code": "apac"
+    },
+    "dates": {
+      "application_open": null,
+      "application_close": "2026-09-21",
+      "program_start": null,
+      "program_end": null,
+      "demo_day": null,
+      "timezone": "Etc/GMT+7",
+      "date_range_text": "Applications closed September 21 at 23:59 GMT-7. Current program page describes five online weeks plus four in Bangkok; exact program dates unconfirmed."
+    },
+    "categories": {
+      "types": [
+        "accelerator"
+      ],
+      "supports": [
+        "funding",
+        "mentorship",
+        "resources"
+      ],
+      "sectors": [
+        "web3",
+        "ai",
+        "bio"
+      ]
+    },
+    "hashtags": [],
+    "index": {
+      "years": [
+        "2026"
+      ],
+      "region_code": "apac",
+      "country_code": "TH",
+      "city_slug": "bangkok",
+      "type_keys": [
+        "accelerator"
+      ],
+      "support_keys": [
+        "funding",
+        "mentorship",
+        "resources"
+      ],
+      "sector_keys": [
+        "web3",
+        "ai",
+        "bio"
+      ],
+      "date_sort_key": "2026-09-21"
+    },
+    "verification": "reported",
+    "last_verified_utc": "2026-10-26T19:49:07Z"
+  },
+  "sources": [
+    {
+      "title": "EASY Residency Season 5",
+      "url": "https://www.yzilabs.com/easy-residency",
+      "publisher": "YZi Labs",
+      "accessed_at": "2026-10-26",
+      "supports": "Current nine-week format, Bangkok location and investment terms."
+    },
+    {
+      "title": "Season 5 announcement",
+      "url": "https://www.yzilabs.com/blog/apply-to-easy-residency-season-5-build-the-markets-for-programmable-capital-intelligence",
+      "publisher": "YZi Labs",
+      "accessed_at": "2026-10-26",
+      "supports": "August 14, 2026 announcement sets September 21 deadline."
+    }
+  ],
+  "notes": [
+    "Announcement originally described ten weeks; current program page says nine. No exact start/end date inferred."
+  ]
+}

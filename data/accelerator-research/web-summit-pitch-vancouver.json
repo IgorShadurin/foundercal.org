@@ -1,0 +1,23 @@
+{
+  "accelerator": {
+    "name": "Web Summit Vancouver PITCH 2027",
+    "website": "https://vancouver.websummit.com/startups/pitch/",
+    "csv_file": "public/events-archive.json",
+    "slug": "web-summit-pitch-vancouver"
+  },
+  "status": "needs_review",
+  "checked_at": "2026-10-26",
+  "confidence": "low",
+  "summary": "The official PITCH page invites applications for 2027; the wider conference is May 25\u201328. Exact PITCH rounds and application deadline were not confirmed.",
+  "proposed_event": null,
+  "sources": [
+    {
+      "title": "Web Summit Vancouver PITCH 2027 \u2014 official program information",
+      "url": "https://vancouver.websummit.com/startups/pitch/",
+      "publisher": null,
+      "accessed_at": "2026-10-26",
+      "supports": "The official PITCH page invites applications for 2027; the wider conference is May 25\u201328. Exact PITCH rounds and application deadline were not confirmed."
+    }
+  ],
+  "notes": []
+}

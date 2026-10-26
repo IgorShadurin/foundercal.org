@@ -59,6 +59,9 @@ export type EventRecord = {
   index: EventIndex;
   verification: string | null;
   last_verified_utc: string | null;
+  last_checked_utc?: string;
+  research_slug?: string;
+  sources?: Array<{ title: string; url: string; publisher: string | null; accessed_at: string; supports: string }>;
 };
 
 export type EventDataset = {

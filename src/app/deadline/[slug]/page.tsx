@@ -17,6 +17,8 @@ import {
   Users,
 } from "lucide-react";
 
+import { researchStatusLabel } from "@/lib/research";
+
 import { Card } from "@/components/ui/card";
 import { deadlineAccelerators, getAcceleratorBySlug, getDeadlineDetails } from "@/lib/accelerators";
 
@@ -37,14 +39,13 @@ export function generateStaticParams() {
 export async function generateMetadata({ params }: PageProps): Promise<Metadata> {
   const { slug } = await params;
   const accelerator = getAcceleratorBySlug(slug);
-  const year = new Date().getFullYear();
   if (!accelerator) {
     return {
       title: "Accelerator deadline not found — FounderCal.org",
       description: "We couldn’t match that accelerator to a deadline page.",
     };
   }
-  const title = `${accelerator.name} application deadline ${year}`;
+  const title = `${accelerator.name} application dates and status`;
   const description = `Track the latest application deadline details for ${accelerator.name}.`;
   return {
     title: { absolute: title },
@@ -84,7 +85,6 @@ export default async function DeadlinePage({ params }: PageProps) {
     notFound();
   }
 
-  const year = new Date().getFullYear();
   const deadlineDetails = getDeadlineDetails(accelerator);
   const websiteUrl = normalizeUrl(accelerator.website);
   const applyUrl = normalizeUrl(accelerator.applyUrl);
@@ -99,7 +99,7 @@ export default async function DeadlinePage({ params }: PageProps) {
   const jsonLd = {
     "@context": "https://schema.org",
     "@type": "WebPage",
-    name: `${accelerator.name} application deadline ${year}`,
+    name: `${accelerator.name} application dates and status`,
     description: accelerator.description || `Application deadline details for ${accelerator.name}.`,
     url: pageUrl,
     about: {
@@ -151,12 +151,12 @@ export default async function DeadlinePage({ params }: PageProps) {
             <CalendarClock className="size-4" /> Accelerator deadline
           </div>
           <h1 className="text-3xl font-semibold sm:text-4xl">
-            {accelerator.name} application deadline {year}
+            {accelerator.name} application dates and status
           </h1>
           <div className="flex flex-wrap gap-2 text-xs font-semibold uppercase tracking-wide text-muted-foreground">
             <span className="inline-flex items-center gap-1 rounded-full border border-border bg-muted/40 px-3 py-1">
               <CalendarClock className="size-3 text-primary" aria-hidden="true" />
-              {hasDeadlineDetails ? "Deadline info available" : "Deadline info coming soon"}
+              {accelerator.research?.proposed_event?.dates.application_close ? "Published cutoff — check dates below" : "No confirmed application cutoff"}
             </span>
             {websiteUrl ? (
               <span className="inline-flex items-center gap-1 rounded-full border border-border bg-muted/40 px-3 py-1">
@@ -170,6 +170,20 @@ export default async function DeadlinePage({ params }: PageProps) {
           ) : null}
         </header>
 
+        {accelerator.research ? (
+          <Card className="space-y-3 p-6">
+            <p className="font-semibold">{researchStatusLabel(accelerator.research.status)}</p>
+            <p className="text-sm text-muted-foreground">Last checked: {accelerator.research.checked_at}. Review dates do not imply open applications.</p>
+            <p>{accelerator.research.summary}</p>
+            {accelerator.research.proposed_event?.dates.date_range_text ? <p>{accelerator.research.proposed_event.dates.date_range_text}</p> : null}
+            <ul className="space-y-2 text-sm">
+              {accelerator.research.sources.map((source) => (
+                <li key={source.url}>{accelerator.research?.status === "inactive" && !accelerator.website ? <span>{source.title}</span> : <a href={source.url} target="_blank" rel="noreferrer" className="underline">{source.title}</a>} — {source.supports}</li>
+              ))}
+            </ul>
+            {accelerator.research.notes.length ? <p className="text-sm text-muted-foreground">{accelerator.research.notes.join(" ")}</p> : null}
+          </Card>
+        ) : null}
         <Card className="space-y-6 p-6">
           <div className="text-sm font-semibold uppercase tracking-wide text-muted-foreground">Program snapshot</div>
           <div className="grid gap-4 text-sm text-foreground sm:grid-cols-3">
@@ -203,16 +217,7 @@ export default async function DeadlinePage({ params }: PageProps) {
             </ul>
           ) : (
             <p className="text-sm text-muted-foreground">
-              Deadline information will be available soon. Subscribe to the{" "}
-              <Link
-                href="https://t.me/Web3IgorBuzz"
-                target="_blank"
-                rel="noreferrer"
-                className="font-medium text-foreground underline-offset-4 hover:text-primary hover:underline"
-              >
-                Telegram channel
-              </Link>{" "}
-              to get the actual information.
+              No current application deadline has been confirmed. Check the official program information and review notes above.
             </p>
           )}
         </Card>
@@ -229,9 +234,9 @@ export default async function DeadlinePage({ params }: PageProps) {
               <span className="text-muted-foreground">Website: —</span>
             )}
             {applyUrl ? (
-              <ExternalLinkRow label="Apply" href={applyUrl} />
+              <ExternalLinkRow label="Program / application info" href={applyUrl} />
             ) : (
-              <span className="text-muted-foreground">Apply: —</span>
+              <span className="text-muted-foreground">Application information: unconfirmed</span>
             )}
           </div>
         </Card>
@@ -328,7 +333,7 @@ function buildFaqItems({
   });
 
   items.push({
-    question: "Where do I apply?",
+    question: "Where can I check application information?",
     answer: applyUrl ? (
       <Link
         href={applyUrl}
@@ -336,7 +341,7 @@ function buildFaqItems({
         rel="noreferrer"
         className="font-medium text-foreground underline-offset-4 hover:text-primary hover:underline"
       >
-        Apply on {getDisplayHostname(applyUrl)}
+        Program information on {getDisplayHostname(applyUrl)}
       </Link>
     ) : (
       "We’re still confirming the official application link."
@@ -350,16 +355,7 @@ function buildFaqItems({
       <span>{deadlineDetails.join(" ")}</span>
     ) : (
       <>
-        Deadline information will be available soon. Subscribe to the{" "}
-        <Link
-          href="https://t.me/Web3IgorBuzz"
-          target="_blank"
-          rel="noreferrer"
-          className="font-medium text-foreground underline-offset-4 hover:text-primary hover:underline"
-        >
-          Telegram channel
-        </Link>{" "}
-        to get the actual information.
+        No current application deadline has been confirmed. Check the official program information and review notes.
       </>
     ),
     icon: CalendarClock,

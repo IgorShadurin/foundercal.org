@@ -30,12 +30,17 @@ type SoloAlternative = {
   watch_out: string;
   solo_founder_fit: "High" | "Medium" | "Niche" | string;
   source: string;
+  review_status: "reviewed" | "needs_review";
+  checked_at: string;
+  source_notes: string;
+  supporting_sources?: string[];
 };
 
 const FIT_SORT_ORDER: Record<string, number> = {
   High: 0,
   Medium: 1,
   Niche: 2,
+  "Team required": 3,
 };
 
 const alternatives = [...(rows as SoloAlternative[])].sort((a, b) => {
@@ -52,7 +57,7 @@ const SEO_TITLE = "Alternatives to Y Combinator for Solo Founders: 100 Picks";
 const SEO_DESCRIPTION =
   "Compare 100 alternatives to Y Combinator for solo founders, ranked by fit, with why-it-works notes, watch-outs, use cases, and source links for every option.";
 const PAGE_PUBLISHED_UTC = "2026-03-08T00:00:00.000Z";
-const PAGE_UPDATED_UTC = "2026-03-08T00:00:00.000Z";
+const PAGE_UPDATED_UTC = `${rows.map((row) => row.checked_at).sort().at(-1)}T00:00:00.000Z`;
 const SEO_KEYWORDS = [
   "alternatives to y combinator for solo founders",
   "y combinator alternatives for solo founder",
@@ -68,6 +73,7 @@ const FIT_LABELS: Record<string, string> = {
   High: "Best for solo founders",
   Medium: "Good with caveats",
   Niche: "Narrow fit",
+  "Team required": "Requires additional team members to participate",
 };
 
 const FAVICON_DIR = path.join(process.cwd(), "public", "favicons");
@@ -162,13 +168,19 @@ export default function SoloFoundersAlternativesPage() {
     <main className="min-h-screen bg-background px-4 py-12 text-foreground sm:px-8">
       <div className="mx-auto flex w-full max-w-[1200px] flex-col gap-8">
         <header className="rounded-3xl border border-dashed bg-gradient-to-br from-zinc-50 via-white to-zinc-100 p-6 shadow-sm dark:from-zinc-900 dark:via-zinc-950 dark:to-black sm:p-8">
-          <p className="text-sm font-semibold uppercase tracking-wider text-primary">Solo founder keyword page</p>
+          <p className="text-sm font-semibold uppercase tracking-wider text-primary">Founder programs and resources</p>
           <h1 className="mt-2 text-3xl font-bold tracking-tight sm:text-4xl">
             Alternatives to Y Combinator for Solo Founders
           </h1>
           <p className="mt-4 max-w-4xl text-base text-muted-foreground sm:text-lg">
-            Exact-match dataset based on your source CSV, converted to JSON and rendered as a searchable-style comparison
-            table with source links and icon support where favicon assets exist.
+            Compare accelerators, founder communities, financing options and tools by the support they offer.
+            Fit ratings and comparisons are editorial assessments; each source note records what we could confirm.
+          </p>
+          <p className="mt-3 max-w-4xl text-sm text-muted-foreground">
+            Source review: <time dateTime={PAGE_UPDATED_UTC}>{new Date(PAGE_UPDATED_UTC).toLocaleDateString("en-US", { month: "long", day: "numeric", year: "numeric", timeZone: "UTC" })}</time>.
+            {" "}{stats.reviewed} offerings reviewed; {stats.needsReview} need further confirmation.
+            A reviewed source does not mean applications are open. Some programs require a team, and financing or software
+            benefits have their own eligibility and costs.
           </p>
           <div className="mt-5 flex flex-wrap gap-3 text-sm font-medium text-muted-foreground">
             <Link
@@ -187,8 +199,8 @@ export default function SoloFoundersAlternativesPage() {
           </div>
           <div className="mt-6 grid gap-3 sm:grid-cols-2 lg:grid-cols-4">
             <StatCard icon={<SearchCheck className="size-4" />} label="Total options" value={String(stats.total)} />
-            <StatCard icon={<UserRound className="size-4" />} label="High solo fit" value={String(stats.highFit)} />
-            <StatCard icon={<Users className="size-4" />} label="Medium solo fit" value={String(stats.mediumFit)} />
+            <StatCard icon={<UserRound className="size-4" />} label="High fit · editorial" value={String(stats.highFit)} />
+            <StatCard icon={<Users className="size-4" />} label="Medium fit · editorial" value={String(stats.mediumFit)} />
             <StatCard icon={<ExternalLink className="size-4" />} label="Unique categories" value={String(stats.uniqueCategories)} />
           </div>
         </header>
@@ -230,12 +242,25 @@ export default function SoloFoundersAlternativesPage() {
                         source={entry.source}
                         category={entry.category}
                         fit={entry.solo_founder_fit}
+                        reviewStatus={entry.review_status}
+                        checkedAt={entry.checked_at}
                       />
                     </td>
                     <td className="px-3 py-3 break-words text-muted-foreground">{entry.why_it_works}</td>
                     <td className="px-3 py-3 break-words text-muted-foreground">{entry.best_for}</td>
                     <td className="px-3 py-3 break-words text-muted-foreground">{entry.yc_substitute}</td>
-                    <td className="px-3 py-3 break-words text-muted-foreground">{entry.watch_out}</td>
+                    <td className="px-3 py-3 break-words text-muted-foreground">
+                      {entry.watch_out}
+                      <details className="mt-3">
+                        <summary className="cursor-pointer font-medium text-foreground">Source review</summary>
+                        <p className="mt-2">{entry.source_notes}</p>
+                        {entry.supporting_sources?.map((url, index) => (
+                          <a key={url} href={url} target="_blank" rel="noreferrer" className="mt-2 block text-primary underline underline-offset-4">
+                            Supporting source {index + 1}
+                          </a>
+                        ))}
+                      </details>
+                    </td>
                   </tr>
                 ))}
               </tbody>
@@ -261,7 +286,14 @@ function StatCard({ icon, label, value }: { icon: ReactNode; label: string; valu
   );
 }
 
-function OptionCell({ name, source, category, fit }: { name: string; source: string; category: string; fit: string }) {
+function OptionCell({ name, source, category, fit, reviewStatus, checkedAt }: {
+  name: string;
+  source: string;
+  category: string;
+  fit: string;
+  reviewStatus: SoloAlternative["review_status"];
+  checkedAt: string;
+}) {
   const hostname = getHostnameFromUrl(source);
   const faviconPath = hostname ? resolveFaviconPath(hostname) : undefined;
   return (
@@ -307,6 +339,11 @@ function OptionCell({ name, source, category, fit }: { name: string; source: str
       <div className="mt-1">
         <FitBadge fit={fit} />
       </div>
+      <p className={`mt-2 text-xs ${reviewStatus === "needs_review" ? "font-medium text-amber-700 dark:text-amber-300" : "text-muted-foreground"}`}>
+        {reviewStatus === "needs_review" ? "Needs confirmation" : "Source reviewed"}
+        <br />
+        <time dateTime={checkedAt}>{checkedAt}</time>
+      </p>
     </div>
   );
 }
@@ -333,7 +370,7 @@ function FitBadge({ fit }: { fit: string }) {
       aria-label={`${fit}: ${explanation}`}
     >
       {icon}
-      {fit} fit
+      {fit === "Team required" ? fit : `${fit} fit`}
     </span>
   );
 }
@@ -407,6 +444,8 @@ function buildStats(records: SoloAlternative[]) {
     highFit: records.filter((record) => record.solo_founder_fit === "High").length,
     mediumFit: records.filter((record) => record.solo_founder_fit === "Medium").length,
     uniqueCategories: new Set(records.map((record) => record.category)).size,
+    reviewed: records.filter((record) => record.review_status === "reviewed").length,
+    needsReview: records.filter((record) => record.review_status === "needs_review").length,
   };
 }
 
@@ -416,7 +455,7 @@ function buildStructuredData(records: SoloAlternative[]) {
     position: index + 1,
     name: record.option,
     url: record.source,
-    description: `${record.solo_founder_fit} fit. ${truncate(record.why_it_works, 180)}`,
+    description: `${record.review_status === "needs_review" ? "Needs confirmation. " : ""}Editorial fit: ${record.solo_founder_fit}. ${truncate(record.why_it_works, 180)}`,
   }));
 
   return {

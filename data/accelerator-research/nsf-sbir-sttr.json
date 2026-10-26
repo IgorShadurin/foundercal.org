@@ -1,0 +1,89 @@
+{
+  "accelerator": {
+    "name": "NSF SBIR/STTR",
+    "website": "https://seedfund.nsf.gov/apply/full-proposal/",
+    "csv_file": "public/events-archive.json",
+    "slug": "nsf-sbir-sttr"
+  },
+  "status": "verified",
+  "checked_at": "2026-10-26",
+  "confidence": "high",
+  "summary": "NSF publishes November 4, 2026 as the next full-proposal deadline, with March 4, 2027 following.",
+  "proposed_event": {
+    "id": "nsf-sbir-sttr-november-2026",
+    "name": "NSF SBIR/STTR November 2026 Full Proposals",
+    "description": "US small-business R&D funding through NSF SBIR/STTR; proposal and invitation requirements depend on phase and solicitation.",
+    "organizer": "U.S. National Science Foundation",
+    "website": "https://seedfund.nsf.gov/apply/full-proposal/",
+    "location": {
+      "is_virtual": true,
+      "is_hybrid": false,
+      "venue": null,
+      "city": null,
+      "city_slug": null,
+      "country": "United States",
+      "country_code": "US",
+      "region_code": "na"
+    },
+    "dates": {
+      "application_open": null,
+      "application_close": "2026-11-04",
+      "program_start": null,
+      "program_end": null,
+      "demo_day": null,
+      "timezone": null,
+      "date_range_text": "Full proposals due November 4, 2026 at 5:00 PM in the submitter’s local time. Next published cutoff: March 4, 2027. Check the relevant solicitation and required Project Pitch invitation before applying."
+    },
+    "categories": {
+      "types": [
+        "grant",
+        "program"
+      ],
+      "supports": [
+        "funding",
+        "resources"
+      ],
+      "sectors": [
+        "deeptech",
+        "general"
+      ]
+    },
+    "hashtags": [],
+    "index": {
+      "years": [
+        "2026"
+      ],
+      "region_code": "na",
+      "country_code": "US",
+      "city_slug": null,
+      "type_keys": [
+        "grant",
+        "program"
+      ],
+      "support_keys": [
+        "funding",
+        "resources"
+      ],
+      "sector_keys": [
+        "deeptech",
+        "general"
+      ],
+      "date_sort_key": "2026-11-04"
+    },
+    "verification": "reported",
+    "last_verified_utc": "2026-10-26T19:53:15Z"
+  },
+  "sources": [
+    {
+      "title": "NSF full-proposal instructions",
+      "url": "https://seedfund.nsf.gov/apply/full-proposal/",
+      "publisher": "U.S. National Science Foundation",
+      "accessed_at": "2026-10-26",
+      "supports": "Full-proposal deadlines, submitter-local 5pm cutoff and eligibility of prior Project Pitch invitations."
+    }
+  ],
+  "notes": [
+    "This is not a Project Pitch deadline or an invitation to skip eligibility and registration requirements.",
+    "No single timezone can represent the submitter-local cutoff. Phase-specific requirements are in NSF 26-510 and NSF 26-511."
+  ]
+}

@@ -1,1 +1,25 @@
-{"accelerator":{"name":"LAUNCH Accelerator","website":"https://launchaccelerator.co/#overview-section","csv_file":"src/data/imported-accelerators.json","slug":"launch-accelerator"},"status":"verified","checked_at":"2026-06-09","confidence":"medium","summary":"Official LAUNCH Accelerator pages confirm a 14-week, $125K program, Cohort 36, open applications, hybrid delivery, and a remote public Demo Day on June 9, 2026. No future cohort deadline or exact next batch dates are published.","proposed_event":{"id":"launch-accelerator-la36-2026","name":"LAUNCH Accelerator Cohort 36","description":"14-week hybrid accelerator investing $125K for 7%, with investor pitch sessions and Demo Day.","organizer":"LAUNCH","website":"https://launchaccelerator.co/","location":{"is_virtual":false,"is_hybrid":true,"venue":null,"city":"San Francisco","city_slug":"san-francisco","country":"United States","country_code":"US","region_code":"na"},"dates":{"application_open":null,"application_close":null,"program_start":null,"program_end":null,"demo_day":"2026-06-09","timezone":"PT","date_range_text":"Cohort 36; applications listed as open; 14-week program shown as March 2026; Remote Public Demo Day on June 9, 2026, 12:30-1:30 PM PT"},"categories":{"types":["accelerator","demo_day"],"supports":["funding","mentorship"],"sectors":["general"]},"hashtags":["#usa","#sanfrancisco","#general","#funding"],"index":{"years":["2026"],"region_code":"na","country_code":"US","city_slug":"san-francisco","type_keys":["accelerator","demo_day"],"support_keys":["funding","mentorship"],"sector_keys":["general"],"date_sort_key":"2026-06-09"},"verification":"reported","last_verified_utc":null},"sources":[{"title":"Launch Accelerator | Get Funded. Build Faster.","url":"https://launchaccelerator.co/","publisher":"LAUNCH","accessed_at":"2026-06-09","supports":"Official homepage states applications are open for Cohort 36, the program is 14 weeks, provides $125K in funding, has 7-12 startups per cohort, includes investor pitch sessions, and links to the application."},{"title":"LAUNCH Accelerator Demo Day","url":"https://launchaccelerator.co/demo-day?src=la-banner","publisher":"LAUNCH","accessed_at":"2026-06-09","supports":"Official Demo Day page states Cohort 36 Demo Day is June 9, 2026, 12:30-1:30 PM PT, streamed remotely."},{"title":"LAUNCH | We Back Builders","url":"https://launch.co/","publisher":"LAUNCH","accessed_at":"2026-06-09","supports":"Organizer page states LAUNCH was founded by Jason Calacanis and runs accelerator programs for early-stage startups."}],"notes":["Official site does not publish an application close date or confirmed future cohort start date beyond Cohort 36 references.","Homepage still says applications are open for Cohort 36 while the official Demo Day is on 2026-06-09; keep this event but review before using it as a future application opportunity.","FAQ text on the official site states the accelerator is primarily virtual week to week with two to three in-person sessions in San Francisco and potential travel to Austin and New York City.","FAQ text on the official site states the deal terms are $125k for 7% and non-negotiable."]}
+{
+  "accelerator": {
+    "name": "LAUNCH Accelerator",
+    "website": "https://launchaccelerator.co/#overview-section",
+    "csv_file": "src/data/imported-accelerators.json",
+    "slug": "launch-accelerator"
+  },
+  "status": "needs_review",
+  "checked_at": "2026-10-26",
+  "confidence": "medium",
+  "summary": "LAUNCH currently advertises Cohort 37, September 2026, a 14-week program and $125K investment. Its application banner remains open, but that cohort has already started and no future cutoff or next batch dates are published.",
+  "proposed_event": null,
+  "sources": [
+    {
+      "url": "https://launchaccelerator.co/",
+      "title": "LAUNCH Accelerator",
+      "supports": "Official indexed page shows Cohort 37/September 2026, 14 weeks and $125K.",
+      "publisher": "LAUNCH",
+      "accessed_at": "2026-10-26"
+    }
+  ],
+  "notes": [
+    "The live HTML did not expose text to the browser reader; the official indexed page supplied the details. Do not treat an undated Apply Now banner as evidence of a future cohort."
+  ]
+}

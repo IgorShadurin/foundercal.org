@@ -1,0 +1,78 @@
+{
+  "accelerator": {
+    "name": "Tim Draper Utah Entrepreneur Challenge 2026\u201327",
+    "website": "https://lassonde.utah.edu/uec/",
+    "csv_file": "public/events-archive.json",
+    "slug": "utah-entrepreneur-challenge"
+  },
+  "status": "verified",
+  "checked_at": "2026-10-26",
+  "confidence": "high",
+  "summary": "Utah college student business competition. Applications close February 16, 2027; final event March 20, 2027. The prize pool is $75,000.",
+  "proposed_event": {
+    "id": "utah-entrepreneur-challenge",
+    "name": "Tim Draper Utah Entrepreneur Challenge 2026\u201327",
+    "description": "Utah college student business competition. Applications close February 16, 2027; final event March 20, 2027. The prize pool is $75,000.",
+    "organizer": "Tim Draper Utah Entrepreneur Challenge",
+    "website": "https://lassonde.utah.edu/uec/",
+    "location": {
+      "is_virtual": false,
+      "is_hybrid": false,
+      "venue": null,
+      "city": "Salt Lake City",
+      "city_slug": "salt-lake-city",
+      "country": "United States",
+      "country_code": "US",
+      "region_code": "na"
+    },
+    "dates": {
+      "application_open": "2026-09-10",
+      "application_close": "2027-02-16",
+      "program_start": null,
+      "program_end": null,
+      "demo_day": "2027-03-20",
+      "timezone": null,
+      "date_range_text": "Utah college student business competition. Applications close February 16, 2027; final event March 20, 2027. The prize pool is $75,000."
+    },
+    "categories": {
+      "types": [
+        "competition"
+      ],
+      "supports": [
+        "funding",
+        "resources"
+      ],
+      "sectors": [
+        "general"
+      ]
+    },
+    "hashtags": [
+      "#usa",
+      "#utah",
+      "#student",
+      "#funding"
+    ],
+    "index": {
+      "years": [],
+      "region_code": "na",
+      "country_code": "US",
+      "city_slug": "salt-lake-city",
+      "type_keys": [],
+      "support_keys": [],
+      "sector_keys": [],
+      "date_sort_key": null
+    },
+    "verification": "reported",
+    "last_verified_utc": null
+  },
+  "sources": [
+    {
+      "title": "Tim Draper Utah Entrepreneur Challenge 2026\u201327 \u2014 official program information",
+      "url": "https://lassonde.utah.edu/uec/",
+      "publisher": null,
+      "accessed_at": "2026-10-26",
+      "supports": "Utah college student business competition. Applications close February 16, 2027; final event March 20, 2027. The prize pool is $75,000."
+    }
+  ],
+  "notes": []
+}

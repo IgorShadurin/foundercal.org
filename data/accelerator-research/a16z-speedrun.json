@@ -1,1 +1,85 @@
-{"accelerator":{"name":"a16z Speedrun","website":"https://speedrun.a16z.com/","csv_file":"src/data/imported-accelerators.json","slug":"a16z-speedrun"},"status":"needs_review","checked_at":"2026-06-09","confidence":"low","summary":"Unable to verify a current or upcoming a16z Speedrun application window from accessible public pages. Existing public pages describe Speedrun as an a16z accelerator and the application portal exists, but no post-2026-06-09 cohort dates or deadlines were confirmed.","proposed_event":null,"sources":[{"title":"a16z Speedrun","url":"https://speedrun.a16z.com/","publisher":"Andreessen Horowitz","accessed_at":"2026-06-09","supports":"Official Speedrun homepage exists for a16z's Speedrun accelerator, but accessible public content did not expose a current application deadline or upcoming cohort dates."},{"title":"Speedrun application portal","url":"https://sr.a16z.com/","publisher":"Andreessen Horowitz","accessed_at":"2026-06-09","supports":"Official application portal URL exists, but no current public application window or cohort schedule was confirmed from accessible content."}],"notes":["Do not merge a new event without human review or a source that publishes current cohort dates after 2026-06-09.","Previously known SR006 dates ended on 2026-04-12, which is before today's date, so they should not be treated as current."]}
+{
+  "accelerator": {
+    "name": "a16z Speedrun",
+    "website": "https://speedrun.a16z.com/",
+    "csv_file": "src/data/imported-accelerators.json",
+    "slug": "a16z-speedrun"
+  },
+  "status": "verified",
+  "checked_at": "2026-10-26",
+  "confidence": "high",
+  "summary": "SR008 applications are open. Speedrun now covers many sectors.",
+  "proposed_event": {
+    "id": "a16z-speedrun-sr008",
+    "name": "a16z speedrun SR008",
+    "description": "Up to $1M: $500K for 10% upfront, plus up to $500K in a qualifying round.",
+    "organizer": "a16z",
+    "website": "https://speedrun.a16z.com/apply",
+    "location": {
+      "is_virtual": false,
+      "is_hybrid": false,
+      "venue": null,
+      "city": "San Francisco",
+      "city_slug": "san-francisco",
+      "country": "United States",
+      "country_code": "US",
+      "region_code": "na"
+    },
+    "dates": {
+      "application_open": "2026-10-12",
+      "application_close": "2026-11-01",
+      "program_start": "2027-02-01",
+      "program_end": "2027-04-18",
+      "demo_day": "2027-04-13",
+      "timezone": "America/Los_Angeles",
+      "date_range_text": "Apply by November 1 at 11:59 PM PT. Residency February 1–April 18, 2027; Demo Day April 13."
+    },
+    "categories": {
+      "types": [
+        "accelerator"
+      ],
+      "supports": [
+        "funding",
+        "mentorship",
+        "resources"
+      ],
+      "sectors": [
+        "general"
+      ]
+    },
+    "hashtags": [],
+    "index": {
+      "years": [
+        "2026",
+        "2027"
+      ],
+      "region_code": "na",
+      "country_code": "US",
+      "city_slug": "san-francisco",
+      "type_keys": [
+        "accelerator"
+      ],
+      "support_keys": [
+        "funding",
+        "mentorship",
+        "resources"
+      ],
+      "sector_keys": [
+        "general"
+      ],
+      "date_sort_key": "2026-11-01"
+    },
+    "verification": "reported",
+    "last_verified_utc": "2026-10-26T19:49:07Z"
+  },
+  "sources": [
+    {
+      "title": "speedrun FAQ",
+      "url": "https://speedrun.a16z.com/faq",
+      "publisher": "a16z speedrun",
+      "accessed_at": "2026-10-26",
+      "supports": "SR008 window, residency and Demo Day; current investment structure."
+    }
+  ],
+  "notes": []
+}

@@ -1,0 +1,33 @@
+{
+  "accelerator": {
+    "name": "Google.org Impact Challenge",
+    "website": "https://www.google.org/impact-challenges/ai-government-innovation/",
+    "csv_file": "public/events-archive.json",
+    "slug": "googleorg-impact-challenge"
+  },
+  "status": "needs_review",
+  "checked_at": "2026-10-26",
+  "confidence": "high",
+  "summary": "Google.org Impact Challenge is a family of themed calls. The checked 2026 AI for Government Innovation and AI for Science pages now announce selected recipients.",
+  "proposed_event": null,
+  "sources": [
+    {
+      "title": "AI for Government Innovation recipients",
+      "url": "https://www.google.org/impact-challenges/ai-government-innovation/",
+      "publisher": "Google.org",
+      "accessed_at": "2026-10-26",
+      "supports": "Selected 2026 organizations and $30M program support; current page is a recipients announcement."
+    },
+    {
+      "title": "AI for Science recipients",
+      "url": "https://www.google.org/impact-challenges/ai-science/",
+      "publisher": "Google.org",
+      "accessed_at": "2026-10-26",
+      "supports": "Selected 2026 organizations and $36M program support; current page is a recipients announcement."
+    }
+  ],
+  "notes": [
+    "No universal Impact Challenge deadline or new open round was confirmed.",
+    "A completed round does not mean the broader initiative is inactive."
+  ]
+}

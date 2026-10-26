@@ -1,0 +1,77 @@
+{
+  "accelerator": {
+    "name": "NC IDEA MICRO/SEED Fall 2026",
+    "website": "https://ncidea.org/fall-2026-grant-cycle/",
+    "csv_file": "public/events-archive.json",
+    "slug": "nc-idea-micro-seed"
+  },
+  "status": "verified",
+  "checked_at": "2026-10-26",
+  "confidence": "high",
+  "summary": "Fall 2026 MICRO ($10,000) and SEED ($50,000) applications closed August 24. A future cycle was not confirmed.",
+  "proposed_event": {
+    "id": "nc-idea-micro-seed",
+    "name": "NC IDEA MICRO/SEED Fall 2026",
+    "description": "Fall 2026 MICRO ($10,000) and SEED ($50,000) applications closed August 24. A future cycle was not confirmed.",
+    "organizer": "NC IDEA MICRO/SEED Fall",
+    "website": "https://ncidea.org/fall-2026-grant-cycle/",
+    "location": {
+      "is_virtual": false,
+      "is_hybrid": false,
+      "venue": null,
+      "city": null,
+      "city_slug": null,
+      "country": null,
+      "country_code": null,
+      "region_code": null
+    },
+    "dates": {
+      "application_open": null,
+      "application_close": "2026-08-24",
+      "program_start": null,
+      "program_end": null,
+      "demo_day": null,
+      "timezone": null,
+      "date_range_text": "Fall 2026 MICRO ($10,000) and SEED ($50,000) applications closed August 24. A future cycle was not confirmed."
+    },
+    "categories": {
+      "types": [
+        "grant"
+      ],
+      "supports": [
+        "funding"
+      ],
+      "sectors": [
+        "general"
+      ]
+    },
+    "hashtags": [
+      "#usa",
+      "#northcarolina",
+      "#general",
+      "#funding"
+    ],
+    "index": {
+      "years": [],
+      "region_code": null,
+      "country_code": null,
+      "city_slug": null,
+      "type_keys": [],
+      "support_keys": [],
+      "sector_keys": [],
+      "date_sort_key": null
+    },
+    "verification": "reported",
+    "last_verified_utc": null
+  },
+  "sources": [
+    {
+      "title": "NC IDEA MICRO/SEED Fall 2026 \u2014 official program information",
+      "url": "https://ncidea.org/fall-2026-grant-cycle/",
+      "publisher": null,
+      "accessed_at": "2026-10-26",
+      "supports": "Fall 2026 MICRO ($10,000) and SEED ($50,000) applications closed August 24. A future cycle was not confirmed."
+    }
+  ],
+  "notes": []
+}

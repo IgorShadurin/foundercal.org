@@ -1,1 +1,32 @@
-{"accelerator":{"name":"Gener8tor","website":"https://www.gener8tor.com/","csv_file":"data/accelerators-master.csv","slug":"gener8tor"},"status":"needs_review","checked_at":"2026-06-09","confidence":"high","summary":"Official gener8tor pages confirm an active 12-week investment-for-equity accelerator with $100K investment and ongoing applications across city/vertical programs, but current cohort-specific deadlines render as dynamic/TBD placeholders in the public HTML.","proposed_event":{"id":"gener8tor","name":"Gener8tor Accelerator","description":"12-week investment-for-equity accelerator investing $100K with concierge mentorship and network access for high-growth startups.","organizer":"gener8tor Management, LLC","website":"https://www.gener8tor.com/investment-accelerators","location":{"is_virtual":false,"is_hybrid":false,"venue":null,"city":null,"city_slug":null,"country":null,"country_code":null,"region_code":"global"},"dates":{"application_open":null,"application_close":null,"program_start":null,"program_end":null,"demo_day":null,"timezone":null,"date_range_text":"Applications are available through gener8tor's program directory; public pages list upcoming program dates as TBD or rolling by individual city/vertical program."},"categories":{"types":["accelerator"],"supports":["funding","mentorship","credits","resources"],"sectors":["general"]},"hashtags":["#Accelerator","#Funding","#Mentorship","#General"],"index":{"years":["2026"],"region_code":"global","country_code":null,"city_slug":null,"type_keys":["accelerator"],"support_keys":["funding","mentorship","credits","resources"],"sector_keys":["general"],"date_sort_key":null},"verification":"needs_review","last_verified_utc":null},"sources":[{"title":"Investment Accelerators at gener8tor","url":"https://www.gener8tor.com/investment-accelerators","publisher":"gener8tor","accessed_at":"2026-06-09","supports":"Confirms the gener8tor Accelerator is a 12-week investment-for-equity accelerator for high-growth startups; states $100K investment, targeted growth guidance, global expert network, alumni outcomes, city/vertical program directory, and FAQ perks including Global Accelerator Network vendor deals."},{"title":"Apply to a gener8tor Program","url":"https://www.gener8tor.com/apply","publisher":"gener8tor","accessed_at":"2026-06-09","supports":"Confirms the application page invites users to apply for upcoming gener8tor programs; describes investment accelerators as investment-for-equity, concierge, mentorship-driven programs; public HTML shows application deadlines/program dates as TBD or rolling placeholders."}],"notes":["No exact current application deadline, kickoff, end date, demo day, or timezone was available in the official static page content for the umbrella Gener8tor Accelerator listing.","Gener8tor runs many city and vertical programs, so a more specific event may be possible by selecting one current program page with published dates."]}
+{
+  "accelerator": {
+    "name": "Gener8tor",
+    "website": "https://www.gener8tor.com/",
+    "csv_file": "data/accelerators-master.csv",
+    "slug": "gener8tor"
+  },
+  "status": "needs_review",
+  "checked_at": "2026-10-26",
+  "confidence": "high",
+  "summary": "gener8tor operates multiple investment, free and sector-specific programs; dates and eligibility depend on the individual program.",
+  "proposed_event": null,
+  "sources": [
+    {
+      "title": "Apply to gener8tor",
+      "url": "https://www.gener8tor.com/apply",
+      "publisher": "gener8tor",
+      "accessed_at": "2026-10-26",
+      "supports": "Program-specific application directory."
+    },
+    {
+      "title": "gener8tor programs",
+      "url": "https://www.gener8tor.com/",
+      "publisher": "gener8tor",
+      "accessed_at": "2026-10-26",
+      "supports": "Investment accelerators typically offer $100K over 12 weeks; free programs differ."
+    }
+  ],
+  "notes": [
+    "No global gener8tor deadline exists. Choose an individual listed program before copying dates."
+  ]
+}

@@ -1,0 +1,78 @@
+{
+  "accelerator": {
+    "name": "SXSW EDU Launch 2027",
+    "website": "https://cart.sxsw.com/products/launchapp",
+    "csv_file": "public/events-archive.json",
+    "slug": "sxsw-edu-launch"
+  },
+  "status": "verified",
+  "checked_at": "2026-10-26",
+  "confidence": "high",
+  "summary": "Early-stage education startups can apply by November 1, 2026. Launch occurs during SXSW EDU March 13\u201316, 2027 in Austin; the application fee is $100. The exact pitch day is not confirmed.",
+  "proposed_event": {
+    "id": "sxsw-edu-launch",
+    "name": "SXSW EDU Launch 2027",
+    "description": "Early-stage education startups can apply by November 1, 2026. Launch occurs during SXSW EDU March 13\u201316, 2027 in Austin; the application fee is $100. The exact pitch day is not confirmed.",
+    "organizer": "SXSW EDU Launch",
+    "website": "https://cart.sxsw.com/products/launchapp",
+    "location": {
+      "is_virtual": false,
+      "is_hybrid": false,
+      "venue": null,
+      "city": "Austin",
+      "city_slug": "austin",
+      "country": "United States",
+      "country_code": "US",
+      "region_code": "na"
+    },
+    "dates": {
+      "application_open": null,
+      "application_close": "2026-11-01",
+      "program_start": null,
+      "program_end": null,
+      "demo_day": null,
+      "timezone": null,
+      "date_range_text": "Early-stage education startups can apply by November 1, 2026. Launch occurs during SXSW EDU March 13\u201316, 2027 in Austin; the application fee is $100. The exact pitch day is not confirmed."
+    },
+    "categories": {
+      "types": [
+        "competition"
+      ],
+      "supports": [
+        "funding",
+        "resources"
+      ],
+      "sectors": [
+        "edtech"
+      ]
+    },
+    "hashtags": [
+      "#usa",
+      "#austin",
+      "#edtech",
+      "#funding"
+    ],
+    "index": {
+      "years": [],
+      "region_code": "na",
+      "country_code": "US",
+      "city_slug": "austin",
+      "type_keys": [],
+      "support_keys": [],
+      "sector_keys": [],
+      "date_sort_key": null
+    },
+    "verification": "reported",
+    "last_verified_utc": null
+  },
+  "sources": [
+    {
+      "title": "SXSW EDU Launch 2027 \u2014 official program information",
+      "url": "https://cart.sxsw.com/products/launchapp",
+      "publisher": null,
+      "accessed_at": "2026-10-26",
+      "supports": "Early-stage education startups can apply by November 1, 2026. Launch occurs during SXSW EDU March 13\u201316, 2027 in Austin; the application fee is $100. The exact pitch day is not confirmed."
+    }
+  ],
+  "notes": []
+}

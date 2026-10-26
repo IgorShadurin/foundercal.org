@@ -1,1 +1,88 @@
-{"accelerator":{"name":"Coinbase Builders (Base Camp)","website":"https://www.coinbase.com/builders","csv_file":"data/accelerators-crypto.csv","slug":"coinbase-builders-base-camp"},"status":"needs_review","checked_at":"2026-06-09","confidence":"low","summary":"Coinbase has a public Builders landing page, but I could not verify a current Base Camp accelerator cohort, application deadline, program dates, or cadence from public sources. The page now points builders to Coinbase Developer Platform products, OnchainKit, Base, and grants/resources rather than a dated accelerator application.","proposed_event":null,"sources":[{"title":"Coinbase Builders","url":"https://www.coinbase.com/builders","publisher":"Coinbase","accessed_at":"2026-06-09","supports":"Official Coinbase Builders page exists and presents builder resources/products, but does not expose current Base Camp accelerator cohort dates or an application window."},{"title":"Base Grants","url":"https://www.base.org/grants","publisher":"Base","accessed_at":"2026-06-09","supports":"Official Base grants page shows current ecosystem funding/resource pathways, but does not verify a Coinbase Builders Base Camp accelerator schedule."}],"notes":["Do not add an event until an official Coinbase/Base page publishes current Base Camp accelerator application dates or cohort cadence.","If this CSV row refers to a historical Coinbase/Base builder program, it should be handled as inactive or archived unless a dated past cohort record is intentionally desired.","Used needs_review instead of inactive because Coinbase/Base builder support remains active, but the specific Base Camp accelerator details were not publicly verifiable."]}
+{
+  "accelerator": {
+    "name": "Base Batches",
+    "website": "https://www.base.org/batches",
+    "csv_file": "data/accelerators-crypto.csv",
+    "slug": "coinbase-builders-base-camp"
+  },
+  "status": "verified",
+  "checked_at": "2026-10-26",
+  "confidence": "high",
+  "summary": "The current official Base accelerator is Base Batches; Batch 004 is underway.",
+  "proposed_event": {
+    "id": "base-batches-004",
+    "name": "Base Batches 004",
+    "description": "Base Ecosystem Fund accelerator offering selected teams $100K and virtual mentoring.",
+    "organizer": "Base Ecosystem Fund",
+    "website": "https://www.base.org/batches",
+    "location": {
+      "is_virtual": false,
+      "is_hybrid": true,
+      "venue": null,
+      "city": "New York",
+      "city_slug": "new-york",
+      "country": "United States",
+      "country_code": "US",
+      "region_code": "na"
+    },
+    "dates": {
+      "application_open": "2026-08-19",
+      "application_close": "2026-09-10",
+      "program_start": "2026-09-29",
+      "program_end": "2026-11-15",
+      "demo_day": "2026-11-17",
+      "timezone": null,
+      "date_range_text": "Applications closed. Live page lists virtual program September 29\u2013November 15, 2026; New York Demo Day November 17."
+    },
+    "categories": {
+      "types": [
+        "accelerator"
+      ],
+      "supports": [
+        "funding",
+        "mentorship",
+        "resources"
+      ],
+      "sectors": [
+        "web3",
+        "fintech"
+      ]
+    },
+    "hashtags": [],
+    "index": {
+      "years": [
+        "2026"
+      ],
+      "region_code": "na",
+      "country_code": "US",
+      "city_slug": "new-york",
+      "type_keys": [
+        "accelerator"
+      ],
+      "support_keys": [
+        "funding",
+        "mentorship",
+        "resources"
+      ],
+      "sector_keys": [
+        "web3",
+        "fintech"
+      ],
+      "date_sort_key": "2026-09-10"
+    },
+    "verification": "reported",
+    "last_verified_utc": "2026-10-26T19:49:07Z"
+  },
+  "sources": [
+    {
+      "title": "Base Batches",
+      "url": "https://www.base.org/batches",
+      "publisher": "Base",
+      "accessed_at": "2026-10-26",
+      "supports": "Live Batch 004 dates, closed intake and $100K investment."
+    }
+  ],
+  "notes": [
+    "Live page supersedes older indexed September 21 program start. Base Batches is distinct from Outlier Ventures Base Camp."
+  ]
+}

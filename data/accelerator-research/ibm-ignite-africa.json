@@ -1,0 +1,32 @@
+{
+  "accelerator": {
+    "name": "IBM Ignite Africa",
+    "website": "https://www.ibm.com/ibm/ignite-africa",
+    "csv_file": "public/events-archive.json",
+    "slug": "ibm-ignite-africa"
+  },
+  "status": "needs_review",
+  "checked_at": "2026-10-26",
+  "confidence": "low",
+  "summary": "The identity and current availability of an IBM program named Ignite Africa remain unconfirmed after checking the former URL and searching official and partner material.",
+  "proposed_event": null,
+  "sources": [
+    {
+      "title": "Former IBM Ignite Africa URL \u2014 retrieval attempt",
+      "url": "https://www.ibm.com/ibm/ignite-africa",
+      "publisher": "IBM",
+      "accessed_at": "2026-10-26",
+      "supports": "The URL was inaccessible; no program content was verified from it."
+    },
+    {
+      "title": "Wits University startup bootcamp announcement",
+      "url": "https://www.wits.ac.za/future/stories/",
+      "publisher": "Wits University",
+      "accessed_at": "2026-10-26",
+      "supports": "A distinct IBM South Africa/Tshimologong startup bootcamp ran in October\u2013November 2018. It does not establish an Ignite Africa successor."
+    }
+  ],
+  "notes": [
+    "Other Ignite Africa organizations and the historical IBM South Africa bootcamp do not confirm this program."
+  ]
+}

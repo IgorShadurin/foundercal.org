@@ -1,1 +1,25 @@
-{"accelerator":{"name":"IDEO CoLab Startup Studio","website":"https://www.ideocolab.com/startups","csv_file":"data/accelerators-crypto.csv","slug":"ideo-colab-startup-studio"},"status":"inactive","checked_at":"2026-06-09","confidence":"medium","summary":"The supplied Startup Studio URL now returns a 404, and current IDEO CoLab pages do not publish active Startup Studio applications, cohorts, or cadence. Historical official material shows the blockchain Startup Studio launched in 2019, but no current public program dates are available.","proposed_event":null,"sources":[{"title":"IDEO CoLab Startup Studio page","url":"https://www.ideocolab.com/startups","publisher":"IDEO CoLab Ventures","accessed_at":"2026-06-09","supports":"The supplied Startup Studio URL redirects to ideocolab.com/startups and returns 404 / 'Nothing to see here', so no current application or cohort information is published there."},{"title":"IDEO CoLab Ventures","url":"https://ideocolab.com/","publisher":"IDEO CoLab Ventures","accessed_at":"2026-06-09","supports":"Current official site describes IDEO CoLab Ventures as investing in early-stage internet companies and lists current venture-with-us offerings, but does not list Startup Studio with current dates."},{"title":"Introducing IDEO CoLab’s Startup Studio for Blockchain Entrepreneurs","url":"https://medium.com/ideo-colab/introducing-ideo-colabs-startup-studio-for-blockchain-entrepreneurs-997350c66603","publisher":"IDEO CoLab Ventures","accessed_at":"2026-06-09","supports":"Official historical announcement says Startup Studio launched in July 2019 for blockchain entrepreneurs with programs and workshops, launch partners, and applications via the then-existing Startup Studio website."}],"notes":["Treating as inactive rather than mergeable because today is 2026-06-09 and only historical 2019 program information was found.","No application deadline, program start/end, demo day, location, or current cadence is publicly available from official sources."]}
+{
+  "accelerator": {
+    "name": "IDEO CoLab Startup Studio",
+    "website": "https://ideocolab.com/",
+    "csv_file": "data/accelerators-crypto.csv",
+    "slug": "ideo-colab-startup-studio"
+  },
+  "status": "needs_review",
+  "checked_at": "2026-10-26",
+  "confidence": "medium",
+  "summary": "IDEO CoLab Ventures currently describes early-stage investing and incubation. Its former /startups page is unavailable, and no current Startup Studio intake or dated application window was found.",
+  "proposed_event": null,
+  "sources": [
+    {
+      "url": "https://ideocolab.com/",
+      "title": "IDEO CoLab Ventures",
+      "supports": "Current venture-investment positioning; no current Startup Studio cohort dates.",
+      "publisher": "IDEO CoLab Ventures",
+      "accessed_at": "2026-10-26"
+    }
+  ],
+  "notes": [
+    "Changed from inactive to needs_review: a missing program page does not prove closure of the firm or program."
+  ]
+}

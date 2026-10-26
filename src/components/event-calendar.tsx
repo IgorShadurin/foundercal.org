@@ -6,7 +6,6 @@ import {
   addDays,
   compareAsc,
   format,
-  isAfter,
   isWithinInterval,
   parseISO,
   startOfDay,
@@ -51,6 +50,7 @@ import { Separator } from "@/components/ui/separator";
 import { Tabs, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import type { EventRecord, Taxonomies } from "@/lib/event-data";
 import { cn } from "@/lib/utils";
+import { selectTimeline } from "@/lib/event-timeline";
 
 const TIMELINE_KEYS = [
   "application_open",
@@ -92,21 +92,11 @@ const DATE_STYLES: Partial<Record<TimelineKey, string>> = {
 const VIEW_MODES = {
   deadlines: {
     label: "Application focus",
-    priority: [
-      "application_close",
-      "program_start",
-      "program_end",
-      "demo_day",
-    ] as TimelineKey[],
+    priority: ["application_close", "application_open"] as TimelineKey[],
   },
   programs: {
     label: "Program focus",
-    priority: [
-      "program_start",
-      "application_close",
-      "program_end",
-      "demo_day",
-    ] as TimelineKey[],
+    priority: ["program_start", "demo_day"] as TimelineKey[],
   },
 } as const;
 
@@ -129,6 +119,7 @@ type NormalizedEvent = {
 type EventCalendarProps = {
   events: EventRecord[];
   taxonomies: Taxonomies;
+  initialDate: string;
 };
 
 type UserPreferences = {
@@ -141,17 +132,17 @@ const DEFAULT_PREFS: UserPreferences = {
   filtersExpanded: false,
 };
 
-export function EventCalendar({ events, taxonomies }: EventCalendarProps) {
+export function EventCalendar({ events, taxonomies, initialDate }: EventCalendarProps) {
   const [viewMode, setViewMode] = useState<ViewMode>("deadlines");
   const [regionFilter, setRegionFilter] = useState("all");
   const [sectorFilter, setSectorFilter] = useState("all");
   const [typeFilter, setTypeFilter] = useState("all");
   const [search, setSearch] = useState("");
-  const [windowStart, setWindowStart] = useState(() => startOfDay(new Date()));
+  const [windowStart, setWindowStart] = useState(() => startOfDay(parseISO(initialDate)));
   const [restrictToWindow, setRestrictToWindow] = useState(true);
   const [windowLength, setWindowLength] = useState(30);
   const [preferences, setPreferences] = useState<UserPreferences>(DEFAULT_PREFS);
-  const today = startOfDay(new Date());
+  const today = startOfDay(parseISO(initialDate));
   const aggregateCounts = useMemo(() => buildCounts(events), [events]);
 
   useEffect(() => {
@@ -203,13 +194,17 @@ export function EventCalendar({ events, taxonomies }: EventCalendarProps) {
     });
   }, [normalized, regionFilter, sectorFilter, typeFilter, search]);
 
+  const windowRange = useMemo(() => {
+    return { start: windowStart, end: addDays(windowStart, windowLength - 1) };
+  }, [windowStart, windowLength]);
+
   const prioritized = useMemo(() => {
     const priority = VIEW_MODES[viewMode].priority;
 
     return filtered
       .map((entry) => ({
         ...entry,
-        timeline: pickTimeline(entry, priority),
+        timeline: selectTimeline(entry.parsedDates, priority, windowRange),
       }))
       .sort((a, b) => {
         if (!a.timeline && !b.timeline) return 0;
@@ -217,15 +212,13 @@ export function EventCalendar({ events, taxonomies }: EventCalendarProps) {
         if (!b.timeline) return -1;
         return compareAsc(a.timeline.date, b.timeline.date);
       });
-  }, [filtered, viewMode]);
+  }, [filtered, viewMode, windowRange]);
 
-  const windowRange = useMemo(() => {
-    return { start: windowStart, end: addDays(windowStart, windowLength - 1) };
-  }, [windowStart, windowLength]);
+
 
   const eventsInWindow = useMemo(() => {
     return prioritized.filter((entry) => {
-      if (!entry.timeline) return false;
+      if (!entry.timeline || entry.record.verification !== "reported") return false;
       return isWithinInterval(entry.timeline.date, windowRange);
     });
   }, [prioritized, windowRange]);
@@ -251,10 +244,10 @@ export function EventCalendar({ events, taxonomies }: EventCalendarProps) {
     <div className="flex h-64 flex-col items-center justify-center gap-3 rounded-2xl border border-dashed">
       <p className="text-base font-medium">No matches yet</p>
       <p className="text-sm text-muted-foreground">
-        Try loosening a filter or switch to the full upcoming list.
+        Try loosening a filter or switch to the full reviewed list.
       </p>
       <Button variant="secondary" onClick={() => setRestrictToWindow(false)}>
-        Show all upcoming
+        Show all reviewed programs
       </Button>
     </div>
   ) : (
@@ -302,7 +295,7 @@ export function EventCalendar({ events, taxonomies }: EventCalendarProps) {
               </p>
             </div>
             <p className="text-sm font-medium text-muted-foreground">
-              Live opportunities this month
+              Dated entries in selected window
             </p>
           </div>
         </div>
@@ -315,7 +308,7 @@ export function EventCalendar({ events, taxonomies }: EventCalendarProps) {
               <CalendarRange className="size-4" /> Opportunity radar
             </CardTitle>
             <CardDescription>
-              Pick a start date to focus the list or scan every deadline at once.
+              Pick a start date or scan all reviewed programs. Dates are day-level; source notes specify cutoff times and timezones.
             </CardDescription>
           </CardHeader>
           <CardContent className="space-y-4">
@@ -372,7 +365,7 @@ export function EventCalendar({ events, taxonomies }: EventCalendarProps) {
               <div className="flex flex-col gap-2 sm:flex-row sm:items-center sm:justify-between">
                 <div className="flex items-center gap-2">
                   <CalendarRange className="size-5 text-primary" />
-                  <CardTitle className="text-xl">Upcoming opportunities</CardTitle>
+                  <CardTitle className="text-xl">Program calendar</CardTitle>
                 </div>
                 <div className="flex flex-wrap gap-2">
                   <Button
@@ -409,7 +402,7 @@ export function EventCalendar({ events, taxonomies }: EventCalendarProps) {
               <Tabs value={viewMode} onValueChange={(value) => setViewMode(value as ViewMode)}>
                 <TabsList>
                   <TabsTrigger value="deadlines">Deadlines</TabsTrigger>
-                  <TabsTrigger value="programs">Program starts</TabsTrigger>
+                  <TabsTrigger value="programs">Program milestones</TabsTrigger>
                 </TabsList>
               </Tabs>
               <div className="flex flex-wrap items-center gap-3 text-sm text-muted-foreground">
@@ -522,6 +515,7 @@ export function EventCalendar({ events, taxonomies }: EventCalendarProps) {
           <CardContent>{resultsSection}</CardContent>
         </Card>
       </div>
+      <p className="text-sm text-muted-foreground">Undated programs appear in the full reviewed list. Programs needing confirmation are listed in the directory. Older cohorts are preserved in the <a href="/events-archive.json" className="underline">historical archive</a>.</p>
       <footer className="mt-10 flex flex-col gap-3 border-t border-dashed border-muted-foreground/40 pt-6 text-sm text-muted-foreground">
         <div className="flex flex-col gap-2 sm:flex-row sm:items-center sm:justify-between">
           <a
@@ -576,14 +570,23 @@ function EventCard({
   entry,
 }: {
   entry: NormalizedEvent & {
-    timeline: ReturnType<typeof pickTimeline>;
+    timeline: ReturnType<typeof selectTimeline>;
   };
 }) {
   const { record, locationLabel, timeline } = entry;
   const primaryType = record.categories.types[0];
   const today = startOfDay(new Date());
-  const nextMilestone = getNextMilestone(entry, today);
-  const milestoneToShow = nextMilestone ?? timeline;
+  const milestoneToShow = timeline;
+  const deadline = entry.parsedDates.application_close;
+  const applicationStatus = record.verification !== "reported"
+    ? "Current details need confirmation"
+    : deadline && deadline < today
+      ? "Application deadline passed"
+      : entry.parsedDates.application_open && entry.parsedDates.application_open > today
+        ? "Applications open later"
+        : deadline
+          ? "Upcoming application deadline"
+          : "No confirmed application deadline";
   const websiteUrl = withUtmSource(record.website);
 
   return (
@@ -648,6 +651,8 @@ function EventCard({
         </div>
       </CardHeader>
       <CardContent className="space-y-4 text-sm">
+        <p className="font-medium">{applicationStatus}</p>
+        {record.dates.date_range_text ? <p className="text-muted-foreground">{record.dates.date_range_text}</p> : null}
         <div className="flex flex-wrap gap-3 text-muted-foreground">
           <span
             className={cn(
@@ -681,6 +686,12 @@ function EventCard({
               {formatLabel(support)}
             </Badge>
           ))}
+        </div>
+        <div className="space-y-2 text-xs text-muted-foreground">
+          <p>Last checked: {record.last_checked_utc?.slice(0, 10) ?? record.last_verified_utc?.slice(0, 10) ?? "Not recorded"}. Check the official application page for changes.</p>
+          <div className="flex flex-wrap gap-3">
+            {record.sources?.map((source) => <a key={source.url} href={source.url} target="_blank" rel="noreferrer" className="underline">{source.title}</a>)}
+          </div>
         </div>
         <div className="flex flex-wrap gap-2">
           {record.hashtags.map((tag) => (
@@ -733,29 +744,6 @@ function normalizeEvents(events: EventRecord[]): NormalizedEvent[] {
       searchIndex,
     } satisfies NormalizedEvent;
   });
-}
-
-function pickTimeline(
-  entry: NormalizedEvent,
-  priority: TimelineKey[]
-) {
-  for (const key of priority) {
-    const date = entry.parsedDates[key];
-    if (date) {
-      return { key, date } as const;
-    }
-  }
-  return null;
-}
-
-function getNextMilestone(entry: NormalizedEvent, referenceDate: Date) {
-  const upcoming = TIMELINE_KEYS.map((key) => {
-    const date = entry.parsedDates[key];
-    return date && isAfter(date, referenceDate) ? { key, date } : null;
-  })
-    .filter(Boolean)
-    .sort((a, b) => compareAsc(a!.date, b!.date)) as Array<{ key: TimelineKey; date: Date }>;
-  return upcoming[0] ?? null;
 }
 
 function formatLabel(value: string | null | undefined) {

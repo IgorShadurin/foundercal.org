@@ -1,0 +1,23 @@
+{
+  "accelerator": {
+    "name": "Oracle Global Startup Idol",
+    "website": "https://www.oracle.com/cloud/",
+    "csv_file": "public/events-archive.json",
+    "slug": "oracle-startup-idol"
+  },
+  "status": "needs_review",
+  "checked_at": "2026-10-26",
+  "confidence": "low",
+  "summary": "The old startup URL redirects to Oracle Cloud. No current official evidence for the previously hypothetical Startup Idol competition was found.",
+  "proposed_event": null,
+  "sources": [
+    {
+      "title": "Oracle Global Startup Idol \u2014 official program information",
+      "url": "https://www.oracle.com/cloud/",
+      "publisher": null,
+      "accessed_at": "2026-10-26",
+      "supports": "The old startup URL redirects to Oracle Cloud. No current official evidence for the previously hypothetical Startup Idol competition was found."
+    }
+  ],
+  "notes": []
+}

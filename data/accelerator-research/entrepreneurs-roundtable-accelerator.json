@@ -1,0 +1,78 @@
+{
+  "accelerator": {
+    "name": "Entrepreneurs Roundtable Accelerator Winter 2027",
+    "website": "https://www.eranyc.com/apply/",
+    "csv_file": "public/events-archive.json",
+    "slug": "entrepreneurs-roundtable-accelerator"
+  },
+  "status": "verified",
+  "checked_at": "2026-10-26",
+  "confidence": "high",
+  "summary": "Winter 2027 applications close November 2, 2026. The four-month program starts January 11, 2027; investment is $150,000 for 6% via a post-money SAFE.",
+  "proposed_event": {
+    "id": "entrepreneurs-roundtable-accelerator",
+    "name": "Entrepreneurs Roundtable Accelerator Winter 2027",
+    "description": "Winter 2027 applications close November 2, 2026. The four-month program starts January 11, 2027; investment is $150,000 for 6% via a post-money SAFE.",
+    "organizer": "Entrepreneurs Roundtable Accelerator Winter",
+    "website": "https://www.eranyc.com/apply/",
+    "location": {
+      "is_virtual": false,
+      "is_hybrid": false,
+      "venue": null,
+      "city": "New York",
+      "city_slug": "new-york",
+      "country": "United States",
+      "country_code": "US",
+      "region_code": "na"
+    },
+    "dates": {
+      "application_open": null,
+      "application_close": "2026-11-02",
+      "program_start": "2027-01-11",
+      "program_end": null,
+      "demo_day": null,
+      "timezone": null,
+      "date_range_text": "Winter 2027 applications close November 2, 2026. The four-month program starts January 11, 2027; investment is $150,000 for 6% via a post-money SAFE."
+    },
+    "categories": {
+      "types": [
+        "accelerator"
+      ],
+      "supports": [
+        "funding",
+        "mentorship"
+      ],
+      "sectors": [
+        "general"
+      ]
+    },
+    "hashtags": [
+      "#usa",
+      "#nyc",
+      "#general",
+      "#funding"
+    ],
+    "index": {
+      "years": [],
+      "region_code": "na",
+      "country_code": "US",
+      "city_slug": "new-york",
+      "type_keys": [],
+      "support_keys": [],
+      "sector_keys": [],
+      "date_sort_key": null
+    },
+    "verification": "reported",
+    "last_verified_utc": null
+  },
+  "sources": [
+    {
+      "title": "Entrepreneurs Roundtable Accelerator Winter 2027 \u2014 official program information",
+      "url": "https://www.eranyc.com/apply/",
+      "publisher": null,
+      "accessed_at": "2026-10-26",
+      "supports": "Winter 2027 applications close November 2, 2026. The four-month program starts January 11, 2027; investment is $150,000 for 6% via a post-money SAFE."
+    }
+  ],
+  "notes": []
+}

@@ -1,1 +1,25 @@
-{"accelerator":{"name":"Conviction Embed","website":"https://www.conviction.com/embed#application","csv_file":"src/data/imported-accelerators.json","slug":"conviction-embed"},"status":"needs_review","checked_at":"2026-06-09","confidence":"medium","summary":"Conviction Embed is an AI-native early-founder program with a live application form, but the official cohort page still lists March 20-22 retreat and May 14 demo day dates, which are past as of 2026-06-09. No current future cohort dates or deadline were found, so this should not be merged as a current event without review.","proposed_event":null,"sources":[{"title":"Conviction Embed","url":"https://embed.conviction.com/","publisher":"Conviction","accessed_at":"2026-06-09","supports":"Official Embed page describes the program for AI-native startups, says applications are open for the 7th cohort, lists a mandatory in-person San Francisco retreat on March 20-22, demo day on May 14, $250K investment, compute credits, rolling admissions, and class size of 10-12 companies."},{"title":"Conviction Embed Application","url":"https://embed.conviction.com/apply","publisher":"Conviction","accessed_at":"2026-06-09","supports":"Official application form is live and requests founder, company, progress, product demo, pitch deck, fundraising, user, and revenue information."},{"title":"Conviction Partners","url":"https://www.conviction.com/","publisher":"Conviction","accessed_at":"2026-06-09","supports":"Official Conviction site identifies Conviction as an AI-native venture firm and lists Embed as a project for early-stage AI founders."}],"notes":["Official source appears internally stale or not yet updated for a future cohort: the page says applications are open but lists dates before today's date, 2026-06-09.","No application close date, next program start date, future demo day, or timezone was found on official public pages.","Because current/future cohort timing is unclear, proposed_event is null to avoid presenting stale March/May dates as current."]}
+{
+  "accelerator": {
+    "name": "Conviction Embed",
+    "website": "https://embed.conviction.com/",
+    "csv_file": "src/data/imported-accelerators.json",
+    "slug": "conviction-embed"
+  },
+  "status": "needs_review",
+  "checked_at": "2026-10-26",
+  "confidence": "high",
+  "summary": "Embed advertises early applications for cohort seven and $250K on an uncapped, no-discount MFN SAFE (or a recent round price).",
+  "proposed_event": null,
+  "sources": [
+    {
+      "title": "Conviction Embed",
+      "url": "https://embed.conviction.com/",
+      "publisher": "Conviction",
+      "accessed_at": "2026-10-26",
+      "supports": "Cohort-seven early applications, terms and solo-founder eligibility."
+    }
+  ],
+  "notes": [
+    "Retreat September 11–13 and Demo Day November 12 are published without a year and mixed with older cohort copy. Do not assign a calendar year."
+  ]
+}
