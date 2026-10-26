@@ -49,6 +49,201 @@
   },
   "events": [
     {
+      "id": "sosv-hax-rolling-applications",
+      "name": "HAX \u2014 Rolling Hard-Tech Applications",
+      "description": "Hands-on hard-tech startup development with engineering support, labs and a six-month Newark residency. Investment terms require confirmation; at least two team members are required before program entry.",
+      "organizer": "SOSV",
+      "website": "https://sosv.com/apply/",
+      "location": {
+        "is_virtual": false,
+        "is_hybrid": false,
+        "venue": null,
+        "city": "Newark",
+        "city_slug": "newark",
+        "country": "United States",
+        "country_code": "US",
+        "region_code": "na"
+      },
+      "dates": {
+        "application_open": null,
+        "application_close": null,
+        "program_start": null,
+        "program_end": null,
+        "demo_day": null,
+        "timezone": null,
+        "date_range_text": "Applications are reviewed on a rolling basis. Six-month residency; no fixed application cutoff or cohort start date is published."
+      },
+      "categories": {
+        "types": [
+          "accelerator"
+        ],
+        "supports": [
+          "funding",
+          "mentorship",
+          "resources"
+        ],
+        "sectors": [
+          "deeptech",
+          "hardware"
+        ]
+      },
+      "hashtags": [
+        "#usa",
+        "#newark",
+        "#deeptech",
+        "#hardware",
+        "#funding",
+        "#mentorship"
+      ],
+      "index": {
+        "years": [],
+        "region_code": "na",
+        "country_code": "US",
+        "city_slug": "newark",
+        "type_keys": [
+          "accelerator"
+        ],
+        "support_keys": [
+          "funding",
+          "mentorship",
+          "resources"
+        ],
+        "sector_keys": [
+          "deeptech",
+          "hardware"
+        ],
+        "date_sort_key": null
+      },
+      "verification": "reported",
+      "last_verified_utc": "2026-10-27T00:00:00Z",
+      "last_checked_utc": "2026-10-27T00:00:00Z",
+      "research_slug": "sosv-hax-indiebio",
+      "sources": [
+        {
+          "url": "https://indiebio.co/",
+          "title": "IndieBio \u2014 The Original",
+          "supports": "Official announcement explains the 2026 rename to SOSV NY and SOSV SF.",
+          "publisher": "SOSV",
+          "accessed_at": "2026-10-27"
+        },
+        {
+          "url": "https://sosv.com/application-faqs/",
+          "title": "SOSV Application FAQ",
+          "supports": "Rolling application review; applicants need at least two team members to enter a program.",
+          "publisher": "SOSV",
+          "accessed_at": "2026-10-27"
+        },
+        {
+          "url": "https://hax.co/program/",
+          "title": "The HAX Program",
+          "supports": "Hard-tech support and up to $550K initial funding with a six-month Newark residency.",
+          "publisher": "HAX",
+          "accessed_at": "2026-10-27"
+        },
+        {
+          "url": "https://sosv.com/apply/",
+          "title": "Apply to SOSV programs",
+          "supports": "Separate application choices for HAX, SOSV NY and SOSV SF; supports keeping the programs distinct.",
+          "publisher": "SOSV",
+          "accessed_at": "2026-10-27"
+        }
+      ]
+    },
+    {
+      "id": "startup-wise-guys-founders-club-21-2026",
+      "name": "Startup Wise Guys \u2014 Founders Club 21",
+      "description": "Three-month online program for individuals and early B2B teams to find cofounders, validate a problem and develop an MVP. Participation is paid; investment opportunities are conditional.",
+      "organizer": "Startup Wise Guys",
+      "website": "https://startupwiseguys.com/all-programs/the-founders-club/",
+      "location": {
+        "is_virtual": true,
+        "is_hybrid": false,
+        "venue": null,
+        "city": null,
+        "city_slug": null,
+        "country": null,
+        "country_code": null,
+        "region_code": "global"
+      },
+      "dates": {
+        "application_open": null,
+        "application_close": "2026-11-02",
+        "program_start": null,
+        "program_end": null,
+        "demo_day": null,
+        "timezone": null,
+        "date_range_text": "Applications for Cohort 21 close November 2, 2026, with rolling selection and possible earlier closure. Exact cutoff time and program dates are unpublished."
+      },
+      "categories": {
+        "types": [
+          "program"
+        ],
+        "supports": [
+          "mentorship",
+          "resources",
+          "funding"
+        ],
+        "sectors": [
+          "general",
+          "saas"
+        ]
+      },
+      "hashtags": [
+        "#general",
+        "#saas",
+        "#mentorship",
+        "#resources"
+      ],
+      "index": {
+        "years": [
+          "2026"
+        ],
+        "region_code": "global",
+        "country_code": null,
+        "city_slug": null,
+        "type_keys": [
+          "program"
+        ],
+        "support_keys": [
+          "mentorship",
+          "resources",
+          "funding"
+        ],
+        "sector_keys": [
+          "general",
+          "saas"
+        ],
+        "date_sort_key": "2026-11-02"
+      },
+      "verification": "reported",
+      "last_verified_utc": "2026-10-27T00:00:00Z",
+      "last_checked_utc": "2026-10-27T00:00:00Z",
+      "research_slug": "startup-wise-guys",
+      "sources": [
+        {
+          "url": "https://startupwiseguys.com/all-programs/the-founders-club/",
+          "title": "The Founders Club",
+          "supports": "Founders Club 21, November 2 cutoff, rolling selection, three-month online format, individual/team/developer participation fees and conditional investment.",
+          "publisher": "Startup Wise Guys",
+          "accessed_at": "2026-10-27"
+        },
+        {
+          "url": "https://startupwiseguys.com/location/spain/",
+          "title": "Startup Wise Guys \u2014 Spain programs",
+          "supports": "Explicit November 2nd, 2026 application deadline displayed immediately above The Founders Club.",
+          "publisher": "Startup Wise Guys",
+          "accessed_at": "2026-10-27"
+        },
+        {
+          "url": "https://startupwiseguys.com/news/founders-club-19-graduates-13-teams-mvps-pivots-what-comes-next/",
+          "title": "Founders Club 19 graduates; Cohort 21 applications",
+          "supports": "Article dated August 18, 2026 states that Cohort 21 applications are open, reviewed on a rolling basis, and due before November 2.",
+          "publisher": "Startup Wise Guys",
+          "accessed_at": "2026-10-27"
+        }
+      ]
+    },
+    {
       "id": "berkeley-skydeck-b23",
       "name": "Berkeley SkyDeck Batch 23",
       "description": "Six-month Berkeley accelerator; current program page lists $210K investment for cohort startups.",
@@ -1125,6 +1320,88 @@
       ]
     },
     {
+      "id": "masschallenge",
+      "name": "MassChallenge Challenge Cycle 2026\u20132027",
+      "description": "Industry-partner challenges for pre-seed to Series A startups. Worldwide applicants may apply; selected teams must attend required in-person sessions.",
+      "organizer": "MassChallenge",
+      "website": "https://masschallenge.org/2026-2027-challenge-cycle/",
+      "location": {
+        "is_virtual": false,
+        "is_hybrid": true,
+        "venue": null,
+        "city": null,
+        "city_slug": null,
+        "country": null,
+        "country_code": null,
+        "region_code": "global"
+      },
+      "dates": {
+        "application_open": "2026-10-19",
+        "application_close": "2026-11-09",
+        "program_start": null,
+        "program_end": null,
+        "demo_day": null,
+        "timezone": null,
+        "date_range_text": "Applications October 19\u2013November 9, 2026. Program overview: February\u2013June 2027. Exact attendance schedule and location require confirmation."
+      },
+      "categories": {
+        "types": [
+          "accelerator",
+          "program"
+        ],
+        "supports": [
+          "mentorship",
+          "resources"
+        ],
+        "sectors": [
+          "fintech",
+          "health",
+          "general"
+        ]
+      },
+      "hashtags": [
+        "#fintech",
+        "#health",
+        "#mentorship",
+        "#resources"
+      ],
+      "index": {
+        "years": [
+          "2026"
+        ],
+        "region_code": "global",
+        "country_code": null,
+        "city_slug": null,
+        "type_keys": [
+          "accelerator",
+          "program"
+        ],
+        "support_keys": [
+          "mentorship",
+          "resources"
+        ],
+        "sector_keys": [
+          "fintech",
+          "health",
+          "general"
+        ],
+        "date_sort_key": "2026-11-09"
+      },
+      "verification": "reported",
+      "last_verified_utc": "2026-10-27T00:00:00Z",
+      "last_checked_utc": "2026-10-27T00:00:00Z",
+      "research_slug": "masschallenge",
+      "sources": [
+        {
+          "url": "https://masschallenge.org/2026-2027-challenge-cycle/",
+          "title": "MassChallenge 2026\u20132027 Challenge Cycle",
+          "supports": "October 19 opening, November 9 closing, February\u2013June 2027 program overview and pre-seed to Series A eligibility.",
+          "publisher": "MassChallenge",
+          "accessed_at": "2026-10-27"
+        }
+      ]
+    },
+    {
       "id": "pearx-rolling",
       "name": "PearX \u2014 Year-round Applications",
       "description": "12-week pre-seed accelerator in the SF Bay Area; $500K\u2013$2M investment, targeting 7% ownership. Solo founders welcome.",
@@ -1626,6 +1903,180 @@
       ]
     },
     {
+      "id": "blue-ridge-labs-catalyst-2027",
+      "name": "Blue Ridge Labs Catalyst 2027",
+      "description": "$100K investment for for-profit ventures or grant for nonprofits; MVP and early traction required. Solo founders may apply.",
+      "organizer": "Robin Hood",
+      "website": "https://robinhood.org/our-work/blue-ridge-labs/catalyst/",
+      "location": {
+        "is_virtual": false,
+        "is_hybrid": false,
+        "venue": null,
+        "city": "New York",
+        "city_slug": "new-york",
+        "country": "United States",
+        "country_code": "US",
+        "region_code": "na"
+      },
+      "dates": {
+        "application_open": null,
+        "application_close": "2026-11-13",
+        "program_start": null,
+        "program_end": null,
+        "demo_day": null,
+        "timezone": null,
+        "date_range_text": "Apply by November 13 for the 2027 cohort. Program phases are February\u2013March and April\u2013June 2027; exact start/end days and cutoff time are not published."
+      },
+      "categories": {
+        "types": [
+          "accelerator"
+        ],
+        "supports": [
+          "funding",
+          "mentorship",
+          "resources"
+        ],
+        "sectors": [
+          "general",
+          "ai",
+          "edtech"
+        ]
+      },
+      "hashtags": [
+        "#usa",
+        "#newyork",
+        "#general",
+        "#ai",
+        "#funding",
+        "#mentorship"
+      ],
+      "index": {
+        "years": [
+          "2026"
+        ],
+        "region_code": "na",
+        "country_code": "US",
+        "city_slug": "new-york",
+        "type_keys": [
+          "accelerator"
+        ],
+        "support_keys": [
+          "funding",
+          "mentorship",
+          "resources"
+        ],
+        "sector_keys": [
+          "general",
+          "ai",
+          "edtech"
+        ],
+        "date_sort_key": "2026-11-13"
+      },
+      "verification": "reported",
+      "last_verified_utc": "2026-10-27T00:00:00Z",
+      "last_checked_utc": "2026-10-27T00:00:00Z",
+      "research_slug": "blueridgelabs-catalyst-26",
+      "sources": [
+        {
+          "url": "https://robinhood.org/our-work/blue-ridge-labs/catalyst/",
+          "title": "Blue Ridge Labs Catalyst 2027",
+          "publisher": "Robin Hood",
+          "supports": "Open 2027 cohort, November 13 cutoff, $100K investment/grant, NYC focus and solo-founder eligibility.",
+          "accessed_at": "2026-10-27"
+        },
+        {
+          "url": "https://robinhood.org/",
+          "title": "Robin Hood homepage",
+          "publisher": "Robin Hood",
+          "supports": "Current homepage highlights applications for the 2027 Catalyst cohort.",
+          "accessed_at": "2026-10-27"
+        }
+      ]
+    },
+    {
+      "id": "mit-100k",
+      "name": "MIT $100K Pitch 2026",
+      "description": "Pitch competition for MIT student founders and eligible teams. Entry is free; at least one current MIT student is required.",
+      "organizer": "MIT $100K",
+      "website": "https://www.mit100k.org/pitch",
+      "location": {
+        "is_virtual": false,
+        "is_hybrid": false,
+        "venue": null,
+        "city": null,
+        "city_slug": null,
+        "country": "United States",
+        "country_code": "US",
+        "region_code": "na"
+      },
+      "dates": {
+        "application_open": "2026-10-14",
+        "application_close": "2026-10-28",
+        "program_start": "2026-12-02",
+        "program_end": "2026-12-02",
+        "demo_day": null,
+        "timezone": null,
+        "date_range_text": "Pitch applications October 14\u201328, 2026; live competition December 2, 2026. Cutoff time not published."
+      },
+      "categories": {
+        "types": [
+          "competition"
+        ],
+        "supports": [
+          "funding",
+          "mentorship"
+        ],
+        "sectors": [
+          "general"
+        ]
+      },
+      "hashtags": [
+        "#usa",
+        "#general",
+        "#funding",
+        "#mentorship"
+      ],
+      "index": {
+        "years": [
+          "2026"
+        ],
+        "region_code": "na",
+        "country_code": "US",
+        "city_slug": null,
+        "type_keys": [
+          "competition"
+        ],
+        "support_keys": [
+          "funding",
+          "mentorship"
+        ],
+        "sector_keys": [
+          "general"
+        ],
+        "date_sort_key": "2026-10-28"
+      },
+      "verification": "reported",
+      "last_verified_utc": "2026-10-27T00:00:00Z",
+      "last_checked_utc": "2026-10-27T00:00:00Z",
+      "research_slug": "mit-100k",
+      "sources": [
+        {
+          "url": "https://www.mit100k.org/pitch",
+          "title": "MIT $100K Pitch 2026",
+          "supports": "Explicit 2026 application opening, closing and December 2 live competition.",
+          "publisher": "MIT $100K",
+          "accessed_at": "2026-10-27"
+        },
+        {
+          "url": "https://www.mit100k.org/eligibility-rules",
+          "title": "MIT $100K eligibility rules",
+          "supports": "Free entry; individuals or teams allowed; at least one currently registered MIT student is required.",
+          "publisher": "MIT $100K",
+          "accessed_at": "2026-10-27"
+        }
+      ]
+    },
+    {
       "id": "a16z-speedrun-sr008",
       "name": "a16z speedrun SR008",
       "description": "Up to $1M: $500K for 10% upfront, plus up to $500K in a qualifying round.",
@@ -2087,6 +2538,84 @@
           "publisher": null,
           "accessed_at": "2026-10-26",
           "supports": "Applications for the 2027 Canada, LATAM and USA tour open January 5, 2027. Applying is free; no closing date is stated."
+        }
+      ]
+    },
+    {
+      "id": "creative-destruction-lab-2026-27",
+      "name": "Creative Destruction Lab 2026/27",
+      "description": "Science and technology venture mentoring with no program fees or equity taken.",
+      "organizer": "Creative Destruction Lab",
+      "website": "https://creativedestructionlab.com/application-triage/",
+      "location": {
+        "is_virtual": false,
+        "is_hybrid": false,
+        "venue": null,
+        "city": null,
+        "city_slug": null,
+        "country": null,
+        "country_code": null,
+        "region_code": "global"
+      },
+      "dates": {
+        "application_open": null,
+        "application_close": "2026-07-24",
+        "program_start": null,
+        "program_end": null,
+        "demo_day": null,
+        "timezone": "America/New_York",
+        "date_range_text": "2026/27 applications are closed. General deadline: July 24, 2026 at 11:59 PM ET; Defence and Quantum streams closed earlier."
+      },
+      "categories": {
+        "types": [
+          "accelerator"
+        ],
+        "supports": [
+          "mentorship",
+          "resources"
+        ],
+        "sectors": [
+          "deeptech",
+          "general"
+        ]
+      },
+      "hashtags": [
+        "#deeptech",
+        "#general",
+        "#mentorship",
+        "#resources"
+      ],
+      "index": {
+        "years": [
+          "2026"
+        ],
+        "region_code": "global",
+        "country_code": null,
+        "city_slug": null,
+        "type_keys": [
+          "accelerator"
+        ],
+        "support_keys": [
+          "mentorship",
+          "resources"
+        ],
+        "sector_keys": [
+          "deeptech",
+          "general"
+        ],
+        "date_sort_key": "2026-07-24"
+      },
+      "verification": "reported",
+      "last_verified_utc": "2026-10-27T00:00:00Z",
+      "last_checked_utc": "2026-10-27T00:00:00Z",
+      "research_slug": "creative-destruction-lab",
+      "sources": [
+        {
+          "url": "https://creativedestructionlab.com/application-triage/",
+          "title": "Creative Destruction Lab applications",
+          "publisher": "Creative Destruction Lab",
+          "supports": "Closed 2026/27 intake; July24 general deadline; no fees or equity, with stream-specific exceptions to the deadline.",
+          "accessed_at": "2026-10-27"
         }
       ]
     },
@@ -3423,6 +3952,82 @@
           "publisher": "Cleantech Open",
           "accessed_at": "2026-10-26",
           "supports": "Closed intake, April 6 cutoff, May academy and October finals."
+        }
+      ]
+    },
+    {
+      "id": "next-founders",
+      "name": "NEXT Founders 2027",
+      "description": "Education, mentorship and investor introductions for Canadian growth-stage founders. Free participation, no equity taken and no direct investment.",
+      "organizer": "NEXT Canada",
+      "website": "https://www.nextcanada.com/next-founders/",
+      "location": {
+        "is_virtual": false,
+        "is_hybrid": false,
+        "venue": null,
+        "city": null,
+        "city_slug": null,
+        "country": "Canada",
+        "country_code": "CA",
+        "region_code": "na"
+      },
+      "dates": {
+        "application_open": "2027-01-12",
+        "application_close": "2027-03-03",
+        "program_start": null,
+        "program_end": null,
+        "demo_day": null,
+        "timezone": null,
+        "date_range_text": "Applications January 12\u2013March 3, 2027. Program May\u2013August 2027; exact days and cutoff time unpublished."
+      },
+      "categories": {
+        "types": [
+          "program"
+        ],
+        "supports": [
+          "mentorship",
+          "resources"
+        ],
+        "sectors": [
+          "general"
+        ]
+      },
+      "hashtags": [
+        "#canada",
+        "#general",
+        "#mentorship",
+        "#resources"
+      ],
+      "index": {
+        "years": [
+          "2027"
+        ],
+        "region_code": "na",
+        "country_code": "CA",
+        "city_slug": null,
+        "type_keys": [
+          "program"
+        ],
+        "support_keys": [
+          "mentorship",
+          "resources"
+        ],
+        "sector_keys": [
+          "general"
+        ],
+        "date_sort_key": "2027-03-03"
+      },
+      "verification": "reported",
+      "last_verified_utc": "2026-10-27T00:00:00Z",
+      "last_checked_utc": "2026-10-27T00:00:00Z",
+      "research_slug": "next-founders",
+      "sources": [
+        {
+          "url": "https://www.nextcanada.com/next-founders/",
+          "title": "NEXT Founders \u2014 program and 2027 timeline",
+          "supports": "Official indexed page publishes January 12 opening, March 3 cutoff, May\u2013August 2027 programming and no-cost/no-equity/no-direct-funding terms.",
+          "publisher": "NEXT Canada",
+          "accessed_at": "2026-10-27"
         }
       ]
     }

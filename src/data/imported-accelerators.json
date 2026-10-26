@@ -53,16 +53,23 @@
     "applyUrl": null,
     "description": "Embed advertises early applications for cohort seven and $250K on an uncapped, no-discount MFN SAFE (or a recent round price).",
     "terms": "Embed advertises early applications for cohort seven and $250K on an uncapped, no-discount MFN SAFE (or a recent round price).",
-    "notes": "Embed advertises early applications for cohort seven and $250K on an uncapped, no-discount MFN SAFE (or a recent round price). Retreat September 11–13 and Demo Day November 12 are published without a year and mixed with older cohort copy. Do not assign a calendar year.",
-    "checked_at": "2026-10-26",
+    "notes": "Embed advertises early applications for cohort seven and $250K on an uncapped, no-discount MFN SAFE (or a recent round price). Retreat September 11–13 and Demo Day November 12 lack a year and are mixed with older-cohort text. Cohort-seven early applications are advertised, but no exact schedule is confirmed.",
+    "checked_at": "2026-10-27",
     "status": "needs_review",
     "sources": [
       {
-        "title": "Conviction Embed",
         "url": "https://embed.conviction.com/",
+        "title": "Conviction Embed",
         "publisher": "Conviction",
-        "accessed_at": "2026-10-26",
-        "supports": "Cohort-seven early applications, terms and solo-founder eligibility."
+        "supports": "Early applications for cohort seven, $250K investment terms, and rolling-admissions language mixed with undated retreat/demo-day copy.",
+        "accessed_at": "2026-10-27"
+      },
+      {
+        "url": "https://embed.conviction.com/apply",
+        "title": "Conviction Embed application",
+        "publisher": "Conviction",
+        "supports": "Application form is accessible; no deadline or cohort year is stated.",
+        "accessed_at": "2026-10-27"
       }
     ]
   },
@@ -125,18 +132,25 @@
     "slug": "alchemist-accelerator",
     "website": "https://www.alchemistaccelerator.com/apply",
     "applyUrl": null,
-    "description": "Indexed official FAQ describes six-month enterprise acceleration and rolling application deadlines, but live pages failed to load.",
-    "terms": "Current funding, fee and equity terms were not confirmed. Check official program information.",
-    "notes": "Indexed official FAQ describes six-month enterprise acceleration and rolling application deadlines, but live pages failed to load. Legacy apply URL redirected to alchemist.vc/apply, also inaccessible. No current cohort deadline verified.",
-    "checked_at": "2026-10-26",
+    "description": "The official Alchemist FAQ describes six-month enterprise acceleration and rolling review, including solo-founder eligibility. Its listed next class date is January 22, 2026, already past; a future cohort deadline is not confirmed.",
+    "terms": "Most companies grant 5% common equity, with flexible terms; tuition is offset through investment. Confirm current offer and upcoming cohort directly. Legacy next-start text must not be promoted as future.",
+    "notes": "The official Alchemist FAQ describes six-month enterprise acceleration and rolling review, including solo-founder eligibility. Its listed next class date is January 22, 2026, already past; a future cohort deadline is not confirmed. Most companies grant 5% common equity, with flexible terms; tuition is offset through investment. Confirm current offer and upcoming cohort directly. Legacy next-start text must not be promoted as future.",
+    "checked_at": "2026-10-27",
     "status": "needs_review",
     "sources": [
       {
-        "title": "Alchemist official FAQ (search index)",
         "url": "https://www.alchemistaccelerator.com/",
+        "title": "Alchemist official program FAQ",
         "publisher": "Alchemist",
-        "accessed_at": "2026-10-26",
-        "supports": "Rolling deadlines and typical 5% common equity with flexible terms; indexed official content."
+        "supports": "Official domain redirects to alchemist.vc; six-month program, rolling review, flexible common-equity terms and solo-founder eligibility. The listed next start remains January 22, 2026.",
+        "accessed_at": "2026-10-27"
+      },
+      {
+        "url": "https://www.alchemist.vc/apply",
+        "title": "Alchemist application endpoint — retrieval attempt",
+        "publisher": "Alchemist",
+        "supports": "Bare URL could not be fetched. The linked tracking URL returns an application-page shell without readable cohort dates.",
+        "accessed_at": "2026-10-27"
       }
     ]
   },
@@ -147,8 +161,8 @@
     "applyUrl": null,
     "description": "Soma Fellows now describes a builder talent program connecting participants with companies, mentors and the Soma network. It links to applications but does not publish a fixed deadline or a standardized startup investment offer.",
     "terms": "Soma Fellows now describes a builder talent program connecting participants with companies, mentors and the Soma network. It links to applications but does not publish a fixed deadline or a standardized startup investment offer.",
-    "notes": "Soma Fellows now describes a builder talent program connecting participants with companies, mentors and the Soma network. It links to applications but does not publish a fixed deadline or a standardized startup investment offer. The former somafellows.com redirects here. Do not carry forward old startup accelerator funding promises.",
-    "checked_at": "2026-10-26",
+    "notes": "Soma Fellows now describes a builder talent program connecting participants with companies, mentors and the Soma network. It links to applications but does not publish a fixed deadline or a standardized startup investment offer. The former somafellows.com redirects here. Do not carry forward old startup accelerator funding promises. The current offering is a talent-placement fellowship, not a confirmed standardized startup funding deal. An application link alone does not establish an active intake deadline.",
+    "checked_at": "2026-10-27",
     "status": "needs_review",
     "sources": [
       {
@@ -156,7 +170,7 @@
         "title": "Soma Fellows",
         "supports": "Current company-placement/network focus, application link and current fellows.",
         "publisher": "Soma Capital",
-        "accessed_at": "2026-10-26"
+        "accessed_at": "2026-10-27"
       }
     ]
   },
@@ -205,18 +219,18 @@
     "slug": "launch-accelerator",
     "website": "https://launchaccelerator.co/#overview-section",
     "applyUrl": null,
-    "description": "LAUNCH currently advertises Cohort 37, September 2026, a 14-week program and $125K investment. Its application banner remains open, but that cohort has already started and no future cutoff or next batch dates are published.",
-    "terms": "LAUNCH currently advertises Cohort 37, September 2026, a 14-week program and $125K investment. Its application banner remains open, but that cohort has already started and no future cutoff or next batch dates are published.",
-    "notes": "LAUNCH currently advertises Cohort 37, September 2026, a 14-week program and $125K investment. Its application banner remains open, but that cohort has already started and no future cutoff or next batch dates are published. The live HTML did not expose text to the browser reader; the official indexed page supplied the details. Do not treat an undated Apply Now banner as evidence of a future cohort.",
-    "checked_at": "2026-10-26",
+    "description": "LAUNCH’s indexed official homepage still advertises Cohort 37 in September 2026, 14 weeks and $125K investment. The dated cohort has already started; the application banner does not confirm a next intake.",
+    "terms": "LAUNCH’s indexed official homepage still advertises Cohort 37 in September 2026, 14 weeks and $125K investment. The dated cohort has already started; the application banner does not confirm a next intake.",
+    "notes": "LAUNCH’s indexed official homepage still advertises Cohort 37 in September 2026, 14 weeks and $125K investment. The dated cohort has already started; the application banner does not confirm a next intake. Direct text extraction was empty; indexed official content was reviewed. No future deadline or new cohort dates were established.",
+    "checked_at": "2026-10-27",
     "status": "needs_review",
     "sources": [
       {
         "url": "https://launchaccelerator.co/",
         "title": "LAUNCH Accelerator",
-        "supports": "Official indexed page shows Cohort 37/September 2026, 14 weeks and $125K.",
+        "supports": "Indexed official homepage: Cohort 37, September 2026, 14 weeks and $125K.",
         "publisher": "LAUNCH",
-        "accessed_at": "2026-10-26"
+        "accessed_at": "2026-10-27"
       }
     ]
   },
@@ -245,25 +259,25 @@
     "slug": "accel-atoms",
     "website": "https://atoms.accel.com/",
     "applyUrl": null,
-    "description": "Accel Atoms supports Indian and Indian-origin founders. The site lists the 2026 AI cohort and Atoms X, with signup for future cohorts.",
-    "terms": "Current funding, fee and equity terms were not confirmed. Check official program information.",
-    "notes": "Accel Atoms supports Indian and Indian-origin founders. The site lists the 2026 AI cohort and Atoms X, with signup for future cohorts. No next application window confirmed; removed unsupported rolling-admissions claim.",
-    "checked_at": "2026-10-26",
+    "description": "Accel Atoms FAQ explicitly describes rolling AI-cohort applications and participation for Indian and Indian-origin founders. However, the live application URL currently returns an upgrade notice rather than a usable form. Current application access needs confirmation.",
+    "terms": "AI and Atoms X are distinct cohorts with different investment ceilings. Do not promise a fixed equity percentage or an exact next cohort date. The FAQ and live application endpoint are inconsistent.",
+    "notes": "Accel Atoms FAQ explicitly describes rolling AI-cohort applications and participation for Indian and Indian-origin founders. However, the live application URL currently returns an upgrade notice rather than a usable form. Current application access needs confirmation. AI and Atoms X are distinct cohorts with different investment ceilings. Do not promise a fixed equity percentage or an exact next cohort date. The FAQ and live application endpoint are inconsistent.",
+    "checked_at": "2026-10-27",
     "status": "needs_review",
     "sources": [
       {
-        "title": "Accel Atoms",
-        "url": "https://atoms.accel.com/",
+        "url": "https://atoms.accel.com/faqs",
+        "title": "Accel Atoms FAQ",
         "publisher": "Accel",
-        "accessed_at": "2026-10-26",
-        "supports": "Program scope and future-cohort newsletter."
+        "supports": "Rolling AI applications, Indian-origin eligibility, investment terms and solo-founder eligibility for Atoms X.",
+        "accessed_at": "2026-10-27"
       },
       {
-        "title": "AI Cohort 2026",
-        "url": "https://atoms.accel.com/news/meet-the-startups-in-ai-cohort-2026",
+        "url": "https://atoms.accel.com/apply",
+        "title": "Accel Atoms application page",
         "publisher": "Accel",
-        "accessed_at": "2026-10-26",
-        "supports": "AI cohort began March 11, 2026 and was scheduled to conclude in June."
+        "supports": "Live page displays an application-experience upgrade notice dated July 11 without a year; searchable cached application content differs.",
+        "accessed_at": "2026-10-27"
       }
     ]
   },
@@ -274,16 +288,23 @@
     "applyUrl": null,
     "description": "Forum Ventures offers a B2B tech accelerator with $100K pre-seed funding and hands-on founder support.",
     "terms": "Forum Ventures offers a B2B tech accelerator with $100K pre-seed funding and hands-on founder support.",
-    "notes": "Forum Ventures offers a B2B tech accelerator with $100K pre-seed funding and hands-on founder support. Current public page does not establish a dated application window. Do not infer rolling admission merely from a pitch link.",
-    "checked_at": "2026-10-26",
+    "notes": "Forum Ventures offers a B2B tech accelerator with $100K pre-seed funding and hands-on founder support. Do not infer rolling admissions or a fixed equity percentage from the pitch link.",
+    "checked_at": "2026-10-27",
     "status": "needs_review",
     "sources": [
       {
-        "title": "Forum accelerator",
         "url": "https://www.forumvc.com/accelerator",
+        "title": "Forum accelerator",
         "publisher": "Forum Ventures",
-        "accessed_at": "2026-10-26",
-        "supports": "B2B focus and $100K funding."
+        "supports": "B2B accelerator and $100K pre-seed funding; no dated intake schedule.",
+        "accessed_at": "2026-10-27"
+      },
+      {
+        "url": "https://www.forumvc.com/pitch-us",
+        "title": "Forum Ventures pitch page",
+        "publisher": "Forum Ventures",
+        "supports": "Linked pitch page lacks readable application timing; no rolling admission claim verified.",
+        "accessed_at": "2026-10-27"
       }
     ]
   },
@@ -352,25 +373,25 @@
     "slug": "hf0-residency",
     "website": "https://www.hf0.com/",
     "applyUrl": null,
-    "description": "HF0 describes a residency for repeat founders and links to an application form. The homepage advertises Demo Day on December 1 without a year. Current investment terms and a dated next application window could not be confirmed.",
-    "terms": "HF0 describes a residency for repeat founders and links to an application form. The homepage advertises Demo Day on December 1 without a year. Current investment terms and a dated next application window could not be confirmed.",
-    "notes": "HF0 describes a residency for repeat founders and links to an application form. The homepage advertises Demo Day on December 1 without a year. Current investment terms and a dated next application window could not be confirmed. Do not convert December 1 into an exact ISO date without a confirmed year. The former /terms page could not be retrieved; previous $1M/5% terms were not reverified.",
-    "checked_at": "2026-10-26",
+    "description": "HF0 targets repeat founders and links to an application form. The homepage lists December 1 Demo Day without a year; its facts page lists previous cohorts. A next dated intake and current deal terms remain unconfirmed.",
+    "terms": "Current funding, fee and equity terms were not confirmed. Check official program information.",
+    "notes": "HF0 targets repeat founders and links to an application form. The homepage lists December 1 Demo Day without a year; its facts page lists previous cohorts. A next dated intake and current deal terms remain unconfirmed. Do not turn a yearless Demo Day into a calendar date or treat an application link as proof of a current cohort.",
+    "checked_at": "2026-10-27",
     "status": "needs_review",
     "sources": [
       {
         "url": "https://www.hf0.com/",
         "title": "HF0 Residency",
-        "supports": "Repeat-founder positioning; application link and yearless December 1 Demo Day.",
+        "supports": "Repeat-founder positioning, application link and yearless December 1 Demo Day.",
         "publisher": "HF0",
-        "accessed_at": "2026-10-26"
+        "accessed_at": "2026-10-27"
       },
       {
-        "url": "https://www.hf0.com/apply",
-        "title": "HF0 application",
-        "supports": "The application form is accessible; it does not state cohort dates.",
+        "url": "https://www.hf0.com/facts",
+        "title": "HF0 Facts",
+        "supports": "Prior cohort outcomes; no new application schedule.",
         "publisher": "HF0",
-        "accessed_at": "2026-10-26"
+        "accessed_at": "2026-10-27"
       }
     ]
   },
@@ -401,8 +422,8 @@
     "applyUrl": null,
     "description": "Better Tomorrow Ventures remains an active fintech investor and its portfolio identifies Mint Accelerator companies. The former /the-mint program URL now returns 404; no upcoming Mint application dates or current program terms were confirmed.",
     "terms": "Current funding, fee and equity terms were not confirmed. Check official program information.",
-    "notes": "Better Tomorrow Ventures remains an active fintech investor and its portfolio identifies Mint Accelerator companies. The former /the-mint program URL now returns 404; no upcoming Mint application dates or current program terms were confirmed. A missing program page does not establish closure. Do not reuse old Mint application terms as current.",
-    "checked_at": "2026-10-26",
+    "notes": "Better Tomorrow Ventures remains an active fintech investor and its portfolio identifies Mint Accelerator companies. The former /the-mint program URL now returns 404; no upcoming Mint application dates or current program terms were confirmed. A missing program page does not establish closure. Do not reuse old Mint application terms as current. The former /the-mint page still returns 404 on recheck. Portfolio company labels confirm historical Mint activity, not a current application window.",
+    "checked_at": "2026-10-27",
     "status": "needs_review",
     "sources": [
       {
@@ -410,14 +431,14 @@
         "title": "Better Tomorrow Ventures",
         "supports": "Current firm and pre-seed/seed investing focus.",
         "publisher": "Better Tomorrow Ventures",
-        "accessed_at": "2026-10-26"
+        "accessed_at": "2026-10-27"
       },
       {
         "url": "https://btv.vc/partnerships",
         "title": "BTV Partnerships",
         "supports": "Portfolio still labels Mint Accelerator companies.",
         "publisher": "Better Tomorrow Ventures",
-        "accessed_at": "2026-10-26"
+        "accessed_at": "2026-10-27"
       }
     ]
   },
@@ -428,8 +449,8 @@
     "applyUrl": null,
     "description": "Sequoia describes Arc as its twice-yearly open call for pre-seed and seed founders, with a four-day Arc Intensive. The current page does not publish an application deadline or next cohort dates.",
     "terms": "Current funding, fee and equity terms were not confirmed. Check official program information.",
-    "notes": "Sequoia describes Arc as its twice-yearly open call for pre-seed and seed founders, with a four-day Arc Intensive. The current page does not publish an application deadline or next cohort dates. Remove the old Fall 2025 deadline from current application guidance.",
-    "checked_at": "2026-10-26",
+    "notes": "Sequoia describes Arc as its twice-yearly open call for pre-seed and seed founders, with a four-day Arc Intensive. The current page does not publish an application deadline or next cohort dates. Remove the old Fall 2025 deadline from current application guidance. No precise next open-call window is published. Biannual cadence does not establish dates for a future intake.",
+    "checked_at": "2026-10-27",
     "status": "needs_review",
     "sources": [
       {
@@ -437,7 +458,7 @@
         "title": "Get started with Sequoia",
         "supports": "Twice-yearly Arc open call and four-day intensive; no current deadline.",
         "publisher": "Sequoia Capital",
-        "accessed_at": "2026-10-26"
+        "accessed_at": "2026-10-27"
       }
     ]
   },
@@ -446,17 +467,17 @@
     "slug": "ai-grant",
     "website": "https://aigrant.com/",
     "applyUrl": null,
-    "description": "AI Grant explicitly says Batch 4 applications are closed. It offers a $250K uncapped MFN SAFE investment, not a grant.",
-    "terms": "AI Grant explicitly says Batch 4 applications are closed. It offers a $250K uncapped MFN SAFE investment, not a grant.",
-    "notes": "AI Grant explicitly says Batch 4 applications are closed. It offers a $250K uncapped MFN SAFE investment, not a grant. No reopening date published; do not present as an open application.",
-    "checked_at": "2026-10-26",
+    "description": "AI Grant says Batch 4 applications are closed. Published support includes a $250,000 uncapped SAFE investment and cloud credits; no next-cohort date is announced.",
+    "terms": "AI Grant says Batch 4 applications are closed. Published support includes a $250,000 uncapped SAFE investment and cloud credits; no next-cohort date is announced.",
+    "notes": "AI Grant says Batch 4 applications are closed. Published support includes a $250,000 uncapped SAFE investment and cloud credits; no next-cohort date is announced. AI Grant accelerator at aigrant.com is distinct from the open-source grant program at aigrant.org. Do not label SAFE investment as an equity-free grant.",
+    "checked_at": "2026-10-27",
     "status": "needs_review",
     "sources": [
       {
         "title": "AI Grant",
         "url": "https://aigrant.com/",
         "publisher": "AI Grant",
-        "accessed_at": "2026-10-26",
+        "accessed_at": "2026-10-27",
         "supports": "Closed Batch 4; $250K investment; no next cohort dates."
       }
     ]

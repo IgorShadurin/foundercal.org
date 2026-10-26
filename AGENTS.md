@@ -124,3 +124,19 @@ Following these steps keeps the event catalog accurate and ensures we don’t re
 - The 131 legacy events in `public/events-archive.json` are historical, not current evidence. Do not merge them back into the live calendar.
 - A working homepage or an application button is not evidence of an open cohort. Mark closed, unclear, blocked or repurposed sources explicitly. Never extrapolate precise dates from month-only schedules.
 - Edit the research first. Deadline and comparison pages consume research directly; do not add independent hardcoded funding claims or derived averages.
+
+## 9. Program discovery and monitoring
+
+- Do not collapse separate cohorts because they share an organizer or dates.
+  Use `additional_events` for extra confirmed cohorts and unique stable event IDs.
+- Keep `data/program-facts.json` evidence tied to the current cohort ID. Exact
+  cutoff timestamps require a published time and timezone; additional rounds need
+  their own source and check date. Unknown times must not become midnight cutoffs.
+- Application status, evidence status and freshness are distinct. Never promote a
+  successful HTTP/content-monitor check into verified/open status.
+- Alias URLs must redirect permanently to the canonical program. Update links and
+  sitemap together. Keep significant template changes in `CONTENT_UPDATED`.
+- Run `review:queue` after data changes. Scheduled source-monitor artifacts are
+  review inputs, not approved facts. Follow up by reviewing the cited official pages.
+- Required checks now include supplemental fact consistency, canonical identities,
+  exact/date-only cutoffs, multiple rounds/cohorts, filter URLs and ICS exports.

@@ -1,23 +1,97 @@
 {
   "accelerator": {
-    "name": "Blue Ridge Labs 'Catalyst' 2026",
-    "website": "https://beta.robinhood.org/our-work/blue-ridge-labs/catalyst/",
+    "name": "Blue Ridge Labs Catalyst",
+    "website": "https://robinhood.org/our-work/blue-ridge-labs/catalyst/",
     "csv_file": "public/events-archive.json",
     "slug": "blueridgelabs-catalyst-26"
   },
-  "status": "needs_review",
-  "checked_at": "2026-10-26",
-  "confidence": "low",
-  "summary": "The official Catalyst page still lists the 2026 cohort and November 21, 2025 deadline. No later application cycle was confirmed.",
-  "proposed_event": null,
+  "status": "verified",
+  "checked_at": "2026-10-27",
+  "confidence": "high",
+  "summary": "Blue Ridge Labs is accepting applications for its 2027 Catalyst cohort, with a November 13 cutoff. The current canonical program page replaces the password-protected beta URL.",
+  "proposed_event": {
+    "id": "blue-ridge-labs-catalyst-2027",
+    "name": "Blue Ridge Labs Catalyst 2027",
+    "description": "$100K investment for for-profit ventures or grant for nonprofits; MVP and early traction required. Solo founders may apply.",
+    "organizer": "Robin Hood",
+    "website": "https://robinhood.org/our-work/blue-ridge-labs/catalyst/",
+    "location": {
+      "is_virtual": false,
+      "is_hybrid": false,
+      "venue": null,
+      "city": "New York",
+      "city_slug": "new-york",
+      "country": "United States",
+      "country_code": "US",
+      "region_code": "na"
+    },
+    "dates": {
+      "application_open": null,
+      "application_close": "2026-11-13",
+      "program_start": null,
+      "program_end": null,
+      "demo_day": null,
+      "timezone": null,
+      "date_range_text": "Apply by November 13 for the 2027 cohort. Program phases are February–March and April–June 2027; exact start/end days and cutoff time are not published."
+    },
+    "categories": {
+      "types": [
+        "accelerator"
+      ],
+      "supports": [
+        "funding",
+        "mentorship",
+        "resources"
+      ],
+      "sectors": [
+        "general",
+        "ai",
+        "edtech"
+      ]
+    },
+    "hashtags": [],
+    "index": {
+      "years": [
+        "2026"
+      ],
+      "region_code": "na",
+      "country_code": "US",
+      "city_slug": "new-york",
+      "type_keys": [
+        "accelerator"
+      ],
+      "support_keys": [
+        "funding",
+        "mentorship",
+        "resources"
+      ],
+      "sector_keys": [
+        "general",
+        "ai",
+        "edtech"
+      ],
+      "date_sort_key": "2026-11-13"
+    },
+    "verification": "reported",
+    "last_verified_utc": "2026-10-27T00:00:00Z"
+  },
   "sources": [
     {
-      "title": "Blue Ridge Labs 'Catalyst' 2026 \u2014 official program information",
-      "url": "https://beta.robinhood.org/our-work/blue-ridge-labs/catalyst/",
-      "publisher": null,
-      "accessed_at": "2026-10-26",
-      "supports": "The official Catalyst page still lists the 2026 cohort and November 21, 2025 deadline. No later application cycle was confirmed."
+      "url": "https://robinhood.org/our-work/blue-ridge-labs/catalyst/",
+      "title": "Blue Ridge Labs Catalyst 2027",
+      "publisher": "Robin Hood",
+      "supports": "Open 2027 cohort, November 13 cutoff, $100K investment/grant, NYC focus and solo-founder eligibility.",
+      "accessed_at": "2026-10-27"
+    },
+    {
+      "url": "https://robinhood.org/",
+      "title": "Robin Hood homepage",
+      "publisher": "Robin Hood",
+      "supports": "Current homepage highlights applications for the 2027 Catalyst cohort.",
+      "accessed_at": "2026-10-27"
     }
   ],
-  "notes": []
+  "notes": [
+    "Cutoff year 2026 is resolved from the current call for the February 2027 cohort. Review current terms before applying."
+  ]
 }

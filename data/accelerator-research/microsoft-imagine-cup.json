@@ -6,18 +6,20 @@
     "slug": "microsoft-imagine-cup"
   },
   "status": "needs_review",
-  "checked_at": "2026-10-26",
+  "checked_at": "2026-10-27",
   "confidence": "low",
-  "summary": "Official site says Imagine Cup 2027 is coming soon. It does not yet confirm application deadlines.",
+  "summary": "Microsoft’s official Imagine Cup site says Imagine Cup 2027 is coming soon. No 2027 application deadline is published in the checked content.",
   "proposed_event": null,
   "sources": [
     {
-      "title": "Microsoft Imagine Cup 2027 \u2014 official program information",
       "url": "https://imaginecup.microsoft.com/en-us",
-      "publisher": null,
-      "accessed_at": "2026-10-26",
-      "supports": "Official site says Imagine Cup 2027 is coming soon. It does not yet confirm application deadlines."
+      "title": "Imagine Cup — Microsoft",
+      "supports": "2027 coming-soon announcement; historical 2026 competition content.",
+      "publisher": "Microsoft",
+      "accessed_at": "2026-10-27"
     }
   ],
-  "notes": []
+  "notes": [
+    "Do not carry the 2026 deadline into the 2027 competition."
+  ]
 }

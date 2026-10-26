@@ -6,20 +6,20 @@
     "slug": "ideo-colab-startup-studio"
   },
   "status": "needs_review",
-  "checked_at": "2026-10-26",
+  "checked_at": "2026-10-27",
   "confidence": "medium",
-  "summary": "IDEO CoLab Ventures currently describes early-stage investing and incubation. Its former /startups page is unavailable, and no current Startup Studio intake or dated application window was found.",
+  "summary": "IDEO CoLab Ventures describes early-stage investing and incubation. The current homepage does not establish a scheduled Startup Studio intake or published application deadline.",
   "proposed_event": null,
   "sources": [
     {
       "url": "https://ideocolab.com/",
       "title": "IDEO CoLab Ventures",
-      "supports": "Current venture-investment positioning; no current Startup Studio cohort dates.",
-      "publisher": "IDEO CoLab Ventures",
-      "accessed_at": "2026-10-26"
+      "supports": "Current investing/incubation positioning; no dated Startup Studio call.",
+      "publisher": "IDEO CoLab",
+      "accessed_at": "2026-10-27"
     }
   ],
   "notes": [
-    "Changed from inactive to needs_review: a missing program page does not prove closure of the firm or program."
+    "A venture fund homepage is not evidence of an open accelerator cohort."
   ]
 }

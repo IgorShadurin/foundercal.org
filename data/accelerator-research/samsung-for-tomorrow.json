@@ -6,22 +6,21 @@
     "slug": "samsung-for-tomorrow"
   },
   "status": "needs_review",
-  "checked_at": "2026-10-26",
+  "checked_at": "2026-10-27",
   "confidence": "medium",
-  "summary": "The archived global Samsung For Tomorrow grant could not be verified. Samsung does publish a distinct Solve for Tomorrow US school competition for 2026–27.",
+  "summary": "Samsung’s current US Solve for Tomorrow competition runs September 30–November 23 in the 2026–2027 cycle. It is for public-school grades 6–12 with teacher submissions, not the previously listed global startup grant.",
   "proposed_event": null,
   "sources": [
     {
-      "title": "Samsung Solve for Tomorrow 2026–27 announcement",
-      "url": "https://news.samsung.com/us/samsung-opens-applications-17th-annual-solve-for-tomorrow-competition/",
+      "url": "https://www.samsung.com/us/solvefortomorrow/about/",
+      "title": "Samsung US Solve for Tomorrow",
+      "supports": "2026–2027 cycle, September 30–November 23 application phase and school/teacher eligibility.",
       "publisher": "Samsung",
-      "accessed_at": "2026-10-26",
-      "supports": "US school competition opens September 30 and closes November 23, 2026; teachers apply for grade 6–12 students."
+      "accessed_at": "2026-10-27"
     }
   ],
   "notes": [
-    "This is a school STEM competition, not a global founder grant. No successor relationship with the archived grant is claimed.",
-    "The related US competition offers school technology/resources; final event is April 2027 without an exact date.",
-    "Other countries run separate eligibility rules and schedules."
+    "Retained for identity clarification, not added to the founder startup calendar. Technology prizes go to schools, not unrestricted startup funding.",
+    "The legacy global Samsung For Tomorrow startup-grant identity remains unconfirmed."
   ]
 }

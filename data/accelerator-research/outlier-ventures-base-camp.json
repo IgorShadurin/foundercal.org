@@ -6,20 +6,27 @@
     "slug": "outlier-ventures-base-camp"
   },
   "status": "needs_review",
-  "checked_at": "2026-10-26",
+  "checked_at": "2026-10-27",
   "confidence": "high",
-  "summary": "Outlier Ventures lists Post Web Base Camp as accepting early applications for a 2026 cohort. Its 12-week remote accelerator supports DeAI, DeFi, RWA and DePIN teams, but exact dates and an application deadline are not published.",
+  "summary": "Outlier Ventures lists early applications for Post Web Base Camp 2026, but its linked registration page now presents a general Fund II investment pitch form. A cohort-specific deadline and intake status need confirmation.",
   "proposed_event": null,
   "sources": [
     {
       "url": "https://outlierventures.io/base-camp/",
       "title": "Outlier Ventures Base Camp",
-      "supports": "Current Post Web call, remote 12-week format and focus areas.",
+      "supports": "12-week format and early-application wording for Post Web 2026.",
       "publisher": "Outlier Ventures",
-      "accessed_at": "2026-10-26"
+      "accessed_at": "2026-10-27"
+    },
+    {
+      "url": "https://outlierventures.io/apply/form/",
+      "title": "Outlier Ventures funding form",
+      "supports": "Linked form is Fund II funding for AI, Atoms and Association, not an explicit Base Camp cohort application.",
+      "publisher": "Outlier Ventures",
+      "accessed_at": "2026-10-27"
     }
   ],
   "notes": [
-    "Register-interest status is confirmed; do not manufacture a deadline or cohort start."
+    "Do not classify the general funding form as proof of a rolling accelerator intake."
   ]
 }

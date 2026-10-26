@@ -1,814 +1,414 @@
 "use client";
-
-import Image from "next/image";
-import { useEffect, useMemo, useState, type ReactNode } from "react";
-import {
-  addDays,
-  compareAsc,
-  format,
-  isWithinInterval,
-  parseISO,
-  startOfDay,
-} from "date-fns";
-import {
-  CalendarRange,
-  Clock3,
-  Filter,
-  FilterX,
-  Link as LinkIcon,
-  Github,
-  Info,
-  MapPin,
-  Plus,
-  Building2,
-} from "lucide-react";
-
-import { Badge } from "@/components/ui/badge";
-import { Button } from "@/components/ui/button";
-import {
-  Card,
-  CardContent,
-  CardDescription,
-  CardHeader,
-  CardTitle,
-} from "@/components/ui/card";
+import { useEffect, useMemo, useState } from "react";
+import Link from "next/link";
 import { Calendar } from "@/components/ui/calendar";
-import { Input } from "@/components/ui/input";
+import { parseISO, format, addDays } from "date-fns";
 import {
-  Popover,
-  PopoverContent,
-  PopoverTrigger,
-} from "@/components/ui/popover";
+  applicationState,
+  applicationRounds,
+  roundPassed,
+  type Program,
+} from "@/lib/program-model";
 import {
-  Select,
-  SelectContent,
-  SelectItem,
-  SelectTrigger,
-  SelectValue,
-} from "@/components/ui/select";
-import { Separator } from "@/components/ui/separator";
-import { Tabs, TabsList, TabsTrigger } from "@/components/ui/tabs";
-import type { EventRecord, Taxonomies } from "@/lib/event-data";
-import { cn } from "@/lib/utils";
-import { selectTimeline } from "@/lib/event-timeline";
-
-const TIMELINE_KEYS = [
-  "application_open",
-  "application_close",
-  "program_start",
-  "program_end",
-  "demo_day",
-] as const;
-
-const DATE_LABELS: Record<TimelineKey, string> = {
-  application_open: "Applications open",
-  application_close: "Applications close",
-  program_start: "Program kicks off",
-  program_end: "Program wraps",
-  demo_day: "Demo Day",
-};
-
-const REGION_LABELS: Record<string, string> = {
-  na: "NA",
-  eu: "EU",
-  apac: "APAC",
-  latam: "LATAM",
-  mena: "MENA",
-  africa: "Africa",
-  global: "Global",
-};
-
-const DATE_STYLES: Partial<Record<TimelineKey, string>> = {
-  application_open:
-    "text-emerald-700 bg-emerald-100 dark:text-emerald-200 dark:bg-emerald-900/40",
-  application_close:
-    "text-rose-700 bg-rose-100 dark:text-rose-200 dark:bg-rose-900/40",
-  program_start:
-    "text-sky-700 bg-sky-100 dark:text-sky-200 dark:bg-sky-900/40",
-  program_end:
-    "text-amber-700 bg-amber-100 dark:text-amber-200 dark:bg-amber-900/40",
-};
-
-const VIEW_MODES = {
-  deadlines: {
-    label: "Application focus",
-    priority: ["application_close", "application_open"] as TimelineKey[],
-  },
-  programs: {
-    label: "Program focus",
-    priority: ["program_start", "demo_day"] as TimelineKey[],
-  },
-} as const;
-
-type TimelineKey = (typeof TIMELINE_KEYS)[number];
-type ViewMode = keyof typeof VIEW_MODES;
-
-const HERO_ICON = {
-  src: "/android-chrome-192x192.png",
-  alt: "FounderCal icon",
-};
-
-type NormalizedEvent = {
-  record: EventRecord;
-  parsedDates: Partial<Record<TimelineKey, Date>>;
-  locationLabel: string;
-  regionCode: string;
-  searchIndex: string;
-};
-
-type EventCalendarProps = {
-  events: EventRecord[];
-  taxonomies: Taxonomies;
-  initialDate: string;
-};
-
-type UserPreferences = {
-  filtersExpanded: boolean;
-  [key: string]: unknown;
-};
-
-const PREFS_STORAGE_KEY = "foundercal:event-calendar-prefs";
-const DEFAULT_PREFS: UserPreferences = {
-  filtersExpanded: false,
-};
-
-export function EventCalendar({ events, taxonomies, initialDate }: EventCalendarProps) {
-  const [viewMode, setViewMode] = useState<ViewMode>("deadlines");
-  const [regionFilter, setRegionFilter] = useState("all");
-  const [sectorFilter, setSectorFilter] = useState("all");
-  const [typeFilter, setTypeFilter] = useState("all");
-  const [search, setSearch] = useState("");
-  const [windowStart, setWindowStart] = useState(() => startOfDay(parseISO(initialDate)));
-  const [restrictToWindow, setRestrictToWindow] = useState(true);
-  const [windowLength, setWindowLength] = useState(30);
-  const [preferences, setPreferences] = useState<UserPreferences>(DEFAULT_PREFS);
-  const today = startOfDay(parseISO(initialDate));
-  const aggregateCounts = useMemo(() => buildCounts(events), [events]);
-
-  useEffect(() => {
-    if (typeof window === "undefined") {
-      return;
-    }
-    try {
-      const stored = window.localStorage.getItem(PREFS_STORAGE_KEY);
-      if (stored) {
-        const parsed = JSON.parse(stored) as Partial<UserPreferences>;
-        queueMicrotask(() => {
-          setPreferences((prev) => ({ ...prev, ...parsed }));
-        });
-      }
-    } catch (error) {
-      console.warn("Failed to parse preferences", error);
-    }
-  }, []);
-
-  const updatePreferences = (updates: Partial<UserPreferences>) => {
-    setPreferences((prev) => {
-      const next = { ...prev, ...updates };
-      if (typeof window !== "undefined") {
-        window.localStorage.setItem(PREFS_STORAGE_KEY, JSON.stringify(next));
-      }
-      return next;
-    });
-  };
-
-  const filtersExpanded = Boolean(preferences.filtersExpanded);
-
-  const normalized = useMemo(() => normalizeEvents(events), [events]);
-
-  const filtered = useMemo(() => {
-    const query = search.trim().toLowerCase();
-
-    return normalized.filter((entry) => {
-      const matchesRegion =
-        regionFilter === "all" || entry.regionCode === regionFilter;
-      const matchesSector =
-        sectorFilter === "all" ||
-        entry.record.categories.sectors.includes(sectorFilter);
-      const matchesType =
-        typeFilter === "all" || entry.record.categories.types.includes(typeFilter);
-      const matchesSearch =
-        query.length === 0 || entry.searchIndex.includes(query);
-
-      return matchesRegion && matchesSector && matchesType && matchesSearch;
-    });
-  }, [normalized, regionFilter, sectorFilter, typeFilter, search]);
-
-  const windowRange = useMemo(() => {
-    return { start: windowStart, end: addDays(windowStart, windowLength - 1) };
-  }, [windowStart, windowLength]);
-
-  const prioritized = useMemo(() => {
-    const priority = VIEW_MODES[viewMode].priority;
-
-    return filtered
-      .map((entry) => ({
-        ...entry,
-        timeline: selectTimeline(entry.parsedDates, priority, windowRange),
-      }))
-      .sort((a, b) => {
-        if (!a.timeline && !b.timeline) return 0;
-        if (!a.timeline) return 1;
-        if (!b.timeline) return -1;
-        return compareAsc(a.timeline.date, b.timeline.date);
-      });
-  }, [filtered, viewMode, windowRange]);
-
-
-
-  const eventsInWindow = useMemo(() => {
-    return prioritized.filter((entry) => {
-      if (!entry.timeline || entry.record.verification !== "reported") return false;
-      return isWithinInterval(entry.timeline.date, windowRange);
-    });
-  }, [prioritized, windowRange]);
-
-  const visibleEvents = restrictToWindow ? eventsInWindow : prioritized;
-
-  const calendarDates = useMemo(() => {
-    return prioritized
-      .map((entry) => entry.timeline?.date)
-      .filter(Boolean) as Date[];
-  }, [prioritized]);
-
-  const noResults = visibleEvents.length === 0;
-  const filtersActive =
-    regionFilter !== "all" ||
-    sectorFilter !== "all" ||
-    typeFilter !== "all" ||
-    search.trim().length > 0 ||
-    !restrictToWindow ||
-    windowLength !== 30;
-
-  const resultsSection: ReactNode = noResults ? (
-    <div className="flex h-64 flex-col items-center justify-center gap-3 rounded-2xl border border-dashed">
-      <p className="text-base font-medium">No matches yet</p>
-      <p className="text-sm text-muted-foreground">
-        Try loosening a filter or switch to the full reviewed list.
-      </p>
-      <Button variant="secondary" onClick={() => setRestrictToWindow(false)}>
-        Show all reviewed programs
-      </Button>
-    </div>
-  ) : (
-    <div className="space-y-4">
-      {visibleEvents.map((entry) => (
-        <EventCard key={entry.record.id} entry={entry} />
-      ))}
-    </div>
-  );
-
-  return (
-    <div className="space-y-8">
-      <header className="rounded-3xl border border-dashed bg-gradient-to-br from-zinc-50 via-white to-zinc-100 p-6 dark:from-zinc-900 dark:via-zinc-950 dark:to-black sm:p-8">
-        <div className="flex flex-col gap-6 lg:flex-row lg:items-end lg:justify-between">
-          <div className="flex flex-col gap-3 text-center sm:text-left">
-            <div className="flex items-center justify-center gap-3 sm:justify-start">
-              <Image
-                src={HERO_ICON.src}
-                alt={HERO_ICON.alt}
-                width={96}
-                height={96}
-                className="h-14 w-14 object-contain sm:h-20 sm:w-20"
-                priority
-              />
-              <div className="space-y-1 text-left">
-                <p className="text-sm font-black uppercase tracking-wide text-primary">FounderCal.org</p>
-                <h1 className="text-2xl font-semibold sm:text-4xl">A single calendar for founders.</h1>
-              </div>
-            </div>
-            <p className="text-sm text-muted-foreground sm:text-lg">
-              Tracks the accelerators, fellowships, and resource drops that quietly unlock funding so you never miss a door before it closes.
-            </p>
-          </div>
-          <div className="space-y-3 rounded-2xl border bg-white/70 px-8 py-6 text-center shadow-sm dark:bg-zinc-900/80">
-            <div className="flex items-center justify-center gap-4">
-              <span className="relative flex h-8 w-8 items-center justify-center">
-                <span
-                  className="absolute inline-flex h-full w-full animate-ping rounded-full bg-[#2da6df]/40"
-                  style={{ animationDuration: "3s" }}
-                />
-                <span className="inline-flex h-3 w-3 rounded-full bg-[#2da6df]" />
-              </span>
-              <p className="text-6xl font-black text-foreground">
-                {eventsInWindow.length.toString().padStart(2, "0")}
-              </p>
-            </div>
-            <p className="text-sm font-medium text-muted-foreground">
-              Dated entries in selected window
-            </p>
-          </div>
-        </div>
-      </header>
-
-      <div className="grid gap-6 lg:grid-cols-[320px_minmax(0,1fr)]">
-        <Card className="h-fit">
-          <CardHeader>
-            <CardTitle className="flex items-center gap-2 text-base">
-              <CalendarRange className="size-4" /> Opportunity radar
-            </CardTitle>
-            <CardDescription>
-              Pick a start date or scan all reviewed programs. Dates are day-level; source notes specify cutoff times and timezones.
-            </CardDescription>
-          </CardHeader>
-          <CardContent className="space-y-4">
-            <Calendar
-              mode="single"
-              month={windowStart}
-              selected={windowStart}
-              onSelect={(date) => date && setWindowStart(startOfDay(date))}
-              onMonthChange={(date) => setWindowStart(startOfDay(date))}
-              modifiers={{ hasEvent: calendarDates }}
-              className="mx-auto w-full max-w-[360px] rounded-xl border"
-            />
-            <div className="flex flex-col gap-2 sm:flex-row sm:items-center sm:justify-between">
-              <Select
-                value={String(windowLength)}
-                onValueChange={(value) => setWindowLength(Number(value))}
-              >
-                <SelectTrigger className="w-[160px]">
-                  <SelectValue />
-                </SelectTrigger>
-                <SelectContent>
-                  <SelectItem value="30">Next 30 days</SelectItem>
-                  <SelectItem value="90">Next 90 days</SelectItem>
-                  <SelectItem value="182">Next 6 months</SelectItem>
-                  <SelectItem value="365">Next 365 days</SelectItem>
-                </SelectContent>
-              </Select>
-              <Button
-                variant="ghost"
-                size="sm"
-                onClick={() => setWindowStart(today)}
-                disabled={windowStart.getTime() === today.getTime()}
-              >
-                Jump to today
-              </Button>
-            </div>
-            <Separator />
-            <div className="space-y-3 text-sm">
-              <div className="flex items-center justify-between">
-                <span className="text-muted-foreground">Total in view</span>
-                <span className="font-medium">{visibleEvents.length}</span>
-              </div>
-              <div className="flex items-center justify-between">
-                <span className="text-muted-foreground">Total</span>
-                <span className="font-medium">{prioritized.length}</span>
-              </div>
-            </div>
-          </CardContent>
-        </Card>
-
-        <Card className="min-h-[720px]">
-          <CardHeader className="space-y-4">
-            <div className="flex flex-col gap-2">
-              <div className="flex flex-col gap-2 sm:flex-row sm:items-center sm:justify-between">
-                <div className="flex items-center gap-2">
-                  <CalendarRange className="size-5 text-primary" />
-                  <CardTitle className="text-xl">Program calendar</CardTitle>
-                </div>
-                <div className="flex flex-wrap gap-2">
-                  <Button
-                    asChild
-                    variant="ghost"
-                    size="sm"
-                    className="inline-flex items-center gap-2 self-start text-muted-foreground hover:text-foreground"
-                  >
-                    <a
-                      href="https://github.com/IgorShadurin/foundercal.org/issues/new"
-                      target="_blank"
-                      rel="noreferrer"
-                    >
-                      <Plus className="size-4" /> Add an event
-                    </a>
-                  </Button>
-                  <Button
-                    asChild
-                    variant="ghost"
-                    size="sm"
-                    className="inline-flex items-center gap-2 self-start text-muted-foreground hover:text-foreground"
-                  >
-                    <a href="/imported-accelerators">
-                      <Building2 className="size-4 text-[#6366F1]" /> All Accelerators
-                    </a>
-                  </Button>
-                </div>
-              </div>
-              <CardDescription>
-                Filters stack so you can zero in on the right geography, sector, and stage.
-              </CardDescription>
-            </div>
-            <div className="flex flex-col gap-3 lg:flex-row lg:items-center lg:justify-between">
-              <Tabs value={viewMode} onValueChange={(value) => setViewMode(value as ViewMode)}>
-                <TabsList>
-                  <TabsTrigger value="deadlines">Deadlines</TabsTrigger>
-                  <TabsTrigger value="programs">Program milestones</TabsTrigger>
-                </TabsList>
-              </Tabs>
-              <div className="flex flex-wrap items-center gap-3 text-sm text-muted-foreground">
-                <Button
-                  variant="ghost"
-                  size="sm"
-                  className="inline-flex items-center gap-2 text-muted-foreground hover:text-foreground"
-                  onClick={() => updatePreferences({ filtersExpanded: !filtersExpanded })}
-                >
-                  <Filter className="size-4" />
-                  {filtersExpanded ? "Hide filters" : "Show filters"}
-                </Button>
-                <span className="inline-flex items-center gap-2">
-                  <Filter className="size-4" /> {visibleEvents.length} matches
-                </span>
-                {filtersActive ? (
-                  <Button
-                    variant="ghost"
-                    size="sm"
-                    className="inline-flex items-center gap-1 text-muted-foreground hover:text-foreground"
-                    onClick={() => {
-                      setRegionFilter("all");
-                      setSectorFilter("all");
-                      setTypeFilter("all");
-                      setSearch("");
-                      setRestrictToWindow(true);
-                      setWindowLength(30);
-                    }}
-                  >
-                    <FilterX className="size-4" />
-                    Clear filters
-                  </Button>
-                ) : null}
-              </div>
-            </div>
-            {filtersExpanded ? (
-              <div className="grid gap-3 grid-cols-1 md:grid-cols-[minmax(0,_2fr)_minmax(0,_1fr)_minmax(0,_1fr)_minmax(0,_1fr)]">
-                <Input
-                  value={search}
-                  onChange={(event) => setSearch(event.target.value)}
-                  placeholder="Search by name, city, hashtag..."
-                  className="w-full"
-                />
-                <Select value={regionFilter} onValueChange={setRegionFilter}>
-                  <SelectTrigger className="w-full">
-                    <SelectValue placeholder="Region" />
-                  </SelectTrigger>
-                  <SelectContent>
-                    <SelectItem value="all">
-                      <span className="flex w-full items-center justify-between gap-2">
-                        <span>All regions</span>
-                        <span className="text-xs text-muted-foreground">
-                          {aggregateCounts.total}
-                        </span>
-                      </span>
-                    </SelectItem>
-                    {taxonomies.regions.map((region) => (
-                      <SelectItem key={region} value={region}>
-                        <span className="flex w-full items-center justify-between gap-2">
-                          <span>{formatRegion(region)}</span>
-                          <span className="text-xs text-muted-foreground">
-                            {aggregateCounts.regions[region.toLowerCase()]?.toString() ?? "0"}
-                          </span>
-                        </span>
-                      </SelectItem>
-                    ))}
-                  </SelectContent>
-                </Select>
-                <Select value={sectorFilter} onValueChange={setSectorFilter}>
-                  <SelectTrigger className="w-full">
-                    <SelectValue placeholder="Sector" />
-                  </SelectTrigger>
-                  <SelectContent>
-                    <SelectItem value="all">
-                      <span className="flex w-full items-center justify-between gap-2">
-                        <span>All sectors</span>
-                        <span className="text-xs text-muted-foreground">
-                          {aggregateCounts.total}
-                        </span>
-                      </span>
-                    </SelectItem>
-                    {taxonomies.sectors.map((sector) => (
-                      <SelectItem key={sector} value={sector}>
-                        <span className="flex w-full items-center justify-between gap-2">
-                          <span>{formatLabel(sector)}</span>
-                          <span className="text-xs text-muted-foreground">
-                            {aggregateCounts.sectors[sector.toLowerCase()]?.toString() ?? "0"}
-                          </span>
-                        </span>
-                      </SelectItem>
-                    ))}
-                  </SelectContent>
-                </Select>
-                <Select value={typeFilter} onValueChange={setTypeFilter}>
-                  <SelectTrigger className="w-full">
-                    <SelectValue placeholder="Program type" />
-                  </SelectTrigger>
-                  <SelectContent>
-                    <SelectItem value="all">All types</SelectItem>
-                    {taxonomies.types.map((type) => (
-                      <SelectItem key={type} value={type}>
-                        {formatLabel(type)}
-                      </SelectItem>
-                    ))}
-                  </SelectContent>
-                </Select>
-              </div>
-            ) : null}
-          </CardHeader>
-          <CardContent>{resultsSection}</CardContent>
-        </Card>
-      </div>
-      <p className="text-sm text-muted-foreground">Undated programs appear in the full reviewed list. Programs needing confirmation are listed in the directory. Older cohorts are preserved in the <a href="/events-archive.json" className="underline">historical archive</a>.</p>
-      <footer className="mt-10 flex flex-col gap-3 border-t border-dashed border-muted-foreground/40 pt-6 text-sm text-muted-foreground">
-        <div className="flex flex-col gap-2 sm:flex-row sm:items-center sm:justify-between">
-          <a
-            href="https://github.com/IgorShadurin/foundercal.org"
-            target="_blank"
-            rel="noreferrer"
-            className="inline-flex items-center gap-2 font-medium text-foreground transition hover:text-primary"
-          >
-            <Github className="size-4" />
-            Source code on GitHub
-          </a>
-          <p>
-            Ship a feature or add an event via <a
-              href="https://github.com/IgorShadurin/foundercal.org/issues/new"
-              target="_blank"
-              rel="noreferrer"
-              className="font-medium text-foreground underline-offset-4 hover:text-primary hover:underline"
-            >GitHub</a>
-            —collabs keep FounderCal sharp.
-          </p>
-        </div>
-        <div className="text-xs text-muted-foreground/80">
-          <p>
-            Built by <a
-              href="https://x.com/Web3Igor"
-              target="_blank"
-              rel="noreferrer"
-              className="font-medium text-foreground underline-offset-4 hover:text-primary hover:underline"
-            >@Web3Igor</a> -
-             Inspired by <a
-              href="https://x.com/nestymee/status/1988231483153321985"
-              target="_blank"
-              rel="noreferrer"
-              className="font-medium text-foreground underline-offset-4 hover:text-primary hover:underline"
-            >@nestymee</a>
-          </p>
-          <p className="mt-1">
-            Want to create a viral video with AI? Visit <a
-              href="https://yumcut.com/?utm_source=foundercal"
-              target="_blank"
-              rel="noreferrer"
-              className="font-medium text-foreground underline-offset-4 hover:text-primary hover:underline"
-            >YumCut</a>
-          </p>
-        </div>
-      </footer>
-    </div>
-  );
-}
-
-function EventCard({
-  entry,
+  parseCalendarQuery,
+  serializeCalendarQuery,
+  type CalendarQuery,
+} from "@/lib/calendar-query";
+import { ProgramCard } from "./program-card";
+import { readSaved } from "./program-actions";
+import { trackAction } from "./analytics-events";
+const modes = [
+  ["soon", "Upcoming deadlines"],
+  ["rolling", "Rolling applications"],
+  ["all", "All programs"],
+  ["milestones", "Program dates"],
+  ["saved", "Saved"],
+];
+export function EventCalendar({
+  programs,
+  initialNow,
+  initialQuery,
+  directory = false,
 }: {
-  entry: NormalizedEvent & {
-    timeline: ReturnType<typeof selectTimeline>;
-  };
+  programs: Program[];
+  initialNow: string;
+  initialQuery: CalendarQuery;
+  directory?: boolean;
 }) {
-  const { record, locationLabel, timeline } = entry;
-  const primaryType = record.categories.types[0];
-  const today = startOfDay(new Date());
-  const milestoneToShow = timeline;
-  const deadline = entry.parsedDates.application_close;
-  const applicationStatus = record.verification !== "reported"
-    ? "Current details need confirmation"
-    : deadline && deadline < today
-      ? "Application deadline passed"
-      : entry.parsedDates.application_open && entry.parsedDates.application_open > today
-        ? "Applications open later"
-        : deadline
-          ? "Upcoming application deadline"
-          : "No confirmed application deadline";
-  const websiteUrl = withUtmSource(record.website);
-
-  return (
-    <Card className="border-muted bg-background/80 shadow-sm">
-      <CardHeader>
-        <div className="flex flex-col gap-3 md:flex-row md:items-start md:justify-between">
-          <div className="space-y-1">
-            <div className="flex items-start gap-2">
-              <CardTitle className="flex-1 text-lg">
-                {websiteUrl ? (
-                  <a
-                    href={websiteUrl}
-                    target="_blank"
-                    rel="noreferrer"
-                    className="flex items-center gap-2 text-foreground underline-offset-4 hover:text-primary hover:underline"
-                  >
-                    <span className="inline-flex items-center justify-center rounded-full bg-primary/10 p-1 text-primary">
-                      <LinkIcon className="size-3.5" />
-                    </span>
-                    {record.name}
-                  </a>
-                ) : (
-                  record.name
-                )}
-              </CardTitle>
-              <Popover>
-                <PopoverTrigger asChild>
-                  <Button
-                    size="icon"
-                    variant="ghost"
-                    className="h-8 w-8 text-muted-foreground hover:text-foreground"
-                    aria-label="View key dates"
-                  >
-                    <Info className="size-4" />
-                  </Button>
-                </PopoverTrigger>
-                <PopoverContent className="w-64 text-sm" align="end">
-                  <div className="space-y-2">
-                    {TIMELINE_KEYS.map((key) => (
-                      <div key={key} className="flex items-center justify-between">
-                        <span className="text-muted-foreground">
-                          {DATE_LABELS[key]}
-                        </span>
-                        <span className="font-medium">
-                          {entry.parsedDates[key]
-                            ? format(entry.parsedDates[key]!, "MMM d, yyyy")
-                            : "TBA"}
-                        </span>
-                      </div>
-                    ))}
-                  </div>
-                </PopoverContent>
-              </Popover>
-            </div>
-            <CardDescription>{record.description}</CardDescription>
-          </div>
-          {primaryType ? (
-            <Badge variant="outline" className="self-start capitalize">
-              {formatLabel(primaryType)}
-            </Badge>
-          ) : null}
-        </div>
-      </CardHeader>
-      <CardContent className="space-y-4 text-sm">
-        <p className="font-medium">{applicationStatus}</p>
-        {record.dates.date_range_text ? <p className="text-muted-foreground">{record.dates.date_range_text}</p> : null}
-        <div className="flex flex-wrap gap-3 text-muted-foreground">
-          <span
-            className={cn(
-              "inline-flex items-center gap-1 rounded-md px-2 py-0.5 text-sm font-medium",
-              milestoneToShow
-                ? DATE_STYLES[milestoneToShow.key]
-                : "text-foreground bg-muted"
-            )}
-          >
-            <Clock3 className="size-4" />
-            {milestoneToShow
-              ? `${DATE_LABELS[milestoneToShow.key]} · ${format(
-                  milestoneToShow.date,
-                  "MMM d, yyyy"
-                )}`
-              : "Timeline TBA"}
-          </span>
-          <span className="inline-flex items-center gap-1">
-            <MapPin className="size-4" />
-            {locationLabel}
-          </span>
-        </div>
-        <div className="flex flex-wrap gap-2">
-          {record.categories.sectors.slice(0, 3).map((sector) => (
-            <Badge key={sector} variant="secondary" className="capitalize">
-              {formatLabel(sector)}
-            </Badge>
-          ))}
-          {record.categories.supports.slice(0, 2).map((support) => (
-            <Badge key={support} variant="outline" className="capitalize">
-              {formatLabel(support)}
-            </Badge>
-          ))}
-        </div>
-        <div className="space-y-2 text-xs text-muted-foreground">
-          <p>Last checked: {record.last_checked_utc?.slice(0, 10) ?? record.last_verified_utc?.slice(0, 10) ?? "Not recorded"}. Check the official application page for changes.</p>
-          <div className="flex flex-wrap gap-3">
-            {record.sources?.map((source) => <a key={source.url} href={source.url} target="_blank" rel="noreferrer" className="underline">{source.title}</a>)}
-          </div>
-        </div>
-        <div className="flex flex-wrap gap-2">
-          {record.hashtags.map((tag) => (
-            <Badge key={tag} variant="ghost">
-              {tag}
-            </Badge>
-          ))}
-        </div>
-      </CardContent>
-    </Card>
-  );
-}
-
-function normalizeEvents(events: EventRecord[]): NormalizedEvent[] {
-  return events.map((record) => {
-    const parsedDates: Partial<Record<TimelineKey, Date>> = {};
-
-    for (const key of TIMELINE_KEYS) {
-      const parsed = safeParseDate(record.dates?.[key]);
-      if (parsed) {
-        parsedDates[key] = parsed;
-      }
-    }
-
-    const city = record.location?.city;
-    const country = record.location?.country_code;
-    const locationLabel = city
-      ? [city, country].filter(Boolean).join(", ")
-      : formatRegion(record.location?.region_code ?? "global");
-
-    const regionCode = (record.location?.region_code ?? record.index?.region_code ?? "global").toLowerCase();
-
-    const searchIndex = [
-      record.name,
-      record.description,
-      locationLabel,
-      record.categories.sectors.join(" "),
-      record.categories.types.join(" "),
-      record.categories.supports.join(" "),
-      record.hashtags.join(" "),
-    ]
-      .map((chunk) => chunk?.toLowerCase() ?? "")
-      .join(" ");
-
-    return {
-      record,
-      parsedDates,
-      locationLabel,
-      regionCode,
-      searchIndex,
-    } satisfies NormalizedEvent;
-  });
-}
-
-function formatLabel(value: string | null | undefined) {
-  if (!value) return "TBA";
-  if (value.toLowerCase() === "ai") return "AI";
-  return titleCase(value);
-}
-
-function formatRegion(value: string | null | undefined) {
-  if (!value) return "TBA";
-  const key = value.toLowerCase();
-  return REGION_LABELS[key] ?? titleCase(value);
-}
-
-function titleCase(value: string) {
-  return value
-    .replace(/_/g, " ")
-    .split(" ")
-    .map((word) => word.charAt(0).toUpperCase() + word.slice(1))
-    .join(" ");
-}
-
-function safeParseDate(value?: string | null) {
-  if (!value) return null;
-  try {
-    const parsed = parseISO(value);
-    if (Number.isNaN(parsed.getTime())) {
-      return null;
-    }
-    return parsed;
-  } catch {
-    return null;
-  }
-}
-
-function buildCounts(events: EventRecord[]) {
-  const totals = {
-    total: events.length,
-    regions: {} as Record<string, number>,
-    sectors: {} as Record<string, number>,
-    types: {} as Record<string, number>,
+  const [now, setNow] = useState(initialNow),
+    [query, setQuery] = useState(initialQuery),
+    [month, setMonth] = useState(() => parseISO(initialQuery.start)),
+    [saved, setSaved] = useState<string[]>([]);
+  const today = now.slice(0, 10);
+  useEffect(() => {
+    const sync = () => setSaved(readSaved());
+    sync();
+    const timer = setInterval(() => setNow(new Date().toISOString()), 60000);
+    window.addEventListener("storage", sync);
+    window.addEventListener("foundercal:saved", sync);
+    const back = () => {
+      const q = parseCalendarQuery(
+        new URLSearchParams(location.search),
+        new Date().toISOString().slice(0, 10),
+        directory,
+      );
+      setQuery(q);
+      setMonth(parseISO(q.start));
+    };
+    window.addEventListener("popstate", back);
+    return () => {
+      clearInterval(timer);
+      window.removeEventListener("storage", sync);
+      window.removeEventListener("foundercal:saved", sync);
+      window.removeEventListener("popstate", back);
+    };
+  }, [directory]);
+  const update = (changes: Partial<CalendarQuery>) => {
+    const next = { ...query, ...changes };
+    setQuery(next);
+    const value = serializeCalendarQuery(next, today, directory);
+    history.replaceState(
+      null,
+      "",
+      location.pathname + (value ? "?" + value : ""),
+    );
+    if (changes.q === undefined)
+      trackAction("filter_change", {
+        mode: next.mode,
+        region: next.region,
+        sector: next.sector,
+        type: next.type,
+      });
   };
-
-  for (const event of events) {
-    const region = event.location?.region_code?.toLowerCase();
-    if (region) {
-      totals.regions[region] = (totals.regions[region] ?? 0) + 1;
-    }
-
-    for (const sector of event.categories.sectors) {
-      const key = sector.toLowerCase();
-      totals.sectors[key] = (totals.sectors[key] ?? 0) + 1;
-    }
-
-    for (const type of event.categories.types) {
-      const key = type.toLowerCase();
-      totals.types[key] = (totals.types[key] ?? 0) + 1;
-    }
-  }
-
-  return totals;
-}
-
-function withUtmSource(url?: string | null) {
-  if (!url) return null;
-  const separator = url.includes("?") ? "&" : "?";
-  return `${url}${separator}utm_source=foundercal.org`;
+  const reset = () => {
+    const next = parseCalendarQuery(new URLSearchParams(), today, directory);
+    setQuery(next);
+    setMonth(parseISO(today));
+    history.replaceState(null, "", location.pathname);
+    trackAction("filters_reset");
+  };
+  const choices = useMemo(
+    () => ({
+      regions: [
+        ...new Set(
+          programs.flatMap((p) =>
+            p.cohorts
+              .map((e) => e.location.region_code)
+              .filter((x): x is string => Boolean(x)),
+          ),
+        ),
+      ].sort(),
+      sectors: [
+        ...new Set(
+          programs.flatMap((p) =>
+            p.cohorts.flatMap((e) => e.categories.sectors),
+          ),
+        ),
+      ].sort(),
+      types: [
+        ...new Set(
+          programs.flatMap((p) => p.cohorts.flatMap((e) => e.categories.types)),
+        ),
+      ].sort(),
+    }),
+    [programs],
+  );
+  const end = format(
+    addDays(parseISO(query.start), query.days - 1),
+    "yyyy-MM-dd",
+  );
+  const rows = useMemo(
+    () =>
+      programs
+        .flatMap((program) => {
+          const q = query.q.trim().toLowerCase();
+          const events = program.cohorts;
+          const state = applicationState(program, new Date(now));
+          if (
+            q &&
+            !`${program.name} ${program.summary} ${events.map((e) => `${e.name} ${e.location.city ?? ""} ${e.location.country ?? ""} ${e.categories.sectors.join(" ")}`).join(" ")}`
+              .toLowerCase()
+              .includes(q)
+          )
+            return [];
+          // Facets must match the same cohort, not unrelated locations of one organizer.
+          const matching = events.filter(
+            (e) =>
+              (query.region === "all" ||
+                e.location.region_code === query.region) &&
+              (query.sector === "all" ||
+                e.categories.sectors.includes(query.sector)) &&
+              (query.type === "all" || e.categories.types.includes(query.type)),
+          );
+          if (
+            !matching.length &&
+            (query.region !== "all" ||
+              query.sector !== "all" ||
+              query.type !== "all")
+          )
+            return [];
+          if (query.mode === "saved" && !saved.includes(program.slug))
+            return [];
+          if (query.mode === "rolling" && state.key !== "rolling") return [];
+          let highlight: { date: string; label: string } | undefined;
+          if (query.mode === "soon") {
+            if (program.status !== "verified") return [];
+            const rounds = matching
+              .flatMap((e) => applicationRounds(e, program.facts))
+              .filter(
+                (r) =>
+                  r.close_date >= query.start &&
+                  r.close_date <= end &&
+                  !roundPassed(r, new Date(now)),
+              )
+              .sort((a, b) => a.close_date.localeCompare(b.close_date));
+            if (!rounds.length) return [];
+            highlight = { date: rounds[0].close_date, label: rounds[0].label };
+          }
+          if (query.mode === "milestones") {
+            const dates = matching
+              .flatMap((e) => [
+                { date: e.dates.program_start, label: "Program starts" },
+                { date: e.dates.demo_day, label: "Demo day" },
+                { date: e.dates.program_end, label: "Program ends" },
+              ])
+              .filter((x): x is { date: string; label: string } =>
+                Boolean(x.date && x.date >= query.start && x.date <= end),
+              )
+              .sort((a, b) => a.date.localeCompare(b.date));
+            if (!dates.length) return [];
+            highlight = dates[0];
+          }
+          return [{ program, highlight }];
+        })
+        .sort(
+          (a, b) =>
+            (a.highlight?.date ?? "9999").localeCompare(
+              b.highlight?.date ?? "9999",
+            ) || a.program.name.localeCompare(b.program.name),
+        ),
+    [programs, query, end, now, saved],
+  );
+  const dates = programs.flatMap((p) =>
+    p.cohorts.flatMap((e) =>
+      applicationRounds(e, p.facts).map((r) => parseISO(r.close_date)),
+    ),
+  );
+  return (
+    <div className="space-y-5">
+      <header className="space-y-3">
+        <Link href="/" className="text-sm font-bold tracking-wide">
+          FOUNDERCAL
+        </Link>
+        <h1 className="text-3xl font-semibold tracking-tight sm:text-4xl">
+          {directory
+            ? "Startup accelerator & funding directory"
+            : "Startup accelerator deadlines"}
+        </h1>
+        <p className="max-w-2xl text-sm leading-relaxed text-muted-foreground sm:text-base">
+          Find your next founder program. Compare published deadlines,
+          eligibility and funding with dated sources.
+        </p>
+        <nav
+          aria-label="Browse opportunities"
+          className="flex flex-wrap gap-x-4 gap-y-2 text-sm"
+        >
+          <Link
+            href={directory ? "/" : "/imported-accelerators"}
+            className="underline"
+          >
+            {directory ? "Deadline calendar" : "All programs"}
+          </Link>
+          <Link href="/programs/ai" className="underline">
+            AI programs
+          </Link>
+          <Link href="/programs/grants" className="underline">
+            Grants
+          </Link>
+          <Link href="/methodology" className="underline">
+            How we verify
+          </Link>
+        </nav>
+      </header>
+      <section
+        aria-label="Find programs"
+        className="space-y-4 rounded-2xl border bg-card p-4"
+      >
+        <div className="flex flex-wrap gap-2" role="group" aria-label="View">
+          <>
+            {modes.map(([value, label]) => (
+              <button
+                key={value}
+                type="button"
+                aria-pressed={query.mode === value}
+                onClick={() => update({ mode: value })}
+                className={`min-h-10 rounded-lg border px-3 text-sm ${query.mode === value ? "bg-foreground text-background" : "hover:bg-muted"}`}
+              >
+                {label}
+              </button>
+            ))}
+          </>
+        </div>
+        <div className="space-y-3">
+          <label className="block text-sm">
+            Search programs
+            <input
+              type="search"
+              value={query.q}
+              onChange={(e) => update({ q: e.target.value })}
+              onBlur={() => {
+                if (query.q)
+                  trackAction("program_search", {
+                    query_length: query.q.length,
+                    result_count: rows.length,
+                  });
+              }}
+              placeholder="Name, city or sector"
+              className="mt-1 block min-h-11 w-full rounded-lg border bg-background px-3"
+            />
+          </label>
+          <details
+            open={
+              query.region !== "all" ||
+              query.sector !== "all" ||
+              query.type !== "all"
+            }
+          >
+            <summary className="min-h-10 cursor-pointer py-2 text-sm font-medium">
+              Region, sector &amp; program type
+            </summary>
+            <div className="grid gap-3 sm:grid-cols-3">
+              {(
+                [
+                  ["region", "Region", choices.regions],
+                  ["sector", "Sector", choices.sectors],
+                  ["type", "Program type", choices.types],
+                ] as const
+              ).map(([key, label, values]) => (
+                <label key={key} className="text-sm">
+                  {label}
+                  <select
+                    value={query[key]}
+                    onChange={(e) => update({ [key]: e.target.value })}
+                    className="mt-1 block min-h-11 w-full rounded-lg border bg-background px-3 capitalize"
+                  >
+                    <option value="all">All {label.toLowerCase()}s</option>
+                    {values.map((v) => (
+                      <option key={v} value={v}>
+                        {v === "na"
+                          ? "North America"
+                          : v === "eu"
+                            ? "Europe"
+                            : v === "ai"
+                              ? "AI"
+                              : v}
+                      </option>
+                    ))}
+                  </select>
+                </label>
+              ))}
+            </div>
+          </details>
+        </div>
+        {["soon", "milestones"].includes(query.mode) && (
+          <div className="flex flex-wrap items-end gap-3">
+            <label className="text-sm">
+              From (UTC date)
+              <input
+                type="date"
+                value={query.start}
+                onChange={(e) => {
+                  if (/^\d{4}-\d{2}-\d{2}$/.test(e.target.value)) {
+                    update({ start: e.target.value });
+                    setMonth(parseISO(e.target.value));
+                  }
+                }}
+                className="mt-1 block min-h-10 rounded-lg border bg-background px-3"
+              />
+            </label>
+            <label className="text-sm">
+              Window
+              <select
+                value={query.days}
+                onChange={(e) => update({ days: Number(e.target.value) })}
+                className="mt-1 block min-h-10 rounded-lg border bg-background px-3"
+              >
+                {[30, 90, 182, 365].map((d) => (
+                  <option key={d} value={d}>
+                    {d} days
+                  </option>
+                ))}
+              </select>
+            </label>
+            <details className="basis-full">
+              <summary className="min-h-10 cursor-pointer rounded-lg border px-3 py-2 text-sm">
+                Choose on calendar
+              </summary>
+              <div className="mt-2 w-fit max-w-full rounded-xl border bg-background shadow-lg">
+                <Calendar
+                  mode="single"
+                  month={month}
+                  onMonthChange={setMonth}
+                  selected={parseISO(query.start)}
+                  onSelect={(d) =>
+                    d && update({ start: format(d, "yyyy-MM-dd") })
+                  }
+                  modifiers={{ hasEvent: dates }}
+                />
+              </div>
+            </details>
+          </div>
+        )}
+        <button
+          type="button"
+          onClick={reset}
+          className="min-h-10 text-sm underline"
+        >
+          Reset all filters and dates
+        </button>
+      </section>
+      <div className="flex flex-wrap items-center justify-between gap-3 text-sm">
+        <p role="status" aria-live="polite">
+          {rows.length} {rows.length === 1 ? "program" : "programs"}
+          {["soon", "milestones"].includes(query.mode)
+            ? ` · ${query.start} to ${end}`
+            : ""}
+        </p>
+        <span className="text-muted-foreground">
+          {query.mode === "saved"
+            ? "Saved on this device"
+            : `${programs.length} unique programs tracked`}
+        </span>
+      </div>
+      {rows.length ? (
+        <div className="grid items-start gap-4 md:grid-cols-2">
+          {rows.map(({ program, highlight }) => (
+            <ProgramCard
+              key={program.slug}
+              program={program}
+              now={now}
+              highlight={highlight}
+            />
+          ))}
+        </div>
+      ) : (
+        <div className="rounded-2xl border border-dashed p-8 text-center">
+          <h2 className="font-semibold">
+            {query.mode === "saved"
+              ? "No saved programs match"
+              : "No matching programs"}
+          </h2>
+          <p className="mt-2 text-sm text-muted-foreground">
+            Try all programs, a wider date range, or reset your filters.
+          </p>
+          <button
+            onClick={() => update({ mode: "all" })}
+            className="mt-4 min-h-10 rounded-lg border px-4"
+          >
+            Browse all programs
+          </button>
+        </div>
+      )}
+    </div>
+  );
 }

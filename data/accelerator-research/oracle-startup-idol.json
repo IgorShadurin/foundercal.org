@@ -6,18 +6,27 @@
     "slug": "oracle-startup-idol"
   },
   "status": "needs_review",
-  "checked_at": "2026-10-26",
+  "checked_at": "2026-10-27",
   "confidence": "low",
-  "summary": "The old startup URL redirects to Oracle Cloud. No current official evidence for the previously hypothetical Startup Idol competition was found.",
+  "summary": "Oracle’s corporate history confirms that Startup Idol was a real past virtual pitch competition. The old startup URL now redirects to Oracle Cloud; no current Startup Idol call was found.",
   "proposed_event": null,
   "sources": [
     {
-      "title": "Oracle Global Startup Idol \u2014 official program information",
-      "url": "https://www.oracle.com/cloud/",
-      "publisher": null,
-      "accessed_at": "2026-10-26",
-      "supports": "The old startup URL redirects to Oracle Cloud. No current official evidence for the previously hypothetical Startup Idol competition was found."
+      "url": "https://www.oracle.com/tw/corporate/citizenship/asia-pacific/",
+      "title": "Oracle citizenship — Asia Pacific",
+      "supports": "Historical Startup Idol winners TensorGo and DeepVisionTech.",
+      "publisher": "Oracle",
+      "accessed_at": "2026-10-27"
+    },
+    {
+      "url": "https://www.oracle.com/startup/",
+      "title": "Former Oracle for Startups URL",
+      "supports": "Redirects to general Oracle Cloud page, not a competition call.",
+      "publisher": "Oracle",
+      "accessed_at": "2026-10-27"
     }
   ],
-  "notes": []
+  "notes": [
+    "Corrects the earlier suggestion that the program identity was hypothetical. Historical existence does not establish a new application window."
+  ]
 }

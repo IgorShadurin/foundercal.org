@@ -5,19 +5,82 @@
     "csv_file": "public/events-archive.json",
     "slug": "creative-destruction-lab"
   },
-  "status": "needs_review",
-  "checked_at": "2026-10-26",
-  "confidence": "low",
-  "summary": "CDL operates a science and technology venture program with multiple streams and locations. A current universal application deadline was not confirmed.",
-  "proposed_event": null,
+  "status": "verified",
+  "checked_at": "2026-10-27",
+  "confidence": "high",
+  "summary": "Creative Destruction Lab explicitly says applications for its 2026/27 program are closed. The published general cutoff was July 24, 2026 at 11:59 PM ET, with earlier deadlines for some streams.",
+  "proposed_event": {
+    "id": "creative-destruction-lab-2026-27",
+    "name": "Creative Destruction Lab 2026/27",
+    "description": "Science and technology venture mentoring with no program fees or equity taken.",
+    "organizer": "Creative Destruction Lab",
+    "website": "https://creativedestructionlab.com/application-triage/",
+    "location": {
+      "is_virtual": false,
+      "is_hybrid": false,
+      "venue": null,
+      "city": null,
+      "city_slug": null,
+      "country": null,
+      "country_code": null,
+      "region_code": "global"
+    },
+    "dates": {
+      "application_open": null,
+      "application_close": "2026-07-24",
+      "program_start": null,
+      "program_end": null,
+      "demo_day": null,
+      "timezone": "America/New_York",
+      "date_range_text": "2026/27 applications are closed. General deadline: July 24, 2026 at 11:59 PM ET; Defence and Quantum streams closed earlier."
+    },
+    "categories": {
+      "types": [
+        "accelerator"
+      ],
+      "supports": [
+        "mentorship",
+        "resources"
+      ],
+      "sectors": [
+        "deeptech",
+        "general"
+      ]
+    },
+    "hashtags": [],
+    "index": {
+      "years": [
+        "2026"
+      ],
+      "region_code": "global",
+      "country_code": null,
+      "city_slug": null,
+      "type_keys": [
+        "accelerator"
+      ],
+      "support_keys": [
+        "mentorship",
+        "resources"
+      ],
+      "sector_keys": [
+        "deeptech",
+        "general"
+      ],
+      "date_sort_key": "2026-07-24"
+    },
+    "verification": "reported",
+    "last_verified_utc": "2026-10-27T00:00:00Z"
+  },
   "sources": [
     {
-      "title": "Creative Destruction Lab \u2014 official program information",
       "url": "https://creativedestructionlab.com/application-triage/",
-      "publisher": null,
-      "accessed_at": "2026-10-26",
-      "supports": "CDL operates a science and technology venture program with multiple streams and locations. A current universal application deadline was not confirmed."
+      "title": "Creative Destruction Lab applications",
+      "publisher": "Creative Destruction Lab",
+      "supports": "Closed 2026/27 intake; July24 general deadline; no fees or equity, with stream-specific exceptions to the deadline.",
+      "accessed_at": "2026-10-27"
     }
   ],
-  "notes": []
+  "notes": [
+    "No next intake date has been announced on the application page. Keep the closed cohort distinct from future applications."
+  ]
 }

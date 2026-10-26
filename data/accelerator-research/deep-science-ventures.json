@@ -6,20 +6,20 @@
     "slug": "deep-science-ventures"
   },
   "status": "needs_review",
-  "checked_at": "2026-10-26",
+  "checked_at": "2026-10-27",
   "confidence": "high",
-  "summary": "Deep Science Ventures is a venture creator in agriculture, computation, climate, pharma and education, with founder opportunities rather than one accelerator intake.",
+  "summary": "Deep Science Ventures is a venture creator recruiting technical founders around pre-scoped scientific opportunities. Its founder page describes funding during up to 18 months of company formation; no universal cohort cutoff is published.",
   "proposed_event": null,
   "sources": [
     {
-      "title": "Deep Science Ventures",
-      "url": "https://www.deepscienceventures.com/",
+      "url": "https://www.deepscienceventures.com/founders",
+      "title": "Deep Science Ventures — Founders",
       "publisher": "Deep Science Ventures",
-      "accessed_at": "2026-10-26",
-      "supports": "Current sectors, venture-creation model and founder contact route."
+      "supports": "Founder model, funded company-formation period, technical experience and careers route.",
+      "accessed_at": "2026-10-27"
     }
   ],
   "notes": [
-    "No single current deadline or cohort schedule confirmed."
+    "A founder recruitment or careers opportunity is distinct from an accelerator cohort; assess the specific role before assigning dates or investment terms."
   ]
 }

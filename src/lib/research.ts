@@ -9,6 +9,7 @@ export type ResearchFinding = {
   checked_at: string;
   summary: string;
   proposed_event: EventRecord | null;
+  additional_events?: EventRecord[];
   sources: NonNullable<EventRecord["sources"]>;
   notes: string[];
 };

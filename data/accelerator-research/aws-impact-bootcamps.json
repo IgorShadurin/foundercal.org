@@ -6,18 +6,27 @@
     "slug": "aws-impact-bootcamps"
   },
   "status": "needs_review",
-  "checked_at": "2026-10-26",
+  "checked_at": "2026-10-27",
   "confidence": "low",
-  "summary": "The previous official program URL could not be retrieved during this review. Current availability, terms and dates remain unconfirmed; the old dated record is archived.",
+  "summary": "AWS describes Impact Bootcamps as part of its founder-support initiative, but no current 2026 application window for the archived Impact Bootcamps listing was confirmed.",
   "proposed_event": null,
   "sources": [
     {
-      "title": "AWS Impact Bootcamps \u2014 official program information",
+      "url": "https://aws.amazon.com/aws-startups/learn/aws-impact-bootcamps-celebrating-progress-and-looking-ahead/",
+      "title": "AWS Impact Bootcamps: celebrating progress and looking ahead",
+      "publisher": "AWS",
+      "supports": "Official retrospective and program positioning, without a new dated application window.",
+      "accessed_at": "2026-10-27"
+    },
+    {
       "url": "https://aws.amazon.com/startups/impact-accelerator/",
-      "publisher": null,
-      "accessed_at": "2026-10-26",
-      "supports": "The previous official program URL could not be retrieved during this review. Current availability, terms and dates remain unconfirmed; the old dated record is archived."
+      "title": "AWS Impact Accelerator — retrieval attempt",
+      "publisher": "AWS",
+      "supports": "Old application URL could not be retrieved.",
+      "accessed_at": "2026-10-27"
     }
   ],
-  "notes": []
+  "notes": [
+    "AWS Generative AI Accelerator and Compute for Climate Fellowship are separate programs; their dates do not verify Impact Bootcamps."
+  ]
 }

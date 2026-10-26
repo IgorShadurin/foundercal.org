@@ -16,7 +16,9 @@
     "favicons": "npm run favicons:scrape && npm run favicons:download",
     "validate:data": "node --import tsx scripts/validate-data.ts",
     "sync:profiles": "node --import tsx scripts/sync-profiles.ts",
-    "test:data": "node --import tsx --test scripts/data-refresh.test.ts"
+    "test:data": "node --import tsx --test scripts/data-refresh.test.ts scripts/program-model.test.ts",
+    "review:queue": "node --import tsx scripts/review-queue.ts",
+    "review:sources": "node --import tsx scripts/review-queue.ts --check-sources"
   },
   "dependencies": {
     "@radix-ui/react-popover": "^1.1.15",

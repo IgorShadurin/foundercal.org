@@ -6,18 +6,27 @@
     "slug": "hult-prize"
   },
   "status": "needs_review",
-  "checked_at": "2026-10-26",
+  "checked_at": "2026-10-27",
   "confidence": "low",
-  "summary": "The official site describes its annual student startup competition and $1 million seed funding award. A new application deadline was not confirmed.",
+  "summary": "EF Hult Prize runs a student startup competition with a $1M winning award. Its competition journey describes September–February qualifiers without a specific new-cycle deadline.",
   "proposed_event": null,
   "sources": [
     {
-      "title": "EF Hult Prize \u2014 official program information",
       "url": "https://www.hultprize.org/",
-      "publisher": null,
-      "accessed_at": "2026-10-26",
-      "supports": "The official site describes its annual student startup competition and $1 million seed funding award. A new application deadline was not confirmed."
+      "title": "EF Hult Prize",
+      "supports": "Student competition, $1M award and 2026 winner.",
+      "publisher": "EF Hult Prize",
+      "accessed_at": "2026-10-27"
+    },
+    {
+      "url": "https://www.hultprize.org/competition",
+      "title": "Competition journey",
+      "supports": "Seasonal qualifiers and later stages; no exact next application cutoff.",
+      "publisher": "EF Hult Prize",
+      "accessed_at": "2026-10-27"
     }
   ],
-  "notes": []
+  "notes": [
+    "Qualifiers, national rounds, incubator and global accelerator are different stages. A month range is not an exact application date."
+  ]
 }

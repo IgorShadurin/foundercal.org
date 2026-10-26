@@ -1,4 +1,5 @@
 import Script from "next/script";
+import { AnalyticsEvents } from "@/components/analytics-events";
 import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
@@ -15,6 +16,10 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
+  metadataBase: new URL("https://foundercal.org"),
+  verification: process.env.GOOGLE_SITE_VERIFICATION
+    ? { google: process.env.GOOGLE_SITE_VERIFICATION }
+    : undefined,
   title: {
     default: "FounderCal.org — Accelerator Deadline Calendar",
     template: "%s | FounderCal.org",
@@ -88,7 +93,8 @@ export default function RootLayout({
           `}
         </Script>
         {children}
-        <Analytics/>
+        {process.env.VERCEL ? <Analytics /> : null}
+        <AnalyticsEvents />
       </body>
     </html>
   );

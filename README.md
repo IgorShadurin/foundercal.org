@@ -67,3 +67,65 @@ npm run build
 ```
 
 Merging preserves the research `checked_at` date, copies source provenance into the public JSON and removes superseded events from the same research record. An older replay cannot overwrite newer events or CSV dates. `last_verified_utc` is null for uncertain findings; `last_checked_utc` records the attempt date (midnight UTC represents day precision). Stable `slug` fields preserve deadline URLs when a company changes name; known aliases are declared in `data/research-aliases.json`. The 100-option guide records per-row source notes and distinguishes editorial fit assessments from verified eligibility.
+
+## Application discovery and SEO
+
+The public catalog has one canonical URL per program. `data/research-aliases.json`
+feeds permanent redirects, canonical links and the deduplicated directory. Preserve
+existing canonical URLs across rebrands; do not generate a new page for each name.
+
+`src/lib/catalog.ts` projects research into organizations, programs and cohorts.
+A research record can supply `additional_events` for additional confirmed cohorts.
+They must have distinct event IDs; sharing an organizer and a date does not make
+separate programs duplicates. `data/program-facts.json` holds cohort-bound evidence
+for exact cutoff instants, rolling admission, additional application rounds and
+eligibility. Cite a source in the program research and preserve its actual check date.
+Never infer rolling admission from a missing deadline. Update or remove supplemental
+facts when replacing a cohort; validation rejects orphaned facts.
+
+The calendar supports upcoming deadlines, rolling programs, all programs, milestones
+and device-local saved programs. Filters are shareable in the query string; their
+canonical remains the root calendar/directory. The five curated collections and
+non-empty month pages use the same catalog. Inactive programs remain historical;
+not-found records are noindex and excluded from the sitemap. The sitemap uses source
+review dates and `CONTENT_UPDATED` for significant template changes, never file mtimes.
+
+`/catalog.json` exposes the normalized model; `/events.json` preserves compatibility.
+`/calendar.ics?program=<canonical-slug>` exports future application deadlines only.
+Exact times retain their offsets; date-only entries are explicitly reminders to
+confirm the cutoff. ICS imports are snapshots, not updating subscriptions.
+
+## Review queue and scheduled checks
+
+- `npm run review:queue` writes `tmp/review/review-queue.json` without changing research.
+- `npm run review:sources` checks up to 120 source URLs from due programs, with bounded
+  responses, timeouts and six concurrent requests. It reports inaccessible/changed
+  source content; HTTP success never advances a review date or changes a fact.
+- For a deterministic audit use `--as-of=YYYY-MM-DD`; for a small network smoke check
+  use `npm run review:sources -- --all --limit=6`.
+- `.github/workflows/review-data.yml` validates changes and runs a daily 06:20 UTC
+  review queue/source monitor. Scheduled runs compare the previous source-monitor
+  artifact and save results as an Actions artifact for 30 days. No automatic issue,
+  email, or third-party message is sent. The workflow does not automatically publish
+  source-page changes: a reviewer must verify and commit factual updates.
+- Near cutoffs (14 days): daily review due; other future/rolling/uncertain programs:
+  weekly; remaining records: monthly. This is a queue policy, not a claim that a
+  human has completed each review. Overdue records are visibly labeled.
+
+## Search Console and measurement
+
+Set `GOOGLE_SITE_VERIFICATION` in the deployment environment only with a token from
+an authorized Search Console property. Domain verification may instead require the
+owner's DNS access. Submit `https://foundercal.org/sitemap.xml` and inspect a small
+sample of program, collection and month URLs. Verification and submission cannot be
+completed from source code alone without access to the property.
+
+GA4 custom events: `program_view` (detail link), `official_site_click`, `source_click`,
+`filter_change`, `filters_reset`, `program_search`, `save_program`, `calendar_export`.
+Search events omit the actual search text (length and result count only). Standard
+page URLs may contain shared search terms. Vercel Analytics is mounted on Vercel
+only, avoiding its unavailable endpoint on local production builds.
+
+Compare non-brand organic clicks, impressions/CTR by landing page and query,
+indexed canonical pages, and official-site clicks from organic sessions after
+release. A Lighthouse SEO score is a technical check, not a ranking prediction.

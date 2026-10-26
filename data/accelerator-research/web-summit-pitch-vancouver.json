@@ -6,18 +6,20 @@
     "slug": "web-summit-pitch-vancouver"
   },
   "status": "needs_review",
-  "checked_at": "2026-10-26",
+  "checked_at": "2026-10-27",
   "confidence": "low",
-  "summary": "The official PITCH page invites applications for 2027; the wider conference is May 25\u201328. Exact PITCH rounds and application deadline were not confirmed.",
+  "summary": "The official PITCH page invites applications for 2027; the wider conference is May 25–28. Exact PITCH rounds and application deadline were not confirmed.",
   "proposed_event": null,
   "sources": [
     {
-      "title": "Web Summit Vancouver PITCH 2027 \u2014 official program information",
+      "title": "Web Summit Vancouver PITCH 2027 — official program information",
       "url": "https://vancouver.websummit.com/startups/pitch/",
       "publisher": null,
-      "accessed_at": "2026-10-26",
-      "supports": "The official PITCH page invites applications for 2027; the wider conference is May 25\u201328. Exact PITCH rounds and application deadline were not confirmed."
+      "accessed_at": "2026-10-27",
+      "supports": "The official PITCH page invites applications for 2027; the wider conference is May 25–28. Exact PITCH rounds and application deadline were not confirmed."
     }
   ],
-  "notes": []
+  "notes": [
+    "The 2027 conference dates are not exact PITCH round dates. The page still features 2026 participants; a generic Apply now form is insufficient to confirm a new PITCH cutoff."
+  ]
 }

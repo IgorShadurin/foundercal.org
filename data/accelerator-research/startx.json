@@ -6,20 +6,28 @@
     "slug": "startx"
   },
   "status": "needs_review",
-  "checked_at": "2026-10-26",
+  "checked_at": "2026-10-27",
   "confidence": "medium",
-  "summary": "Stanford founder community with no equity or fees. The accelerator provides mentorship, resources and investor access. No accelerator deadline was confirmed; the homepage November 1 Fellows deadline is a different program.",
+  "summary": "StartX offers a fee-free, equity-free accelerator for Stanford-affiliated founders. Its FAQ gives approximate seasonal application windows, but no precise next cutoff was confirmed. The November 1 homepage deadline belongs to the separate StartX Fellows program.",
   "proposed_event": null,
   "sources": [
     {
       "title": "StartX official program",
       "url": "https://web.startx.com/",
       "publisher": "StartX",
-      "accessed_at": "2026-10-26",
+      "accessed_at": "2026-10-27",
       "supports": "Stanford founder community with no equity or fees. The accelerator provides mentorship, resources and investor access. No accelerator deadline was confirmed; the homepage November 1 Fellows deadline is a different program."
+    },
+    {
+      "url": "https://web.startx.com/faqs",
+      "title": "StartX FAQs",
+      "supports": "At least one founder generally needs qualifying Stanford affiliation. Approximate application seasons: mid-January to mid-February, mid-May to mid-June, early September to early October; no exact next cutoff.",
+      "publisher": "StartX",
+      "accessed_at": "2026-10-27"
     }
   ],
   "notes": [
-    "Program details confirmed; current dates need confirmation."
+    "Do not use the Fellows application deadline for the accelerator. Seasonal month ranges are not precise dates and are not extrapolated to a future cohort.",
+    "Qualifying Stanford affiliation and meaningful equity ownership are generally required; the FAQ describes case-by-case exceptions with strong community recommendations."
   ]
 }

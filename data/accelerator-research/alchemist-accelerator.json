@@ -6,20 +6,27 @@
     "slug": "alchemist-accelerator"
   },
   "status": "needs_review",
-  "checked_at": "2026-10-26",
+  "checked_at": "2026-10-27",
   "confidence": "medium",
-  "summary": "Indexed official FAQ describes six-month enterprise acceleration and rolling application deadlines, but live pages failed to load.",
+  "summary": "The official Alchemist FAQ describes six-month enterprise acceleration and rolling review, including solo-founder eligibility. Its listed next class date is January 22, 2026, already past; a future cohort deadline is not confirmed.",
   "proposed_event": null,
   "sources": [
     {
-      "title": "Alchemist official FAQ (search index)",
       "url": "https://www.alchemistaccelerator.com/",
+      "title": "Alchemist official program FAQ",
       "publisher": "Alchemist",
-      "accessed_at": "2026-10-26",
-      "supports": "Rolling deadlines and typical 5% common equity with flexible terms; indexed official content."
+      "supports": "Official domain redirects to alchemist.vc; six-month program, rolling review, flexible common-equity terms and solo-founder eligibility. The listed next start remains January 22, 2026.",
+      "accessed_at": "2026-10-27"
+    },
+    {
+      "url": "https://www.alchemist.vc/apply",
+      "title": "Alchemist application endpoint — retrieval attempt",
+      "publisher": "Alchemist",
+      "supports": "Bare URL could not be fetched. The linked tracking URL returns an application-page shell without readable cohort dates.",
+      "accessed_at": "2026-10-27"
     }
   ],
   "notes": [
-    "Legacy apply URL redirected to alchemist.vc/apply, also inaccessible. No current cohort deadline verified."
+    "Most companies grant 5% common equity, with flexible terms; tuition is offset through investment. Confirm current offer and upcoming cohort directly. Legacy next-start text must not be promoted as future."
   ]
 }

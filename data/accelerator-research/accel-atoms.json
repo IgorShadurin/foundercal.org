@@ -6,27 +6,27 @@
     "slug": "accel-atoms"
   },
   "status": "needs_review",
-  "checked_at": "2026-10-26",
+  "checked_at": "2026-10-27",
   "confidence": "high",
-  "summary": "Accel Atoms supports Indian and Indian-origin founders. The site lists the 2026 AI cohort and Atoms X, with signup for future cohorts.",
+  "summary": "Accel Atoms FAQ explicitly describes rolling AI-cohort applications and participation for Indian and Indian-origin founders. However, the live application URL currently returns an upgrade notice rather than a usable form. Current application access needs confirmation.",
   "proposed_event": null,
   "sources": [
     {
-      "title": "Accel Atoms",
-      "url": "https://atoms.accel.com/",
+      "url": "https://atoms.accel.com/faqs",
+      "title": "Accel Atoms FAQ",
       "publisher": "Accel",
-      "accessed_at": "2026-10-26",
-      "supports": "Program scope and future-cohort newsletter."
+      "supports": "Rolling AI applications, Indian-origin eligibility, investment terms and solo-founder eligibility for Atoms X.",
+      "accessed_at": "2026-10-27"
     },
     {
-      "title": "AI Cohort 2026",
-      "url": "https://atoms.accel.com/news/meet-the-startups-in-ai-cohort-2026",
+      "url": "https://atoms.accel.com/apply",
+      "title": "Accel Atoms application page",
       "publisher": "Accel",
-      "accessed_at": "2026-10-26",
-      "supports": "AI cohort began March 11, 2026 and was scheduled to conclude in June."
+      "supports": "Live page displays an application-experience upgrade notice dated July 11 without a year; searchable cached application content differs.",
+      "accessed_at": "2026-10-27"
     }
   ],
   "notes": [
-    "No next application window confirmed; removed unsupported rolling-admissions claim."
+    "AI and Atoms X are distinct cohorts with different investment ceilings. Do not promise a fixed equity percentage or an exact next cohort date. The FAQ and live application endpoint are inconsistent."
   ]
 }

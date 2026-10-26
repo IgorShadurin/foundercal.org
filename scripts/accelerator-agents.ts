@@ -90,6 +90,7 @@ type AgentResult = {
   confidence: Confidence;
   summary: string;
   proposed_event: EventRecord | null;
+  additional_events?: EventRecord[];
   sources: Array<{
     title: string;
     url: string;
@@ -490,7 +491,7 @@ function buildAgentPrompt(record: CsvAccelerator) {
     "- If the program is inactive, not found, or has no current public application/cadence info, return proposed_event null and explain why in summary/notes.",
     "",
     "Event shaping requirements:",
-    "- proposed_event must follow public/events.json structure.",
+    "- proposed_event must follow public/events.json structure. Use additional_events for other confirmed cohorts of this program, each with a unique ID. Investigate different locations and application rounds; never treat checking one location as verification of every program.",
     "- Use taxonomy values only from the provided taxonomy lists.",
     "- Pick the closest sector values; use web3 for blockchain/crypto/on-chain programs.",
     "- Use ISO dates YYYY-MM-DD where known. Otherwise use null.",
@@ -534,7 +535,7 @@ function mergeFindings(options: Options) {
     throw new Error("Refusing to merge because validation failed.");
   }
 
-  const selected = findings
+  const selected = findings.flatMap(f => [f, ...(f.result.additional_events ?? []).map(event => ({ ...f, result: { ...f.result, proposed_event: event, additional_events: undefined } }))])
     .filter((finding) => options.mergeStatuses.includes(finding.result.status) && finding.result.proposed_event)
     .filter(({ result }) => !dataset.events.some((event) =>
       (event.research_slug === result.accelerator.slug || event.id === result.proposed_event?.id) &&
@@ -669,7 +670,7 @@ function validateFindings(findings: Array<{ filePath: string; result: AgentResul
   const warnings: string[] = [];
   const seenIds = new Set<string>();
 
-  for (const { filePath, result } of findings) {
+  for (const { filePath, result } of findings.flatMap(f => [f, ...(f.result.additional_events ?? []).map(event => ({ ...f, result: { ...f.result, proposed_event: event, additional_events: undefined } }))])) {
     if (!result.accelerator?.name) errors.push(`${filePath}: missing accelerator.name`);
     if (!isCalendarDate(result.checked_at)) errors.push(`${filePath}: checked_at must be a real YYYY-MM-DD date`);
     if (!["verified", "needs_review", "inactive", "not_found"].includes(result.status)) {
@@ -734,18 +735,8 @@ function eventDedupeKeys(event: EventRecord) {
   if (normalizedUrl) {
     keys.push(`name-url:${slugify(event.name)}|${normalizedUrl}`);
   }
-  const host = normalizedUrl?.split("/")[0] ?? null;
-  const dateKey = [
-    event.dates.application_close,
-    event.dates.program_start,
-    event.dates.application_open,
-    event.dates.demo_day,
-  ]
-    .filter(Boolean)
-    .join("|");
-  if (host && dateKey) {
-    keys.push(`host-dates:${host}|${dateKey}`);
-  }
+  // Distinct programs at one organizer often share dates. Host + dates is not
+  // an identity and must not collapse e.g. two Techstars locations.
   return keys;
 }
 

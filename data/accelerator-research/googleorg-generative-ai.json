@@ -6,21 +6,20 @@
     "slug": "googleorg-generative-ai"
   },
   "status": "needs_review",
-  "checked_at": "2026-10-26",
+  "checked_at": "2026-10-27",
   "confidence": "high",
-  "summary": "The Google.org Generative AI Accelerator page now lists the selected 2025 recipients. That call is no longer an open application; no next general GenAI call was confirmed.",
+  "summary": "The Google.org Generative AI Accelerator page lists the selected 2025 organizations. No new general GenAI application deadline is announced on the checked page.",
   "proposed_event": null,
   "sources": [
     {
-      "title": "Google.org GenAI Accelerator recipients",
       "url": "https://impactchallenge.withgoogle.com/genaiaccelerator/recipients",
+      "title": "Google.org Generative AI Accelerator recipients",
+      "supports": "2025 recipients already selected; no next open call established.",
       "publisher": "Google.org",
-      "accessed_at": "2026-10-26",
-      "supports": "Selected 2025 recipients, $30M total program support and six-month assistance."
+      "accessed_at": "2026-10-27"
     }
   ],
   "notes": [
-    "A recipients announcement confirms a completed selection, not that Google.org has permanently discontinued accelerators.",
-    "Do not present the former 2025 deadline as current."
+    "Do not reuse the 2025 call as an open 2026 application window."
   ]
 }

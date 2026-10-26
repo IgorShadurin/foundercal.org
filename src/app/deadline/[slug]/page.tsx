@@ -1,444 +1,349 @@
 import type { Metadata } from "next";
-import type { ReactNode } from "react";
 import Link from "next/link";
-import { notFound } from "next/navigation";
-
+import { notFound, permanentRedirect } from "next/navigation";
+import { programs, getProgram, lastContentDate } from "@/lib/catalog";
 import {
-  BadgeDollarSign,
-  Bell,
-  CalendarClock,
-  ExternalLink,
-  FileText,
-  Globe,
-  HelpCircle,
-  List,
-  ListChecks,
-  StickyNote,
-  Users,
-} from "lucide-react";
-
-import { researchStatusLabel } from "@/lib/research";
-
-import { Card } from "@/components/ui/card";
-import { deadlineAccelerators, getAcceleratorBySlug, getDeadlineDetails } from "@/lib/accelerators";
-
-type PageProps = {
-  params: Promise<{
-    slug: string;
-  }>;
-};
-
-export const dynamicParams = false;
-
+  BASE_URL,
+  canonicalSlug,
+  applicationState,
+  applicationRounds,
+  roundPassed,
+  formatDate,
+  isReviewDue,
+  nextReviewDate,
+  relatedPrograms,
+} from "@/lib/program-model";
+import { ProgramCard } from "@/components/program-card";
+import { ProgramActions } from "@/components/program-actions";
+import { SiteFooter } from "@/components/site-footer";
+export const dynamic = "force-dynamic";
 export function generateStaticParams() {
-  return deadlineAccelerators.map((accelerator) => ({
-    slug: accelerator.slug,
-  }));
+  return programs.map((p) => ({ slug: p.slug }));
 }
-
-export async function generateMetadata({ params }: PageProps): Promise<Metadata> {
-  const { slug } = await params;
-  const accelerator = getAcceleratorBySlug(slug);
-  if (!accelerator) {
+type Props = { params: Promise<{ slug: string }> };
+export async function generateMetadata({ params }: Props): Promise<Metadata> {
+  const { slug } = await params,
+    p = getProgram(slug);
+  if (!p)
     return {
-      title: "Accelerator deadline not found — FounderCal.org",
-      description: "We couldn’t match that accelerator to a deadline page.",
+      title: "Program not found",
+      robots: { index: false, follow: true },
     };
-  }
-  const title = `${accelerator.name} application dates and status`;
-  const description = `Track the latest application deadline details for ${accelerator.name}.`;
+  const title = `${p.name}: Application Dates & Requirements`;
+  const state = applicationState(p, new Date());
+  const description = `${p.name}: ${state.label}. ${state.date ? `Published ${state.key === "upcoming" ? "opening" : "cutoff"}: ${formatDate(state.date)}. ` : ""}Compare requirements, funding and official sources. Checked ${p.checked_at}.`;
   return {
-    title: { absolute: title },
+    title,
     description,
-    keywords: [
-      accelerator.name,
-      "accelerator application deadline",
-      "startup accelerator",
-      "founder program",
-      "application dates",
-    ],
-    alternates: {
-      canonical: `/deadline/${slug}`,
-    },
-    robots: {
-      index: true,
-      follow: true,
-    },
+    alternates: { canonical: `/deadline/${p.slug}` },
     openGraph: {
       title,
       description,
-      url: `/deadline/${slug}`,
+      url: `${BASE_URL}/deadline/${p.slug}`,
       type: "website",
     },
-    twitter: {
-      card: "summary",
-      title,
-      description,
-    },
+    twitter: { card: "summary_large_image", title, description },
+    robots: { index: p.status !== "not_found", follow: true },
   };
 }
-
-export default async function DeadlinePage({ params }: PageProps) {
+export default async function DeadlinePage({ params }: Props) {
   const { slug } = await params;
-  const accelerator = getAcceleratorBySlug(slug);
-  if (!accelerator) {
-    notFound();
-  }
-
-  const deadlineDetails = getDeadlineDetails(accelerator);
-  const websiteUrl = normalizeUrl(accelerator.website);
-  const applyUrl = normalizeUrl(accelerator.applyUrl);
-  const hasDeadlineDetails = deadlineDetails.length > 0;
-  const summaryItems = [
-    { label: "Description", value: accelerator.description?.trim() || "—", icon: FileText },
-    { label: "Terms", value: accelerator.terms?.trim() || "—", icon: BadgeDollarSign },
-    { label: "Notes", value: accelerator.notes?.trim() || "—", icon: StickyNote },
-  ];
-  const baseUrl = "https://foundercal.org";
-  const pageUrl = `${baseUrl}/deadline/${accelerator.slug}`;
-  const jsonLd = {
+  if (canonicalSlug(slug) !== slug)
+    permanentRedirect(`/deadline/${canonicalSlug(slug)}`);
+  const p = getProgram(slug);
+  if (!p) notFound();
+  const now = new Date(),
+    iso = now.toISOString(),
+    state = applicationState(p, now),
+    due = isReviewDue(p, now),
+    related = relatedPrograms(p, programs);
+  const rounds = p.cohorts.flatMap((e) => applicationRounds(e, p.facts));
+  const schema = {
     "@context": "https://schema.org",
-    "@type": "WebPage",
-    name: `${accelerator.name} application dates and status`,
-    description: accelerator.description || `Application deadline details for ${accelerator.name}.`,
-    url: pageUrl,
-    about: {
-      "@type": "Organization",
-      name: accelerator.name,
-      url: websiteUrl ?? applyUrl ?? pageUrl,
-    },
-    isPartOf: {
-      "@type": "WebSite",
-      name: "FounderCal.org",
-      url: baseUrl,
-    },
+    "@graph": [
+      {
+        "@type": "WebPage",
+        name: `${p.name}: Application Dates & Requirements`,
+        url: `${BASE_URL}/deadline/${p.slug}`,
+        dateModified: lastContentDate([p]),
+        about: {
+          "@type": "Organization",
+          name: p.organizer_name,
+          ...(p.website ? { url: p.website } : {}),
+        },
+        isPartOf: { "@type": "WebSite", name: "FounderCal", url: BASE_URL },
+      },
+      {
+        "@type": "BreadcrumbList",
+        itemListElement: [
+          {
+            "@type": "ListItem",
+            position: 1,
+            name: "Programs",
+            item: `${BASE_URL}/imported-accelerators`,
+          },
+          {
+            "@type": "ListItem",
+            position: 2,
+            name: p.name,
+            item: `${BASE_URL}/deadline/${p.slug}`,
+          },
+        ],
+      },
+    ],
   };
-  const faqItems = buildFaqItems({
-    acceleratorName: accelerator.name,
-    description: accelerator.description,
-    terms: accelerator.terms,
-    notes: accelerator.notes,
-    websiteUrl,
-    applyUrl,
-    deadlineDetails,
-    hasDeadlineDetails,
-  });
-
   return (
-    <main className="min-h-screen bg-background px-4 py-12 text-foreground sm:px-8">
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
-      />
-      <div className="mx-auto flex w-full max-w-4xl flex-col gap-8">
-        <div className="flex flex-wrap items-center justify-between gap-3 text-sm font-medium text-muted-foreground">
-          <Link
-            className="inline-flex items-center gap-2 underline-offset-4 hover:text-foreground hover:underline"
-            href="/imported-accelerators"
-          >
-            <List className="size-4 text-[#f97316]" /> Back to imported accelerators
-          </Link>
-          <Link
-            className="inline-flex items-center gap-2 underline-offset-4 hover:text-foreground hover:underline"
-            href="/"
-          >
-            <CalendarClock className="size-4 text-[#2da6df]" /> FounderCal calendar
-          </Link>
-        </div>
-
-        <header className="space-y-4 rounded-3xl border border-dashed bg-gradient-to-br from-white via-zinc-50 to-zinc-100 p-6 shadow-sm dark:from-zinc-900 dark:via-zinc-950 dark:to-black sm:p-8">
-          <div className="flex flex-wrap items-center gap-2 text-xs font-semibold uppercase tracking-wide text-primary">
-            <CalendarClock className="size-4" /> Accelerator deadline
-          </div>
-          <h1 className="text-3xl font-semibold sm:text-4xl">
-            {accelerator.name} application dates and status
-          </h1>
-          <div className="flex flex-wrap gap-2 text-xs font-semibold uppercase tracking-wide text-muted-foreground">
-            <span className="inline-flex items-center gap-1 rounded-full border border-border bg-muted/40 px-3 py-1">
-              <CalendarClock className="size-3 text-primary" aria-hidden="true" />
-              {accelerator.research?.proposed_event?.dates.application_close ? "Published cutoff — check dates below" : "No confirmed application cutoff"}
-            </span>
-            {websiteUrl ? (
-              <span className="inline-flex items-center gap-1 rounded-full border border-border bg-muted/40 px-3 py-1">
-                <ExternalLink className="size-3 text-primary" aria-hidden="true" />
-                Official site
-              </span>
-            ) : null}
-          </div>
-          {accelerator.description ? (
-            <p className="text-base text-muted-foreground">{accelerator.description}</p>
-          ) : null}
-        </header>
-
-        {accelerator.research ? (
-          <Card className="space-y-3 p-6">
-            <p className="font-semibold">{researchStatusLabel(accelerator.research.status)}</p>
-            <p className="text-sm text-muted-foreground">Last checked: {accelerator.research.checked_at}. Review dates do not imply open applications.</p>
-            <p>{accelerator.research.summary}</p>
-            {accelerator.research.proposed_event?.dates.date_range_text ? <p>{accelerator.research.proposed_event.dates.date_range_text}</p> : null}
-            <ul className="space-y-2 text-sm">
-              {accelerator.research.sources.map((source) => (
-                <li key={source.url}>{accelerator.research?.status === "inactive" && !accelerator.website ? <span>{source.title}</span> : <a href={source.url} target="_blank" rel="noreferrer" className="underline">{source.title}</a>} — {source.supports}</li>
-              ))}
-            </ul>
-            {accelerator.research.notes.length ? <p className="text-sm text-muted-foreground">{accelerator.research.notes.join(" ")}</p> : null}
-          </Card>
-        ) : null}
-        <Card className="space-y-6 p-6">
-          <div className="text-sm font-semibold uppercase tracking-wide text-muted-foreground">Program snapshot</div>
-          <div className="grid gap-4 text-sm text-foreground sm:grid-cols-3">
-            {summaryItems.map((item) => {
-              const Icon = item.icon;
-              return (
-              <div key={item.label} className="rounded-2xl border border-border bg-muted/30 p-4">
-                <p className="flex items-center gap-2 text-xs font-semibold uppercase tracking-wide text-muted-foreground">
-                  <Icon className="size-4 text-primary" aria-hidden="true" />
-                  {item.label}
-                </p>
-                <p className="mt-2 text-sm text-foreground">{item.value}</p>
-              </div>
-            );
-            })}
-          </div>
-        </Card>
-
-        <Card className="space-y-4 p-6">
-          <div className="flex items-center gap-2 text-sm font-semibold uppercase tracking-wide text-muted-foreground">
-            <CalendarClock className="size-4 text-primary" aria-hidden="true" />
-            Deadline details
-          </div>
-          {hasDeadlineDetails ? (
-            <ul className="space-y-3 text-sm text-foreground">
-              {deadlineDetails.map((detail) => (
-                <li key={detail} className="rounded-2xl border border-border bg-muted/40 px-4 py-3">
-                  {detail}
-                </li>
-              ))}
-            </ul>
-          ) : (
-            <p className="text-sm text-muted-foreground">
-              No current application deadline has been confirmed. Check the official program information and review notes above.
+    <main className="mx-auto min-h-screen max-w-5xl space-y-8 px-4 py-6 sm:px-8 sm:py-10">
+      <nav aria-label="Breadcrumb" className="flex flex-wrap gap-2 text-sm">
+        <Link className="underline" href="/">
+          Calendar
+        </Link>
+        <span>/</span>
+        <Link className="underline" href="/imported-accelerators">
+          Programs
+        </Link>
+        <span>/</span>
+        <span>{p.name}</span>
+      </nav>
+      <header className="space-y-4">
+        <p className="text-sm font-medium text-muted-foreground">
+          {p.organizer_name}
+        </p>
+        <h1 className="text-3xl font-semibold tracking-tight sm:text-4xl">
+          {p.name}
+        </h1>
+        <p className="text-lg">Application dates, requirements and funding</p>
+        <div className="rounded-xl border bg-muted/40 p-4">
+          <p className="font-semibold">{state.label}</p>
+          {state.date && (
+            <p className="mt-1">
+              {state.key === "upcoming" ? "Opens" : "Published cutoff"}:{" "}
+              <time dateTime={state.date}>{formatDate(state.date)}</time>
             </p>
           )}
-        </Card>
-
-        <Card className="space-y-4 p-6">
-          <div className="flex items-center gap-2 text-sm font-semibold uppercase tracking-wide text-muted-foreground">
-            <ExternalLink className="size-4 text-primary" aria-hidden="true" />
-            Program links
-          </div>
-          <div className="flex flex-col gap-3 text-sm">
-            {websiteUrl ? (
-              <ExternalLinkRow label="Website" href={websiteUrl} />
-            ) : (
-              <span className="text-muted-foreground">Website: —</span>
-            )}
-            {applyUrl ? (
-              <ExternalLinkRow label="Program / application info" href={applyUrl} />
-            ) : (
-              <span className="text-muted-foreground">Application information: unconfirmed</span>
-            )}
-          </div>
-        </Card>
-
-        <Card className="space-y-4 p-6">
-          <div className="flex items-center gap-2 text-sm font-semibold uppercase tracking-wide text-muted-foreground">
-            <HelpCircle className="size-4 text-primary" aria-hidden="true" />
-            FAQ
-          </div>
-          <div className="space-y-4 text-sm">
-            {faqItems.map((item, index) => (
-              <div key={`faq-${index}`} className="rounded-2xl border border-border bg-muted/20 px-4 py-3">
-                <p className="flex items-center gap-2 font-semibold text-foreground">
-                  <item.icon className="size-4 text-primary" aria-hidden="true" />
-                  {item.question}
+          <p className="mt-2 text-sm text-muted-foreground">
+            Checked {p.checked_at} ·{" "}
+            {due ? "Review due" : "Next review due " + nextReviewDate(p, now)}.
+            Confirm current availability with the organizer.
+          </p>
+        </div>
+        <p className="leading-relaxed">
+          <span className="font-medium">Research as of {p.checked_at}: </span>
+          {p.summary}
+        </p>
+        <div className="flex flex-wrap gap-3">
+          {p.website && (
+            <a
+              href={p.cohorts[0]?.website ?? p.website}
+              target="_blank"
+              rel="noreferrer"
+              data-track="official_site_click"
+              data-program={p.slug}
+              className="inline-flex min-h-11 items-center rounded-lg bg-foreground px-4 text-sm font-medium text-background"
+            >
+              Official program information ↗
+            </a>
+          )}
+          <ProgramActions
+            slug={p.slug}
+            hasDates={rounds.some((r) => !roundPassed(r, now))}
+          />
+        </div>
+      </header>
+      <section className="space-y-4" aria-labelledby="dates">
+        <h2 id="dates" className="text-2xl font-semibold">
+          Application windows & program dates
+        </h2>
+        {p.cohorts.length ? (
+          p.cohorts.map((e) => (
+            <article key={e.id} className="space-y-4 rounded-2xl border p-5">
+              <h3 className="text-lg font-semibold">{e.name}</h3>
+              {applicationRounds(e, p.facts).map((r) => (
+                <div key={r.id} className="rounded-lg bg-muted/50 p-3">
+                  <p className="font-medium">
+                    {r.label}: {formatDate(r.close_date)}
+                  </p>
+                  {r.open_date && (
+                    <p className="text-sm">
+                      Applications open {formatDate(r.open_date)}
+                    </p>
+                  )}
+                  {r.closes_at ? (
+                    <p className="text-sm">
+                      {new Intl.DateTimeFormat("en-US", {
+                        timeZone: r.timezone ?? "UTC",
+                        dateStyle: "medium",
+                        timeStyle: "short",
+                      }).format(new Date(r.closes_at))}{" "}
+                      ({r.timezone ?? "UTC"})
+                    </p>
+                  ) : (
+                    <p className="text-sm text-muted-foreground">
+                      {r.submitter_local
+                        ? "5:00 PM in the submitter’s local time. Check the solicitation."
+                        : "Exact cutoff time not confirmed. Check the source before submitting."}
+                    </p>
+                  )}
+                  <a
+                    className="text-sm underline"
+                    href={r.source_url}
+                    target="_blank"
+                    rel="noreferrer"
+                    data-track="source_click"
+                    data-program={p.slug}
+                  >
+                    Deadline source
+                  </a>
+                  <span className="ml-2 text-xs text-muted-foreground">
+                    checked {r.checked_at}
+                  </span>
+                </div>
+              ))}
+              {!applicationRounds(e, p.facts).length && (
+                <p>
+                  {p.facts?.rolling?.value ??
+                    "No exact application cutoff is confirmed for this program."}
                 </p>
-                <div className="mt-2 text-muted-foreground">{item.answer}</div>
-              </div>
-            ))}
+              )}
+              <p className="text-sm leading-relaxed text-muted-foreground">
+                {e.dates.date_range_text}
+              </p>
+              <dl className="grid gap-3 text-sm sm:grid-cols-3">
+                {(
+                  [
+                    ["Starts", e.dates.program_start],
+                    ["Ends", e.dates.program_end],
+                    ["Demo day", e.dates.demo_day],
+                  ] as const
+                )
+                  .filter(([, d]) => d)
+                  .map(([label, d]) => (
+                    <div key={label}>
+                      <dt className="text-muted-foreground">{label}</dt>
+                      <dd>{formatDate(d!)}</dd>
+                    </div>
+                  ))}
+              </dl>
+            </article>
+          ))
+        ) : (
+          <p className="rounded-xl border p-4">
+            {p.status === "inactive"
+              ? "This is a historical program. No current application window is listed."
+              : "Current application details could not be confirmed. See the research notes and sources below."}
+          </p>
+        )}
+      </section>
+      <section className="space-y-4">
+        <h2 className="text-2xl font-semibold">
+          Funding, eligibility & attendance
+        </h2>
+        {p.cohorts.map((e) => (
+          <div key={e.id} className="space-y-3 rounded-2xl border p-5">
+            <h3 className="font-semibold">{e.name}</h3>
+            <p>{e.description}</p>
+            <p className="text-sm text-muted-foreground">
+              {[
+                e.location.is_hybrid
+                  ? "Hybrid attendance"
+                  : e.location.is_virtual
+                    ? "Online"
+                    : null,
+                e.location.city,
+                e.location.country,
+              ]
+                .filter(Boolean)
+                .join(" · ") || "Location requirements not confirmed."}
+            </p>
           </div>
-        </Card>
-      </div>
+        ))}
+        {p.facts?.eligibility && (
+          <p>
+            {p.facts.eligibility.value}{" "}
+            <a href={p.facts.eligibility.source_url} className="underline">
+              Eligibility source
+            </a>
+          </p>
+        )}
+        {p.notes.length > 0 && (
+          <ul className="list-disc space-y-3 pl-5 text-sm leading-relaxed">
+            {p.notes.map((n) => (
+              <li key={n}>{n}</li>
+            ))}
+          </ul>
+        )}
+        <p className="text-sm text-muted-foreground">
+          Unpublished funding, fees, solo-founder eligibility and residency
+          requirements remain unconfirmed. An advertised maximum is not a
+          guaranteed investment.
+        </p>
+      </section>
+      <section id="sources" className="space-y-4 scroll-mt-4">
+        <h2 className="text-2xl font-semibold">Sources & verification</h2>
+        <p className="text-sm">
+          {p.status === "verified"
+            ? "Official information reviewed"
+            : p.status === "inactive"
+              ? "Inactive program"
+              : p.status === "not_found"
+                ? "Program not confirmed"
+                : "Current details need confirmation"}{" "}
+          ·{" "}
+          <Link className="underline" href="/methodology">
+            Research policy
+          </Link>
+        </p>
+        <ul className="space-y-4">
+          {p.sources.map((s) => (
+            <li key={s.url} className="rounded-xl border p-4 text-sm">
+              <p className="font-semibold">
+                {p.status === "inactive" ? (
+                  s.title
+                ) : (
+                  <a
+                    href={s.url}
+                    target="_blank"
+                    rel="noreferrer"
+                    data-track="source_click"
+                    data-program={p.slug}
+                    className="underline"
+                  >
+                    {s.title}
+                  </a>
+                )}
+              </p>
+              <p className="mt-2">{s.supports}</p>
+              <p className="mt-2 text-muted-foreground">
+                Checked {s.accessed_at}
+              </p>
+            </li>
+          ))}
+        </ul>
+        <a
+          className="inline-block text-sm underline"
+          href={`https://github.com/IgorShadurin/foundercal.org/issues/new?title=${encodeURIComponent("Data correction: " + p.name)}`}
+        >
+          Report a correction for this program
+        </a>
+      </section>
+      <section className="space-y-4">
+        <h2 className="text-2xl font-semibold">Explore other programs</h2>
+        <p className="text-sm text-muted-foreground">
+          Related research; eligibility and application availability differ.
+        </p>
+        <div className="grid items-start gap-4 md:grid-cols-2">
+          {related.map((program) => (
+            <ProgramCard key={program.slug} program={program} now={iso} />
+          ))}
+        </div>
+      </section>
+      <SiteFooter />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify(schema).replace(/</g, "\\u003c"),
+        }}
+      />
     </main>
   );
-}
-
-function ExternalLinkRow({ label, href }: { label: string; href: string }) {
-  return (
-    <div className="flex flex-wrap items-center gap-2">
-      <span className="min-w-[72px] text-xs font-semibold uppercase tracking-wide text-muted-foreground">{label}</span>
-      <Link
-        className="inline-flex items-center gap-1 text-primary underline-offset-4 hover:underline"
-        href={href}
-        target="_blank"
-        rel="noreferrer"
-      >
-        {getDisplayHostname(href)}
-        <ExternalLink className="size-3 text-muted-foreground" aria-hidden="true" />
-      </Link>
-    </div>
-  );
-}
-
-function normalizeUrl(raw?: string | null) {
-  if (!raw) return undefined;
-  const trimmed = raw.trim();
-  if (!trimmed) return undefined;
-  if (/^[a-zA-Z][a-zA-Z0-9+.-]*:/.test(trimmed)) {
-    return trimmed;
-  }
-  if (trimmed.startsWith("//")) {
-    return `https:${trimmed}`;
-  }
-  return `https://${trimmed.replace(/^\/+/, "")}`;
-}
-
-function getDisplayHostname(url: string) {
-  try {
-    const hostname = new URL(url).hostname;
-    return hostname.replace(/^www\./, "");
-  } catch {
-    return url;
-  }
-}
-
-function buildFaqItems({
-  acceleratorName,
-  description,
-  terms,
-  notes,
-  websiteUrl,
-  applyUrl,
-  deadlineDetails,
-  hasDeadlineDetails,
-}: {
-  acceleratorName: string;
-  description?: string | null;
-  terms?: string | null;
-  notes?: string | null;
-  websiteUrl?: string;
-  applyUrl?: string;
-  deadlineDetails: string[];
-  hasDeadlineDetails: boolean;
-}) {
-  const items: { question: string; answer: ReactNode; icon: React.ComponentType<{ className?: string }> }[] = [];
-  const cleanedDescription = description?.trim();
-  const cleanedTerms = terms?.trim();
-  const cleanedNotes = notes?.trim();
-
-  items.push({
-    question: `What is ${acceleratorName}?`,
-    answer: cleanedDescription || "We’re still collecting a program summary for this accelerator.",
-    icon: FileText,
-  });
-
-  items.push({
-    question: "Where can I check application information?",
-    answer: applyUrl ? (
-      <Link
-        href={applyUrl}
-        target="_blank"
-        rel="noreferrer"
-        className="font-medium text-foreground underline-offset-4 hover:text-primary hover:underline"
-      >
-        Program information on {getDisplayHostname(applyUrl)}
-      </Link>
-    ) : (
-      "We’re still confirming the official application link."
-    ),
-    icon: ExternalLink,
-  });
-
-  items.push({
-    question: "What is the current application deadline?",
-    answer: hasDeadlineDetails ? (
-      <span>{deadlineDetails.join(" ")}</span>
-    ) : (
-      <>
-        No current application deadline has been confirmed. Check the official program information and review notes.
-      </>
-    ),
-    icon: CalendarClock,
-  });
-
-  items.push({
-    question: "Who is this accelerator best for?",
-    answer: cleanedDescription || "We’re still collecting a founder profile summary for this program.",
-    icon: Users,
-  });
-
-  items.push({
-    question: "What does the program include?",
-    answer: cleanedDescription || cleanedNotes || "Program highlights will be added soon.",
-    icon: ListChecks,
-  });
-
-  items.push({
-    question: "What funding or equity terms are mentioned?",
-    answer: cleanedTerms || "Funding and equity details will be added once confirmed.",
-    icon: BadgeDollarSign,
-  });
-
-  items.push({
-    question: "Any important notes or caveats?",
-    answer: cleanedNotes || "Important notes will be added once confirmed.",
-    icon: StickyNote,
-  });
-
-  items.push({
-    question: "Are there batch timing or schedule details?",
-    answer: cleanedNotes || (hasDeadlineDetails ? deadlineDetails.join(" ") : "Batch timing details coming soon."),
-    icon: CalendarClock,
-  });
-
-  items.push({
-    question: "What is the official website?",
-    answer: websiteUrl ? (
-      <Link
-        href={websiteUrl}
-        target="_blank"
-        rel="noreferrer"
-        className="font-medium text-foreground underline-offset-4 hover:text-primary hover:underline"
-      >
-        {getDisplayHostname(websiteUrl)}
-      </Link>
-    ) : (
-      "Official program site not available yet."
-    ),
-    icon: Globe,
-  });
-
-  items.push({
-    question: "How do I get deadline updates?",
-    answer: websiteUrl ? (
-      <span>
-        Check {getDisplayHostname(websiteUrl)} for updates, or follow the{" "}
-        <Link
-          href="https://t.me/Web3IgorBuzz"
-          target="_blank"
-          rel="noreferrer"
-          className="font-medium text-foreground underline-offset-4 hover:text-primary hover:underline"
-        >
-          Telegram channel
-        </Link>
-        .
-      </span>
-    ) : (
-      <>
-        Follow the{" "}
-        <Link
-          href="https://t.me/Web3IgorBuzz"
-          target="_blank"
-          rel="noreferrer"
-          className="font-medium text-foreground underline-offset-4 hover:text-primary hover:underline"
-        >
-          Telegram channel
-        </Link>{" "}
-        for deadline updates.
-      </>
-    ),
-    icon: Bell,
-  });
-
-  return items;
 }

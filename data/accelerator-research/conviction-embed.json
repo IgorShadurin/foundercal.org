@@ -6,20 +6,27 @@
     "slug": "conviction-embed"
   },
   "status": "needs_review",
-  "checked_at": "2026-10-26",
+  "checked_at": "2026-10-27",
   "confidence": "high",
   "summary": "Embed advertises early applications for cohort seven and $250K on an uncapped, no-discount MFN SAFE (or a recent round price).",
   "proposed_event": null,
   "sources": [
     {
-      "title": "Conviction Embed",
       "url": "https://embed.conviction.com/",
+      "title": "Conviction Embed",
       "publisher": "Conviction",
-      "accessed_at": "2026-10-26",
-      "supports": "Cohort-seven early applications, terms and solo-founder eligibility."
+      "supports": "Early applications for cohort seven, $250K investment terms, and rolling-admissions language mixed with undated retreat/demo-day copy.",
+      "accessed_at": "2026-10-27"
+    },
+    {
+      "url": "https://embed.conviction.com/apply",
+      "title": "Conviction Embed application",
+      "publisher": "Conviction",
+      "supports": "Application form is accessible; no deadline or cohort year is stated.",
+      "accessed_at": "2026-10-27"
     }
   ],
   "notes": [
-    "Retreat September 11–13 and Demo Day November 12 are published without a year and mixed with older cohort copy. Do not assign a calendar year."
+    "Retreat September 11–13 and Demo Day November 12 lack a year and are mixed with older-cohort text. Cohort-seven early applications are advertised, but no exact schedule is confirmed."
   ]
 }

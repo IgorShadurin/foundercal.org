@@ -1,27 +1,78 @@
 {
   "accelerator": {
     "name": "NEXT Founders",
-    "website": "https://www.nextcanada.com/programs-overview/",
+    "website": "https://www.nextcanada.com/next-founders/",
     "csv_file": "public/events-archive.json",
     "slug": "next-founders"
   },
-  "status": "needs_review",
-  "checked_at": "2026-10-26",
-  "confidence": "high",
-  "summary": "NEXT Canada’s official overview identifies NEXT Founders as an education and network program for seed/growth-stage founders and says its 2026 applications are closed.",
-  "proposed_event": null,
+  "status": "verified",
+  "checked_at": "2026-10-27",
+  "confidence": "medium",
+  "summary": "NEXT Founders publishes a 2027 intake: applications open January 12 and close March 3, with programming May–August. Participation is free and equity-free; the program provides no direct investment.",
+  "proposed_event": {
+    "id": "next-founders",
+    "name": "NEXT Founders 2027",
+    "description": "Education, mentorship and investor introductions for Canadian growth-stage founders. Free participation, no equity taken and no direct investment.",
+    "organizer": "NEXT Canada",
+    "website": "https://www.nextcanada.com/next-founders/",
+    "location": {
+      "is_virtual": false,
+      "is_hybrid": false,
+      "venue": null,
+      "city": null,
+      "city_slug": null,
+      "country": "Canada",
+      "country_code": "CA",
+      "region_code": "na"
+    },
+    "dates": {
+      "application_open": "2027-01-12",
+      "application_close": "2027-03-03",
+      "program_start": null,
+      "program_end": null,
+      "demo_day": null,
+      "timezone": null,
+      "date_range_text": "Applications January 12–March 3, 2027. Program May–August 2027; exact days and cutoff time unpublished."
+    },
+    "categories": {
+      "types": [
+        "program"
+      ],
+      "supports": [
+        "mentorship",
+        "resources"
+      ],
+      "sectors": [
+        "general"
+      ]
+    },
+    "hashtags": [],
+    "index": {
+      "years": [],
+      "region_code": "na",
+      "country_code": "CA",
+      "city_slug": null,
+      "type_keys": [],
+      "support_keys": [],
+      "sector_keys": [],
+      "date_sort_key": null
+    },
+    "verification": "reported",
+    "last_verified_utc": null
+  },
   "sources": [
     {
-      "title": "NEXT Canada program overview",
-      "url": "https://www.nextcanada.com/programs-overview/",
+      "url": "https://www.nextcanada.com/next-founders/",
+      "title": "NEXT Founders — program and 2027 timeline",
+      "supports": "Official indexed page publishes January 12 opening, March 3 cutoff, May–August 2027 programming and no-cost/no-equity/no-direct-funding terms.",
       "publisher": "NEXT Canada",
-      "accessed_at": "2026-10-26",
-      "supports": "NEXT Founders scope and explicit 2026 application closure."
+      "accessed_at": "2026-10-27"
     }
   ],
   "notes": [
-    "No next NEXT Founders intake date is published in the checked overview.",
-    "NEXT 36 and NEXT AI are distinct programs; their dates must not be assigned to NEXT Founders.",
-    "The direct NEXT Founders page timed out, but the official overview supplied current status."
+    "The official page was readable in search-indexed content; direct page retrieval timed out. Reconfirm the dates on the live page before applying.",
+    "Applications are not yet open on the review date. Exact cutoff time and program day-level dates are unpublished.",
+    "The official eligibility FAQ discusses Canadian citizenship or permanent residence and Canadian incorporation; applicants should confirm their specific eligibility.",
+    "NEXT 36 and NEXT AI are separate programs."
   ]
 }

@@ -6,20 +6,27 @@
     "slug": "google-for-startups-accelerator"
   },
   "status": "needs_review",
-  "checked_at": "2026-10-26",
+  "checked_at": "2026-10-27",
   "confidence": "high",
   "summary": "Google for Startups runs regional and themed accelerators offering equity-free technical mentoring and product support.",
   "proposed_event": null,
   "sources": [
     {
-      "title": "Google for Startups Accelerator",
       "url": "https://startup.google.com/programs/accelerator/",
+      "title": "Google for Startups Accelerator",
       "publisher": "Google",
-      "accessed_at": "2026-10-26",
-      "supports": "Global program family, equity-free support and eligibility-dependent product credits."
+      "supports": "Equity-free regional accelerator support, technical mentorship and eligibility-dependent credits.",
+      "accessed_at": "2026-10-27"
+    },
+    {
+      "url": "https://startup.google.com/programs/accelerator/middle-east-north-africa-turkey/",
+      "title": "Google for Startups Accelerator — MENA and Turkey",
+      "publisher": "Google",
+      "supports": "Published 2026 application window July 13–August 31; October–December program, not a currently open application.",
+      "accessed_at": "2026-10-27"
     }
   ],
   "notes": [
-    "No single global deadline or guaranteed cash investment. Cohort dates require a specific regional program."
+    "Global accelerator family has no single deadline. Region-specific pages must be checked independently; the reviewed MENA/Turkey 2026 application window closed August 31. No new global application cutoff is implied."
   ]
 }

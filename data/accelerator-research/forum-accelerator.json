@@ -6,20 +6,27 @@
     "slug": "forum-accelerator"
   },
   "status": "needs_review",
-  "checked_at": "2026-10-26",
+  "checked_at": "2026-10-27",
   "confidence": "high",
   "summary": "Forum Ventures offers a B2B tech accelerator with $100K pre-seed funding and hands-on founder support.",
   "proposed_event": null,
   "sources": [
     {
-      "title": "Forum accelerator",
       "url": "https://www.forumvc.com/accelerator",
+      "title": "Forum accelerator",
       "publisher": "Forum Ventures",
-      "accessed_at": "2026-10-26",
-      "supports": "B2B focus and $100K funding."
+      "supports": "B2B accelerator and $100K pre-seed funding; no dated intake schedule.",
+      "accessed_at": "2026-10-27"
+    },
+    {
+      "url": "https://www.forumvc.com/pitch-us",
+      "title": "Forum Ventures pitch page",
+      "publisher": "Forum Ventures",
+      "supports": "Linked pitch page lacks readable application timing; no rolling admission claim verified.",
+      "accessed_at": "2026-10-27"
     }
   ],
   "notes": [
-    "Current public page does not establish a dated application window. Do not infer rolling admission merely from a pitch link."
+    "Do not infer rolling admissions or a fixed equity percentage from the pitch link."
   ]
 }

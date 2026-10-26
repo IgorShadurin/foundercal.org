@@ -1,0 +1,81 @@
+{
+  "y-combinator": {
+    "event_id": "yc-w27",
+    "deadline": {
+      "closes_at": "2026-11-02T20:00:00-08:00",
+      "timezone": "America/Los_Angeles",
+      "source_url": "https://www.ycombinator.com/apply",
+      "checked_at": "2026-10-26"
+    }
+  },
+  "a16z-speedrun": {
+    "event_id": "a16z-speedrun-sr008",
+    "deadline": {
+      "closes_at": "2026-11-01T23:59:00-08:00",
+      "timezone": "America/Los_Angeles",
+      "source_url": "https://speedrun.a16z.com/faq",
+      "checked_at": "2026-10-26"
+    }
+  },
+  "european-innovation-council-eic-accelerator": {
+    "event_id": "eic-accelerator-2026-november",
+    "deadline": {
+      "closes_at": "2026-11-04T17:00:00+01:00",
+      "timezone": "Europe/Brussels",
+      "source_url": "https://eic.ec.europa.eu/eic-funding-opportunities/eic-accelerator_en",
+      "checked_at": "2026-10-26"
+    }
+  },
+  "pearx": {
+    "event_id": "pearx-rolling",
+    "rolling": {
+      "value": "Applications reviewed year-round. Two cohorts: January\u2013April and July\u2013October. Exact next cohort dates and deadlines are not published.",
+      "source_url": "https://pear.vc/pearx/",
+      "checked_at": "2026-10-26"
+    }
+  },
+  "village-global-velocity": {
+    "event_id": "village-global-velocity-rolling",
+    "rolling": {
+      "value": "Rolling applications; no fixed cohort deadline or dates published.",
+      "source_url": "https://www.villageglobal.com/velocity",
+      "checked_at": "2026-10-26"
+    }
+  },
+  "nsf-sbir-sttr": {
+    "event_id": "nsf-sbir-sttr-november-2026",
+    "deadline": {
+      "submitter_local": true,
+      "source_url": "https://seedfund.nsf.gov/apply/full-proposal/",
+      "checked_at": "2026-10-26"
+    },
+    "additional_rounds": [
+      {
+        "id": "nsf-full-proposal-march-2027",
+        "label": "Next full-proposal deadline",
+        "close_date": "2027-03-04",
+        "submitter_local": true,
+        "source_url": "https://seedfund.nsf.gov/apply/full-proposal/",
+        "checked_at": "2026-10-26"
+      }
+    ],
+    "eligibility": {
+      "value": "Check the relevant solicitation and required Project Pitch invitation. Cutoff is 5:00 PM in the submitter\u2019s local time.",
+      "source_url": "https://seedfund.nsf.gov/apply/full-proposal/",
+      "checked_at": "2026-10-26"
+    }
+  },
+  "sosv-hax-indiebio": {
+    "event_id": "sosv-hax-rolling-applications",
+    "rolling": {
+      "value": "Applications are reviewed on a rolling basis.",
+      "source_url": "https://sosv.com/application-faqs/",
+      "checked_at": "2026-10-27"
+    },
+    "eligibility": {
+      "value": "At least two team members are required before entry. HAX involves a six-month Newark residency.",
+      "source_url": "https://sosv.com/application-faqs/",
+      "checked_at": "2026-10-27"
+    }
+  }
+}

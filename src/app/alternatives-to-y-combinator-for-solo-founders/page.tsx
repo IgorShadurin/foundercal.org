@@ -44,7 +44,9 @@ const FIT_SORT_ORDER: Record<string, number> = {
 };
 
 const alternatives = [...(rows as SoloAlternative[])].sort((a, b) => {
-  const fitDiff = (FIT_SORT_ORDER[a.solo_founder_fit] ?? 99) - (FIT_SORT_ORDER[b.solo_founder_fit] ?? 99);
+  const fitDiff =
+    (FIT_SORT_ORDER[a.solo_founder_fit] ?? 99) -
+    (FIT_SORT_ORDER[b.solo_founder_fit] ?? 99);
   if (fitDiff !== 0) {
     return fitDiff;
   }
@@ -57,7 +59,10 @@ const SEO_TITLE = "Alternatives to Y Combinator for Solo Founders: 100 Picks";
 const SEO_DESCRIPTION =
   "Compare 100 alternatives to Y Combinator for solo founders, ranked by fit, with why-it-works notes, watch-outs, use cases, and source links for every option.";
 const PAGE_PUBLISHED_UTC = "2026-03-08T00:00:00.000Z";
-const PAGE_UPDATED_UTC = `${rows.map((row) => row.checked_at).sort().at(-1)}T00:00:00.000Z`;
+const PAGE_UPDATED_UTC = `${rows
+  .map((row) => row.checked_at)
+  .sort()
+  .at(-1)}T00:00:00.000Z`;
 const SEO_KEYWORDS = [
   "alternatives to y combinator for solo founders",
   "y combinator alternatives for solo founder",
@@ -78,7 +83,14 @@ const FIT_LABELS: Record<string, string> = {
 
 const FAVICON_DIR = path.join(process.cwd(), "public", "favicons");
 const FAVICON_PUBLIC_PREFIX = "/favicons";
-const FAVICON_EXTENSIONS = [".png", ".ico", ".jpg", ".jpeg", ".svg", ".webp"] as const;
+const FAVICON_EXTENSIONS = [
+  ".png",
+  ".ico",
+  ".jpg",
+  ".jpeg",
+  ".svg",
+  ".webp",
+] as const;
 
 const faviconLookup = createFaviconLookup();
 const stats = buildStats(alternatives);
@@ -97,7 +109,8 @@ export const metadata: Metadata = {
   generator: "Next.js",
   keywords: SEO_KEYWORDS,
   category: "Startup Accelerators",
-  classification: "Startup accelerator alternatives and solo founder program comparison",
+  classification:
+    "Startup accelerator alternatives and solo founder program comparison",
   alternates: {
     canonical: PAGE_PATH,
     languages: {
@@ -168,18 +181,31 @@ export default function SoloFoundersAlternativesPage() {
     <main className="min-h-screen bg-background px-4 py-12 text-foreground sm:px-8">
       <div className="mx-auto flex w-full max-w-[1200px] flex-col gap-8">
         <header className="rounded-3xl border border-dashed bg-gradient-to-br from-zinc-50 via-white to-zinc-100 p-6 shadow-sm dark:from-zinc-900 dark:via-zinc-950 dark:to-black sm:p-8">
-          <p className="text-sm font-semibold uppercase tracking-wider text-primary">Founder programs and resources</p>
+          <p className="text-sm font-semibold uppercase tracking-wider text-primary">
+            Founder programs and resources
+          </p>
           <h1 className="mt-2 text-3xl font-bold tracking-tight sm:text-4xl">
             Alternatives to Y Combinator for Solo Founders
           </h1>
           <p className="mt-4 max-w-4xl text-base text-muted-foreground sm:text-lg">
-            Compare accelerators, founder communities, financing options and tools by the support they offer.
-            Fit ratings and comparisons are editorial assessments; each source note records what we could confirm.
+            Compare accelerators, founder communities, financing options and
+            tools by the support they offer. Fit ratings and comparisons are
+            editorial assessments; each source note records what we could
+            confirm.
           </p>
           <p className="mt-3 max-w-4xl text-sm text-muted-foreground">
-            Source review: <time dateTime={PAGE_UPDATED_UTC}>{new Date(PAGE_UPDATED_UTC).toLocaleDateString("en-US", { month: "long", day: "numeric", year: "numeric", timeZone: "UTC" })}</time>.
-            {" "}{stats.reviewed} offerings reviewed; {stats.needsReview} need further confirmation.
-            A reviewed source does not mean applications are open. Some programs require a team, and financing or software
+            Source review:{" "}
+            <time dateTime={PAGE_UPDATED_UTC}>
+              {new Date(PAGE_UPDATED_UTC).toLocaleDateString("en-US", {
+                month: "long",
+                day: "numeric",
+                year: "numeric",
+                timeZone: "UTC",
+              })}
+            </time>
+            . {stats.reviewed} offerings reviewed; {stats.needsReview} need
+            further confirmation. A reviewed source does not mean applications
+            are open. Some programs require a team, and financing or software
             benefits have their own eligibility and costs.
           </p>
           <div className="mt-5 flex flex-wrap gap-3 text-sm font-medium text-muted-foreground">
@@ -198,83 +224,113 @@ export default function SoloFoundersAlternativesPage() {
             </Link>
           </div>
           <div className="mt-6 grid gap-3 sm:grid-cols-2 lg:grid-cols-4">
-            <StatCard icon={<SearchCheck className="size-4" />} label="Total options" value={String(stats.total)} />
-            <StatCard icon={<UserRound className="size-4" />} label="High fit · editorial" value={String(stats.highFit)} />
-            <StatCard icon={<Users className="size-4" />} label="Medium fit · editorial" value={String(stats.mediumFit)} />
-            <StatCard icon={<ExternalLink className="size-4" />} label="Unique categories" value={String(stats.uniqueCategories)} />
+            <StatCard
+              icon={<SearchCheck className="size-4" />}
+              label="Total options"
+              value={String(stats.total)}
+            />
+            <StatCard
+              icon={<UserRound className="size-4" />}
+              label="High fit · editorial"
+              value={String(stats.highFit)}
+            />
+            <StatCard
+              icon={<Users className="size-4" />}
+              label="Medium fit · editorial"
+              value={String(stats.mediumFit)}
+            />
+            <StatCard
+              icon={<ExternalLink className="size-4" />}
+              label="Unique categories"
+              value={String(stats.uniqueCategories)}
+            />
           </div>
         </header>
 
         <section className="space-y-3">
           <div className="flex flex-wrap items-center justify-between gap-3">
-            <h2 className="text-2xl font-semibold">100 alternatives in one table</h2>
-            <Link href="/" className="text-sm font-medium text-primary underline-offset-4 hover:underline">
+            <h2 className="text-2xl font-semibold">
+              100 founder programs and resources
+            </h2>
+            <Link
+              href="/"
+              className="text-sm font-medium text-primary underline-offset-4 hover:underline"
+            >
               Back to FounderCal
             </Link>
           </div>
-          <Card className="overflow-hidden border">
-            <table className="w-full table-fixed divide-y divide-border text-sm">
-              <colgroup>
-                <col className="w-[5%]" />
-                <col className="w-[22%]" />
-                <col className="w-[27%]" />
-                <col className="w-[19%]" />
-                <col className="w-[14%]" />
-                <col className="w-[13%]" />
-              </colgroup>
-              <thead className="sticky top-0 z-10 bg-muted/95 text-left text-xs uppercase tracking-wide text-muted-foreground backdrop-blur">
-                <tr>
-                  <th scope="col" className="px-3 py-3 font-medium">#</th>
-                  <th scope="col" className="px-3 py-3 font-medium">Option</th>
-                  <th scope="col" className="px-3 py-3 font-medium">Why it works</th>
-                  <th scope="col" className="px-3 py-3 font-medium">Best for</th>
-                  <th scope="col" className="px-3 py-3 font-medium">YC substitute</th>
-                  <th scope="col" className="px-3 py-3 font-medium">Watch-out</th>
-                </tr>
-              </thead>
-              <tbody className="divide-y divide-border bg-card text-foreground">
-                {alternatives.map((entry) => (
-                  <tr key={`${entry.rank}-${entry.option}`} className="align-top odd:bg-background/70">
-                    <td className="px-3 py-3 font-medium text-muted-foreground">{entry.rank}</td>
-                    <td className="px-3 py-3 break-words">
-                      <OptionCell
-                        name={entry.option}
-                        source={entry.source}
-                        category={entry.category}
-                        fit={entry.solo_founder_fit}
-                        reviewStatus={entry.review_status}
-                        checkedAt={entry.checked_at}
-                      />
-                    </td>
-                    <td className="px-3 py-3 break-words text-muted-foreground">{entry.why_it_works}</td>
-                    <td className="px-3 py-3 break-words text-muted-foreground">{entry.best_for}</td>
-                    <td className="px-3 py-3 break-words text-muted-foreground">{entry.yc_substitute}</td>
-                    <td className="px-3 py-3 break-words text-muted-foreground">
+          <div className="grid items-start gap-4 md:grid-cols-2">
+            {alternatives.map((entry) => (
+              <Card key={entry.rank} className="space-y-4 p-5">
+                <OptionCell
+                  name={entry.option}
+                  source={entry.source}
+                  category={entry.category}
+                  fit={entry.solo_founder_fit}
+                  reviewStatus={entry.review_status}
+                  checkedAt={entry.checked_at}
+                />
+                <p className="text-sm leading-relaxed">{entry.why_it_works}</p>
+                <dl className="space-y-3 text-sm">
+                  <div>
+                    <dt className="font-semibold">Best for</dt>
+                    <dd className="mt-1 text-muted-foreground">
+                      {entry.best_for}
+                    </dd>
+                  </div>
+                  <div>
+                    <dt className="font-semibold">Support offered</dt>
+                    <dd className="mt-1 text-muted-foreground">
+                      {entry.yc_substitute}
+                    </dd>
+                  </div>
+                  <div>
+                    <dt className="font-semibold">Watch out</dt>
+                    <dd className="mt-1 text-muted-foreground">
                       {entry.watch_out}
-                      <details className="mt-3">
-                        <summary className="cursor-pointer font-medium text-foreground">Source review</summary>
-                        <p className="mt-2">{entry.source_notes}</p>
-                        {entry.supporting_sources?.map((url, index) => (
-                          <a key={url} href={url} target="_blank" rel="noreferrer" className="mt-2 block text-primary underline underline-offset-4">
-                            Supporting source {index + 1}
-                          </a>
-                        ))}
-                      </details>
-                    </td>
-                  </tr>
-                ))}
-              </tbody>
-            </table>
-          </Card>
+                    </dd>
+                  </div>
+                </dl>
+                <details className="text-sm">
+                  <summary className="min-h-10 cursor-pointer py-2 font-medium">
+                    Source review
+                  </summary>
+                  <p>{entry.source_notes}</p>
+                  {entry.supporting_sources?.map((url, index) => (
+                    <a
+                      key={url}
+                      className="mt-2 block underline"
+                      href={url}
+                      target="_blank"
+                      rel="noreferrer"
+                    >
+                      Supporting source {index + 1}
+                    </a>
+                  ))}
+                </details>
+              </Card>
+            ))}
+          </div>
         </section>
         <SiteFooter />
-        <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(structuredData) }} />
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(structuredData) }}
+        />
       </div>
     </main>
   );
 }
 
-function StatCard({ icon, label, value }: { icon: ReactNode; label: string; value: string }) {
+function StatCard({
+  icon,
+  label,
+  value,
+}: {
+  icon: ReactNode;
+  label: string;
+  value: string;
+}) {
   return (
     <div className="rounded-2xl border bg-background/80 px-4 py-4 shadow-sm">
       <p className="inline-flex items-center gap-2 text-xs font-semibold uppercase tracking-wide text-primary">
@@ -286,7 +342,14 @@ function StatCard({ icon, label, value }: { icon: ReactNode; label: string; valu
   );
 }
 
-function OptionCell({ name, source, category, fit, reviewStatus, checkedAt }: {
+function OptionCell({
+  name,
+  source,
+  category,
+  fit,
+  reviewStatus,
+  checkedAt,
+}: {
   name: string;
   source: string;
   category: string;
@@ -339,8 +402,12 @@ function OptionCell({ name, source, category, fit, reviewStatus, checkedAt }: {
       <div className="mt-1">
         <FitBadge fit={fit} />
       </div>
-      <p className={`mt-2 text-xs ${reviewStatus === "needs_review" ? "font-medium text-amber-700 dark:text-amber-300" : "text-muted-foreground"}`}>
-        {reviewStatus === "needs_review" ? "Needs confirmation" : "Source reviewed"}
+      <p
+        className={`mt-2 text-xs ${reviewStatus === "needs_review" ? "font-medium text-amber-700 dark:text-amber-300" : "text-muted-foreground"}`}
+      >
+        {reviewStatus === "needs_review"
+          ? "Needs confirmation"
+          : "Source reviewed"}
         <br />
         <time dateTime={checkedAt}>{checkedAt}</time>
       </p>
@@ -357,11 +424,13 @@ function FitBadge({ fit }: { fit: string }) {
         : "bg-zinc-200 text-zinc-800 dark:bg-zinc-800 dark:text-zinc-200";
   const explanation = FIT_LABELS[fit] ?? "Specialized fit";
   const icon =
-    fit === "High"
-      ? <CheckCircle2 className="size-3.5" aria-hidden="true" />
-      : fit === "Medium"
-        ? <AlertTriangle className="size-3.5" aria-hidden="true" />
-        : <CircleDashed className="size-3.5" aria-hidden="true" />;
+    fit === "High" ? (
+      <CheckCircle2 className="size-3.5" aria-hidden="true" />
+    ) : fit === "Medium" ? (
+      <AlertTriangle className="size-3.5" aria-hidden="true" />
+    ) : (
+      <CircleDashed className="size-3.5" aria-hidden="true" />
+    );
 
   return (
     <span
@@ -385,7 +454,9 @@ function createFaviconLookup() {
 
   for (const file of files) {
     const ext = path.extname(file).toLowerCase();
-    if (!FAVICON_EXTENSIONS.includes(ext as (typeof FAVICON_EXTENSIONS)[number])) {
+    if (
+      !FAVICON_EXTENSIONS.includes(ext as (typeof FAVICON_EXTENSIONS)[number])
+    ) {
       continue;
     }
     const key = path.basename(file, ext).toLowerCase();
@@ -441,11 +512,16 @@ function getInitials(value: string) {
 function buildStats(records: SoloAlternative[]) {
   return {
     total: records.length,
-    highFit: records.filter((record) => record.solo_founder_fit === "High").length,
-    mediumFit: records.filter((record) => record.solo_founder_fit === "Medium").length,
+    highFit: records.filter((record) => record.solo_founder_fit === "High")
+      .length,
+    mediumFit: records.filter((record) => record.solo_founder_fit === "Medium")
+      .length,
     uniqueCategories: new Set(records.map((record) => record.category)).size,
-    reviewed: records.filter((record) => record.review_status === "reviewed").length,
-    needsReview: records.filter((record) => record.review_status === "needs_review").length,
+    reviewed: records.filter((record) => record.review_status === "reviewed")
+      .length,
+    needsReview: records.filter(
+      (record) => record.review_status === "needs_review",
+    ).length,
   };
 }
 

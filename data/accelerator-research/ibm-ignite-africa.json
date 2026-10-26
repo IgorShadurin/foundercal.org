@@ -6,13 +6,13 @@
     "slug": "ibm-ignite-africa"
   },
   "status": "needs_review",
-  "checked_at": "2026-10-26",
+  "checked_at": "2026-10-27",
   "confidence": "low",
   "summary": "The identity and current availability of an IBM program named Ignite Africa remain unconfirmed after checking the former URL and searching official and partner material.",
   "proposed_event": null,
   "sources": [
     {
-      "title": "Former IBM Ignite Africa URL \u2014 retrieval attempt",
+      "title": "Former IBM Ignite Africa URL — retrieval attempt",
       "url": "https://www.ibm.com/ibm/ignite-africa",
       "publisher": "IBM",
       "accessed_at": "2026-10-26",
@@ -23,10 +23,11 @@
       "url": "https://www.wits.ac.za/future/stories/",
       "publisher": "Wits University",
       "accessed_at": "2026-10-26",
-      "supports": "A distinct IBM South Africa/Tshimologong startup bootcamp ran in October\u2013November 2018. It does not establish an Ignite Africa successor."
+      "supports": "A distinct IBM South Africa/Tshimologong startup bootcamp ran in October–November 2018. It does not establish an Ignite Africa successor."
     }
   ],
   "notes": [
-    "Other Ignite Africa organizations and the historical IBM South Africa bootcamp do not confirm this program."
+    "Other Ignite Africa organizations and the historical IBM South Africa bootcamp do not confirm this program.",
+    "2026-10-27 retry: former IBM URL remained inaccessible and an official-domain search did not establish this program identity. This is an unsuccessful review attempt, not verification."
   ]
 }

@@ -6,20 +6,20 @@
     "slug": "launch-accelerator"
   },
   "status": "needs_review",
-  "checked_at": "2026-10-26",
+  "checked_at": "2026-10-27",
   "confidence": "medium",
-  "summary": "LAUNCH currently advertises Cohort 37, September 2026, a 14-week program and $125K investment. Its application banner remains open, but that cohort has already started and no future cutoff or next batch dates are published.",
+  "summary": "LAUNCH’s indexed official homepage still advertises Cohort 37 in September 2026, 14 weeks and $125K investment. The dated cohort has already started; the application banner does not confirm a next intake.",
   "proposed_event": null,
   "sources": [
     {
       "url": "https://launchaccelerator.co/",
       "title": "LAUNCH Accelerator",
-      "supports": "Official indexed page shows Cohort 37/September 2026, 14 weeks and $125K.",
+      "supports": "Indexed official homepage: Cohort 37, September 2026, 14 weeks and $125K.",
       "publisher": "LAUNCH",
-      "accessed_at": "2026-10-26"
+      "accessed_at": "2026-10-27"
     }
   ],
   "notes": [
-    "The live HTML did not expose text to the browser reader; the official indexed page supplied the details. Do not treat an undated Apply Now banner as evidence of a future cohort."
+    "Direct text extraction was empty; indexed official content was reviewed. No future deadline or new cohort dates were established."
   ]
 }
