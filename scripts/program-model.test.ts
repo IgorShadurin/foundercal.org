@@ -8,6 +8,7 @@ import { createRequire } from "node:module";
 import {
   applicationRounds,
   applicationState,
+  compareProgramsByRelevance,
   roundPassed,
   nextReviewDate,
   canonicalSlug,
@@ -226,4 +227,91 @@ test("merge accepts multiple cohorts for one research program and retains both",
   } finally {
     fs.rmSync(dir, { recursive: true, force: true });
   }
+});
+
+test("discovery prioritizes open and rolling intake, then future, uncertain and closed programs", () => {
+  const make = (
+    slug: string,
+    open: string | null,
+    close: string | null,
+    status: Program["status"] = "verified",
+  ) => {
+    const p = structuredClone(getProgram("a16z-speedrun")!);
+    p.slug = slug;
+    p.name = slug;
+    p.status = status;
+    delete p.facts;
+    p.cohorts[0].dates.application_open = open;
+    p.cohorts[0].dates.application_close = close;
+    return p;
+  };
+  const entries = [
+    make("closed-old", "2026-08-01", "2026-09-01"),
+    make("uncertain", null, null, "needs_review"),
+    make("future-opening", "2026-12-01", "2027-01-01"),
+    make("deadline-only", null, "2026-10-28"),
+    make("open-later-deadline", "2026-10-01", "2026-11-15"),
+    make("open-sooner-deadline", "2026-10-01", "2026-11-01"),
+    make("closed-recent", "2026-09-01", "2026-10-01"),
+    make("inactive", null, null, "inactive"),
+    make("missing", null, null, "not_found"),
+    structuredClone(getProgram("pearx")!),
+  ];
+  assert.deepEqual(
+    [...entries]
+      .sort((a, b) => compareProgramsByRelevance(a, b, now))
+      .map((p) => p.slug),
+    [
+      "open-sooner-deadline",
+      "open-later-deadline",
+      "pearx",
+      "deadline-only",
+      "future-opening",
+      "uncertain",
+      "closed-recent",
+      "closed-old",
+      "inactive",
+      "missing",
+    ],
+  );
+  assert.equal(entries[0].slug, "closed-old");
+});
+test("discovery order reacts to exact cutoff expiry without changing research dates", () => {
+  const open = getProgram("a16z-speedrun")!;
+  const rolling = getProgram("pearx")!;
+  assert.ok(compareProgramsByRelevance(open, rolling, now) < 0);
+  assert.ok(
+    compareProgramsByRelevance(
+      open,
+      rolling,
+      new Date("2026-11-02T08:00:00Z"),
+    ) > 0,
+  );
+  assert.equal(open.checked_at, "2026-10-26");
+});
+test("AI and other collections place active programs ahead of closed entries", () => {
+  for (const key of [
+    "ai",
+    "europe",
+    "grants",
+    "upcoming-deadlines",
+    "rolling-applications",
+  ] as const) {
+    const result = collectionPrograms(key, programs, now);
+    const closedIndex = result.findIndex(
+      (p) => applicationState(p, now).key === "closed",
+    );
+    if (closedIndex >= 0)
+      assert.ok(
+        result
+          .slice(closedIndex)
+          .every((p) => applicationState(p, now).key === "closed"),
+      );
+  }
+  const ai = collectionPrograms("ai", programs, now);
+  assert.equal(applicationState(ai[0], now).key, "open");
+  assert.ok(
+    ai.findIndex((p) => p.slug === "techstars") <
+      ai.findIndex((p) => p.slug === "binance-labs-incubation-program"),
+  );
 });

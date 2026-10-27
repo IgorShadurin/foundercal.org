@@ -150,6 +150,42 @@ export function applicationState(
     return { key: "rolling", label: "Rolling applications" };
   return { key: "unknown", label: "No confirmed application deadline" };
 }
+// Availability takes precedence over alphabetic order or a distant deadline.
+// Keep uncertain application forms distinct from confirmed open/rolling intake.
+export function compareProgramsByRelevance(
+  a: Program,
+  b: Program,
+  now: Date,
+  aDate?: string,
+  bDate?: string,
+) {
+  const left = applicationState(a, now);
+  const right = applicationState(b, now);
+  const priority = (program: Program, key: string) => {
+    if (program.status === "not_found") return 6;
+    if (key === "open" || key === "rolling") return 0;
+    if (key === "deadline" || key === "check") return 1;
+    if (key === "upcoming") return 2;
+    if (key === "closed") return 4;
+    if (key === "inactive") return 5;
+    return 3;
+  };
+  const rank = priority(a, left.key) - priority(b, right.key);
+  if (rank) return rank;
+  // Among expired windows, the most recently closed one is most useful.
+  const dateOrder =
+    left.key === "closed" && right.key === "closed"
+      ? (bDate ?? right.date ?? "").localeCompare(aDate ?? left.date ?? "")
+      : (aDate ?? left.date ?? "9999").localeCompare(
+          bDate ?? right.date ?? "9999",
+        );
+  return (
+    dateOrder ||
+    b.checked_at.localeCompare(a.checked_at) ||
+    a.name.localeCompare(b.name) ||
+    a.slug.localeCompare(b.slug)
+  );
+}
 export function nextReviewDate(program: Program, now: Date) {
   const state = applicationState(program, now);
   const until = state.date

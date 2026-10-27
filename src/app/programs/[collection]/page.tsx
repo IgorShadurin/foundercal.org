@@ -45,8 +45,9 @@ export default async function Collection({ params }: Props) {
       </p>
       <p className="max-w-3xl rounded-xl border p-4 text-sm">{c.guidance}</p>
       <p className="text-sm">
-        {items.length} researched programs · Latest page or source update{" "}
-        {lastContentDate(items)}. Each program has its own review date.
+        {items.length} researched programs · Open and rolling applications
+        first. Latest page or source update {lastContentDate(items)}. Each
+        program has its own review date.
       </p>
       <div className="grid items-start gap-4 md:grid-cols-2">
         {items.map((program) => (

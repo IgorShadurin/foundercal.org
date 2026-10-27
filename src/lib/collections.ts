@@ -1,5 +1,6 @@
 import {
   applicationState,
+  compareProgramsByRelevance,
   applicationRounds,
   type Program,
 } from "./program-model";
@@ -60,7 +61,8 @@ export function collectionPrograms(
             ? e.location.region_code === "eu"
             : e.categories.types.includes("grant"),
       );
-    });
+    })
+    .sort((a, b) => compareProgramsByRelevance(a, b, now));
 }
 export function monthsWithDeadlines(items: Program[]) {
   return [

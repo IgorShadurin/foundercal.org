@@ -10,7 +10,7 @@ export function SiteFooter() {
         <Link href="/imported-accelerators">Program directory</Link>
         <Link href="/programs/upcoming-deadlines">Upcoming applications</Link>
         <Link href="/programs/rolling-applications">Rolling programs</Link>
-        <Link href="/programs/ai">AI</Link>
+        <Link href="/programs/ai">AI Accelerators</Link>
         <Link href="/programs/europe">Europe</Link>
         <Link href="/programs/grants">Grants</Link>
         <Link href="/y-combinator-alternatives">YC alternatives</Link>

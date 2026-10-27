@@ -20,6 +20,7 @@ import { Calendar } from "@/components/ui/calendar";
 import { parseISO, format, addDays } from "date-fns";
 import {
   applicationState,
+  compareProgramsByRelevance,
   applicationRounds,
   roundPassed,
   type Program,
@@ -205,12 +206,25 @@ export function EventCalendar({
           }
           return [{ program, highlight }];
         })
-        .sort(
-          (a, b) =>
-            (a.highlight?.date ?? "9999").localeCompare(
-              b.highlight?.date ?? "9999",
-            ) || a.program.name.localeCompare(b.program.name),
-        ),
+        .sort((a, b) => {
+          // The explicit program-dates view remains a chronological timeline.
+          const chronology =
+            query.mode === "milestones"
+              ? (a.highlight?.date ?? "9999").localeCompare(
+                  b.highlight?.date ?? "9999",
+                )
+              : 0;
+          return (
+            chronology ||
+            compareProgramsByRelevance(
+              a.program,
+              b.program,
+              new Date(now),
+              a.highlight?.date,
+              b.highlight?.date,
+            )
+          );
+        }),
     [programs, query, end, now, saved],
   );
   const dates = programs.flatMap((p) =>
@@ -247,7 +261,7 @@ export function EventCalendar({
               className="inline-flex min-h-11 items-center gap-1.5 hover:text-foreground"
             >
               <Sparkles size={15} aria-hidden="true" />
-              AI
+              AI Accelerators
             </Link>
             <Link
               href="/programs/grants"
