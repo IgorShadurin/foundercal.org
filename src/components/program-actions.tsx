@@ -57,7 +57,11 @@ export function ProgramActions({
         aria-label={`${saved ? "Unsave" : "Save"} this program`}
         className="inline-flex min-h-10 items-center gap-2 rounded-lg border px-3 hover:bg-muted"
       >
-        <Bookmark size={16} fill={saved ? "currentColor" : "none"} />
+        <Bookmark
+          aria-hidden="true"
+          size={16}
+          fill={saved ? "currentColor" : "none"}
+        />
         {saved ? "Saved" : "Save"}
       </button>
       {hasDates && (
@@ -67,8 +71,8 @@ export function ProgramActions({
           data-program={slug}
           className="inline-flex min-h-10 items-center gap-2 rounded-lg border px-3 hover:bg-muted"
         >
-          <CalendarPlus size={16} />
-          Add dates to calendar
+          <CalendarPlus size={16} aria-hidden="true" />
+          Add to calendar
         </a>
       )}
       {error && <span role="status">{error}</span>}

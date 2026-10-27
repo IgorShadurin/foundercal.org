@@ -1,6 +1,21 @@
 "use client";
 import { useEffect, useMemo, useState } from "react";
 import Link from "next/link";
+import {
+  ArrowRight,
+  Bookmark,
+  CalendarDays,
+  CalendarRange,
+  ChevronDown,
+  CircleDollarSign,
+  Layers,
+  ListFilter,
+  RotateCcw,
+  Search,
+  ShieldCheck,
+  Sparkles,
+  Infinity as InfinityIcon,
+} from "lucide-react";
 import { Calendar } from "@/components/ui/calendar";
 import { parseISO, format, addDays } from "date-fns";
 import {
@@ -18,11 +33,9 @@ import { ProgramCard } from "./program-card";
 import { readSaved } from "./program-actions";
 import { trackAction } from "./analytics-events";
 const modes = [
-  ["soon", "Upcoming deadlines"],
-  ["rolling", "Rolling applications"],
-  ["all", "All programs"],
-  ["milestones", "Program dates"],
-  ["saved", "Saved"],
+  { value: "soon", label: "Upcoming", icon: CalendarDays },
+  { value: "rolling", label: "Rolling", icon: InfinityIcon },
+  { value: "all", label: "All", icon: Layers },
 ];
 export function EventCalendar({
   programs,
@@ -38,7 +51,18 @@ export function EventCalendar({
   const [now, setNow] = useState(initialNow),
     [query, setQuery] = useState(initialQuery),
     [month, setMonth] = useState(() => parseISO(initialQuery.start)),
-    [saved, setSaved] = useState<string[]>([]);
+    [saved, setSaved] = useState<string[]>([]),
+    [filtersOpen, setFiltersOpen] = useState(false);
+  const filterCount = [
+    query.region !== "all",
+    query.sector !== "all",
+    query.type !== "all",
+    query.start !== now.slice(0, 10),
+    query.days !== 30,
+  ].filter(Boolean).length;
+  const hasChanges = Boolean(
+    serializeCalendarQuery(query, now.slice(0, 10), directory),
+  );
   const today = now.slice(0, 10);
   useEffect(() => {
     const sync = () => setSaved(readSaved());
@@ -196,189 +220,291 @@ export function EventCalendar({
   );
   return (
     <div className="space-y-5">
-      <header className="space-y-3">
-        <Link href="/" className="text-sm font-bold tracking-wide">
-          FOUNDERCAL
-        </Link>
-        <h1 className="text-3xl font-semibold tracking-tight sm:text-4xl">
-          {directory
-            ? "Startup accelerator & funding directory"
-            : "Startup accelerator deadlines"}
-        </h1>
-        <p className="max-w-2xl text-sm leading-relaxed text-muted-foreground sm:text-base">
-          Find your next founder program. Compare published deadlines,
-          eligibility and funding with dated sources.
-        </p>
-        <nav
-          aria-label="Browse opportunities"
-          className="flex flex-wrap gap-x-4 gap-y-2 text-sm"
-        >
+      <header className="space-y-5 pb-1">
+        <div className="flex flex-wrap items-center justify-between gap-x-6 gap-y-2">
           <Link
-            href={directory ? "/" : "/imported-accelerators"}
-            className="underline"
+            href="/"
+            className="inline-flex min-h-11 items-center gap-2.5 text-sm font-bold tracking-wide"
           >
-            {directory ? "Deadline calendar" : "All programs"}
+            <span className="flex size-9 items-center justify-center rounded-xl bg-emerald-700 text-white">
+              <CalendarDays size={20} aria-hidden="true" />
+            </span>
+            FOUNDERCAL
           </Link>
-          <Link href="/programs/ai" className="underline">
-            AI programs
-          </Link>
-          <Link href="/programs/grants" className="underline">
-            Grants
-          </Link>
-          <Link href="/methodology" className="underline">
-            How we verify
-          </Link>
-        </nav>
+          <nav
+            aria-label="Browse opportunities"
+            className="flex flex-wrap gap-x-3 text-xs text-muted-foreground sm:gap-x-4 sm:text-sm"
+          >
+            <Link
+              href={directory ? "/" : "/imported-accelerators"}
+              className="inline-flex min-h-11 items-center gap-1.5 hover:text-foreground"
+            >
+              <Layers size={15} aria-hidden="true" />
+              {directory ? "Calendar" : "Directory"}
+            </Link>
+            <Link
+              href="/programs/ai"
+              className="inline-flex min-h-11 items-center gap-1.5 hover:text-foreground"
+            >
+              <Sparkles size={15} aria-hidden="true" />
+              AI
+            </Link>
+            <Link
+              href="/programs/grants"
+              className="inline-flex min-h-11 items-center gap-1.5 hover:text-foreground"
+            >
+              <CircleDollarSign size={15} aria-hidden="true" />
+              Grants
+            </Link>
+            <Link
+              href="/methodology"
+              className="inline-flex min-h-11 items-center gap-1.5 hover:text-foreground"
+            >
+              <ShieldCheck size={15} aria-hidden="true" />
+              Sources
+            </Link>
+          </nav>
+        </div>
+        <div className="space-y-2">
+          <h1 className="max-w-3xl text-3xl font-semibold tracking-tight sm:text-4xl">
+            {directory
+              ? "Startup accelerator & funding directory"
+              : "Startup accelerator deadlines"}
+          </h1>
+          <p className="max-w-2xl text-sm leading-relaxed text-muted-foreground sm:text-base">
+            Startup accelerator deadlines, rolling applications and grants —
+            with dated sources.
+          </p>
+        </div>
       </header>
       <section
         aria-label="Find programs"
-        className="space-y-4 rounded-2xl border bg-card p-4"
+        className="rounded-2xl border bg-muted/30 p-3 sm:p-4"
       >
-        <div className="flex flex-wrap gap-2" role="group" aria-label="View">
-          <>
-            {modes.map(([value, label]) => (
+        <div className="relative">
+          <Search
+            size={19}
+            aria-hidden="true"
+            className="pointer-events-none absolute left-3.5 top-3.5 text-muted-foreground"
+          />
+          <label htmlFor="program-search" className="sr-only">
+            Search programs
+          </label>
+          <input
+            id="program-search"
+            type="search"
+            value={query.q}
+            onChange={(e) => update({ q: e.target.value })}
+            onBlur={() => {
+              if (query.q)
+                trackAction("program_search", {
+                  query_length: query.q.length,
+                  result_count: rows.length,
+                });
+            }}
+            placeholder="Search programs or locations"
+            className="block min-h-12 w-full rounded-xl border bg-background pl-11 pr-3 text-sm shadow-sm"
+          />
+        </div>
+        <div className="mt-3 flex flex-wrap items-center justify-between gap-2">
+          <div className="flex flex-wrap gap-1" role="group" aria-label="View">
+            {modes.map(({ value, label, icon: Icon }) => (
               <button
                 key={value}
                 type="button"
+                aria-label={
+                  value === "all"
+                    ? "All programs"
+                    : value === "rolling"
+                      ? "Rolling applications"
+                      : "Upcoming deadlines"
+                }
                 aria-pressed={query.mode === value}
                 onClick={() => update({ mode: value })}
-                className={`min-h-10 rounded-lg border px-3 text-sm ${query.mode === value ? "bg-foreground text-background" : "hover:bg-muted"}`}
+                className={`inline-flex min-h-11 items-center justify-center gap-1.5 rounded-lg px-2 text-sm font-medium sm:px-3 ${query.mode === value ? "bg-foreground text-background shadow-sm" : "text-muted-foreground hover:bg-muted hover:text-foreground"}`}
               >
+                <Icon size={16} aria-hidden="true" />
                 {label}
               </button>
             ))}
-          </>
-        </div>
-        <div className="space-y-3">
-          <label className="block text-sm">
-            Search programs
-            <input
-              type="search"
-              value={query.q}
-              onChange={(e) => update({ q: e.target.value })}
-              onBlur={() => {
-                if (query.q)
-                  trackAction("program_search", {
-                    query_length: query.q.length,
-                    result_count: rows.length,
-                  });
-              }}
-              placeholder="Name, city or sector"
-              className="mt-1 block min-h-11 w-full rounded-lg border bg-background px-3"
-            />
-          </label>
-          <details
-            open={
-              query.region !== "all" ||
-              query.sector !== "all" ||
-              query.type !== "all"
-            }
-          >
-            <summary className="min-h-10 cursor-pointer py-2 text-sm font-medium">
-              Region, sector &amp; program type
-            </summary>
-            <div className="grid gap-3 sm:grid-cols-3">
-              {(
-                [
-                  ["region", "Region", choices.regions],
-                  ["sector", "Sector", choices.sectors],
-                  ["type", "Program type", choices.types],
-                ] as const
-              ).map(([key, label, values]) => (
-                <label key={key} className="text-sm">
-                  {label}
-                  <select
-                    value={query[key]}
-                    onChange={(e) => update({ [key]: e.target.value })}
-                    className="mt-1 block min-h-11 w-full rounded-lg border bg-background px-3 capitalize"
-                  >
-                    <option value="all">All {label.toLowerCase()}s</option>
-                    {values.map((v) => (
-                      <option key={v} value={v}>
-                        {v === "na"
-                          ? "North America"
-                          : v === "eu"
-                            ? "Europe"
-                            : v === "ai"
-                              ? "AI"
-                              : v}
-                      </option>
-                    ))}
-                  </select>
-                </label>
-              ))}
-            </div>
-          </details>
-        </div>
-        {["soon", "milestones"].includes(query.mode) && (
-          <div className="flex flex-wrap items-end gap-3">
-            <label className="text-sm">
-              From (UTC date)
-              <input
-                type="date"
-                value={query.start}
-                onChange={(e) => {
-                  if (/^\d{4}-\d{2}-\d{2}$/.test(e.target.value)) {
-                    update({ start: e.target.value });
-                    setMonth(parseISO(e.target.value));
-                  }
-                }}
-                className="mt-1 block min-h-10 rounded-lg border bg-background px-3"
-              />
-            </label>
-            <label className="text-sm">
-              Window
-              <select
-                value={query.days}
-                onChange={(e) => update({ days: Number(e.target.value) })}
-                className="mt-1 block min-h-10 rounded-lg border bg-background px-3"
-              >
-                {[30, 90, 182, 365].map((d) => (
-                  <option key={d} value={d}>
-                    {d} days
-                  </option>
-                ))}
-              </select>
-            </label>
-            <details className="basis-full">
-              <summary className="min-h-10 cursor-pointer rounded-lg border px-3 py-2 text-sm">
-                Choose on calendar
-              </summary>
-              <div className="mt-2 w-fit max-w-full rounded-xl border bg-background shadow-lg">
-                <Calendar
-                  mode="single"
-                  month={month}
-                  onMonthChange={setMonth}
-                  selected={parseISO(query.start)}
-                  onSelect={(d) =>
-                    d && update({ start: format(d, "yyyy-MM-dd") })
-                  }
-                  modifiers={{ hasEvent: dates }}
-                />
-              </div>
-            </details>
           </div>
-        )}
-        <button
-          type="button"
-          onClick={reset}
-          className="min-h-10 text-sm underline"
+          <div className="flex flex-wrap items-center gap-1">
+            <button
+              type="button"
+              aria-pressed={query.mode === "saved"}
+              onClick={() => update({ mode: "saved" })}
+              className={`inline-flex min-h-11 items-center gap-1.5 rounded-lg px-3 text-sm ${query.mode === "saved" ? "bg-foreground text-background" : "hover:bg-muted"}`}
+            >
+              <Bookmark size={16} aria-hidden="true" />
+              Saved
+              {saved.length > 0 && (
+                <span className="text-xs">({saved.length})</span>
+              )}
+            </button>
+            <button
+              type="button"
+              aria-expanded={filtersOpen}
+              aria-controls="advanced-filters"
+              onClick={() => setFiltersOpen(!filtersOpen)}
+              className={`inline-flex min-h-11 items-center gap-1.5 rounded-lg border px-3 text-sm font-medium ${filtersOpen ? "bg-background" : "hover:bg-background"}`}
+            >
+              <ListFilter size={16} aria-hidden="true" />
+              Filters
+              {filterCount > 0 && (
+                <span
+                  className="rounded-full bg-foreground px-1.5 text-xs text-background"
+                  aria-label={`${filterCount} active filters`}
+                >
+                  {filterCount}
+                </span>
+              )}
+              <ChevronDown
+                size={14}
+                aria-hidden="true"
+                className={filtersOpen ? "rotate-180" : ""}
+              />
+            </button>
+          </div>
+        </div>
+        <div
+          id="advanced-filters"
+          hidden={!filtersOpen}
+          className="mt-3 space-y-4 border-t pt-4"
         >
-          Reset all filters and dates
-        </button>
+          <div className="grid gap-3 sm:grid-cols-3">
+            {(
+              [
+                ["region", "Region", choices.regions],
+                ["sector", "Sector", choices.sectors],
+                ["type", "Program type", choices.types],
+              ] as const
+            ).map(([key, label, values]) => (
+              <label key={key} className="text-sm font-medium">
+                {label}
+                <select
+                  value={query[key]}
+                  onChange={(e) => update({ [key]: e.target.value })}
+                  className="mt-1 block min-h-11 w-full rounded-lg border bg-background px-3 font-normal capitalize"
+                >
+                  <option value="all">All {label.toLowerCase()}s</option>
+                  {values.map((v) => (
+                    <option key={v} value={v}>
+                      {v === "na"
+                        ? "North America"
+                        : v === "eu"
+                          ? "Europe"
+                          : v === "ai"
+                            ? "AI"
+                            : v}
+                    </option>
+                  ))}
+                </select>
+              </label>
+            ))}
+          </div>
+          <button
+            type="button"
+            aria-pressed={query.mode === "milestones"}
+            onClick={() =>
+              update({
+                mode: query.mode === "milestones" ? "soon" : "milestones",
+              })
+            }
+            className={`inline-flex min-h-11 items-center gap-2 rounded-lg border px-3 text-sm ${query.mode === "milestones" ? "bg-foreground text-background" : "bg-background hover:bg-muted"}`}
+          >
+            <CalendarRange size={16} aria-hidden="true" />
+            Program dates &amp; demo days
+          </button>
+          {["soon", "milestones"].includes(query.mode) && (
+            <div className="flex flex-wrap items-end gap-3">
+              <label className="min-w-0 text-sm">
+                From (UTC date)
+                <input
+                  type="date"
+                  value={query.start}
+                  onChange={(e) => {
+                    const value = e.target.value;
+                    if (
+                      /^\d{4}-\d{2}-\d{2}$/.test(value) &&
+                      Number.isFinite(Date.parse(value))
+                    ) {
+                      update({ start: value });
+                      setMonth(parseISO(value));
+                    }
+                  }}
+                  className="mt-1 block min-h-11 max-w-full rounded-lg border bg-background px-3"
+                />
+              </label>
+              <label className="text-sm">
+                Window
+                <select
+                  value={query.days}
+                  onChange={(e) => update({ days: Number(e.target.value) })}
+                  className="mt-1 block min-h-11 rounded-lg border bg-background px-3"
+                >
+                  {[30, 90, 182, 365].map((d) => (
+                    <option key={d} value={d}>
+                      {d} days
+                    </option>
+                  ))}
+                </select>
+              </label>
+              <details className="basis-full">
+                <summary className="min-h-11 cursor-pointer py-2.5 text-sm">
+                  Choose on calendar
+                </summary>
+                <div className="mt-2 w-fit max-w-full rounded-xl border bg-background shadow-lg">
+                  <Calendar
+                    mode="single"
+                    month={month}
+                    onMonthChange={setMonth}
+                    selected={parseISO(query.start)}
+                    onSelect={(d) =>
+                      d && update({ start: format(d, "yyyy-MM-dd") })
+                    }
+                    modifiers={{ hasEvent: dates }}
+                  />
+                </div>
+              </details>
+            </div>
+          )}
+        </div>
       </section>
-      <div className="flex flex-wrap items-center justify-between gap-3 text-sm">
-        <p role="status" aria-live="polite">
-          {rows.length} {rows.length === 1 ? "program" : "programs"}
-          {["soon", "milestones"].includes(query.mode)
-            ? ` · ${query.start} to ${end}`
-            : ""}
-        </p>
-        <span className="text-muted-foreground">
-          {query.mode === "saved"
-            ? "Saved on this device"
-            : `${programs.length} unique programs tracked`}
-        </span>
+      <div className="flex flex-wrap items-center justify-between gap-x-3 gap-y-1 text-sm">
+        <div>
+          <p role="status" aria-live="polite" className="font-medium">
+            {rows.length} {rows.length === 1 ? "program" : "programs"}
+            {query.mode === "saved"
+              ? " saved on this device"
+              : query.mode === "milestones"
+                ? " · Program dates"
+                : ""}
+          </p>
+          {["soon", "milestones"].includes(query.mode) && (
+            <p className="mt-0.5 text-xs text-muted-foreground">
+              {format(parseISO(query.start), "MMM d")} –{" "}
+              {format(parseISO(end), "MMM d, yyyy")}
+            </p>
+          )}
+        </div>
+        {hasChanges ? (
+          <button
+            type="button"
+            onClick={reset}
+            className="inline-flex min-h-11 items-center gap-1.5 text-sm text-muted-foreground hover:text-foreground"
+          >
+            <RotateCcw size={14} aria-hidden="true" />
+            Reset filters
+          </button>
+        ) : (
+          <Link
+            href="/imported-accelerators"
+            className="inline-flex min-h-11 items-center gap-1 text-xs text-muted-foreground hover:text-foreground"
+          >
+            {programs.length} programs tracked
+            <ArrowRight size={14} aria-hidden="true" />
+          </Link>
+        )}
       </div>
       {rows.length ? (
         <div className="grid items-start gap-4 md:grid-cols-2">
