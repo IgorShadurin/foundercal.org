@@ -1,14 +1,10 @@
 import Link from "next/link";
+import { ApplicationStatus } from "./application-status";
 import {
   Info,
   ArrowUpRight,
   ArrowRight,
   CalendarDays,
-  CircleCheck,
-  CircleHelp,
-  Clock3,
-  CircleMinus,
-  Infinity as InfinityIcon,
   MapPin,
   Monitor,
   Layers,
@@ -46,25 +42,6 @@ export function ProgramCard({
       : event?.location.city;
   const due = isReviewDue(program, at);
   const accepting = state.key === "open" || state.key === "rolling";
-  const StatusIcon =
-    state.key === "open"
-      ? CircleCheck
-      : state.key === "rolling"
-        ? InfinityIcon
-        : state.key === "upcoming" || state.key === "deadline"
-          ? CalendarDays
-          : state.key === "closed" || state.key === "inactive"
-            ? CircleMinus
-            : state.key === "check"
-              ? Clock3
-              : CircleHelp;
-  const statusStyle = accepting
-    ? "border-emerald-200 bg-emerald-50 text-emerald-800 dark:border-emerald-800 dark:bg-emerald-950 dark:text-emerald-200"
-    : state.key === "closed" || state.key === "inactive"
-      ? "border-transparent bg-muted text-foreground"
-      : state.key === "unknown" || state.key === "check"
-        ? "border-amber-200 bg-amber-50 text-amber-900 dark:border-amber-800 dark:bg-amber-950 dark:text-amber-200"
-        : "border-blue-200 bg-blue-50 text-blue-900 dark:border-blue-800 dark:bg-blue-950 dark:text-blue-200";
   const category = event?.categories.types[0];
   const TypeIcon =
     category === "accelerator" || category === "incubator"
@@ -137,13 +114,7 @@ export function ProgramCard({
         </details>
       </div>
       <div className="mt-3 flex flex-wrap items-center gap-2 text-xs">
-        <span
-          className={`inline-flex items-center gap-1.5 rounded-full border px-2.5 py-1 font-medium ${statusStyle}`}
-          data-application-status={state.key}
-        >
-          <StatusIcon size={14} className="shrink-0" aria-hidden="true" />
-          {state.label}
-        </span>
+        <ApplicationStatus state={state} />
         {category && (
           <span className="inline-flex items-center gap-1.5 rounded-full border px-2.5 py-1 capitalize text-muted-foreground">
             <TypeIcon size={14} aria-hidden="true" />
